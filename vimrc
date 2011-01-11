@@ -33,9 +33,6 @@ set scrolloff=3            " Minimal number of lines to always show above/below 
 " %P percentage through buffer
 set statusline=%<\ %f\ %m%r%y\ %=%-14.(%l,%c%V%)\ %P\ 
 
-set wrap  " Soft wrap.
-" Would use lbr for nicer linebreaks, but can't combine with listchars.
-
 " 2 spaces indent.
 set softtabstop=2
 set shiftwidth=2
@@ -54,6 +51,7 @@ set gdefault    " Global search by default; /g for first-per-row only.
 set nojoinspaces                " 1 space, not 2, when joining sentences.
 set backspace=indent,eol,start  " Allow backspacing over everything in insert mode.
 
+set nowrap   " don't wrap for anything
 
 " NERDTree configuration
 let NERDTreeIgnore=['\.rbc$', '\~$']
@@ -67,17 +65,6 @@ if has("autocmd")
   au BufReadPost * if &filetype !~ 'commit\c' && line("'\"") > 0 && line("'\"") <= line("$")
     \| exe "normal g'\"" | endif
 endif
-
-function! s:setupWrapping()
-  set wrap
-  set wm=2
-  set textwidth=72
-endfunction
-
-function! s:setupMarkup()
-  "call s:setupWrapping()
-  map <buffer> <Leader>p :Mm <CR>
-endfunction
 
 " OS X only due to use of `open`. Adapted from
 " http://vim.wikia.com/wiki/Open_a_web-browser_with_the_URL_in_the_current_line
