@@ -1,8 +1,8 @@
+" set screen size
+set lines = 50
+set columns = 80
 
 if has("gui_macvim")
-  " Fullscreen takes up entire screen
-  set fuoptions=maxhorz,maxvert
-
   " Command-T for CommandT
   macmenu &File.New\ Tab key=<nop>
   map <D-t> :CommandT<CR>
