@@ -36,10 +36,10 @@ if has("gui_macvim")
 
 endif
 
-set guifont=Monaco:h11
+set guifont=Menlo\ Regular:h11
 
 " Default gui color scheme
-color blackboard 
+color dusk 
 
 " Highlight the current line
 set cursorline
