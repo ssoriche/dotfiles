@@ -11,9 +11,6 @@ if has("gui_macvim")
   macmenu Window.Toggle\ Full\ Screen\ Mode key=<nop>
   map <D-F> :Ack<space>
 
-  " Command-e for ConqueTerm
-  map <D-e> :call StartTerm()<CR>
-
   function! TabClose()
     try
       :tabclose
@@ -39,9 +36,6 @@ if has("gui_macvim")
 
 endif
 
-" Start without the toolbar
-set guioptions-=T
-
 set guifont=Monaco:h11
 
 " Default gui color scheme
@@ -49,12 +43,6 @@ color blackboard
 
 " Highlight the current line
 set cursorline
-
-" ConqueTerm wrapper
-function! StartTerm()
-  execute 'ConqueTerm ' . $SHELL . ' --login'
-  setlocal listchars=tab:\ \ 
-endfunction
 
 " Project Tree
 autocmd VimEnter * call s:CdIfDirectory(expand("<amatch>"))
