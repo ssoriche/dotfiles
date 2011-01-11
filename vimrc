@@ -189,7 +189,12 @@ nmap <leader><down>   :rightbelow sp<CR>
 
 " Get rid of all NERDCommenter mappings except one.
 let g:NERDCreateDefaultMappings=0
-map <leader>c <Plug>NERDCommenterToggle
+map # <Plug>NERDCommenterToggle
+
+" Invisible characters 
+set listchars=trail:.,tab:>-,eol:$
+set nolist
+:noremap ,i :set list!<CR> " Toggle invisible chars"
 
 
 " <C-r> to trigger and also to close the scratch buffer.
