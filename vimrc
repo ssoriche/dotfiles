@@ -41,10 +41,6 @@ set softtabstop=2
 set shiftwidth=2
 set expandtab
 
-" Show invisibles.
-set listchars=nbsp:·,tab:▸\ ,trail:·
-set list!
-
 " No pipes in vertical split separators.
 set fillchars=vert:\ 
 
@@ -236,14 +232,3 @@ if has("autocmd") && has("gui_macvim")
   au FileType ruby-runner map <buffer> <D-r> ZZ
 endif
 
-
-" Define some stuff only when launched in this given project.
-if getcwd() == "/Users/henrik/Sites/auktion"
-  " :Loc to open locales in splits in a tab.
-  function! EditLocales()
-    tabe config/locales/fi.yml
-    vsp  config/locales/en.yml
-    vsp  config/locales/sv.yml
-  endfunction
-  command Loc call EditLocales()
-endif
