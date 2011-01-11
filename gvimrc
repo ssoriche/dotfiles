@@ -47,6 +47,9 @@ set cursorline
 " Project Tree
 autocmd VimEnter * call s:CdIfDirectory(expand("<amatch>"))
 
+" Folding preferences
+autocmd VimEnter * set foldmethod=syntax 
+autocmd VimEnter * set foldcolumn=0 
 
 " If the parameter is a directory, cd into it
 function! s:CdIfDirectory(directory)
