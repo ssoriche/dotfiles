@@ -1,8 +1,8 @@
 [user]
-	name = Henrik N
-	email = henrik@nyh.se
+	name = Shawn Sorichetti
+	email = ssoriche@gmail.com
 [core]
-	excludesfile = /Users/henrik/.gitignore
+	excludesfile = /Users/ssoriche/.gitignore
 	ignorecase = false
 [color]
 	status = auto
@@ -11,11 +11,13 @@
 [branch "master"]
 	merge = master
 [alias]
-	gay = shortlog -s -n
-	standup = shortlog --since=yesterday
-	uncommit = reset --soft HEAD^
-[github]
-	user = henrik
-	token = <.replace github-token>
+  ci = commit -a
+  cl = clean -dfx
+  cc = cherry-pick
+  fx = commit -a --amend -C HEAD
+  st = status -sb
+  hist = log --all --graph --pretty='[%C(cyan)%h%Creset]%C(bold cyan)%d%Creset %s'
+  uncommit = reset --soft HEAD^
+  standup = shortlog --since=yesterday
 [push]
 	default = current
