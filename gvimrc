@@ -38,7 +38,18 @@ if has("gui_macvim")
 
 endif
 
+
+" Setup GUI configuration
+"
 set guifont=Menlo\ Regular:h11
+
+" GUI Options
+" e - Add tab pages
+" m - menu bar is present
+" g - menu items that aren't active grey
+" r - right hand scroll bar is always present
+" t - include tearoff menu items (doesn't work in OS X)
+set guioptions=egmrt
 
 " Default gui color scheme
 color dusk 
