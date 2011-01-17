@@ -56,6 +56,11 @@ set nowrap   " don't wrap for anything
 " NERDTree configuration
 let NERDTreeIgnore=['\.rbc$', '\~$']
 
+" SQLUtil configuration
+let g:sqlutil_align_where = 1
+let g:sqlutil_align_comma = 1
+vmap <silent>sf <Plug>SQLU_Formatter<CR>
+
 " Command-T configuration
 let g:CommandTMaxHeight=20
 let g:CommandTMatchWindowAtTop=1
