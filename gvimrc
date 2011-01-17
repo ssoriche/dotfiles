@@ -1,6 +1,5 @@
 " set screen size
-set lines = 50
-set columns = 80
+set lines=50 columns=80
 
 if has("gui_macvim")
   " Command-T for CommandT
