@@ -56,6 +56,9 @@ set nowrap   " don't wrap for anything
 " NERDTree configuration
 let NERDTreeIgnore=['\.rbc$', '\~$']
 
+" Supertab configuration
+let g:SuperTabLongestEnchanced=1
+
 " SQLUtil configuration
 let g:sqlutil_align_where = 1
 let g:sqlutil_align_comma = 1
