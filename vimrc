@@ -67,7 +67,6 @@ vmap <silent>sf <Plug>SQLU_Formatter<CR>
 " Command-T configuration
 let g:CommandTMaxHeight=20
 let g:CommandTMatchWindowAtTop=1
-let g:CommandTAcceptSelectionTabMap=['<CR>']
 
 " Remember last location in file, but not for commit messages.
 if has("autocmd")
