@@ -53,6 +53,9 @@ set backspace=indent,eol,start  " Allow backspacing over everything in insert mo
 
 set nowrap   " don't wrap for anything
 
+" Set completion configration
+set completeopt=menu,longest
+
 " NERDTree configuration
 let NERDTreeIgnore=['\.rbc$', '\~$']
 
