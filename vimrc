@@ -220,7 +220,7 @@ map # <Plug>NERDCommenterToggle
 " Invisible characters 
 set listchars=trail:.,tab:>-,eol:$
 set nolist
-:noremap ,i :set list!<CR> " Toggle invisible chars"
+:noremap <leader>i :set list!<CR> " Toggle invisible chars"
 
 
 " <C-r> to trigger and also to close the scratch buffer.
