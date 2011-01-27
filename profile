@@ -9,6 +9,11 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 export VISUAL=vi
 export CLICOLOR=1
 
+# Create aliases so that console vi/vim uses MacVim
+alias vi=/usr/local/Cellar/macvim/v7.3-53/MacVim.app/Contents/MacOS/Vim 
+alias vim=/usr/local/Cellar/macvim/v7.3-53/MacVim.app/Contents/MacOS/Vim 
+
+
 ## load all my custom functions
 #for i in ~/.sh/functions/*; do
 # . $i
