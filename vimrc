@@ -196,6 +196,9 @@ map <leader>T :CommandTFlush<CR>
 " Open URL from this line (OS X only).
 map <leader>u :call OpenURI()<CR>
 
+" AlignMap default for <leader>w= interferes with CamelCaseMotion
+autocmd VimEnter * unmap <leader>w=
+
 " Ack/Quickfix windows
 map <leader>q :cclose<CR>
 " Previous fix and center line.
