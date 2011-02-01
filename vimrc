@@ -218,7 +218,7 @@ nmap <leader><down>   :rightbelow sp<CR>
 
 " Get rid of all NERDCommenter mappings except one.
 let g:NERDCreateDefaultMappings=0
-map # <Plug>NERDCommenterToggle
+autocmd VimEnter * map # <Plug>NERDCommenterToggle
 
 " Invisible characters 
 set listchars=trail:.,tab:>-,eol:$
