@@ -1,53 +1,24 @@
-## .zshrc
-## $Id: zshrc,v 1.2 2005/05/20 13:25:32 rjbs Exp $
+# Path to your oh-my-zsh configuration.
+export ZSH=$HOME/.oh-my-zsh
 
-# The following lines were added by compinstall
-_compdir=/usr/share/zsh/${ZSH_VERSION}/functions
-[[ -z $fpath[(r)$_compdir] ]] && fpath=($fpath $_compdir)
+# Set to the name theme to load.
+# Look in ~/.oh-my-zsh/themes/
+export ZSH_THEME="prose"
 
-autoload -U compinit
-compinit
+# Set to this to use case-sensitive completion
+# export CASE_SENSITIVE="true"
 
-zstyle ':completion:*' completer _expand _complete # _approximate
-zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
-zstyle ':completion:*' group-name ''
-zstyle ':completion:*' menu select=5
-# End of lines added by compinstall
+# Comment this out to disable weekly auto-update checks
+# export DISABLE_AUTO_UPDATE="true"
 
-## stop history searches at beginning/end of list
-zstyle ':completion:*:history-words' stop verbose
+# Uncomment following line if you want to disable colors in ls
+# export DISABLE_LS_COLORS="true"
 
-## Ignore directories named CVS
-zstyle ':completion:*:(all-|)files' ignored-patterns '(|*/)CVS' 
-zstyle ':completion:*:cd:*' ignored-patterns '(*/)#CVS' 
+# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
+# Example format: plugins=(rails git textmate ruby lighthouse)
+plugins=(git osx vim-mode)
 
-## Make sure modules are loaded
-zmodload -i zsh/zutil
-zmodload -i zsh/compctl
-zmodload -i zsh/complete
-zmodload -i zsh/complist
-zmodload -i zsh/computil
-zmodload -i zsh/main
-zmodload -i zsh/zle
-zmodload -i zsh/rlimits
-zmodload -i zsh/parameter
+source $ZSH/oh-my-zsh.sh
 
-## setup predicting completer
-autoload -U predict-on
-zle -N predict-on
-zle -N predict-off
+# Customize to your needs...
 
-autoload -U zrecompile
-
-bindkey -v
-bindkey "" history-incremental-search-backward
-bindkey -s "^?" "^H"
-bindkey "^[[3~" delete-char
-bindkey "^W" backward-delete-word
-unsetopt CORRECT CORRECT_ALL # diable spllchecking
-unsetopt CDABLE_VARS         # disable cd to homedir
-# unsetopt BANG_HIST           # "foo!" should not be special
-
-local _myhosts
-_myhosts=( ${${${${(f)"$(<$HOME/.ssh/known_hosts)"}:#[0-9]*}%%\ *}%%,*} )
-zstyle ':completion:*' hosts $_myhosts
