@@ -10,8 +10,10 @@ export VISUAL=vi
 export CLICOLOR=1
 
 # Create aliases so that console vi/vim uses MacVim
-alias vi=/usr/local/Cellar/macvim/v7.3-53/MacVim.app/Contents/MacOS/Vim 
-alias vim=/usr/local/Cellar/macvim/v7.3-53/MacVim.app/Contents/MacOS/Vim 
+if [[ -e "/usr/local/Cellar/macvim/v7.3-53/MacVim.app/Contents/MacOS/Vim" ]]; then
+  alias vi=/usr/local/Cellar/macvim/v7.3-53/MacVim.app/Contents/MacOS/Vim 
+  alias vim=/usr/local/Cellar/macvim/v7.3-53/MacVim.app/Contents/MacOS/Vim 
+fi
 
 
 ## load all my custom functions
