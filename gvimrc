@@ -52,7 +52,7 @@ set guifont=Menlo\ Regular:h11
 set guioptions=egmrt
 
 " Default gui color scheme
-color dusk 
+color mydante 
 
 " Highlight the current line
 set cursorline
