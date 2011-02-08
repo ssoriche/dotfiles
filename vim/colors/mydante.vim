@@ -40,6 +40,11 @@ hi StatusLine	term=reverse cterm=reverse gui=reverse guifg=gray60
 hi StatusLineNC	term=reverse cterm=reverse gui=reverse guifg=gray40
 hi VertSplit	term=reverse cterm=reverse gui=bold,reverse guifg=gray40
 hi Title	term=bold ctermfg=magenta gui=bold guifg=aquamarine
+" complete menu
+hi Pmenu           guifg=black guibg=gold3
+hi PmenuSel                      guibg=gold3
+hi PmenuSbar                     guibg=gold3
+hi PmenuThumb      guifg=black
 
 " syntax hi colors
 hi Comment	term=bold ctermfg=darkblue guifg=dodgerblue3
