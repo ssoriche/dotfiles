@@ -1,3 +1,5 @@
+# configure colours for ant
+# http://www.jroller.com/dna/entry/leopard_upgrade_note_ant
 ANT_ARGS='-logger org.apache.tools.ant.listener.AnsiColorLogger'
 ANT_OPTS="-Dant.logger.defaults=$HOME/.ant.ansiColorLogger"
 
