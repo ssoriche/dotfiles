@@ -35,6 +35,7 @@ hi DiffChange	term=bold ctermbg=darkmagenta guibg=maroon
 hi DiffDelete	term=bold cterm=bold ctermfg=lightblue ctermbg=cyan gui=bold guifg=lightblue guibg=cyan4
 hi DiffText	term=reverse cterm=bold ctermbg=red gui=bold guibg=red3
 hi Cursor	guifg=bg guibg=fg
+hi CursorLine   term=underline cterm=underline guibg=Grey25 
 hi lCursor	guifg=bg guibg=fg
 hi StatusLine	term=reverse cterm=reverse gui=reverse guifg=gray60
 hi StatusLineNC	term=reverse cterm=reverse gui=reverse guifg=gray40
