@@ -149,6 +149,9 @@ noremap Q gq
 " Command mode: Ctrl+P
 cmap <C-P> <C-R>=expand("%:p:h") . "/" <CR>
 
+" Make Y behave like C or D
+nnoremap Y y$
+
 " Move by screen lines instead of file lines.
 " http://vim.wikia.com/wiki/Moving_by_screen_lines_instead_of_file_lines
 noremap <Up> gk
