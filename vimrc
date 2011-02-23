@@ -230,6 +230,10 @@ set listchars=trail:.,tab:>-,eol:$
 set nolist
 :noremap <leader>i :set list!<CR> " Toggle invisible chars"
 
+" Remove octal from number formats so numbers with leading 0s increment
+" properly
+set nrformats=hex
+
 
 " <C-r> to trigger and also to close the scratch buffer.
 " TODO: <LocalLeader>r? Reuse split? Pluginize? Handle gets if possible?
