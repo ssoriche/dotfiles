@@ -152,6 +152,9 @@ cmap <C-P> <C-R>=expand("%:p:h") . "/" <CR>
 " Make Y behave like C or D
 nnoremap Y y$
 
+" Select (linewise) the text you just pasted (handy for modifying indentation):
+nnoremap <leader>v V`]
+
 " Move by screen lines instead of file lines.
 " http://vim.wikia.com/wiki/Moving_by_screen_lines_instead_of_file_lines
 noremap <Up> gk
