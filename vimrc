@@ -71,20 +71,8 @@ vmap <silent>sf <Plug>SQLU_Formatter<CR>
 let g:CommandTMaxHeight=20
 let g:CommandTMatchWindowAtTop=1
 
-" Screen type bindings for buffer navigation
-nnoremap <C-a><C-a>   :e #<CR>
-nnoremap <C-a>a       :e #<CR>
-nnoremap <C-a><Space> :bnext<CR>
-nnoremap <C-a>"       :ls<CR>
-nnoremap <C-a>1       :b1<CR>
-nnoremap <C-a>2       :b2<CR>
-nnoremap <C-a>3       :b3<CR>
-nnoremap <C-a>4       :b4<CR>
-nnoremap <C-a>5       :b5<CR>
-nnoremap <C-a>6       :b6<CR>
-nnoremap <C-a>7       :b7<CR>
-nnoremap <C-a>8       :b8<CR>
-nnoremap <C-a>9       :b9<CR>
+" Easier buffer swapping
+nnoremap ` <C-^>
 
 " Remember last location in file, but not for commit messages.
 if has("autocmd")
