@@ -85,3 +85,6 @@
 [submodule "vim/bundle/gundo"]
 	path = vim/bundle/gundo
 	url = http://github.com/sjl/gundo.vim.git
+[submodule "vim/bundle/vim-extradite"]
+	path = vim/bundle/vim-extradite
+	url = https://github.com/int3/vim-extradite.git
