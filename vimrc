@@ -17,6 +17,7 @@ set laststatus=2           " Always show status bar.
 set modelines=10           " Use modeline overrides.
 set showcmd                " Show partially typed command sequences.
 set scrolloff=3            " Minimal number of lines to always show above/below the caret.
+set hidden                 " Allow unsaved buffers to be put in the background
 
 " Statusline.
 " %< truncation point
