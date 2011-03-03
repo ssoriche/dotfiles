@@ -72,6 +72,12 @@ vmap <silent>sf <Plug>SQLU_Formatter<CR>
 let g:CommandTMaxHeight=20
 let g:CommandTMatchWindowAtTop=1
 
+" Gundo configuration
+nnoremap <F5> :GundoToggle<CR>
+
+" Extradite configuration
+nnoremap <F4> :Extradite<CR>
+
 " Easier buffer swapping
 nnoremap ` <C-^>
 
