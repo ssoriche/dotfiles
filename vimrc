@@ -181,6 +181,7 @@ set directory=~/.vim/backup
 set tags=./tags;$HOME/Projects
 let Tlist_Use_Horiz_Window = 1 " Horizontal Tag list window
 let TList_Ctags_Cmd="/usr/local/bin/ctags" " Don't use OS X ctags
+let g:easytags_cmd = '/usr/local/bin/ctags'
 
 
 " Leader
