@@ -58,6 +58,8 @@ set completeopt=menu,longest
 
 " NERDTree configuration
 let NERDTreeIgnore=['\.rbc$', '\~$']
+map <leader>n :NERDTreeToggle<CR>
+map <leader>N :NERDTreeFind<CR>" Reveal current file
 
 " Supertab configuration
 let g:SuperTabLongestEnchanced=1
@@ -190,9 +192,6 @@ let mapleader = ","
 " Un-highlight search matches
 nnoremap <leader><leader> :noh<CR>
 
-map <leader>n :NERDTreeToggle<CR>
-map <leader>N :NERDTreeFind<CR>" Reveal current file
-
 " Print highlighting scope at the current position.
 " http://vim.wikia.com/wiki/Identify_the_syntax_highlighting_group_used_at_the_cursor
 map <leader>S :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<'
@@ -236,6 +235,10 @@ set nolist
 " Remove octal from number formats so numbers with leading 0s increment
 " properly
 set nrformats=hex
+
+" Configure Java Syntax
+let java_highlight_java_lang_ids=1
+let java_highlight_java_io=1
 
 " Configuration to highlight and strip end of line whitespace
 " http://sartak.org/2011/03/end-of-line-whitespace-in-vim.html
