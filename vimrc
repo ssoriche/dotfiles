@@ -178,9 +178,9 @@ set backupdir=~/.vim/backup
 set directory=~/.vim/backup
 
 " Configure Tags
-set tags=./tags;$HOME/Projects
-let Tlist_Use_Horiz_Window = 1 " Horizontal Tag list window
-let TList_Ctags_Cmd="/usr/local/bin/ctags" " Don't use OS X ctags
+set tags=tags;$HOME/Projects
+let Tlist_Use_Horiz_Window=1 " Horizontal Tag list window
+let Tlist_Ctags_Cmd='/usr/local/bin/ctags' " Don't use OS X ctags
 
 
 " Leader
