@@ -181,6 +181,10 @@ set directory=~/.vim/backup
 set tags=tags;$HOME/Projects
 let Tlist_Use_Horiz_Window=1 " Horizontal Tag list window
 let Tlist_Ctags_Cmd='/usr/local/bin/ctags' " Don't use OS X ctags
+set tags=./tags;$HOME/Projects
+let Tlist_Use_Horiz_Window = 1 " Horizontal Tag list window
+let TList_Ctags_Cmd="/usr/local/bin/ctags" " Don't use OS X ctags
+let g:easytags_cmd = '/usr/local/bin/ctags'
 
 
 " Leader
@@ -252,7 +256,8 @@ function! RubyRun()
   new
   put=m
 " Fix Ctrl+M linefeeds.
-  silent %s///
+  silent %s/
+//
 " Fix extraneous leading blank lines.
   1,2d
   " Set a filetype so we can define a 'close' mapping with the 'run' mapping.
