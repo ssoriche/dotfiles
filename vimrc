@@ -53,6 +53,9 @@ set backspace=indent,eol,start  " Allow backspacing over everything in insert mo
 
 set nowrap   " don't wrap for anything
 
+" Leader
+let mapleader = ","
+
 " Set completion configration
 set completeopt=menu,longest
 
@@ -181,13 +184,13 @@ set directory=~/.vim/backup
 
 " Configure Tags
 set tags=.vimtags;/
+let Tlist_GainFocus_On_ToggleOpen = 1 " taglist window has focus when opened 
 let Tlist_Use_Horiz_Window=1 " Horizontal Tag list window
+let Tlist_Show_One_File=1 " Only show the current buffers tags
+let Tlist_Sort_Type = 'name' " Sort tags by name
 let Tlist_Ctags_Cmd='/usr/local/bin/ctags' " Don't use OS X ctags
 let g:easytags_cmd = '/usr/local/bin/ctags'
 
-
-" Leader
-let mapleader = ","
 
 " Un-highlight search matches
 nnoremap <leader><leader> :noh<CR>
