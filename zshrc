@@ -22,3 +22,4 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
+source ~/perl5/perlbrew/etc/bashrc
