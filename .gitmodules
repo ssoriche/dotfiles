@@ -94,3 +94,6 @@
 [submodule "vim/bundle/vim-tabular"]
 	path = vim/bundle/vim-tabular
 	url = https://github.com/godlygeek/tabular.git
+[submodule "vim/bundle/vim-perl"]
+	path = vim/bundle/vim-perl
+	url = https://github.com/petdance/vim-perl.git
