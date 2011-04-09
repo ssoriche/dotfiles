@@ -97,3 +97,6 @@
 [submodule "vim/bundle/vim-perl"]
 	path = vim/bundle/vim-perl
 	url = https://github.com/petdance/vim-perl.git
+[submodule "vim/bundle/vim-colors-solarized"]
+	path = vim/bundle/vim-colors-solarized
+	url = https://github.com/altercation/vim-colors-solarized
