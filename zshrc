@@ -21,5 +21,5 @@ plugins=(git osx vim-mode svn)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-
+export NODE_PATH=/usr/local/lib/node
 source ~/perl5/perlbrew/etc/bashrc
