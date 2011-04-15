@@ -54,6 +54,7 @@ set guioptions=egmrt
 " Default gui color scheme
 set background=dark
 colorscheme solarized
+set transparency=4
 
 " Highlight the current line
 set cursorline
