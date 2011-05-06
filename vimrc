@@ -8,11 +8,8 @@ filetype off
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
-let g:solarized_visibility='low'
 filetype plugin indent on  " Load plugin and indent settings for the detected filetype.
 syntax on                  " Syntax highlighting.
-set background=dark
-colorscheme solarized      " Default color scheme.
 set number                 " Show gutter with line numbers.
 set ruler                  " Show line, column and scroll info in status line.
 set laststatus=2           " Always show status bar.
@@ -20,6 +17,11 @@ set modelines=10           " Use modeline overrides.
 set showcmd                " Show partially typed command sequences.
 set scrolloff=3            " Minimal number of lines to always show above/below the caret.
 set hidden                 " Allow unsaved buffers to be put in the background
+
+" set up colorscheme
+colorscheme solarized      " Default color scheme.
+let g:solarized_visibility='low'
+set background=dark
 
 " Statusline.
 " %< truncation point
