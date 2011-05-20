@@ -5,7 +5,6 @@ export LESS="-M -x 2 -R"
 export MANPAGER="col -b | view -c 'set ft=man nomod nolist' -"
 export PAGER=less
 #export PAGER="view -"
-export PATH=$HOME/bin:/usr/local/bin:$PATH
 export VISUAL=vi
 export CLICOLOR=1
 
@@ -25,5 +24,8 @@ fi
 
 export COPYFILE_DISABLE=1
 export COPYFILE_EXTENDED_ATTRIBUTES_DISABLE=1
+export GROOVY_HOME=/usr/local/groovy
+export GRADLE_HOME=/usr/local/gradle
+export PATH=$HOME/bin:/usr/local/bin:$PATH:$GROOVY_HOME/bin:$GRADLE_HOME/bin
 
 set -o vi
