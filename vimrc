@@ -296,3 +296,5 @@ if has("autocmd") && has("gui_macvim")
   au FileType ruby-runner map <buffer> <D-r> ZZ
 endif
 
+au BufNewFile,BufRead *.gradle setf groovy
+au BufNewFile,BufRead *.spl setf sql
