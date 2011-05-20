@@ -90,7 +90,7 @@
 	url = https://github.com/int3/vim-extradite.git
 [submodule "vim/bundle/vim-easytags"]
 	path = vim/bundle/vim-easytags
-	url = https://github.com/vim-scripts/easytags.vim.git
+	url = https://github.com/xolox/vim-easytags.git
 [submodule "vim/bundle/vim-tabular"]
 	path = vim/bundle/vim-tabular
 	url = https://github.com/godlygeek/tabular.git
