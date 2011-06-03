@@ -4,7 +4,7 @@
 [core]
 	excludesfile = /Users/ssoriche/.gitignore
 	ignorecase = false
-        editor = /usr/local/Cellar/macvim/v7.3-53/MacVim.app/Contents/MacOS/Vim
+        editor = /usr/local/Cellar/macvim/7.3-57/MacVim.app/Contents/MacOS/Vim
 [color]
 	status = auto
 	diff = auto
