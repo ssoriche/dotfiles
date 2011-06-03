@@ -12,6 +12,7 @@
 [branch "master"]
 	merge = master
 [alias]
+  co = checkout
   ci = commit -a
   cl = clean -dfx
   cc = cherry-pick
