@@ -90,6 +90,9 @@ nnoremap <F4> :Extradite<CR>
 " Easier buffer swapping
 nnoremap ` <C-^>
 
+" Configure leader for easymotion
+let g:EasyMotion_leader_key = '<Leader>m'
+
 " Remember last location in file, but not for commit messages.
 if has("autocmd")
   au BufReadPost * if &filetype !~ 'commit\c' && line("'\"") > 0 && line("'\"") <= line("$")
