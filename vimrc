@@ -21,6 +21,7 @@ set hidden                 " Allow unsaved buffers to be put in the background
 " set up colorscheme
 colorscheme solarized      " Default color scheme.
 let g:solarized_visibility='low'
+let g:solarized_hitrail = 1
 set background=dark
 
 " Statusline.
@@ -181,7 +182,7 @@ nmap <C-Down> ]e
 vmap <C-Up> [egv
 vmap <C-Down> ]egv
 
-" Tab/shift-tab to indent/outdent in visual mode. 
+" Tab/shift-tab to indent/outdent in visual mode.
 vmap <Tab> >gv
 vmap <S-Tab> <gv
 
@@ -239,7 +240,7 @@ nmap <leader><down>   :rightbelow sp<CR>
 let g:NERDCreateDefaultMappings=0
 autocmd VimEnter * map # <Plug>NERDCommenterToggle
 
-" Invisible characters 
+" Invisible characters
 set listchars=trail:.,tab:>-,eol:$
 set nolist
 :noremap <leader>i :set list!<CR> " Toggle invisible chars"
