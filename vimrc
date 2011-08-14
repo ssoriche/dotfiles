@@ -253,6 +253,10 @@ set nrformats=hex
 let java_highlight_java_lang_ids=1
 let java_highlight_java_io=1
 
+" Settings for VimClojure
+let vimclojure#HighlightBuiltins=1      " Highlight Clojure's builtins
+let vimclojure#ParenRainbow=1           " Rainbow parentheses'!
+
 " Configuration to highlight and strip end of line whitespace
 " http://sartak.org/2011/03/end-of-line-whitespace-in-vim.html
 autocmd InsertEnter * syn clear EOLWS | syn match EOLWS excludenl /\s\+\%#\@!$/
