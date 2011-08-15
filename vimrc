@@ -187,8 +187,8 @@ vmap <Tab> >gv
 vmap <S-Tab> <gv
 
 " Directories for swp files
-set backupdir=~/.vim/backup
-set directory=~/.vim/backup
+set backupdir=~/.vim/backup/
+set directory=~/.vim/backup//
 
 " Configure Tags
 set tags=./.vimtags;
