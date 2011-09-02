@@ -42,6 +42,7 @@ endif
 " Setup GUI configuration
 "
 set guifont=Menlo\ Regular:h11
+set antialias anti
 
 " GUI Options
 " e - Add tab pages
