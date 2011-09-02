@@ -157,9 +157,6 @@ noremap Q gq
 " Command mode: Ctrl+P
 cmap <C-P> <C-R>=expand("%:p:h") . "/" <CR>
 
-" Make Y behave like C or D
-nnoremap Y y$
-
 " Select (linewise) the text you just pasted (handy for modifying indentation):
 nnoremap <leader>v V`]
 
