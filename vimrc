@@ -5,8 +5,7 @@ set encoding=utf-8  " In case $LANG doesn't have a sensible value.
 " http://www.vim.org/scripts/script.php?script_id=2332
 " filetype off and then on again afterwards for ftdetect files to work properly.
 filetype off
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
+call pathogen#infect()
 
 filetype plugin indent on  " Load plugin and indent settings for the detected filetype.
 syntax on                  " Syntax highlighting.
