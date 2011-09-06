@@ -90,6 +90,13 @@ nnoremap <F4> :Extradite<CR>
 " Easier buffer swapping
 nnoremap ` <C-^>
 
+" easier ESC
+inoremap jk <esc>
+
+" Quickreturn
+inoremap <c-cr> <esc>A<cr>
+inoremap <s-cr> <esc>A:<cr>
+
 " Configure leader for easymotion
 let g:EasyMotion_leader_key = '<Leader>m'
 
