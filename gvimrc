@@ -27,11 +27,6 @@ if has("gui_macvim")
   macmenu &File.Close key=<nop>
   map <D-w> :call TabClose()<CR>
 
-  " Terminal.app shortcuts for tab navigation.
-  macmenu &File.New\ Tab key=<D-T>
-  macmenu Window.Select\ Next\ Tab key=<D-S-Right>
-  macmenu Window.Select\ Previous\ Tab key=<D-S-Left>
-
   " Accordion splits
   " http://www.reddit.com/r/vim/comments/eiolp/accordion_hopping_through_splits/
   set winminheight=0
