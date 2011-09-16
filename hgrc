@@ -1,0 +1,2 @@
+[extensions]
+prompt = ~/Projects/hg-prompt/prompt.py
