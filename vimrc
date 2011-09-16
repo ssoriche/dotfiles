@@ -256,6 +256,16 @@ let java_highlight_java_io=1
 let vimclojure#HighlightBuiltins=1      " Highlight Clojure's builtins
 let vimclojure#ParenRainbow=1           " Rainbow parentheses'!
 
+" Setup folding
+set foldmethod=syntax
+set foldcolumn=0
+
+" Set preferences for Perl
+:let perl_fold=1
+:let perl_include_pod=1
+nnoremap <silent> _t :%!perltidy -q<Enter>
+vnoremap <silent> _t :!perltidy -q<Enter>
+
 " Configuration to highlight and strip end of line whitespace
 " http://sartak.org/2011/03/end-of-line-whitespace-in-vim.html
 autocmd InsertEnter * syn clear EOLWS | syn match EOLWS excludenl /\s\+\%#\@!$/

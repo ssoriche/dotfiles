@@ -1,0 +1,4 @@
+--indent-spaced-block-comments
+--maximum-line-length=80
+--noblanks-before-comments
+-i=2
