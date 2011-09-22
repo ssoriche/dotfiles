@@ -70,6 +70,8 @@ map <leader>N :NERDTreeFind<CR>" Reveal current file
 
 " Supertab configuration
 let g:SuperTabLongestEnchanced=1
+let g:SuperTabLongestHighlight=1
+let g:SuperTabCrMapping=0
 
 " SQLUtil configuration
 let g:sqlutil_align_where = 0     " don't align operators in the WHERE clause
