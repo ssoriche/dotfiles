@@ -317,3 +317,4 @@ endif
 
 au BufNewFile,BufRead *.gradle setf groovy
 au BufNewFile,BufRead *.spl setf sql
+au BufRead,BufNewFile *.t set filetype=perl | compiler perlprove
