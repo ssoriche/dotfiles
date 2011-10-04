@@ -29,3 +29,4 @@ export GRADLE_HOME=/usr/local/gradle
 export PATH=$HOME/bin:/usr/local/bin:$PATH:$GROOVY_HOME/bin:$GRADLE_HOME/bin
 
 set -o vi
+source ~/perl5/perlbrew/etc/bashrc
