@@ -16,6 +16,8 @@ set modelines=10           " Use modeline overrides.
 set showcmd                " Show partially typed command sequences.
 set scrolloff=3            " Minimal number of lines to always show above/below the caret.
 set hidden                 " Allow unsaved buffers to be put in the background
+set shellcmdflag=-lc " Shell is to act as a login shell thus setting the evironment properly
+
 
 " set up colorscheme
 colorscheme solarized      " Default color scheme.
