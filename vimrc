@@ -329,4 +329,5 @@ au BufNewFile,BufRead *.spl setf sql
 au BufRead,BufNewFile *.t set filetype=perl | compiler perlprove
 
 " Syntastic Settings
+let g:syntastic_perl_efm_program='~/.vim/tools/efm_perl.pl'
 run SyntasticEnable perl
