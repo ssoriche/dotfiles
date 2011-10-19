@@ -32,13 +32,20 @@ set background=dark
 " %m modified flag [+] (modified), [-] (unmodifiable) or nothing
 " %r readonly flag [RO]
 " %y filetype [ruby]
+" %#warningmsg# Syntastic warning message
+" %{SyntasticStatuslineFlag()} Syntastic flag
+" %* reset colours
 " %= split point for left and right justification
 " %-14.( %)  block of fixed width 14 characters
 " %l current line
 " %c current column
 " %V current virtual column as -{num} if different from %c
 " %P percentage through buffer
-set statusline=%<\ %f\ %m%r%y\ %=%-14.(%l,%c%V%)\ %P\ 
+set statusline=%<\ %f\ %m%r%y\ %#warningmsg#%{SyntasticStatuslineFlag()}%*\ %=%-14.(%l,%c%V%)\ %P\ 
+
+    " set statusline+=%#warningmsg#
+    "     set statusline+=%{SyntasticStatuslineFlag()}
+    "         set statusline+=%*
 
 " 2 spaces indent.
 set softtabstop=2
@@ -320,3 +327,6 @@ endif
 au BufNewFile,BufRead *.gradle setf groovy
 au BufNewFile,BufRead *.spl setf sql
 au BufRead,BufNewFile *.t set filetype=perl | compiler perlprove
+
+" Syntastic Settings
+run SyntasticEnable perl
