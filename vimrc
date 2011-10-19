@@ -43,10 +43,6 @@ set background=dark
 " %P percentage through buffer
 set statusline=%<\ %f\ %m%r%y\ %#warningmsg#%{SyntasticStatuslineFlag()}%*\ %=%-14.(%l,%c%V%)\ %P\ 
 
-    " set statusline+=%#warningmsg#
-    "     set statusline+=%{SyntasticStatuslineFlag()}
-    "         set statusline+=%*
-
 " 2 spaces indent.
 set softtabstop=2
 set shiftwidth=2
@@ -91,6 +87,7 @@ vmap <silent>sf <Plug>SQLU_Formatter<CR>
 " Command-T configuration
 let g:CommandTMaxHeight=20
 let g:CommandTMatchWindowAtTop=1
+set wildignore+=*.o,*.obj,.git,tmp,public/uploads
 
 " Gundo configuration
 nnoremap <F5> :GundoToggle<CR>
