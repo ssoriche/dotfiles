@@ -86,7 +86,7 @@ my $handle = (defined $opt_f ? \*FILE : \*STDOUT);
 (my $file = shift) or &usage; # display usage if no filename is supplied
 my $args = (@ARGV ? ' ' . join ' ', @ARGV : '');
 
-my @lines = `. ~/perl5/perlbrew/etc/bashrc && perl @{[defined $opt_c ? '-c ' : '' ]} -w "$file$args" 2>&1`;
+my @lines = `. ~/perl5/perlbrew/etc/bashrc && perl @{[defined $opt_c ? '-c ' : '' ]} -w -Ilib "$file$args" 2>&1`;
 
 my $errors = 0;
 foreach my $line (@lines) {
