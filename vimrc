@@ -32,6 +32,7 @@ set background=dark
 " %m modified flag [+] (modified), [-] (unmodifiable) or nothing
 " %r readonly flag [RO]
 " %y filetype [ruby]
+" %{fugitive#statusline()} Git status message from Fugitive
 " %#warningmsg# Syntastic warning message
 " %{SyntasticStatuslineFlag()} Syntastic flag
 " %* reset colours
@@ -41,7 +42,7 @@ set background=dark
 " %c current column
 " %V current virtual column as -{num} if different from %c
 " %P percentage through buffer
-set statusline=%<\ %f\ %m%r%y\ %#warningmsg#%{SyntasticStatuslineFlag()}%*\ %=%-14.(%l,%c%V%)\ %P\ 
+set statusline=%<\ %f\ %m%r%y\ %{fugitive#statusline()}\ %#warningmsg#%{SyntasticStatuslineFlag()}%*\ %=%-14.(%l,%c%V%)\ %P\ 
 
 " 2 spaces indent.
 set softtabstop=2
@@ -64,6 +65,7 @@ set nowrap   " don't wrap for anything
 
 " Leader
 let mapleader = ","
+let localleader = "\\"
 
 " Set completion configration
 set completeopt=menu,longest
