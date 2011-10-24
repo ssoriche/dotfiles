@@ -25,15 +25,11 @@
 [push]
 	default = current
 
-[merge]
-  tool = chdiff
 [mergetool "chdiff"]
   cmd = /usr/bin/env chdiff --wait "$LOCAL" "$REMOTE"
   keepBackup = false
   trustExitCode = false
 
-[merge]
-  tool = diffmerge
 [mergetool "diffmerge"]
   ; cmd = diffmerge --merge --result="$MERGED" "$LOCAL" "$BASE" "$REMOTE"
   cmd = diffmerge --merge --result="$MERGED" "$LOCAL" "$(if test -f "$BASE"; then echo "$BASE"; else echo "$LOCAL"; fi)" "$REMOTE"
@@ -44,3 +40,4 @@
 [mergetool "threesome"]
   cmd = "mvim -f $BASE $LOCAL $REMOTE $MERGED -c 'ThreesomeInit'"
   trustExitCode = true
+  keepBackup = false
