@@ -115,3 +115,6 @@
 [submodule "vim/bundle/vim-syntastic"]
 	path = vim/bundle/vim-syntastic
 	url = https://github.com/scrooloose/syntastic.git
+[submodule "vim/bundle/vim-mojo"]
+	path = vim/bundle/vim-mojo
+	url = https://github.com/yko/mojo.vim.git
