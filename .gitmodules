@@ -99,7 +99,7 @@
 	url = https://github.com/altercation/vim-colors-solarized
 [submodule "vim/bundle/vim-jslint"]
 	path = vim/bundle/vim-jslint
-	url = https://github.com/hallettj/jslint.vim.git
+	url = https://github.com/csexton/jslint.vim.git
 [submodule "vim/bundle/vim-easymotion"]
 	path = vim/bundle/vim-easymotion
 	url = https://github.com/Lokaltog/vim-easymotion.git
