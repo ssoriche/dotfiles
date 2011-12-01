@@ -242,6 +242,9 @@ map + :cnext<CR> zz
 " Opens an edit command with the path of the currently edited file filled in
 map <leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
 
+" Use the current word under the cursor in a substitution.
+:nnoremap <Leader>s :%s/\<<C-r><C-w>\>//g<Left><Left>
+
 " Create a split on the given side.
 " From http://technotales.wordpress.com/2010/04/29/vim-splits-a-guide-to-doing-exactly-what-you-want/ via joakimk.
 nmap <leader><left>   :leftabove  vsp<CR>
