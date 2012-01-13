@@ -38,7 +38,9 @@ endif
 
 " Setup GUI configuration
 "
-set guifont=Menlo\ Regular:h11
+" set guifont=Menlo\ Regular:h11
+set guifont=Menlo\ for\ Powerline:h11
+let g:Powerline_symbols = 'fancy'
 set antialias anti
 
 " GUI Options
