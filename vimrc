@@ -97,6 +97,9 @@ nnoremap <F5> :GundoToggle<CR>
 " Extradite configuration
 nnoremap <F4> :Extradite<CR>
 
+" Toggle paste
+set pastetoggle=<F8>
+
 " Easier buffer swapping
 nnoremap ` <C-^>
 
@@ -109,6 +112,9 @@ inoremap <s-cr> <esc>A:<cr>
 
 " Configure leader for easymotion
 let g:EasyMotion_leader_key = '<Leader>m'
+
+" Resize splits when the window is resized
+au VimResized * exe "normal! \<c-w>="
 
 " Remember last location in file, but not for commit messages.
 if has("autocmd")
@@ -199,6 +205,14 @@ vmap <C-Down> ]egv
 vmap <Tab> >gv
 vmap <S-Tab> <gv
 
+" Use sane regexes
+:nnoremap / /\v " this conflicts with the mapping from IndexedSearch, need to fix
+vnoremap / /\v
+
+" Remap H & L for begging and end of line
+noremap H ^
+noremap L g_
+
 " Directories for swp files
 set backupdir=~/.vim/backup/
 set directory=~/.vim/backup//
@@ -213,6 +227,7 @@ let Tlist_Ctags_Cmd='/usr/local/bin/ctags' " Don't use OS X ctags
 let g:easytags_cmd = '/usr/local/bin/ctags'
 let g:eastags_dynamic_files = 1
 let g:easytags_file='./.vimtags'
+map <F3> :Tlist<CR>
 
 
 " Un-highlight search matches
@@ -231,6 +246,11 @@ map <leader>u :call OpenURI()<CR>
 
 " AlignMap default for <leader>w= interferes with CamelCaseMotion
 autocmd VimEnter * unmap <leader>w=
+
+" Ack settings
+
+" Ack for the last search.
+nnoremap <silent> <leader>? :execute "Ack! '" . substitute(substitute(substitute(@/, "\\\\<", "\\\\b", ""), "\\\\>", "\\\\b", ""), "\\\\v", "", "") . "'"<CR>"'"'"
 
 " Ack/Quickfix windows
 map <leader>q :cclose<CR>
@@ -272,6 +292,21 @@ let vimclojure#ParenRainbow=1           " Rainbow parentheses'!
 " Setup folding
 set foldmethod=syntax
 set foldcolumn=0
+nnoremap <leader>z zMzvzz
+" Space to toggle folds.
+nnoremap <Space> za
+vnoremap <Space> za
+
+" Change Case
+nnoremap <C-u> gUiw
+inoremap <C-u> <esc>gUiwea
+
+" Clean trailing whitespace
+nnoremap <leader>w :%s/\s\+$//<cr>:let @/=''<cr>
+
+" Send visual selection to gist.github.com as a private, filetyped Gist
+" Requires the gist command line too (brew install gist)
+vnoremap <leader>G :w !gist -p -t %:e \| pbcopy<cr>
 
 " Set preferences for Perl
 :let perl_fold=1
