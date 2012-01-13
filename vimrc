@@ -314,47 +314,6 @@ vnoremap <leader>G :w !gist -p -t %:e \| pbcopy<cr>
 nnoremap <silent> _t :%!perltidy -q<Enter>
 vnoremap <silent> _t :!perltidy -q<Enter>
 
-" Configuration to highlight and strip end of line whitespace
-" http://sartak.org/2011/03/end-of-line-whitespace-in-vim.html
-autocmd InsertEnter * syn clear EOLWS | syn match EOLWS excludenl /\s\+\%#\@!$/
-autocmd InsertLeave * syn clear EOLWS | syn match EOLWS excludenl /\s\+$/
-highlight EOLWS ctermbg=red guibg=red
-
-" <C-r> to trigger and also to close the scratch buffer.
-" TODO: <LocalLeader>r? Reuse split? Pluginize? Handle gets if possible?
-
-function! RubyRun()
-  redir => m
-  silent w ! ruby
-  redir END
-  new
-  put=m
-" Fix Ctrl+M linefeeds.
-  silent %s///
-" Fix extraneous leading blank lines.
-  1,2d
-  " Set a filetype so we can define a 'close' mapping with the 'run' mapping.
-  set ft=ruby-runner
-  " Make it a scratch (temporary) buffer.
-  set buftype=nofile
-  set bufhidden=hide
-  setlocal noswapfile
-endfunction
-
-
-function! <SID>StripTrailingWhitespace()
-    " Preparation: save last search, and cursor position.
-    let _s=@/
-    let l = line(".")
-    let c = col(".")
-    " Do the business:
-    %s/\s\+$//e
-    " Clean up: restore previous search history, and cursor position
-    let @/=_s
-    call cursor(l, c)
-endfunction
-nmap <silent> <Leader><space> :call <SID>StripTrailingWhitespace()<CR>
-
 if has("autocmd") && has("gui_macvim")
   au FileType ruby map <buffer> <D-r> :call RubyRun()<CR>
   au FileType ruby imap <buffer> <D-r> <Esc>:call RubyRun()<CR>
