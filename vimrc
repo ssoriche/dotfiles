@@ -86,10 +86,7 @@ let g:sqlutil_keyword_case = '\U' " change SQL keywords to upper case
 let g:sqlutil_align_comma = 1
 vmap <silent>sf <Plug>SQLU_Formatter<CR>
 
-" Command-T configuration
-let g:CommandTMaxHeight=20
-let g:CommandTMatchWindowAtTop=1
-set wildignore+=*.o,*.obj,.git,tmp,public/uploads
+set wildignore+=*.o,*.obj,.git,tmp,public/uploads,.vimtags
 
 " Gundo configuration
 nnoremap <F5> :GundoToggle<CR>
@@ -239,8 +236,6 @@ map <leader>S :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> t
 \ . synIDattr(synID(line("."),col("."),0),"name") . "> lo<"
 \ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
 
-map <leader>T :CommandTFlush<CR>
-
 " Open URL from this line (OS X only).
 map <leader>u :call OpenURI()<CR>
 
@@ -328,3 +323,7 @@ au BufRead,BufNewFile *.t set filetype=perl | compiler perlprove
 let g:syntastic_perl_efm_program='~/.vim/tools/efm_perl.pl'
 run SyntasticEnable perl
 let g:Powerline_symbols = 'fancy'
+
+" CtrlP Settings
+let g:ctrlp_match_window_bottom = 0
+let g:ctrlp_match_window_reversed = 0
