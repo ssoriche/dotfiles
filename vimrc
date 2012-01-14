@@ -303,11 +303,16 @@ nnoremap <leader>w :%s/\s\+$//<cr>:let @/=''<cr>
 " Requires the gist command line too (brew install gist)
 vnoremap <leader>G :w !gist -p -t %:e \| pbcopy<cr>
 
-" Set preferences for Perl
-:let perl_fold=1
-:let perl_include_pod=1
-nnoremap <silent> _t :%!perltidy -q<Enter>
-vnoremap <silent> _t :!perltidy -q<Enter>
+" Set preferences for Perl {{{
+augroup ft_vim
+    au!
+
+    :let perl_fold=1
+    :let perl_include_pod=1
+    nnoremap <silent> _t :%!perltidy -q<Enter>
+    vnoremap <silent> _t :!perltidy -q<Enter>
+augroup END
+" }}}
 
 if has("autocmd") && has("gui_macvim")
   au FileType ruby map <buffer> <D-r> :call RubyRun()<CR>
@@ -319,11 +324,40 @@ au BufNewFile,BufRead *.gradle setf groovy
 au BufNewFile,BufRead *.spl setf sql
 au BufRead,BufNewFile *.t set filetype=perl | compiler perlprove
 
-" Syntastic Settings
+" Syntastic Settings {{{
 let g:syntastic_perl_efm_program='~/.vim/tools/efm_perl.pl'
 run SyntasticEnable perl
+" }}}
+
 let g:Powerline_symbols = 'fancy'
 
-" CtrlP Settings
+" CtrlP Settings {{{
 let g:ctrlp_match_window_bottom = 0
-let g:ctrlp_match_window_reversed = 0
+" let g:ctrlp_match_window_reversed = 0
+" let g:ctrlp_map = '<leader>,'
+let g:ctrlp_working_path_mode = 0
+let g:ctrlp_match_window_reversed = 1
+let g:ctrlp_split_window = 0
+let g:ctrlp_max_height = 20
+let g:ctrlp_prompt_mappings = {
+\ 'PrtSelectMove("j")':   ['<c-j>', '<down>', '<s-tab>'],
+\ 'PrtSelectMove("k")':   ['<c-k>', '<up>', '<tab>'],
+\ 'PrtHistory(-1)':       ['<c-n>'],
+\ 'PrtHistory(1)':        ['<c-p>'],
+\ 'ToggleFocus()':        ['<c-tab>'],
+\ }
+let g:ctrlp_extensions = ['tag']
+
+nnoremap <leader>. :CtrlPTag<cr>
+autocmd BufEnter,BufUnload * call ctrlp#mrufiles#list(expand('<abuf>', 1))
+" }}}
+
+" Vim {{{
+augroup ft_vim
+    au!
+
+    au FileType vim setlocal foldmethod=marker
+    au FileType help setlocal textwidth=78
+    au BufWinEnter *.txt if &ft == 'help' | wincmd L | endif
+augroup END
+" }}}
