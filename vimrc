@@ -230,7 +230,7 @@ nnoremap <leader><cr> :silent !/usr/local/bin/ctags -R . .vimtags<cr>
 
 
 " Un-highlight search matches
-nnoremap <leader><leader> :noh<CR>
+nnoremap <leader><space> :noh<CR>
 
 " Print highlighting scope at the current position.
 " http://vim.wikia.com/wiki/Identify_the_syntax_highlighting_group_used_at_the_cursor
@@ -335,10 +335,9 @@ let g:Powerline_symbols = 'fancy'
 
 " CtrlP Settings {{{
 let g:ctrlp_match_window_bottom = 0
-" let g:ctrlp_match_window_reversed = 0
-" let g:ctrlp_map = '<leader>,'
+let g:ctrlp_match_window_reversed = 0
+let g:ctrlp_map = '<leader>,'
 let g:ctrlp_working_path_mode = 0
-let g:ctrlp_match_window_reversed = 1
 let g:ctrlp_split_window = 0
 let g:ctrlp_max_height = 20
 let g:ctrlp_prompt_mappings = {
