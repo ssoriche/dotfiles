@@ -86,7 +86,7 @@ let g:sqlutil_keyword_case = '\U' " change SQL keywords to upper case
 let g:sqlutil_align_comma = 1
 vmap <silent>sf <Plug>SQLU_Formatter<CR>
 
-set wildignore+=*.o,*.obj,.git,tmp,public/uploads,.vimtags
+set wildignore+=*.o,*.obj,.git,tmp,public/uploads,.vimtags,*.class
 
 " Gundo configuration
 nnoremap <F5> :GundoToggle<CR>
@@ -349,6 +349,9 @@ let g:ctrlp_prompt_mappings = {
 \ 'ToggleFocus()':        ['<c-tab>'],
 \ }
 let g:ctrlp_extensions = ['tag']
+let g:ctrlp_custom_ignore = {
+  \ 'dir': 'build\|target'
+  \ }
 
 nnoremap <leader>. :CtrlPTag<cr>
 autocmd BufEnter,BufUnload * call ctrlp#mrufiles#list(expand('<abuf>', 1))
