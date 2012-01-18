@@ -341,6 +341,7 @@ let g:ctrlp_working_path_mode = 0
 let g:ctrlp_split_window = 0
 let g:ctrlp_max_height = 20
 let g:ctrlp_mruf_relative = 1
+let g:ctrlp_mruf_last_entered = 1
 let g:ctrlp_mruf_exclude = 'tmp/.*\|temp/.*\|\.git/.*'
 let g:ctrlp_prompt_mappings = {
 \ 'PrtSelectMove("j")':   ['<c-j>', '<down>', '<s-tab>'],
@@ -355,7 +356,7 @@ let g:ctrlp_custom_ignore = {
   \ }
 
 nnoremap <leader>. :CtrlPTag<cr>
-autocmd BufEnter,BufUnload * call ctrlp#mrufiles#list(expand('<abuf>', 1))
+autocmd BufEnter,BufUnload * call ctrlp#mrufiles#list(expand('<abuf>', 1)) " sort the buffer list by last entered
 " }}}
 
 " Vim {{{
