@@ -225,7 +225,7 @@ let g:autotagTagsFile='.vimtags'
 let g:autotagCtagsCmd='/usr/local/bin/ctags'
 
 map <F3> :Tlist<CR>
-nnoremap <leader><cr> :silent !/usr/local/bin/ctags -R . .vimtags<cr>
+nnoremap <leader><cr> :silent !/usr/local/bin/ctags -R -f .vimtags .<cr>
 " }}}
 
 
