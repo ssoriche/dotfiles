@@ -1,6 +1,6 @@
 [user]
 	name = Shawn Sorichetti
-	email = ssoriche@gmail.com
+	email = ssorichetti@scorecardsystems.com
 [core]
 	excludesfile = /Users/ssoriche/.gitignore
 	ignorecase = false
