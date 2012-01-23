@@ -1,5 +1,7 @@
 # My dotfiles
 
+This started off as a fork from Janus, but I've continued to modify and adapt it to my own needs.
+
 ## Install
 
 Checkout this repo into `~/.dotfiles`. Then install the dotfiles:
@@ -32,15 +34,7 @@ Most are included in this repository as git submodules, so you need to fetch the
 
     git submodule update --init
 
-The Command-T plugin needs to be compiled:
-
-    cd ~/.vim/bundle/command-t
-    rvm system  # If you use rvm
-    rake make
-
-
 ## Extras
 
 The `extras` directory contains additional configuration files that are not dotfiles:
 
- * `Henrik.terminal` is a settings file (theme + key bindings) for the OS X Terminal.app.
