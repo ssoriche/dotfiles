@@ -1,10 +1,13 @@
 [user]
 	name = Shawn Sorichetti
-	email = ssorichetti@scorecardsystems.com
+	email = ssoriche@gmail.com
+[github]
+        user = ssoriche
 [core]
 	excludesfile = /Users/ssoriche/.gitignore
 	ignorecase = false
         editor = /Users/ssoriche/Applications/MacVim.app/Contents/MacOS/Vim
+	quotepath = false
 [color]
 	status = auto
 	diff = auto
