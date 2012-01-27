@@ -146,25 +146,6 @@ ruby << EOF
 EOF
 endif
 
-function! OpenURI()
-  :ruby open_uri
-endfunction
-
-if has("autocmd")
-  " make and python use real tabs
-  au FileType make                                     set noexpandtab
-  au FileType python                                   set noexpandtab
-
-  " Thorfile, Rakefile and Gemfile are Ruby
-  au BufRead,BufNewFile {Gemfile,Rakefile,Thorfile,config.ru}    set ft=ruby
-
-  " md, markdown, and mk are markdown and define buffer-local preview
-  au BufRead,BufNewFile *.{md,markdown,mdown,mkd,mkdn} call s:setupMarkup()
-
-  " Uncomment to have txt files hard-wrap automatically.
-  "au BufRead,BufNewFile *.txt call s:setupWrapping()
-endif
-
 " Hit S in command mode to save, as :w<CR> is a mouthful and MacVim
 " Command-S is a bad habit when using terminal Vim.
 " We overload a command, but use 'cc' instead anyway.
