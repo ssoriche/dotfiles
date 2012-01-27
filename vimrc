@@ -20,9 +20,10 @@ set shellcmdflag=-lc " Shell is to act as a login shell thus setting the evironm
 
 
 " set up colorscheme
-colorscheme solarized      " Default color scheme.
-let g:solarized_visibility='low'
-let g:solarized_hitrail = 1
+colorscheme distinguished    " Default color scheme.
+" colorscheme solarized      " Default color scheme.
+" let g:solarized_visibility='low'
+" let g:solarized_hitrail = 1
 set background=dark
 
 " Statusline.
