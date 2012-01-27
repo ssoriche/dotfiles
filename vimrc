@@ -42,7 +42,7 @@ set background=dark
 " %c current column
 " %V current virtual column as -{num} if different from %c
 " %P percentage through buffer
-set statusline=%<\ %f\ %m%r%y\ %{fugitive#statusline()}\ %#warningmsg#%{SyntasticStatuslineFlag()}%*\ %=%-14.(%l,%c%V%)\ %P\ 
+" set statusline=%<\ %f\ %m%r%y\ %{fugitive#statusline()}\ %#warningmsg#%{SyntasticStatuslineFlag()}%*\ %=%-14.(%l,%c%V%)\ %P\ 
 
 " 2 spaces indent.
 set softtabstop=2
@@ -78,10 +78,11 @@ map <leader>N :NERDTreeFind<CR>" Reveal current file
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 " }}}
 
-" Supertab configuration
+" Supertab configuration {{{
 let g:SuperTabLongestEnchanced=1
 let g:SuperTabLongestHighlight=1
 let g:SuperTabCrMapping=0
+" }}}
 
 " SQLUtil configuration
 let g:sqlutil_align_where = 0     " don't align operators in the WHERE clause
