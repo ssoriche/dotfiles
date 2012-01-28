@@ -20,9 +20,10 @@ set shellcmdflag=-lc " Shell is to act as a login shell thus setting the evironm
 
 
 " set up colorscheme
-colorscheme solarized      " Default color scheme.
-let g:solarized_visibility='low'
-let g:solarized_hitrail = 1
+colorscheme distinguished    " Default color scheme.
+" colorscheme solarized      " Default color scheme.
+" let g:solarized_visibility='low'
+" let g:solarized_hitrail = 1
 set background=dark
 
 " Statusline.
@@ -42,7 +43,7 @@ set background=dark
 " %c current column
 " %V current virtual column as -{num} if different from %c
 " %P percentage through buffer
-set statusline=%<\ %f\ %m%r%y\ %{fugitive#statusline()}\ %#warningmsg#%{SyntasticStatuslineFlag()}%*\ %=%-14.(%l,%c%V%)\ %P\ 
+" set statusline=%<\ %f\ %m%r%y\ %{fugitive#statusline()}\ %#warningmsg#%{SyntasticStatuslineFlag()}%*\ %=%-14.(%l,%c%V%)\ %P\ 
 
 " 2 spaces indent.
 set softtabstop=2
@@ -78,10 +79,11 @@ map <leader>N :NERDTreeFind<CR>" Reveal current file
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 " }}}
 
-" Supertab configuration
+" Supertab configuration {{{
 let g:SuperTabLongestEnchanced=1
 let g:SuperTabLongestHighlight=1
 let g:SuperTabCrMapping=0
+" }}}
 
 " SQLUtil configuration
 let g:sqlutil_align_where = 0     " don't align operators in the WHERE clause
@@ -142,25 +144,6 @@ ruby << EOF
     end
   end
 EOF
-endif
-
-function! OpenURI()
-  :ruby open_uri
-endfunction
-
-if has("autocmd")
-  " make and python use real tabs
-  au FileType make                                     set noexpandtab
-  au FileType python                                   set noexpandtab
-
-  " Thorfile, Rakefile and Gemfile are Ruby
-  au BufRead,BufNewFile {Gemfile,Rakefile,Thorfile,config.ru}    set ft=ruby
-
-  " md, markdown, and mk are markdown and define buffer-local preview
-  au BufRead,BufNewFile *.{md,markdown,mdown,mkd,mkdn} call s:setupMarkup()
-
-  " Uncomment to have txt files hard-wrap automatically.
-  "au BufRead,BufNewFile *.txt call s:setupWrapping()
 endif
 
 " Hit S in command mode to save, as :w<CR> is a mouthful and MacVim
