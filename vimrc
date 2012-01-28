@@ -354,6 +354,7 @@ let g:ctrlp_prompt_mappings = {
 \ 'ToggleFocus()':        ['<c-tab>'],
 \ }
 let g:ctrlp_extensions = ['tag']
+let g:ctrlp_root_markers = ['.lvimrc'] " add the local lvimrc to to top of root markers
 let g:ctrlp_custom_ignore = {
   \ 'dir': 'build\|target'
   \ }
