@@ -53,7 +53,8 @@ set guioptions=egmrt
 
 " Default gui color scheme
 set background=dark
-colorscheme solarized
+" colorscheme solarized
+colorscheme distinguished    " Default color scheme.
 set transparency=4
 
 " Highlight the current line
