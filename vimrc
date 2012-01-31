@@ -355,3 +355,20 @@ augroup ft_vim
     au BufWinEnter *.txt if &ft == 'help' | wincmd L | endif
 augroup END
 " }}}
+
+" Error toggles ----------------------------------------------------------- {{{
+command! ErrorsToggle call ErrorsToggle()
+function! ErrorsToggle() " {{{
+  if exists("w:is_error_window")
+    unlet w:is_error_window
+    exec "q"
+  else
+    exec "Errors"
+    lopen
+    let w:is_error_window = 1
+  endif
+endfunction " }}}
+
+nmap <silent> <f4> :ErrorsToggle<cr>
+
+" }}}
