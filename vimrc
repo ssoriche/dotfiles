@@ -97,7 +97,7 @@ set wildignore+=*.o,*.obj,.git,tmp,public/uploads,.vimtags,*.class
 nnoremap <F5> :GundoToggle<CR>
 
 " Extradite configuration
-nnoremap <F4> :Extradite<CR>
+nnoremap <F2> :Extradite<CR>
 
 " Toggle paste
 set pastetoggle=<F8>
