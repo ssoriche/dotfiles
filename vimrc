@@ -75,8 +75,6 @@ set completeopt=menu,longest
 let NERDTreeIgnore=['\.rbc$', '\~$']
 map <leader>n :NERDTreeToggle<CR>
 map <leader>N :NERDTreeFind<CR>" Reveal current file
-" If the last buffer is NERDTree quit
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 " }}}
 
 " Supertab configuration {{{
