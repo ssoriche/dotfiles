@@ -75,8 +75,6 @@ set completeopt=menu,longest
 let NERDTreeIgnore=['\.rbc$', '\~$']
 map <leader>n :NERDTreeToggle<CR>
 map <leader>N :NERDTreeFind<CR>" Reveal current file
-" If the last buffer is NERDTree quit
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 " }}}
 
 " Supertab configuration {{{
@@ -104,9 +102,6 @@ set pastetoggle=<F8>
 
 " Easier buffer swapping
 nnoremap ` <C-^>
-
-" easier ESC
-inoremap jk <esc>
 
 " Quickreturn
 inoremap <c-cr> <esc>A<cr>
@@ -343,7 +338,7 @@ let g:ctrlp_custom_ignore = {
   \ 'dir': 'build\|target'
   \ }
 
-nnoremap <leader>. :CtrlPTag<cr>
+nnoremap <leader>. :CtrlPBufTag<cr>
 autocmd BufEnter,BufUnload * call ctrlp#mrufiles#list(expand('<abuf>', 1)) " sort the buffer list by last entered
 " }}}
 
