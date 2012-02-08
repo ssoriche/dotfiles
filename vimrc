@@ -103,9 +103,6 @@ set pastetoggle=<F8>
 " Easier buffer swapping
 nnoremap ` <C-^>
 
-" easier ESC
-inoremap jk <esc>
-
 " Quickreturn
 inoremap <c-cr> <esc>A<cr>
 inoremap <s-cr> <esc>A:<cr>
