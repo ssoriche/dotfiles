@@ -272,13 +272,14 @@ let java_highlight_java_io=1
 let vimclojure#HighlightBuiltins=1      " Highlight Clojure's builtins
 let vimclojure#ParenRainbow=1           " Rainbow parentheses'!
 
-" Setup folding
+" Setup folding {{{
 set foldmethod=syntax
 set foldcolumn=0
 nnoremap <leader>z zMzvzz
 " Space to toggle folds.
 nnoremap <Space> za
 vnoremap <Space> za
+" }}}
 
 " Change Case
 nnoremap <C-u> gUiw
