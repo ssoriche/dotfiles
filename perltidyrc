@@ -1,4 +1,6 @@
 --indent-spaced-block-comments
 --maximum-line-length=80
 --noblanks-before-comments
+--stack-opening-tokens
+--stack-closing-tokens
 -i=2
