@@ -21,29 +21,7 @@ set shellcmdflag=-lc " Shell is to act as a login shell thus setting the evironm
 
 " set up colorscheme
 colorscheme distinguished    " Default color scheme.
-" colorscheme solarized      " Default color scheme.
-" let g:solarized_visibility='low'
-" let g:solarized_hitrail = 1
 set background=dark
-
-" Statusline.
-" %< truncation point
-" \  space
-" %f relative path to file
-" %m modified flag [+] (modified), [-] (unmodifiable) or nothing
-" %r readonly flag [RO]
-" %y filetype [ruby]
-" %{fugitive#statusline()} Git status message from Fugitive
-" %#warningmsg# Syntastic warning message
-" %{SyntasticStatuslineFlag()} Syntastic flag
-" %* reset colours
-" %= split point for left and right justification
-" %-14.( %)  block of fixed width 14 characters
-" %l current line
-" %c current column
-" %V current virtual column as -{num} if different from %c
-" %P percentage through buffer
-" set statusline=%<\ %f\ %m%r%y\ %{fugitive#statusline()}\ %#warningmsg#%{SyntasticStatuslineFlag()}%*\ %=%-14.(%l,%c%V%)\ %P\ 
 
 " 2 spaces indent.
 set softtabstop=2
