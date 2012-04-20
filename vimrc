@@ -79,6 +79,9 @@ nnoremap <F2> :Extradite<CR>
 " Toggle paste
 set pastetoggle=<F8>
 
+" Move to the last change
+nnoremap gl `.
+
 " Easier buffer swapping
 nnoremap ` <C-^>
 
