@@ -39,8 +39,8 @@
   trustexitcode = true
 
 [merge]
-  tool = threesome
-[mergetool "threesome"]
-  cmd = "mvim -f $BASE $LOCAL $REMOTE $MERGED -c 'ThreesomeInit'"
+  tool = splice
+[mergetool "splice"]
+  cmd = "mvim -f $BASE $LOCAL $REMOTE $MERGED -c 'SpliceInit'"
   trustExitCode = true
   keepBackup = false
