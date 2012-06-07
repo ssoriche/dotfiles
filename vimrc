@@ -263,7 +263,6 @@ vnoremap <Space> za
 " }}}
 
 " Change Case
-nnoremap <C-u> gUiw
 inoremap <C-u> <esc>gUiwea
 
 " Clean trailing whitespace
