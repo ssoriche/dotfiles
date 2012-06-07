@@ -207,10 +207,14 @@ map <leader>u :call OpenURI()<CR>
 " AlignMap default for <leader>w= interferes with CamelCaseMotion
 autocmd VimEnter * unmap <leader>w=
 
-" Ack settings
+" Ack settings {{{
 
 " Ack for the last search.
 nnoremap <silent> <leader>? :execute "Ack! '" . substitute(substitute(substitute(@/, "\\\\<", "\\\\b", ""), "\\\\>", "\\\\b", ""), "\\\\v", "", "") . "'"<CR>"'"'"
+" Map backspace to something useful
+" This uses ack.vim to search for the word under the cursor
+nnoremap <bs> :Ack! '\b<c-r><c-w>\b'<cr>
+" }}}
 
 " Ack/Quickfix windows
 map <leader>q :cclose<CR>
