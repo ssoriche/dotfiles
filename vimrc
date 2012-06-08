@@ -211,9 +211,6 @@ autocmd VimEnter * unmap <leader>w=
 
 " Ack for the last search.
 nnoremap <silent> <leader>? :execute "Ack! '" . substitute(substitute(substitute(@/, "\\\\<", "\\\\b", ""), "\\\\>", "\\\\b", ""), "\\\\v", "", "") . "'"<CR>"'"'"
-" Map backspace to something useful
-" This uses ack.vim to search for the word under the cursor
-nnoremap <bs> :Ack! '\b<c-r><c-w>\b'<cr>
 " }}}
 
 " Ack/Quickfix windows
