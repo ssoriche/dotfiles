@@ -83,7 +83,7 @@ set pastetoggle=<F8>
 nnoremap gl `.
 
 " Easier buffer swapping
-nnoremap ` <C-^>
+nnoremap <bs> <C-^>
 
 " Quickreturn
 inoremap <c-cr> <esc>A<cr>
