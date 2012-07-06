@@ -124,3 +124,6 @@
 [submodule "vim/bundle/splice"]
 	path = vim/bundle/splice
 	url = https://github.com/sjl/splice.vim.git
+[submodule "vim/bundle/vim-linediff"]
+	path = vim/bundle/vim-linediff
+	url = git://github.com/AndrewRadev/linediff.vim.git
