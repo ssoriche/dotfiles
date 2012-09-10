@@ -12,6 +12,7 @@
 	status = auto
 	diff = auto
 	branch = auto
+        ui = true
 [branch "master"]
 	merge = master
 [alias]
