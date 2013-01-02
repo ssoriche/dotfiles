@@ -1,6 +1,7 @@
 .DS_Store
 .vimtags
 .gitignore
+*.orig
 
 # iPhone development
 # http://www.adminmyserver.com/articles/gitignore-for-iphone-xcode-development
