@@ -20,7 +20,7 @@ set shellcmdflag=-lc " Shell is to act as a login shell thus setting the evironm
 
 
 " set up colorscheme
-colorscheme distinguished    " Default color scheme.
+colorscheme jellybeans    " Default color scheme.
 set background=dark
 
 " 2 spaces indent.
