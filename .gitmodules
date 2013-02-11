@@ -28,9 +28,6 @@
 [submodule "vim/bundle/AutoClose"]
 	path = vim/bundle/AutoClose
 	url = git://github.com/vim-scripts/AutoClose.git
-[submodule "vim/bundle/supertab"]
-	path = vim/bundle/supertab
-	url = git://github.com/ervandew/supertab.git
 [submodule "vim/bundle/zoomWin"]
 	path = vim/bundle/zoomWin
 	url = git://github.com/vim-scripts/ZoomWin.git
