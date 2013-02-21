@@ -43,7 +43,7 @@ set backspace=indent,eol,start  " Allow backspacing over everything in insert mo
 set nowrap   " don't wrap for anything
 
 " Leader
-let mapleader = ","
+let mapleader = " "
 let localleader = "\\"
 
 " Set completion configration
@@ -175,7 +175,7 @@ nnoremap <leader><cr> :silent !/usr/local/bin/ctags -R -f .vimtags .<cr>
 
 
 " Un-highlight search matches
-nnoremap <leader><space> :noh<CR>
+nnoremap <leader>/ :noh<CR>
 
 " Print highlighting scope at the current position.
 " http://vim.wikia.com/wiki/Identify_the_syntax_highlighting_group_used_at_the_cursor
@@ -237,8 +237,8 @@ set foldmethod=syntax
 set foldcolumn=0
 nnoremap <leader>z zMzvzz
 " Space to toggle folds.
-nnoremap <Space> za
-vnoremap <Space> za
+nnoremap <Enter> za
+vnoremap <Enter> za
 " }}}
 
 " Change Case
@@ -282,7 +282,7 @@ let g:Powerline_symbols = 'fancy'
 " CtrlP Settings {{{
 let g:ctrlp_match_window_bottom = 0
 let g:ctrlp_match_window_reversed = 0
-let g:ctrlp_map = '<leader>,'
+let g:ctrlp_map = '<leader><space>'
 let g:ctrlp_working_path_mode = 0
 let g:ctrlp_split_window = 0
 let g:ctrlp_max_height = 20
