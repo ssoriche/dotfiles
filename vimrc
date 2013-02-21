@@ -49,12 +49,6 @@ let localleader = "\\"
 " Set completion configration
 set completeopt=menu,longest
 
-" NERDTree configuration {{{
-let NERDTreeIgnore=['\.rbc$', '\~$']
-map <leader>n :NERDTreeToggle<CR>
-map <leader>N :NERDTreeFind<CR>" Reveal current file
-" }}}
-
 " Supertab configuration {{{
 let g:SuperTabLongestEnchanced=1
 let g:SuperTabLongestHighlight=1
