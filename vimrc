@@ -49,12 +49,6 @@ let localleader = "\\"
 " Set completion configration
 set completeopt=menu,longest
 
-" SQLUtil configuration
-let g:sqlutil_align_where = 0     " don't align operators in the WHERE clause
-let g:sqlutil_keyword_case = '\U' " change SQL keywords to upper case
-let g:sqlutil_align_comma = 1
-vmap <silent>sf <Plug>SQLU_Formatter<CR>
-
 set wildmode=list:longest,list:full
 set wildignore+=*.o,*.obj,.git,tmp,public/uploads,.vimtags,*.class
 
