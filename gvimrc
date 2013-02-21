@@ -2,12 +2,6 @@
 set lines=50 columns=136
 
 if has("gui_macvim")
-  " Command-T for CommandT
-  macmenu &File.New\ Tab key=<nop>
-  map <D-t> :CommandT<CR>
-  macmenu &File.Open\ Tab\.\.\.<Tab>:tabnew key=<nop>
-  map <D-T> :CommandTBuffer<CR>
-
   " Command-Shift-F for Ack
   macmenu Window.Toggle\ Full\ Screen\ Mode key=<nop>
   map <D-F> :Ack<space>
