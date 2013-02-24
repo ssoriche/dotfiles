@@ -151,10 +151,6 @@ vmap <S-Tab> <gv
 :nnoremap / /\v " this conflicts with the mapping from IndexedSearch, need to fix
 vnoremap / /\v
 
-" Remap H & L for begging and end of line
-noremap H ^
-noremap L g_
-
 " Directories for swp files
 set backupdir=~/.vim/backup/
 set directory=~/.vim/backup//
