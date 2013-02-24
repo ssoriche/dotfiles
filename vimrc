@@ -151,7 +151,7 @@ vmap <Tab> >gv
 vmap <S-Tab> <gv
 
 " Use sane regexes
-:nnoremap / /\v " this conflicts with the mapping from IndexedSearch, need to fix
+autocmd VimEnter * nnoremap / /\v
 vnoremap / /\v
 
 " Directories for swp files
