@@ -383,3 +383,11 @@ endfunction " }}}
 nmap <silent> <f4> :ErrorsToggle<cr>
 
 " }}}
+
+" Help File speedups, <enter> to follow tag, delete for back
+au filetype help nnoremap <buffer><cr> <c-]>
+au filetype help nnoremap <buffer><bs> <c-T>
+au filetype help nnoremap <buffer>q :q<CR>
+au filetype help set nonumber
+set splitbelow " Split windows, ie Help, make more sense to me below
+au filetype help wincmd _ " Maximze the help on open
