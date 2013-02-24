@@ -18,7 +18,6 @@ set scrolloff=3            " Minimal number of lines to always show above/below 
 set hidden                 " Allow unsaved buffers to be put in the background
 set shellcmdflag=-lc " Shell is to act as a login shell thus setting the evironment properly
 
-
 " set up colorscheme
 colorscheme jellybeans    " Default color scheme.
 set background=dark
@@ -48,6 +47,10 @@ let localleader = "\\"
 
 " Set completion configration
 set completeopt=menu,longest
+
+" easy access to vim modifications
+map <leader>re :execute "edit " . $MYVIMRC<CR>
+map <leader>rs :execute "source " . $MYVIMRC<CR>
 
 set wildmode=list:longest,list:full
 set wildignore+=*.o,*.obj,.git,tmp,public/uploads,.vimtags,*.class
