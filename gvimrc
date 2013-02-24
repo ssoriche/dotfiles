@@ -54,10 +54,6 @@ set transparency=4
 " Highlight the current line
 set cursorline
 
-" Folding preferences
-autocmd VimEnter * set foldmethod=syntax 
-autocmd VimEnter * set foldcolumn=0 
-
 " Utility functions to create file commands
 function! s:CommandCabbr(abbreviation, expansion)
   execute 'cabbrev ' . a:abbreviation . ' <c-r>=getcmdpos() == 1 && getcmdtype() == ":" ? "' . a:expansion . '" : "' . a:abbreviation . '"<CR>'
