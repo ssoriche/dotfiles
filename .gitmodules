@@ -182,3 +182,7 @@
 	path = vim/bundle/vim-recover
 	url = https://github.com/chrisbra/Recover.vim.git
         ignore = untracked
+[submodule "vim/bundle/vim-javascript-libraries-syntax"]
+	path = vim/bundle/vim-javascript-libraries-syntax
+	url = https://github.com/othree/javascript-libraries-syntax.vim.git
+        ignore = untracked
