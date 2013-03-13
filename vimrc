@@ -274,6 +274,7 @@ au BufRead,BufNewFile *.t set filetype=perl | compiler perlprove
 " Syntastic Settings {{{
 let g:syntastic_perl_efm_program='~/.vim/tools/efm_perl.pl'
 run SyntasticEnable perl
+let g:syntastic_ruby_exec = '~/.rbenv/shims/ruby'
 " }}}
 
 let g:Powerline_symbols = 'fancy'
