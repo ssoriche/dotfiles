@@ -232,12 +232,21 @@ let vimclojure#HighlightBuiltins=1      " Highlight Clojure's builtins
 let vimclojure#ParenRainbow=1           " Rainbow parentheses'!
 
 " Setup folding {{{
+" Toggle the meaning of enter based on quickfix or not.
+function! ToggleFold()
+  if &ft != "qf"
+    normal! za
+  else
+    normal! 
+  endif
+endfunction
+
 set foldmethod=syntax
 set foldcolumn=0
 nnoremap <leader>z zMzvzz
-" Space to toggle folds.
-nnoremap <Enter> za
-vnoremap <Enter> za
+" Enter to toggle folds, unless in Quickfix
+nnoremap <silent> <CR> :call ToggleFold()<CR>
+vnoremap <silent> <CR> :call ToggleFold()<CR>
 " }}}
 
 " Change Case
