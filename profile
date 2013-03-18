@@ -30,4 +30,4 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH:$GROOVY_HOME/bin:$GRADLE_HOME/bin
 
 set -o vi
 source ~/perl5/perlbrew/etc/bashrc
-eval "$(rbenv init -)"
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
