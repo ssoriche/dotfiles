@@ -395,7 +395,6 @@ nmap <silent> <f4> :ErrorsToggle<cr>
 " }}}
 
 " Configure gitgutter {{{
-let g:gitgutter_all_on_focusgained = 0
 " }}}
 
 " Help File speedups, <enter> to follow tag, delete for back
