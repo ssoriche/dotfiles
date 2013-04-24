@@ -397,6 +397,12 @@ nmap <silent> <f4> :ErrorsToggle<cr>
 " Configure gitgutter {{{
 " }}}
 
+" Can autocomplete CSS classes etc with dashes. {{{
+" Also changes the "w" small word motion not to stop at dashes,
+" but use https://github.com/henrik/CamelCaseMotion for that.
+set iskeyword+=-
+" }}}
+
 " Help File speedups, <enter> to follow tag, delete for back
 au filetype help nnoremap <buffer><cr> <c-]>
 au filetype help nnoremap <buffer><bs> <c-T>
