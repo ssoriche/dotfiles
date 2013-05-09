@@ -70,6 +70,10 @@ nnoremap gl `.
 " Easier buffer swapping
 nnoremap <bs> <C-^>
 
+" Toggle line numbering
+set rnu!
+nnoremap <silent> <F7> :exe'se'&nu+&rnu?'rnu!':'nu'<CR>
+
 " Quickreturn
 inoremap <c-cr> <esc>A<cr>
 inoremap <s-cr> <esc>A:<cr>
