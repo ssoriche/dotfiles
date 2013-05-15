@@ -62,10 +62,6 @@
 	path = vim/bundle/vim-surround
 	url = git://github.com/tpope/vim-surround.git
         ignore = untracked
-[submodule "vim/bundle/vim-conque"]
-	path = vim/bundle/vim-conque
-	url = git://github.com/rson/vim-conque.git
-        ignore = untracked
 [submodule "vim/bundle/vim-ruby-sinatra"]
 	path = vim/bundle/vim-ruby-sinatra
 	url = git://github.com/hallison/vim-ruby-sinatra.git
