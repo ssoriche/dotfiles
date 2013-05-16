@@ -71,7 +71,8 @@ nnoremap gl `.
 nnoremap <bs> <C-^>
 
 " Toggle line numbering
-set rnu!
+set nonumber
+set relativenumber
 nnoremap <silent> <F7> :exe'se'&nu+&rnu?'rnu!':'nu'<CR>
 
 " Quickreturn
