@@ -53,7 +53,7 @@ map <leader>re :execute "edit " . $MYVIMRC<CR>
 map <leader>rs :execute "source " . $MYVIMRC<CR>
 
 set wildmode=list:longest,list:full
-set wildignore+=*.o,*.obj,.git,tmp,public/uploads,.vimtags,*.class
+set wildignore+=*.o,*.obj,.git,tmp,public/uploads,.vimtags,*.class,.DS_Store
 
 " Gundo configuration
 nnoremap <F5> :GundoToggle<CR>
