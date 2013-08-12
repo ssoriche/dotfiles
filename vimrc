@@ -318,6 +318,7 @@ let g:ctrlp_custom_ignore = {
 
 nnoremap <leader>. :CtrlPBufTag<cr>
 autocmd BufEnter,BufUnload * call ctrlp#mrufiles#list(expand('<abuf>', 1)) " sort the buffer list by last entered
+nnoremap <silent> <leader>g :let g:ctrlp_default_input = tolower(expand('<cword>'))<cr>:CtrlP<cr>
 " }}}
 
 " Next and Last {{{
