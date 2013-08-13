@@ -31,3 +31,4 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH:$GROOVY_HOME/bin:$GRADLE_HOME/bin
 set -o vi
 source ~/perl5/perlbrew/etc/bashrc
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+[[ -s "/Users/ssoriche/.rvm/scripts/rvm" ]] && source "/Users/ssoriche/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
