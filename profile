@@ -24,7 +24,7 @@ fi
 
 export COPYFILE_DISABLE=1
 export COPYFILE_EXTENDED_ATTRIBUTES_DISABLE=1
-export GROOVY_HOME=/usr/local/groovy
+export GROOVY_HOME=/usr/local/opt/groovy/libexec
 export GRADLE_HOME=/usr/local/gradle
 export PATH=$HOME/bin:/usr/local/bin:$PATH:$GROOVY_HOME/bin:$GRADLE_HOME/bin
 
