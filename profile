@@ -2,7 +2,7 @@
 export EDITOR=vi
 export LESS="-M -x 2 -R"
 #export LESSOPEN='| /opt/local/bin/lesspipe.sh %s'
-export MANPAGER="col -b | view -c 'set ft=man nomod nolist' -"
+export MANPAGER="col -b | vi -R -c 'set ft=man nomod nolist' -"
 export PAGER=less
 #export PAGER="view -"
 export VISUAL=vi
