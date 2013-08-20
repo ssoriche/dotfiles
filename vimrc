@@ -291,7 +291,7 @@ run SyntasticEnable perl
 let g:syntastic_ruby_exec = '~/.rbenv/shims/ruby'
 " }}}
 
-let g:Powerline_symbols = 'fancy'
+let g:airline_powerline_fonts = 1
 
 " CtrlP Settings {{{
 let g:ctrlp_match_window_bottom = 0
