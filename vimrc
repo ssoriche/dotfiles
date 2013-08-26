@@ -193,13 +193,13 @@ map <leader>u :call OpenURI()<CR>
 " AlignMap default for <leader>w= interferes with CamelCaseMotion
 autocmd VimEnter * unmap <leader>w=
 
-" Ack settings {{{
+" Ag settings {{{
 
-" Ack for the last search.
-nnoremap <silent> <leader>? :execute "Ack! '" . substitute(substitute(substitute(@/, "\\\\<", "\\\\b", ""), "\\\\>", "\\\\b", ""), "\\\\v", "", "") . "'"<CR>"'"'"
+" Ag for the last search.
+nnoremap <silent> <leader>? :execute "ag! '" . substitute(substitute(substitute(@/, "\\\\<", "\\\\b", ""), "\\\\>", "\\\\b", ""), "\\\\v", "", "") . "'"<CR>"'"'"
 " }}}
 
-" Ack/Quickfix windows
+" Quickfix windows
 map <leader>q :cclose<CR>
 " Previous fix and center line.
 map - :cprev<CR> zz
