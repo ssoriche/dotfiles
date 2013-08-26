@@ -2,9 +2,9 @@
 set lines=50 columns=136
 
 if has("gui_macvim")
-  " Command-Shift-F for Ack
+  " Command-Shift-F for Ag
   macmenu Window.Toggle\ Full\ Screen\ Mode key=<nop>
-  map <D-F> :Ack<space>
+  map <D-F> :Ag<space>
 
   " Command-e for ConqueTerm
   map <D-e> :call StartTerm()<CR>
