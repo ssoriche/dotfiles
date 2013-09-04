@@ -22,4 +22,4 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 export NODE_PATH=/usr/local/lib/node_modules
-source ~/perl5/perlbrew/etc/bashrc
+[[ -s "$HOME/perl5/perlbrew/etc/bashrc" ]] && source ~/perl5/perlbrew/etc/bashrc
