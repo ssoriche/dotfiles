@@ -40,7 +40,11 @@
   trustexitcode = true
 
 [merge]
-  tool = splice
+  tool = vim
+[mergetool "vim"]
+  cmd = "vim -f $MERGED"
+  trustExitCode = true
+  keepBackup = false
 [mergetool "splice"]
   cmd = "mvim -f $BASE $LOCAL $REMOTE $MERGED -c 'SpliceInit'"
   trustExitCode = true
