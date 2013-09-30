@@ -26,7 +26,7 @@ export COPYFILE_DISABLE=1
 export COPYFILE_EXTENDED_ATTRIBUTES_DISABLE=1
 export GROOVY_HOME=/usr/local/opt/groovy/libexec
 export GRADLE_HOME=/usr/local/gradle
-export PATH=$HOME/bin:/usr/local/bin:$PATH:$GROOVY_HOME/bin:$GRADLE_HOME/bin
+export PATH=$HOME/Applications/Postgres.app/Contents/MacOS/bin:$HOME/bin:/usr/local/bin:$PATH:$GROOVY_HOME/bin:$GRADLE_HOME/bin
 
 set -o vi
 [[ -s "$HOME/perl5/perlbrew/etc/bashrc" ]] && source ~/perl5/perlbrew/etc/bashrc
