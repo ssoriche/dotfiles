@@ -184,6 +184,3 @@
 [submodule "vim/bundle/vim-rspec"]
 	path = vim/bundle/vim-rspec
 	url = https://github.com/thoughtbot/vim-rspec.git
-[submodule "vim/bundle/vim-clever-f"]
-	path = vim/bundle/vim-clever-f
-	url = https://github.com/rhysd/clever-f.vim.git
