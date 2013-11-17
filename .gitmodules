@@ -122,10 +122,6 @@
 	path = vim/bundle/vim-ctrlp
 	url = https://github.com/kien/ctrlp.vim.git
         ignore = untracked
-[submodule "vim/bundle/vim-autotag"]
-	path = vim/bundle/vim-autotag
-	url = https://github.com/vim-scripts/AutoTag.git
-        ignore = untracked
 [submodule "vim/bundle/vim-coffee-script"]
 	path = vim/bundle/vim-coffee-script
 	url = https://github.com/kchmck/vim-coffee-script.git
@@ -184,3 +180,6 @@
 [submodule "vim/bundle/vim-rspec"]
 	path = vim/bundle/vim-rspec
 	url = https://github.com/thoughtbot/vim-rspec.git
+[submodule "vim/bundle/vim-autotag"]
+	path = vim/bundle/vim-autotag
+	url = https://github.com/craigemery/vim-autotag.git
