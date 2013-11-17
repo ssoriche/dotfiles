@@ -180,6 +180,3 @@
 [submodule "vim/bundle/vim-rspec"]
 	path = vim/bundle/vim-rspec
 	url = https://github.com/thoughtbot/vim-rspec.git
-[submodule "vim/bundle/vim-autotag"]
-	path = vim/bundle/vim-autotag
-	url = https://github.com/craigemery/vim-autotag.git
