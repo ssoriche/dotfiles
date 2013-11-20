@@ -424,6 +424,8 @@ au filetype help set nonumber
 set splitbelow " Split windows, ie Help, make more sense to me below
 au filetype help wincmd _ " Maximze the help on open
 
+au FileType gitcommit setlocal spell
+
 " Navigate Tabs {{{
 map <D-S-]> gt
 map <D-S-[> gT
