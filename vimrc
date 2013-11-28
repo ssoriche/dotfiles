@@ -447,3 +447,5 @@ au ColorScheme * highlight ExtraWhitespace guibg=DarkCyan ctermbg=Blue
 au BufWinEnter * match ExtraWhitespace /\s\+$\| \+\ze\t/
 au BufWrite * match ExtraWhitespace /\s\+$\| \+\ze\t/
 " }}}
+
+runtime macros/matchit.vim
