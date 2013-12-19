@@ -27,6 +27,8 @@ if has("gui_macvim")
   map <D-Up> <c-w>k<c-w>_
   map <D-Down> <c-w>j<c-w>_
 
+  nmap <silent> <leader>h <Plug>DashSearch
+  nmap <silent> <leader>H <Plug>DashGlobalSearch
 endif
 
 
