@@ -35,3 +35,5 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 [[ -s "/Users/ssoriche/.rvm/scripts/rvm" ]] && source "/Users/ssoriche/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 alias gs='git status -uno'
+alias gsdiff='show $(git stash list | cut -d":" -f 1)")'
+alias gmt='git mergetool'
