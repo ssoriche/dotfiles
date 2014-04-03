@@ -36,4 +36,3 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 alias gs='git status -uno'
 alias gsdiff='show $(git stash list | cut -d":" -f 1)")'
-alias gmt='git mergetool'
