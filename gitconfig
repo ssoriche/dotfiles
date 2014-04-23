@@ -20,7 +20,7 @@
   ci = commit -v
   cl = clean -dfx
   cc = cherry-pick
-  fx = commit -a --amend -C HEAD
+  fx = commit --no-edit --amend -C HEAD
   st = status -uno
   mt = mergetool
   hist = log --all --graph --pretty='[%C(cyan)%h%Creset]%C(bold cyan)%d%Creset %s'
