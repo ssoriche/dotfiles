@@ -1,7 +1,9 @@
 ## generic boring crap
 export EDITOR=vi
 export LESS="-M -x 2 -R"
-#export LESSOPEN='| /opt/local/bin/lesspipe.sh %s'
+if [ -x /usr/local/bin/src-hilite-lesspipe.sh ]; then
+  export LESSOPEN='| /usr/local/bin/src-hilite-lesspipe.sh %s'
+fi
 export MANPAGER="col -b | view -c 'set ft=man nomod nolist' -"
 export PAGER=less
 #export PAGER="view -"
