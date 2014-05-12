@@ -94,10 +94,6 @@
 	path = vim/bundle/vim-colors-solarized
 	url = https://github.com/altercation/vim-colors-solarized
         ignore = untracked
-[submodule "vim/bundle/vim-jslint"]
-	path = vim/bundle/vim-jslint
-	url = https://github.com/csexton/jslint.vim.git
-        ignore = untracked
 [submodule "vim/bundle/vim-easymotion"]
 	path = vim/bundle/vim-easymotion
 	url = https://github.com/Lokaltog/vim-easymotion.git
