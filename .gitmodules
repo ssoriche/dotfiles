@@ -138,14 +138,6 @@
 	path = vim/bundle/vim-addon-mw-utils
 	url = https://github.com/MarcWeber/vim-addon-mw-utils.git
         ignore = untracked
-[submodule "vim/bundle/snipmate-snippets"]
-	path = vim/bundle/snipmate-snippets
-	url = https://github.com/ssoriche/snipmate-snippets.git
-        ignore = untracked
-[submodule "vim/bundle/snipmate"]
-	path = vim/bundle/snipmate
-	url = https://github.com/garbas/vim-snipmate.git
-        ignore = untracked
 [submodule "vim/bundle/vim-recover"]
 	path = vim/bundle/vim-recover
 	url = https://github.com/chrisbra/Recover.vim.git
