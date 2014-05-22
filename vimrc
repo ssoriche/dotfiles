@@ -448,4 +448,10 @@ au BufWinEnter * match ExtraWhitespace /\s\+$\| \+\ze\t/
 au BufWrite * match ExtraWhitespace /\s\+$\| \+\ze\t/
 " }}}
 
+" UltiSnips {{{
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+" }}}
+
 runtime macros/matchit.vim
