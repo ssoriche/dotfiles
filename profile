@@ -37,3 +37,5 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 [[ -s "/Users/ssoriche/.rvm/scripts/rvm" ]] && source "/Users/ssoriche/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 alias gsdiff='git show $(git stash list | cut -d":" -f 1)'
+
+[ -r "$HOME/.smartcd_config" ] && ( [ -n $BASH_VERSION ] || [ -n $ZSH_VERSION ] ) && source ~/.smartcd_config
