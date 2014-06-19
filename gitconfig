@@ -27,6 +27,7 @@
   uncommit = reset --soft HEAD^
   unstage = reset HEAD
   standup = shortlog --since=yesterday
+  sdiff = "!git show $(git stash list | cut -d\":\" -f 1)"
 [push]
 	default = current
 
