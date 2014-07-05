@@ -48,6 +48,9 @@ let localleader = "\\"
 " Set completion configration
 set completeopt=menu,longest
 
+" Set diff options
+set diffopt+=vertical
+
 " easy access to vim modifications
 map <leader>re :execute "edit " . $MYVIMRC<CR>
 map <leader>rs :execute "source " . $MYVIMRC<CR>
