@@ -1,5 +1,3 @@
-source ~/.profile
-
 autoload -U colors
 export HISTFILE=~/.zhistory
 export HISTSIZE=3000
