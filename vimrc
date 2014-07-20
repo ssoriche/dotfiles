@@ -82,6 +82,10 @@ nnoremap <silent> <F7> :exe'se'&nu+&rnu?'rnu!':'nu'<CR>
 inoremap <c-cr> <esc>A<cr>
 inoremap <s-cr> <esc>A:<cr>
 
+" Easy Macro Application
+nnoremap Q @q
+vnoremap Q :norm @q<cr>
+
 " Configure leader for easymotion
 let g:EasyMotion_leader_key = '<Leader>m'
 
