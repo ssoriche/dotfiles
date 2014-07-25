@@ -2,6 +2,7 @@
 .vimtags
 .gitignore
 *.orig
+Session.vim
 
 # iPhone development
 # http://www.adminmyserver.com/articles/gitignore-for-iphone-xcode-development
