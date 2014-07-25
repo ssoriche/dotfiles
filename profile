@@ -31,6 +31,11 @@ export GRADLE_HOME=/usr/local/gradle
 export PATH=/Applications/Postgres.app/Contents/Versions/9.3/bin:$HOME/bin:/usr/local/bin:$PATH:$GROOVY_HOME/bin:$GRADLE_HOME/bin
 export NODE_PATH=/usr/local/lib/node_modules
 
+if [[ -e "/usr/local/instantclient_11_2" ]]; then
+  export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:/usr/local/instantclient_11_2
+  export PATH=$PATH:/usr/local/instantclient_11_2
+fi
+
 set -o vi
 [[ -s "$HOME/perl5/perlbrew/etc/bashrc" ]] && source ~/perl5/perlbrew/etc/bashrc
 if which plenv > /dev/null; then eval "$(plenv init -)"; fi
