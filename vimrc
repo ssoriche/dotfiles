@@ -128,10 +128,6 @@ noremap S :w<CR>
 " Make Y consistent with C and D - yank to end of line, not full line.
 nnoremap Y y$
 
-" Map Q to something useful (e.g. QQ to hard-break current line).
-" Otherwise Q enters the twilight zone of the 'Ex' mode.
-noremap Q gq
-
 " Inserts the path of the currently edited file into a command
 " Command mode: Ctrl+P
 cmap <C-P> <C-R>=expand("%:p:h") . "/" <CR>
