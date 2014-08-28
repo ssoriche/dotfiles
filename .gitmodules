@@ -227,3 +227,6 @@
 [submodule "vim/bundle/NrrwRgn"]
 	path = vim/bundle/NrrwRgn
 	url = https://github.com/chrisbra/NrrwRgn.git
+[submodule "vim/bundle/vim-goldenview"]
+	path = vim/bundle/vim-goldenview
+	url = https://github.com/zhaocai/GoldenView.Vim.git
