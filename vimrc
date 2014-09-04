@@ -222,6 +222,17 @@ nmap <leader><right>  :rightbelow vsp<CR>
 nmap <leader><up>     :leftabove  sp<CR>
 nmap <leader><down>   :rightbelow sp<CR>
 
+" {{{ Leader shortcuts for system clipboard
+vmap <leader>y "+y
+vmap <leader>d "+d
+nmap <leader>y "+y
+nmap <leader>d "+d
+nmap <leader>p "+p
+nmap <leader>P "+P
+vmap <leader>p "+p
+vmap <leader>P "+P
+" }}}
+
 " Invisible characters
 set listchars=trail:.,tab:>-,eol:$
 set nolist
