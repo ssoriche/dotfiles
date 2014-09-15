@@ -230,3 +230,6 @@
 [submodule "vim/bundle/vim-goldenview"]
 	path = vim/bundle/vim-goldenview
 	url = https://github.com/zhaocai/GoldenView.Vim.git
+[submodule "vim/bundle/YouCompleteMe"]
+	path = vim/bundle/YouCompleteMe
+	url = https://github.com/Valloric/YouCompleteMe.git
