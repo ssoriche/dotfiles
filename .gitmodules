@@ -209,27 +209,36 @@
 [submodule "vim/bundle/vim-dirdiff"]
 	path = vim/bundle/vim-dirdiff
 	url = https://github.com/vim-scripts/DirDiff.vim.git
+        ignore = untracked
 [submodule "vim/bundle/ultisnips"]
 	path = vim/bundle/ultisnips
 	url = https://github.com/SirVer/ultisnips.git
+        ignore = untracked
 [submodule "vim/bundle/vim-splitjoin"]
 	path = vim/bundle/vim-splitjoin
 	url = https://github.com/AndrewRadev/splitjoin.vim
+        ignore = untracked
 [submodule "vim/bundle/vim-sleuth"]
 	path = vim/bundle/vim-sleuth
 	url = https://github.com/tpope/vim-sleuth.git
+        ignore = untracked
 [submodule "vim/bundle/vim-node"]
 	path = vim/bundle/vim-node
 	url = https://github.com/moll/vim-node.git
+        ignore = untracked
 [submodule "vim/bundle/vim-obsession"]
 	path = vim/bundle/vim-obsession
 	url = https://github.com/tpope/vim-obsession.git
+        ignore = untracked
 [submodule "vim/bundle/NrrwRgn"]
 	path = vim/bundle/NrrwRgn
 	url = https://github.com/chrisbra/NrrwRgn.git
+        ignore = untracked
 [submodule "vim/bundle/vim-goldenview"]
 	path = vim/bundle/vim-goldenview
 	url = https://github.com/zhaocai/GoldenView.Vim.git
+        ignore = untracked
 [submodule "vim/bundle/YouCompleteMe"]
 	path = vim/bundle/YouCompleteMe
 	url = https://github.com/Valloric/YouCompleteMe.git
+        ignore = untracked
