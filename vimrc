@@ -455,6 +455,11 @@ map <D-9> 9gt
 map <D-0> :tablast<CR>
 " }}}
 
+" YouCompleteMe {{{
+let g:ycm_key_list_select_completion = ['<Down>']
+let g:ycm_key_list_previous_completion = ['<Up>']
+" }}}
+
 " Highlight trailing whitespace {{{
 highlight ExtraWhitespace guibg=DarkCyan ctermbg=Blue
 au ColorScheme * highlight ExtraWhitespace guibg=DarkCyan ctermbg=Blue
