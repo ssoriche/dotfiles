@@ -50,7 +50,7 @@ set guioptions=egmrt
 " Default gui color scheme
 set background=dark
 " colorscheme solarized
-colorscheme jellybeans    " Default color scheme.
+colorscheme dracula    " Default color scheme.
 set transparency=4
 
 " Highlight the current line

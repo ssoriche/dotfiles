@@ -19,7 +19,7 @@ set hidden                 " Allow unsaved buffers to be put in the background
 set shellcmdflag=-lc " Shell is to act as a login shell thus setting the evironment properly
 
 " set up colorscheme
-colorscheme jellybeans    " Default color scheme.
+colorscheme dracula    " Default color scheme.
 set background=dark
 
 " 2 spaces indent.
