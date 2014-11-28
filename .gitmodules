@@ -245,3 +245,6 @@
 [submodule "vim/bundle/vim-easy-align"]
 	path = vim/bundle/vim-easy-align
 	url = https://github.com/junegunn/vim-easy-align.git
+[submodule "Themes/dracula-theme"]
+	path = Themes/dracula-theme
+	url = https://github.com/zenorocha/dracula-theme/

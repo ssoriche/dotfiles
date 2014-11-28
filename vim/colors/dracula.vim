@@ -1,0 +1,1 @@
+/Users/ssoriche/.dotfiles/Themes/dracula-theme/vim/dracula.vim
