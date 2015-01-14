@@ -40,6 +40,7 @@ set nojoinspaces                " 1 space, not 2, when joining sentences.
 set backspace=indent,eol,start  " Allow backspacing over everything in insert mode.
 
 set nowrap   " don't wrap for anything
+set nosol    " Do not move cursor to first non-blank of the line
 
 " Leader
 let mapleader = " "
