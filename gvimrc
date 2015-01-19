@@ -36,8 +36,12 @@ endif
 "
 " set guifont=Menlo\ Regular:h11
 set guifont=Menlo\ for\ Powerline:h11
-let g:Powerline_symbols = 'fancy'
 set antialias anti
+
+" {{{ Airline Configuration
+let g:Powerline_symbols = 'fancy'
+let g:airline_theme='bubblegum'
+" }}}
 
 " GUI Options
 " e - Add tab pages
