@@ -248,3 +248,9 @@
 [submodule "Themes/dracula-theme"]
 	path = Themes/dracula-theme
 	url = https://github.com/zenorocha/dracula-theme/
+[submodule "vim/bundle/vim-atom-dark"]
+	path = vim/bundle/vim-atom-dark
+	url = https://github.com/gosukiwi/vim-atom-dark.git
+[submodule "Themes/iterm-colors"]
+	path = Themes/iterm-colors
+	url = https://github.com/bahlo/iterm-colors.git
