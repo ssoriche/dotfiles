@@ -297,8 +297,6 @@ if has("autocmd") && has("gui_macvim")
 endif
 
 au BufNewFile,BufRead *.gradle setf groovy
-au BufNewFile,BufRead *.spl setf sql
-au BufNewFile,BufRead *.btq setf sql
 au BufRead,BufNewFile *.t set filetype=perl | compiler perlprove
 
 " Syntastic Settings {{{
@@ -481,6 +479,12 @@ vmap <Leader>a <Plug>(EasyAlign)
 
 " Start interactive EasyAlign for a motion/text object (e.g. <Leader>aip)
 nmap <Leader>a <Plug>(EasyAlign)
+" }}}
+
+" SQL {{{
+let g:sql_type_default = 'sqlany'
+au BufNewFile,BufRead *.spl setf sql
+au BufNewFile,BufRead *.btq setf sql
 " }}}
 
 runtime macros/matchit.vim
