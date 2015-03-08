@@ -254,3 +254,6 @@
 [submodule "Themes/iterm-colors"]
 	path = Themes/iterm-colors
 	url = https://github.com/bahlo/iterm-colors.git
+[submodule "vim/bundle/vim-hybrid"]
+	path = vim/bundle/vim-hybrid
+	url = https://github.com/w0ng/vim-hybrid.git
