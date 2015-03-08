@@ -40,7 +40,7 @@ set antialias anti
 
 " {{{ Airline Configuration
 let g:Powerline_symbols = 'fancy'
-let g:airline_theme='bubblegum'
+let g:airline_theme='tomorrow'
 " }}}
 
 " GUI Options
@@ -54,7 +54,7 @@ set guioptions=egmrt
 " Default gui color scheme
 set background=dark
 " colorscheme solarized
-colorscheme atom-dark-256  " Default color scheme.
+colorscheme hybrid  " Default color scheme.
 set transparency=4
 
 " Highlight the current line

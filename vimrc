@@ -19,7 +19,7 @@ set hidden                 " Allow unsaved buffers to be put in the background
 set shellcmdflag=-lc " Shell is to act as a login shell thus setting the evironment properly
 
 " set up colorscheme
-colorscheme atom-dark-256  " Default color scheme.
+colorscheme hybrid  " Default color scheme.
 set background=dark
 
 " 2 spaces indent.
@@ -305,7 +305,10 @@ let g:syntastic_perl_interpreter = '~/.plenv/shims/perl'
 let g:syntastic_ruby_exec = '~/.rbenv/shims/ruby'
 " }}}
 
+" Airline Settings {{{
 let g:airline_powerline_fonts = 1
+let g:airline_theme='tomorrow'
+" }}}
 
 " CtrlP Settings {{{
 let g:ctrlp_match_window_bottom = 0
