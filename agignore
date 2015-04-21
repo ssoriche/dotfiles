@@ -1,0 +1,17 @@
+.git
+.svn
+node_modules
+.DS_Store
+.vimtags
+.gitignore
+*.orig
+Session.vim
+build
+*.[oa]
+*~.nib
+*.swp
+*~
+*.mode1v3
+*.mode2v3
+*.pbxuser
+*.perspectivev3
