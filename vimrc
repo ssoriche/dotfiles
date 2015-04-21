@@ -343,6 +343,8 @@ function! CtrlpSeed()
 endfunction
 
 nnoremap <silent> <leader>g :call CtrlpSeed()<cr>
+let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden
+      \ -g ""'
 " }}}
 
 " Next and Last {{{
