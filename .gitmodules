@@ -245,18 +245,24 @@
 [submodule "vim/bundle/vim-easy-align"]
 	path = vim/bundle/vim-easy-align
 	url = https://github.com/junegunn/vim-easy-align.git
+        ignore = untracked
 [submodule "Themes/dracula-theme"]
 	path = Themes/dracula-theme
 	url = https://github.com/zenorocha/dracula-theme/
+        ignore = untracked
 [submodule "vim/bundle/vim-atom-dark"]
 	path = vim/bundle/vim-atom-dark
 	url = https://github.com/gosukiwi/vim-atom-dark.git
+        ignore = untracked
 [submodule "Themes/iterm-colors"]
 	path = Themes/iterm-colors
 	url = https://github.com/bahlo/iterm-colors.git
+        ignore = untracked
 [submodule "vim/bundle/vim-hybrid"]
 	path = vim/bundle/vim-hybrid
 	url = https://github.com/w0ng/vim-hybrid.git
+        ignore = untracked
 [submodule "vim/bundle/vim-gutentags"]
 	path = vim/bundle/vim-gutentags
 	url = https://github.com/ludovicchabant/vim-gutentags.git
+        ignore = untracked
