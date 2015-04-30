@@ -10,13 +10,6 @@ export PAGER=less
 export VISUAL=vi
 export CLICOLOR=1
 
-# Create aliases so that console vi/vim uses MacVim
-if [[ -e "$HOME/Applications/MacVim.app/Contents/MacOS/Vim" ]]; then
-  alias vi=$HOME/Applications/MacVim.app/Contents/MacOS/Vim 
-  alias vim=$HOME/Applications/MacVim.app/Contents/MacOS/Vim 
-fi
-
-
 ## load all my custom functions
 #for i in ~/.sh/functions/*; do
 # . $i
