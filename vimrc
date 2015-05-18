@@ -490,4 +490,9 @@ au BufNewFile,BufRead *.spl setf sql
 au BufNewFile,BufRead *.btq setf sql
 " }}}
 
+" Sayonara {{{
+nnoremap gs :Sayonara<cr>
+nnoremap gS :Sayonara!<cr>
+" }}}
+
 runtime macros/matchit.vim
