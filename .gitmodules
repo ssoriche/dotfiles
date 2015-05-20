@@ -262,10 +262,6 @@
 	path = vim/bundle/vim-hybrid
 	url = https://github.com/w0ng/vim-hybrid.git
         ignore = untracked
-[submodule "vim/bundle/vim-gutentags"]
-	path = vim/bundle/vim-gutentags
-	url = https://github.com/ludovicchabant/vim-gutentags.git
-        ignore = untracked
 [submodule "vim/bundle/vim-sayonara"]
 	path = vim/bundle/vim-sayonara
 	url = https://github.com/mhinz/vim-sayonara.git
