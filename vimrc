@@ -445,9 +445,6 @@ au FileType gitcommit setlocal spell
 autocmd CmdwinEnter * nnoremap <buffer> <cr> <cr>
 " Have <esc> leave cmdline-window
 autocmd CmdwinEnter * nnoremap <buffer> <esc> :q<cr>
-
-" Faster access to cedit.
-execute "nnoremap g; :" . &cedit
 " }}}
 
 " Navigate Tabs {{{
