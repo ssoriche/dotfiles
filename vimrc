@@ -498,5 +498,31 @@ au BufNewFile,BufRead *.btq setf sql
 nnoremap gs :Sayonara<cr>
 nnoremap gS :Sayonara!<cr>
 " }}}
+"
+function! OpenChangedFiles()
+  only " Close all windows, unless they're modified
+
+  let status = system('git status -s | grep "^ \?\(M\|A\)" | cut -d " " -f 3')
+  let filenames = split(status, "\n")
+  let topdir = split(system('git rev-parse --show-toplevel'), "\n")[0]
+
+  if len(filenames) < 1
+    let status = system('git show --pretty="format:" --name-only')
+    let filenames = split(status, "\n")
+  endif
+
+  exec "edit " . topdir . "/" . filenames[0]
+
+  for filename in filenames[1:]
+    if len(filenames) > 4
+      exec "tabedit " . topdir . "/" . filename
+    else
+      exec "sp " . topdir . "/" . filename
+    endif
+  endfor
+endfunction
+command! OpenChangedFiles :call OpenChangedFiles()
+noremap<Leader>O :OpenChangedFiles <CR>
 
 runtime macros/matchit.vim
+"
