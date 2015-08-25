@@ -4,7 +4,12 @@ export LESS="-M -x 2 -R"
 if [ -x /usr/local/bin/src-hilite-lesspipe.sh ]; then
   export LESSOPEN='| /usr/local/bin/src-hilite-lesspipe.sh %s'
 fi
-export MANPAGER="col -b | view -c 'set ft=man nomod nolist' -"
+
+export MANPAGER="/bin/sh -c \"unset PAGER;col -b -x | \
+    vim -R -c 'set ft=man nomod nolist' -c 'map q :q<CR>' \
+    -c 'map <SPACE> <C-D>' -c 'map b <C-U>' \
+    -c 'nmap K :Man <C-R>=expand(\\\"<cword>\\\")<CR><CR>' -\""
+
 export PAGER=less
 #export PAGER="view -"
 export VISUAL=vi
