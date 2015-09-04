@@ -26,6 +26,10 @@
   hist = log --all --graph --pretty='[%C(cyan)%h%Creset]%C(bold cyan)%d%Creset %s'
   uncommit = reset --soft HEAD^
   unstage = reset HEAD
+  undo = reset HEAD~1 --mixed
+  save = !git add -A && git commit -m 'SAVEPOINT'
+  wip = commit -am "WIP"
+  wipe = !git add -A && git commit -qm 'WIPE SAVEPOINT' && git reset HEAD~1 --hard
   standup = shortlog --since=yesterday
   sdiff = "!git show $(git stash list | cut -d\":\" -f 1)"
 [push]
