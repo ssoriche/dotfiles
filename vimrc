@@ -87,6 +87,10 @@ inoremap <s-cr> <esc>A:<cr>
 nnoremap Q @q
 vnoremap Q :norm @q<cr>
 
+" Proper command mode navigation
+cnoremap <c-k> <up>
+cnoremap <c-j> <down>
+
 " Configure leader for easymotion
 let g:EasyMotion_leader_key = '<Leader>m'
 
