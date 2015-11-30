@@ -18,12 +18,10 @@ Plug 'tpope/vim-unimpaired'
 Plug 'w0ng/vim-hybrid'
 Plug 'bling/vim-airline'
 Plug 'airblade/vim-gitgutter'
+Plug 'Shougo/deoplete.nvim'
 
 " Considering
 " Plug 'svermeulen/vim-easyclip'
-
-Plug 'Valloric/YouCompleteMe', { 'for': 'cpp', 'do': './install.sh' }
-autocmd! User YouCompleteMe call youcompleteme#Enable()
 
 call plug#end()
 " }}}
@@ -88,3 +86,5 @@ augroup END
 " }}}
 " }}}
 
+
+let g:deoplete#enable_at_startup = 1
