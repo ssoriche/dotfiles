@@ -15,6 +15,7 @@ Plug 'tpope/vim-unimpaired'
 
 " }}}
 
+Plug 'ctrlpvim/ctrlp.vim'
 Plug 'w0ng/vim-hybrid'
 Plug 'bling/vim-airline'
 Plug 'airblade/vim-gitgutter'
@@ -86,5 +87,26 @@ augroup END
 " }}}
 " }}}
 
+" ctrlp settings {{{
+let g:ctrlp_cmd = 'CtrlPBuffer'
+let g:ctrlp_match_window = 'top,order:ttb,min:1,max:20,results:20'
+let g:ctrlp_map = '<leader><space>'
+let g:ctrlp_mruf_relative = 1
+let g:ctrlp_custom_ignore = {
+  \ 'dir': 'build\|target\|bin'
+  \ }
+
+nnoremap <leader>. :CtrlPBufTag<cr>
+
+function! CtrlpSeed()
+  :let g:ctrlp_default_input = tolower(expand('<cword>'))
+  :CtrlP
+  :let g:ctrlp_default_input = ''
+endfunction
+
+nnoremap <silent> <leader>g :call CtrlpSeed()<cr>
+let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden
+      \ -g ""'
+" }}}
 
 let g:deoplete#enable_at_startup = 1
