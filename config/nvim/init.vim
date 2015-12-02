@@ -49,6 +49,32 @@ set softtabstop=2
 set shiftwidth=2
 set expandtab
 
+" Hate wrapping, never do it
+set nowrap
+
+" Searching.
+set ignorecase  " Case-insensitive…
+set smartcase   " …unless phrase includes uppercase.
+
+" Easier buffer swapping
+nnoremap <bs> <C-^>
+
+" Easy Macro Application
+nnoremap Q @q
+vnoremap Q :norm @q<cr>
+
+" Proper command mode navigation
+cnoremap <c-k> <up>
+cnoremap <c-j> <down>
+
+" Toggle paste
+set pastetoggle=<F8>
+
+" Use sane regexes
+autocmd VimEnter * nnoremap / /\v
+vnoremap / /\v
+
+
 " {{{ Leader shortcuts for system clipboard
 vmap <leader>y "+y
 vmap <leader>d "+d
