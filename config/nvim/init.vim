@@ -21,6 +21,7 @@ Plug 'w0ng/vim-hybrid'
 Plug 'bling/vim-airline'
 Plug 'airblade/vim-gitgutter'
 Plug 'Shougo/deoplete.nvim'
+Plug 'wincent/ferret'
 
 " Considering
 " Plug 'svermeulen/vim-easyclip'
