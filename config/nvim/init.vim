@@ -4,6 +4,7 @@ call plug#begin('~/.config/nvim/plugged')
 " the tpope section {{{
 
 Plug 'tpope/vim-sensible'
+Plug 'tpope/vim-sleuth'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
