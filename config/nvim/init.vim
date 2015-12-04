@@ -52,9 +52,17 @@ set expandtab
 " Hate wrapping, never do it
 set nowrap
 
-" Searching.
+" Searching. {{{
+" Use sane regexes
+autocmd VimEnter * nnoremap / /\v
+vnoremap / /\v
+
 set ignorecase  " Case-insensitive…
 set smartcase   " …unless phrase includes uppercase.
+
+" Un-highlight search matches
+nnoremap <leader>/ :noh<CR>
+" }}}
 
 " Easier buffer swapping
 nnoremap <bs> <C-^>
@@ -70,9 +78,6 @@ cnoremap <c-j> <down>
 " Toggle paste
 set pastetoggle=<F8>
 
-" Use sane regexes
-autocmd VimEnter * nnoremap / /\v
-vnoremap / /\v
 
 
 " {{{ Leader shortcuts for system clipboard
