@@ -80,6 +80,12 @@ cnoremap <c-j> <down>
 set pastetoggle=<F8>
 
 
+" Help File speedups, <enter> to follow tag, delete for back {{{
+au filetype help nnoremap <buffer><cr> <c-]>
+au filetype help nnoremap <buffer><bs> <c-T>
+au filetype help nnoremap <buffer>q :q<CR>
+au filetype help set nonumber
+" }}}
 
 " {{{ Leader shortcuts for system clipboard
 vmap <leader>y "+y
