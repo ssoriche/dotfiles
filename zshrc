@@ -16,7 +16,7 @@ export DISABLE_AUTO_UPDATE="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git osx vim-mode svn cpanm brew perl autojump)
+plugins=(git osx vim-mode svn cpanm brew perl autojump git-extras gradle npm node)
 
 source $ZSH/oh-my-zsh.sh
 
