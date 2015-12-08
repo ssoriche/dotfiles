@@ -23,6 +23,7 @@ Plug 'bling/vim-airline'
 Plug 'airblade/vim-gitgutter'
 Plug 'Shougo/deoplete.nvim'
 Plug 'wincent/ferret'
+Plug 'Raimondi/delimitMate'
 
 " Considering
 " Plug 'svermeulen/vim-easyclip'
