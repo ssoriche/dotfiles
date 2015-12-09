@@ -139,6 +139,7 @@ let g:ctrlp_custom_ignore = {
   \ 'dir': 'build\|target\|bin'
   \ }
 
+autocmd BufEnter,BufUnload * call ctrlp#mrufiles#list(expand('<abuf>', 1)) " sort the buffer list by last entered
 nnoremap <leader>. :CtrlPBufTag<cr>
 
 function! CtrlpSeed()
