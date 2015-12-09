@@ -80,6 +80,8 @@ cnoremap <c-j> <down>
 " Toggle paste
 set pastetoggle=<F8>
 
+" Set iTerm title
+set title
 
 " Help File speedups, <enter> to follow tag, delete for back {{{
 au filetype help nnoremap <buffer><cr> <c-]>
