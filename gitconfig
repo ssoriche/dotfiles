@@ -57,3 +57,6 @@
   keepBackup = false
 [diff]
 	tool = vimdiff
+[rerere]
+	enabled = true
+	autoupdate = true
