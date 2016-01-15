@@ -24,6 +24,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'Shougo/deoplete.nvim'
 Plug 'wincent/ferret'
 Plug 'Raimondi/delimitMate'
+Plug 'chriskempson/tomorrow-theme', { 'rtp': 'vim'}
 
 " Considering
 " Plug 'svermeulen/vim-easyclip'
