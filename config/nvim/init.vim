@@ -35,7 +35,7 @@ call plug#end()
 let g:python_host_prog = '/usr/local/bin/python'
 
 set background=dark
-colorscheme hybrid
+colorscheme Tomorrow-Night-Bright
 set hidden                 " Allow unsaved buffers to be put in the background
 
 " Leader
