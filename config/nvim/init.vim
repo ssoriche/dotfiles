@@ -24,7 +24,7 @@ Plug 'morhetz/gruvbox'
 " }}}
 "
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'bling/vim-airline'
+Plug 'vim-airline/vim-airline'
 Plug 'airblade/vim-gitgutter'
 Plug 'Shougo/deoplete.nvim'
 Plug 'wincent/ferret'
