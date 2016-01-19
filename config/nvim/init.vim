@@ -21,6 +21,8 @@ Plug 'tpope/vim-vinegar'
 Plug 'w0ng/vim-hybrid'
 Plug 'chriskempson/tomorrow-theme', { 'rtp': 'vim'}
 Plug 'morhetz/gruvbox'
+Plug 'joshdick/onedark.vim'
+Plug 'joshdick/airline-onedark.vim'
 " }}}
 "
 Plug 'ctrlpvim/ctrlp.vim'
