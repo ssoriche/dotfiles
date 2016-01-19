@@ -25,6 +25,7 @@ Plug 'Shougo/deoplete.nvim'
 Plug 'wincent/ferret'
 Plug 'Raimondi/delimitMate'
 Plug 'chriskempson/tomorrow-theme', { 'rtp': 'vim'}
+Plug 'morhetz/gruvbox'
 
 " Considering
 " Plug 'svermeulen/vim-easyclip'
@@ -36,7 +37,7 @@ let g:python_host_prog = '/usr/local/bin/python'
 let g:python3_host_prog = '/usr/local/bin/python3'
 
 set background=dark
-colorscheme Tomorrow-Night-Bright
+colorscheme gruvbox
 set hidden                 " Allow unsaved buffers to be put in the background
 
 " Leader
@@ -105,7 +106,7 @@ vmap <leader>P "+P
 
 " Airline Settings {{{
 let g:airline_powerline_fonts = 1
-let g:airline_theme='tomorrow'
+let g:airline_theme='gruvbox'
 " }}}
 
 " Setup folding {{{
