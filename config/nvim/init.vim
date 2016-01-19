@@ -17,15 +17,19 @@ Plug 'tpope/vim-vinegar'
 
 " }}}
 
-Plug 'ctrlpvim/ctrlp.vim'
+" colour schemes {{{
 Plug 'w0ng/vim-hybrid'
+Plug 'chriskempson/tomorrow-theme', { 'rtp': 'vim'}
+Plug 'morhetz/gruvbox'
+" }}}
+"
+Plug 'ctrlpvim/ctrlp.vim'
 Plug 'bling/vim-airline'
 Plug 'airblade/vim-gitgutter'
 Plug 'Shougo/deoplete.nvim'
 Plug 'wincent/ferret'
 Plug 'Raimondi/delimitMate'
-Plug 'chriskempson/tomorrow-theme', { 'rtp': 'vim'}
-Plug 'morhetz/gruvbox'
+
 
 " Considering
 " Plug 'svermeulen/vim-easyclip'
