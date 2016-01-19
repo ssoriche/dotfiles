@@ -270,3 +270,6 @@
 	path = vim/bundle/vim-jsbeautify
 	url = https://github.com/maksimr/vim-jsbeautify.git
         ignore = untracked
+[submodule "vim/bundle/vim-onedark"]
+	path = vim/bundle/vim-onedark
+	url = https://github.com/joshdick/onedark.vim
