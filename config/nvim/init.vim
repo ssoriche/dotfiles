@@ -32,9 +32,9 @@ Plug 'Shougo/deoplete.nvim'
 Plug 'wincent/ferret'
 Plug 'Raimondi/delimitMate'
 
-
 " Considering
 " Plug 'svermeulen/vim-easyclip'
+Plug 'wellle/visual-split.vim'
 
 call plug#end()
 " }}}
