@@ -36,6 +36,9 @@ Plug 'Raimondi/delimitMate'
 " Considering
 " Plug 'svermeulen/vim-easyclip'
 Plug 'wellle/visual-split.vim'
+Plug 'justinmk/vim-dirvish'
+Plug 'mbbill/undotree'
+Plug 'scrooloose/syntastic'
 
 call plug#end()
 " }}}
@@ -161,6 +164,10 @@ endfunction
 nnoremap <silent> <leader>g :call CtrlpSeed()<cr>
 let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden
       \ -g ""'
+" }}}
+
+" undotree {{{
+nnoremap <F5> :UndotreeToggle<cr>
 " }}}
 
 let g:deoplete#enable_at_startup = 1
