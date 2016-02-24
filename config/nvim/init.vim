@@ -32,13 +32,13 @@ Plug 'airblade/vim-gitgutter'
 Plug 'Shougo/deoplete.nvim'
 Plug 'wincent/ferret'
 Plug 'Raimondi/delimitMate'
+Plug 'benekastah/neomake'
 
 " Considering
 " Plug 'svermeulen/vim-easyclip'
 Plug 'wellle/visual-split.vim'
 Plug 'justinmk/vim-dirvish'
 Plug 'mbbill/undotree'
-Plug 'scrooloose/syntastic'
 
 call plug#end()
 " }}}
@@ -168,6 +168,10 @@ let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden
 
 " undotree {{{
 nnoremap <F5> :UndotreeToggle<cr>
+" }}}
+
+" Neomake {{{
+autocmd! BufWritePost * Neomake
 " }}}
 
 let g:deoplete#enable_at_startup = 1
