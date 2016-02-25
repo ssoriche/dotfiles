@@ -172,6 +172,12 @@ nnoremap <F5> :UndotreeToggle<cr>
 
 " Neomake {{{
 autocmd! BufWritePost * Neomake
+
+let g:neomake_list_height = 5
+let g:neomake_open_list = 2
+let g:neomake_serialize = 0
+let g:neomake_serialize_abort_on_error = 1
+let g:neomake_verbose = 1
 " }}}
 
 let g:deoplete#enable_at_startup = 1
