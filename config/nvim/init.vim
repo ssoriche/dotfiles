@@ -37,7 +37,6 @@ Plug 'benekastah/neomake'
 " Considering
 " Plug 'svermeulen/vim-easyclip'
 Plug 'wellle/visual-split.vim'
-Plug 'justinmk/vim-dirvish'
 Plug 'mbbill/undotree'
 Plug 'lambdatoast/elm.vim'
 
