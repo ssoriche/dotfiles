@@ -39,6 +39,7 @@ Plug 'benekastah/neomake'
 Plug 'wellle/visual-split.vim'
 Plug 'mbbill/undotree'
 Plug 'lambdatoast/elm.vim'
+Plug 'wellle/targets.vim'
 
 call plug#end()
 " }}}
