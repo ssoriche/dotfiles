@@ -34,13 +34,13 @@ Plug 'wincent/ferret'
 Plug 'Raimondi/delimitMate'
 Plug 'benekastah/neomake'
 Plug 'michaeljsmith/vim-indent-object'
+Plug 'wellle/targets.vim'
 
 " Considering
 " Plug 'svermeulen/vim-easyclip'
 Plug 'wellle/visual-split.vim'
 Plug 'mbbill/undotree'
 Plug 'lambdatoast/elm.vim'
-Plug 'wellle/targets.vim'
 
 call plug#end()
 " }}}
