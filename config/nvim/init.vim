@@ -134,6 +134,13 @@ autocmd CmdwinEnter * nnoremap <buffer> <cr> <cr>
 autocmd FileType qf nnoremap <buffer> <cr> <cr>
 " }}}
 
+" Convienence Remaps {{{
+" make ' jump to row and column
+nnoremap ' `
+" make ` jump to row
+nnoremap ` '
+" }}}
+
 " FileType specific settings {{{
 " Vim {{{
 augroup ft_vim
