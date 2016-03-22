@@ -33,6 +33,7 @@ Plug 'Shougo/deoplete.nvim'
 Plug 'wincent/ferret'
 Plug 'Raimondi/delimitMate'
 Plug 'benekastah/neomake'
+Plug 'michaeljsmith/vim-indent-object'
 
 " Considering
 " Plug 'svermeulen/vim-easyclip'
