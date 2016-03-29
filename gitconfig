@@ -1,6 +1,7 @@
 [user]
 	name = Shawn Sorichetti
 	email = ssoriche@gmail.com
+	useconfigonly = true
 [github]
         user = ssoriche
 [core]
