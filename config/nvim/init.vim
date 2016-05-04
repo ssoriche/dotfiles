@@ -158,7 +158,7 @@ let g:ctrlp_match_window = 'top,order:ttb,min:1,max:20,results:20'
 let g:ctrlp_map = '<leader><space>'
 let g:ctrlp_mruf_relative = 1
 let g:ctrlp_custom_ignore = {
-  \ 'dir': 'build\|target\|bin'
+  \ 'dir': 'build\|target\|bin\|worktree'
   \ }
 
 autocmd BufEnter,BufUnload * call ctrlp#mrufiles#list(expand('<abuf>', 1)) " sort the buffer list by last entered
