@@ -41,6 +41,7 @@ Plug 'wellle/targets.vim'
 Plug 'wellle/visual-split.vim'
 Plug 'mbbill/undotree'
 Plug 'lambdatoast/elm.vim'
+Plug 'ddrscott/vim-side-search'
 
 call plug#end()
 " }}}
