@@ -51,7 +51,7 @@ let g:python_host_prog = '/usr/local/bin/python'
 let g:python3_host_prog = '/usr/local/bin/python3'
 
 set background=dark
-colorscheme gruvbox
+colorscheme hybrid
 set hidden                 " Allow unsaved buffers to be put in the background
 
 " Leader
@@ -120,7 +120,7 @@ vmap <leader>P "+P
 
 " Airline Settings {{{
 let g:airline_powerline_fonts = 1
-let g:airline_theme='gruvbox'
+let g:airline_theme='hybrid'
 " }}}
 
 " Setup folding {{{
