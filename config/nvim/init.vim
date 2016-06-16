@@ -43,6 +43,7 @@ Plug 'wellle/visual-split.vim'
 Plug 'mbbill/undotree'
 Plug 'lambdatoast/elm.vim'
 Plug 'ddrscott/vim-side-search'
+Plug 'kchmck/vim-coffee-script'
 
 call plug#end()
 " }}}
