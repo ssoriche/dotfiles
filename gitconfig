@@ -58,6 +58,7 @@
   keepBackup = false
 [diff]
 	tool = vimdiff
+        compactionHeuristic = true
 [rerere]
 	enabled = true
 	autoupdate = true
