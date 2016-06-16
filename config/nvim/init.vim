@@ -24,6 +24,7 @@ Plug 'chriskempson/tomorrow-theme', { 'rtp': 'vim'}
 Plug 'morhetz/gruvbox'
 Plug 'joshdick/onedark.vim'
 Plug 'joshdick/airline-onedark.vim'
+Plug 'vim-airline/vim-airline-themes'
 " }}}
 "
 Plug 'ctrlpvim/ctrlp.vim'
