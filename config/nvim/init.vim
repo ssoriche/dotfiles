@@ -45,6 +45,7 @@ Plug 'mbbill/undotree'
 Plug 'lambdatoast/elm.vim'
 Plug 'ddrscott/vim-side-search'
 Plug 'kchmck/vim-coffee-script'
+Plug 'junegunn/vim-easy-align'
 
 call plug#end()
 " }}}
@@ -198,6 +199,14 @@ let g:neomake_open_list = 2
 let g:neomake_serialize = 0
 let g:neomake_serialize_abort_on_error = 1
 let g:neomake_verbose = 1
+" }}}
+
+" EasyAlign {{{
+" Start interactive EasyAlign in visual mode (e.g. vipga)
+xmap ga <Plug>(EasyAlign)
+
+" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+nmap ga <Plug>(EasyAlign)<Paste>
 " }}}
 
 let g:deoplete#enable_at_startup = 1
