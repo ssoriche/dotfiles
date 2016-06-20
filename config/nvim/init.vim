@@ -101,6 +101,13 @@ set pastetoggle=<F8>
 " Set iTerm title
 set title
 
+" Highlight trailing whitespace {{{
+highlight ExtraWhitespace guibg=DarkCyan ctermbg=Blue
+au ColorScheme * highlight ExtraWhitespace guibg=DarkCyan ctermbg=Blue
+au BufWinEnter * match ExtraWhitespace /\s\+$\| \+\ze\t/
+au BufWrite * match ExtraWhitespace /\s\+$\| \+\ze\t/
+" }}}
+
 " Help File speedups, <enter> to follow tag, delete for back {{{
 au filetype help nnoremap <buffer><cr> <c-]>
 au filetype help nnoremap <buffer><bs> <c-T>
