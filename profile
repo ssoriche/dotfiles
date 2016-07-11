@@ -42,3 +42,9 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 [ -r "$HOME/.smartcd_config" ] && ( [ -n $BASH_VERSION ] || [ -n $ZSH_VERSION ] ) && source ~/.smartcd_config
 [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
+
+if which brew > /dev/null; then
+  if [ -x `brew --prefix git`/share/git-core/contrib/diff-highlight/diff-highlight ]; then
+    export PATH=`brew --prefix git`/share/git-core/contrib/diff-highlight/:$PATH
+  fi
+fi
