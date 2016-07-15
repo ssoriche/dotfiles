@@ -48,3 +48,10 @@ if which brew > /dev/null; then
     export PATH=`brew --prefix git`/share/git-core/contrib/diff-highlight/:$PATH
   fi
 fi
+
+if which nvim > /dev/null; then
+  alias vim="nvim"
+  alias vi="nvim"
+  alias vimdiff='nvim -d'
+  export EDITOR=nvim
+fi
