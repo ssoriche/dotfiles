@@ -75,6 +75,10 @@ set expandtab
 " Hate wrapping, never do it
 set nowrap
 
+" Do not change location to first non-whitespace character when jumping
+" with block selection
+set nosol
+
 " Searching. {{{
 " Use sane regexes
 autocmd VimEnter * nnoremap / /\v
