@@ -45,7 +45,7 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 if which brew > /dev/null; then
   if [ -x `brew --prefix git`/share/git-core/contrib/diff-highlight/diff-highlight ]; then
-    export PATH=`brew --prefix git`/share/git-core/contrib/diff-highlight/:$PATH
+    export PATH=`brew --prefix git`/share/git-core/contrib/diff-highlight:$PATH
   fi
 fi
 
