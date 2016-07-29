@@ -63,3 +63,9 @@
 	autoupdate = true
 [branch]
 	autosetuprebase = always
+[pager]
+	show = diff-highlight | less
+	log = diff-highlight | less
+	diff = diff-highlight | less
+[interactive]
+	diffFilter = diff-highlight
