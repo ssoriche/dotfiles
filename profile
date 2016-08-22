@@ -26,7 +26,7 @@ export COPYFILE_DISABLE=1
 export COPYFILE_EXTENDED_ATTRIBUTES_DISABLE=1
 export GROOVY_HOME=/usr/local/opt/groovy/libexec
 export GRADLE_HOME=/usr/local/gradle
-export PATH=/Applications/Postgres.app/Contents/Versions/9.3/bin:$HOME/bin:/usr/local/bin:$PATH:$GROOVY_HOME/bin:$GRADLE_HOME/bin
+export PATH=/Applications/Postgres.app/Contents/Versions/latest/bin:$HOME/bin:/usr/local/bin:$PATH:$GROOVY_HOME/bin:$GRADLE_HOME/bin
 export NODE_PATH=/usr/local/lib/node_modules
 
 if [[ -e "/usr/local/instantclient_11_2" ]]; then
