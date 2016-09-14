@@ -46,6 +46,7 @@ Plug 'lambdatoast/elm.vim'
 Plug 'ddrscott/vim-side-search'
 Plug 'kchmck/vim-coffee-script'
 Plug 'junegunn/vim-easy-align'
+Plug 'jasoncodes/ctrlp-modified.vim'
 
 call plug#end()
 " }}}
