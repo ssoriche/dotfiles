@@ -26,6 +26,7 @@ Plug 'nanotech/jellybeans.vim'
 Plug 'joshdick/onedark.vim'
 Plug 'joshdick/airline-onedark.vim'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'jacoborus/tender'
 " }}}
 "
 Plug 'ctrlpvim/ctrlp.vim'
