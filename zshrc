@@ -24,3 +24,11 @@ source $ZSH/oh-my-zsh.sh
 source $HOME/.profile
 
 test -e ${HOME}/.iterm2_shell_integration.zsh && source ${HOME}/.iterm2_shell_integration.zsh
+
+if [ -e ${HOME}/.zplug/init.zsh ]; then
+  source ${HOME}/.zplug/init.zsh
+
+  zplug "lukechilds/zsh-nvm"
+
+  zplug load
+fi
