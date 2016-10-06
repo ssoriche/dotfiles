@@ -66,7 +66,7 @@ let mapleader = " "
 let localleader = "\\"
 
 " Toggle line numbering
-set nonumber
+set number
 set relativenumber
 nnoremap <silent> <F7> :exe'se'&nu+&rnu?'rnu!':'nu'<CR>
 
