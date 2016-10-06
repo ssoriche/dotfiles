@@ -185,7 +185,7 @@ autocmd BufEnter,BufUnload * call ctrlp#mrufiles#list(expand('<abuf>', 1)) " sor
 nnoremap <leader>. :CtrlPBufTag<cr>
 
 function! CtrlpSeed()
-  :let g:ctrlp_default_input = tolower(expand('<cword>'))
+  :let g:ctrlp_default_input = substitute(tolower(expand('<cword>')),'::','/','g')
   :CtrlP
   :let g:ctrlp_default_input = ''
 endfunction
