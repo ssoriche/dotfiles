@@ -30,7 +30,6 @@ Plug 'jacoborus/tender'
 " }}}
 "
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'vim-airline/vim-airline'
 Plug 'airblade/vim-gitgutter'
 Plug 'Shougo/deoplete.nvim'
 Plug 'rking/ag.vim'
@@ -48,6 +47,7 @@ Plug 'ddrscott/vim-side-search'
 Plug 'kchmck/vim-coffee-script'
 Plug 'junegunn/vim-easy-align'
 Plug 'jasoncodes/ctrlp-modified.vim'
+Plug 'itchyny/lightline.vim'
 Plug 'vim-perl/vim-perl', { 'for': 'perl', 'do': 'make clean carp dancer highlight-all-pragmas moose test-more try-tiny' }
 
 call plug#end()
@@ -137,8 +137,13 @@ vmap <leader>P "+P
 " }}}
 
 " Airline Settings {{{
-let g:airline_powerline_fonts = 1
-let g:airline_theme='hybrid'
+" let g:airline_powerline_fonts = 1
+" let g:airline_theme='hybrid'
+" }}}
+
+" Lightline {{{
+let g:tender_lightline = 1
+so ~/.config/nvim/status.vim
 " }}}
 
 " Setup folding {{{
