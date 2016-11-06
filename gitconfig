@@ -6,7 +6,6 @@
 [core]
 	excludesfile = /Users/ssoriche/.gitignore
 	ignorecase = false
-        editor = vim
 	quotepath = false
 [color]
 	status = auto
