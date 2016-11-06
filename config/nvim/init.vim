@@ -37,6 +37,7 @@ Plug 'Raimondi/delimitMate'
 Plug 'benekastah/neomake'
 Plug 'michaeljsmith/vim-indent-object'
 Plug 'wellle/targets.vim'
+Plug 'ssoriche/perl-local-lib-path.vim'
 
 " Considering
 " Plug 'svermeulen/vim-easyclip'
@@ -174,6 +175,7 @@ augroup ft_vim
     au FileType vim setlocal foldmethod=marker
     au FileType help setlocal textwidth=78
 augroup END
+autocmd FileType perl PerlLocalLibPath
 " }}}
 " }}}
 
