@@ -54,4 +54,10 @@ if which nvim > /dev/null; then
   alias vi="nvim"
   alias vimdiff='nvim -d'
   export EDITOR=nvim
+  export GIT_EDITOR=nvim
+  export VISUAL=nvim
+elif which vim > /dev/null; then
+  export EDITOR=vim
+  export GIT_EDITOR=vim
+  export VISUAL=vim
 fi
