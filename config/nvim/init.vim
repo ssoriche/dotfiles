@@ -48,6 +48,7 @@ Plug 'kchmck/vim-coffee-script'
 Plug 'junegunn/vim-easy-align'
 Plug 'jasoncodes/ctrlp-modified.vim'
 Plug 'itchyny/lightline.vim'
+Plug 'pearofducks/ansible-vim'
 Plug 'vim-perl/vim-perl', { 'for': 'perl', 'do': 'make clean carp dancer highlight-all-pragmas moose test-more try-tiny' }
 
 call plug#end()
