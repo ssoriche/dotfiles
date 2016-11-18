@@ -32,7 +32,7 @@
   standup = shortlog --since=yesterday
   sdiff = "!git show $(git stash list | cut -d\":\" -f 1)"
 [push]
-	default = current
+	default = simple
 
 [mergetool "chdiff"]
   cmd = /usr/bin/env chdiff --wait "$LOCAL" "$REMOTE"
