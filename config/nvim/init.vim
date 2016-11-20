@@ -37,6 +37,7 @@ Plug 'benekastah/neomake'
 Plug 'michaeljsmith/vim-indent-object'
 Plug 'wellle/targets.vim'
 Plug 'ssoriche/perl-local-lib-path.vim'
+Plug 'ssoriche/perltidy.vim'
 
 " Considering
 " Plug 'svermeulen/vim-easyclip'
@@ -224,5 +225,10 @@ xmap ga <Plug>(EasyAlign)
 " Start interactive EasyAlign for a motion/text object (e.g. gaip)
 nmap ga <Plug>(EasyAlign)<Paste>
 " }}}
+
+"shortcut for normal mode to run on entire buffer then return to current line
+au Filetype perl nmap = :PerlTidy<CR>
+"shortcut for visual mode to run on the the current visual selection
+au Filetype perl vmap = :PerlTidy<CR>
 
 let g:deoplete#enable_at_startup = 1
