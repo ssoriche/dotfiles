@@ -47,7 +47,7 @@
 [merge]
   tool = vim
 [mergetool "vim"]
-  cmd = vim -f -- \"$MERGED\"
+  cmd = nvim -f -- \"$MERGED\"
   trustExitCode = true
   keepBackup = false
 [mergetool "splice"]
