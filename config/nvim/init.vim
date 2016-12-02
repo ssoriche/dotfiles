@@ -36,6 +36,9 @@ Plug 'Raimondi/delimitMate'
 Plug 'benekastah/neomake'
 Plug 'michaeljsmith/vim-indent-object'
 Plug 'wellle/targets.vim'
+Plug 'hotwatermorning/auto-git-diff'
+Plug 'itchyny/lightline.vim'
+Plug 'cocopon/lightline-hybrid.vim'
 Plug 'ssoriche/perl-local-lib-path.vim'
 Plug 'ssoriche/perltidy.vim'
 
@@ -48,10 +51,8 @@ Plug 'ddrscott/vim-side-search'
 Plug 'kchmck/vim-coffee-script'
 Plug 'junegunn/vim-easy-align'
 Plug 'jasoncodes/ctrlp-modified.vim'
-Plug 'itchyny/lightline.vim'
 Plug 'pearofducks/ansible-vim'
 Plug 'vim-perl/vim-perl', { 'for': 'perl', 'do': 'make clean carp dancer highlight-all-pragmas moose test-more try-tiny' }
-Plug 'hotwatermorning/auto-git-diff'
 
 call plug#end()
 " }}}
@@ -145,8 +146,8 @@ vmap <leader>P "+P
 " }}}
 
 " Lightline {{{
-let g:tender_lightline = 1
 so ~/.config/nvim/status.vim
+let g:lightline.colorscheme = 'hybrid'
 " }}}
 
 " Setup folding {{{
