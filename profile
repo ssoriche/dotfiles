@@ -45,12 +45,12 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 [[ -s "/Users/ssoriche/.rvm/scripts/rvm" ]] && source "/Users/ssoriche/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 [ -r "$HOME/.smartcd_config" ] && ( [ -n $BASH_VERSION ] || [ -n $ZSH_VERSION ] ) && source ~/.smartcd_config
-[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
 
 if which brew > /dev/null; then
   if [ -x `brew --prefix git`/share/git-core/contrib/diff-highlight/diff-highlight ]; then
     export PATH=`brew --prefix git`/share/git-core/contrib/diff-highlight:$PATH
   fi
+  [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
 fi
 
 if which nvim > /dev/null; then
