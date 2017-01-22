@@ -53,6 +53,7 @@ Plug 'junegunn/vim-easy-align'
 Plug 'jasoncodes/ctrlp-modified.vim'
 Plug 'pearofducks/ansible-vim'
 Plug 'vim-perl/vim-perl', { 'for': 'perl', 'do': 'make clean carp dancer highlight-all-pragmas moose test-more try-tiny' }
+Plug 'sbdchd/neoformat'
 
 call plug#end()
 " }}}
@@ -61,6 +62,7 @@ let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
 let g:python_host_prog = '/usr/local/bin/python'
 let g:python3_host_prog = '/usr/local/bin/python3'
 
+set termguicolors
 set background=dark
 colorscheme hybrid
 set hidden                 " Allow unsaved buffers to be put in the background
