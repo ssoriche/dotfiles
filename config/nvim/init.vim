@@ -149,7 +149,7 @@ vmap <leader>P "+P
 
 " Lightline {{{
 so ~/.config/nvim/status.vim
-let g:lightline.colorscheme = 'hybrid'
+let g:lightline.colorscheme = 'onedark'
 " }}}
 
 " Setup folding {{{
