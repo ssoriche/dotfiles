@@ -25,8 +25,10 @@ source $HOME/.profile
 
 test -e ${HOME}/.iterm2_shell_integration.zsh && source ${HOME}/.iterm2_shell_integration.zsh
 
-if [ -e ${HOME}/.zplug/init.zsh ]; then
-  source ${HOME}/.zplug/init.zsh
+# Install zplug as documented -- https://github.com/zplug/zplug
+if [ -e /usr/local/opt/zplug ]; then
+  export ZPLUG_HOME=/usr/local/opt/zplug
+  source $ZPLUG_HOME/init.zsh
 
   zplug "lukechilds/zsh-nvm"
 
