@@ -185,7 +185,7 @@ autocmd FileType perl PerlLocalLibPath
 " }}}
 
 " ctrlp settings {{{
-let g:ctrlp_cmd = 'CtrlPBuffer'
+let g:ctrlp_cmd = 'CtrlPModified'
 let g:ctrlp_match_window = 'top,order:ttb,min:1,max:20,results:20'
 let g:ctrlp_map = '<leader><space>'
 let g:ctrlp_mruf_relative = 1
