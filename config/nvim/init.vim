@@ -26,6 +26,7 @@ Plug 'joshdick/onedark.vim'
 Plug 'joshdick/airline-onedark.vim'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'jacoborus/tender'
+Plug 'ajh17/Spacegray.vim'
 " }}}
 "
 Plug 'ctrlpvim/ctrlp.vim'
@@ -64,7 +65,7 @@ let g:python3_host_prog = '/usr/local/bin/python3'
 
 set termguicolors
 set background=dark
-colorscheme hybrid
+colorscheme spacegray
 set hidden                 " Allow unsaved buffers to be put in the background
 
 " Leader
@@ -235,3 +236,4 @@ au Filetype perl nmap = :PerlTidy<CR>
 au Filetype perl vmap = :PerlTidy<CR>
 
 let g:deoplete#enable_at_startup = 1
+let g:spacegray_italicize_comments = 1
