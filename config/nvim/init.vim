@@ -40,6 +40,7 @@ Plug 'wellle/targets.vim'
 Plug 'hotwatermorning/auto-git-diff'
 Plug 'itchyny/lightline.vim'
 Plug 'cocopon/lightline-hybrid.vim'
+Plug 'sbdchd/neoformat'
 Plug 'ssoriche/perl-local-lib-path.vim'
 Plug 'ssoriche/perltidy.vim'
 
@@ -54,7 +55,6 @@ Plug 'junegunn/vim-easy-align'
 Plug 'jasoncodes/ctrlp-modified.vim'
 Plug 'pearofducks/ansible-vim'
 Plug 'vim-perl/vim-perl', { 'for': 'perl', 'do': 'make clean carp dancer highlight-all-pragmas moose test-more try-tiny' }
-Plug 'sbdchd/neoformat'
 
 call plug#end()
 " }}}
@@ -228,6 +228,11 @@ xmap ga <Plug>(EasyAlign)
 
 " Start interactive EasyAlign for a motion/text object (e.g. gaip)
 nmap ga <Plug>(EasyAlign)<Paste>
+" }}}
+
+" {{{ Neoformat
+nmap = :Neoformat<CR>
+vmap = :Neoformat<CR>
 " }}}
 
 "shortcut for normal mode to run on entire buffer then return to current line
