@@ -25,12 +25,10 @@ source $HOME/.profile
 
 test -e ${HOME}/.iterm2_shell_integration.zsh && source ${HOME}/.iterm2_shell_integration.zsh
 
-# Install zplug as documented -- https://github.com/zplug/zplug
-if [ -e /usr/local/opt/zplug ]; then
-  export ZPLUG_HOME=/usr/local/opt/zplug
-  source $ZPLUG_HOME/init.zsh
+# https://github.com/yanyingwang/antibody
+if [ $(which antibody) ]; then
+  source <(antibody init)
 
-  zplug "lukechilds/zsh-nvm"
-
-  zplug load
+  antibody bundle zsh-users/zsh-syntax-highlighting
+  antibody bundle lukechilds/zsh-nvm
 fi
