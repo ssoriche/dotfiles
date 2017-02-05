@@ -47,8 +47,6 @@ Plug 'hotwatermorning/auto-git-diff'
 Plug 'itchyny/lightline.vim'
 Plug 'cocopon/lightline-hybrid.vim'
 Plug 'sbdchd/neoformat'
-Plug 'ssoriche/perl-local-lib-path.vim'
-Plug 'ssoriche/perltidy.vim'
 
 " Considering
 " Plug 'svermeulen/vim-easyclip'
@@ -60,6 +58,7 @@ Plug 'kchmck/vim-coffee-script'
 Plug 'junegunn/vim-easy-align'
 Plug 'jasoncodes/ctrlp-modified.vim'
 Plug 'vim-perl/vim-perl', { 'for': 'perl', 'do': 'make clean carp dancer highlight-all-pragmas moose test-more try-tiny' }
+Plug 'ssoriche/perl_environment.vim'
 
 call plug#end()
 " }}}
@@ -186,7 +185,7 @@ augroup ft_vim
     au FileType vim setlocal foldmethod=marker
     au FileType help setlocal textwidth=78
 augroup END
-autocmd FileType perl PerlLocalLibPath
+autocmd FileType perl PerlSetEnvironment
 " }}}
 " }}}
 
@@ -239,11 +238,6 @@ nmap ga <Plug>(EasyAlign)<Paste>
 nmap = :Neoformat<CR>
 vmap = :Neoformat<CR>
 " }}}
-
-"shortcut for normal mode to run on entire buffer then return to current line
-au Filetype perl nmap = :PerlTidy<CR>
-"shortcut for visual mode to run on the the current visual selection
-au Filetype perl vmap = :PerlTidy<CR>
 
 let g:deoplete#enable_at_startup = 1
 let g:spacegray_italicize_comments = 1
