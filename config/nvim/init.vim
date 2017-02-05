@@ -28,7 +28,13 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'jacoborus/tender'
 Plug 'ajh17/Spacegray.vim'
 " }}}
-"
+
+" syntax {{{
+Plug 'pearofducks/ansible-vim'
+Plug 'othree/yajs.vim'
+Plug 'othree/html5.vim'
+" }}}
+
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'Shougo/deoplete.nvim'
@@ -53,7 +59,6 @@ Plug 'ddrscott/vim-side-search'
 Plug 'kchmck/vim-coffee-script'
 Plug 'junegunn/vim-easy-align'
 Plug 'jasoncodes/ctrlp-modified.vim'
-Plug 'pearofducks/ansible-vim'
 Plug 'vim-perl/vim-perl', { 'for': 'perl', 'do': 'make clean carp dancer highlight-all-pragmas moose test-more try-tiny' }
 
 call plug#end()
