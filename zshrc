@@ -26,7 +26,7 @@ source $HOME/.profile
 test -e ${HOME}/.iterm2_shell_integration.zsh && source ${HOME}/.iterm2_shell_integration.zsh
 
 # https://github.com/yanyingwang/antibody
-if [ $(which antibody) ]; then
+if which antibody > /dev/null; then
   source <(antibody init)
 
   antibody bundle zsh-users/zsh-syntax-highlighting
