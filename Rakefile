@@ -1,4 +1,4 @@
-IGNORE_FILES = ['Rakefile', 'README.markdown', '.gitignore', 'extras']
+IGNORE_FILES = ['Rakefile', 'README.markdown', '.gitignore', 'extras', 'Themes','Termsettings']
 
 def error(text) STDERR.puts "!  #{text}" end
 def info(text, prefix="*") STDOUT.puts "#{prefix}  #{text}" end
