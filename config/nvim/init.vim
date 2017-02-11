@@ -66,6 +66,7 @@ call plug#end()
 let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
 let g:python_host_prog = '/usr/local/bin/python'
 let g:python3_host_prog = '/usr/local/bin/python3'
+let g:spacegray_italicize_comments = 1
 
 set termguicolors
 set background=dark
@@ -240,4 +241,3 @@ vmap = :Neoformat<CR>
 " }}}
 
 let g:deoplete#enable_at_startup = 1
-let g:spacegray_italicize_comments = 1
