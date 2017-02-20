@@ -57,9 +57,6 @@
 [diff]
 	tool = vimdiff
         compactionHeuristic = true
-[rerere]
-	enabled = true
-	autoupdate = true
 [branch]
 	autosetuprebase = always
 [pager]
