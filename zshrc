@@ -31,4 +31,6 @@ if which antibody > /dev/null; then
 
   antibody bundle zsh-users/zsh-syntax-highlighting
   antibody bundle lukechilds/zsh-nvm
+  antibody bundle mafredri/zsh-async
+  antibody bundle marszall87/lambda-pure
 fi
