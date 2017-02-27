@@ -59,6 +59,7 @@ Plug 'junegunn/vim-easy-align'
 Plug 'jasoncodes/ctrlp-modified.vim'
 Plug 'vim-perl/vim-perl', { 'for': 'perl', 'do': 'make clean carp dancer highlight-all-pragmas moose test-more try-tiny' }
 Plug 'ssoriche/perl_environment.vim'
+Plug 'machakann/vim-highlightedyank'
 
 call plug#end()
 " }}}
