@@ -23,7 +23,6 @@ Plug 'chriskempson/tomorrow-theme', { 'rtp': 'vim'}
 Plug 'morhetz/gruvbox'
 Plug 'nanotech/jellybeans.vim'
 Plug 'joshdick/onedark.vim'
-Plug 'joshdick/airline-onedark.vim'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'jacoborus/tender'
 Plug 'ajh17/Spacegray.vim'
@@ -56,7 +55,6 @@ Plug 'lambdatoast/elm.vim'
 Plug 'ddrscott/vim-side-search'
 Plug 'kchmck/vim-coffee-script'
 Plug 'junegunn/vim-easy-align'
-Plug 'jasoncodes/ctrlp-modified.vim'
 Plug 'vim-perl/vim-perl', { 'for': 'perl', 'do': 'make clean carp dancer highlight-all-pragmas moose test-more try-tiny' }
 Plug 'ssoriche/perl_environment.vim'
 Plug 'machakann/vim-highlightedyank'
@@ -192,7 +190,7 @@ autocmd FileType perl PerlSetEnvironment
 " }}}
 
 " ctrlp settings {{{
-let g:ctrlp_cmd = 'CtrlPModified'
+let g:ctrlp_cmd = 'CtrlPBuffer'
 let g:ctrlp_match_window = 'top,order:ttb,min:1,max:20,results:20'
 let g:ctrlp_map = '<leader><space>'
 let g:ctrlp_mruf_relative = 1
