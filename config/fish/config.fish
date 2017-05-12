@@ -13,3 +13,8 @@ function custom_key_binds
     bind -M insert \cf accept-autosuggestion
 end
 set -g fish_key_bindings custom_key_binds
+
+# Add some aliases I use often
+alias g git
+alias vim nvim
+alias vi nvim
