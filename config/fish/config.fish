@@ -16,8 +16,20 @@ set -g fish_key_bindings custom_key_binds
 
 # Add some aliases I use often
 alias g git
-alias vim nvim
-alias vi nvim
+
+# Configure editor depending on what's installed.
+if command -s nvim > /dev/null
+  alias vim nvim
+  alias vi nvim
+  alias vimdiff 'nvim -d'
+  set -g -x EDITOR nvim
+  set -q -x GIT_EDITOR nvim
+  set -q -x VISUAL nvim
+else if command -s vim
+  set -g -x EDITOR vim
+  set -q -x GIT_EDITOR vim
+  set -q -x VISUAL vim
+end
 
 # Set path
 function prepend_to_path -d "Prepend the given dir to PATH if it exists and is not already in it"
