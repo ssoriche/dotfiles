@@ -239,6 +239,8 @@ nmap = :Neoformat<CR>
 vmap = :Neoformat<CR>
 " }}}
 
+autocmd FileType gitcommit setlocal spell
+
 let g:deoplete#enable_at_startup = 1
 
 " tmux will only forward escape sequences to the terminal if surrounded by a DCS sequence
