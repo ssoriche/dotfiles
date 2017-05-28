@@ -59,6 +59,9 @@ Plug 'vim-perl/vim-perl', { 'for': 'perl', 'do': 'make clean carp dancer highlig
 Plug 'ssoriche/perl_environment.vim'
 Plug 'machakann/vim-highlightedyank'
 Plug 'SirVer/ultisnips'
+Plug 'whatyouhide/vim-gotham'
+Plug 'frioux/vim-lost'
+Plug 'fatih/vim-go'
 
 call plug#end()
 " }}}
