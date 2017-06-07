@@ -75,6 +75,9 @@ set background=dark
 colorscheme spacegray
 set hidden                 " Allow unsaved buffers to be put in the background
 
+" Mouse
+set mouse=a " at some point this changed from being the default and my scroll wheel stopped working.
+
 " Leader
 let mapleader = " "
 let localleader = "\\"
