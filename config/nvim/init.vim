@@ -128,6 +128,10 @@ set pastetoggle=<F8>
 " Set iTerm title
 set title
 
+" Spelling, because I need it
+set spell
+autocmd FileType gitcommit setlocal spell
+
 " Highlight trailing whitespace {{{
 highlight ExtraWhitespace guibg=DarkCyan ctermbg=Blue
 au ColorScheme * highlight ExtraWhitespace guibg=DarkCyan ctermbg=Blue
@@ -244,8 +248,6 @@ nmap ga <Plug>(EasyAlign)<Paste>
 nmap = :Neoformat<CR>
 vmap = :Neoformat<CR>
 " }}}
-
-autocmd FileType gitcommit setlocal spell
 
 let g:deoplete#enable_at_startup = 1
 
