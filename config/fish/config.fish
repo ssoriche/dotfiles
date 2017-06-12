@@ -52,4 +52,11 @@ prepend_to_path "/usr/local/MacGPG2/bin"
 prepend_to_path "$HOME/bin"
 
 # Configure plenv
-status --is-interactive; and . (plenv init -|psub)
+# The following line throws an error:
+# setenv: Too many arguments
+# with how the environment is being set up within fish
+# as a work around set the environment using fish style syntax
+# status --is-interactive; and . (plenv init -|psub)
+set -q PLENV_ROOT; or set -l PLENV_ROOT $HOME/.plenv
+
+prepend_to_path $PLENV_ROOT/shims
