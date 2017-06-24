@@ -61,6 +61,7 @@ Plug 'SirVer/ultisnips'
 Plug 'whatyouhide/vim-gotham'
 Plug 'frioux/vim-lost'
 Plug 'fatih/vim-go'
+Plug 'dag/vim-fish'
 Plug 'w0rp/ale'
 
 call plug#end()
