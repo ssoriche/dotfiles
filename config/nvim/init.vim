@@ -39,7 +39,6 @@ Plug 'airblade/vim-gitgutter'
 Plug 'Shougo/deoplete.nvim'
 Plug 'rking/ag.vim'
 Plug 'Raimondi/delimitMate'
-Plug 'benekastah/neomake'
 Plug 'michaeljsmith/vim-indent-object'
 Plug 'wellle/targets.vim'
 Plug 'hotwatermorning/auto-git-diff'
@@ -62,6 +61,7 @@ Plug 'SirVer/ultisnips'
 Plug 'whatyouhide/vim-gotham'
 Plug 'frioux/vim-lost'
 Plug 'fatih/vim-go'
+Plug 'w0rp/ale'
 
 call plug#end()
 " }}}
@@ -224,16 +224,6 @@ let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden
 
 " undotree {{{
 nnoremap <F5> :UndotreeToggle<cr>
-" }}}
-
-" Neomake {{{
-autocmd! BufWritePost * Neomake
-
-let g:neomake_list_height = 5
-let g:neomake_open_list = 2
-let g:neomake_serialize = 0
-let g:neomake_serialize_abort_on_error = 1
-let g:neomake_verbose = 1
 " }}}
 
 " EasyAlign {{{
