@@ -51,6 +51,11 @@ prepend_to_path "/usr/local/gradle/bin"
 prepend_to_path "/usr/local/MacGPG2/bin"
 prepend_to_path "$HOME/bin"
 
+set -gx LESS "-F -X -R"
+if command -s /usr/local/bin/src-hilite-lesspipe.sh >/dev/null
+  set -gx LESSOPEN '| /usr/local/bin/src-hilite-lesspipe.sh %s'
+end
+
 # Configure plenv
 # The following line throws an error:
 # setenv: Too many arguments
