@@ -22,13 +22,13 @@ if command -s nvim > /dev/null
   alias vim nvim
   alias vi nvim
   alias vimdiff 'nvim -d'
-  set -g -x EDITOR nvim
-  set -q -x GIT_EDITOR nvim
-  set -q -x VISUAL nvim
+  set -gx EDITOR nvim
+  set -gx GIT_EDITOR nvim
+  set -gx VISUAL nvim
 else if command -s vim
-  set -g -x EDITOR vim
-  set -q -x GIT_EDITOR vim
-  set -q -x VISUAL vim
+  set -gx EDITOR vim
+  set -gx GIT_EDITOR vim
+  set -gx VISUAL vim
 end
 
 # Set path
@@ -57,6 +57,6 @@ prepend_to_path "$HOME/bin"
 # with how the environment is being set up within fish
 # as a work around set the environment using fish style syntax
 # status --is-interactive; and . (plenv init -|psub)
-set -q PLENV_ROOT; or set -l PLENV_ROOT $HOME/.plenv
+set -q PLENV_ROOT; or set -lx PLENV_ROOT $HOME/.plenv
 
 prepend_to_path $PLENV_ROOT/shims
