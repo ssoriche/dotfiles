@@ -54,7 +54,7 @@ Plug 'lambdatoast/elm.vim'
 Plug 'ddrscott/vim-side-search'
 Plug 'kchmck/vim-coffee-script'
 Plug 'junegunn/vim-easy-align'
-Plug 'vim-perl/vim-perl', { 'for': 'perl', 'do': 'make clean carp dancer highlight-all-pragmas moose test-more try-tiny' }
+Plug 'vim-perl/vim-perl', { 'for': 'perl', 'do': 'make clean carp dancer highlight-all-pragmas moose test-more try-tiny', 'branch': 'dev' }
 Plug 'ssoriche/perl_environment.vim'
 Plug 'machakann/vim-highlightedyank'
 Plug 'SirVer/ultisnips'
@@ -240,7 +240,14 @@ nmap = :Neoformat<CR>
 vmap = :Neoformat<CR>
 " }}}
 
+" {{{ perl
+let g:perl_no_subprototype_error = 1
+let g:perl_sub_signatures        = 1
+let g:perl_fold                  = 1
+let g:perl_nofold_packages       = 1
+let g:perl_no_subprototype_error = 1
 let g:deoplete#enable_at_startup = 1
+" }}}
 
 " tmux will only forward escape sequences to the terminal if surrounded by a DCS sequence
 " http://sourceforge.net/mailarchive/forum.php?thread_name=AANLkTinkbdoZ8eNR1X2UobLTeww1jFrvfJxTMfKSq-L%2B%40mail.gmail.com&forum_name=tmux-users
