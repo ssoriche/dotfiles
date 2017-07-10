@@ -227,6 +227,10 @@ let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden
 nnoremap <F5> :UndotreeToggle<cr>
 " }}}
 
+" GitGutter {{{
+  set updatetime=250
+" }}}
+
 " EasyAlign {{{
 " Start interactive EasyAlign in visual mode (e.g. vipga)
 xmap ga <Plug>(EasyAlign)
