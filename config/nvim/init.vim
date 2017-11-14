@@ -44,6 +44,7 @@ Plug 'wellle/targets.vim'
 Plug 'hotwatermorning/auto-git-diff'
 Plug 'itchyny/lightline.vim'
 Plug 'cocopon/lightline-hybrid.vim'
+Plug 'w0rp/ale'
 Plug 'sbdchd/neoformat'
 
 " Considering
@@ -62,7 +63,6 @@ Plug 'whatyouhide/vim-gotham'
 Plug 'frioux/vim-lost'
 Plug 'fatih/vim-go'
 Plug 'dag/vim-fish'
-Plug 'w0rp/ale'
 
 call plug#end()
 " }}}
