@@ -243,6 +243,16 @@ nmap = :Neoformat<CR>
 vmap = :Neoformat<CR>
 " }}}
 
+" {{{ ale
+let g:ale_set_highlights = 0
+" For iTerm2 requires that `Use Unicode Version 9 Widths` be enabled
+let g:ale_sign_error = '💩'
+let g:ale_sign_warning = '🔥'
+highlight clear ALEErrorSign
+highlight clear ALEWarningSign
+" hi clear SignColumn
+" }}}
+
 " {{{ perl
 let g:perl_no_subprototype_error = 1
 let g:perl_sub_signatures        = 1
