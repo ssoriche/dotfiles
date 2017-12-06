@@ -61,8 +61,7 @@ Plug 'machakann/vim-highlightedyank'
 Plug 'SirVer/ultisnips'
 Plug 'whatyouhide/vim-gotham'
 Plug 'frioux/vim-lost'
-Plug 'fatih/vim-go'
-Plug 'dag/vim-fish'
+Plug 'sheerun/vim-polyglot'
 
 call plug#end()
 " }}}
