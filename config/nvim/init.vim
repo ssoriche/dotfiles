@@ -29,9 +29,8 @@ Plug 'ajh17/Spacegray.vim'
 " }}}
 
 " syntax {{{
-Plug 'pearofducks/ansible-vim'
-Plug 'othree/yajs.vim'
-Plug 'othree/html5.vim'
+Plug 'sheerun/vim-polyglot'
+Plug 'vim-perl/vim-perl', { 'for': 'perl', 'do': 'make clean carp dancer highlight-all-pragmas moose test-more try-tiny', 'branch': 'dev' }
 " }}}
 
 Plug 'ctrlpvim/ctrlp.vim'
@@ -51,17 +50,13 @@ Plug 'sbdchd/neoformat'
 " Plug 'svermeulen/vim-easyclip'
 Plug 'wellle/visual-split.vim'
 Plug 'mbbill/undotree'
-Plug 'lambdatoast/elm.vim'
 Plug 'ddrscott/vim-side-search'
-Plug 'kchmck/vim-coffee-script'
 Plug 'junegunn/vim-easy-align'
-Plug 'vim-perl/vim-perl', { 'for': 'perl', 'do': 'make clean carp dancer highlight-all-pragmas moose test-more try-tiny', 'branch': 'dev' }
 Plug 'ssoriche/perl_environment.vim'
 Plug 'machakann/vim-highlightedyank'
 Plug 'SirVer/ultisnips'
 Plug 'whatyouhide/vim-gotham'
 Plug 'frioux/vim-lost'
-Plug 'sheerun/vim-polyglot'
 
 call plug#end()
 " }}}
