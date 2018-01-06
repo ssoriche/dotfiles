@@ -61,7 +61,7 @@ Plug 'frioux/vim-lost'
 call plug#end()
 " }}}
 
-let g:python_host_prog = '/usr/local/bin/python'
+let g:python_host_prog = '/usr/local/bin/python2'
 let g:python3_host_prog = '/usr/local/bin/python3'
 let g:spacegray_use_italics = 1
 
