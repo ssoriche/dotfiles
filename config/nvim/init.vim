@@ -106,6 +106,10 @@ set smartcase   " …unless phrase includes uppercase.
 nnoremap <leader>/ :noh<CR>
 " }}}
 
+" Tab completion
+set wildmode=longest,list,full
+set wildmenu
+
 " Easier buffer swapping
 nnoremap <bs> <C-^>
 
