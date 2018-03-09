@@ -20,7 +20,7 @@
   cl = clean -dfx
   cc = cherry-pick
   fx = commit --no-edit --amend -C HEAD
-  st = status -uno
+  st = status
   mt = mergetool
   hist = log --all --graph --pretty='[%C(cyan)%h%Creset]%C(bold cyan)%d%Creset %s'
   uncommit = reset --soft HEAD^
