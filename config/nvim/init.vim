@@ -26,6 +26,7 @@ Plug 'joshdick/onedark.vim'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'jacoborus/tender'
 Plug 'ajh17/Spacegray.vim'
+Plug 'fenetikm/falcon'
 " }}}
 
 " syntax {{{
@@ -67,7 +68,7 @@ let g:spacegray_use_italics = 1
 
 set termguicolors
 set background=dark
-colorscheme spacegray
+colorscheme falcon
 set hidden                 " Allow unsaved buffers to be put in the background
 
 " Mouse
@@ -163,7 +164,8 @@ vmap <leader>P "+P
 
 " Lightline {{{
 so ~/.config/nvim/status.vim
-let g:lightline.colorscheme = 'onedark'
+let g:falcon_lightline = 1
+let g:lightline.colorscheme='falcon'
 " }}}
 
 " Setup folding {{{
