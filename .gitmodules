@@ -6,10 +6,6 @@
 	path = vim/bundle/vim-goldenview
 	url = https://github.com/zhaocai/GoldenView.Vim.git
         ignore = untracked
-[submodule "Themes/dracula-theme"]
-	path = Themes/dracula-theme
-	url = https://github.com/zenorocha/dracula-theme/
-        ignore = untracked
 [submodule "Themes/iterm-colors"]
 	path = Themes/iterm-colors
 	url = https://github.com/bahlo/iterm-colors.git
