@@ -53,8 +53,11 @@ prepend_to_path "/usr/local/MacGPG2/bin"
 prepend_to_path "$HOME/bin"
 
 set -gx LESS "-F -X -R"
-if command -s /usr/local/bin/src-hilite-lesspipe.sh >/dev/null
+if command -s /usr/local/bin/src-hilite-lesspipe.sh > /dev/null
   set -gx LESSOPEN '| /usr/local/bin/src-hilite-lesspipe.sh %s'
+end
+if command -s /usr/local/bin/highlight > /dev/null
+  set -gx LESSOPEN '| /usr/local/bin/highlight --out-format=xterm256 %s'
 end
 
 # Configure plenv
