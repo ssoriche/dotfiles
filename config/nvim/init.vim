@@ -201,6 +201,7 @@ augroup ft_vim
     au FileType help setlocal textwidth=78
 augroup END
 autocmd FileType perl PerlSetEnvironment
+autocmd BufNewFile,BufRead *.tt setf tt2html
 " }}}
 " }}}
 
