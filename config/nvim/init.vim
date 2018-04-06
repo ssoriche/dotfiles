@@ -59,6 +59,10 @@ Plug 'SirVer/ultisnips'
 Plug 'whatyouhide/vim-gotham'
 Plug 'frioux/vim-lost'
 
+Plug 'Shougo/denite.nvim'
+Plug 'chemzqm/vim-easygit'
+Plug 'chemzqm/denite-git'
+
 call plug#end()
 " }}}
 
