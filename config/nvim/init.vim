@@ -69,10 +69,11 @@ call plug#end()
 let g:python_host_prog = '/usr/local/bin/python2'
 let g:python3_host_prog = '/usr/local/bin/python3'
 let g:spacegray_use_italics = 1
+let g:jellybeans_use_term_italics = 1
 
 set termguicolors
 set background=dark
-colorscheme falcon
+colorscheme jellybeans
 set hidden                 " Allow unsaved buffers to be put in the background
 
 " Mouse
@@ -168,8 +169,7 @@ vmap <leader>P "+P
 
 " Lightline {{{
 so ~/.config/nvim/status.vim
-let g:falcon_lightline = 1
-let g:lightline.colorscheme='falcon'
+let g:lightline.colorscheme = 'jellybeans'
 " }}}
 
 " Setup folding {{{
