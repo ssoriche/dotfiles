@@ -32,6 +32,7 @@ Plug 'fenetikm/falcon'
 " syntax {{{
 Plug 'sheerun/vim-polyglot'
 Plug 'vim-perl/vim-perl', { 'for': 'perl', 'do': 'make clean carp dancer highlight-all-pragmas moose test-more try-tiny', 'branch': 'dev' }
+Plug 'fatih/vim-go', {'tag':'*'}
 " }}}
 
 Plug 'ctrlpvim/ctrlp.vim'
