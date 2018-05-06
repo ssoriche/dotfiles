@@ -1,0 +1,4 @@
+tmux/plugins
+tmux/resurrect/
+config/fish/functions/
+config/fish/completions/
