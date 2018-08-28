@@ -71,3 +71,4 @@ set -q PLENV_ROOT; or set -lx PLENV_ROOT $HOME/.plenv
 prepend_to_path $PLENV_ROOT/shims
 
 status --is-interactive; and source (rbenv init -|psub)
+eval (direnv hook fish)
