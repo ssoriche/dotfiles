@@ -16,6 +16,7 @@ set -g fish_key_bindings custom_key_binds
 
 # Add some aliases I use often
 alias g git
+alias fig docker-compose
 
 # Configure editor depending on what's installed.
 if command -s nvim > /dev/null
