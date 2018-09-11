@@ -279,6 +279,10 @@ let g:perl_no_subprototype_error = 1
 let g:deoplete#enable_at_startup = 1
 " }}}
 
+" {{{ golang
+let g:go_fmt_experimental = 1
+" }}}
+
 " tmux will only forward escape sequences to the terminal if surrounded by a DCS sequence
 " http://sourceforge.net/mailarchive/forum.php?thread_name=AANLkTinkbdoZ8eNR1X2UobLTeww1jFrvfJxTMfKSq-L%2B%40mail.gmail.com&forum_name=tmux-users
 
