@@ -47,6 +47,7 @@ Plug 'hotwatermorning/auto-git-diff'
 Plug 'itchyny/lightline.vim'
 Plug 'cocopon/lightline-hybrid.vim'
 Plug 'w0rp/ale'
+Plug 'skaji/syntax-check-perl'
 Plug 'sbdchd/neoformat'
 Plug 'machakann/vim-highlightedyank'
 
@@ -64,7 +65,6 @@ Plug 'frioux/vim-lost'
 Plug 'Shougo/denite.nvim'
 Plug 'chemzqm/vim-easygit'
 Plug 'chemzqm/denite-git'
-Plug 'skaji/syntax-check-perl'
 
 call plug#end()
 " }}}
