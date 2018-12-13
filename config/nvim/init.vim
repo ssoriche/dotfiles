@@ -11,6 +11,7 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-vinegar'
 Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-obsession'
 
 " Considering
 " Plug 'tpope/vim-speeddating'
