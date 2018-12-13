@@ -261,7 +261,10 @@ let g:ale_set_highlights = 0
 " For iTerm2 requires that `Use Unicode Version 9 Widths` be enabled
 let g:ale_sign_error = '💩'
 let g:ale_sign_warning = '🔥'
-let g:ale_linters = { 'perl' : ['syntax-check'] }
+let g:ale_linters = {
+      \  'perl' : ['syntax-check'],
+      \  'ansible' : ['ansible-lint']
+      \ }
 highlight clear ALEErrorSign
 highlight clear ALEWarningSign
 " hi clear SignColumn
