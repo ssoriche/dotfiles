@@ -70,6 +70,8 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --no-bash' }
 Plug 'junegunn/fzf.vim'
 Plug 'pbogut/fzf-mru.vim'
 
+Plug 'mhinz/vim-grepper'
+
 call plug#end()
 " }}}
 
@@ -289,6 +291,11 @@ nmap <silent> [W <Plug>(ale_first)
 nmap <silent> [w <Plug>(ale_previous)
 nmap <silent> ]w <Plug>(ale_next)
 nmap <silent> ]W <Plug>(ale_last)
+" }}}
+
+" {{{ Grepper
+nmap gs  <plug>(GrepperOperator)
+xmap gs  <plug>(GrepperOperator)
 " }}}
 
 " {{{ perl
