@@ -284,6 +284,11 @@ let g:ale_linters = {
 highlight clear ALEErrorSign
 highlight clear ALEWarningSign
 " hi clear SignColumn
+" Mappings in the style of unimpaired-next
+nmap <silent> [W <Plug>(ale_first)
+nmap <silent> [w <Plug>(ale_previous)
+nmap <silent> ]w <Plug>(ale_next)
+nmap <silent> ]W <Plug>(ale_last)
 " }}}
 
 " {{{ perl
