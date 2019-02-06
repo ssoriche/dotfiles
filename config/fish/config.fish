@@ -73,3 +73,5 @@ prepend_to_path $PLENV_ROOT/shims
 
 status --is-interactive; and source (rbenv init -|psub)
 eval (direnv hook fish)
+
+kitty + complete setup fish | source
