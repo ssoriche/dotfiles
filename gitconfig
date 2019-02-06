@@ -31,6 +31,7 @@
   wipe = !git add -A && git commit -qm 'WIPE SAVEPOINT' && git reset HEAD~1 --hard
   standup = shortlog --since=yesterday
   sdiff = "!git show $(git stash list | cut -d\":\" -f 1)"
+  pwb = rev-parse --abbrev-ref HEAD
 [push]
 	default = simple
 
