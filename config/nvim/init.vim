@@ -75,6 +75,13 @@ Plug 'pbogut/fzf-mru.vim'
 
 Plug 'mhinz/vim-grepper'
 
+" For displaying CSV files in columns
+Plug 'chrisbra/csv.vim'
+
+" Sends selected text to carbon.now.sh to make a pretty
+" image of source code from
+Plug 'kristijanhusak/vim-carbon-now-sh'
+
 call plug#end()
 " }}}
 
