@@ -61,6 +61,8 @@ Plug 'ssoriche/perl_environment.vim'
 Plug 'SirVer/ultisnips'
 Plug 'whatyouhide/vim-gotham'
 Plug 'frioux/vim-lost'
+Plug 'Scuilion/markdown-drawer'
+Plug 'mzlogin/vim-markdown-toc'
 
 Plug 'Shougo/denite.nvim'
 Plug 'chemzqm/vim-easygit'
