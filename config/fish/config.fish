@@ -53,6 +53,8 @@ prepend_to_path "/usr/local/opt/groovy/libexec/bin"
 prepend_to_path "/usr/local/gradle/bin"
 prepend_to_path "/usr/local/MacGPG2/bin"
 prepend_to_path "$HOME/bin"
+prepend_to_path "$HOME/.pgenv/bin"
+prepend_to_path "$HOME/.pgenv/pgsql/bin"
 
 set -gx LESS "-F -X -R"
 if command -s /usr/local/bin/src-hilite-lesspipe.sh > /dev/null
