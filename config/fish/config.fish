@@ -78,3 +78,5 @@ status --is-interactive; and source (rbenv init -|psub)
 eval (direnv hook fish)
 
 kitty + complete setup fish | source
+set -gx PATH $HOME/.anyenv/bin $PATH
+source (anyenv init - fish|psub)
