@@ -80,6 +80,9 @@ Plug 'pbogut/fzf-mru.vim'
 
 Plug 'mhinz/vim-grepper'
 
+" Plugin to do diffs recursively on directories
+Plug 'will133/vim-dirdiff'
+
 " For displaying CSV files in columns
 Plug 'chrisbra/csv.vim'
 
