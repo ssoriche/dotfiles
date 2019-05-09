@@ -51,6 +51,11 @@ Plug 'skaji/syntax-check-perl'
 Plug 'sbdchd/neoformat'
 Plug 'machakann/vim-highlightedyank'
 
+" Displays git messages under the cursor for the highlighted
+" item. Requires 0.40 of Neovim that can be installed via:
+" brew install neovim --HEAD
+Plug 'rhysd/git-messenger.vim'
+
 " Considering
 " Plug 'svermeulen/vim-easyclip'
 Plug 'wellle/visual-split.vim'
