@@ -28,6 +28,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'jacoborus/tender'
 Plug 'ajh17/Spacegray.vim'
 Plug 'fenetikm/falcon'
+Plug 'arcticicestudio/nord-vim'
 " }}}
 
 " syntax {{{
@@ -95,13 +96,15 @@ call plug#end()
 
 let g:python_host_prog = '/usr/local/bin/python2'
 let g:python3_host_prog = '/usr/local/bin/python3'
-let g:spacegray_use_italics = 1
-let g:jellybeans_use_term_italics = 1
 
-set termguicolors
-set background=dark
-colorscheme jellybeans
 set hidden                 " Allow unsaved buffers to be put in the background
+
+" Using a variable to set the colorscheme at the top of the file, because I
+" change this often, also syntax folding of the plugins really does make this
+" the top of the file. Color scheme option settings are now at the very
+" bottom.
+set termguicolors
+let my_colorscheme = 'nord'
 
 " Mouse
 set mouse=a " at some point this changed from being the default and my scroll wheel stopped working.
@@ -196,7 +199,6 @@ vmap <leader>P "+P
 
 " Lightline {{{
 so ~/.config/nvim/status.vim
-let g:lightline.colorscheme = 'jellybeans'
 " }}}
 
 " Setup folding {{{
@@ -341,3 +343,41 @@ else
 endif
 
 command! -range -nargs=* Figlet     <line1>,<line2>! figlet -w 75 -p
+
+" Dealing with colorscheme here. Discovered that by setting the variables
+" after the color scheme was set that italic comments didn't always work right
+" and also things like highlighting the current line background. Moving all
+" color scheme settings to the bottom alleviates this problem.
+
+" ColorScheme Space Gray {{{
+if my_colorscheme == 'spaygray'
+  let g:spacegray_use_italics = 1
+  let g:lightline.colorscheme = 'jellybeans'
+  " colorscheme spacegray
+endif
+" }}}
+
+" ColorScheme Jellybeans {{{
+if my_colorscheme == 'jellybeans'
+  let g:jellybeans_use_term_italics = 1
+  let g:lightline.colorscheme = 'jellybeans'
+  " colorscheme jellybeans
+endif
+" }}}
+
+" ColorScheme Nord {{{
+if my_colorscheme == 'nord'
+  set cursorline
+  let g:nord_italic = 1
+  let g:nord_underline = 1
+  let g:nord_italic_comments = 1
+  " let g:nord_comment_brightness = 15
+  let g:nord_cursor_line_number_background = 1
+  let g:lightline.colorscheme = 'nord'
+  " colorscheme nord
+endif
+" }}}
+
+" slight kludge to get it so the variable `my_colorscheme` can be reused
+" to set the actual color scheme and not repeat myself.
+exe 'colorscheme ' . my_colorscheme
