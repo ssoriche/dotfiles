@@ -34,7 +34,7 @@ Plug 'arcticicestudio/nord-vim'
 " syntax {{{
 Plug 'sheerun/vim-polyglot'
 Plug 'vim-perl/vim-perl', { 'for': 'perl', 'do': 'make clean carp dancer highlight-all-pragmas moose test-more try-tiny', 'branch': 'dev' }
-Plug 'fatih/vim-go', {'tag':'*'}
+Plug 'fatih/vim-go', {'do':':GoInstallBinaries'}
 " }}}
 
 Plug 'ctrlpvim/ctrlp.vim'
