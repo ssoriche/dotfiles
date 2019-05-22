@@ -13,6 +13,3 @@
 [submodule "vim/bundle/vim-onedark"]
 	path = vim/bundle/vim-onedark
 	url = https://github.com/joshdick/onedark.vim
-[submodule "tmux/plugins/tpm"]
-	path = tmux/plugins/tpm
-	url = https://github.com/tmux-plugins/tpm

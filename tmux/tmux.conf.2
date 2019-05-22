@@ -1,0 +1,146 @@
+set -g default-command "${SHELL}"
+# use ^S rather than ^B for the prefix key
+set  -g prefix        ^S
+unbind -n ^B
+
+# start window numbernig at 1 for easier switching
+set -g base-index 1
+
+# bells in any window get sent to the terminal
+set  -g bell-action   any
+set  -sg escape-time 0
+setw -g aggressive-resize on
+
+# on Solaris, set-clipboard leads to core dumps!
+set  -g set-clipboard off
+
+# lots of scrollback
+set  -g history-limit 10000
+
+# lots of colors
+set-option -ga terminal-overrides ',*:Tc'
+set -ga terminal-overrides ',*:Ss=\E[%p1%d q:Se=\E[2 q'
+set -g default-terminal "xterm-256color"
+
+# interactive shells attach to bootstrap namespace
+# https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard/blob/master/Usage.md#cross-platform-conditional-usage
+if-shell 'test "$(uname -s)" = Darwin' 'set-option -g default-command "exec reattach-to-user-namespace -l ${SHELL}"'
+
+# Setup Status Bar
+set -g status-position top
+set -g status-style fg=white,bg=colour234
+set -g window-status-activity-style bold
+set -g pane-border-style fg=colour245
+set -g pane-active-border-style fg=colour39
+set -g message-style fg=colour16,bg=colour221,bold
+
+# Custom status bar
+# Powerline symbols:     
+set -g status-left-length 32
+set -g status-right-length 150
+set -g status-interval 5
+
+# Menlo-Powerline Theme:
+#[fg=white,bg=colour39,noreverse,bold]
+#green hostname: fg=colour22,bg=colour148
+
+set -g status-left '#[fg=colour235,bg=colour252,bold] ❐ #S #[fg=colour252,bg=colour238,nobold]#[fg=colour245,bg=colour238,bold] #(whoami) #[fg=colour238,bg=colour234,nobold]'
+set -g status-right '#[fg=colour238,bg=colour234,nobold]#[fg=colour245,bg=colour238] #h #[fg=colour252]#[fg=colour235,bg=colour252,bold] '
+set -g window-status-format "#[fg=white,bg=colour234] #I #W "
+set -g window-status-current-format "#[fg=colour234,bg=colour39]#[fg=colour25,bg=colour39,noreverse,bold] #I  #W #[fg=colour39,bg=colour234,nobold]"
+# bind t run-shell 'wemux display_users'
+# Alternate Theme for shells without Inconsolata-dz-Powerline:
+# set -g status-left ' #[bold]❐ #S#[default] ⣿'
+# set -g status-right '#[bold]#(whoami) ● #H#[default] ⡇ #[fg=blue]%H:%M#[default] '
+
+setw -g automatic-rename on
+
+bind w command-prompt -p "watch for" "setw monitor-content '%%'"
+bind m setw monitor-activity
+bind M command-prompt -p "silence (seconds)" "setw monitor-silence %%"
+
+set -g visual-activity on
+# set -g visual-content  on
+set -g visual-silence  on
+
+
+# set title options
+set-option -g set-titles on
+set-option -g set-titles-string '#S'
+
+# use vi keybindings
+setw -g mode-keys     vi
+set  -g status-keys   vi
+
+# keybindings
+bind  a  send-prefix
+#bind  A  command-prompt "rename-window %%" # not used; C-a<Comma> is better
+bind ^A  last-window
+bind '"' choose-window
+bind ^C  new-window
+bind ^D  detach-client
+bind "'" command-prompt "find-window '%%'"
+
+bind ,   command-prompt "rename-window '%%'"
+bind R   movew -r
+bind /   choose-buffer
+
+bind r source-file ~/.tmux.conf \; display "Reloaded!"
+
+unbind %
+
+bind  +  choose-tree
+
+bind  *  set synchronize-panes
+
+bind -r n next-window
+bind    N next-window -a
+bind    p previous-window
+
+bind P pipe-pane -o "cat >>~/log/tmux/#W.log" \; display "Toggled logging to ~/log/tmux/#W.log"
+
+bind-key Escape copy-mode
+bind-key v paste-buffer
+
+bind-key -T copy-mode-vi 'v' send -X begin-selection;
+bind-key -T copy-mode-vi 'V' send -X select-line;
+bind-key -T copy-mode-vi 'r' send -X rectangle-toggle;
+bind-key -T copy-mode-vi 'y' send -X copy-selection-and-cancel;
+bind-key -T copy-mode-vi 'y' send -X copy-pipe-and-cancel 'reattach-to-user-namespace pbcopy';
+bind-key -T copy-mode-vi C-WheelUpPane send -X halfpage-up;
+bind-key -T copy-mode-vi C-WheelDownPane send -X halfpage-down
+
+set -g mouse on
+bind -n WheelUpPane if-shell -F -t = "#{mouse_any_flag}" "send-keys -M" "if -Ft= '#{pane_in_mode}' 'send-keys -M' 'select-pane -t=; copy-mode -e; send-keys -M'"
+bind -n WheelDownPane select-pane -t= \; send-keys -M
+bind -n C-WheelUpPane select-pane -t= \; copy-mode -e \; send-keys -M
+
+# List of plugins
+set -g @plugin 'tmux-plugins/tpm'
+set -g @plugin 'tmux-plugins/tmux-sensible'
+
+# Other examples:
+# set -g @plugin 'github_username/plugin_name'
+# set -g @plugin 'git@github.com/user/plugin'
+# set -g @plugin 'git@bitbucket.com/user/plugin'
+set -g @plugin 'tmux-plugins/tmux-copycat'
+set -g @plugin 'tmux-plugins/tmux-resurrect'
+set -g @plugin 'tmux-plugins/tmux-continuum'
+set -g @plugin 'tmux-plugins/tmux-sessionist'
+set -g @plugin 'tmux-plugins/tmux-pain-control'
+
+# Attempt to auto-install TMUX plugin manager
+if "test ! -d ~/.tmux/plugins/tpm" \
+   "run 'git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm && ~/.tmux/plugins/tpm/bin/install_plugins'"
+# Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
+run '~/.tmux/plugins/tpm/tpm'
+
+bind -T root F12 \
+  set prefix None \;\
+  set key-table off \;\
+  refresh-client -S
+
+bind -T off F12 \
+  set -u prefix \;\
+  set -u key-table \;\
+  refresh-client -S
