@@ -39,7 +39,6 @@ Plug 'fatih/vim-go', {'do':':GoInstallBinaries'}
 
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'airblade/vim-gitgutter'
-Plug 'Shougo/deoplete.nvim'
 Plug 'rking/ag.vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'michaeljsmith/vim-indent-object'
@@ -90,6 +89,9 @@ Plug 'chrisbra/csv.vim'
 " Sends selected text to carbon.now.sh to make a pretty
 " image of source code from
 Plug 'kristijanhusak/vim-carbon-now-sh'
+
+" Completion framework and language server client, smarter tab completion.
+Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 
 call plug#end()
 " }}}
