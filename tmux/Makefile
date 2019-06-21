@@ -8,12 +8,12 @@ TMUX_MAJOR_VERSION := $(firstword $(subst ., , $(word 2, $(TMUX_VERSION))))
 # 	@echo TMUX_MAJOR_VERSION is :${TMUX_MAJOR_VERSION}:
 
 $(TMUX_CONFIG): backup
-	if [ ! -h $(TMUX_CONFIG) ]; then \
-		ln -s $(PWD)/tmux.conf.$(TMUX_MAJOR_VERSION) $@; \
+	if [ ! -e $(TMUX_CONFIG) ] || [ -h $(TMUX_CONFIG) ]; then \
+		ln -sf $(PWD)/tmux.conf.$(TMUX_MAJOR_VERSION) $@; \
 	fi
 
 .PHONY: backup
 backup:
-	if [ -e $(TMUX_CONFIG) && ! -h $(TMUX_CONFIG) ]; then \
+	if [ -e $(TMUX_CONFIG) ] && [ ! -h $(TMUX_CONFIG) ]; then \
 		mv $(TMUX_CONFIG) $(TMUX_CONFIG).bak; \
 	fi
