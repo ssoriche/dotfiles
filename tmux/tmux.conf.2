@@ -73,19 +73,11 @@ setw -g mode-keys     vi
 set  -g status-keys   vi
 
 # keybindings
-bind  a  send-prefix
 #bind  A  command-prompt "rename-window %%" # not used; C-a<Comma> is better
-bind ^A  last-window
-bind '"' choose-window
-bind ^C  new-window
-bind ^D  detach-client
-bind "'" command-prompt "find-window '%%'"
-
-bind ,   command-prompt "rename-window '%%'"
-bind R   movew -r
+bind s  last-window
 bind /   choose-buffer
 
-bind r source-file ~/.tmux.conf \; display "Reloaded!"
+bind R source-file ~/.tmux.conf \; display "Reloaded!"
 
 unbind %
 
@@ -93,9 +85,6 @@ bind  +  choose-tree
 
 bind  *  set synchronize-panes
 
-bind -r n next-window
-bind    N next-window -a
-bind    p previous-window
 
 bind P pipe-pane -o "cat >>~/log/tmux/#W.log" \; display "Toggled logging to ~/log/tmux/#W.log"
 
