@@ -2,7 +2,6 @@
 """"""""""""""""""""""""""""""""
 set laststatus=2 " Always show status line
 let g:lightline = {
-      \ 'colorscheme': 'tenderplus',
       \ 'mode_map': { 'n': 'NORMAL' },
       \ 'component': {
       \   'readonly': '%{&filetype=="help"?"":&readonly?"⭤":""}',
@@ -10,7 +9,11 @@ let g:lightline = {
       \ },
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ], [ 'filename' ], ['ctrlpmark'] ],
-      \   'right': [ [ 'percent' ], ['fugitive'] ]
+      \   'right': [
+      \     [ 'linter_checking', 'linter_errors', 'linter_warnings', 'linter_ok' ],
+      \     ['fugitive'],
+      \     [ 'percent', 'lineinfo' ]
+      \   ]
       \ },
       \ 'inactive': {
       \   'right': [ [ 'percent' ] ]
@@ -37,6 +40,25 @@ let g:lightline = {
 let g:lightline.component = {
   \ 'filename': '%{expand("%:t") == "ControlP" ? g:lightline.ctrlp_item : expand("%:p")}'
   \ }
+
+let g:lightline.component_expand = {
+      \  'linter_checking': 'lightline#ale#checking',
+      \  'linter_warnings': 'lightline#ale#warnings',
+      \  'linter_errors': 'lightline#ale#errors',
+      \  'linter_ok': 'lightline#ale#ok',
+      \ }
+
+let g:lightline.component_type = {
+      \     'linter_checking': 'left',
+      \     'linter_warnings': 'warning',
+      \     'linter_errors': 'error',
+      \     'linter_ok': 'left',
+      \ }
+
+let g:lightline#ale#indicator_checking = "\uf110"
+let g:lightline#ale#indicator_warnings = "\uf071"
+let g:lightline#ale#indicator_errors = "\uf05e"
+let g:lightline#ale#indicator_ok = "\uf00c"
 
 function! MyModified()
   let fname = expand('%:t')
