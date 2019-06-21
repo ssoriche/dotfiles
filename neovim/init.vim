@@ -79,7 +79,10 @@ Plug 'junegunn/fzf.vim'
 Plug 'junegunn/gv.vim'
 Plug 'pbogut/fzf-mru.vim'
 
-Plug 'mhinz/vim-grepper'
+" An ack/ag/pt/rg powered code search and view tool, takes advantage of Vim
+" 8's power to support asynchronous searching, and lets you edit file in-place
+" with Edit Mode.
+Plug 'dyng/ctrlsf.vim'
 
 " Plugin to do diffs recursively on directories
 Plug 'will133/vim-dirdiff'
@@ -330,11 +333,6 @@ let g:coc_global_extensions = [
   \ 'coc-html',
   \ 'coc-docker'
   \ ]
-" }}}
-
-" {{{ Grepper
-nmap gs  <plug>(GrepperOperator)
-xmap gs  <plug>(GrepperOperator)
 " }}}
 
 " {{{ perl
