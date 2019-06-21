@@ -94,6 +94,9 @@ Plug 'kristijanhusak/vim-carbon-now-sh'
 " Completion framework and language server client, smarter tab completion.
 Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 
+" Adds ALE support to lightline status line
+Plug 'maximbaz/lightline-ale'
+
 call plug#end()
 " }}}
 
