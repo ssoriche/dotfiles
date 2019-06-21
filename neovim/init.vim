@@ -29,6 +29,7 @@ Plug 'jacoborus/tender'
 Plug 'ajh17/Spacegray.vim'
 Plug 'fenetikm/falcon'
 Plug 'arcticicestudio/nord-vim'
+Plug 'rakr/vim-one'
 " }}}
 
 " syntax {{{
@@ -106,7 +107,7 @@ set hidden                 " Allow unsaved buffers to be put in the background
 " the top of the file. Color scheme option settings are now at the very
 " bottom.
 set termguicolors
-let my_colorscheme = 'nord'
+let my_colorscheme = 'one'
 
 " Mouse
 set mouse=a " at some point this changed from being the default and my scroll wheel stopped working.
@@ -390,6 +391,13 @@ if my_colorscheme == 'nord'
   let g:nord_cursor_line_number_background = 1
   let g:lightline.colorscheme = 'nord'
   " colorscheme nord
+endif
+" }}}
+
+" ColorScheme one {{{
+if my_colorscheme == 'one'
+  let g:one_allow_italics = 1
+  let g:lightline.colorscheme = 'one'
 endif
 " }}}
 
