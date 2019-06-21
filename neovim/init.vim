@@ -315,6 +315,19 @@ nmap <silent> ]w <Plug>(ale_next)
 nmap <silent> ]W <Plug>(ale_last)
 " }}}
 
+" {{{ CoC
+let g:coc_global_extensions = [
+  \ 'coc-lists',
+  \ 'coc-marketplace',
+  \ 'coc-git',
+  \ 'coc-yaml',
+  \ 'coc-lua',
+  \ 'coc-json',
+  \ 'coc-html',
+  \ 'coc-docker'
+  \ ]
+" }}}
+
 " {{{ Grepper
 nmap gs  <plug>(GrepperOperator)
 xmap gs  <plug>(GrepperOperator)
