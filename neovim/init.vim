@@ -113,7 +113,7 @@ set hidden                 " Allow unsaved buffers to be put in the background
 " the top of the file. Color scheme option settings are now at the very
 " bottom.
 set termguicolors
-let my_colorscheme = 'one'
+let my_colorscheme = 'jellybeans'
 
 " Mouse
 set mouse=a " at some point this changed from being the default and my scroll wheel stopped working.
