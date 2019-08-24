@@ -246,7 +246,6 @@ autocmd BufNewFile,BufRead *.tt setf tt2html
 " ctrlp settings {{{
 let g:ctrlp_cmd = 'CtrlPBuffer'
 let g:ctrlp_match_window = 'top,order:ttb,min:1,max:20,results:20'
-let g:ctrlp_map = '<leader><space>'
 let g:ctrlp_mruf_relative = 1
 let g:ctrlp_custom_ignore = {
   \ 'dir': 'build\|target\|bin\|worktree'
@@ -405,3 +404,15 @@ endif
 " slight kludge to get it so the variable `my_colorscheme` can be reused
 " to set the actual color scheme and not repeat myself.
 exe 'colorscheme ' . my_colorscheme
+
+function! s:fzf_next(idx)
+  let commands = ['Buffers', 'GFiles', 'Files', 'History']
+  execute commands[a:idx]
+  let next = (a:idx + 1) % len(commands)
+  let previous = (a:idx - 1) % len(commands)
+  execute 'tnoremap <buffer> <silent> <c-f> <c-\><c-n>:close<cr>:sleep 100m<cr>:call <sid>fzf_next('.next.')<cr>'
+  execute 'tnoremap <buffer> <silent> <c-b> <c-\><c-n>:close<cr>:sleep 100m<cr>:call <sid>fzf_next('.previous.')<cr>'
+endfunction
+
+command! Cycle call <sid>fzf_next(0)
+nnoremap <silent> <leader><space> :Cycle<cr>
