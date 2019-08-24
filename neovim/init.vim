@@ -330,6 +330,8 @@ let g:coc_global_extensions = [
   \ 'coc-lua',
   \ 'coc-json',
   \ 'coc-html',
+  \ 'coc-emoji',
+  \ 'coc-snippets',
   \ 'coc-docker'
   \ ]
 " }}}
