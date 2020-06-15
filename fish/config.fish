@@ -57,12 +57,14 @@ prepend_to_path "/usr/local/MacGPG2/bin"
 prepend_to_path "$HOME/bin"
 prepend_to_path "$HOME/.pgenv/bin"
 prepend_to_path "$HOME/.pgenv/pgsql/bin"
+prepend_to_path "$GOPATH/bin"
 
 set -gx LESS "-F -X -R"
-if command -s /usr/local/bin/src-hilite-lesspipe.sh > /dev/null
+if command -s /usr/local/bin/bat > /dev/null
+  set -gx LESSOPEN '|/usr/local/bin/bat --theme OneHalfDark --color always %s'
+else if command -s /usr/local/bin/src-hilite-lesspipe.sh > /dev/null
   set -gx LESSOPEN '| /usr/local/bin/src-hilite-lesspipe.sh %s'
-end
-if command -s /usr/local/bin/highlight > /dev/null
+else if command -s /usr/local/bin/highlight > /dev/null
   set -gx LESSOPEN '| /usr/local/bin/highlight --out-format=xterm256 %s'
 end
 
