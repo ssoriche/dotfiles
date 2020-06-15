@@ -1,13 +1,8 @@
 # Dirs
-alias a="cd ~/Sites/auktion"
-alias i="cd ~/Code/iPhone/AK"
 alias o="open ."  # OS X, open in Finder
 
-# http://www.hogbaysoftware.com/products/plaintext
-alias text='mvim ~/Dropbox/PlainText'
-
 # Management
-alias dots="mvim ~/.dotfiles"
+alias dots="nvim ~/.dotfiles"
 alias reload='source ~/.bash_profile && echo "sourced ~/.bash_profile"'
 alias redot='cd ~/.dotfiles && gpp && rake install; cd -'
 
@@ -28,19 +23,8 @@ elif ls -G -d . >/dev/null 2>&1; then
   alias ls='ls -G'  # BSD/OS X
 fi
 
-# Ruby on Rails
-alias sc="script/console"
-alias ss="script/server"
-alias at="script/autospec -f -c"
-alias cu='script/cucumber features -b -s -f progress'
-alias cuf='rake features:focus'
-alias mig='rake db:migrate'
-
-# JRuby
-alias jake="jruby --headless -S rake"
-alias jem="sudo jruby --headless -S gem"
-
 # Git
+alias g="git"
 alias gl="git log"
 alias gs="git status"
 alias gw="git show"
@@ -92,3 +76,5 @@ alias cpu0='pushd ~/Sites/auktion; rake testbot:runner:stop; popd'
 
 # LiveReload
 alias lr="nohup /usr/bin/rake livereload &> /dev/null &"
+
+alias vim="nvim"

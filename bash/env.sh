@@ -1,9 +1,5 @@
-if test -n "$SSH_CONNECTION"; then
-  # Over SSH.
-  export EDITOR='vim'
-  export GIT_EDITOR='vim'
-else
-  # Not over SSH.
-  export EDITOR='mvim -f'
-  export GIT_EDITOR='vim'
-fi
+export EDITOR='nvim'
+export GIT_EDITOR='nvim'
+export LESS="-F -X -R"
+export LESSOPEN='| /usr/local/bin/highlight --out-format=xterm256 %s'
+set -o vi
