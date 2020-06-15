@@ -223,6 +223,13 @@ autocmd CmdwinEnter * nnoremap <buffer> <cr> <cr>
 autocmd FileType qf nnoremap <buffer> <cr> <cr>
 " }}}
 
+" auto-git-diff {{{
+" The auto update takes forever to scroll through. Instead set to manual
+" update and when enter is pressed, update the git diff
+let g:auto_git_diff_disable_auto_update=1
+autocmd FileType gitrebase nmap <buffer> <cr> <Plug>(auto_git_diff_manual_update) :<C-u>call auto_git_diff#show_git_diff()<CR>
+" }}}
+
 " Convienence Remaps {{{
 " make ' jump to row and column
 nnoremap ' `
