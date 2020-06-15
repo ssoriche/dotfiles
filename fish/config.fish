@@ -11,6 +11,7 @@ function custom_key_binds
     bind -M insert \ca beginning-of-line
     bind -M insert \ce end-of-line
     bind -M insert \cn accept-autosuggestion
+    bind -M insert \cf nextd-or-forward-word
 end
 set -g fish_key_bindings custom_key_binds
 
