@@ -332,6 +332,7 @@ nmap <silent> ]W <Plug>(ale_last)
 let g:coc_global_extensions = [
   \ 'coc-lists',
   \ 'coc-marketplace',
+  \ 'coc-go',
   \ 'coc-yaml',
   \ 'coc-lua',
   \ 'coc-json',
@@ -340,6 +341,11 @@ let g:coc_global_extensions = [
   \ 'coc-snippets',
   \ 'coc-docker'
   \ ]
+
+  " \ 'coc-git',
+
+let g:coc_node_path='/usr/local/bin/node'
+
 " }}}
 
 " {{{ perl
@@ -353,6 +359,20 @@ let g:deoplete#enable_at_startup = 1
 
 " {{{ golang
 let g:go_fmt_experimental = 1
+let g:go_fmt_command = "goimports"
+let g:go_fmt_options = {'goimports': '-local go.zr.org'}
+let g:go_highlight_string_spellcheck = 1
+" The lack of syntax highlighting was driving me nuts
+" https://github.com/fatih/vim-go/wiki/Tutorial#beautify-it
+let g:go_highlight_types = 1
+let g:go_highlight_fields = 1
+let g:go_highlight_functions = 1
+let g:go_highlight_function_calls = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_extra_types = 1
+let g:go_highlight_build_constraints = 1
+let g:go_highlight_generate_tags = 1
+autocmd BufNewFile,BufRead *.go setlocal noexpandtab tabstop=4 shiftwidth=4
 " }}}
 
 " tmux will only forward escape sequences to the terminal if surrounded by a DCS sequence
