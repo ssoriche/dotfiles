@@ -4,3 +4,4 @@ fisherman/fzf
 fisherman/getopts
 rafaelrinaldi/pure
 fisherman/z
+evanlucas/fish-kubectl-completions
