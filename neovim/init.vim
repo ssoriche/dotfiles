@@ -318,6 +318,9 @@ let g:ale_linters = {
       \  'perl' : ['syntax-check'],
       \  'ansible' : ['ansible-lint']
       \ }
+
+let b:ale_sh_shellcheck_exclusions = 'SC1090,SC1091'
+
 highlight clear ALEErrorSign
 highlight clear ALEWarningSign
 " hi clear SignColumn
