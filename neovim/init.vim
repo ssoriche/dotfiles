@@ -70,14 +70,12 @@ Plug 'frioux/vim-lost'
 Plug 'Scuilion/markdown-drawer'
 Plug 'mzlogin/vim-markdown-toc'
 
-Plug 'Shougo/denite.nvim'
-Plug 'chemzqm/vim-easygit'
-Plug 'chemzqm/denite-git'
 
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --no-bash' }
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/gv.vim'
 Plug 'pbogut/fzf-mru.vim'
+Plug 'vimwiki/vimwiki'
 
 " An ack/ag/pt/rg powered code search and view tool, takes advantage of Vim
 " 8's power to support asynchronous searching, and lets you edit file in-place
