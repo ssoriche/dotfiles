@@ -437,7 +437,7 @@ endif
 exe 'colorscheme ' . my_colorscheme
 
 function! s:fzf_next(idx)
-  let commands = ['Buffers', 'GFiles', 'Files', 'History']
+  let commands = ['Buffers', 'GFiles?', 'Files', 'History']
   execute commands[a:idx]
   let next = (a:idx + 1) % len(commands)
   let previous = (a:idx - 1) % len(commands)
