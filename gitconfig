@@ -63,6 +63,10 @@
 	autosetuprebase = always
 [interactive]
 	diffFilter = delta --color-only
+[feature]
+	manyFiles = true
+[protocol]
+	version = 2
 [pull]
 	rebase = true
 [filter "lfs"]
