@@ -71,13 +71,13 @@ function! MyReadonly()
 endfunction
 
 function! MyFilename()
-  let fname = expand('%:t')
+  let fname = LightlineFilename()
   return ('' != MyReadonly() ? MyReadonly() . ' ' : '') .
        \ (&ft == 'unite' ? unite#get_status_string() :
        \  fname =~ 'NERD_tree' ? '' :
        \  &ft == 'vimfiler' ? vimfiler#get_status_string() :
        \  &ft == 'vimshell' ? vimshell#get_status_string() :
-       \ '' != expand('%:t') ? expand('%:t') : '[No Name]') .
+       \ '' != fname ? fname : '[No Name]') .
        \ ('' != MyModified() ? ' ' . MyModified() : '')
 endfunction
 
@@ -140,4 +140,13 @@ endfunction
 
 function! CtrlPStatusFunc_2(str)
   return lightline#statusline(0)
+endfunction
+
+function! LightlineFilename()
+  let root = fnamemodify(get(b:, 'git_dir'), ':h')
+  let path = expand('%:p')
+  if path[:len(root)-1] ==# root
+    return path[len(root)+1:]
+  endif
+  return expand('%')
 endfunction

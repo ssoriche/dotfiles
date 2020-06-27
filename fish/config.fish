@@ -11,6 +11,7 @@ function custom_key_binds
     bind -M insert \ca beginning-of-line
     bind -M insert \ce end-of-line
     bind -M insert \cn accept-autosuggestion
+    bind -M insert \cf nextd-or-forward-word
 end
 set -g fish_key_bindings custom_key_binds
 
@@ -18,6 +19,7 @@ set -g fish_key_bindings custom_key_binds
 alias g git
 alias fig docker-compose
 alias d docker
+alias kc kubectl
 
 # Configure editor depending on what's installed.
 if command -s nvim > /dev/null
@@ -55,12 +57,14 @@ prepend_to_path "/usr/local/MacGPG2/bin"
 prepend_to_path "$HOME/bin"
 prepend_to_path "$HOME/.pgenv/bin"
 prepend_to_path "$HOME/.pgenv/pgsql/bin"
+prepend_to_path "$GOPATH/bin"
 
 set -gx LESS "-F -X -R"
-if command -s /usr/local/bin/src-hilite-lesspipe.sh > /dev/null
+if command -s /usr/local/bin/bat > /dev/null
+  set -gx LESSOPEN '|/usr/local/bin/bat --theme OneHalfDark --color always %s'
+else if command -s /usr/local/bin/src-hilite-lesspipe.sh > /dev/null
   set -gx LESSOPEN '| /usr/local/bin/src-hilite-lesspipe.sh %s'
-end
-if command -s /usr/local/bin/highlight > /dev/null
+else if command -s /usr/local/bin/highlight > /dev/null
   set -gx LESSOPEN '| /usr/local/bin/highlight --out-format=xterm256 %s'
 end
 
@@ -80,3 +84,5 @@ eval (direnv hook fish)
 kitty + complete setup fish | source
 set -gx PATH $HOME/.anyenv/bin $PATH
 source (anyenv init - fish|psub)
+
+set -gx FZF_DEFAULT_OPTS '--color fg:188,bg:233,hl:103,fg+:222,bg+:234,hl+:104 --color info:183,prompt:110,spinner:107,pointer:167,marker:215'

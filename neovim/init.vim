@@ -70,14 +70,12 @@ Plug 'frioux/vim-lost'
 Plug 'Scuilion/markdown-drawer'
 Plug 'mzlogin/vim-markdown-toc'
 
-Plug 'Shougo/denite.nvim'
-Plug 'chemzqm/vim-easygit'
-Plug 'chemzqm/denite-git'
 
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --no-bash' }
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/gv.vim'
 Plug 'pbogut/fzf-mru.vim'
+Plug 'vimwiki/vimwiki'
 
 " An ack/ag/pt/rg powered code search and view tool, takes advantage of Vim
 " 8's power to support asynchronous searching, and lets you edit file in-place
@@ -223,6 +221,13 @@ autocmd CmdwinEnter * nnoremap <buffer> <cr> <cr>
 autocmd FileType qf nnoremap <buffer> <cr> <cr>
 " }}}
 
+" auto-git-diff {{{
+" The auto update takes forever to scroll through. Instead set to manual
+" update and when enter is pressed, update the git diff
+let g:auto_git_diff_disable_auto_update=1
+autocmd FileType gitrebase nmap <buffer> <cr> <Plug>(auto_git_diff_manual_update) :<C-u>call auto_git_diff#show_git_diff()<CR>
+" }}}
+
 " Convienence Remaps {{{
 " make ' jump to row and column
 nnoremap ' `
@@ -311,6 +316,9 @@ let g:ale_linters = {
       \  'perl' : ['syntax-check'],
       \  'ansible' : ['ansible-lint']
       \ }
+
+let b:ale_sh_shellcheck_exclusions = 'SC1090,SC1091'
+
 highlight clear ALEErrorSign
 highlight clear ALEWarningSign
 " hi clear SignColumn
@@ -325,7 +333,7 @@ nmap <silent> ]W <Plug>(ale_last)
 let g:coc_global_extensions = [
   \ 'coc-lists',
   \ 'coc-marketplace',
-  \ 'coc-git',
+  \ 'coc-go',
   \ 'coc-yaml',
   \ 'coc-lua',
   \ 'coc-json',
@@ -334,6 +342,11 @@ let g:coc_global_extensions = [
   \ 'coc-snippets',
   \ 'coc-docker'
   \ ]
+
+  " \ 'coc-git',
+
+let g:coc_node_path='/usr/local/bin/node'
+
 " }}}
 
 " {{{ perl
@@ -347,6 +360,20 @@ let g:deoplete#enable_at_startup = 1
 
 " {{{ golang
 let g:go_fmt_experimental = 1
+let g:go_fmt_command = "goimports"
+let g:go_fmt_options = {'goimports': '-local go.zr.org'}
+let g:go_highlight_string_spellcheck = 1
+" The lack of syntax highlighting was driving me nuts
+" https://github.com/fatih/vim-go/wiki/Tutorial#beautify-it
+let g:go_highlight_types = 1
+let g:go_highlight_fields = 1
+let g:go_highlight_functions = 1
+let g:go_highlight_function_calls = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_extra_types = 1
+let g:go_highlight_build_constraints = 1
+let g:go_highlight_generate_tags = 1
+autocmd BufNewFile,BufRead *.go setlocal noexpandtab tabstop=4 shiftwidth=4
 " }}}
 
 " tmux will only forward escape sequences to the terminal if surrounded by a DCS sequence
@@ -408,7 +435,7 @@ endif
 exe 'colorscheme ' . my_colorscheme
 
 function! s:fzf_next(idx)
-  let commands = ['Buffers', 'GFiles', 'Files', 'History']
+  let commands = ['Buffers', 'GFiles?', 'Files', 'History']
   execute commands[a:idx]
   let next = (a:idx + 1) % len(commands)
   let previous = (a:idx - 1) % len(commands)

@@ -7,6 +7,7 @@
 	excludesfile = /Users/ssoriche/.gitignore
 	ignorecase = false
 	quotepath = false
+	pager = delta --plus-color="#012800" --minus-color="#340001" --theme='OneHalfDark'
 [color]
 	status = auto
 	diff = auto
@@ -60,12 +61,12 @@
         compactionHeuristic = true
 [branch]
 	autosetuprebase = always
-[pager]
-	show = diff-highlight | less
-	log = diff-highlight | less
-	diff = diff-highlight | less
 [interactive]
-	diffFilter = diff-highlight
+	diffFilter = delta --color-only
+[feature]
+	manyFiles = true
+[protocol]
+	version = 2
 [pull]
 	rebase = true
 [filter "lfs"]
