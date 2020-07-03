@@ -12,6 +12,7 @@ Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-vinegar'
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-obsession'
+Plug 'tpope/vim-eunuch'
 
 " Considering
 " Plug 'tpope/vim-speeddating'
