@@ -57,7 +57,6 @@ prepend_to_path "/usr/local/MacGPG2/bin"
 prepend_to_path "$HOME/bin"
 prepend_to_path "$HOME/.pgenv/bin"
 prepend_to_path "$HOME/.pgenv/pgsql/bin"
-prepend_to_path "$GOPATH/bin"
 
 set -gx LESS "-F -X -R"
 if command -s /usr/local/bin/bat > /dev/null
