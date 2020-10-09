@@ -33,7 +33,7 @@ let g:lightline = {
       \   'ctrlpmark': 'CtrlPMark',
       \   'mode': 'MyMode',
       \ },
-      \ 'separator': { 'left': '', 'right': '' },
+      \ 'separator': { 'left': '', 'right': '' },
       \ 'subseparator': { 'left': '', 'right': '' }
       \ }
 
