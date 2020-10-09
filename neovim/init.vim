@@ -361,8 +361,8 @@ let g:deoplete#enable_at_startup = 1
 
 " {{{ golang
 let g:go_fmt_experimental = 1
-let g:go_fmt_command = "goimports"
-let g:go_fmt_options = {'goimports': '-local go.zr.org'}
+let g:go_fmt_command = "gofumports"
+let g:go_fmt_options = {'gofumports': '-local go.zr.org'}
 let g:go_highlight_string_spellcheck = 1
 " The lack of syntax highlighting was driving me nuts
 " https://github.com/fatih/vim-go/wiki/Tutorial#beautify-it
