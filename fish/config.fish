@@ -29,7 +29,7 @@ if command -s nvim > /dev/null
   set -gx EDITOR nvim
   set -gx GIT_EDITOR nvim
   set -gx VISUAL nvim
-else if command -s vim
+else if command -s vim > /dev/null
   set -gx EDITOR vim
   set -gx GIT_EDITOR vim
   set -gx VISUAL vim
