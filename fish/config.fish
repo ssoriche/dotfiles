@@ -29,7 +29,7 @@ if command -s nvim > /dev/null
   set -gx EDITOR nvim
   set -gx GIT_EDITOR nvim
   set -gx VISUAL nvim
-else if command -s vim
+else if command -s vim > /dev/null
   set -gx EDITOR vim
   set -gx GIT_EDITOR vim
   set -gx VISUAL vim
@@ -57,7 +57,6 @@ prepend_to_path "/usr/local/MacGPG2/bin"
 prepend_to_path "$HOME/bin"
 prepend_to_path "$HOME/.pgenv/bin"
 prepend_to_path "$HOME/.pgenv/pgsql/bin"
-prepend_to_path "$GOPATH/bin"
 
 set -gx LESS "-F -X -R"
 if command -s /usr/local/bin/bat > /dev/null
@@ -68,21 +67,15 @@ else if command -s /usr/local/bin/highlight > /dev/null
   set -gx LESSOPEN '| /usr/local/bin/highlight --out-format=xterm256 %s'
 end
 
-# Configure plenv
-# The following line throws an error:
-# setenv: Too many arguments
-# with how the environment is being set up within fish
-# as a work around set the environment using fish style syntax
-# status --is-interactive; and . (plenv init -|psub)
-set -q PLENV_ROOT; or set -lx PLENV_ROOT $HOME/.plenv
-
-prepend_to_path $PLENV_ROOT/shims
-
-status --is-interactive; and source (rbenv init -|psub)
 eval (direnv hook fish)
 
 kitty + complete setup fish | source
-set -gx PATH $HOME/.anyenv/bin $PATH
-source (anyenv init - fish|psub)
+if command -v anyenv > /dev/null
+  set -gx PATH $HOME/.anyenv/bin $PATH
+  source (anyenv init - fish|psub)
+end
 
 set -gx FZF_DEFAULT_OPTS '--color fg:188,bg:233,hl:103,fg+:222,bg+:234,hl+:104 --color info:183,prompt:110,spinner:107,pointer:167,marker:215'
+if test -e /usr/local/opt/asdf/asdf.fish
+  source /usr/local/opt/asdf/asdf.fish
+end
