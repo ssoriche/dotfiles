@@ -1,9 +1,7 @@
 0rax/fish-bd
 barnybug/docker-fish-completion
-fisherman/fzf
-fisherman/getopts
 rafaelrinaldi/pure
-fisherman/z
+jethrokuan/z
 evanlucas/fish-kubectl-completions
 edc/bass
 kunickiaj/fish-completions-stern
