@@ -39,7 +39,6 @@ Plug 'vim-perl/vim-perl', { 'for': 'perl', 'do': 'make clean carp dancer highlig
 Plug 'fatih/vim-go', {'do':':GoInstallBinaries'}
 " }}}
 
-Plug 'ctrlpvim/ctrlp.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'rking/ag.vim'
 Plug 'jiangmiao/auto-pairs'
@@ -247,28 +246,6 @@ augroup END
 autocmd FileType perl PerlSetEnvironment
 autocmd BufNewFile,BufRead *.tt setf tt2html
 " }}}
-" }}}
-
-" ctrlp settings {{{
-let g:ctrlp_cmd = 'CtrlPBuffer'
-let g:ctrlp_match_window = 'top,order:ttb,min:1,max:20,results:20'
-let g:ctrlp_mruf_relative = 1
-let g:ctrlp_custom_ignore = {
-  \ 'dir': 'build\|target\|bin\|worktree'
-  \ }
-
-autocmd BufEnter,BufUnload * call ctrlp#mrufiles#list(expand('<abuf>', 1)) " sort the buffer list by last entered
-nnoremap <leader>. :CtrlPBufTag<cr>
-
-function! CtrlpSeed()
-  :let g:ctrlp_default_input = substitute(tolower(expand('<cword>')),'::','/','g')
-  :CtrlP
-  :let g:ctrlp_default_input = ''
-endfunction
-
-nnoremap <silent> <leader>g :call CtrlpSeed()<cr>
-let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden
-      \ -g ""'
 " }}}
 
 " fzf {{{
