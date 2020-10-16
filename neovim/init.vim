@@ -10,13 +10,18 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-vinegar'
-Plug 'tpope/vim-endwise'
+" Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-obsession'
 Plug 'tpope/vim-eunuch'
 
 " Considering
 " Plug 'tpope/vim-speeddating'
+" Plug 'neovim/nvim-lsp'
 
+Plug 'neovim/nvim-lspconfig'
+Plug 'nvim-lua/completion-nvim'
+" Plug 'nvim-lua/diagnostic-nvim'
+" Plug 'nvim-lua/lsp-status.nvim'
 " }}}
 
 " colour schemes {{{
@@ -37,7 +42,7 @@ Plug 'NieTiger/halcyon-neovim'
 " syntax {{{
 Plug 'sheerun/vim-polyglot'
 Plug 'vim-perl/vim-perl', { 'for': 'perl', 'do': 'make clean carp dancer highlight-all-pragmas moose test-more try-tiny', 'branch': 'dev' }
-Plug 'fatih/vim-go', {'do':':GoInstallBinaries'}
+" Plug 'fatih/vim-go', {'do':':GoInstallBinaries'}
 " }}}
 
 Plug 'airblade/vim-gitgutter'
@@ -94,7 +99,7 @@ Plug 'chrisbra/csv.vim'
 Plug 'kristijanhusak/vim-carbon-now-sh'
 
 " Completion framework and language server client, smarter tab completion.
-Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
+" Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 
 " Adds ALE support to lightline status line
 Plug 'maximbaz/lightline-ale'
@@ -309,22 +314,22 @@ nmap <silent> ]W <Plug>(ale_last)
 " }}}
 
 " {{{ CoC
-let g:coc_global_extensions = [
-  \ 'coc-lists',
-  \ 'coc-marketplace',
-  \ 'coc-go',
-  \ 'coc-yaml',
-  \ 'coc-lua',
-  \ 'coc-json',
-  \ 'coc-html',
-  \ 'coc-emoji',
-  \ 'coc-snippets',
-  \ 'coc-docker'
-  \ ]
+" let g:coc_global_extensions = [
+"   \ 'coc-lists',
+"   \ 'coc-marketplace',
+"   \ 'coc-go',
+"   \ 'coc-yaml',
+"   \ 'coc-lua',
+"   \ 'coc-json',
+"   \ 'coc-html',
+"   \ 'coc-emoji',
+"   \ 'coc-docker'
+"   \ ]
 
   " \ 'coc-git',
+  " \ 'coc-snippets',
 
-let g:coc_node_path='/usr/local/bin/node'
+" let g:coc_node_path='/usr/local/bin/node'
 
 " }}}
 
@@ -430,3 +435,17 @@ endfunction
 
 command! Cycle call <sid>fzf_next(0)
 nnoremap <silent> <leader><space> :Cycle<cr>
+
+" Use <Tab> and <S-Tab> to navigate through popup menu
+inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+
+" Set completeopt to have a better completion experience
+set completeopt=menuone,noinsert,noselect
+
+" Avoid showing message extra message when using completion
+set shortmess+=c
+let g:completion_enable_snippet = 'UltiSnips'
+let g:builtin_lsp = v:true
+
+" lua require('lsp_config')
