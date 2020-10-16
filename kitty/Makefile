@@ -1,9 +1,10 @@
 SHELL=/bin/bash
 export KITTY_CONFIG_DIR := $(HOME)/.config/kitty
 KITTY_CONFIG := $(KITTY_CONFIG_DIR)/kitty.conf
-SPACEGREY_THEME := $(KITTY_CONFIG_DIR)/spacegrey.conf
+KITTY_THEMES := $(KITTY_CONFIG_DIR)/kitty-themes
+KITTY_THEME := $(KITTY_CONFIG_DIR)/theme.conf
 
-$(KITTY_CONFIG): backup $(KITTY_CONFIG_DIR) $(SPACEGREY_THEME)
+$(KITTY_CONFIG): backup $(KITTY_CONFIG_DIR) $(KITTY_THEMES) $(KITTY_THEME)
 	if [ ! -h $(KITTY_CONFIG) ]; then \
 		ln -s $(PWD)/kitty.conf $@; \
 	fi
@@ -16,11 +17,23 @@ backup:
 	if [ -e $(KITTY_CONFIG) ] && [ ! -h $(KITTY_CONFIG) ]; then \
 		mv $(KITTY_CONFIG) $(KITTY_CONFIG).bak; \
 	fi
-	if [ ! -h $(SPACEGREY_THEME) ]; then \
-		mv $(SPACEGREY_THEME) $(SPACEGREY_THEME).bak; \
+	if [ ! -h $(KITTY_THEME) ]; then \
+		mv $(KITTY_THEME) $(KITTY_THEME).bak; \
 	fi
 
-$(SPACEGREY_THEME): $(KITTY_CONFIG_DIR)
-	if [ ! -h $(SPACEGREY_THEME) ]; then \
-		ln -s $(PWD)/spacegrey.conf $@; \
+$(KITTY_THEMES): $(KITTY_CONFIG_DIR)
+	if [ ! -h $(KITTY_THEMES) ]; then \
+		ln -s $(PWD)/kitty-themes $@; \
+	fi
+
+$(KITTY_THEMES_THEMES): $(KITTY_THEMES)
+	if [ ! -d $(KITTY_THEMES_THEMES) ]; then \
+		mkdir -p $@; \
+	fi \
+	curl -sfLo $(KITTY_THEMES_THEMES)/Jellybeans.conf \
+	https://raw.githubusercontent.com/dexpota/kitty-themes/master/themes/Jellybeans.conf
+
+$(KITTY_THEME): $(KITTY_THEMES)
+	if [ ! -h $(KITTY_THEME) ]; then \
+		ln -s $(KITTY_THEMES_THEMES)/Jellybeans.conf $@; \
 	fi
