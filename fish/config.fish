@@ -60,7 +60,8 @@ prepend_to_path "$HOME/.pgenv/pgsql/bin"
 
 set -gx LESS "-F -X -R"
 if command -s /usr/local/bin/bat > /dev/null
-  set -gx LESSOPEN '|/usr/local/bin/bat --theme OneHalfDark --color always %s'
+  set -gx BAT_THEME 'base16-256'
+  set -gx LESSOPEN '|/usr/local/bin/bat --theme base16-256 --color always %s'
 else if command -s /usr/local/bin/src-hilite-lesspipe.sh > /dev/null
   set -gx LESSOPEN '| /usr/local/bin/src-hilite-lesspipe.sh %s'
 else if command -s /usr/local/bin/highlight > /dev/null

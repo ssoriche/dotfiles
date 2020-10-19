@@ -31,6 +31,7 @@ Plug 'ajh17/Spacegray.vim'
 Plug 'fenetikm/falcon'
 Plug 'arcticicestudio/nord-vim'
 Plug 'rakr/vim-one'
+Plug 'NieTiger/halcyon-neovim'
 " }}}
 
 " syntax {{{
@@ -111,7 +112,7 @@ set hidden                 " Allow unsaved buffers to be put in the background
 " the top of the file. Color scheme option settings are now at the very
 " bottom.
 set termguicolors
-let my_colorscheme = 'jellybeans'
+let my_colorscheme = 'halcyon'
 
 " Mouse
 set mouse=a " at some point this changed from being the default and my scroll wheel stopped working.
@@ -405,6 +406,12 @@ endif
 if my_colorscheme == 'one'
   let g:one_allow_italics = 1
   let g:lightline.colorscheme = 'one'
+endif
+" }}}
+
+" ColorScheme halcyon-neovim {{{
+if my_colorscheme == 'halcyon'
+  let g:lightline.colorscheme = 'halcyon'
 endif
 " }}}
 
