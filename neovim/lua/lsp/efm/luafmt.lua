@@ -1,7 +1,4 @@
 return {
-    -- formatCommand = "luafmt ${-i:tabWidth} --stdin",
-    -- formatCommand = "lua-format ${-i:tabWidth} --stdin",
-    -- formatCommand = "lua-format -i ${--tab-width=:tabWidth}",
-    formatCommand = "lua-format",
+    formatCommand = "lua-format --chop-down-kv-table --chop-down-table --extra-sep-at-table-end",
     formatStdin = true
 }

@@ -1,44 +1,41 @@
 local lspconfig = require "lspconfig"
 
 local map = function(mode, key, result, noremap, expr)
-    if noremap == nil then
-        noremap = true
-    end
-    if expr == nil then
-        expr = false
-    end
-    vim.api.nvim_buf_set_keymap(0, mode, key, result, {noremap = noremap, silent = true, expr = expr})
+    if noremap == nil then noremap = true end
+    if expr == nil then expr = false end
+    vim.api.nvim_buf_set_keymap(0, mode, key, result,
+                                {noremap = noremap, silent = true, expr = expr})
 end
 
 vim.lsp.protocol.CompletionItemKind = {
-      " [text]",
-      " [method]",
-      " [function]",
-      " [constructor]",
-      "ﰠ [field]",
-      " [variable]",
-      " [class]",
-      " [interface]",
-      " [module]",
-      " [property]",
-      " [unit]",
-      " [value]",
-      " [enum]",
-      " [key]",
-      "﬌ [snippet]",
-      " [color]",
-      " [file]",
-      " [reference]",
-      " [folder]",
-      " [enum member]",
-      " [constant]",
-      " [struct]",
-      "⌘ [event]",
-      " [operator]",
-      "⌂ [type]"
+    " [text]",
+    " [method]",
+    " [function]",
+    " [constructor]",
+    "ﰠ [field]",
+    " [variable]",
+    " [class]",
+    " [interface]",
+    " [module]",
+    " [property]",
+    " [unit]",
+    " [value]",
+    " [enum]",
+    " [key]",
+    "﬌ [snippet]",
+    " [color]",
+    " [file]",
+    " [reference]",
+    " [folder]",
+    " [enum member]",
+    " [constant]",
+    " [struct]",
+    "⌘ [event]",
+    " [operator]",
+    "⌂ [type]",
 }
 
-require "compe".setup {
+require"compe".setup {
     enabled = true,
     -- debug = false,
     autocomplete = true,
@@ -51,47 +48,48 @@ require "compe".setup {
         nvim_lsp = true,
         nvim_lua = true,
         ultisnips = true,
-        treesitter = true
-    }
+        treesitter = true,
+    },
 }
 
-vim.fn.sign_define("LspDiagnosticsSignError", {text = "x", texthl = "LspDiagnosticsDefaultError"})
-vim.fn.sign_define("LspDiagnosticsSignWarning", {text = "w", texthl = "LspDiagnosticsDefaultWarning"})
-vim.fn.sign_define("LspDiagnosticsSignInformation", {text = "i", texthl = "LspDiagnosticsDefaultInformation"})
-vim.fn.sign_define("LspDiagnosticsSignHint", {text = "h", texthl = "LspDiagnosticsDefaultHint"})
+vim.fn.sign_define("LspDiagnosticsSignError",
+                   {text = "x", texthl = "LspDiagnosticsDefaultError"})
+vim.fn.sign_define("LspDiagnosticsSignWarning",
+                   {text = "w", texthl = "LspDiagnosticsDefaultWarning"})
+vim.fn.sign_define("LspDiagnosticsSignInformation",
+                   {text = "i", texthl = "LspDiagnosticsDefaultInformation"})
+vim.fn.sign_define("LspDiagnosticsSignHint",
+                   {text = "h", texthl = "LspDiagnosticsDefaultHint"})
 
-vim.lsp.handlers["textDocument/formatting"] = function(err, _, result, _, bufnr)
-    if err ~= nil or result == nil then
-        return
-    end
-    if not vim.api.nvim_buf_get_option(bufnr, "modified") then
-        local view = vim.fn.winsaveview()
-        vim.lsp.util.apply_text_edits(result, bufnr)
-        vim.fn.winrestview(view)
-        if bufnr == vim.api.nvim_get_current_buf() then
-            vim.cmd [[noautocmd :update]]
-            vim.cmd [[GitGutter]]
+vim.lsp.handlers["textDocument/formatting"] =
+    function(err, _, result, _, bufnr)
+        if err ~= nil or result == nil then return end
+        if not vim.api.nvim_buf_get_option(bufnr, "modified") then
+            local view = vim.fn.winsaveview()
+            vim.lsp.util.apply_text_edits(result, bufnr)
+            vim.fn.winrestview(view)
+            if bufnr == vim.api.nvim_get_current_buf() then
+                vim.cmd [[noautocmd :update]]
+                vim.cmd [[GitGutter]]
+            end
         end
     end
-end
 
-vim.lsp.handlers["textDocument/publishDiagnostics"] = function(...)
-    vim.lsp.with(
-        vim.lsp.diagnostic.on_publish_diagnostics,
-        {
+vim.lsp.handlers["textDocument/publishDiagnostics"] =
+    function(...)
+        vim.lsp.with(vim.lsp.diagnostic.on_publish_diagnostics, {
             signs = true,
             underline = false,
-            update_in_insert = false
-        }
-    )(...)
-    pcall(vim.lsp.diagnostic.set_loclist, {open_loclist = false})
-end
+            update_in_insert = false,
+        })(...)
+        pcall(vim.lsp.diagnostic.set_loclist, {open_loclist = false})
+    end
 
 local format_options_prettier = {
     tabWidth = 4,
     singleQuote = true,
     trailingComma = "all",
-    configPrecedence = "prefer-file"
+    configPrecedence = "prefer-file",
 }
 vim.g.format_options_typescript = format_options_prettier
 vim.g.format_options_javascript = format_options_prettier
@@ -112,7 +110,8 @@ vim.cmd [[command! FormatEndable lua FormatToggle(false)]]
 
 _G.formatting = function()
     if not vim.g[string.format("format_disabled_%s", vim.bo.filetype)] then
-        vim.lsp.buf.formatting(vim.g[string.format("format_options_%s", vim.bo.filetype)] or {})
+        vim.lsp.buf.formatting(vim.g[string.format("format_options_%s",
+                                                   vim.bo.filetype)] or {})
     end
 end
 
@@ -142,7 +141,8 @@ local on_attach = function(client)
         map("n", "<CR>", "<cmd>lua vim.lsp.buf.hover()<CR>")
     end
     if client.resolved_capabilities.find_references then
-        map("n", "<Leader>*", ":call lists#ChangeActiveList('Quickfix')<CR>:lua vim.lsp.buf.references()<CR>")
+        map("n", "<Leader>*",
+            ":call lists#ChangeActiveList('Quickfix')<CR>:lua vim.lsp.buf.references()<CR>")
     end
     if client.resolved_capabilities.rename then
         map("n", "<leader>rn", "<cmd>lua vim.lsp.buf.rename()<CR>")
@@ -170,24 +170,15 @@ lspconfig.gopls.setup {
     on_attach = function(client)
         client.resolved_capabilities.document_formatting = false
         on_attach(client)
-    end
+    end,
 }
 
 -- https://github.com/palantir/python-language-server
 lspconfig.pyls.setup {
     on_attach = on_attach,
     settings = {
-        pyls = {
-            plugins = {
-                pycodestyle = {
-                    enabled = false,
-                    ignore = {
-                        "E501"
-                    }
-                }
-            }
-        }
-    }
+        pyls = {plugins = {pycodestyle = {enabled = false, ignore = {"E501"}}}},
+    },
 }
 
 lspconfig.pyright.setup {on_attach = on_attach}
@@ -197,7 +188,7 @@ lspconfig.tsserver.setup {
     on_attach = function(client)
         client.resolved_capabilities.document_formatting = false
         on_attach(client)
-    end
+    end,
 }
 
 -- https://github.com/sumneko/lua-language-server
@@ -213,9 +204,7 @@ local function get_lua_runtime()
     local result = {}
     for _, path in pairs(vim.api.nvim_list_runtime_paths()) do
         local lua_path = path .. "/lua/"
-        if vim.fn.isdirectory(lua_path) then
-            result[lua_path] = true
-        end
+        if vim.fn.isdirectory(lua_path) then result[lua_path] = true end
     end
     result[vim.fn.expand("$VIMRUNTIME/lua")] = true
     result[vim.fn.expand("~/build/neovim/src/nvim/lua")] = true
@@ -225,15 +214,13 @@ end
 lspconfig.sumneko_lua.setup {
     on_attach = on_attach,
     -- cmd = {"lua-language-server"},
-    cmd = {"/Users/ssoriche/.cache/nvim/lspconfig/sumneko_lua/lua-language-server/bin/macOS/lua-language-server"},
+    cmd = {
+        "/Users/ssoriche/.cache/nvim/lspconfig/sumneko_lua/lua-language-server/bin/macOS/lua-language-server",
+    },
     settings = {
         Lua = {
-            runtime = {
-                version = "LuaJIT"
-            },
-            completion = {
-                keywordSnippet = "Disable"
-            },
+            runtime = {version = "LuaJIT"},
+            completion = {keywordSnippet = "Disable"},
             diagnostics = {
                 enable = true,
                 globals = {
@@ -245,16 +232,16 @@ lspconfig.sumneko_lua.setup {
                     "before_each",
                     "after_each",
                     "teardown",
-                    "pending"
+                    "pending",
                 },
                 workspace = {
                     library = get_lua_runtime(),
                     maxPreload = 1000,
-                    preloadFileSize = 1000
-                }
-            }
-        }
-    }
+                    preloadFileSize = 1000,
+                },
+            },
+        },
+    },
 }
 
 -- https://github.com/iamcco/vim-language-server
@@ -263,7 +250,7 @@ lspconfig.vimls.setup {on_attach = on_attach}
 -- https://github.com/vscode-langservers/vscode-json-languageserver
 lspconfig.jsonls.setup {
     on_attach = on_attach,
-    cmd = {"vscode-json-languageserver", "--stdio"}
+    cmd = {"vscode-json-languageserver", "--stdio"},
 }
 
 -- https://github.com/redhat-developer/yaml-language-server
@@ -288,7 +275,7 @@ lspconfig.dockerls.setup {on_attach = on_attach}
 lspconfig.terraformls.setup {
     on_attach = on_attach,
     cmd = {"terraform-ls", "serve"},
-    filetypes = {"tf"}
+    filetypes = {"tf"},
 }
 
 -- local vint = require "efm/vint"
@@ -328,8 +315,8 @@ lspconfig.efm.setup {
             -- css = {prettier},
             markdown = {prettier},
             -- tf = {terraform}
-        }
-    }
+        },
+    },
 }
 
 lspconfig.clangd.setup {on_attach = on_attach}
