@@ -77,3 +77,8 @@ require'nvim-web-devicons'.setup {
  -- will get overriden by `get_icons` option
  default = true;
 }
+
+local saga = require'lspsaga'
+saga.init_lsp_saga {
+  border_style = 1
+}

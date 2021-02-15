@@ -11,6 +11,7 @@ return require('packer').startup(function()
     use 'neovim/nvim-lspconfig'
     use {'nvim-treesitter/nvim-treesitter'}
     use {'alexaandru/nvim-lspupdate'}
+    use 'glepnir/lspsaga.nvim'
 
     use 'onsails/lspkind-nvim'
     use 'kosayoda/nvim-lightbulb'
