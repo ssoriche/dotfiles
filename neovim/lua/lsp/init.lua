@@ -32,7 +32,7 @@ vim.lsp.protocol.CompletionItemKind = {
     " [struct]",
     "⌘ [event]",
     " [operator]",
-    "⌂ [type]",
+    "♛ [type]",
 }
 
 require"compe".setup {
