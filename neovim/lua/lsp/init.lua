@@ -133,7 +133,6 @@ local on_attach = function(client)
     end
     if client.resolved_capabilities.completion then
         map("i", "<C-n>", "compe#complete()", true, true)
-        -- map("i", "<CR>", "compe#confirm(lexima#expand('<LT>CR>', 'i'))", true, true)
         map("i", "<CR>", "compe#confirm('<CR>')", true, true)
         map("i", "<C-e>", "compe#close('<C-e>')", true, true)
     end
@@ -213,7 +212,6 @@ local function get_lua_runtime()
 end
 lspconfig.sumneko_lua.setup {
     on_attach = on_attach,
-    -- cmd = {"lua-language-server"},
     cmd = {"lua-language-server"},
     settings = {
         Lua = {

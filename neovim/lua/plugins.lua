@@ -17,13 +17,10 @@ return require('packer').startup(function()
     use 'kosayoda/nvim-lightbulb'
 
     use {'airblade/vim-gitgutter'}
-    -- use {'dense-analysis/ale'}
     use {'machakann/vim-sandwich'}
 
     use {'b3nj5m1n/kommentary'}
 
-    -- use {'tpope/vim-surround'}
-    -- use {'tpope/vim-commentary'}
     use {'tpope/vim-unimpaired'}
     use {'tpope/vim-endwise'}
     use {'tpope/vim-eunuch'}
