@@ -35,11 +35,8 @@ return require('packer').startup(function()
     }
 
     use {
-        'ojroques/nvim-lspfuzzy',
-        requires = {
-            {'junegunn/fzf'},
-            {'junegunn/fzf.vim'}, -- to enable preview (optional)
-        },
+        'nvim-telescope/telescope.nvim',
+        requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}},
     }
 
 end)

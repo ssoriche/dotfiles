@@ -7,5 +7,9 @@ options = {noremap = true}
 map('n', '<leader>/', ':nohlsearch<cr>', options)
 map('n', '<leader>y', '"+y', options)
 map('n', '<leader>p', '"+p', options)
-map('n', '<leader> ', '<cmd>Buffers<CR>', options)
 
+-- Telescope
+local builtin = "<cmd>lua require('telescope.builtin')"
+map('n', '<leader> ', builtin .. '.buffers()<CR>', options)
+map('n', '<leader>ff', builtin .. '.find_files()<CR>', options)
+map('n', '<leader>of', builtin .. '.oldfiles()<CR>', options)
