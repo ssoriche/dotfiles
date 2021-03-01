@@ -318,3 +318,5 @@ lspconfig.efm.setup {
 }
 
 lspconfig.clangd.setup {on_attach = on_attach}
+
+require('lsp/lspsaga')
