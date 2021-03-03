@@ -287,32 +287,33 @@ local eslint = require "lsp/efm/eslint"
 local shellcheck = require "lsp/efm/shellcheck"
 local terraform = require "lsp/efm/terraform"
 local misspell = require "lsp/efm/misspell"
+
+local languages = {
+    ["="] = {misspell},
+    lua = {luafmt},
+    go = {golint, goimports},
+    sh = {shellcheck},
+    -- vim = {vint},
+    -- python = {black, isort, flake8, mypy},
+    -- typescript = {prettier, eslint},
+    -- javascript = {prettier, eslint},
+    -- typescriptreact = {prettier, eslint},
+    -- javascriptreact = {prettier, eslint},
+    yaml = {prettier},
+    json = {prettier},
+    -- html = {prettier},
+    -- scss = {prettier},
+    -- css = {prettier},
+    markdown = {prettier},
+    -- tf = {terraform}
+}
+
 -- https://github.com/mattn/efm-langserver
 lspconfig.efm.setup {
     on_attach = on_attach,
     init_options = {documentFormatting = true},
-    settings = {
-        rootMarkers = {".git/"},
-        languages = {
-            ["="] = {misspell},
-            lua = {luafmt},
-            go = {golint, goimports},
-            sh = {shellcheck},
-            -- vim = {vint},
-            -- python = {black, isort, flake8, mypy},
-            -- typescript = {prettier, eslint},
-            -- javascript = {prettier, eslint},
-            -- typescriptreact = {prettier, eslint},
-            -- javascriptreact = {prettier, eslint},
-            yaml = {prettier},
-            json = {prettier},
-            -- html = {prettier},
-            -- scss = {prettier},
-            -- css = {prettier},
-            markdown = {prettier},
-            -- tf = {terraform}
-        },
-    },
+    settings = {rootMarkers = {".git/", "go.mod"}, languages = languages},
+    filetypes = vim.tbl_keys(languages),
 }
 
 lspconfig.clangd.setup {on_attach = on_attach}
