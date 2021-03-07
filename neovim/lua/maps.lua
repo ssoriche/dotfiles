@@ -8,6 +8,10 @@ map('n', '<leader>/', ':nohlsearch<cr>', options)
 map('n', '<leader>y', '"+y', options)
 map('n', '<leader>p', '"+p', options)
 
+map('n', 'Q', '@q', options)
+map('v', 'Q', ':norm @q<cr>', options)
+map('n', '<bs>', '<c-^>', options)
+
 -- Telescope
 local builtin = "<cmd>lua require('telescope.builtin')"
 map('n', '<leader> ', builtin .. '.buffers()<CR>', options)
