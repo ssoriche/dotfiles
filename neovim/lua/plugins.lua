@@ -21,7 +21,6 @@ return require('packer').startup(function()
 
     use {'b3nj5m1n/kommentary'}
 
-    use {'tpope/vim-unimpaired'}
     use {'tpope/vim-endwise'}
     use {'tpope/vim-eunuch'}
     use {'tpope/vim-obsession'}
