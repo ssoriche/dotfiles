@@ -52,8 +52,8 @@ fish_add_path "$HOME/go/bin"
 
 set -gx LESS "-F -X -R"
 if command -s /usr/local/bin/bat > /dev/null
-  set -gx BAT_THEME 'base16-256'
-  set -gx LESSOPEN '|/usr/local/bin/bat --theme base16-256 --color always %s'
+  set -gx BAT_THEME 'TwoDark'
+  set -gx LESSOPEN '|/usr/local/bin/bat --theme TwoDark --color always %s'
 else if command -s /usr/local/bin/src-hilite-lesspipe.sh > /dev/null
   set -gx LESSOPEN '| /usr/local/bin/src-hilite-lesspipe.sh %s'
 else if command -s /usr/local/bin/highlight > /dev/null
