@@ -20,9 +20,7 @@ require('maps')
 cmd 'colorscheme halcyon' -- Put your favorite colorscheme here
 
 local lualine = require('lualine')
-lualine.status()
-lualine.options.theme = 'jellybeans'
-lualine.extensions = {'fzf'}
+lualine.setup {options = {theme = 'material'}, extensions = {'fzf'}}
 
 --[[ local ts = require 'nvim-treesitter.configs'
 ts.setup {ensure_installed = 'maintained', highlight = {enable = true}} ]]
