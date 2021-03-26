@@ -17,7 +17,9 @@ require("treesitter")
 require('settings')
 require('maps')
 
-cmd 'colorscheme halcyon' -- Put your favorite colorscheme here
+g.material_style = 'deep ocean'
+g.material_italics = 1
+cmd 'colorscheme material' -- Put your favorite colorscheme here
 
 local lualine = require('lualine')
 lualine.setup {options = {theme = 'material'}, extensions = {'fzf'}}
