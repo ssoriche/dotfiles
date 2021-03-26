@@ -62,3 +62,5 @@ require'telescope'.setup {
         file_ignore_patterns = {'tags'},
     },
 }
+
+require'gitsigns'.setup()
