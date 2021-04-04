@@ -21,7 +21,7 @@ return require('packer').startup(function()
 
     use {'b3nj5m1n/kommentary'}
 
-    use {'tpope/vim-endwise'}
+    use {'windwp/nvim-autopairs'}
     use {'tpope/vim-eunuch'}
     use {'tpope/vim-obsession'}
 
