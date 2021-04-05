@@ -16,7 +16,7 @@ return require('packer').startup(function()
     use 'onsails/lspkind-nvim'
     use 'kosayoda/nvim-lightbulb'
 
-    use {'lewis6991/gitsigns.nvim', requires = { 'nvim-lua/plenary.nvim' }}
+    use {'lewis6991/gitsigns.nvim', requires = {'nvim-lua/plenary.nvim'}}
     use {'machakann/vim-sandwich'}
 
     use {'b3nj5m1n/kommentary'}
@@ -38,8 +38,8 @@ return require('packer').startup(function()
         requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}},
     }
 
-  use 'tjdevries/colorbuddy.nvim'
-  use 'marko-cerovac/material.nvim'
+    use 'tjdevries/colorbuddy.nvim'
+    use 'marko-cerovac/material.nvim'
     use {"lukas-reineke/indent-blankline.nvim", branch = "lua"}
 
 end)
