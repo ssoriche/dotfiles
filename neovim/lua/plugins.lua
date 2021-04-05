@@ -40,5 +40,6 @@ return require('packer').startup(function()
 
   use 'tjdevries/colorbuddy.nvim'
   use 'marko-cerovac/material.nvim'
+    use {"lukas-reineke/indent-blankline.nvim", branch = "lua"}
 
 end)
