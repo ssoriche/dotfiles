@@ -11,6 +11,7 @@ return {
     window_padding = {bottom = 4, left = 2, right = 2},
     leader = {key = "s", mods = "CTRL"},
     keys = {
+        {key = "[", mods = "LEADER", action = "ActivateCopyMode"},
         {
             key = "-",
             mods = "LEADER",
