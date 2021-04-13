@@ -70,7 +70,6 @@ vim.lsp.handlers["textDocument/formatting"] =
             vim.fn.winrestview(view)
             if bufnr == vim.api.nvim_get_current_buf() then
                 vim.cmd [[noautocmd :update]]
-                vim.cmd [[GitGutter]]
             end
         end
     end
