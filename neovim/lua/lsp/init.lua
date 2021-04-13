@@ -128,7 +128,8 @@ local on_attach = function(client)
         vim.cmd [[augroup END]]
     end
     if client.resolved_capabilities.goto_definition then
-        map("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>")
+        map("n", "gd",
+            "<cmd>lua require'lspsaga.provider'.preview_definition()<CR>")
     end
     if client.resolved_capabilities.completion then
         map("i", "<C-n>", "compe#complete()", true, true)
@@ -136,7 +137,8 @@ local on_attach = function(client)
         map("i", "<C-e>", "compe#close('<C-e>')", true, true)
     end
     if client.resolved_capabilities.hover then
-        map("n", "<CR>", "<cmd>lua vim.lsp.buf.hover()<CR>")
+        map("n", "<CR>",
+            "<cmd>lua require('lspsaga.hover').render_hover_doc()<CR>")
     end
     if client.resolved_capabilities.find_references then
         map("n", "<Leader>*",
@@ -145,7 +147,14 @@ local on_attach = function(client)
     if client.resolved_capabilities.rename then
         map("n", "<leader>rn", "<cmd>lua vim.lsp.buf.rename()<CR>")
     end
-    vim.cmd [[autocmd CursorHold <buffer> lua vim.lsp.diagnostic.show_line_diagnostics()]]
+    map("n", "<leader>cd",
+        "<cmd>lua require'lspsaga.diagnostic'.show_line_diagnostics()<CR>")
+    map("n", "<leader>cc",
+        "<cmd>lua require'lspsaga.diagnostic'.show_cursor_diagnostics()<CR>")
+    map("n", "[e",
+        "<cmd>lua require'lspsaga.diagnostic'.lsp_jump_diagnostic_prev()<CR>")
+    map("n", "]e",
+        "<cmd>lua require'lspsaga.diagnostic'.lsp_jump_diagnostic_next()<CR>")
 end
 
 function _G.activeLSP()
