@@ -68,3 +68,4 @@ require'telescope'.setup {
 require'gitsigns'.setup()
 
 require'nvim-autopairs'.setup()
+require'neoscroll'.setup()
