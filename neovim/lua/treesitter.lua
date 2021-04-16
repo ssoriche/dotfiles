@@ -1,16 +1,8 @@
-require "nvim-treesitter.configs".setup {
+require"nvim-treesitter.configs".setup {
     ensure_installed = "all",
-    highlight = {
-        enable = true
-    },
-    indent = {
-        enable = true
-    },
-    refactor = {
-        highlight_definitions = {
-            enable = true
-        }
-    },
+    highlight = {enable = true},
+    indent = {enable = true},
+    refactor = {highlight_definitions = {enable = true}},
     textobjects = {
         select = {
             enable = true,
@@ -18,9 +10,9 @@ require "nvim-treesitter.configs".setup {
                 ["af"] = "@function.outer",
                 ["if"] = "@function.inner",
                 ["ac"] = "@class.outer",
-                ["ic"] = "@class.inner"
-            }
-        }
+                ["ic"] = "@class.inner",
+            },
+        },
         -- lsp_interop = {
         --     enable = false,
         --     peek_definition_code = {
@@ -28,5 +20,5 @@ require "nvim-treesitter.configs".setup {
         --         ["dF"] = "@class.outer"
         --     }
         -- }
-    }
+    },
 }
