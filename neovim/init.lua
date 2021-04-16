@@ -69,3 +69,4 @@ require'gitsigns'.setup()
 
 require'nvim-autopairs'.setup()
 require'neoscroll'.setup()
+require'unimpaired'.setup()
