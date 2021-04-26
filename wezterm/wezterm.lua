@@ -1,4 +1,32 @@
 local wezterm = require 'wezterm';
+
+function dump(o)
+    if type(o) == 'table' then
+        local s = '{ '
+        for k, v in pairs(o) do
+            if type(k) ~= 'number' then k = '"' .. k .. '"' end
+            s = s .. '[' .. k .. '] = ' .. dump(v) .. ','
+        end
+        return s .. '} '
+    else
+        return tostring(o)
+    end
+end
+
+wezterm.on("toggle-leader", function(window, pane)
+    local overrides = window:get_config_overrides() or {}
+    if not overrides.leader then
+        overrides.leader = {key = "b", mods = "CTRL"}
+    else
+        overrides.leader = nil
+        overrides.font_size = nil
+    end
+    window:set_config_overrides(overrides)
+    local effective = window:effective_config()
+    wezterm.log_info("The leader is: " .. effective.leader.key.Char)
+    wezterm.log_info(dump(effective.leader))
+end)
+
 return {
     font_size = 12.0,
     font = wezterm.font("JetBrainsMono Nerd Font"),
@@ -12,6 +40,11 @@ return {
     leader = {key = "s", mods = "CTRL"},
     keys = {
         {key = "[", mods = "LEADER", action = "ActivateCopyMode"},
+        {
+            key = "F12",
+            mods = "NONE",
+            action = wezterm.action {EmitEvent = "toggle-leader"},
+        },
         {
             key = "-",
             mods = "LEADER",
