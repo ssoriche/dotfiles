@@ -132,7 +132,8 @@ local on_attach = function(client)
         vim.cmd [[augroup END]]
     end
     if client.resolved_capabilities.goto_definition then
-        map("n", "gd",
+        map("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>")
+        map("n", "<leader>gd",
             "<cmd>lua require'lspsaga.provider'.preview_definition()<CR>")
     end
     if client.resolved_capabilities.completion then
