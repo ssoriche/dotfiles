@@ -1,4 +1,4 @@
 return {
-    formatCommand = "gofumpt",
-    formatStdin = true
+    formatCommand = "gofumports -local go.zr.org -format-only",
+    formatStdin = true,
 }
