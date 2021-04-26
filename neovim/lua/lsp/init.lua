@@ -120,6 +120,10 @@ local on_attach = function(client)
         vim.cmd [[autocmd! * <buffer>]]
         vim.cmd [[autocmd CursorHold * lua require'nvim-lightbulb'.update_lightbulb()]]
         vim.cmd [[augroup END]]
+        map("n", "<leader>ca",
+            "<cmd>lua require'lspsaga.codeaction'.code_action()<CR>")
+        map("v", "<leader>ca",
+            ":<C-U>lua require'lspsaga.codeaction'.range_code_action()<CR>")
     end
     if client.resolved_capabilities.document_formatting then
         vim.cmd [[augroup Format]]
