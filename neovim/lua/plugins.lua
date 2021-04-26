@@ -41,7 +41,7 @@ return require('packer').startup(function()
 
     use 'tjdevries/colorbuddy.nvim'
     use 'tjdevries/astronauta.nvim'
-    use 'marko-cerovac/material.nvim'
+    use {'marko-cerovac/material.nvim', branch = "pure-lua"}
     use {"lukas-reineke/indent-blankline.nvim", branch = "lua"}
 
     use 'JoosepAlviste/nvim-ts-context-commentstring'
