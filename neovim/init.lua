@@ -22,7 +22,7 @@ g.material_italics = 1
 cmd 'colorscheme material' -- Put your favorite colorscheme here
 
 local lualine = require('lualine')
-lualine.setup {options = {theme = 'material'}, extensions = {'fzf'}}
+lualine.setup {options = {theme = 'material-nvim'}, extensions = {'fzf'}}
 
 --[[ local ts = require 'nvim-treesitter.configs'
 ts.setup {ensure_installed = 'maintained', highlight = {enable = true}} ]]
