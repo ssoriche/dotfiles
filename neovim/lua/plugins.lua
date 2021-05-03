@@ -26,6 +26,7 @@ return require('packer').startup(function()
     use {'tpope/vim-obsession'}
 
     use 'nietiger/halcyon-neovim'
+    use 'folke/tokyonight.nvim'
     use '9mm/vim-closer'
     use 'karb94/neoscroll.nvim'
 
