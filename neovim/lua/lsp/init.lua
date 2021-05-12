@@ -135,6 +135,10 @@ local on_attach = function(client)
         map("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>")
         map("n", "<leader>gd",
             "<cmd>lua require'lspsaga.provider'.preview_definition()<CR>")
+        map("n", "<C-f>",
+            "<cmd>lua require('lspsaga.action').smart_scroll_with_saga(1)<CR>")
+        map("n", "<C-b>",
+            "<cmd>lua require('lspsaga.action').smart_scroll_with_saga(-1)<CR>")
     end
     if client.resolved_capabilities.completion then
         map("i", "<C-n>", "compe#complete()", true, true)
@@ -144,6 +148,10 @@ local on_attach = function(client)
     if client.resolved_capabilities.hover then
         map("n", "<CR>",
             "<cmd>lua require('lspsaga.hover').render_hover_doc()<CR>")
+        map("n", "<C-f>",
+            "<cmd>lua require('lspsaga.action').smart_scroll_with_saga(1)<CR>")
+        map("n", "<C-b>",
+            "<cmd>lua require('lspsaga.action').smart_scroll_with_saga(-1)<CR>")
     end
     if client.resolved_capabilities.find_references then
         map("n", "<Leader>*",
