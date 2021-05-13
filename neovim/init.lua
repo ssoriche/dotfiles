@@ -17,13 +17,18 @@ require("treesitter")
 require('settings')
 require('maps')
 
-g.material_style = 'deep ocean'
+--[[ g.material_style = 'deep ocean'
 g.material_italics = 1
-cmd 'colorscheme material' -- Put your favorite colorscheme here
+require('material').set() ]]
+
+g.tokyonight_style = "night"
+g.tokyonight_transparent = true
+vim.cmd[[colorscheme tokyonight]]
 
 local lualine = require('lualine')
 lualine.setup {
-    options = {theme = 'material-nvim'},
+    -- options = {theme = 'material-nvim'},
+    options = {theme = 'tokyonight'},
     sections = {
         lualine_a = {'mode'},
         lualine_b = {'branch'},
