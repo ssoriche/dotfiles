@@ -23,7 +23,7 @@ require('material').set() ]]
 
 g.tokyonight_style = "night"
 g.tokyonight_transparent = true
-vim.cmd[[colorscheme tokyonight]]
+vim.cmd [[colorscheme tokyonight]]
 
 local lualine = require('lualine')
 lualine.setup {
