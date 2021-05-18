@@ -65,10 +65,12 @@ require'nvim-web-devicons'.setup {
     default = true,
 }
 
+local actions = require('telescope.actions')
 require'telescope'.setup {
     defaults = {
         layout_strategy = 'flex',
         scroll_strategy = 'cycle',
+        mappings = {i = {["<esc>"] = actions.close}},
         winblend = 0,
         layout_defaults = {
             horizontal = {
