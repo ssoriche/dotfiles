@@ -45,6 +45,7 @@ lualine.setup {
         lualine_y = {},
         lualine_z = {},
     },
+    extensions = {'quickfix'}
 }
 
 --[[ local ts = require 'nvim-treesitter.configs'
