@@ -39,3 +39,6 @@ opt.wildmode = 'list:longest' -- Command-line completion mode
 opt.number = true -- Print line number
 opt.relativenumber = true -- Relative line numbers
 opt.wrap = false -- Disable line wrap
+
+opt.foldmethod = 'expr'
+opt.foldexpr = 'nvim_treesitter#foldexpr()'
