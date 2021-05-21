@@ -14,7 +14,6 @@ return require('packer').startup(function()
     use 'glepnir/lspsaga.nvim'
 
     use 'onsails/lspkind-nvim'
-    use 'kosayoda/nvim-lightbulb'
 
     use {'lewis6991/gitsigns.nvim', requires = {'nvim-lua/plenary.nvim'}}
     use {'machakann/vim-sandwich'}

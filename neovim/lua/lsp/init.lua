@@ -116,10 +116,6 @@ end
 
 local on_attach = function(client)
     if client.resolved_capabilities.code_action then
-        vim.cmd [[augroup CodeAction]]
-        vim.cmd [[autocmd! * <buffer>]]
-        vim.cmd [[autocmd CursorHold * lua require'nvim-lightbulb'.update_lightbulb()]]
-        vim.cmd [[augroup END]]
         map("n", "<leader>ca",
             "<cmd>lua require'lspsaga.codeaction'.code_action()<CR>")
         map("v", "<leader>ca",
