@@ -15,7 +15,7 @@ map('n', '<bs>', '<c-^>', options)
 -- Telescope
 local builtin = "<cmd>lua require'telescope.builtin'"
 map('n', '<leader> ',
-    builtin .. '.buffers{ show_all_buffers = true, sort_lastused = true}<CR>',
+    builtin .. '.buffers{ show_all_buffers = true, sort_lastused = true }<CR>',
     options)
 map('n', '<leader>ff', builtin .. '.find_files()<CR>', options)
 map('n', '<leader>of', builtin .. '.oldfiles()<CR>', options)
