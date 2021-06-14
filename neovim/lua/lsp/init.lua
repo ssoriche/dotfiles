@@ -164,6 +164,8 @@ local on_attach = function(client)
         "<cmd>lua require'lspsaga.diagnostic'.lsp_jump_diagnostic_prev()<CR>")
     map("n", "]e",
         "<cmd>lua require'lspsaga.diagnostic'.lsp_jump_diagnostic_next()<CR>")
+    map("n", "gs",
+        "<cmd>lua require('lspsaga.signaturehelp').signature_help()<CR>")
 end
 
 function _G.activeLSP()
