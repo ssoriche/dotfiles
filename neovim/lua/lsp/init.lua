@@ -229,35 +229,11 @@ local function get_lua_runtime()
 
     return result
 end
-lspconfig.sumneko_lua.setup {
-    on_attach = on_attach,
-    cmd = {"lua-language-server"},
-    settings = {
-        Lua = {
-            runtime = {version = "LuaJIT"},
-            completion = {keywordSnippet = "Disable"},
-            diagnostics = {
-                enable = true,
-                globals = {
-                    -- Neovim
-                    "vim",
-                    -- Busted
-                    "describe",
-                    "it",
-                    "before_each",
-                    "after_each",
-                    "teardown",
-                    "pending",
-                },
-                workspace = {
-                    library = get_lua_runtime(),
-                    maxPreload = 1000,
-                    preloadFileSize = 1000,
-                },
-            },
-        },
-    },
-}
+
+local luadev = require"lua-dev".setup({
+    lspconfig = {cmd = {"lua-language-server"}},
+})
+lspconfig.sumneko_lua.setup(luadev)
 
 -- https://github.com/iamcco/vim-language-server
 lspconfig.vimls.setup {on_attach = on_attach}

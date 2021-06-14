@@ -77,4 +77,15 @@ return require('packer').startup(function()
         end,
     }
 
+    use {
+        "folke/lua-dev.nvim",
+        config = function()
+            require("lua-dev").setup {
+                -- your configuration comes here
+                -- or leave it empty to use the default settings
+                -- refer to the configuration section below
+            }
+        end,
+    }
+
 end)
