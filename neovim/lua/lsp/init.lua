@@ -245,7 +245,10 @@ lspconfig.jsonls.setup {
 }
 
 -- https://github.com/redhat-developer/yaml-language-server
-lspconfig.yamlls.setup {on_attach = on_attach}
+lspconfig.yamlls.setup {
+    on_attach = on_attach,
+    settings = {yaml = {schemas = {kubernetes = "*.yaml"}}},
+}
 
 -- https://github.com/joe-re/sql-language-server
 lspconfig.sqlls.setup {on_attach = on_attach}
