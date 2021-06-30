@@ -105,7 +105,7 @@ require'telescope'.setup {
     },
 }
 
-require'gitsigns'.setup()
+require'gitsigns'.setup({word_diff = true})
 
 require'nvim-autopairs'.setup()
 require'unimpaired'.setup()
