@@ -185,18 +185,8 @@ end
 
 -- https://github.com/golang/tools/tree/master/gopls
 lspconfig.gopls.setup {
-    on_attach = function(client)
-        client.resolved_capabilities.document_formatting = false
-        on_attach(client)
-    end,
-}
-
--- https://github.com/palantir/python-language-server
-lspconfig.pyls.setup {
-    on_attach = on_attach,
-    settings = {
-        pyls = {plugins = {pycodestyle = {enabled = false, ignore = {"E501"}}}},
-    },
+    on_attach = function(client) on_attach(client) end,
+    settings = {gopls = {gofumpt = true}},
 }
 
 lspconfig.pyright.setup {on_attach = on_attach}
@@ -274,8 +264,6 @@ lspconfig.terraformls.setup {
 
 -- local vint = require "efm/vint"
 local luafmt = require "lsp/efm/luafmt"
-local golint = require "lsp/efm/golint"
-local goimports = require "lsp/efm/goimports"
 local black = require "lsp/efm/black"
 local isort = require "lsp/efm/isort"
 local flake8 = require "lsp/efm/flake8"
@@ -289,7 +277,6 @@ local misspell = require "lsp/efm/misspell"
 local languages = {
     ["="] = {misspell},
     lua = {luafmt},
-    go = {golint, goimports},
     sh = {shellcheck},
     -- vim = {vint},
     -- python = {black, isort, flake8, mypy},
