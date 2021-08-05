@@ -191,6 +191,8 @@ lspconfig.gopls.setup {
 
 lspconfig.pyright.setup {on_attach = on_attach}
 
+lspconfig.perlpls.setup {on_attach = on_attach}
+
 -- https://github.com/theia-ide/typescript-language-server
 lspconfig.tsserver.setup {
     on_attach = function(client)
