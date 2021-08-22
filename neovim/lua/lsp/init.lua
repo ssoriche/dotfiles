@@ -81,7 +81,7 @@ vim.lsp.handlers["textDocument/publishDiagnostics"] =
             underline = false,
             update_in_insert = false,
         })(...)
-        pcall(vim.lsp.diagnostic.set_loclist, {open_loclist = false})
+        pcall(vim.lsp.diagnostic.set_loclist, {open = false})
     end
 
 local format_options_prettier = {
