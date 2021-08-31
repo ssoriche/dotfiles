@@ -124,3 +124,4 @@ require("nvim-autopairs.completion.compe").setup(
         auto_select = false, -- auto select first item
     })
 require'unimpaired'.setup()
+require('tabout').setup()
