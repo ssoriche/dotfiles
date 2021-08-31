@@ -88,4 +88,9 @@ return require('packer').startup(function()
         end,
     }
 
+    use {
+        'abecodes/tabout.nvim',
+        wants = {'nvim-treesitter'},
+    }
+
 end)
