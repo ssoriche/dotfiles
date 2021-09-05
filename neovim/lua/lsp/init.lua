@@ -1,11 +1,6 @@
 local lspconfig = require "lspconfig"
 
-local map = function(mode, key, result, noremap, expr)
-    if noremap == nil then noremap = true end
-    if expr == nil then expr = false end
-    vim.api.nvim_buf_set_keymap(0, mode, key, result,
-                                {noremap = noremap, silent = true, expr = expr})
-end
+local map = vim.api.nvim_set_keymap
 
 local lspkind = require('lspkind')
 local cmp = require('cmp')
@@ -110,10 +105,13 @@ end
 local on_attach = function(client)
     if client.resolved_capabilities.code_action then
         map("n", "<leader>ca",
-            "<cmd>lua require'lspsaga.codeaction'.code_action()<CR>")
+            "<cmd>lua require'lspsaga.codeaction'.code_action()<CR>",
+            {silent = true, noremap = true})
         map("v", "<leader>ca",
-            ":<C-U>lua require'lspsaga.codeaction'.range_code_action()<CR>")
+            ":<C-U>lua require'lspsaga.codeaction'.range_code_action()<CR>",
+            {silent = true, noremap = true})
     end
+
     if client.resolved_capabilities.document_formatting then
         vim.cmd [[augroup Format]]
         vim.cmd [[autocmd! * <buffer>]]
@@ -121,44 +119,52 @@ local on_attach = function(client)
         vim.cmd [[augroup END]]
     end
     if client.resolved_capabilities.goto_definition then
-        map("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>")
+        map("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>",
+            {silent = true, noremap = true})
         map("n", "<leader>gd",
-            "<cmd>lua require'lspsaga.provider'.preview_definition()<CR>")
+            "<cmd>lua require'lspsaga.provider'.preview_definition()<CR>",
+            {silent = true, noremap = true})
         map("n", "<C-f>",
-            "<cmd>lua require('lspsaga.action').smart_scroll_with_saga(1)<CR>")
+            "<cmd>lua require('lspsaga.action').smart_scroll_with_saga(1)<CR>",
+            {silent = true, noremap = true})
         map("n", "<C-b>",
-            "<cmd>lua require('lspsaga.action').smart_scroll_with_saga(-1)<CR>")
-    end
-    if client.resolved_capabilities.completion then
-        map("i", "<C-n>", "compe#complete()", true, true)
-        map("i", "<CR>", "compe#confirm('<CR>')", true, true)
-        map("i", "<C-e>", "compe#close('<C-e>')", true, true)
+            "<cmd>lua require('lspsaga.action').smart_scroll_with_saga(-1)<CR>",
+            {silent = true, noremap = true})
     end
     if client.resolved_capabilities.hover then
         map("n", "<CR>",
-            "<cmd>lua require('lspsaga.hover').render_hover_doc()<CR>")
+            "<cmd>lua require('lspsaga.hover').render_hover_doc()<CR>",
+            {silent = true, noremap = true})
         map("n", "<C-f>",
-            "<cmd>lua require('lspsaga.action').smart_scroll_with_saga(1)<CR>")
+            "<cmd>lua require('lspsaga.action').smart_scroll_with_saga(1)<CR>",
+            {silent = true, noremap = true})
         map("n", "<C-b>",
-            "<cmd>lua require('lspsaga.action').smart_scroll_with_saga(-1)<CR>")
+            "<cmd>lua require('lspsaga.action').smart_scroll_with_saga(-1)<CR>",
+            {silent = true, noremap = true})
     end
     if client.resolved_capabilities.find_references then
-        map("n", "<Leader>*",
-            ":call lists#ChangeActiveList('Quickfix')<CR>:lua vim.lsp.buf.references()<CR>")
+        map("n", "<Leader>*", "<cmd>Trouble lsp_references<CR>",
+            {silent = true, noremap = true})
     end
     if client.resolved_capabilities.rename then
-        map("n", "<leader>rn", "<cmd>lua vim.lsp.buf.rename()<CR>")
+        map("n", "<leader>rn", "<cmd>lua vim.lsp.buf.rename()<CR>",
+            {silent = true, noremap = true})
     end
     map("n", "<leader>cd",
-        "<cmd>lua require'lspsaga.diagnostic'.show_line_diagnostics()<CR>")
+        "<cmd>lua require'lspsaga.diagnostic'.show_line_diagnostics()<CR>",
+        {silent = true, noremap = true})
     map("n", "<leader>cc",
-        "<cmd>lua require'lspsaga.diagnostic'.show_cursor_diagnostics()<CR>")
+        "<cmd>lua require'lspsaga.diagnostic'.show_cursor_diagnostics()<CR>",
+        {silent = true, noremap = true})
     map("n", "[e",
-        "<cmd>lua require'lspsaga.diagnostic'.lsp_jump_diagnostic_prev()<CR>")
+        "<cmd>lua require'lspsaga.diagnostic'.lsp_jump_diagnostic_prev()<CR>",
+        {silent = true, noremap = true})
     map("n", "]e",
-        "<cmd>lua require'lspsaga.diagnostic'.lsp_jump_diagnostic_next()<CR>")
+        "<cmd>lua require'lspsaga.diagnostic'.lsp_jump_diagnostic_next()<CR>",
+        {silent = true, noremap = true})
     map("n", "gs",
-        "<cmd>lua require('lspsaga.signaturehelp').signature_help()<CR>")
+        "<cmd>lua require('lspsaga.signaturehelp').signature_help()<CR>",
+        {silent = true, noremap = true})
 end
 
 function _G.activeLSP()
