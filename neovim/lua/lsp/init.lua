@@ -34,23 +34,42 @@ vim.lsp.protocol.CompletionItemKind = {
     " [operator]",
     "♛ [type]",
 }
-
-require"compe".setup {
-    enabled = true,
-    -- debug = false,
-    autocomplete = true,
-    min_length = 1,
-    preselect = "enable",
-    allow_prefix_unmatch = false,
-    source = {
-        path = true,
-        buffer = true,
-        nvim_lsp = true,
-        nvim_lua = true,
-        ultisnips = true,
-        treesitter = true,
+local cmp = require('cmp')
+cmp.setup {
+    snippet = {expand = function(args) vim.fn["vsnip#anonymous"](args.body) end},
+    sources = {
+        {name = 'path'},
+        {name = 'buffer'},
+        {name = 'nvim_lsp'},
+        {name = 'nvim_lua'},
+    },
+    mapping = {
+        ['<CR>'] = cmp.mapping.confirm({
+            -- TODO: I may infact what Insert here, sometimes a variable gets
+            -- replaced when completing and I dont' want that
+            behavior = cmp.ConfirmBehavior.Replace,
+            select = true,
+        }),
+    },
+    formatting = {
+        format = function(entry, vim_item)
+            vim_item.kind = lspkind.presets.default[vim_item.kind]
+            return vim_item
+        end,
     },
 }
+
+-- Setup buffer configuration (nvim-lua source only enables in Lua filetype).
+vim.api.nvim_command([[autocmd FileType lua lua require'cmp'.setup.buffer {
+sources = {
+{ name = 'buffer' },
+{ name = 'nvim_lua' },
+},
+}]])
+
+-- The nvim-cmp almost supports LSP's capabilities so You should advertise it to LSP servers..
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
 
 vim.fn.sign_define("LspDiagnosticsSignError",
                    {text = "x", texthl = "LspDiagnosticsDefaultError"})
@@ -187,6 +206,7 @@ end
 lspconfig.gopls.setup {
     on_attach = function(client) on_attach(client) end,
     settings = {gopls = {gofumpt = true}},
+    capabilities = capabilities,
 }
 
 lspconfig.pyright.setup {on_attach = on_attach}
