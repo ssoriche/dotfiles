@@ -7,33 +7,7 @@ local map = function(mode, key, result, noremap, expr)
                                 {noremap = noremap, silent = true, expr = expr})
 end
 
-vim.lsp.protocol.CompletionItemKind = {
-    " [text]",
-    " [method]",
-    " [function]",
-    " [constructor]",
-    "ﰠ [field]",
-    " [variable]",
-    " [class]",
-    " [interface]",
-    " [module]",
-    " [property]",
-    " [unit]",
-    " [value]",
-    " [enum]",
-    " [key]",
-    "﬌ [snippet]",
-    " [color]",
-    " [file]",
-    " [reference]",
-    " [folder]",
-    " [enum member]",
-    " [constant]",
-    " [struct]",
-    "⌘ [event]",
-    " [operator]",
-    "♛ [type]",
-}
+local lspkind = require('lspkind')
 local cmp = require('cmp')
 cmp.setup {
     snippet = {expand = function(args) vim.fn["vsnip#anonymous"](args.body) end},
