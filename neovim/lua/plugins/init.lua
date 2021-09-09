@@ -4,6 +4,14 @@ vim.cmd [[packadd packer.nvim]]
 return require('packer').startup(function()
     use {'wbthomason/packer.nvim', opt = true}
 
+    local config = function(name)
+        return string.format("require('plugins.%s')", name)
+    end
+
+    local use_with_config = function(path, name)
+        use({path, config = config(name)})
+    end
+
     use {
         'hrsh7th/nvim-cmp',
         requires = {
