@@ -51,8 +51,14 @@ return require('packer').startup(function()
     use {'tpope/vim-eunuch'}
     use {'tpope/vim-obsession'}
 
-    use 'nietiger/halcyon-neovim'
-    use 'folke/tokyonight.nvim'
+    -- Themes
+    use({
+        'nietiger/halcyon-neovim',
+        'folke/tokyonight.nvim',
+        'marko-cerovac/material.nvim',
+        'tjdevries/colorbuddy.nvim',
+    })
+
     use '9mm/vim-closer'
 
     use({
@@ -68,9 +74,7 @@ return require('packer').startup(function()
         requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}},
     }
 
-    use 'tjdevries/colorbuddy.nvim'
     use 'tjdevries/astronauta.nvim'
-    use 'marko-cerovac/material.nvim'
     use "lukas-reineke/indent-blankline.nvim"
 
     use 'JoosepAlviste/nvim-ts-context-commentstring'
