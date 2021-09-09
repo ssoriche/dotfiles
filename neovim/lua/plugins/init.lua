@@ -41,7 +41,12 @@ return require('packer').startup(function()
 
     use {'b3nj5m1n/kommentary'}
 
-    use {'windwp/nvim-autopairs'}
+    use({
+        'windwp/nvim-autopairs',
+        config = config("autopairs"),
+        wants = "nvim-cmp",
+    })
+
     use {'tpope/vim-eunuch'}
     use {'tpope/vim-obsession'}
 
