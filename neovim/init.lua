@@ -27,29 +27,6 @@ g.tokyonight_style = "night"
 g.tokyonight_transparent = true
 vim.cmd [[colorscheme tokyonight]]
 
-local lualine = require('lualine')
-lualine.setup {
-    -- options = {theme = 'material-nvim'},
-    options = {theme = 'tokyonight'},
-    sections = {
-        lualine_a = {'mode'},
-        lualine_b = {'branch'},
-        lualine_c = {{'filename', path = 1}},
-        lualine_x = {'encoding', 'fileformat', 'filetype'},
-        lualine_y = {'progress'},
-        lualine_z = {'location'},
-    },
-    inactive_sections = {
-        lualine_a = {},
-        lualine_b = {},
-        lualine_c = {'filename'},
-        lualine_x = {'location'},
-        lualine_y = {},
-        lualine_z = {},
-    },
-    extensions = {'quickfix'},
-}
-
 --[[ local ts = require 'nvim-treesitter.configs'
 ts.setup {ensure_installed = 'maintained', highlight = {enable = true}} ]]
 
