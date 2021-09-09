@@ -45,10 +45,11 @@ return require('packer').startup(function()
     use 'folke/tokyonight.nvim'
     use '9mm/vim-closer'
 
-    use {
+    use({
         'hoob3rt/lualine.nvim',
+        config = config("lualine"),
         requires = {'kyazdani42/nvim-web-devicons', opt = true},
-    }
+    })
 
     use {
         'nvim-telescope/telescope.nvim',
