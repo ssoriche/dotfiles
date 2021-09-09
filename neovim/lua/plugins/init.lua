@@ -61,6 +61,8 @@ return require('packer').startup(function()
         requires = {'kyazdani42/nvim-web-devicons', opt = true},
     })
 
+    use_with_config("kyazdani42/nvim-web-devicons", "devicons")
+
     use {
         'nvim-telescope/telescope.nvim',
         requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}},
