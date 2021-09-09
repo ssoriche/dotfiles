@@ -12,7 +12,7 @@ return require('packer').startup(function()
         use({path, config = config(name)})
     end
 
-    use {
+    use({
         'hrsh7th/nvim-cmp',
         requires = {
             'hrsh7th/vim-vsnip',
@@ -22,7 +22,8 @@ return require('packer').startup(function()
             'hrsh7th/cmp-path',
             'hrsh7th/cmp-emoji',
         },
-    }
+        config = config("cmp"),
+    })
 
     use 'nvim-lua/lsp-status.nvim'
     use 'neovim/nvim-lspconfig'
