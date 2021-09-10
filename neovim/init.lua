@@ -15,7 +15,6 @@ g.indent_blankline_char = "│"
 
 require('plugins')
 require('lsp')
-require("treesitter")
 require('settings')
 require('maps')
 

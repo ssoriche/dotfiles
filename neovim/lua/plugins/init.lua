@@ -25,9 +25,15 @@ return require('packer').startup(function()
         config = config("cmp"),
     })
 
+    -- treesitter
+    use({
+        'nvim-treesitter/nvim-treesitter',
+        run = ":TSUpdate",
+        config = config("treesitter")
+    })
+
     use 'nvim-lua/lsp-status.nvim'
     use 'neovim/nvim-lspconfig'
-    use {'nvim-treesitter/nvim-treesitter'}
     use {'alexaandru/nvim-lspupdate'}
     use 'glepnir/lspsaga.nvim'
 
