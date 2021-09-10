@@ -1,9 +1,8 @@
-require"nvim-treesitter.configs".setup {
+require("nvim-treesitter.configs").setup ({
     ensure_installed = "all",
     highlight = {enable = true},
     indent = {enable = true},
     refactor = {highlight_definitions = {enable = true}},
-    context_commentstring = {enable = true},
     textobjects = {
         select = {
             enable = true,
@@ -22,4 +21,10 @@ require"nvim-treesitter.configs".setup {
         --     }
         -- }
     },
-}
+    -- plugins
+    autopairs = { enable = true },
+    context_commentstring = {enable = true},
+    autotag = {
+        enable = true,
+    },
+})
