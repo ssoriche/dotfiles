@@ -31,6 +31,7 @@ return require('packer').startup(function()
         run = ":TSUpdate",
         config = config("treesitter"),
     })
+    use {'RRethy/nvim-treesitter-textsubjects'}
 
     use 'nvim-lua/lsp-status.nvim'
     use 'neovim/nvim-lspconfig'
