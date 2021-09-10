@@ -1,5 +1,6 @@
 local lspconfig = require "lspconfig"
 local efm = require('lsp/efm')
+local sumneko = require("lsp.sumneko")
 
 local map = vim.api.nvim_set_keymap
 
@@ -133,32 +134,6 @@ lspconfig.tsserver.setup {
     end,
 }
 
--- https://github.com/sumneko/lua-language-server
--- require("nlua.lsp.nvim").setup(
---     lspconfig,
---     {
---         on_attach = on_attach,
---         cmd = {"lua-language-server"}
---     }
--- )
-
-local function get_lua_runtime()
-    local result = {}
-    for _, path in pairs(vim.api.nvim_list_runtime_paths()) do
-        local lua_path = path .. "/lua/"
-        if vim.fn.isdirectory(lua_path) then result[lua_path] = true end
-    end
-    result[vim.fn.expand("$VIMRUNTIME/lua")] = true
-    result[vim.fn.expand("~/build/neovim/src/nvim/lua")] = true
-
-    return result
-end
-
-local luadev = require"lua-dev".setup({
-    lspconfig = {cmd = {"lua-language-server"}},
-})
-lspconfig.sumneko_lua.setup(luadev)
-
 -- https://github.com/iamcco/vim-language-server
 lspconfig.vimls.setup {on_attach = on_attach}
 
@@ -199,5 +174,6 @@ lspconfig.terraformls.setup {
 lspconfig.clangd.setup {on_attach = on_attach}
 
 efm.setup(on_attach, capabilities)
+sumneko.setup(on_attach, capabilities)
 
 require('lsp/lspsaga')
