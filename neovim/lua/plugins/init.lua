@@ -29,7 +29,7 @@ return require('packer').startup(function()
     use({
         'nvim-treesitter/nvim-treesitter',
         run = ":TSUpdate",
-        config = config("treesitter")
+        config = config("treesitter"),
     })
 
     use 'nvim-lua/lsp-status.nvim'
