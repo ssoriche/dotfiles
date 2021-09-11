@@ -76,10 +76,11 @@ return require('packer').startup(function()
 
     use_with_config("kyazdani42/nvim-web-devicons", "devicons")
 
-    use {
+    use({
         'nvim-telescope/telescope.nvim',
+        config = config('telescope'),
         requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}},
-    }
+    })
 
     use 'tjdevries/astronauta.nvim'
     use "lukas-reineke/indent-blankline.nvim"
