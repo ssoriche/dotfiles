@@ -33,10 +33,12 @@ return require('packer').startup(function()
     })
     use {'RRethy/nvim-treesitter-textsubjects'}
 
+    -- lsp
     use 'nvim-lua/lsp-status.nvim'
     use 'neovim/nvim-lspconfig'
     use {'alexaandru/nvim-lspupdate'}
     use 'glepnir/lspsaga.nvim'
+    use {"jose-elias-alvarez/null-ls.nvim"}
 
     use 'onsails/lspkind-nvim'
 
