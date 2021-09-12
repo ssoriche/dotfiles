@@ -1,5 +1,5 @@
-local lspconfig = require "lspconfig"
-local efm = require('lsp/efm')
+local lspconfig = require("lspconfig")
+local null_ls = require("lsp.null-ls")
 local sumneko = require("lsp.sumneko")
 local u = require("utils")
 
@@ -170,7 +170,7 @@ lspconfig.terraformls.setup {
 
 lspconfig.clangd.setup {on_attach = on_attach}
 
-efm.setup(on_attach, capabilities)
+null_ls.setup(on_attach)
 sumneko.setup(on_attach, capabilities)
 
 require('lsp/lspsaga')
