@@ -89,21 +89,6 @@ local on_attach = function(client, bufnr)
     )
 end
 
-function _G.activeLSP()
-    local servers = {}
-    for _, lsp in pairs(vim.lsp.get_active_clients()) do
-        table.insert(servers, {name = lsp.name, id = lsp.id})
-    end
-    _G.dump(servers)
-end
-function _G.bufferActiveLSP()
-    local servers = {}
-    for _, lsp in pairs(vim.lsp.buf_get_clients()) do
-        table.insert(servers, {name = lsp.name, id = lsp.id})
-    end
-    _G.dump(servers)
-end
-
 -- https://github.com/golang/tools/tree/master/gopls
 lspconfig.gopls.setup({
     on_attach = function(client)
