@@ -26,9 +26,9 @@ _G.global.lsp = { popup_opts = popup_opts }
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities = require("cmp_nvim_lsp").update_capabilities(capabilities)
 
-vim.fn.sign_define("LspDiagnosticsSignError", { text = "x", texthl = "LspDiagnosticsDefaultError" })
-vim.fn.sign_define("LspDiagnosticsSignWarning", { text = "w", texthl = "LspDiagnosticsDefaultWarning" })
-vim.fn.sign_define("LspDiagnosticsSignInformation", { text = "i", texthl = "LspDiagnosticsDefaultInformation" })
+vim.fn.sign_define("LspDiagnosticsSignError", { text = "💩", texthl = "LspDiagnosticsDefaultError" })
+vim.fn.sign_define("LspDiagnosticsSignWarning", { text = "🔥", texthl = "LspDiagnosticsDefaultWarning" })
+vim.fn.sign_define("LspDiagnosticsSignInformation", { text = "💡", texthl = "LspDiagnosticsDefaultInformation" })
 vim.fn.sign_define("LspDiagnosticsSignHint", { text = "h", texthl = "LspDiagnosticsDefaultHint" })
 
 vim.lsp.handlers["textDocument/publishDiagnostics"] = function(...)
@@ -166,5 +166,3 @@ lspconfig.clangd.setup({ on_attach = on_attach })
 
 null_ls.setup(on_attach)
 sumneko.setup(on_attach, capabilities)
-
-require("lsp/lspsaga")
