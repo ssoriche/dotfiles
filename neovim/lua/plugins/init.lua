@@ -67,9 +67,6 @@ return require("packer").startup(function()
         "tjdevries/colorbuddy.nvim",
     })
 
-    -- remove this
-    use("9mm/vim-closer")
-
     use({
         "hoob3rt/lualine.nvim",
         config = config("lualine"),
