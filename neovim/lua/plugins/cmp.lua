@@ -1,15 +1,19 @@
-local cmp = require('cmp')
+local cmp = require("cmp")
 
-local u = require('utils')
-local lspkind = require('lspkind')
+local u = require("utils")
+local lspkind = require("lspkind")
 
 cmp.setup({
-    snippet = {expand = function(args) vim.fn["vsnip#anonymous"](args.body) end},
+    snippet = {
+        expand = function(args)
+            vim.fn["vsnip#anonymous"](args.body)
+        end,
+    },
     sources = {
-        {name = 'path'},
-        {name = 'buffer'},
-        {name = 'nvim_lsp'},
-        {name = 'nvim_lua'},
+        { name = "path" },
+        { name = "buffer" },
+        { name = "nvim_lsp" },
+        { name = "nvim_lua" },
     },
     mapping = {
         ['<CR>'] = cmp.mapping.confirm({
@@ -26,4 +30,3 @@ cmp.setup({
         end,
     },
 })
-
