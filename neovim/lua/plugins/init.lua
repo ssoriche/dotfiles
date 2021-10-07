@@ -48,7 +48,10 @@ return require("packer").startup(function()
     })
     use({ "machakann/vim-sandwich" })
 
-    use({ "b3nj5m1n/kommentary" })
+    use({
+        "numToStr/Comment.nvim",
+        config = config("comment"),
+    })
 
     use({
         "windwp/nvim-autopairs",

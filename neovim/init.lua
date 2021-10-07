@@ -31,17 +31,5 @@ vim.cmd [[colorscheme tokyonight]]
 --[[ local ts = require 'nvim-treesitter.configs'
 ts.setup {ensure_installed = 'maintained', highlight = {enable = true}} ]]
 
--- Configure treesitter, kommentary, and nvim-ts-context-commentstring
--- https://github.com/JoosepAlviste/nvim-ts-context-commentstring#kommentary
-require'nvim-treesitter.configs'.setup {
-    context_commentstring = {enable = true, enable_autocmd = false},
-}
-
-require('kommentary.config').configure_language('typescriptreact', {
-    hook_function = function()
-        require('ts_context_commentstring.internal').update_commentstring()
-    end,
-})
-
 require'unimpaired'.setup()
 require('tabout').setup()
