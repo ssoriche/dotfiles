@@ -46,7 +46,7 @@ return require("packer").startup(function()
         config = config("git"),
         requires = { "nvim-lua/plenary.nvim" },
     })
-    use({ "machakann/vim-sandwich" })
+    use({ "echasnovski/mini.nvim", config = config("mini") })
 
     use({
         "numToStr/Comment.nvim",
