@@ -16,7 +16,7 @@ cmp.setup({
         { name = "nvim_lua" },
     },
     mapping = {
-        ['<CR>'] = cmp.mapping.confirm({
+        ["<CR>"] = cmp.mapping.confirm({
             -- TODO: I may infact what Insert here, sometimes a variable gets
             -- replaced when completing and I dont' want that
             behavior = cmp.ConfirmBehavior.Replace,
