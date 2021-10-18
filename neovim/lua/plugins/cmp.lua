@@ -24,9 +24,6 @@ cmp.setup({
         }),
     },
     formatting = {
-        format = function(entry, vim_item)
-            vim_item.kind = lspkind.presets.default[vim_item.kind]
-            return vim_item
-        end,
+        format = lspkind.cmp_format(),
     },
 })
