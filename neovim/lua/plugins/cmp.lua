@@ -10,10 +10,11 @@ cmp.setup({
         end,
     },
     sources = {
-        { name = "path" },
-        { name = "buffer" },
-        { name = "nvim_lsp" },
         { name = "nvim_lua" },
+
+        { name = "nvim_lsp" },
+        { name = "path" },
+        { name = "buffer", keyword_length = 5 },
     },
     mapping = {
         ["<CR>"] = cmp.mapping.confirm({
