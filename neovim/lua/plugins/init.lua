@@ -71,7 +71,7 @@ return require("packer").startup(function()
     })
 
     use({
-        "shadmansaleh/lualine.nvim",
+        "nvim-lualine/lualine.nvim",
         config = config("lualine"),
         requires = { "kyazdani42/nvim-web-devicons", opt = true },
     })
