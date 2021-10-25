@@ -1,6 +1,5 @@
 local cmp = require("cmp")
 
-local u = require("utils")
 local lspkind = require("lspkind")
 
 cmp.setup({
