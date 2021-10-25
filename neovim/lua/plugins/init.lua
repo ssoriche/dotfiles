@@ -12,10 +12,10 @@ return require("packer").startup(function()
         use({ path, config = config(name) })
     end
 
+    use({ "L3MON4D3/LuaSnip" })
     use({
         "hrsh7th/nvim-cmp",
         requires = {
-            "hrsh7th/vim-vsnip",
             "hrsh7th/cmp-buffer",
             "hrsh7th/cmp-nvim-lua",
             "hrsh7th/cmp-nvim-lsp",
