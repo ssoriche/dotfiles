@@ -24,4 +24,8 @@ cmp.setup({
     formatting = {
         format = lspkind.cmp_format(),
     },
+    experimental = {
+        native_menu = false,
+        ghost_test = true,
+    },
 })
