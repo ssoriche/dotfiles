@@ -3,7 +3,7 @@ local b = null_ls.builtins
 
 local sources = {
     b.formatting.prettierd.with({
-        filetypes = {"html", "json", "yaml", "markdown", "toml"},
+        filetypes = { "html", "json", "yaml", "markdown", "toml" },
     }),
     b.formatting.stylua.with({
         condition = function(utils)
@@ -15,7 +15,7 @@ local sources = {
     b.diagnostics.write_good,
     b.diagnostics.markdownlint,
     b.diagnostics.teal,
-    b.diagnostics.shellcheck.with({diagnostics_format = "#{m} [#{c}]"}),
+    b.diagnostics.shellcheck.with({ diagnostics_format = "#{m} [#{c}]" }),
     b.code_actions.gitsigns,
 }
 
@@ -25,7 +25,7 @@ M.setup = function(on_attach)
         -- debug = true,
         sources = sources,
     })
-    require("lspconfig")["null-ls"].setup({on_attach = on_attach})
+    require("lspconfig")["null-ls"].setup({ on_attach = on_attach })
 end
 
 return M
