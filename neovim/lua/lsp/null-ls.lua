@@ -11,7 +11,7 @@ local sources = {
             return utils.root_has_file("stylua.toml")
         end,
     }),
-    b.formatting.trim_whitespace.with({filetypes = {"tmux", "teal", "zsh"}}),
+    b.formatting.trim_whitespace.with({ filetypes = { "tmux", "teal", "zsh" } }),
     b.formatting.shfmt,
     b.diagnostics.write_good,
     b.diagnostics.markdownlint,
