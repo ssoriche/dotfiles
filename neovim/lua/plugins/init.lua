@@ -87,7 +87,7 @@ return require("packer").startup(function()
     })
 
     use("tjdevries/astronauta.nvim")
-    use("lukas-reineke/indent-blankline.nvim")
+    use({ "lukas-reineke/indent-blankline.nvim", config = config("indent_blankline") })
 
     use("JoosepAlviste/nvim-ts-context-commentstring")
 
