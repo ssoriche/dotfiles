@@ -53,6 +53,8 @@ return require("packer").startup(function()
         config = config("comment"),
     })
 
+    use({ "Darazaki/indent-o-matic", config = config("indent") })
+
     use({
         "windwp/nvim-autopairs",
         config = config("autopairs"),
