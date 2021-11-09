@@ -60,7 +60,7 @@ return require("packer").startup(function()
     })
 
     use({ "tpope/vim-eunuch" })
-    use({ "tpope/vim-obsession" })
+    use({ "folke/persistence.nvim", config = config("session") })
 
     -- Themes
     use({
