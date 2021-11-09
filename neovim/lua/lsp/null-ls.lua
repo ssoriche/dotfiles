@@ -12,7 +12,11 @@ local sources = {
         end,
     }),
     b.formatting.trim_whitespace.with({ filetypes = { "tmux", "teal", "zsh" } }),
-    b.formatting.shfmt,
+    b.formatting.shfmt.with({
+        extra_args = function(params)
+            return { "-ci", "-i", vim.api.nvim_buf_get_option(params.bufnr, "shiftwidth") }
+        end,
+    }),
     b.diagnostics.write_good,
     b.diagnostics.markdownlint,
     b.diagnostics.teal,
