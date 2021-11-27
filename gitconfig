@@ -13,8 +13,8 @@
 	diff = auto
 	branch = auto
         ui = true
-[branch "master"]
-	merge = master
+; [branch "master"]
+; 	merge = master
 [alias]
   co = checkout
   ci = commit -v
