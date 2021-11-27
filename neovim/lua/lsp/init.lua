@@ -1,6 +1,7 @@
 local lspconfig = require("lspconfig")
 local null_ls = require("lsp.null-ls")
 local sumneko = require("lsp.sumneko")
+local yamlls = require("lsp.yamlls")
 local u = require("utils")
 
 local lsp = vim.lsp
@@ -119,12 +120,6 @@ lspconfig.jsonls.setup({
     cmd = { "vscode-json-languageserver", "--stdio" },
 })
 
--- https://github.com/redhat-developer/yaml-language-server
-lspconfig.yamlls.setup({
-    on_attach = on_attach,
-    settings = { yaml = { schemas = { kubernetes = "*.yaml" } } },
-})
-
 -- https://github.com/joe-re/sql-language-server
 lspconfig.sqlls.setup({ on_attach = on_attach })
 
@@ -151,3 +146,4 @@ lspconfig.clangd.setup({ on_attach = on_attach })
 
 null_ls.setup(on_attach)
 sumneko.setup(on_attach, capabilities)
+yamlls.setup(on_attach, capabilities)
