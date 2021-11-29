@@ -66,6 +66,8 @@ return require("packer").startup(function()
     use({ "goolord/alpha-nvim", config = config("dashboard") })
     use({ "folke/persistence.nvim", config = config("session") })
 
+    use({ "ggandor/lightspeed.nvim" })
+
     -- Themes
     use({
         "nietiger/halcyon-neovim",
