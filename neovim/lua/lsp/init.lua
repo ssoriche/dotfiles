@@ -27,20 +27,6 @@ _G.global.lsp = { popup_opts = popup_opts }
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities = require("cmp_nvim_lsp").update_capabilities(capabilities)
 
-vim.fn.sign_define("DiagnosticSignError", { text = "💩", texthl = "DiagnosticDefaultError" })
-vim.fn.sign_define("DiagnosticSignWarn", { text = "🔥", texthl = "DiagnosticDefaultWarning" })
-vim.fn.sign_define("DiagnosticSignInfo", { text = "💡", texthl = "DiagnosticDefaultInformation" })
-vim.fn.sign_define("DiagnosticSignHint", { text = "", texthl = "DiagnosticDefaultHint" })
-
-vim.lsp.handlers["textDocument/publishDiagnostics"] = function(...)
-    vim.lsp.with(vim.lsp.diagnostic.on_publish_diagnostics, {
-        signs = true,
-        underline = false,
-        update_in_insert = false,
-    })(...)
-    pcall(vim.lsp.diagnostic.set_loclist, { open = false })
-end
-
 local on_attach = function(client, bufnr)
     -- commands
     u.lua_command("LspFormatting", "vim.lsp.buf.formatting()")
