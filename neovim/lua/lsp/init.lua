@@ -123,7 +123,11 @@ lspconfig.dockerls.setup({ on_attach = on_attach })
 
 -- https://github.com/hashicorp/terraform-ls
 lspconfig.terraformls.setup({
-    on_attach = on_attach,
+    on_attach = function(client, bufnr)
+        client.resolved_capabilities.document_formatting = false
+        client.resolved_capabilities.document_range_formatting = false
+        on_attach(client, bufnr)
+    end,
     cmd = { "terraform-ls", "serve" },
     filetypes = { "tf" },
 })
