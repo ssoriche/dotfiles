@@ -69,6 +69,8 @@ return require("packer").startup(function()
 
     use({ "ggandor/lightspeed.nvim" })
 
+    use({ "rafcamlet/nvim-luapad" })
+
     -- Themes
     use({
         "nietiger/halcyon-neovim",
