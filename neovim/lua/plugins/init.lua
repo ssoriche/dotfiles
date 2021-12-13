@@ -62,6 +62,7 @@ return require("packer").startup(function()
     })
 
     use({ "tpope/vim-eunuch" })
+    use({ "tpope/vim-repeat" })
 
     use({ "goolord/alpha-nvim", config = config("dashboard") })
     use({ "folke/persistence.nvim", config = config("session") })
