@@ -12,7 +12,15 @@ local function newconfig(new_config, new_root_dir)
         local glob = "/*" + vim.api.nvim_buf_get_name(0)
         if kind:find("kind: Deployment") then
             new_config.settings.yaml.schemas = {
-                ["https://raw.githubusercontent.com/yannh/kubernetes-json-schema/master/v1.22.0/deployment-apps-v1.json"] = glob,
+                ["https://raw.githubusercontent.com/yannh/kubernetes-json-schema/master/v1.22.0/deployment.json"] = glob,
+            }
+        elseif kind:find("kind: Service") then
+            new_config.settings.yaml.schemas = {
+                ["https://raw.githubusercontent.com/yannh/kubernetes-json-schema/master/v1.22.0/service.json"] = glob,
+            }
+        elseif kind:find("kind: NetworkPolicy") then
+            new_config.settings.yaml.schemas = {
+                ["https://raw.githubusercontent.com/yannh/kubernetes-json-schema/master/v1.22.0/networkpolicy.json"] = glob,
             }
         elseif kind:find("kind: Prometheus") then
             new_config.settings.yaml.schemas = {
