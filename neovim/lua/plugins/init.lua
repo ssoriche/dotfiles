@@ -70,6 +70,7 @@ return require("packer").startup(function()
     use({ "ggandor/lightspeed.nvim" })
 
     use({ "rafcamlet/nvim-luapad" })
+    use({ "mfussenegger/nvim-dap" })
 
     -- Themes
     use({
