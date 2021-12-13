@@ -17,6 +17,7 @@ local sources = {
             return { "-ci", "-i", vim.api.nvim_buf_get_option(params.bufnr, "shiftwidth") }
         end,
     }),
+    b.formatting.terraform_fmt,
     b.diagnostics.write_good,
     b.diagnostics.markdownlint,
     b.diagnostics.teal,
