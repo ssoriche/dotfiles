@@ -8,6 +8,8 @@ local lsp = vim.lsp
 
 local map = vim.api.nvim_set_keymap
 
+require("lsp.diagnostics").setup()
+
 -- Setup buffer configuration (nvim-lua source only enables in Lua filetype).
 vim.api.nvim_command([[autocmd FileType lua lua require'cmp'.setup.buffer {
 sources = {
