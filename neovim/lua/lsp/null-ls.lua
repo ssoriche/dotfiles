@@ -18,7 +18,7 @@ local sources = {
         end,
     }),
     b.formatting.terraform_fmt,
-    b.diagnostics.write_good,
+    b.diagnostics.write_good.with({ filetypes = { "markdown", "gitcommit" } }),
     b.diagnostics.markdownlint,
     b.diagnostics.teal,
     b.diagnostics.shellcheck.with({ diagnostics_format = "#{m} [#{c}]" }),
