@@ -25,6 +25,8 @@ return require("packer").startup(function()
         config = config("cmp"),
     })
 
+    use({ "sindrets/diffview.nvim", requires = "nvim-lua/plenary.nvim" })
+
     -- treesitter
     use({
         "nvim-treesitter/nvim-treesitter",
