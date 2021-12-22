@@ -25,6 +25,7 @@ return require("packer").startup(function()
         config = config("cmp"),
     })
 
+    use({ "nathom/filetype.nvim", config = config("filetype") })
     use({ "sindrets/diffview.nvim", requires = "nvim-lua/plenary.nvim" })
 
     -- treesitter
