@@ -81,6 +81,7 @@ return require("packer").startup(function()
         "folke/tokyonight.nvim",
         "marko-cerovac/material.nvim",
         "tjdevries/colorbuddy.nvim",
+        "rebelot/kanagawa.nvim",
     })
 
     use({

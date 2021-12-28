@@ -26,7 +26,7 @@ require('material').set() ]]
 
 g.tokyonight_style = "night"
 g.tokyonight_transparent = true
-vim.cmd([[colorscheme tokyonight]])
+vim.cmd("colorscheme kanagawa")
 
 --[[ local ts = require 'nvim-treesitter.configs'
 ts.setup {ensure_installed = 'maintained', highlight = {enable = true}} ]]

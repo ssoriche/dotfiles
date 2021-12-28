@@ -2,7 +2,6 @@ local lualine = require('lualine')
 
 lualine.setup {
     -- options = {theme = 'material-nvim'},
-    options = {theme = 'tokyonight'},
     sections = {
         lualine_a = {'mode'},
         lualine_b = {'branch'},
