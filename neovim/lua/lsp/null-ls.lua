@@ -8,7 +8,7 @@ local sources = {
     }),
     b.formatting.stylua.with({
         condition = function(utils)
-            return utils.root_has_file("stylua.toml")
+            return utils.root_has_file({ "stylua.toml", ".stylua.toml" })
         end,
     }),
     b.formatting.trim_whitespace.with({ filetypes = { "tmux", "teal", "zsh" } }),
