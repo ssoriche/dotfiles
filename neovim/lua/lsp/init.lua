@@ -51,7 +51,7 @@ local on_attach = function(client, bufnr)
         u.buf_map("n", "gd", ":LspDef<CR>", nil, bufnr)
     end
     if client.resolved_capabilities.hover then
-        u.buf_map("n", "<CR>", ":LspHover<CR>", nil, bufnr)
+        u.buf_map("n", "K", ":LspHover<CR>", nil, bufnr)
     end
     if client.resolved_capabilities.find_references then
         u.buf_map("n", "<Leader>*", ":LspRef<CR>", nil, bufnr)
