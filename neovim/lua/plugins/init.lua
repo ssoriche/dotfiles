@@ -98,6 +98,8 @@ return require("packer").startup(function()
         requires = { { "nvim-lua/popup.nvim" }, { "nvim-lua/plenary.nvim" } },
     })
 
+    use({'nvim-telescope/telescope-file-browser.nvim'})
+
     use("tjdevries/astronauta.nvim")
     use({ "lukas-reineke/indent-blankline.nvim", config = config("indent_blankline") })
 

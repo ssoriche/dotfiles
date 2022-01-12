@@ -27,6 +27,8 @@ telescope.setup({
     },
 })
 
+telescope.load_extension('file_browser')
+
 u.lua_command("Files", "global.telescope.find_files()")
 u.command("Ag", "Telescope live_grep")
 u.command("BLines", "Telescope current_buffer_fuzzy_find")
@@ -36,8 +38,10 @@ u.command("BCommits", "Telescope git_bcommits")
 u.command("Commits", "Telescope git_commits")
 u.command("HelpTags", "Telescope help_tags")
 u.command("ManPages", "Telescope man_pages")
+u.command("FileBrowser", "Telescope file_browser")
 
 u.map("n", "<Leader>ff", "<cmd>Files<CR>")
+u.map("n", "<Leader>fb", "<cmd>FileBrowser<CR>")
 u.map("n", "<Leader>fg", "<cmd>Ag<CR>")
 u.map("n", "<Leader> ", "<cmd>Buffers<CR>")
 u.map("n", "<Leader>fo", "<cmd>History<CR>")
