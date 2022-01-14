@@ -99,8 +99,6 @@ return require("packer").startup(function()
     })
 
     use({'nvim-telescope/telescope-file-browser.nvim'})
-
-    use("tjdevries/astronauta.nvim")
     use({ "lukas-reineke/indent-blankline.nvim", config = config("indent_blankline") })
 
     use("JoosepAlviste/nvim-ts-context-commentstring")
