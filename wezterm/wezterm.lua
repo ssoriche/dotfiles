@@ -33,7 +33,7 @@ return {
 	font_size = 12.0,
 	font = wezterm.font("JetBrainsMono Nerd Font"),
 	allow_square_glyphs_to_overflow_width = "WhenFollowedBySpace",
-	color_scheme = "wezterm_tokyonight_night",
+	color_scheme = "wezterm_kanagawa",
 
 	initial_cols = 120,
 	initial_rows = 50,
