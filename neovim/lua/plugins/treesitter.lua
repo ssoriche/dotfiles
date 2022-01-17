@@ -1,6 +1,6 @@
 require("nvim-treesitter.configs").setup({
     ensure_installed = "all",
-    ignore_install = { "haskell", "elixer" },
+    ignore_install = { "haskell", "elixer", "fusion" },
     highlight = { enable = true },
     indent = { enable = true },
     refactor = { highlight_definitions = { enable = true } },
