@@ -35,3 +35,4 @@ ts.setup {ensure_installed = 'maintained', highlight = {enable = true}} ]]
 
 require("unimpaired").setup()
 require("tabout").setup()
+require("fidget").setup()
