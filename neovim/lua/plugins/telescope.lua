@@ -4,6 +4,14 @@ local actions = require('telescope.actions')
 local u = require("utils")
 
 telescope.setup({
+    extensions = {
+        fzf = {
+            fuzzy = true,
+            override_generic_sorter = true,
+            override_file_sorter = true,
+            case_mode = "smart_case",
+        },
+    },
     config = {
         layout_strategy = 'flex',
         scroll_strategy = 'cycle',
@@ -23,11 +31,12 @@ telescope.setup({
                 -- mirror = true,
             },
         },
-        file_ignore_patterns = {'tags'},
+        file_ignore_patterns = { "tags" },
     },
 })
 
 telescope.load_extension('file_browser')
+telescope.load_extension("fzf")
 
 u.lua_command("Files", "global.telescope.find_files()")
 u.command("Ag", "Telescope live_grep")
