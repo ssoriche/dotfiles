@@ -1,5 +1,5 @@
 local telescope = require("telescope")
-local actions = require('telescope.actions')
+local actions = require("telescope.actions")
 
 local u = require("utils")
 
@@ -13,9 +13,9 @@ telescope.setup({
         },
     },
     config = {
-        layout_strategy = 'flex',
-        scroll_strategy = 'cycle',
-        mappings = {i = {["<esc>"] = actions.close}},
+        layout_strategy = "flex",
+        scroll_strategy = "cycle",
+        mappings = { i = { ["<esc>"] = actions.close } },
         winblend = 0,
         layout_defaults = {
             horizontal = {
@@ -35,7 +35,7 @@ telescope.setup({
     },
 })
 
-telescope.load_extension('file_browser')
+telescope.load_extension("file_browser")
 telescope.load_extension("fzf")
 
 u.lua_command("Files", "global.telescope.find_files()")
