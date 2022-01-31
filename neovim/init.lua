@@ -36,3 +36,6 @@ ts.setup {ensure_installed = 'maintained', highlight = {enable = true}} ]]
 require("unimpaired").setup()
 require("tabout").setup()
 require("fidget").setup()
+require("neogen").setup({
+    enabled = true, --if you want to disable Neogen
+})

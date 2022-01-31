@@ -35,6 +35,15 @@ return require("packer").startup(function()
         config = config("treesitter"),
     })
     use({ "RRethy/nvim-treesitter-textsubjects" })
+    use({
+        "danymat/neogen",
+        config = function()
+            require("neogen").setup({
+                enabled = true,
+            })
+        end,
+        requires = "nvim-treesitter/nvim-treesitter",
+    })
 
     -- lsp
     use("nvim-lua/lsp-status.nvim")
