@@ -28,7 +28,6 @@ local function newconfig(new_config, new_root_dir)
             }
         end
     end
-    print(vim.inspect(new_config.settings.yaml.schemas))
 end
 
 M.setup = function(on_attach, capabilities)
