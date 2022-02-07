@@ -12,3 +12,6 @@ gitsigns.setup({
     },
     current_line_blame_formatter_opts = {relative_time = false},
 })
+
+u.map("n", "]c", "<cmd>Gitsigns next_hunk<CR>")
+u.map("n", "[c", "<cmd>Gitsigns prev_hunk<CR>")
