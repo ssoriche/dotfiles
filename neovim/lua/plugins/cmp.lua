@@ -21,6 +21,10 @@ cmp.setup({
             behavior = cmp.ConfirmBehavior.Insert,
             select = true,
         }),
+        ["<Up>"] = cmp.config.disable,
+        ["<Down>"] = cmp.config.disable,
+        ["<Left>"] = cmp.config.disable,
+        ["<Right>"] = cmp.config.disable,
     },
     formatting = {
         format = lspkind.cmp_format(),
