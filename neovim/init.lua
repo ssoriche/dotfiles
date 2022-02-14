@@ -39,3 +39,4 @@ require("fidget").setup()
 require("neogen").setup({
     enabled = true, --if you want to disable Neogen
 })
+require("bufferline").setup()

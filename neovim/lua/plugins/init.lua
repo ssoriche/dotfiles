@@ -27,6 +27,7 @@ return require("packer").startup(function()
 
     -- use({ "nathom/filetype.nvim", config = config("filetype") })
     use({ "sindrets/diffview.nvim", requires = "nvim-lua/plenary.nvim" })
+    use({ "akinsho/bufferline.nvim", requires = "kyazdani42/nvim-web-devicons" })
 
     -- treesitter
     use({
