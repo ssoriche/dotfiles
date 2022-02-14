@@ -12,7 +12,7 @@ return require("packer").startup(function()
         use({ path, config = config(name) })
     end
 
-    use({ "L3MON4D3/LuaSnip" })
+    use({ "L3MON4D3/LuaSnip", config = config("snippets") })
     use({
         "hrsh7th/nvim-cmp",
         requires = {
