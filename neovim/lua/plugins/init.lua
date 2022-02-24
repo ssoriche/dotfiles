@@ -53,7 +53,7 @@ return require("packer").startup(function()
     use({ "jose-elias-alvarez/null-ls.nvim" })
 
     use("onsails/lspkind-nvim")
-    use("j-hui/fidget.nvim")
+    use({ "j-hui/fidget.nvim", config = config("fidget") })
 
     use({
         "lewis6991/gitsigns.nvim",
