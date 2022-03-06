@@ -67,7 +67,12 @@ return require("packer").startup(function()
         config = config("comment"),
     })
 
-    use({ "Darazaki/indent-o-matic", config = config("indent") })
+    use({
+        "nmac427/guess-indent.nvim",
+        config = function()
+            require("guess-indent").setup({})
+        end,
+    })
 
     use({
         "windwp/nvim-autopairs",
