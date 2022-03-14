@@ -59,6 +59,8 @@ local on_attach = function(client, bufnr)
     if client.resolved_capabilities.rename then
         u.buf_map("n", "<leader>rn", ":LspRename<CR>", nil, bufnr)
     end
+    vim.keymap.set("n", "gT", vim.lsp.buf.type_definition, { buffer = bufnr })
+    vim.keymap.set("n", "gI", vim.lsp.buf.implementation, { buffer = bufnr })
     u.buf_map("n", "<Leader>a", ":LspDiagLine<CR>", nil, bufnr)
     u.buf_map("n", "[a", ":LspDiagPrev<CR>", nil, bufnr)
     u.buf_map("n", "]a", ":LspDiagNext<CR>", nil, bufnr)
