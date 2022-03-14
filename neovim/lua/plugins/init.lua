@@ -100,6 +100,9 @@ return require("packer").startup(function()
         "rebelot/kanagawa.nvim",
     })
 
+    use({ "milisims/nvim-luaref" })
+    use({ "nanotee/luv-vimdocs" })
+
     use({
         "nvim-lualine/lualine.nvim",
         config = config("lualine"),
