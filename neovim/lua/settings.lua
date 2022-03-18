@@ -20,6 +20,8 @@ vim.opt.splitright = true -- Put new windows right of current
 vim.opt.termguicolors = true -- True color support
 vim.opt.wildmode = "list:longest" -- Command-line completion mode
 
+vim.opt.cursorline = true
+
 -- Window
 vim.opt.number = true -- Print line number
 vim.opt.relativenumber = true -- Relative line numbers
