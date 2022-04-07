@@ -1,5 +1,7 @@
 local indent = 2
 
+vim.opt.laststatus = 3
+
 -- Buffer
 vim.opt.expandtab = true -- Use spaces instead of tabs
 vim.opt.shiftwidth = indent -- Size of an indent
