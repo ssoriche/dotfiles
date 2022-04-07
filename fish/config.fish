@@ -19,7 +19,11 @@ set -g fish_key_bindings custom_key_binds
 alias g git
 alias fig docker-compose
 alias d docker
-alias kc kubectl
+if command -s kubecolor > /dev/null
+  alias kc kubecolor
+else
+  alias kc kubectl
+end
 
 # Configure editor depending on what's installed.
 if command -s nvim > /dev/null
