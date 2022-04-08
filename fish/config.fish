@@ -72,7 +72,6 @@ end
 
 eval (direnv hook fish)
 
-kitty + complete setup fish | source
 if command -v anyenv > /dev/null
   fish_add_path $HOME/.anyenv/bin
   source (anyenv init - fish|psub)
