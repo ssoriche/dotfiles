@@ -47,6 +47,7 @@ return {
 			mods = "NONE",
 			action = wezterm.action({ EmitEvent = "toggle-leader" }),
 		},
+		{ key = "v", mods = "LEADER", action = wezterm.action({ PasteFrom = "Clipboard" }) },
 		{
 			key = "-",
 			mods = "LEADER",
