@@ -130,6 +130,8 @@ lspconfig.terraformls.setup({
 
 lspconfig.clangd.setup({ on_attach = on_attach })
 
+lspconfig.julials.setup({})
+
 null_ls.setup(on_attach)
 sumneko.setup(on_attach, capabilities)
 yamlls.setup(on_attach, capabilities)
