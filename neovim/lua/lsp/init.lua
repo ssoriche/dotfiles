@@ -39,24 +39,24 @@ local on_attach = function(client, bufnr)
 
     -- telescope
 
-    if client.resolved_capabilities.document_formatting then
+    if client.server_capabilities.document_formatting then
         u.buf_augroup("LspFormatOnSave", "BufWritePre", "lua vim.lsp.buf.formatting_sync()")
     end
 
-    if client.resolved_capabilities.code_action then
+    if client.server_capabilities.code_action then
         u.buf_map("n", "<Leader>ca", ":LspAct<CR>", nil, bufnr)
     end
 
-    if client.resolved_capabilities.goto_definition then
+    if client.server_capabilities.goto_definition then
         u.buf_map("n", "gd", ":LspDef<CR>", nil, bufnr)
     end
-    if client.resolved_capabilities.hover then
+    if client.server_capabilities.hover then
         u.buf_map("n", "K", ":LspHover<CR>", nil, bufnr)
     end
-    if client.resolved_capabilities.find_references then
+    if client.server_capabilities.find_references then
         u.buf_map("n", "<Leader>*", ":LspRef<CR>", nil, bufnr)
     end
-    if client.resolved_capabilities.rename then
+    if client.server_capabilities.rename then
         u.buf_map("n", "<leader>rn", ":LspRename<CR>", nil, bufnr)
     end
     vim.keymap.set("n", "gT", vim.lsp.buf.type_definition, { buffer = bufnr })
