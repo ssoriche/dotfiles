@@ -139,8 +139,7 @@ function M.setup()
         float = {
             focusable = false,
             border = M.borders.thin,
-            scope = "cursor",
-            -- source = true,
+            source = true,
             format = function(diagnostic)
                 local code = diagnostic.user_data ~= nil and diagnostic.user_data.lsp.code or nil
                 -- print("diagnostic:")
@@ -152,8 +151,7 @@ function M.setup()
                 end
                 return diagnostic.message
             end,
-            header = { "Cursor Diagnostics:", "DiagnosticHeader" },
-            pos = 1,
+            header = { "Line Diagnostics:", "DiagnosticHeader" },
             prefix = function(diagnostic, i, total)
                 local icon, highlight
                 if diagnostic.severity == 1 then
