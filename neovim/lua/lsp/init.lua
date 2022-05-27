@@ -34,8 +34,8 @@ local on_attach = function(client, bufnr)
     u.lua_command("LspCodeAction", "vim.lsp.buf.code_action()")
 
     -- bindings
-    u.buf_map("n", "gy", ":LspTypeDef<CR>", nil, bufnr)
-    u.buf_map("i", "<C-x><C-x>", "<cmd> LspSignatureHelp<CR>", nil, bufnr)
+    vim.keymap.set("n", "gy", vim.lsp.buf.type_definition, { buffer = bufnr })
+    vim.keymap.set("i", "<C-X><C-X>", vim.lsp.buf.signature_help, { buffer = bufnr })
 
     -- telescope
 
