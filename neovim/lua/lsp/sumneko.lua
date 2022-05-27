@@ -4,8 +4,6 @@ local runtime_path = vim.split(package.path, ";")
 table.insert(runtime_path, "lua/?.lua")
 table.insert(runtime_path, "lua/?/init.lua")
 
-local root = vim.fn.getenv("HOME") .. "/bin/lua-language-server/"
-local binary = root .. "/bin/lua-language-server"
 local settings = {
     Lua = {
         runtime = { version = "LuaJIT", path = runtime_path },
@@ -37,7 +35,6 @@ M.setup = function(on_attach, capabilities)
 
     lspconfig.sumneko_lua.setup({
         on_attach = on_attach,
-        cmd = { binary, "-E", root .. "main.lua" },
         settings = settings,
         flags = { debounce_text_changes = 150 },
         capabilities = capabilities,
