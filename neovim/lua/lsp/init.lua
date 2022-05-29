@@ -39,8 +39,16 @@ local on_attach = function(client, bufnr)
 
     -- telescope
 
-    if client.server_capabilities.document_formatting then
-        u.buf_augroup("LspFormatOnSave", "BufWritePre", "lua vim.lsp.buf.formatting_sync()")
+    if client.supports_method("textDocument/formatting") then
+        local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
+        vim.api.nvim_clear_autocmds({ group = augroup, buffer = bufnr })
+        vim.api.nvim_create_autocmd("BufWritePre", {
+            group = augroup,
+            buffer = bufnr,
+            callback = function()
+                vim.lsp.buf.format({ bufnr = bufnr, async = true })
+            end,
+        })
     end
 
     if client.server_capabilities.code_action then
