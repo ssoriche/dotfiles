@@ -17,6 +17,8 @@ cmp.setup({
         { name = "buffer", keyword_length = 5 },
     },
     mapping = {
+        ["<C-n>"] = cmp.mapping(cmp.mapping.select_next_item()),
+        ["<C-p>"] = cmp.mapping(cmp.mapping.select_prev_item()),
         ["<CR>"] = cmp.mapping.confirm({
             behavior = cmp.ConfirmBehavior.Insert,
             select = true,
