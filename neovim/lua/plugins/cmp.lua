@@ -19,11 +19,15 @@ cmp.setup({
     mapping = {
         ["<C-n>"] = cmp.mapping(cmp.mapping.select_next_item()),
         ["<C-p>"] = cmp.mapping(cmp.mapping.select_prev_item()),
-        ["<CR>"] = cmp.mapping.confirm({
+        ["<C-k>"] = cmp.mapping.confirm({
             behavior = cmp.ConfirmBehavior.Insert,
             select = true,
         }),
-        ["<Up>"] = cmp.config.disable,
+        -- on many systems ctrl-k is mapped to up arrow at the system level
+        ["<Up>"] = cmp.mapping.confirm({
+            behavior = cmp.ConfirmBehavior.Insert,
+            select = true,
+        }),
         ["<Down>"] = cmp.config.disable,
         ["<Left>"] = cmp.config.disable,
         ["<Right>"] = cmp.config.disable,
