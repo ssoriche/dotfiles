@@ -54,27 +54,16 @@ local on_attach = function(client, bufnr)
         })
     end
 
-    if client.server_capabilities.code_action then
-        u.buf_map("n", "<Leader>ca", ":LspAct<CR>", nil, bufnr)
-    end
-
-    if client.server_capabilities.goto_definition then
-        u.buf_map("n", "gd", ":LspDef<CR>", nil, bufnr)
-    end
-    if client.server_capabilities.hover then
-        u.buf_map("n", "K", ":LspHover<CR>", nil, bufnr)
-    end
-    if client.server_capabilities.find_references then
-        u.buf_map("n", "<Leader>*", ":LspRef<CR>", nil, bufnr)
-    end
-    if client.server_capabilities.rename then
-        u.buf_map("n", "<leader>rn", ":LspRename<CR>", nil, bufnr)
-    end
+    vim.keymap.set("n", "<Leader>ca", vim.lsp.buf.code_action, { buffer = bufnr })
+    vim.keymap.set("n", "gd", "<cmd>LspDef<cr>", { buffer = bufnr })
+    vim.keymap.set("n", "K", "<cmd>LspHover<cr>", { buffer = bufnr })
+    vim.keymap.set("n", "<Leader>*", "<cmd>LspRef<CR>", { buffer = bufnr })
+    vim.keymap.set("n", "<leader>rn", "<cmd>LspRename<CR>", { buffer = bufnr })
     vim.keymap.set("n", "gT", vim.lsp.buf.type_definition, { buffer = bufnr })
     vim.keymap.set("n", "gI", vim.lsp.buf.implementation, { buffer = bufnr })
-    u.buf_map("n", "<Leader>a", ":LspDiagLine<CR>", nil, bufnr)
-    u.buf_map("n", "[a", ":LspDiagPrev<CR>", nil, bufnr)
-    u.buf_map("n", "]a", ":LspDiagNext<CR>", nil, bufnr)
+    vim.keymap.set("n", "<Leader>a", "<cmd>LspDiagLine<CR>", { buffer = bufnr })
+    vim.keymap.set("n", "[a", "<cmd>LspDiagPrev<CR>", { buffer = bufnr })
+    vim.keymap.set("n", "]a", "<cmd>LspDiagNext<CR>", { buffer = bufnr })
     map(
         "n",
         "<leader>cc",
