@@ -22,16 +22,19 @@ local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities = require("cmp_nvim_lsp").update_capabilities(capabilities)
 
 local on_attach = function(client, bufnr)
+    bufnr = bufnr or 0
     -- commands
-    u.lua_command("LspFormatting", "vim.lsp.buf.formatting()")
-    u.lua_command("LspHover", "vim.lsp.buf.hover()")
-    u.lua_command("LspRename", "vim.lsp.buf.rename()")
-    u.lua_command("LspDiagPrev", "vim.diagnostic.goto_prev()")
-    u.lua_command("LspDiagNext", "vim.diagnostic.goto_next()")
-    u.lua_command("LspDiagLine", "vim.diagnostic.open_float(popup_opts)")
-    u.lua_command("LspSignatureHelp", "vim.lsp.buf.signature_help()")
-    u.lua_command("LspTypeDef", "vim.lsp.buf.type_definition()")
-    u.lua_command("LspCodeAction", "vim.lsp.buf.code_action()")
+    vim.api.nvim_create_user_command("LspFormatting", function()
+        vim.lsp.buf.format({ async = true })
+    end, {})
+    vim.api.nvim_buf_create_user_command(bufnr, "LspHover", vim.lsp.buf.hover, {})
+    vim.api.nvim_buf_create_user_command(bufnr, "LspRename", vim.lsp.buf.rename, {})
+    vim.api.nvim_buf_create_user_command(bufnr, "LspDiagPrev", vim.diagnostic.goto_prev, {})
+    vim.api.nvim_buf_create_user_command(bufnr, "LspDiagNext", vim.diagnostic.goto_next, {})
+    vim.api.nvim_buf_create_user_command(bufnr, "LspDiagLine", vim.diagnostic.open_float, {})
+    vim.api.nvim_buf_create_user_command(bufnr, "LspSignatureHelp", vim.lsp.buf.signature_help, {})
+    vim.api.nvim_create_user_command("LspTypeDef", vim.lsp.buf.type_definition, {})
+    vim.api.nvim_create_user_command("LspCodeAction", vim.lsp.buf.code_action, {})
 
     -- bindings
     vim.keymap.set("n", "gy", vim.lsp.buf.type_definition, { buffer = bufnr })
