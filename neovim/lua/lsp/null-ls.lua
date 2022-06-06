@@ -6,11 +6,6 @@ local sources = {
     b.formatting.prettierd.with({
         filetypes = { "html", "json", "yaml", "markdown", "toml" },
     }),
-    b.formatting.stylua.with({
-        condition = function(utils)
-            return utils.root_has_file({ "stylua.toml", ".stylua.toml" })
-        end,
-    }),
     b.formatting.trim_whitespace.with({ filetypes = { "tmux", "teal", "zsh" } }),
     b.formatting.shfmt.with({
         extra_args = function(params)
