@@ -16,7 +16,7 @@ cmp.setup({
         { name = "luasnip" },
         { name = "buffer", keyword_length = 5 },
     },
-    mapping = {
+    mapping = cmp.mapping.preset.insert({
         ["<C-n>"] = cmp.mapping(cmp.mapping.select_next_item()),
         ["<C-p>"] = cmp.mapping(cmp.mapping.select_prev_item()),
         ["<C-k>"] = cmp.mapping.confirm({
@@ -31,7 +31,7 @@ cmp.setup({
         ["<Down>"] = cmp.config.disable,
         ["<Left>"] = cmp.config.disable,
         ["<Right>"] = cmp.config.disable,
-    },
+    }),
     formatting = {
         format = lspkind.cmp_format(),
     },
