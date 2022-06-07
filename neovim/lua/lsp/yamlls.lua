@@ -31,22 +31,13 @@ local function newconfig(new_config, new_root_dir)
 end
 
 M.setup = function(on_attach, capabilities)
-    local yaml_schemas = {}
-    if getlines(1, 2):find("apiVersion:") then
-        vim.opt.filetype = "yaml.k8s"
-        yaml_schemas = {
-            ["https://raw.githubusercontent.com/yannh/kubernetes-json-schema/master/v1.22.0/all.json"] = "/*",
-        }
-    end
-    -- https://github.com/redhat-developer/yaml-language-server
-    lspconfig.yamlls.setup({
-        on_attach = on_attach,
-        on_new_config = newconfig,
-        settings = {
-            yaml = { schemas = yaml_schemas },
+    local companion = require("yaml-companion").setup({
+        lspconfig = {
+            on_attach = on_attach,
+            capabilities = capabilities,
         },
-        capabilities = capabilities,
     })
+    lspconfig.yamlls.setup(companion)
 end
 
 return M
