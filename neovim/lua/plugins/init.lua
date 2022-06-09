@@ -95,6 +95,12 @@ return require("packer").startup(function()
 
     use({ "rafcamlet/nvim-luapad" })
     use({ "mfussenegger/nvim-dap" })
+    use({
+        "rcarriga/nvim-notify",
+        config = function()
+            vim.notify = require("notify")
+        end,
+    })
 
     -- Themes
     use({
