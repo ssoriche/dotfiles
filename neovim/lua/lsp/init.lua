@@ -74,8 +74,8 @@ end
 
 -- https://github.com/golang/tools/tree/master/gopls
 lspconfig.gopls.setup({
-    on_attach = function(client)
-        on_attach(client)
+    on_attach = function(client, bufnr)
+        on_attach(client, bufnr)
     end,
     settings = { gopls = { gofumpt = true } },
     capabilities = capabilities,
