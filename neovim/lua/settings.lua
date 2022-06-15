@@ -31,3 +31,5 @@ vim.opt.wrap = false -- Disable line wrap
 
 vim.opt.foldmethod = "expr"
 vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
+
+vim.opt.wildoptions = "pum"
