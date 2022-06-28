@@ -28,7 +28,9 @@ require('material').set() ]]
 
 g.tokyonight_style = "night"
 g.tokyonight_transparent = true
-vim.cmd("colorscheme kanagawa")
+require("catppuccin").setup()
+vim.g.catppuccin_flavour = "mocha"
+vim.cmd("colorscheme catppuccin")
 
 --[[ local ts = require 'nvim-treesitter.configs'
 ts.setup {ensure_installed = 'maintained', highlight = {enable = true}} ]]

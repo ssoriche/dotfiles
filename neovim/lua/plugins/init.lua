@@ -112,6 +112,7 @@ return require("packer").startup(function()
     "marko-cerovac/material.nvim",
     "tjdevries/colorbuddy.nvim",
     "rebelot/kanagawa.nvim",
+    "catppuccin/nvim", as = "catppuccin"
   })
 
   use({ "milisims/nvim-luaref" })
