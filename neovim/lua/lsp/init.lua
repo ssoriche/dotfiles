@@ -8,7 +8,6 @@ local lsp = vim.lsp
 
 local map = vim.api.nvim_set_keymap
 
-require("lsp.diagnostics").setup()
 
 local popup_opts = { border = "single", focusable = false }
 
