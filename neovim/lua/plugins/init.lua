@@ -54,6 +54,7 @@ return require("packer").startup(function()
   use("neovim/nvim-lspconfig")
   use({ "alexaandru/nvim-lspupdate" })
   use({ "jose-elias-alvarez/null-ls.nvim" })
+  use({ "glepnir/lspsaga.nvim", config = config("lspsaga") })
 
   use("onsails/lspkind-nvim")
   use({ "j-hui/fidget.nvim", config = config("fidget") })
