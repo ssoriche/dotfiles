@@ -14,8 +14,6 @@ _G.global = {}
 _G.global.yaml = {}
 
 g.indent_blankline_char = "│"
-g.do_filetype_lua = 1
-g.did_load_filetypes = 0
 
 require("plugins")
 require("lsp")
