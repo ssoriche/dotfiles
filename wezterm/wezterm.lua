@@ -1,5 +1,4 @@
 local wezterm = require("wezterm")
-local catppuccin = require("colors/catppuccin").setup({})
 
 function dump(o)
 	if type(o) == "table" then
@@ -34,7 +33,7 @@ return {
 	font_size = 14.0,
 	font = wezterm.font_with_fallback({ "JetBrainsMono Nerd Font", "JuliaMono" }),
 	allow_square_glyphs_to_overflow_width = "WhenFollowedBySpace",
-	colors = catppuccin,
+	color_scheme = "Catppuccin Mocha",
 
 	initial_cols = 120,
 	initial_rows = 50,
