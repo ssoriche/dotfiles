@@ -1,3 +1,6 @@
+require("mason").setup()
+require("mason-lspconfig").setup({ automatic_installation = true })
+
 local lspconfig = require("lspconfig")
 local null_ls = require("lsp.null-ls")
 local sumneko = require("lsp.sumneko")

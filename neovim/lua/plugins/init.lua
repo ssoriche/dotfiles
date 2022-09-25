@@ -51,8 +51,11 @@ return require("packer").startup(function()
 
   -- lsp
   use("nvim-lua/lsp-status.nvim")
-  use("neovim/nvim-lspconfig")
-  use({ "alexaandru/nvim-lspupdate" })
+  use({
+    "williamboman/mason.nvim",
+    "williamboman/mason-lspconfig.nvim",
+    "neovim/nvim-lspconfig"
+  })
   use({ "jose-elias-alvarez/null-ls.nvim" })
   use({ "glepnir/lspsaga.nvim", config = config("lspsaga") })
 
