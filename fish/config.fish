@@ -84,7 +84,3 @@ if test -e /usr/local/opt/asdf/asdf.fish
 end
 
 set -gx XDG_CONFIG_HOME $HOME/.config
-
-if command -s starship > /dev/null
-  starship init fish | source
-end
