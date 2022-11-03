@@ -17,7 +17,6 @@ local sources = {
     b.diagnostics.markdownlint,
     b.diagnostics.teal,
     b.diagnostics.shellcheck.with({ diagnostics_format = "#{m} [#{c}]" }),
-    b.code_actions.gitsigns,
 }
 
 local M = {}
