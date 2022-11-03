@@ -12,6 +12,13 @@ local lsp = vim.lsp
 local map = vim.api.nvim_set_keymap
 
 
+local signs = { Error = "😡", Warn = "😥", Hint = "😤", Info = "😐" }
+--[[ local signs = { Error = " ", Warn = " ", Hint = " ", Info = " " } ]]
+for type, icon in pairs(signs) do
+    local hl = "DiagnosticSign" .. type
+    vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = hl })
+end
+
 local popup_opts = { border = "single", focusable = false }
 
 lsp.handlers["textDocument/signatureHelp"] = lsp.with(lsp.handlers.signature_help, popup_opts)
