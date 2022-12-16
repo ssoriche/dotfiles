@@ -18,6 +18,7 @@ g.indent_blankline_char = "│"
 require("plugins")
 require("lsp")
 require("settings")
+require("commands")
 require("maps")
 
 --[[ g.material_style = 'deep ocean'
