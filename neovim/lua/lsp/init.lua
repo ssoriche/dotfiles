@@ -140,6 +140,7 @@ lspconfig.terraformls.setup({
 })
 
 lspconfig.clangd.setup({ on_attach = on_attach })
+lspconfig.jsonls.setup({ on_attach = on_attach })
 
 lspconfig.julials.setup({})
 
