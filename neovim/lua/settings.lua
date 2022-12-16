@@ -23,6 +23,7 @@ vim.opt.termguicolors = true -- True color support
 vim.opt.wildmode = "list:longest" -- Command-line completion mode
 
 vim.opt.cursorline = true
+vim.opt.mouse = ""
 
 -- Window
 vim.opt.number = true -- Print line number
