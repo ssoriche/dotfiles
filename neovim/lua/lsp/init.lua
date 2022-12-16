@@ -34,7 +34,7 @@ capabilities = require("cmp_nvim_lsp").default_capabilities(capabilities)
 local on_attach = function(client, bufnr)
     bufnr = bufnr or 0
     -- commands
-    vim.api.nvim_create_user_command("LspFormatting", function()
+    vim.api.nvim_create_user_command("LspFormat", function()
         vim.lsp.buf.format({ async = true })
     end, {})
     vim.api.nvim_buf_create_user_command(bufnr, "LspHover", vim.lsp.buf.hover, {})
@@ -53,7 +53,7 @@ local on_attach = function(client, bufnr)
     -- telescope
 
     if client.supports_method("textDocument/formatting") then
-        local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
+        local augroup = vim.api.nvim_create_augroup("LspFormat", {})
         vim.api.nvim_clear_autocmds({ group = augroup, buffer = bufnr })
         vim.api.nvim_create_autocmd("BufWritePre", {
             group = augroup,
