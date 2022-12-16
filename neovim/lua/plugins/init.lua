@@ -172,6 +172,8 @@ return require("packer").startup(function()
     end,
   })
 
+  use("folke/neodev.nvim")
+
   use({
     "someone-stole-my-name/yaml-companion.nvim",
     requires = {
