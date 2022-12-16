@@ -31,8 +31,6 @@ local settings = {
 
 local M = {}
 M.setup = function(on_attach, capabilities)
-    local luadev = require("lua-dev").setup({ lspconfig = { cmd = { "lua-language-server" } } })
-
     lspconfig.sumneko_lua.setup({
         on_attach = on_attach,
         settings = settings,

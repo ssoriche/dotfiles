@@ -1,5 +1,6 @@
 require("mason").setup()
 require("mason-lspconfig").setup({ automatic_installation = true })
+require("neodev").setup({})
 
 local lspconfig = require("lspconfig")
 local null_ls = require("lsp.null-ls")

@@ -173,17 +173,6 @@ return require("packer").startup(function()
   })
 
   use({
-    "folke/lua-dev.nvim",
-    config = function()
-      require("lua-dev").setup({
-        -- your configuration comes here
-        -- or leave it empty to use the default settings
-        -- refer to the configuration section below
-      })
-    end,
-  })
-
-  use({
     "someone-stole-my-name/yaml-companion.nvim",
     requires = {
       { "neovim/nvim-lspconfig" },
