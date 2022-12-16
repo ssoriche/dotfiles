@@ -99,7 +99,7 @@ lspconfig.perlpls.setup({ on_attach = on_attach })
 -- https://github.com/theia-ide/typescript-language-server
 lspconfig.tsserver.setup({
     on_attach = function(client)
-        client.resolved_capabilities.document_formatting = false
+        client.server_capabilities.document_formatting = false
         on_attach(client)
     end,
 })
@@ -131,8 +131,8 @@ lspconfig.dockerls.setup({ on_attach = on_attach })
 -- https://github.com/hashicorp/terraform-ls
 lspconfig.terraformls.setup({
     on_attach = function(client, bufnr)
-        client.resolved_capabilities.document_formatting = false
-        client.resolved_capabilities.document_range_formatting = false
+        client.server_capabilities.document_formatting = false
+        client.server_capabilities.document_range_formatting = false
         on_attach(client, bufnr)
     end,
     cmd = { "terraform-ls", "serve" },
