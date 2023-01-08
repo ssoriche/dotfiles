@@ -117,6 +117,7 @@ function M.config()
         },
       },
     },
+    terraformls = {},
     teal_ls = {},
     vimls = {},
     -- tailwindcss = {},
