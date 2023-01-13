@@ -9,11 +9,16 @@ vim.opt.smartindent = true -- Insert indents automatically
 vim.opt.tabstop = indent -- Number of spaces tabs count for
 
 -- Global
-vim.opt.completeopt = "menuone,noinsert,noselect" -- Completion options (for deoplete)
+vim.opt.completeopt = "menu,menuone,noselect" -- Completion options (for deoplete)
+vim.opt.formatoptions = "jcroqlnt" -- tcqj
+vim.opt.grepformat = "%f:%l:%c:%m"
+vim.opt.grepprg = "rg --vimgrep"
 vim.opt.hidden = true -- Enable modified buffers in background
 vim.opt.ignorecase = true -- Ignore case
 vim.opt.joinspaces = false -- No double spaces with join after a dot
+vim.opt.laststatus = 0
 vim.opt.scrolloff = 4 -- Lines of context
+vim.opt.sessionoptions = { "buffers", "curdir", "tabpages", "winsize" }
 vim.opt.shiftround = true -- Round indent
 vim.opt.sidescrolloff = 8 -- Columns of context
 vim.opt.smartcase = true -- Don't ignore case with capitals
