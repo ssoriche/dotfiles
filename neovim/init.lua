@@ -1,7 +1,7 @@
 vim.g.mapleader = " "
 
 require("config.lazy")
-require("settings")
+require("options")
 require("commands")
 require("unimpaired").setup()
 
