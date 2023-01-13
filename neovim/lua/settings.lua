@@ -1,7 +1,5 @@
 local indent = 2
 
-vim.opt.laststatus = 3
-
 -- Buffer
 vim.opt.expandtab = true -- Use spaces instead of tabs
 vim.opt.shiftwidth = indent -- Size of an indent
@@ -16,7 +14,7 @@ vim.opt.grepprg = "rg --vimgrep"
 vim.opt.hidden = true -- Enable modified buffers in background
 vim.opt.ignorecase = true -- Ignore case
 vim.opt.joinspaces = false -- No double spaces with join after a dot
-vim.opt.laststatus = 0
+vim.opt.laststatus = 3
 vim.opt.scrolloff = 4 -- Lines of context
 vim.opt.sessionoptions = { "buffers", "curdir", "tabpages", "winsize" }
 vim.opt.shiftround = true -- Round indent
