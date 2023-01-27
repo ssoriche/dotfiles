@@ -194,7 +194,7 @@ local leader = {
   },
   f = {
     name = "+file",
-    b = { "<cmd>Telescope file_browser<cr>", "Find Browser" },
+    b = { "<cmd>Telescope file_browser path=%:p:h<cr>", "Find Browser" },
     f = { "<cmd>Telescope find_files<cr>", "Find File" },
     o = { "<cmd>Telescope oldfiles<cr>", "Open Recent File" },
     n = { "<cmd>enew<cr>", "New File" },
