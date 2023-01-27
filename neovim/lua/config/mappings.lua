@@ -148,6 +148,10 @@ local leader = {
     ["]"] = { "<cmd>:BufferLineCycleNext<CR>", "Next Buffer" },
     -- ["D"] = { "<cmd>:bd<CR>", "Delete Buffer & Window" },
   },
+  g = {
+    name = "+git",
+    ["h"] = "+hunk",
+  },
   ["h"] = {
     name = "+help",
     t = { "<cmd>:Telescope builtin<cr>", "Telescope" },
