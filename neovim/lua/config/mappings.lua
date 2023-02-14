@@ -198,6 +198,7 @@ local leader = {
     f = { "<cmd>Telescope find_files<cr>", "Find File" },
     o = { "<cmd>Telescope oldfiles<cr>", "Open Recent File" },
     n = { "<cmd>enew<cr>", "New File" },
+    s = { "<cmd>Telescope git_status<cr>", "Find by git status" },
     d = "Dot Files",
   },
   o = {
