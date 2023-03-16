@@ -37,6 +37,10 @@ function mini.comment()
   })
 end
 
+function mini.bracketed()
+  require("mini.bracketed").setup({})
+end
+
 function mini.ai()
   local ai = require("mini.ai")
   require("mini.ai").setup({
@@ -78,6 +82,7 @@ function mini.config()
   mini.ai()
   mini.pairs()
   mini.comment()
+  mini.bracketed()
 end
 
 function mini.init()
