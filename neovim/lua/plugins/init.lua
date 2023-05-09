@@ -1,7 +1,6 @@
 return {
   "b0o/SchemaStore.nvim",
   "nvim-lua/plenary.nvim",
-  "williamboman/mason-lspconfig.nvim",
   "folke/which-key.nvim",
   "someone-stole-my-name/yaml-companion.nvim",
 

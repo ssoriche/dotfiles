@@ -16,6 +16,8 @@ local M = {
         --        },
       },
     },
+    "mason.nvim",
+    "williamboman/mason-lspconfig.nvim"
   },
   --  pin = true,
 }
