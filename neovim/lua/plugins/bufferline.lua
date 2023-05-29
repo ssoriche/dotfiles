@@ -22,10 +22,11 @@ function M.config()
 
   require("bufferline").setup({
     options = {
-      show_close_icon = true,
+      show_close_icon = false,
+      show_buffer_close_icons = false,
       diagnostics = "nvim_lsp",
-      always_show_bufferline = false,
-      separator_style = "thick",
+      always_show_bufferline = true,
+      separator_style = "thin",
       diagnostics_indicator = function(_, _, diag)
         local s = {}
         for _, severity in ipairs(severities) do
