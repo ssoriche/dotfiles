@@ -154,7 +154,7 @@ end
 M.spaces = function()
   local left_sep = hl_str(M.default.separator_icon.left, "SLSeparator")
   local right_sep = hl_str(M.default.separator_icon.right, "SLSeparator", "SLSeparator")
-  local str = "Spaces: " .. vim.api.nvim_buf_get_option(0, "shiftwidth")
+  local str = "Spaces: " .. vim.api.nvim_get_option_value("shiftwidth")
   return left_sep .. hl_str(str, "SLShiftWidth", "SLShiftWidth") .. right_sep
 end
 
