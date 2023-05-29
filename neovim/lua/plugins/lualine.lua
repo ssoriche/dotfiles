@@ -25,7 +25,7 @@ function M.opts()
     sections = {
       lualine_a = { M.fmt_branch },
       lualine_b = { M.diagnostics },
-      lualine_c = { { "filename", path = 1 } },
+      lualine_c = {},
       lualine_x = { M.diff },
       lualine_y = { M.position, M.filetype },
       lualine_z = { M.spaces, M.mode },
