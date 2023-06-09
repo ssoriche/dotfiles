@@ -23,7 +23,7 @@ function M.config()
       },
     },
     sections = {
-      lualine_a = { M.branch },
+      lualine_a = { M.fmt_branch },
       lualine_b = { M.diagnostics },
       lualine_c = {},
       lualine_x = { M.diff },
@@ -121,7 +121,7 @@ M.icons = {
 }
 
 local prev_branch = ""
-M.branch = {
+M.fmt_branch = {
   "branch",
   icons_enabled = false,
   icon = hl_str("", "SLGitIcon", "SLBranchName"),
