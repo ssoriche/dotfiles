@@ -3,7 +3,7 @@ local M = {
   event = "VeryLazy",
 }
 
-function M.config()
+function M.opts()
   require("lualine").setup({
     options = {
       theme = 'catppuccin',
