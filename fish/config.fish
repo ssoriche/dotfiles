@@ -55,6 +55,7 @@ fish_add_path /opt/homebrew/sbin
 fish_add_path /usr/local/opt/git/share/git-core/contrib/diff-highlight
 fish_add_path /usr/local/opt/groovy/libexec/bin
 fish_add_path /usr/local/gradle/bin
+fish_add_path /usr/local/go/bin
 fish_add_path /usr/local/MacGPG2/bin
 fish_add_path "$HOME/.krew/bin"
 fish_add_path "$HOME/bin"
