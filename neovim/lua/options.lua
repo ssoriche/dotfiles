@@ -26,6 +26,7 @@ vim.opt.splitbelow = true -- Put new windows below current
 vim.opt.splitright = true -- Put new windows right of current
 vim.opt.tabstop = indent -- Number of spaces tabs count for
 vim.opt.termguicolors = true -- True color support
+vim.opt.title = true              -- Set window title to buffer name
 vim.opt.wildmode = "list:longest" -- Command-line completion mode
 vim.opt.wildoptions = "pum"
 vim.opt.wrap = false -- Disable line wrap
