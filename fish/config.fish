@@ -1,10 +1,6 @@
 # THEME PURE #
 set fish_function_path $HOME/.config/fish/functions/theme-pure $fish_function_path
 
-function fish_mode_prompt
-    # Turn off mode indictor
-end
-
 function custom_key_binds
     fish_vi_key_bindings
 
@@ -16,13 +12,6 @@ end
 set -g fish_key_bindings custom_key_binds
 
 # Add some aliases I use often
-alias g git
-alias fig docker-compose
-alias d docker
-alias kc kubectl
-if command -s kubecolor >/dev/null
-    alias kc kubecolor
-end
 if command -s batcat >/dev/null
     alias bat batcat
 end
@@ -80,13 +69,12 @@ if command -v anyenv >/dev/null
     source (anyenv init - fish|psub)
 end
 
-if command -v atuin >/dev/null
-    atuin init fish --disable-up-arrow | source
-end
-
 set -Ux FZF_DEFAULT_OPTS "--color=bg+:#302D41,bg:#1E1E2E,spinner:#F8BD96,hl:#F28FAD --color=fg:#D9E0EE,header:#F28FAD,info:#DDB6F2,pointer:#F8BD96 --color=marker:#F8BD96,fg+:#F2CDCD,prompt:#DDB6F2,hl+:#F28FAD"
-if test -e /usr/local/opt/asdf/asdf.fish
-    source /usr/local/opt/asdf/asdf.fish
-end
 
 set -gx XDG_CONFIG_HOME $HOME/.config
+
+if status is-interactive
+    if command -v atuin >/dev/null
+        atuin init fish --disable-up-arrow | source
+    end
+end
