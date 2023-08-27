@@ -6,7 +6,7 @@ local M = {
     { "folke/neoconf.nvim", cmd = "Neoconf", config = true },
     {
       "folke/neodev.nvim",
-      config = {
+      opts = {
         debug = true,
         experimental = {
           pathStrict = true,

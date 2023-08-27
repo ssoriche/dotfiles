@@ -22,11 +22,11 @@ return {
   {
     "folke/persistence.nvim",
     event = "BufReadPre",
-    config = { options = { "buffers", "curdir", "tabpages", "winsize", "help" } },
+    opts = { options = { "buffers", "curdir", "tabpages", "winsize", "help" } },
   },
   {
     "SmiteshP/nvim-navic",
-    config = function()
+    opts = function()
       vim.g.navic_silence = true
       require("nvim-navic").setup({ separator = " ", highlight = true, depth_limit = 5 })
     end,
@@ -42,16 +42,16 @@ return {
         desc = "Neogen Comment",
       },
     },
-    config = { snippet_engine = "luasnip" },
+    opts = { snippet_engine = "luasnip" },
   },
   {
     "nvim-tree/nvim-web-devicons",
-    config = { default = true },
+    opts = { default = true },
   },
   {
     "folke/trouble.nvim",
     cmd = { "TroubleToggle", "Trouble" },
-    config = {
+    opts = {
       auto_open = false,
       use_diagnostic_signs = true, -- en
     },
@@ -70,6 +70,6 @@ return {
         expr = false,
       },
     },
-    config = {},
+    opts = {},
   },
 }
