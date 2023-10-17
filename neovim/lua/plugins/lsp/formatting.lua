@@ -29,7 +29,7 @@ end
 
 function M.setup(client, buf)
   local ft = vim.api.nvim_buf_get_option(buf, "filetype")
-  local nls = require("plugins.null-ls")
+  local nls = require("plugins.none-ls")
 
   local enable = false
   if nls.has_formatter(ft) then

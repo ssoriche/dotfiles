@@ -108,7 +108,7 @@ function M.config()
     require("lspconfig")[server].setup(opts)
   end
 
-  require("plugins.null-ls").setup(options)
+  require("plugins.none-ls").setup(options)
 end
 
 return M
