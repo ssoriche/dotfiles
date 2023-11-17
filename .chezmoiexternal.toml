@@ -1,0 +1,4 @@
+[".config/fish/functions/fisher.fish"]
+  type = "file"
+  url = "https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish"
+  refreshPeriod = "168h"
