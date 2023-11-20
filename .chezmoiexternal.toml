@@ -2,3 +2,7 @@
   type = "file"
   url = "https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish"
   refreshPeriod = "168h"
+[".hammerspoon/Spoons/"]
+  type = "archive"
+  url = "https://github.com/Hammerspoon/Spoons/raw/master/Spoons/SpoonInstall.spoon.zip"
+  refreshPeriod = "168h"
