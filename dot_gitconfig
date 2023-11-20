@@ -1,0 +1,80 @@
+[user]
+	name = Shawn Sorichetti
+	useConfigOnly = true
+[github]
+        user = ssoriche
+[core]
+	excludesfile = /Users/ssoriche/.gitignore
+	ignorecase = false
+	quotepath = false
+	pager = delta
+[color]
+	status = auto
+	diff = auto
+	branch = auto
+        ui = true
+; [branch "master"]
+; 	merge = master
+[alias]
+  co = checkout
+  ci = commit -v
+  cl = clean -dfx
+  cc = cherry-pick
+  fx = commit --no-edit --amend -C HEAD
+  st = status
+  mt = mergetool
+  hist = log --all --graph --pretty='[%C(cyan)%h%Creset]%C(bold cyan)%d%Creset %s'
+  uncommit = reset --soft HEAD^
+  unstage = reset HEAD
+  undo = reset HEAD~1 --mixed
+  save = !git add -A && git commit -m 'SAVEPOINT'
+  wip = commit -am "WIP"
+  wipe = !git add -A && git commit -qm 'WIPE SAVEPOINT' && git reset HEAD~1 --hard
+  standup = shortlog --since=yesterday
+  sdiff = "!git show $(git stash list | cut -d\":\" -f 1)"
+  pwb = rev-parse --abbrev-ref HEAD
+[push]
+	default = simple
+
+[mergetool "chdiff"]
+  cmd = /usr/bin/env chdiff --wait "$LOCAL" "$REMOTE"
+  keepBackup = false
+  trustExitCode = false
+
+[mergetool "diffmerge"]
+  ; cmd = diffmerge --merge --result="$MERGED" "$LOCAL" "$BASE" "$REMOTE"
+  cmd = diffmerge --merge --result="$MERGED" "$LOCAL" "$(if test -f "$BASE"; then echo "$BASE"; else echo "$LOCAL"; fi)" "$REMOTE"
+  trustexitcode = true
+
+[merge]
+  tool = vim
+[mergetool "vim"]
+  cmd = nvim -f -- \"$MERGED\"
+  trustExitCode = true
+  keepBackup = false
+[mergetool "splice"]
+  cmd = 'mvim -c "SpliceInit" -f -- "$BASE" "$LOCAL" "$REMOTE" "$MERGED"'
+  trustExitCode = true
+  keepBackup = false
+[diff]
+	tool = vimdiff
+        compactionHeuristic = true
+[branch]
+	autosetuprebase = always
+[interactive]
+	diffFilter = delta --color-only
+[feature]
+	manyFiles = true
+[protocol]
+	version = 2
+[pull]
+	rebase = true
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+
+[delta]
+    features = line-numbers decorations diff-so-fancy
+    whitespace-error-style = 22 reverse
