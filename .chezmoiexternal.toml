@@ -7,3 +7,8 @@
   url = "https://github.com/Hammerspoon/Spoons/raw/master/Spoons/SpoonInstall.spoon.zip"
   stripComponents = 1
   refreshPeriod = "168h"
+[".hammerspoon/Spoons/EmmyLua.spoon"]
+  type = "archive"
+  url = "https://github.com/Hammerspoon/Spoons/raw/master/Spoons/EmmyLua.spoon.zip"
+  stripComponents = 1
+  refreshPeriod = "168h"
