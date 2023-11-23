@@ -74,7 +74,6 @@ return {
         auto_install = false,
         highlight = { enable = true },
         indent = { enable = false },
-        context_commentstring = { enable = true, enable_autocmd = false },
         incremental_selection = {
           enable = true,
           keymaps = {
