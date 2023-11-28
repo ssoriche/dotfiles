@@ -36,7 +36,10 @@ Install:andUse("Seal", {
         icon = hs.image.imageFromName(hs.image.systemImageNames.ApplicationIcon),
       },
     }
-    s.plugins.urlformats:providersTable({ gh = { name = "GitHub", url = "https://github.com/%s" } })
+    s.plugins.urlformats:providersTable({
+      gh = { name = "GitHub", url = "https://github.com/%s" },
+      go = { name = "golinks", url = "https://go.metroplex.coloredblocks.net/%s" },
+    })
     s:refreshAllCommands()
   end,
   start = true,
