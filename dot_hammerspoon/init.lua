@@ -2,6 +2,7 @@ package.path = "/usr/local/share/lua/5.3/?.lua;/usr/local/share/lua/5.3/?/init.l
 package.cpath = "/user/local/lib/lua/5.3/?.so" .. package.cpath
 
 hs.loadSpoon("SpoonInstall")
+hs.loadSpoon("EmmyLua")
 
 spoon.SpoonInstall.repos.zzspoons = {
   url = "https://github.com/zzamboni/zzSpoons",
