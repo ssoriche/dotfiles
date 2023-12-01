@@ -1,5 +1,6 @@
 [user]
-	name = Shawn Sorichetti
+	name = "Shawn Sorichetti"
+	email = ssoriche@users.noreply.github.com
 	useConfigOnly = true
 [github]
         user = ssoriche
@@ -13,8 +14,6 @@
 	diff = auto
 	branch = auto
         ui = true
-; [branch "master"]
-; 	merge = master
 [alias]
   co = checkout
   ci = commit -v
@@ -50,10 +49,6 @@
   tool = vim
 [mergetool "vim"]
   cmd = nvim -f -- \"$MERGED\"
-  trustExitCode = true
-  keepBackup = false
-[mergetool "splice"]
-  cmd = 'mvim -c "SpliceInit" -f -- "$BASE" "$LOCAL" "$REMOTE" "$MERGED"'
   trustExitCode = true
   keepBackup = false
 [diff]
