@@ -9,6 +9,10 @@ spoon.SpoonInstall.repos.zzspoons = {
   desc = "zzamboni's spoon repository",
 }
 
+local hyper = { "cmd", "alt", "ctrl" }
+local shift_hyper = { "cmd", "alt", "ctrl", "shift" }
+local ctrl_cmd = { "cmd", "ctrl" }
+
 spoon.SpoonInstall.use_syncinstall = true
 
 Install = spoon.SpoonInstall
@@ -55,14 +59,11 @@ local firefoxBrowser = appID('/Applications/Firefox Developer Edition.app')
 
 DefaultBrowser = firefoxBrowser
 
-Install:andUse("URLDispatcher",
-  {
-    config = {
-      url_patterns = {
-        { "https://meet.google.com", meetBrowser }
-      },
-      default_handler = DefaultBrowser
-    },
-    start = true,
-  }
-)
+
+Install:andUse("Caffeine", {
+  start = true,
+  hotkeys = {
+    toggle = { hyper, "1" },
+  },
+  --                 fn = BTT_caffeine_widget,
+})
