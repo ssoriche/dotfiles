@@ -31,7 +31,7 @@ end)
 
 return {
 	font_size = 14.0,
-	font = wezterm.font_with_fallback({ "JetBrainsMono Nerd Font", "JuliaMono" }),
+	font = wezterm.font_with_fallback({ "JetBrainsMono Nerd Font" }),
 	allow_square_glyphs_to_overflow_width = "WhenFollowedBySpace",
 	color_scheme = "Catppuccin Mocha",
 
