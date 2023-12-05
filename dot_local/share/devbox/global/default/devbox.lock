@@ -1,0 +1,25 @@
+{
+  "lockfile_version": "1",
+  "packages": {
+    "ripgrep@latest": {
+      "last_modified": "2023-11-30T09:21:56Z",
+      "resolved": "github:NixOS/nixpkgs/f5c27c6136db4d76c30e533c20517df6864c46ee#ripgrep",
+      "source": "devbox-search",
+      "version": "14.0.3",
+      "systems": {
+        "aarch64-darwin": {
+          "store_path": "/nix/store/qgjyy47yz3klh9y7psj721xxciadv57w-ripgrep-14.0.3"
+        },
+        "aarch64-linux": {
+          "store_path": "/nix/store/nfh5g6kb3j3zrirxf3295ziby526yay0-ripgrep-14.0.3"
+        },
+        "x86_64-darwin": {
+          "store_path": "/nix/store/866sn5zwhz1f1819i3qy0s8zajnkyig9-ripgrep-14.0.3"
+        },
+        "x86_64-linux": {
+          "store_path": "/nix/store/ycib0dhs2v7y3f4a7m08aa83wyavipzd-ripgrep-14.0.3"
+        }
+      }
+    }
+  }
+}

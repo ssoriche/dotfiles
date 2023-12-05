@@ -1,0 +1,16 @@
+{
+  "packages": [
+    "ripgrep@latest",
+    "github:nix-community/neovim-nightly-overlay/692f9f3cbeaf82824961d9d03ef6322792b2a706"
+  ],
+  "shell": {
+    "init_hook": [
+      "echo 'Welcome to devbox!' > /dev/null"
+    ],
+    "scripts": {
+      "test": [
+        "echo \"Error: no test specified\" && exit 1"
+      ]
+    }
+  }
+}
