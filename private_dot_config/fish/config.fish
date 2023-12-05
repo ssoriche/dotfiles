@@ -11,28 +11,6 @@ function custom_key_binds
 end
 set -g fish_key_bindings custom_key_binds
 
-# Add some aliases I use often
-if command -s batcat >/dev/null
-    alias bat batcat
-end
-if command -s fdfind >/dev/null
-    alias fd fdfind
-end
-
-# Configure editor depending on what's installed.
-if command -s nvim >/dev/null
-    alias vim nvim
-    alias vi nvim
-    alias vimdiff 'nvim -d'
-    set -gx EDITOR nvim
-    set -gx GIT_EDITOR nvim
-    set -gx VISUAL nvim
-else if command -s vim >/dev/null
-    set -gx EDITOR vim
-    set -gx GIT_EDITOR vim
-    set -gx VISUAL vim
-end
-
 fish_add_path /sbin
 fish_add_path /bin
 fish_add_path /usr/sbin
@@ -52,6 +30,8 @@ fish_add_path "$HOME/.pgenv/bin"
 fish_add_path "$HOME/.pgenv/pgsql/bin"
 fish_add_path "$HOME/go/bin"
 
+set -gx XDG_CONFIG_HOME $HOME/.config
+
 set -gx LESS "-F -X -R"
 if command -s /usr/local/bin/bat >/dev/null
     set -gx BAT_THEME TwoDark
@@ -70,15 +50,34 @@ if command -v anyenv >/dev/null
 end
 
 if command -v devbox >/dev/null
-  devbox global shellenv --init-hook | source
+    devbox global shellenv --init-hook | source
 end
 
 set -Ux FZF_DEFAULT_OPTS "--color=bg+:#302D41,bg:#1E1E2E,spinner:#F8BD96,hl:#F28FAD --color=fg:#D9E0EE,header:#F28FAD,info:#DDB6F2,pointer:#F8BD96 --color=marker:#F8BD96,fg+:#F2CDCD,prompt:#DDB6F2,hl+:#F28FAD"
 
-set -gx XDG_CONFIG_HOME $HOME/.config
-
 if status is-interactive
     if command -v atuin >/dev/null
         atuin init fish --disable-up-arrow | source
+    end
+    # Add some aliases I use often
+    if command -s batcat >/dev/null
+        alias bat batcat
+    end
+    if command -s fdfind >/dev/null
+        alias fd fdfind
+    end
+
+    # Configure editor depending on what's installed.
+    if command -s nvim >/dev/null
+        alias vim nvim
+        alias vi nvim
+        alias vimdiff 'nvim -d'
+        set -gx EDITOR nvim
+        set -gx GIT_EDITOR nvim
+        set -gx VISUAL nvim
+    else if command -s vim >/dev/null
+        set -gx EDITOR vim
+        set -gx GIT_EDITOR vim
+        set -gx VISUAL vim
     end
 end
