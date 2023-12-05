@@ -1,7 +1,8 @@
 {
   "packages": [
     "ripgrep@latest",
-    "github:nix-community/neovim-nightly-overlay/692f9f3cbeaf82824961d9d03ef6322792b2a706"
+    "github:nix-community/neovim-nightly-overlay/692f9f3cbeaf82824961d9d03ef6322792b2a706",
+    "direnv@latest"
   ],
   "shell": {
     "init_hook": [

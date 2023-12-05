@@ -1,6 +1,26 @@
 {
   "lockfile_version": "1",
   "packages": {
+    "direnv@latest": {
+      "last_modified": "2023-12-01T03:28:22Z",
+      "resolved": "github:NixOS/nixpkgs/69a165d0fd2b08a78dbd2c98f6f860ceb2bbcd40#direnv",
+      "source": "devbox-search",
+      "version": "2.33.0",
+      "systems": {
+        "aarch64-darwin": {
+          "store_path": "/nix/store/2h17f0h606fnma14hhy9zr80b05hx0kn-direnv-2.33.0"
+        },
+        "aarch64-linux": {
+          "store_path": "/nix/store/30np097dgfgc3cj6lr743limwgm0h171-direnv-2.33.0"
+        },
+        "x86_64-darwin": {
+          "store_path": "/nix/store/ni4659h0symybqwr1sma6qm4l2fry5xx-direnv-2.33.0"
+        },
+        "x86_64-linux": {
+          "store_path": "/nix/store/zw8skxjgs1wqpijrx6fxi4m86cl0vild-direnv-2.33.0"
+        }
+      }
+    },
     "ripgrep@latest": {
       "last_modified": "2023-11-30T09:21:56Z",
       "resolved": "github:NixOS/nixpkgs/f5c27c6136db4d76c30e533c20517df6864c46ee#ripgrep",
