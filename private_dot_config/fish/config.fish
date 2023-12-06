@@ -1,6 +1,8 @@
 # THEME PURE #
 set fish_function_path $HOME/.config/fish/functions/theme-pure $fish_function_path
 
+set -gx XDG_CONFIG_HOME $HOME/.config
+
 function custom_key_binds
     fish_vi_key_bindings
 
@@ -30,7 +32,9 @@ fish_add_path "$HOME/.pgenv/bin"
 fish_add_path "$HOME/.pgenv/pgsql/bin"
 fish_add_path "$HOME/go/bin"
 
-set -gx XDG_CONFIG_HOME $HOME/.config
+if command -v devbox >/dev/null
+    devbox global shellenv --init-hook | source
+end
 
 set -gx LESS "-F -X -R"
 if command -s /usr/local/bin/bat >/dev/null
@@ -47,10 +51,6 @@ eval (direnv hook fish)
 if command -v anyenv >/dev/null
     fish_add_path $HOME/.anyenv/bin
     source (anyenv init - fish|psub)
-end
-
-if command -v devbox >/dev/null
-    devbox global shellenv --init-hook | source
 end
 
 set -Ux FZF_DEFAULT_OPTS "--color=bg+:#302D41,bg:#1E1E2E,spinner:#F8BD96,hl:#F28FAD --color=fg:#D9E0EE,header:#F28FAD,info:#DDB6F2,pointer:#F8BD96 --color=marker:#F8BD96,fg+:#F2CDCD,prompt:#DDB6F2,hl+:#F28FAD"
