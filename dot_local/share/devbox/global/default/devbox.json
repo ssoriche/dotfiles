@@ -2,7 +2,14 @@
   "packages": [
     "ripgrep@latest",
     "github:nix-community/neovim-nightly-overlay/692f9f3cbeaf82824961d9d03ef6322792b2a706",
-    "direnv@latest"
+    "direnv@latest",
+    "go@1.21.4",
+    "fd@latest",
+    "tig@latest",
+    "jless@latest",
+    "bat@latest",
+    "delta@latest",
+    "spacer@latest"
   ],
   "shell": {
     "init_hook": [
