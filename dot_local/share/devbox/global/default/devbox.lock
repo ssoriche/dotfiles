@@ -21,6 +21,26 @@
         }
       }
     },
+    "chezmoi@latest": {
+      "last_modified": "2023-11-27T17:54:48Z",
+      "resolved": "github:NixOS/nixpkgs/491af1f1cc28df11dfbff049da4134c37d58aee9#chezmoi",
+      "source": "devbox-search",
+      "version": "2.41.0",
+      "systems": {
+        "aarch64-darwin": {
+          "store_path": "/nix/store/gpvq3xwzh1r4f2w6p0ylz7hdmmx5dbid-chezmoi-2.41.0"
+        },
+        "aarch64-linux": {
+          "store_path": "/nix/store/2pvjsbyhr91is5df0rgqm3ifgcy400sm-chezmoi-2.41.0"
+        },
+        "x86_64-darwin": {
+          "store_path": "/nix/store/cfm1g99mjd86nql24qp876x4k07q695j-chezmoi-2.41.0"
+        },
+        "x86_64-linux": {
+          "store_path": "/nix/store/gafkznsg59bixkgrnb7cl0v1jixqwn9w-chezmoi-2.41.0"
+        }
+      }
+    },
     "delta@latest": {
       "last_modified": "2023-11-17T14:14:56Z",
       "resolved": "github:NixOS/nixpkgs/a71323f68d4377d12c04a5410e214495ec598d4c#delta",

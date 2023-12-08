@@ -9,7 +9,8 @@
     "jless@latest",
     "bat@latest",
     "delta@latest",
-    "spacer@latest"
+    "spacer@latest",
+    "chezmoi@latest"
   ],
   "shell": {
     "init_hook": [
