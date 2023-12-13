@@ -59,6 +59,18 @@ local firefoxBrowser = appID('/Applications/Firefox Developer Edition.app')
 
 DefaultBrowser = firefoxBrowser
 
+Install:andUse("URLDispatcher",
+  {
+    config = {
+      url_patterns = {
+        { "https://meet.google.com", meetBrowser }
+      },
+      default_handler = DefaultBrowser
+    },
+    start = true,
+  }
+)
+
 
 Install:andUse("Caffeine", {
   start = true,
