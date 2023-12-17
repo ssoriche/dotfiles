@@ -10,7 +10,11 @@
     "bat@latest",
     "delta@latest",
     "spacer@latest",
-    "chezmoi@latest"
+    "chezmoi@latest",
+    "atuin@latest",
+    "q@latest",
+    "kustomize@latest",
+    "golangci-lint@latest"
   ],
   "shell": {
     "init_hook": [

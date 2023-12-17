@@ -1,6 +1,26 @@
 {
   "lockfile_version": "1",
   "packages": {
+    "atuin@latest": {
+      "last_modified": "2023-11-27T17:54:48Z",
+      "resolved": "github:NixOS/nixpkgs/491af1f1cc28df11dfbff049da4134c37d58aee9#atuin",
+      "source": "devbox-search",
+      "version": "17.0.1",
+      "systems": {
+        "aarch64-darwin": {
+          "store_path": "/nix/store/3l54qx5fj13gfgnijzykdaqp4mv2lk4x-atuin-17.0.1"
+        },
+        "aarch64-linux": {
+          "store_path": "/nix/store/idpylf2w9vx2ds12h9wp00ci57haz0pz-atuin-17.0.1"
+        },
+        "x86_64-darwin": {
+          "store_path": "/nix/store/jwgcl22x1nlhy89mllbng0p3gv2v5vfj-atuin-17.0.1"
+        },
+        "x86_64-linux": {
+          "store_path": "/nix/store/ycl6da3n5dbb03n91dnhf13qr8bavw8v-atuin-17.0.1"
+        }
+      }
+    },
     "bat@latest": {
       "last_modified": "2023-11-17T14:14:56Z",
       "resolved": "github:NixOS/nixpkgs/a71323f68d4377d12c04a5410e214495ec598d4c#bat",
@@ -121,6 +141,26 @@
         }
       }
     },
+    "golangci-lint@latest": {
+      "last_modified": "2023-11-17T14:14:56Z",
+      "resolved": "github:NixOS/nixpkgs/a71323f68d4377d12c04a5410e214495ec598d4c#golangci-lint",
+      "source": "devbox-search",
+      "version": "1.55.2",
+      "systems": {
+        "aarch64-darwin": {
+          "store_path": "/nix/store/ggfyqw5kl0dy7l6nhajcyayiw05wzrb1-golangci-lint-1.55.2"
+        },
+        "aarch64-linux": {
+          "store_path": "/nix/store/ak3wnmbc43wqgg9zky98i44nazxvklqg-golangci-lint-1.55.2"
+        },
+        "x86_64-darwin": {
+          "store_path": "/nix/store/xckmcrd22nij4xwzdiw8ydc4z00rgcd2-golangci-lint-1.55.2"
+        },
+        "x86_64-linux": {
+          "store_path": "/nix/store/xiy36g6w9qcgzkyifi9hf7ayj2drap9k-golangci-lint-1.55.2"
+        }
+      }
+    },
     "jless@latest": {
       "last_modified": "2023-11-17T14:14:56Z",
       "resolved": "github:NixOS/nixpkgs/a71323f68d4377d12c04a5410e214495ec598d4c#jless",
@@ -138,6 +178,46 @@
         },
         "x86_64-linux": {
           "store_path": "/nix/store/dw1kwfs7l2cyzm43pvi7lms108w5n7px-jless-0.9.0"
+        }
+      }
+    },
+    "kustomize@latest": {
+      "last_modified": "2023-11-17T14:14:56Z",
+      "resolved": "github:NixOS/nixpkgs/a71323f68d4377d12c04a5410e214495ec598d4c#kustomize",
+      "source": "devbox-search",
+      "version": "5.2.1",
+      "systems": {
+        "aarch64-darwin": {
+          "store_path": "/nix/store/16klhmp6r7ql652r5dn9iipi04mx15fh-kustomize-5.2.1"
+        },
+        "aarch64-linux": {
+          "store_path": "/nix/store/fws20x8vkrqnb3xvwvg5nfcj0ixyn7ga-kustomize-5.2.1"
+        },
+        "x86_64-darwin": {
+          "store_path": "/nix/store/4zszzy2cphdrqnhv6x2jznpcrdpya76f-kustomize-5.2.1"
+        },
+        "x86_64-linux": {
+          "store_path": "/nix/store/0pjqqvkk13q1gwyfjhydfrnh0y5q97ak-kustomize-5.2.1"
+        }
+      }
+    },
+    "q@latest": {
+      "last_modified": "2023-11-28T03:21:20Z",
+      "resolved": "github:NixOS/nixpkgs/4469e22700c47792f93daa882786d36f9bf8bc2a#q",
+      "source": "devbox-search",
+      "version": "0.15.1",
+      "systems": {
+        "aarch64-darwin": {
+          "store_path": "/nix/store/4z4qqwg5phkfgvd38wajqs66l88cjczq-q-0.15.1"
+        },
+        "aarch64-linux": {
+          "store_path": "/nix/store/ij900byp140rycva3qbjk7brbqnvx7rf-q-0.15.1"
+        },
+        "x86_64-darwin": {
+          "store_path": "/nix/store/n2c562jd8ipmdgnraq2zc04nljdkcmhx-q-0.15.1"
+        },
+        "x86_64-linux": {
+          "store_path": "/nix/store/gdzsi9hcq1ikvp88q36snf2a88gbid3x-q-0.15.1"
         }
       }
     },
