@@ -48,6 +48,7 @@ return {
 			action = wezterm.action({ EmitEvent = "toggle-leader" }),
 		},
 		{ key = "v", mods = "LEADER", action = wezterm.action({ PasteFrom = "Clipboard" }) },
+		{ key = "f", mods = "LEADER", action = wezterm.action.ToggleFullScreen },
 		{
 			key = "-",
 			mods = "LEADER",
