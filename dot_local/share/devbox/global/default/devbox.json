@@ -14,7 +14,10 @@
     "atuin@latest",
     "q@latest",
     "kustomize@latest",
-    "golangci-lint@latest"
+    "golangci-lint@latest",
+    "gh@latest",
+    "typos@latest",
+    "nmap@latest"
   ],
   "shell": {
     "init_hook": [
