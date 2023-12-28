@@ -17,7 +17,9 @@
     "golangci-lint@latest",
     "gh@latest",
     "typos@latest",
-    "nmap@latest"
+    "nmap@latest",
+    "age@latest",
+    "passage@latest"
   ],
   "shell": {
     "init_hook": [

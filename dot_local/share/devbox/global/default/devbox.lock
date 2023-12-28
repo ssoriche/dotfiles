@@ -1,6 +1,26 @@
 {
   "lockfile_version": "1",
   "packages": {
+    "age@latest": {
+      "last_modified": "2023-12-13T22:54:10Z",
+      "resolved": "github:NixOS/nixpkgs/fd04bea4cbf76f86f244b9e2549fca066db8ddff#age",
+      "source": "devbox-search",
+      "version": "1.1.1",
+      "systems": {
+        "aarch64-darwin": {
+          "store_path": "/nix/store/2bgv9ynggp3rilwl05bd8pij7sap7fhg-age-1.1.1"
+        },
+        "aarch64-linux": {
+          "store_path": "/nix/store/3wnijxq9ghjv7gx04nxrhhs8nkz9mk49-age-1.1.1"
+        },
+        "x86_64-darwin": {
+          "store_path": "/nix/store/8ij11a318y63bcmn03rs84y8pipnadfv-age-1.1.1"
+        },
+        "x86_64-linux": {
+          "store_path": "/nix/store/xh816kyaib2qva6mfcrlpx9q96lfn8yi-age-1.1.1"
+        }
+      }
+    },
     "atuin@latest": {
       "last_modified": "2023-12-18T02:58:18Z",
       "resolved": "github:NixOS/nixpkgs/ca16221251951e9c6261a1a2bb4f9389038d3632#atuin",
@@ -238,6 +258,26 @@
         },
         "x86_64-linux": {
           "store_path": "/nix/store/gcc01g3cgds8ljmchxxial82cfydvm5d-nmap-7.94"
+        }
+      }
+    },
+    "passage@latest": {
+      "last_modified": "2023-12-13T22:54:10Z",
+      "resolved": "github:NixOS/nixpkgs/fd04bea4cbf76f86f244b9e2549fca066db8ddff#passage",
+      "source": "devbox-search",
+      "version": "2022-05-01",
+      "systems": {
+        "aarch64-darwin": {
+          "store_path": "/nix/store/708n7v35w7n4nlvg0hnwsl996a394f7r-passage-unstable-2022-05-01"
+        },
+        "aarch64-linux": {
+          "store_path": "/nix/store/cnfwj8gsvqqyaam86b6fw3syq0s24s6f-passage-unstable-2022-05-01"
+        },
+        "x86_64-darwin": {
+          "store_path": "/nix/store/ss37rhrs920k36bl2d0gk0gqpljw3mkp-passage-unstable-2022-05-01"
+        },
+        "x86_64-linux": {
+          "store_path": "/nix/store/q8asj0pjmpvfrla1gbmfw3gbi1sgc5ip-passage-unstable-2022-05-01"
         }
       }
     },
