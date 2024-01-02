@@ -19,7 +19,12 @@
     "typos@latest",
     "nmap@latest",
     "age@latest",
-    "passage@latest"
+    "passage@latest",
+    "moreutils@latest",
+    "tldr@latest",
+    "jq@latest",
+    "fastgron@latest",
+    "tree@latest"
   ],
   "shell": {
     "init_hook": [
