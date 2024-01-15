@@ -1,68 +1,85 @@
 return {
-  "nvim-telescope/telescope.nvim",
-  cmd = { "Telescope" },
-
-  dependencies = {
-    { "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
-    { "nvim-telescope/telescope-file-browser.nvim" },
-  },
-  keys = {
-    {
-      "<leader><space>",
-      function()
-        require("telescope.builtin").buffers()
-      end,
-      desc = "Find Buffer",
+  {
+    "telescope.nvim",
+    dependencies = {
+      {
+        "debugloop/telescope-undo.nvim",
+        keys = { { "<leader>U", "<cmd>Telescope undo<cr>" } },
+        config = function()
+          require("telescope").load_extension("undo")
+        end,
+      },
+      {
+        "nvim-telescope/telescope-file-browser.nvim",
+        keys = {
+          {
+            "<leader>fb",
+            "<cmd>Telescope file_browser<cr>",
+            desc = "Find Browser",
+          },
+          {
+            "<leader>fl",
+            "<cmd>Telescope file_browser path=%:p:h<cr>",
+            desc = "Find Local Browser",
+          },
+        },
+      },
     },
-    -- {
-    --   "<leader>fg",
-    --   function()
-    --     require("telescope.builtin").live_grep()
-    --   end,
-    --   desc = "Live Grep",
-    -- },
-    -- {
-    --   "<leader>fa",
-    --   function()
-    --     require("telescope.builtin").grep_string()
-    --   end,
-    --   desc = "Grep String",
-    -- },
-  },
-  config = function()
-    local telescope = require("telescope")
-    -- local actions = require("telescope.actions")
-    local borderless = true
-
-    telescope.setup({
+    keys = {
+      {
+        "<leader>fp",
+        function()
+          require("telescope.builtin").find_files({
+            cwd = require("lazy.core.config").options.root,
+          })
+        end,
+        desc = "Find Plugin File",
+      },
+      {
+        "<leader><space>",
+        function()
+          require("telescope.builtin").buffers()
+        end,
+        desc = "Find Buffer",
+      },
+      {
+        "<leader>fL",
+        function()
+          local files = {} ---@type table<string, string>
+          for _, plugin in pairs(require("lazy.core.config").plugins) do
+            repeat
+              if plugin._.module then
+                local info = vim.loader.find(plugin._.module)[1]
+                if info then
+                  files[info.modpath] = info.modpath
+                end
+              end
+              plugin = plugin._.super
+            until not plugin
+          end
+          require("telescope.builtin").live_grep({
+            default_text = "/",
+            search_dirs = vim.tbl_values(files),
+          })
+        end,
+        desc = "Find Lazy Plugin Spec",
+      },
+    },
+    opts = {
       defaults = {
         layout_strategy = "horizontal",
         layout_config = {
-          prompt_position = "top",
+          horizontal = {
+            prompt_position = "top",
+            preview_width = 0.5,
+          },
+          width = 0.8,
+          height = 0.8,
+          preview_cutoff = 120,
         },
         sorting_strategy = "ascending",
-        mappings = {
-          i = {
-            ["<c-t>"] = function(...)
-              return require("trouble.providers.telescope").open_with_trouble(...)
-            end,
-            ["<C-Down>"] = function(...)
-              return require("telescope.actions").cycle_history_next(...)
-            end,
-            ["<C-Up>"] = function(...)
-              return require("telescope.actions").cycle_history_prev(...)
-            end,
-            ["<ESC>"] = function(...)
-              return require("telescope.actions").close(...)
-            end,
-          },
-        },
-        prompt_prefix = " ",
-        selection_caret = " ",
-        winblend = borderless and 0 or 10,
+        winblend = 0,
       },
-    })
-    telescope.load_extension("file_browser")
-    telescope.load_extension("fzf")
-  end,
+    },
+  },
 }
