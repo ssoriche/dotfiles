@@ -1,18 +1,4 @@
 return {
-  -- neodev
-  {
-    "folke/neodev.nvim",
-    opts = {
-      debug = true,
-      experimental = {
-        pathStrict = true,
-      },
-      -- library = {
-      --   runtime = "~/projects/neovim/runtime/",
-      -- },
-    },
-  },
-
   -- tools
   { "someone-stole-my-name/yaml-companion.nvim" },
   {
@@ -31,6 +17,21 @@ return {
   -- lsp servers
   {
     "neovim/nvim-lspconfig",
+    dependences = {
+      { "folke/neoconf.nvim", cmd = "Neoconf", config = true },
+      {
+        "folke/neodev.nvim",
+        opts = {
+          debug = true,
+          experimental = {
+            pathStrict = true,
+          },
+          -- library = {
+          --   runtime = "~/projects/neovim/runtime/",
+          -- },
+        },
+      },
+    },
     opts = {
       inlay_hints = { enabled = true },
       capabilities = {
