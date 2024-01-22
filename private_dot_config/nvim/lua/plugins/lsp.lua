@@ -10,6 +10,7 @@ return {
         "luacheck",
         "shellcheck",
         "shfmt",
+        "write-good",
       })
     end,
   },
@@ -221,6 +222,7 @@ return {
       linters_by_ft = {
         lua = { "selene", "luacheck" },
         markdown = { "markdownlint" },
+        gitcommit = { "write_good" },
       },
       linters = {
         selene = {
