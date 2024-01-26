@@ -221,7 +221,7 @@ return {
     opts = {
       linters_by_ft = {
         lua = { "selene", "luacheck" },
-        markdown = { "markdownlint" },
+        markdown = { "markdownlint", "write_good" },
         gitcommit = { "write_good" },
       },
       linters = {
