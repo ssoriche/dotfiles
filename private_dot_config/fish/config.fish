@@ -33,6 +33,7 @@ fish_add_path "$HOME/.pgenv/pgsql/bin"
 fish_add_path "$HOME/go/bin"
 
 if command -v devbox >/dev/null
+    set -gx DEVBOX_USE_VERSION 0.8.5
     devbox global shellenv --init-hook | source
 end
 
