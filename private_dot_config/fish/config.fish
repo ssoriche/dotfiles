@@ -37,16 +37,6 @@ if command -v devbox >/dev/null
     devbox global shellenv --init-hook | source
 end
 
-set -gx LESS "-F -X -R"
-if command -s /usr/local/bin/bat >/dev/null
-    set -gx BAT_THEME TwoDark
-    set -gx LESSOPEN '|/usr/local/bin/bat --theme TwoDark %s'
-else if command -s /usr/local/bin/src-hilite-lesspipe.sh >/dev/null
-    set -gx LESSOPEN '| /usr/local/bin/src-hilite-lesspipe.sh %s'
-else if command -s /usr/local/bin/highlight >/dev/null
-    set -gx LESSOPEN '| /usr/local/bin/highlight --out-format=xterm256 %s'
-end
-
 eval (direnv hook fish)
 
 if command -v anyenv >/dev/null
@@ -66,6 +56,9 @@ if status is-interactive
     # Add some aliases I use often
     if command -s batcat >/dev/null
         alias bat batcat
+    end
+    if command -s bat >/dev/null
+        alias less bat
     end
     if command -s fdfind >/dev/null
         alias fd fdfind
