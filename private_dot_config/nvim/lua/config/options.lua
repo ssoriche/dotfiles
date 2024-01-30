@@ -5,3 +5,4 @@ vim.opt.formatoptions = "jcroqlnt" -- tcqj
 vim.opt.mouse = ""
 vim.opt.title = true -- Set window title to buffer name
 vim.lsp.inlay_hint = false
+vim.opt.clipboard = ""
