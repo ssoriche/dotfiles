@@ -32,7 +32,8 @@
         "x86_64-darwin"
       ]
     },
-    "nodejs": "latest"
+    "nodejs": "latest",
+    "fzf":    "latest"
   },
   "shell": {
     "init_hook": [
