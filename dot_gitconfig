@@ -10,7 +10,6 @@
 	quotepath = false
 	pager = delta
 	untrackedcache = true
-	fsmonitor = true
 [color]
 	status = auto
 	diff = auto
