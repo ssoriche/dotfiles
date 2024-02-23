@@ -34,7 +34,8 @@
     },
     "nodejs":                 "latest",
     "fzf":                    "latest",
-    "eza":                    "latest"
+    "eza":                    "latest",
+    "git-credential-manager": "latest"
   },
   "shell": {
     "init_hook": [
