@@ -125,6 +125,26 @@
         }
       }
     },
+    "eza@latest": {
+      "last_modified": "2024-02-10T18:15:24Z",
+      "resolved": "github:NixOS/nixpkgs/10b813040df67c4039086db0f6eaf65c536886c6#eza",
+      "source": "devbox-search",
+      "version": "0.18.2",
+      "systems": {
+        "aarch64-darwin": {
+          "store_path": "/nix/store/zsyjd8g7g0pynxrkpf692k1w278ikvy0-eza-0.18.2"
+        },
+        "aarch64-linux": {
+          "store_path": "/nix/store/7cx81d2370kz3n6w3d2qkrmcd37zi6wr-eza-0.18.2"
+        },
+        "x86_64-darwin": {
+          "store_path": "/nix/store/ywzwadfaif3ghxcvg4ngqwp093l03416-eza-0.18.2"
+        },
+        "x86_64-linux": {
+          "store_path": "/nix/store/c20ja21qxypw7wxk4is3c3c7rhxx1xc3-eza-0.18.2"
+        }
+      }
+    },
     "fastgron@latest": {
       "last_modified": "2024-01-14T03:55:27Z",
       "resolved": "github:NixOS/nixpkgs/dd5621df6dcb90122b50da5ec31c411a0de3e538#fastgron",
