@@ -22,22 +22,22 @@
       }
     },
     "atuin@latest": {
-      "last_modified": "2024-01-14T03:55:27Z",
-      "resolved": "github:NixOS/nixpkgs/dd5621df6dcb90122b50da5ec31c411a0de3e538#atuin",
+      "last_modified": "2024-02-14T10:49:39Z",
+      "resolved": "github:NixOS/nixpkgs/c5e9528855e4e6feda2b16dec28de880ce774b93#atuin",
       "source": "devbox-search",
-      "version": "17.2.1",
+      "version": "18.0.1",
       "systems": {
         "aarch64-darwin": {
-          "store_path": "/nix/store/k84bprff8bx4sa8lr5305s3hi3bx6spx-atuin-17.2.1"
+          "store_path": "/nix/store/dj5kfsy3jg23wcd1m14hrj36304gdvhb-atuin-18.0.1"
         },
         "aarch64-linux": {
-          "store_path": "/nix/store/d5p5069naqjfqrv4rd7kv8zbaj6qbg6g-atuin-17.2.1"
+          "store_path": "/nix/store/gxv2s61r1zxmpzb0q86x0phxbk1aqflz-atuin-18.0.1"
         },
         "x86_64-darwin": {
-          "store_path": "/nix/store/03x3xygvyfmyhxl5naym9pybr13c2ww7-atuin-17.2.1"
+          "store_path": "/nix/store/pgxvc7z4av8zfymn66y0ffcazcczadi0-atuin-18.0.1"
         },
         "x86_64-linux": {
-          "store_path": "/nix/store/lm5dp5xd8p5plmd862g5a7lasajr24w7-atuin-17.2.1"
+          "store_path": "/nix/store/b9kpd365aib8nm67i18b5qhxsdi7f700-atuin-18.0.1"
         }
       }
     },
