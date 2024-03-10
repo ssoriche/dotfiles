@@ -13,6 +13,6 @@
   stripComponents = 1
   refreshPeriod = "168h"
 [".config/bat/themes/Catppuccin-mocha.tmTheme"]
-  type = "file"
-  url = "https://raw.githubusercontent.com/catppuccin/bat/main/Catppuccin-mocha.tmTheme"
-  refreshPeriod = "168h"
+type = "file"
+url = "https://raw.githubusercontent.com/catppuccin/bat/main/themes/Catppuccin%20Mocha.tmTheme"
+refreshPeriod = "168h"
