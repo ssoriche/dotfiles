@@ -1,17 +1,17 @@
 [".config/fish/functions/fisher.fish"]
-  type = "file"
-  url = "https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish"
-  refreshPeriod = "168h"
+type = "file"
+url = "https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish"
+refreshPeriod = "168h"
 [".hammerspoon/Spoons/SpoonInstall.spoon"]
-  type = "archive"
-  url = "https://github.com/Hammerspoon/Spoons/raw/master/Spoons/SpoonInstall.spoon.zip"
-  stripComponents = 1
-  refreshPeriod = "168h"
+type = "archive"
+url = "https://github.com/Hammerspoon/Spoons/raw/master/Spoons/SpoonInstall.spoon.zip"
+stripComponents = 1
+refreshPeriod = "168h"
 [".hammerspoon/Spoons/EmmyLua.spoon"]
-  type = "archive"
-  url = "https://github.com/Hammerspoon/Spoons/raw/master/Spoons/EmmyLua.spoon.zip"
-  stripComponents = 1
-  refreshPeriod = "168h"
+type = "archive"
+url = "https://github.com/Hammerspoon/Spoons/raw/master/Spoons/EmmyLua.spoon.zip"
+stripComponents = 1
+refreshPeriod = "168h"
 [".config/bat/themes/Catppuccin-mocha.tmTheme"]
 type = "file"
 url = "https://raw.githubusercontent.com/catppuccin/bat/main/themes/Catppuccin%20Mocha.tmTheme"
