@@ -77,3 +77,4 @@ show_preview = true
 #   "^secret-cmd",
 #   "^innocuous-cmd .*--secret=.+"
 # ]
+keymap_mode = "vim-insert"
