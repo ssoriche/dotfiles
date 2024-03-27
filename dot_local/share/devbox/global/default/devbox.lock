@@ -28,43 +28,15 @@
       "version": "18.1.0",
       "systems": {
         "aarch64-darwin": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/s91sg0l2fyrz1v4xcnsgmg5v1b5l2nsh-atuin-18.1.0",
-              "default": true
-            }
-          ],
           "store_path": "/nix/store/s91sg0l2fyrz1v4xcnsgmg5v1b5l2nsh-atuin-18.1.0"
         },
         "aarch64-linux": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/kwmnhmqva934vcrdqvh5x7z0nkc8mcrq-atuin-18.1.0",
-              "default": true
-            }
-          ],
           "store_path": "/nix/store/kwmnhmqva934vcrdqvh5x7z0nkc8mcrq-atuin-18.1.0"
         },
         "x86_64-darwin": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/ncg7qfr8clwc7hjpb6ggak3aipkd30i0-atuin-18.1.0",
-              "default": true
-            }
-          ],
           "store_path": "/nix/store/ncg7qfr8clwc7hjpb6ggak3aipkd30i0-atuin-18.1.0"
         },
         "x86_64-linux": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/nl63vz2jdazigaby3i6kyna68a7md2n6-atuin-18.1.0",
-              "default": true
-            }
-          ],
           "store_path": "/nix/store/nl63vz2jdazigaby3i6kyna68a7md2n6-atuin-18.1.0"
         }
       }
@@ -280,67 +252,15 @@
       "version": "2.43.2",
       "systems": {
         "aarch64-darwin": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/4zyn11089z9i567c84d3628bq2k56q8r-git-2.43.2",
-              "default": true
-            },
-            {
-              "name": "doc",
-              "path": "/nix/store/0vaafk5p4hh797n28w4nx1c5ykjq1kxc-git-2.43.2-doc"
-            }
-          ],
           "store_path": "/nix/store/4zyn11089z9i567c84d3628bq2k56q8r-git-2.43.2"
         },
         "aarch64-linux": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/6dmwwsmj6bp9ss0bsw5j042zjzx5p2kw-git-2.43.2",
-              "default": true
-            },
-            {
-              "name": "debug",
-              "path": "/nix/store/yx6wsnivlrbwajqbf933pj733ypj4bbd-git-2.43.2-debug"
-            },
-            {
-              "name": "doc",
-              "path": "/nix/store/bxyy779y05dkvbzvpic3knycd3iyx8m4-git-2.43.2-doc"
-            }
-          ],
           "store_path": "/nix/store/6dmwwsmj6bp9ss0bsw5j042zjzx5p2kw-git-2.43.2"
         },
         "x86_64-darwin": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/ffnl9nk43qffalwvmb0bnhz3j2glkk1h-git-2.43.2",
-              "default": true
-            },
-            {
-              "name": "doc",
-              "path": "/nix/store/8vpr8jl73k5m2cqbz4d16a6i3nw7x82s-git-2.43.2-doc"
-            }
-          ],
           "store_path": "/nix/store/ffnl9nk43qffalwvmb0bnhz3j2glkk1h-git-2.43.2"
         },
         "x86_64-linux": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/fmx804pc0bs1966xq5bb67kark2mww9r-git-2.43.2",
-              "default": true
-            },
-            {
-              "name": "debug",
-              "path": "/nix/store/sga5blm5fi6ad5hj4kg5m9m4gxgqmciv-git-2.43.2-debug"
-            },
-            {
-              "name": "doc",
-              "path": "/nix/store/z9784jl4061n5bnbwjz2qd93c50r98m9-git-2.43.2-doc"
-            }
-          ],
           "store_path": "/nix/store/fmx804pc0bs1966xq5bb67kark2mww9r-git-2.43.2"
         }
       }
