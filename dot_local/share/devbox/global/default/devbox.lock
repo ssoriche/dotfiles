@@ -246,22 +246,22 @@
       }
     },
     "git@latest": {
-      "last_modified": "2024-03-08T13:51:52Z",
-      "resolved": "github:NixOS/nixpkgs/a343533bccc62400e8a9560423486a3b6c11a23b#git",
+      "last_modified": "2024-03-22T11:26:23Z",
+      "resolved": "github:NixOS/nixpkgs/a3ed7406349a9335cb4c2a71369b697cecd9d351#git",
       "source": "devbox-search",
-      "version": "2.43.2",
+      "version": "2.44.0",
       "systems": {
         "aarch64-darwin": {
-          "store_path": "/nix/store/4zyn11089z9i567c84d3628bq2k56q8r-git-2.43.2"
+          "store_path": "/nix/store/yrd3xalm6j7pnk55h3xpj91bqdlm33bl-git-2.44.0"
         },
         "aarch64-linux": {
-          "store_path": "/nix/store/6dmwwsmj6bp9ss0bsw5j042zjzx5p2kw-git-2.43.2"
+          "store_path": "/nix/store/3y08c4f6nkzz6q4hd3rrm21sdqygm1ha-git-2.44.0"
         },
         "x86_64-darwin": {
-          "store_path": "/nix/store/ffnl9nk43qffalwvmb0bnhz3j2glkk1h-git-2.43.2"
+          "store_path": "/nix/store/f2rq8zm0069750ph9vi5x4vvcqgvb3cx-git-2.44.0"
         },
         "x86_64-linux": {
-          "store_path": "/nix/store/fmx804pc0bs1966xq5bb67kark2mww9r-git-2.43.2"
+          "store_path": "/nix/store/bd0dcc9qzpfz5xfz7fm6cwf7q64cyfhi-git-2.44.0"
         }
       }
     },
