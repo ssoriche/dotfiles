@@ -36,7 +36,8 @@
     "fzf":                    "latest",
     "eza":                    "latest",
     "git-credential-manager": "latest",
-    "git":                    "latest"
+    "git":                    "latest",
+    "difftastic":             "latest"
   },
   "shell": {
     "init_hook": [
