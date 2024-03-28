@@ -59,34 +59,41 @@ key-mapping.preset = 'qwerty'
 # outer.right =      0
 
 gaps.inner.horizontal = [
-    { monitor."built-in" = 10 },
-    { monitor."LG UltraFine" = 12 },
-    10,
+  { monitor."built-in" = 10 },
+  { monitor."LG UltraFine" = 12 },
+  { monitor."DELL P2721Q.*" = 12 },
+  10,
 ]
 gaps.inner.vertical = [
-    { monitor."built-in" = 10 },
-    { monitor."LG UltraFine" = 12 },
-    10,
+  { monitor."built-in" = 10 },
+  { monitor."LG UltraFine" = 12 },
+  { monitor."DELL P2721Q.*" = 12 },
+  10,
 ]
 gaps.outer.left = [
-    { monitor."built-in" = 30 },
-    { monitor."LG UltraFine" = 30 },
-    10,
+  { monitor."built-in" = 30 },
+  { monitor."LG UltraFine" = 30 },
+  { monitor."DELL P2721Q.*" = 30 },
+  10,
 ]
 gaps.outer.bottom = [
-    { monitor."built-in" = 10 },
-    { monitor."LG UltraFine" = 30 },
-    10,
+  { monitor."built-in" = 10 },
+  { monitor."LG UltraFine" = 30 },
+  { monitor."DELL P2721Q.*" = 30 },
+  10,
 ]
 gaps.outer.top = [
-    { monitor."built-in" = 10 },
-    { monitor."LG UltraFine" = 60 },
-    30,
+  { monitor."built-in" = 10 },
+  { monitor."LG UltraFine" = 60 },
+  { monitor."DELL P2721Q.*" = 60 },
+  { monitor."DELL P2721Q.*2.*" = 60 },
+  30,
 ]
 gaps.outer.right = [
-    { monitor."built-in" = 10 },
-    { monitor."LG UltraFine" = 30 },
-    10,
+  { monitor."built-in" = 10 },
+  { monitor."LG UltraFine" = 30 },
+  { monitor."DELL P2721Q.*" = 30 },
+  10,
 ]
 
 # See https://nikitabobko.github.io/AeroSpace/guide#exec-env-vars
@@ -219,7 +226,10 @@ alt-shift-slash = 'mode join'
 [mode.service.binding]
 r = ['flatten-workspace-tree', 'mode main'] # reset layout
 #s = ['layout sticky tiling', 'mode main'] # sticky is not yet supported https://github.com/nikitabobko/AeroSpace/issues/2
-f = ['layout floating tiling', 'mode main'] # Toggle between floating and tiling layout
+f = [
+  'layout floating tiling',
+  'mode main',
+] # Toggle between floating and tiling layout
 backspace = ['close-all-windows-but-current', 'mode main']
 esc = ['reload-config', 'mode main']
 
