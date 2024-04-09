@@ -36,16 +36,6 @@
 [push]
 	default = simple
 
-[mergetool "chdiff"]
-  cmd = /usr/bin/env chdiff --wait "$LOCAL" "$REMOTE"
-  keepBackup = false
-  trustExitCode = false
-
-[mergetool "diffmerge"]
-  ; cmd = diffmerge --merge --result="$MERGED" "$LOCAL" "$BASE" "$REMOTE"
-  cmd = diffmerge --merge --result="$MERGED" "$LOCAL" "$(if test -f "$BASE"; then echo "$BASE"; else echo "$LOCAL"; fi)" "$REMOTE"
-  trustexitcode = true
-
 [merge]
   tool = vim
   conflictStyle = zdiff3
