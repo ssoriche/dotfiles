@@ -59,38 +59,38 @@ key-mapping.preset = 'qwerty'
 # outer.right =      0
 
 gaps.inner.horizontal = [
-  { monitor."built-in" = 10 },
+  { monitor."Built-in Retina Display" = 10 },
   { monitor."LG UltraFine" = 12 },
   { monitor."DELL P2721Q.*" = 12 },
   10,
 ]
 gaps.inner.vertical = [
-  { monitor."built-in" = 10 },
+  { monitor."Built-in Retina Display" = 10 },
   { monitor."LG UltraFine" = 12 },
   { monitor."DELL P2721Q.*" = 12 },
   10,
 ]
 gaps.outer.left = [
-  { monitor."built-in" = 30 },
+  { monitor."Built-in Retina Display" = 10 },
   { monitor."LG UltraFine" = 30 },
   { monitor."DELL P2721Q.*" = 30 },
   10,
 ]
 gaps.outer.bottom = [
-  { monitor."built-in" = 10 },
+  { monitor."Built-in Retina Display" = 10 },
   { monitor."LG UltraFine" = 30 },
   { monitor."DELL P2721Q.*" = 30 },
   10,
 ]
 gaps.outer.top = [
-  { monitor."built-in" = 10 },
+  { monitor."Built-in Retina Display" = 10 },
   { monitor."LG UltraFine" = 60 },
   { monitor."DELL P2721Q.*" = 60 },
   { monitor."DELL P2721Q.*2.*" = 60 },
   30,
 ]
 gaps.outer.right = [
-  { monitor."built-in" = 10 },
+  { monitor."Built-in Retina Display" = 10 },
   { monitor."LG UltraFine" = 30 },
   { monitor."DELL P2721Q.*" = 30 },
   10,
