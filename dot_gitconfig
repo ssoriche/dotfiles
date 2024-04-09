@@ -75,3 +75,5 @@
 [delta]
     features = line-numbers decorations diff-so-fancy
     whitespace-error-style = 22 reverse
+[init]
+	defaultBranch = main
