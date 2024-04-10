@@ -33,6 +33,7 @@
   standup = shortlog --since=yesterday
   sdiff = "!git show $(git stash list | cut -d\":\" -f 1)"
   pwb = rev-parse --abbrev-ref HEAD
+  refix = !GIT_SEQUENCE_EDITOR=true git rebase -i --autosquash --autostash
 [push]
 	default = simple
 
