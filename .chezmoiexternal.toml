@@ -16,3 +16,8 @@ refreshPeriod = "168h"
 type = "file"
 url = "https://raw.githubusercontent.com/catppuccin/bat/main/themes/Catppuccin%20Mocha.tmTheme"
 refreshPeriod = "168h"
+[".config/btop/themes/"]
+type = "archive"
+url = "https://github.com/catppuccin/btop/releases/download/1.0.0/themes.tar.gz"
+refreshPeriod = "168h"
+stripComponents = 1
