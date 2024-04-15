@@ -37,7 +37,8 @@
     "eza":                    "latest",
     "git-credential-manager": "latest",
     "git":                    "latest",
-    "difftastic":             "latest"
+    "difftastic":             "latest",
+    "btop":                   "latest"
   },
   "shell": {
     "init_hook": [
