@@ -68,3 +68,5 @@
     whitespace-error-style = 22 reverse
 [init]
 	defaultBranch = main
+[maintenance]
+	repo = /Volumes/ziprecruiter/zr/main
