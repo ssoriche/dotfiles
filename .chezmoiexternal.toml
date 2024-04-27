@@ -21,3 +21,7 @@ type = "archive"
 url = "https://github.com/catppuccin/btop/releases/download/1.0.0/themes.tar.gz"
 refreshPeriod = "168h"
 stripComponents = 1
+["Library/Fonts/"]
+type = "archive"
+url = "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/JetBrainsMono.zip"
+refreshPeriod = "168h"
