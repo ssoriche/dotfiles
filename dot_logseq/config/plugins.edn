@@ -19,4 +19,4 @@
  :logseq-url-plus {:version "0.1.4", :repo "rlhk/logseq-url-plus", :effect true, :theme false}
  :logseq-link-unlinked {:version "v1.5.1", :repo "usoonees/logseq-plugin-link-unlink", :effect true, :theme false}
  :logseq-page-tags-and-hierarchy {:version "v2.23.1", :repo "YU000jp/logseq-page-tags-and-hierarchy", :effect true, :theme false}
- :logseq-plugin-short-namespaces {:version "v1.7.5", :repo "YU000jp/logseq-plugin-short-namespaces", :effect true, :theme false}}
+ :logseq-plugin-short-namespaces {:version "v1.8.0", :repo "YU000jp/logseq-plugin-short-namespaces", :effect true, :theme false}}
