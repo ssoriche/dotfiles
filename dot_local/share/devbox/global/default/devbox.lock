@@ -613,6 +613,54 @@
         }
       }
     },
+    "jnv@latest": {
+      "last_modified": "2024-04-26T22:17:36-04:00",
+      "resolved": "github:NixOS/nixpkgs/698fd43e541a6b8685ed408aaf7a63561018f9f8#jnv",
+      "source": "devbox-search",
+      "version": "0.2.2",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/azwlh1xijrd5nmi79n591nzw9n5f66ib-jnv-0.2.2",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/azwlh1xijrd5nmi79n591nzw9n5f66ib-jnv-0.2.2"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/gyj3cd6lrg6i4889n3rp23jv7qqwr9bf-jnv-0.2.2",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/gyj3cd6lrg6i4889n3rp23jv7qqwr9bf-jnv-0.2.2"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/bylkmrrfskb8ccxpws234k9h7bd6bq3j-jnv-0.2.2",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/bylkmrrfskb8ccxpws234k9h7bd6bq3j-jnv-0.2.2"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/22qvins8pgkg8y0wzl5i4imr4pgnygvn-jnv-0.2.2",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/22qvins8pgkg8y0wzl5i4imr4pgnygvn-jnv-0.2.2"
+        }
+      }
+    },
     "jq@latest": {
       "last_modified": "2024-01-24T16:15:02Z",
       "resolved": "github:NixOS/nixpkgs/5cd2baa57a9ff2d84f2615700434fa04f3067fdb#jq",
