@@ -2,22 +2,50 @@
   "lockfile_version": "1",
   "packages": {
     "age@latest": {
-      "last_modified": "2024-01-14T03:55:27Z",
-      "resolved": "github:NixOS/nixpkgs/dd5621df6dcb90122b50da5ec31c411a0de3e538#age",
+      "last_modified": "2024-05-29T10:04:41Z",
+      "resolved": "github:NixOS/nixpkgs/ac82a513e55582291805d6f09d35b6d8b60637a1#age",
       "source": "devbox-search",
       "version": "1.1.1",
       "systems": {
         "aarch64-darwin": {
-          "store_path": "/nix/store/6663hv5zjkd9m4q1ipzy7h1p0pjghbj0-age-1.1.1"
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/wrwf39kykdbs7lgvnfkgm1lj18b824r6-age-1.1.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/wrwf39kykdbs7lgvnfkgm1lj18b824r6-age-1.1.1"
         },
         "aarch64-linux": {
-          "store_path": "/nix/store/7ck3hv6hhan75sbz04iciw4jn0fd2bfj-age-1.1.1"
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/snfyfi365244ybfdhms43m0zwa01x3k9-age-1.1.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/snfyfi365244ybfdhms43m0zwa01x3k9-age-1.1.1"
         },
         "x86_64-darwin": {
-          "store_path": "/nix/store/jq560hh1x1hkm76qpggpp86d89d9n2ln-age-1.1.1"
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/63d9aqq270549vsnsskhd8vaj4rf5092-age-1.1.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/63d9aqq270549vsnsskhd8vaj4rf5092-age-1.1.1"
         },
         "x86_64-linux": {
-          "store_path": "/nix/store/j3c0pjg6l3bfdxylwp9illf8vsm3bg8f-age-1.1.1"
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/n03h3x8wn64xvn7yh91ly9aiv42m903z-age-1.1.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/n03h3x8wn64xvn7yh91ly9aiv42m903z-age-1.1.1"
         }
       }
     },
