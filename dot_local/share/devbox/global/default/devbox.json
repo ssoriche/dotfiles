@@ -41,7 +41,8 @@
     "btop": "latest",
     "asciinema": "latest",
     "asciinema-agg": "latest",
-    "jnv": "latest"
+    "jnv": "latest",
+    "wget": "latest"
   },
   "shell": {
     "init_hook": [

@@ -251,7 +251,17 @@
     },
     "darwin.apple_sdk.frameworks.CoreServices": {
       "resolved": "github:NixOS/nixpkgs/75a52265bda7fd25e06e3a67dee3f0354e73243c#darwin.apple_sdk.frameworks.CoreServices",
-      "source": "nixpkg"
+      "source": "nixpkg",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "path": "/nix/store/j343fncqfbb6wdlrwj6dnfmvx4hi1zki-apple-framework-CoreServices-11.0.0",
+              "default": true
+            }
+          ]
+        }
+      }
     },
     "delta@latest": {
       "last_modified": "2024-01-14T03:55:27Z",
@@ -919,6 +929,54 @@
         },
         "x86_64-linux": {
           "store_path": "/nix/store/wff15x1i0lcvj69kvv8lrpdfqwi4xrxv-typos-1.16.25"
+        }
+      }
+    },
+    "wget@latest": {
+      "last_modified": "2024-07-07T16:08:25Z",
+      "resolved": "github:NixOS/nixpkgs/ab82a9612aa45284d4adf69ee81871a389669a9e#wget",
+      "source": "devbox-search",
+      "version": "1.24.5",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/fsgyyqspc5bxiqckb8v1z3k139h8vy6b-wget-1.24.5",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/fsgyyqspc5bxiqckb8v1z3k139h8vy6b-wget-1.24.5"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/llggbhd6n98xrb9d7js2hr76pdm5ram6-wget-1.24.5",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/llggbhd6n98xrb9d7js2hr76pdm5ram6-wget-1.24.5"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/6dqz7wd9bs6x2hm38vvvcb8wypkwh7ns-wget-1.24.5",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/6dqz7wd9bs6x2hm38vvvcb8wypkwh7ns-wget-1.24.5"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/8zz13nkg17nx2z4z08vwrihp7ni5kgzn-wget-1.24.5",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/8zz13nkg17nx2z4z08vwrihp7ni5kgzn-wget-1.24.5"
         }
       }
     }
