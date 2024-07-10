@@ -543,6 +543,30 @@
         }
       }
     },
+    "github:atuinsh/atuin/v18.3.0": {
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "path": "/nix/store/5klygkih7sw44mp5f3k5wqh1g0w3s5s0-atuin",
+              "default": true
+            }
+          ]
+        }
+      }
+    },
+    "github:nix-community/neovim-nightly-overlay/450744cea2778415ff8c23553d37048d01df6c5b": {
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "path": "/nix/store/s343k1diwzd4nfi5rd4g0jk6n6n1hpv5-neovim-unwrapped-nightly",
+              "default": true
+            }
+          ]
+        }
+      }
+    },
     "go@1.21.4": {
       "last_modified": "2023-11-17T14:14:56Z",
       "resolved": "github:NixOS/nixpkgs/a71323f68d4377d12c04a5410e214495ec598d4c#go",
