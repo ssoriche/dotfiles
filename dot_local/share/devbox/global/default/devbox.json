@@ -1,7 +1,7 @@
 {
   "packages": {
     "ripgrep": "latest",
-    "github:nix-community/neovim-nightly-overlay/450744cea2778415ff8c23553d37048d01df6c5b": "",
+    "github:nix-community/neovim-nightly-overlay/312f24500b2758f95f6d1672d95729356e05fd1b": "",
     "direnv": "latest",
     "go": "1.21.4",
     "fd": "latest",
