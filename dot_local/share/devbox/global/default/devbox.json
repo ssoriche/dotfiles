@@ -42,7 +42,8 @@
     "asciinema": "latest",
     "asciinema-agg": "latest",
     "jnv": "latest",
-    "wget": "latest"
+    "wget": "latest",
+    "pv": "latest"
   },
   "shell": {
     "init_hook": [

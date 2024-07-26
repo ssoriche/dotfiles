@@ -804,6 +804,54 @@
         }
       }
     },
+    "pv@latest": {
+      "last_modified": "2024-07-07T07:43:47Z",
+      "resolved": "github:NixOS/nixpkgs/b60793b86201040d9dee019a05089a9150d08b5b#pv",
+      "source": "devbox-search",
+      "version": "1.8.10",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/sw8blafb56w1ibl3nimwvn3mhvdgasyg-pv-1.8.10",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/sw8blafb56w1ibl3nimwvn3mhvdgasyg-pv-1.8.10"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/qavsbh2yiwbrglhczj0ic2hgn76dsmlj-pv-1.8.10",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/qavsbh2yiwbrglhczj0ic2hgn76dsmlj-pv-1.8.10"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/vbic3w926clrr3q66x52mb2gan1kg7ih-pv-1.8.10",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/vbic3w926clrr3q66x52mb2gan1kg7ih-pv-1.8.10"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/ab7i5f37h5lrwz3xw98vpn4lw5ax3q82-pv-1.8.10",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/ab7i5f37h5lrwz3xw98vpn4lw5ax3q82-pv-1.8.10"
+        }
+      }
+    },
     "q@latest": {
       "last_modified": "2024-01-14T03:55:27Z",
       "resolved": "github:NixOS/nixpkgs/dd5621df6dcb90122b50da5ec31c411a0de3e538#q",
