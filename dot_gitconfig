@@ -1,7 +1,9 @@
+
 [user]
 	name = "Shawn Sorichetti"
 	email = ssoriche@users.noreply.github.com
 	useConfigOnly = true
+  signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICznCAl6WoraDSM76FuSahtnEkVOGY26+nc9/NKbkN1K
 [github]
         user = ssoriche
 [core]
@@ -70,3 +72,10 @@
 	defaultBranch = main
 [maintenance]
 	repo = /Volumes/ziprecruiter/zr/main
+
+[gpg]
+  format = ssh
+[gpg "ssh"]
+  program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+[commit]
+  gpgsign = true
