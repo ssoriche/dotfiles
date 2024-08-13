@@ -48,7 +48,7 @@
   keepBackup = false
 [diff]
 	tool = vimdiff
-        compactionHeuristic = true
+  compactionHeuristic = true
 [branch]
 	autosetuprebase = always
 [interactive]
