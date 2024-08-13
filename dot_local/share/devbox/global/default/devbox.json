@@ -43,7 +43,8 @@
     "asciinema-agg": "latest",
     "jnv": "latest",
     "wget": "latest",
-    "pv": "latest"
+    "pv": "latest",
+    "yazi": "latest"
   },
   "shell": {
     "init_hook": [

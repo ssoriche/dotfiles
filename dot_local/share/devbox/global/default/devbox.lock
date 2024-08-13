@@ -1039,6 +1039,54 @@
           "store_path": "/nix/store/8zz13nkg17nx2z4z08vwrihp7ni5kgzn-wget-1.24.5"
         }
       }
+    },
+    "yazi@latest": {
+      "last_modified": "2024-08-02T23:16:43Z",
+      "resolved": "github:NixOS/nixpkgs/81610abc161d4021b29199aa464d6a1a521e0cc9#yazi",
+      "source": "devbox-search",
+      "version": "0.3.0",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/lw9zp1b06793p3rj2gnzzzd9fbkaw7a3-yazi-0.3.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/lw9zp1b06793p3rj2gnzzzd9fbkaw7a3-yazi-0.3.0"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/szx7g98axq19w640fvxdqzydgf7z641m-yazi-0.3.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/szx7g98axq19w640fvxdqzydgf7z641m-yazi-0.3.0"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/jmdmiw2dqsigr89pfsgkaij00w5b04ny-yazi-0.3.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/jmdmiw2dqsigr89pfsgkaij00w5b04ny-yazi-0.3.0"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/q221bhsrlbwjd9g7n96kwizfi2c488a0-yazi-0.3.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/q221bhsrlbwjd9g7n96kwizfi2c488a0-yazi-0.3.0"
+        }
+      }
     }
   }
 }
