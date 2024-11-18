@@ -25,3 +25,7 @@ stripComponents = 1
 type = "archive"
 url = "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/JetBrainsMono.zip"
 refreshPeriod = "168h"
+["bin/assume.fish"]
+type = "file"
+url = "https://raw.githubusercontent.com/common-fate/granted/refs/heads/main/scripts/assume.fish"
+refreshPeriod = "168h"
