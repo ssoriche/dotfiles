@@ -74,3 +74,5 @@ if status is-interactive
         set -gx VISUAL vim
     end
 end
+
+alias assume="source $HOME/bin/assume"
