@@ -75,4 +75,4 @@ if status is-interactive
     end
 end
 
-alias assume="source $HOME/bin/assume"
+alias assume="source $HOME/bin/assume.fish"
