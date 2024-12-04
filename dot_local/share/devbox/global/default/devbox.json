@@ -44,7 +44,8 @@
     "jnv": "latest",
     "wget": "latest",
     "pv": "latest",
-    "yazi": "latest"
+    "yazi": "latest",
+    "sd": "latest"
   },
   "shell": {
     "init_hook": [
