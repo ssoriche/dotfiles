@@ -215,6 +215,12 @@ alt-shift-tab = 'move-workspace-to-monitor --wrap-around next'
 # See: https://nikitabobko.github.io/AeroSpace/commands#mode
 alt-shift-semicolon = 'mode service'
 
+# 'X' for passthrough keys without the window manager binding. Fixes the issue
+# of not being able to use right option to specify alternative characters like
+# ™.
+# See: https://github.com/nikitabobko/AeroSpace/issues/28
+cmd-semicolon = 'mode X'
+
 # 'service' binding mode declaration.
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
 [mode.service.binding]
@@ -231,3 +237,8 @@ alt-shift-h = ['join-with left', 'mode main']
 alt-shift-j = ['join-with down', 'mode main']
 alt-shift-k = ['join-with up', 'mode main']
 alt-shift-l = ['join-with right', 'mode main']
+
+[mode.X.binding]
+# A mode to just pass keys through!
+cmd-semicolon = 'mode main'
+esc = 'mode main'
