@@ -1,0 +1,29 @@
+font-family =
+theme = catppuccin-mocha
+
+keybind = ctrl+s>b=text:\x02
+keybind = ctrl+s>-=new_split:down
+keybind = ctrl+s>\=new_split:right
+keybind = ctrl+s>z=toggle_split_zoom
+keybind = ctrl+s>c=new_tab
+keybind = ctrl+s>n=next_tab
+keybind = ctrl+s>p=previous_tab
+keybind = ctrl+s>h=goto_split:left
+keybind = ctrl+s>j=goto_split:bottom
+keybind = ctrl+s>k=goto_split:top
+keybind = ctrl+s>l=goto_split:right
+keybind = ctrl+s>shift+h=resize_split:left,5
+keybind = ctrl+s>shift+j=resize_split:down,5
+keybind = ctrl+s>shift+k=resize_split:up,5
+keybind = ctrl+s>shift+l=resize_split:right,5
+keybind = ctrl+s>1=goto_tab:1
+keybind = ctrl+s>2=goto_tab:2
+keybind = ctrl+s>3=goto_tab:3
+keybind = ctrl+s>4=goto_tab:4
+keybind = ctrl+s>5=goto_tab:5
+keybind = ctrl+s>6=goto_tab:6
+keybind = ctrl+s>7=goto_tab:7
+keybind = ctrl+s>8=goto_tab:8
+keybind = ctrl+s>9=goto_tab:9
+keybind = ctrl+s>&=close_surface
+keybind = ctrl+s>x=close_surface
