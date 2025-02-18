@@ -1,7 +1,6 @@
 {:logseq-vim-shortcuts {:version "v0.1.22", :repo "vipzhicheng/logseq-plugin-vim-shortcuts", :effect true, :theme false}
  :logseq-catppuccin {:version "v0.6.3", :repo "catppuccin/logseq", :effect false, :theme true}
  :logseq-awesome-links {:version "v1.15.16", :repo "yoyurec/logseq-awesome-links", :effect true, :theme false}
- :logseq-automatic-linker {:version "1.5.0", :repo "sawhney17/logseq-automatic-linker", :effect false, :theme false}
  :logseq-todo-plugin {:version "v1.21.0", :repo "ahonn/logseq-plugin-todo", :effect true, :theme false}
  :logseq-link-preview {:version "v2.3.0", :repo "pengx17/logseq-plugin-link-preview", :effect true, :theme false}
  :logseq-bullet-threading {:version "v1.1.4", :repo "pengx17/logseq-plugin-bullet-threading", :effect false, :theme false}
@@ -15,7 +14,7 @@
  :logseq-awesome-content {:version "v1.2.1", :repo "yoyurec/logseq-awesome-content", :effect true, :theme false}
  :logseq-awesome-ui {:version "v2.4.0", :repo "yoyurec/logseq-awesome-ui", :effect true, :theme false}
  :logseq-awesome-styler {:version "v3.7.1", :repo "yoyurec/logseq-awesome-styler", :effect true, :theme false}
- :logseq-fenced-code-plus {:version "0.0.9", :repo "xyhp915/logseq-fenced-code-plus", :effect true, :theme false}
+ :logseq-fenced-code-plus {:version "0.0.10", :repo "xyhp915/logseq-fenced-code-plus", :effect true, :theme false}
  :logseq-url-plus {:version "0.1.4", :repo "rlhk/logseq-url-plus", :effect true, :theme false}
  :logseq-link-unlinked {:version "v1.5.1", :repo "usoonees/logseq-plugin-link-unlink", :effect true, :theme false}
  :logseq-page-tags-and-hierarchy {:version "v2.25.1", :repo "YU000jp/logseq-page-tags-and-hierarchy", :effect true, :theme false}
