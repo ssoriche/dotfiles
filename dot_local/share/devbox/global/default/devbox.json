@@ -48,7 +48,10 @@
     "sd": "latest",
     "aerospace": "latest",
     "ollama": "latest",
-    "jujutsu": "latest"
+    "jujutsu": "latest",
+    "dotenv-linter": "latest",
+    "luarocks": "latest",
+    "_1password-cli": "latest"
   },
   "shell": {
     "init_hook": [
