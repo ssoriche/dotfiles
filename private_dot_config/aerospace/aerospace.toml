@@ -242,3 +242,8 @@ alt-shift-l = ['join-with right', 'mode main']
 # A mode to just pass keys through!
 cmd-semicolon = 'mode main'
 esc = 'mode main'
+
+[[on-window-detected]]
+if.app-id = "com.mitchellh.ghostty"
+check-further-callbacks = true
+run = "layout floating"
