@@ -1,6 +1,34 @@
 {
   "lockfile_version": "1",
   "packages": {
+    "aerospace@latest": {
+      "last_modified": "2024-12-23T21:10:33Z",
+      "resolved": "github:NixOS/nixpkgs/de1864217bfa9b5845f465e771e0ecb48b30e02d#aerospace",
+      "source": "devbox-search",
+      "version": "0.16.2-Beta",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/9lc9cpig3dwfzxf38796ag401l7qkxd7-aerospace-0.16.2-Beta",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/9lc9cpig3dwfzxf38796ag401l7qkxd7-aerospace-0.16.2-Beta"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/n3j5qd792wvh7hy4snvz3glwbnscnigc-aerospace-0.16.2-Beta",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/n3j5qd792wvh7hy4snvz3glwbnscnigc-aerospace-0.16.2-Beta"
+        }
+      }
+    },
     "age@latest": {
       "last_modified": "2024-05-29T10:04:41Z",
       "resolved": "github:NixOS/nixpkgs/ac82a513e55582291805d6f09d35b6d8b60637a1#age",
@@ -683,6 +711,54 @@
         }
       }
     },
+    "jujutsu@latest": {
+      "last_modified": "2025-01-25T23:17:58Z",
+      "resolved": "github:NixOS/nixpkgs/b582bb5b0d7af253b05d58314b85ab8ec46b8d19#jujutsu",
+      "source": "devbox-search",
+      "version": "0.25.0",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/q6gk9k80rs81xjfflwik27l5n27rnl7s-jujutsu-0.25.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/q6gk9k80rs81xjfflwik27l5n27rnl7s-jujutsu-0.25.0"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/b8klpgvvgy36j8anikmq6apz0b2r64j2-jujutsu-0.25.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/b8klpgvvgy36j8anikmq6apz0b2r64j2-jujutsu-0.25.0"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/vdy43zg23akpr0asrjk29k0dy5abzc4j-jujutsu-0.25.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/vdy43zg23akpr0asrjk29k0dy5abzc4j-jujutsu-0.25.0"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/mw0sdm3slxxzvrp05l9vv5sc8jcbrcbq-jujutsu-0.25.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/mw0sdm3slxxzvrp05l9vv5sc8jcbrcbq-jujutsu-0.25.0"
+        }
+      }
+    },
     "kustomize@latest": {
       "last_modified": "2024-01-14T03:55:27Z",
       "resolved": "github:NixOS/nixpkgs/dd5621df6dcb90122b50da5ec31c411a0de3e538#kustomize",
@@ -781,6 +857,54 @@
         },
         "x86_64-linux": {
           "store_path": "/nix/store/wb486zdkwz0g53khrc2fyjy644gf3ypn-nodejs-21.6.1"
+        }
+      }
+    },
+    "ollama@latest": {
+      "last_modified": "2024-12-11T16:51:25Z",
+      "resolved": "github:NixOS/nixpkgs/5a48e3c2e435e95103d56590188cfed7b70e108c#ollama",
+      "source": "devbox-search",
+      "version": "0.5.1",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/6z7jpkbapww4xsmisqxmwjydr3crp79m-ollama-0.5.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/6z7jpkbapww4xsmisqxmwjydr3crp79m-ollama-0.5.1"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/jvnyjkkrz4i9lnmmxwhg2fqjjkybqj8q-ollama-0.5.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/jvnyjkkrz4i9lnmmxwhg2fqjjkybqj8q-ollama-0.5.1"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/z3afzn5q82p9bsc28dvillymaira81a8-ollama-0.5.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/z3afzn5q82p9bsc28dvillymaira81a8-ollama-0.5.1"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/askvjpbpi1xm66d0flx8ql6bxz8m4axq-ollama-0.5.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/askvjpbpi1xm66d0flx8ql6bxz8m4axq-ollama-0.5.1"
         }
       }
     },

@@ -45,7 +45,10 @@
     "wget": "latest",
     "pv": "latest",
     "yazi": "latest",
-    "sd": "latest"
+    "sd": "latest",
+    "aerospace": "latest",
+    "ollama": "latest",
+    "jujutsu": "latest"
   },
   "shell": {
     "init_hook": [
