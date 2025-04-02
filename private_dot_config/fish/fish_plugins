@@ -5,9 +5,9 @@ evanlucas/fish-kubectl-completions
 jethrokuan/z
 jorgebucaran/fisher
 kunickiaj/fish-completions-stern
-rafaelrinaldi/pure
 ssoriche/kt.fish
 PatrickF1/fzf.fish
 ssoriche/fishy.fish
 ssoriche/kubectl.fish
 ssoriche/git.fish
+pure-fish/pure
