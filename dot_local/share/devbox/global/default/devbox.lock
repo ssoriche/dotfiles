@@ -750,6 +750,9 @@
       "last_modified": "2025-04-09T10:58:56Z",
       "resolved": "github:atuinsh/atuin/53acf850f37d8cc8ffdcfebd7a73343f8dc339b6?lastModified=1744196336&narHash=sha256-VXbnf%2FTfMWGHHXccKZBX4%2FRWDT%2FJ1kpSBzhML4973mo%3D"
     },
+    "github:nix-community/neovim-nightly-overlay/7545e949aa9bc2396130191100f1fbf9765bc448": {
+      "resolved": "github:nix-community/neovim-nightly-overlay/7545e949aa9bc2396130191100f1fbf9765bc448"
+    },
     "go@1.21.4": {
       "last_modified": "2023-11-17T14:14:56Z",
       "resolved": "github:NixOS/nixpkgs/a71323f68d4377d12c04a5410e214495ec598d4c#go",
@@ -970,7 +973,17 @@
       "last_modified": "2023-02-24T09:01:09Z",
       "resolved": "github:NixOS/nixpkgs/7d0ed7f2e5aea07ab22ccb338d27fbe347ed2f11#luarocks",
       "source": "devbox-search",
-      "version": "3.9.1"
+      "version": "3.9.1",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "path": "/nix/store/2rp9d9ic2qvljghya81na5snjrzcrh10-luarocks-3.9.1",
+              "default": true
+            }
+          ]
+        }
+      }
     },
     "moreutils@latest": {
       "last_modified": "2024-01-14T03:55:27Z",
