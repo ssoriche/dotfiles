@@ -76,3 +76,6 @@ if status is-interactive
 end
 
 alias assume="source $HOME/bin/assume.fish"
+
+# uv
+fish_add_path "/Users/shawns/.local/bin"

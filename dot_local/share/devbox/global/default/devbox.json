@@ -51,7 +51,8 @@
     "jujutsu": "latest",
     "dotenv-linter": "latest",
     "luarocks": "latest",
-    "_1password-cli": "latest"
+    "_1password-cli": "latest",
+    "uv": "latest"
   },
   "shell": {
     "init_hook": [
