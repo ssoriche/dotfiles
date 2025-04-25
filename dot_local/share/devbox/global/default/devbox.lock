@@ -306,22 +306,50 @@
       }
     },
     "chezmoi@latest": {
-      "last_modified": "2024-01-27T14:55:31Z",
-      "resolved": "github:NixOS/nixpkgs/160b762eda6d139ac10ae081f8f78d640dd523eb#chezmoi",
+      "last_modified": "2025-04-07T13:23:10Z",
+      "resolved": "github:NixOS/nixpkgs/b0b4b5f8f621bfe213b8b21694bab52ecfcbf30b#chezmoi",
       "source": "devbox-search",
-      "version": "2.46.0",
+      "version": "2.61.0",
       "systems": {
         "aarch64-darwin": {
-          "store_path": "/nix/store/j534gwv9z4hkzl0nwai7kr63s0ycjghk-chezmoi-2.46.0"
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/02d8frswxanc9ijpd2japzp9wl0xnr25-chezmoi-2.61.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/02d8frswxanc9ijpd2japzp9wl0xnr25-chezmoi-2.61.0"
         },
         "aarch64-linux": {
-          "store_path": "/nix/store/b8vdqilniyy1cbfhxxfvwzcfffp9i2j0-chezmoi-2.46.0"
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/rmn2q8dql8zzcdm63cq9dmadsq6drgha-chezmoi-2.61.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/rmn2q8dql8zzcdm63cq9dmadsq6drgha-chezmoi-2.61.0"
         },
         "x86_64-darwin": {
-          "store_path": "/nix/store/z0nz2gkq413l53h994q8mrqmcd2528hf-chezmoi-2.46.0"
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/yczfhv0b7h2ry9gwwl50ik138awcdpln-chezmoi-2.61.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/yczfhv0b7h2ry9gwwl50ik138awcdpln-chezmoi-2.61.0"
         },
         "x86_64-linux": {
-          "store_path": "/nix/store/bhjxqbw1sq7bljnj77y7i5nmppwx60bm-chezmoi-2.46.0"
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/91bka0fw58glaiw2n8g0j87sc1ym08fi-chezmoi-2.61.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/91bka0fw58glaiw2n8g0j87sc1ym08fi-chezmoi-2.61.0"
         }
       }
     },
