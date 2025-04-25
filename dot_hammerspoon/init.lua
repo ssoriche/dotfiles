@@ -49,29 +49,6 @@ Install:andUse("Seal", {
   start = true,
 })
 
-local function appID(app)
-  return hs.application.infoForBundlePath(app)['CFBundleIdentifier']
-end
-
--- local chromeBrowser = appID('/Applications/Google Chrome.app')
-local meetBrowser = appID('/Users/shawns/Applications/Chrome Apps.localized/Google Meet.app')
-local firefoxBrowser = appID('/Applications/Firefox Developer Edition.app')
-
-DefaultBrowser = firefoxBrowser
-
-Install:andUse("URLDispatcher",
-  {
-    config = {
-      url_patterns = {
-        { "https://meet.google.com", meetBrowser }
-      },
-      default_handler = DefaultBrowser
-    },
-    start = true,
-  }
-)
-
-
 Install:andUse("Caffeine", {
   start = true,
   hotkeys = {
