@@ -1,56 +1,79 @@
-
 [user]
 	name = "Shawn Sorichetti"
 	email = ssoriche@users.noreply.github.com
 	useConfigOnly = true
   signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICznCAl6WoraDSM76FuSahtnEkVOGY26+nc9/NKbkN1K
 [github]
-        user = ssoriche
+  user = ssoriche
+
+[column]
+  ui = auto
+
 [core]
-	excludesfile = /Users/ssoriche/.gitignore
+	excludesfile = ~/.gitignore
 	ignorecase = false
 	quotepath = false
 	pager = delta
 	untrackedcache = true
+
+[help]
+  autocorrect = 1
+
 [color]
 	status = auto
 	diff = auto
 	branch = auto
         ui = true
 [alias]
-  co = checkout
   ci = commit -v
-  cl = clean -dfx
-  cc = cherry-pick
   fx = commit --no-edit --amend -C HEAD
   st = status
   mt = mergetool
   hist = log --all --graph --pretty='[%C(cyan)%h%Creset]%C(bold cyan)%d%Creset %s'
-  uncommit = reset --soft HEAD^
-  unstage = reset HEAD
   undo = reset HEAD~1 --mixed
   save = !git add -A && git commit -m 'SAVEPOINT'
   wip = commit -am "WIP"
   wipe = !git add -A && git commit -qm 'WIPE SAVEPOINT' && git reset HEAD~1 --hard
   standup = shortlog --since=yesterday
   sdiff = "!git show $(git stash list | cut -d\":\" -f 1)"
-  pwb = rev-parse --abbrev-ref HEAD
-  refix = !GIT_SEQUENCE_EDITOR=true git rebase -i --autosquash --autostash
+
 [push]
 	default = simple
+  autoSetupRemote = true
+  followTags = true
+[fetch]
+  prune = true
+  pruneTags = true
+  all = true
 
 [merge]
   tool = vim
   conflictStyle = zdiff3
+
+[rebase]
+  autoSquash = true
+  autoStash = true
+  updateRefs = true
+
 [mergetool "vim"]
   cmd = nvim -f -- \"$MERGED\"
   trustExitCode = true
   keepBackup = false
+
 [diff]
 	tool = vimdiff
   compactionHeuristic = true
+  algorithm = histogram
+  colorMoved = plain
+  mnemonicPrefix = true
+  renames = true
+
 [branch]
 	autosetuprebase = always
+  sort = -committerdate
+[tag]
+  sort = version:refname
+
 [interactive]
 	diffFilter = delta --color-only
 [feature]
@@ -70,6 +93,7 @@
     whitespace-error-style = 22 reverse
 [init]
 	defaultBranch = main
+
 [maintenance]
 	repo = /Volumes/ziprecruiter/zr/main
 
@@ -79,3 +103,4 @@
   program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
 [commit]
   gpgsign = true
+  verbose = true
