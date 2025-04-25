@@ -743,17 +743,12 @@
         }
       }
     },
-    "github:atuinsh/atuin/v18.3.0": {
-      "systems": {
-        "aarch64-darwin": {
-          "outputs": [
-            {
-              "path": "/nix/store/5klygkih7sw44mp5f3k5wqh1g0w3s5s0-atuin",
-              "default": true
-            }
-          ]
-        }
-      }
+    "github:NixOS/nixpkgs/nixpkgs-unstable": {
+      "resolved": "github:NixOS/nixpkgs/6a39c6e495eefabc935d8ddf66aa45d85b85fa3f?lastModified=1744157173&narHash=sha256-bWSjxDwq7iVePrhmA7tY2dyMWHuNJo8knkO4y%2Bq4ZkY%3D"
+    },
+    "github:atuinsh/atuin/v18.5.0": {
+      "last_modified": "2025-04-09T10:58:56Z",
+      "resolved": "github:atuinsh/atuin/53acf850f37d8cc8ffdcfebd7a73343f8dc339b6?lastModified=1744196336&narHash=sha256-VXbnf%2FTfMWGHHXccKZBX4%2FRWDT%2FJ1kpSBzhML4973mo%3D"
     },
     "go@1.21.4": {
       "last_modified": "2023-11-17T14:14:56Z",
