@@ -52,7 +52,8 @@
     "dotenv-linter": "latest",
     "luarocks": "latest",
     "_1password-cli": "latest",
-    "uv": "latest"
+    "uv": "latest",
+    "lima": "latest"
   },
   "shell": {
     "init_hook": [
