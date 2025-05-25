@@ -1,0 +1,7 @@
+{
+  "keyboard.dispatch": "keyCode",
+  "workbench.list.automaticKeyboardNavigation": false,
+  "workbench.list.keyboardNavigation": "simple",
+  "workbench.commandPalette.history": 50,
+  "workbench.quickOpen.closeOnFocusLost": false
+}

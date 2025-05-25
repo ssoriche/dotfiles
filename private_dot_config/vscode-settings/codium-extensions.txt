@@ -1,0 +1,4 @@
+# Privacy-focused alternatives
+vscodevim.vim
+ms-python.python
+golang.go

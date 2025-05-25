@@ -1,0 +1,2 @@
+# Cursor AI features are built-in
+# Add any Cursor-specific extensions here

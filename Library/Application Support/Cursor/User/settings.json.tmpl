@@ -1,0 +1,18 @@
+{{/* Auto-assembled VS Code settings for Cursor */}}
+{{- $settings := dict -}}
+{{- $settingsDir := joinPath .chezmoi.sourceDir "private_dot_config/vscode-settings" -}}
+{{- if stat $settingsDir -}}
+  {{- range (glob (joinPath $settingsDir "*.json")) -}}
+    {{- $content := include . | fromJson -}}
+    {{- $settings = merge $settings $content -}}
+  {{- end -}}
+{{- end -}}
+
+{{/* Cursor-specific overrides */}}
+{{- $cursorOverrides := dict -}}
+{{- $cursorOverrides = merge $cursorOverrides (dict "workbench.colorTheme" "Catppuccin Mocha") -}}
+{{- $cursorOverrides = merge $cursorOverrides (dict "cursor.ai.enabled" true) -}}
+{{- $cursorOverrides = merge $cursorOverrides (dict "cursor.ai.model" "gpt-4") -}}
+
+{{- $settings = merge $settings $cursorOverrides -}}
+{{ $settings | toPrettyJson }}

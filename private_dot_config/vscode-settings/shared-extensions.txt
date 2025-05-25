@@ -1,0 +1,42 @@
+# Core functionality
+vscodevim.vim
+vspacecode.whichkey
+vspacecode.vspacecode
+
+# Git integration
+eamodio.gitlens
+
+# Theme and icons
+catppuccin.catppuccin-vsc
+catppuccin.catppuccin-vsc-icons
+
+# Language support
+ms-python.python
+ms-python.black-formatter
+golang.go
+ms-vscode.vscode-typescript-next
+bradlc.vscode-tailwindcss
+rust-lang.rust-analyzer
+
+# Formatters and linters
+esbenp.prettier-vscode
+ms-vscode.vscode-eslint
+timonwong.shellcheck
+redhat.vscode-yaml
+be5invis.toml
+davidanson.vscode-markdownlint
+
+# Utilities
+streetsidesoftware.code-spell-checker
+ms-vscode.hexeditor
+ms-kubernetes-tools.vscode-kubernetes-tools
+
+# Docker and containers
+ms-vscode-remote.remote-containers
+ms-azuretools.vscode-docker
+
+# Development tools
+ms-vscode.live-server
+formulahendry.auto-rename-tag
+christian-kohler.path-intellisense
+ms-vscode.vscode-json

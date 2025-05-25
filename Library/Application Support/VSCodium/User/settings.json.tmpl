@@ -1,0 +1,17 @@
+{{/* Auto-assembled VS Code settings for Codium */}}
+{{- $settings := dict -}}
+{{- $settingsDir := joinPath .chezmoi.sourceDir "private_dot_config/vscode-settings" -}}
+{{- if stat $settingsDir -}}
+  {{- range (glob (joinPath $settingsDir "*.json")) -}}
+    {{- $content := include . | fromJson -}}
+    {{- $settings = merge $settings $content -}}
+  {{- end -}}
+{{- end -}}
+
+{{/* Codium-specific overrides */}}
+{{- $codiumOverrides := dict -}}
+{{- $codiumOverrides = merge $codiumOverrides (dict "telemetry.telemetryLevel" "off") -}}
+{{- $codiumOverrides = merge $codiumOverrides (dict "update.mode" "manual") -}}
+
+{{- $settings = merge $settings $codiumOverrides -}}
+{{ $settings | toPrettyJson }}
