@@ -1,0 +1,63 @@
+# Theme Configuration
+theme = "Catppuccin Mocha"
+
+[font]
+  # Font settings for the application
+  family = "JetBrains Mono"
+  size = 14
+  bold = true
+  italic = false
+
+# Buffer Display Settings
+[buffer]
+  # Server Messages
+  [buffer.server_messages]
+    [buffer.server_messages.join]
+    enabled = false
+
+    [buffer.server_messages.quit]
+    enabled = false
+
+    [buffer.server_messages.topic]
+    enabled = false
+
+    [buffer.server_messages.status_success]
+    enabled = true  # Re-enabled for connection status and history replay
+
+    [buffer.server_messages.status_error]
+    enabled = true  # Re-enabled for error messages and troubleshooting
+
+  # Internal Messages
+  [buffer.internal_messages]
+    [buffer.internal_messages.success]
+    enabled = true  # Re-enabled for history replay notifications
+
+    [buffer.internal_messages.error]
+    enabled = true  # Re-enabled for error handling
+
+  # Channel Settings
+  [buffer.channel]
+    [buffer.channel.topic]
+    enabled = false
+
+  # Read Status Management
+  [buffer.mark_as_read]
+  on_scroll_to_bottom = true
+  on_buffer_close = true
+
+# Server Configurations
+[servers]
+  # Sackheads Network
+  [servers.sackheads]
+  nickname = "hide"
+  server = "bnc.irccloud.com"
+  password_command = "/Users/ssoriche/.local/share/devbox/global/default/.devbox/nix/profile/default/bin/op item get 'Halloy IRC - Sackheads' --fields password"
+  chathistory = true
+
+  # Perl Network
+  [servers.perl]
+  nickname = "hide"
+  server = "bnc.irccloud.com"
+  password_command = "/Users/ssoriche/.local/share/devbox/global/default/.devbox/nix/profile/default/bin/op item get 'Halloy IRC - Perl' --fields password"
+  chathistory = true
+
