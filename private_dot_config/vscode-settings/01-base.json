@@ -109,5 +109,49 @@
   "github-actions.workflows.validate.enabled": true,
   "github-actions.workflows.validate.onSave": true,
   "github-actions.workflows.validate.schema": true,
-  "github-actions.workflows.icons.enabled": true
+  "github-actions.workflows.icons.enabled": true,
+  "editor.lightbulb.enabled": false,
+  "workbench.statusBar.height": 24,
+  "workbench.statusBar.reduceMotion": true,
+  "workbench.statusBar.noFolderText": "",
+  "workbench.statusBar.focusBorder": false,
+  "workbench.statusBar.foreground": "#a6adc8",
+  "workbench.statusBar.background": "#1e1e2e",
+  "workbench.statusBar.border": false,
+  "workbench.statusBar.separators": {
+    "separator": " ",
+    "sectionSeparator": " "
+  },
+  "workbench.statusBar.items": {
+    "mode": {
+      "name": "mode",
+      "text": "$(vim) $(mode)",
+      "alignment": "left",
+      "priority": 100
+    },
+    "git": {
+      "name": "git",
+      "text": "$(git-branch) $(branch)",
+      "alignment": "left",
+      "priority": 90
+    },
+    "filetype": {
+      "name": "filetype",
+      "text": "$(file) $(filetype)",
+      "alignment": "right",
+      "priority": 80
+    },
+    "encoding": {
+      "name": "encoding",
+      "text": "$(encoding)",
+      "alignment": "right",
+      "priority": 70
+    },
+    "position": {
+      "name": "position",
+      "text": "$(position)",
+      "alignment": "right",
+      "priority": 60
+    }
+  }
 }
