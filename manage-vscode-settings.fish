@@ -100,7 +100,8 @@ function validate_json_files
 
     set invalid_files
     for file in $settings_dir/*.json
-        if not jq empty $file >/dev/null 2>&1
+        # Strip comments and validate JSON
+        if not cat $file | sed 's|//.*||g' | sed '/^\s*$/d' | jq empty >/dev/null 2>&1
             set invalid_files $invalid_files (basename $file)
         end
     end
