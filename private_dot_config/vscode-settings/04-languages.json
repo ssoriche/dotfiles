@@ -3,10 +3,6 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true,
     "editor.wordWrap": "on",
-    "editor.rulers": [
-      72,
-      80
-    ],
     "editor.quickSuggestions": {
       "comments": "off",
       "strings": "off",

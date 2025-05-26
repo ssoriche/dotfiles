@@ -3,10 +3,6 @@
   "editor.cursorSurroundingLines": 8,
   "editor.scrolloff": 8,
   "editor.wrap": false,
-  "editor.rulers": [
-    80,
-    120
-  ],
   "editor.minimap.enabled": false,
   "editor.renderWhitespace": "none",
   "editor.renderControlCharacters": false,
