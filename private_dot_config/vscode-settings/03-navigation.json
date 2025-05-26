@@ -1,0 +1,116 @@
+{
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["[", "b"],
+      "commands": ["workbench.action.previousEditor"]
+    },
+    {
+      "before": ["]", "b"],
+      "commands": ["workbench.action.nextEditor"]
+    },
+    {
+      "before": ["[", "B"],
+      "commands": ["workbench.action.openPreviousRecentlyUsedEditorInGroup"]
+    },
+    {
+      "before": ["]", "B"],
+      "commands": ["workbench.action.openNextRecentlyUsedEditorInGroup"]
+    },
+    {
+      "before": ["[", "t"],
+      "commands": ["workbench.action.previousEditorInGroup"]
+    },
+    {
+      "before": ["]", "t"],
+      "commands": ["workbench.action.nextEditorInGroup"]
+    },
+    {
+      "before": ["[", "T"],
+      "commands": ["workbench.action.moveEditorLeftInGroup"]
+    },
+    {
+      "before": ["]", "T"],
+      "commands": ["workbench.action.moveEditorRightInGroup"]
+    },
+    {
+      "before": ["[", "q"],
+      "commands": ["editor.action.marker.prev"]
+    },
+    {
+      "before": ["]", "q"],
+      "commands": ["editor.action.marker.next"]
+    },
+    {
+      "before": ["[", "Q"],
+      "commands": ["editor.action.marker.prevInFiles"]
+    },
+    {
+      "before": ["]", "Q"],
+      "commands": ["editor.action.marker.nextInFiles"]
+    },
+    {
+      "before": ["[", "d"],
+      "commands": ["editor.action.marker.prevInFiles"]
+    },
+    {
+      "before": ["]", "d"],
+      "commands": ["editor.action.marker.nextInFiles"]
+    },
+    {
+      "before": ["[", "e"],
+      "commands": ["editor.action.marker.prev"]
+    },
+    {
+      "before": ["]", "e"],
+      "commands": ["editor.action.marker.next"]
+    },
+    {
+      "before": ["[", "w"],
+      "commands": ["editor.action.marker.prev"]
+    },
+    {
+      "before": ["]", "w"],
+      "commands": ["editor.action.marker.next"]
+    },
+    {
+      "before": ["[", "c"],
+      "commands": ["workbench.action.editor.previousChange"]
+    },
+    {
+      "before": ["]", "c"],
+      "commands": ["workbench.action.editor.nextChange"]
+    },
+    {
+      "before": ["[", "h"],
+      "commands": ["git.previousChange"]
+    },
+    {
+      "before": ["]", "h"],
+      "commands": ["git.nextChange"]
+    },
+    {
+      "before": ["[", "s"],
+      "commands": ["editor.action.wordHighlight.prev"]
+    },
+    {
+      "before": ["]", "s"],
+      "commands": ["editor.action.wordHighlight.next"]
+    },
+    {
+      "before": ["[", "f"],
+      "commands": ["references-view.prev"]
+    },
+    {
+      "before": ["]", "f"],
+      "commands": ["references-view.next"]
+    },
+    {
+      "before": ["[", "l"],
+      "commands": ["workbench.action.navigateBack"]
+    },
+    {
+      "before": ["]", "l"],
+      "commands": ["workbench.action.navigateForward"]
+    }
+  ]
+}
