@@ -356,12 +356,12 @@ function assemble_settings
 
     switch $editor
         case cursor
-            chezmoi apply "Library/Application Support/Cursor/User/settings.json"
+            chezmoi apply "$HOME/Library/Application Support/Cursor/User/settings.json"
         case codium
-            chezmoi apply "Library/Application Support/VSCodium/User/settings.json"
+            chezmoi apply "$HOME/Library/Application Support/VSCodium/User/settings.json"
         case all
-            chezmoi apply "Library/Application Support/Cursor/User/settings.json"
-            chezmoi apply "Library/Application Support/VSCodium/User/settings.json"
+            chezmoi apply "$HOME/Library/Application Support/Cursor/User/settings.json"
+            chezmoi apply "$HOME/Library/Application Support/VSCodium/User/settings.json"
         case '*'
             error "Unknown editor: $editor. Use cursor, codium, or all"
             return 1
@@ -381,15 +381,15 @@ function show_diff
 
     switch $editor
         case cursor
-            chezmoi diff "Library/Application Support/Cursor/User/settings.json"
+            chezmoi diff "$HOME/Library/Application Support/Cursor/User/settings.json"
         case codium
-            chezmoi diff "Library/Application Support/VSCodium/User/settings.json"
+            chezmoi diff "$HOME/Library/Application Support/VSCodium/User/settings.json"
         case all
             echo "=== Cursor Differences ==="
-            chezmoi diff "Library/Application Support/Cursor/User/settings.json"
+            chezmoi diff "$HOME/Library/Application Support/Cursor/User/settings.json"
             echo ""
             echo "=== Codium Differences ==="
-            chezmoi diff "Library/Application Support/VSCodium/User/settings.json"
+            chezmoi diff "$HOME/Library/Application Support/VSCodium/User/settings.json"
         case '*'
             error "Unknown editor: $editor. Use cursor, codium, or all"
             return 1
