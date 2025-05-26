@@ -1,7 +1,5 @@
 # Core functionality
 vscodevim.vim
-vspacecode.whichkey
-vspacecode.vspacecode
 
 # Git integration
 eamodio.gitlens

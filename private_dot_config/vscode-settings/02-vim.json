@@ -16,285 +16,120 @@
   },
   "vim.insertModeKeyBindings": [
     {
-      "before": [
-        "j",
-        "k"
-      ],
-      "after": [
-        "<Esc>"
-      ]
+      "before": ["j", "k"],
+      "after": ["<Esc>"]
     }
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
     {
-      "before": [
-        "<leader>",
-        "f",
-        "f"
-      ],
-      "commands": [
-        "workbench.action.quickOpen"
-      ]
+      "before": ["<leader>", "f", "f"],
+      "commands": ["workbench.action.quickOpen"]
     },
     {
-      "before": [
-        "<leader>",
-        "f",
-        "r"
-      ],
-      "commands": [
-        "workbench.action.openRecent"
-      ]
+      "before": ["<leader>", "f", "r"],
+      "commands": ["workbench.action.openRecent"]
     },
     {
-      "before": [
-        "<leader>",
-        "f",
-        "g"
-      ],
-      "commands": [
-        "workbench.action.findInFiles"
-      ]
+      "before": ["<leader>", "f", "g"],
+      "commands": ["workbench.action.findInFiles"]
     },
     {
-      "before": [
-        "<leader>",
-        "f",
-        "s"
-      ],
-      "commands": [
-        "workbench.action.files.save"
-      ]
+      "before": ["<leader>", "f", "s"],
+      "commands": ["workbench.action.files.save"]
     },
     {
-      "before": [
-        "<leader>",
-        "f",
-        "S"
-      ],
-      "commands": [
-        "workbench.action.files.saveAll"
-      ]
+      "before": ["<leader>", "f", "S"],
+      "commands": ["workbench.action.files.saveAll"]
     },
     {
-      "before": [
-        "<leader>",
-        "b",
-        "b"
-      ],
-      "commands": [
-        "workbench.action.showAllEditors"
-      ]
+      "before": ["<leader>", "b", "b"],
+      "commands": ["workbench.action.showAllEditors"]
     },
     {
-      "before": [
-        "<leader>",
-        "b",
-        "d"
-      ],
-      "commands": [
-        "workbench.action.closeActiveEditor"
-      ]
+      "before": ["<leader>", "b", "d"],
+      "commands": ["workbench.action.closeActiveEditor"]
     },
     {
-      "before": [
-        "<leader>",
-        "b",
-        "n"
-      ],
-      "commands": [
-        "workbench.action.nextEditor"
-      ]
+      "before": ["<leader>", "b", "n"],
+      "commands": ["workbench.action.nextEditor"]
     },
     {
-      "before": [
-        "<leader>",
-        "b",
-        "p"
-      ],
-      "commands": [
-        "workbench.action.previousEditor"
-      ]
+      "before": ["<leader>", "b", "p"],
+      "commands": ["workbench.action.previousEditor"]
     },
     {
-      "before": [
-        "<leader>",
-        "e"
-      ],
-      "commands": [
-        "workbench.view.explorer"
-      ]
+      "before": ["<leader>", "e"],
+      "commands": ["workbench.view.explorer"]
     },
     {
-      "before": [
-        "<leader>",
-        "t"
-      ],
-      "commands": [
-        "workbench.action.terminal.toggleTerminal"
-      ]
+      "before": ["<leader>", "t"],
+      "commands": ["workbench.action.terminal.toggleTerminal"]
     },
     {
-      "before": [
-        "<leader>",
-        "g",
-        "g"
-      ],
-      "commands": [
-        "workbench.view.scm"
-      ]
+      "before": ["<leader>", "g", "g"],
+      "commands": ["workbench.view.scm"]
     },
     {
-      "before": [
-        "<leader>",
-        "g",
-        "s"
-      ],
-      "commands": [
-        "git.stage"
-      ]
+      "before": ["<leader>", "g", "s"],
+      "commands": ["git.stage"]
     },
     {
-      "before": [
-        "<leader>",
-        "g",
-        "u"
-      ],
-      "commands": [
-        "git.unstage"
-      ]
+      "before": ["<leader>", "g", "u"],
+      "commands": ["git.unstage"]
     },
     {
-      "before": [
-        "<leader>",
-        "c",
-        "a"
-      ],
-      "commands": [
-        "editor.action.quickFix"
-      ]
+      "before": ["<leader>", "c", "a"],
+      "commands": ["editor.action.quickFix"]
     },
     {
-      "before": [
-        "<leader>",
-        "c",
-        "r"
-      ],
-      "commands": [
-        "editor.action.rename"
-      ]
+      "before": ["<leader>", "c", "r"],
+      "commands": ["editor.action.rename"]
     },
     {
-      "before": [
-        "<leader>",
-        "c",
-        "f"
-      ],
-      "commands": [
-        "editor.action.formatDocument"
-      ]
+      "before": ["<leader>", "c", "f"],
+      "commands": ["editor.action.formatDocument"]
     },
     {
-      "before": [
-        "<leader>",
-        "c",
-        "d"
-      ],
-      "commands": [
-        "editor.action.revealDefinition"
-      ]
+      "before": ["<leader>", "c", "d"],
+      "commands": ["editor.action.revealDefinition"]
     },
     {
-      "before": [
-        "<leader>",
-        "c",
-        "i"
-      ],
-      "commands": [
-        "editor.action.goToImplementation"
-      ]
+      "before": ["<leader>", "c", "i"],
+      "commands": ["editor.action.goToImplementation"]
     },
     {
-      "before": [
-        "<leader>",
-        "w",
-        "h"
-      ],
-      "commands": [
-        "workbench.action.focusLeftGroup"
-      ]
+      "before": ["<leader>", "w", "h"],
+      "commands": ["workbench.action.focusLeftGroup"]
     },
     {
-      "before": [
-        "<leader>",
-        "w",
-        "l"
-      ],
-      "commands": [
-        "workbench.action.focusRightGroup"
-      ]
+      "before": ["<leader>", "w", "l"],
+      "commands": ["workbench.action.focusRightGroup"]
     },
     {
-      "before": [
-        "<leader>",
-        "w",
-        "j"
-      ],
-      "commands": [
-        "workbench.action.focusBelowGroup"
-      ]
+      "before": ["<leader>", "w", "j"],
+      "commands": ["workbench.action.focusBelowGroup"]
     },
     {
-      "before": [
-        "<leader>",
-        "w",
-        "k"
-      ],
-      "commands": [
-        "workbench.action.focusAboveGroup"
-      ]
+      "before": ["<leader>", "w", "k"],
+      "commands": ["workbench.action.focusAboveGroup"]
     },
     {
-      "before": [
-        "<leader>",
-        "w",
-        "v"
-      ],
-      "commands": [
-        "workbench.action.splitEditor"
-      ]
+      "before": ["<leader>", "w", "v"],
+      "commands": ["workbench.action.splitEditor"]
     },
     {
-      "before": [
-        "<leader>",
-        "w",
-        "s"
-      ],
-      "commands": [
-        "workbench.action.splitEditorDown"
-      ]
+      "before": ["<leader>", "w", "s"],
+      "commands": ["workbench.action.splitEditorDown"]
     },
     {
-      "before": [
-        "<leader>",
-        "w",
-        "d"
-      ],
-      "commands": [
-        "workbench.action.closeEditorsInGroup"
-      ]
+      "before": ["<leader>", "w", "d"],
+      "commands": ["workbench.action.closeEditorsInGroup"]
     }
   ],
   "vim.visualModeKeyBindingsNonRecursive": [
     {
-      "before": [
-        "<leader>",
-        "c",
-        "f"
-      ],
-      "commands": [
-        "editor.action.formatSelection"
-      ]
+      "before": ["<leader>", "c", "f"],
+      "commands": ["editor.action.formatSelection"]
     }
   ]
 }

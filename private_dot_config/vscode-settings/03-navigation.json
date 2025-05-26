@@ -1,116 +1,152 @@
 {
   "vim.normalModeKeyBindingsNonRecursive": [
     {
+      "before": ["["],
+      "name": "+previous"
+    },
+    {
+      "before": ["]"],
+      "name": "+next"
+    },
+    {
       "before": ["[", "b"],
-      "commands": ["workbench.action.previousEditor"]
+      "commands": ["workbench.action.previousEditor"],
+      "name": "Previous Buffer"
     },
     {
       "before": ["]", "b"],
-      "commands": ["workbench.action.nextEditor"]
+      "commands": ["workbench.action.nextEditor"],
+      "name": "Next Buffer"
     },
     {
       "before": ["[", "B"],
-      "commands": ["workbench.action.openPreviousRecentlyUsedEditorInGroup"]
+      "commands": ["workbench.action.openPreviousRecentlyUsedEditorInGroup"],
+      "name": "Previous Recent Buffer"
     },
     {
       "before": ["]", "B"],
-      "commands": ["workbench.action.openNextRecentlyUsedEditorInGroup"]
+      "commands": ["workbench.action.openNextRecentlyUsedEditorInGroup"],
+      "name": "Next Recent Buffer"
     },
     {
       "before": ["[", "t"],
-      "commands": ["workbench.action.previousEditorInGroup"]
+      "commands": ["workbench.action.previousEditorInGroup"],
+      "name": "Previous Tab"
     },
     {
       "before": ["]", "t"],
-      "commands": ["workbench.action.nextEditorInGroup"]
+      "commands": ["workbench.action.nextEditorInGroup"],
+      "name": "Next Tab"
     },
     {
       "before": ["[", "T"],
-      "commands": ["workbench.action.moveEditorLeftInGroup"]
+      "commands": ["workbench.action.moveEditorLeftInGroup"],
+      "name": "Move Tab Left"
     },
     {
       "before": ["]", "T"],
-      "commands": ["workbench.action.moveEditorRightInGroup"]
+      "commands": ["workbench.action.moveEditorRightInGroup"],
+      "name": "Move Tab Right"
     },
     {
       "before": ["[", "q"],
-      "commands": ["editor.action.marker.prev"]
+      "commands": ["editor.action.marker.prev"],
+      "name": "Previous Problem"
     },
     {
       "before": ["]", "q"],
-      "commands": ["editor.action.marker.next"]
+      "commands": ["editor.action.marker.next"],
+      "name": "Next Problem"
     },
     {
       "before": ["[", "Q"],
-      "commands": ["editor.action.marker.prevInFiles"]
+      "commands": ["editor.action.marker.prevInFiles"],
+      "name": "Previous Problem (Global)"
     },
     {
       "before": ["]", "Q"],
-      "commands": ["editor.action.marker.nextInFiles"]
+      "commands": ["editor.action.marker.nextInFiles"],
+      "name": "Next Problem (Global)"
     },
     {
       "before": ["[", "d"],
-      "commands": ["editor.action.marker.prevInFiles"]
+      "commands": ["editor.action.marker.prevInFiles"],
+      "name": "Previous Diagnostic"
     },
     {
       "before": ["]", "d"],
-      "commands": ["editor.action.marker.nextInFiles"]
+      "commands": ["editor.action.marker.nextInFiles"],
+      "name": "Next Diagnostic"
     },
     {
       "before": ["[", "e"],
-      "commands": ["editor.action.marker.prev"]
+      "commands": ["editor.action.marker.prev"],
+      "name": "Previous Error"
     },
     {
       "before": ["]", "e"],
-      "commands": ["editor.action.marker.next"]
+      "commands": ["editor.action.marker.next"],
+      "name": "Next Error"
     },
     {
       "before": ["[", "w"],
-      "commands": ["editor.action.marker.prev"]
+      "commands": ["editor.action.marker.prev"],
+      "name": "Previous Warning"
     },
     {
       "before": ["]", "w"],
-      "commands": ["editor.action.marker.next"]
+      "commands": ["editor.action.marker.next"],
+      "name": "Next Warning"
     },
     {
       "before": ["[", "c"],
-      "commands": ["workbench.action.editor.previousChange"]
+      "commands": ["workbench.action.editor.previousChange"],
+      "name": "Previous Change"
     },
     {
       "before": ["]", "c"],
-      "commands": ["workbench.action.editor.nextChange"]
+      "commands": ["workbench.action.editor.nextChange"],
+      "name": "Next Change"
     },
     {
       "before": ["[", "h"],
-      "commands": ["workbench.action.editor.previousChange"]
+      "commands": ["workbench.action.editor.previousChange"],
+      "name": "Previous Hunk"
     },
     {
       "before": ["]", "h"],
-      "commands": ["workbench.action.editor.nextChange"]
+      "commands": ["workbench.action.editor.nextChange"],
+      "name": "Next Hunk"
     },
     {
       "before": ["[", "s"],
-      "commands": ["editor.action.wordHighlight.prev"]
+      "commands": ["editor.action.wordHighlight.prev"],
+      "name": "Previous Symbol"
     },
     {
       "before": ["]", "s"],
-      "commands": ["editor.action.wordHighlight.next"]
+      "commands": ["editor.action.wordHighlight.next"],
+      "name": "Next Symbol"
     },
     {
       "before": ["[", "f"],
-      "commands": ["references-view.prev"]
+      "commands": ["references-view.prev"],
+      "name": "Previous Reference"
     },
     {
       "before": ["]", "f"],
-      "commands": ["references-view.next"]
+      "commands": ["references-view.next"],
+      "name": "Next Reference"
     },
     {
       "before": ["[", "l"],
-      "commands": ["workbench.action.navigateBack"]
+      "commands": ["workbench.action.navigateBack"],
+      "name": "Previous Location"
     },
     {
       "before": ["]", "l"],
-      "commands": ["workbench.action.navigateForward"]
+      "commands": ["workbench.action.navigateForward"],
+      "name": "Next Location"
     }
   ]
 }
