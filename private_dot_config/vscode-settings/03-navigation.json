@@ -82,11 +82,11 @@
     },
     {
       "before": ["[", "h"],
-      "commands": ["git.previousChange"]
+      "commands": ["workbench.action.editor.previousChange"]
     },
     {
       "before": ["]", "h"],
-      "commands": ["git.nextChange"]
+      "commands": ["workbench.action.editor.nextChange"]
     },
     {
       "before": ["[", "s"],
