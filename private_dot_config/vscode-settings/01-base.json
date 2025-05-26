@@ -78,5 +78,15 @@
     "commit": true,
     "publish": false,
     "sync": false
-  }
+  },
+  "github-actions.workflows.pinned.workflows": [],
+  "github-actions.workflows.pinned.refresh.enabled": true,
+  "github-actions.workflows.pinned.refresh.interval": 65,
+  "github-actions.remote-name": "origin",
+  "github-actions.step-debug-enabled": true,
+  "github-actions.step-security.enabled": true,
+  "github-actions.workflows.validate.enabled": true,
+  "github-actions.workflows.validate.onSave": true,
+  "github-actions.workflows.validate.schema": true,
+  "github-actions.workflows.icons.enabled": true
 }
