@@ -4,7 +4,6 @@ vspacecode.whichkey
 
 # Git integration
 eamodio.gitlens
-vivaxy.vscode-conventional-commits
 github.vscode-github-actions
 
 # Theme and icons
