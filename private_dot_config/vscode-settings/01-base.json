@@ -58,5 +58,17 @@
   "editor.suggest.insertMode": "replace",
   "editor.acceptSuggestionOnCommitCharacter": false,
   "window.closeWhenEmpty": false,
-  "window.restoreWindows": "all"
+  "window.restoreWindows": "all",
+  "git.enableSmartCommit": false,
+  "git.inputValidation": "always",
+  "git.inputValidationSubjectLength": 72,
+  "git.inputValidationLength": 72,
+  "git.postCommitCommand": "none",
+  "git.confirmSync": true,
+  "git.requireGitUserConfig": true,
+  "git.showActionButton": {
+    "commit": true,
+    "publish": false,
+    "sync": false
+  }
 }
