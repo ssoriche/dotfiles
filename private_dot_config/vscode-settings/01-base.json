@@ -60,5 +60,5 @@
   "window.zoomLevel": 0,
   "breadcrumbs.enabled": true,
   "editor.suggest.insertMode": "replace",
-  "editor.acceptSuggestionOnCommitCharacter": false
+  "editor.acceptSuggestionOnCommitCharacter": false,
 }

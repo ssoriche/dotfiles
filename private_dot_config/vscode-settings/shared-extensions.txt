@@ -16,6 +16,7 @@ golang.go
 ms-vscode.vscode-typescript-next
 bradlc.vscode-tailwindcss
 rust-lang.rust-analyzer
+ms-vscode.makefile-tools
 
 # Formatters and linters
 esbenp.prettier-vscode
