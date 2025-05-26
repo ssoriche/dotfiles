@@ -41,3 +41,6 @@ ms-vscode.live-server
 formulahendry.auto-rename-tag
 christian-kohler.path-intellisense
 ms-vscode.vscode-json
+
+# Fish Language Support
+bmalehorn.vscode-fish
