@@ -6,6 +6,9 @@
   "vim.useCtrlKeys": true,
   "vim.hlsearch": true,
   "vim.smartRelativeLine": true,
+  "vim.whichkey.enabled": true,
+  "vim.whichkey.delay": 0,
+  "vim.whichkey.showMenu": "onlyMenu",
   "vim.handleKeys": {
     "<C-a>": false,
     "<C-f>": false,
@@ -22,114 +25,161 @@
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
     {
+      "before": ["<leader>", "f"],
+      "name": "+file"
+    },
+    {
       "before": ["<leader>", "f", "f"],
-      "commands": ["workbench.action.quickOpen"]
+      "commands": ["workbench.action.quickOpen"],
+      "name": "Find File"
     },
     {
       "before": ["<leader>", "f", "r"],
-      "commands": ["workbench.action.openRecent"]
+      "commands": ["workbench.action.openRecent"],
+      "name": "Recent Files"
     },
     {
       "before": ["<leader>", "f", "g"],
-      "commands": ["workbench.action.findInFiles"]
+      "commands": ["workbench.action.findInFiles"],
+      "name": "Find in Files"
     },
     {
       "before": ["<leader>", "f", "s"],
-      "commands": ["workbench.action.files.save"]
+      "commands": ["workbench.action.files.save"],
+      "name": "Save File"
     },
     {
       "before": ["<leader>", "f", "S"],
-      "commands": ["workbench.action.files.saveAll"]
+      "commands": ["workbench.action.files.saveAll"],
+      "name": "Save All Files"
+    },
+    {
+      "before": ["<leader>", "b"],
+      "name": "+buffer"
     },
     {
       "before": ["<leader>", "b", "b"],
-      "commands": ["workbench.action.showAllEditors"]
+      "commands": ["workbench.action.showAllEditors"],
+      "name": "Show All Buffers"
     },
     {
       "before": ["<leader>", "b", "d"],
-      "commands": ["workbench.action.closeActiveEditor"]
+      "commands": ["workbench.action.closeActiveEditor"],
+      "name": "Delete Buffer"
     },
     {
       "before": ["<leader>", "b", "n"],
-      "commands": ["workbench.action.nextEditor"]
+      "commands": ["workbench.action.nextEditor"],
+      "name": "Next Buffer"
     },
     {
       "before": ["<leader>", "b", "p"],
-      "commands": ["workbench.action.previousEditor"]
+      "commands": ["workbench.action.previousEditor"],
+      "name": "Previous Buffer"
     },
     {
       "before": ["<leader>", "e"],
-      "commands": ["workbench.view.explorer"]
+      "commands": ["workbench.view.explorer"],
+      "name": "Explorer"
     },
     {
       "before": ["<leader>", "t"],
-      "commands": ["workbench.action.terminal.toggleTerminal"]
+      "commands": ["workbench.action.terminal.toggleTerminal"],
+      "name": "Toggle Terminal"
+    },
+    {
+      "before": ["<leader>", "g"],
+      "name": "+git"
     },
     {
       "before": ["<leader>", "g", "g"],
-      "commands": ["workbench.view.scm"]
+      "commands": ["workbench.view.scm"],
+      "name": "Source Control"
     },
     {
       "before": ["<leader>", "g", "s"],
-      "commands": ["git.stage"]
+      "commands": ["git.stage"],
+      "name": "Stage Changes"
     },
     {
       "before": ["<leader>", "g", "u"],
-      "commands": ["git.unstage"]
+      "commands": ["git.unstage"],
+      "name": "Unstage Changes"
+    },
+    {
+      "before": ["<leader>", "c"],
+      "name": "+code"
     },
     {
       "before": ["<leader>", "c", "a"],
-      "commands": ["editor.action.quickFix"]
+      "commands": ["editor.action.quickFix"],
+      "name": "Quick Fix"
     },
     {
       "before": ["<leader>", "c", "r"],
-      "commands": ["editor.action.rename"]
+      "commands": ["editor.action.rename"],
+      "name": "Rename Symbol"
     },
     {
       "before": ["<leader>", "c", "f"],
-      "commands": ["editor.action.formatDocument"]
+      "commands": ["editor.action.formatDocument"],
+      "name": "Format Document"
     },
     {
       "before": ["<leader>", "c", "d"],
-      "commands": ["editor.action.revealDefinition"]
+      "commands": ["editor.action.revealDefinition"],
+      "name": "Go to Definition"
     },
     {
       "before": ["<leader>", "c", "i"],
-      "commands": ["editor.action.goToImplementation"]
+      "commands": ["editor.action.goToImplementation"],
+      "name": "Go to Implementation"
+    },
+    {
+      "before": ["<leader>", "w"],
+      "name": "+window"
     },
     {
       "before": ["<leader>", "w", "h"],
-      "commands": ["workbench.action.focusLeftGroup"]
+      "commands": ["workbench.action.focusLeftGroup"],
+      "name": "Focus Left"
     },
     {
       "before": ["<leader>", "w", "l"],
-      "commands": ["workbench.action.focusRightGroup"]
+      "commands": ["workbench.action.focusRightGroup"],
+      "name": "Focus Right"
     },
     {
       "before": ["<leader>", "w", "j"],
-      "commands": ["workbench.action.focusBelowGroup"]
+      "commands": ["workbench.action.focusBelowGroup"],
+      "name": "Focus Down"
     },
     {
       "before": ["<leader>", "w", "k"],
-      "commands": ["workbench.action.focusAboveGroup"]
+      "commands": ["workbench.action.focusAboveGroup"],
+      "name": "Focus Up"
     },
     {
       "before": ["<leader>", "w", "v"],
-      "commands": ["workbench.action.splitEditor"]
+      "commands": ["workbench.action.splitEditor"],
+      "name": "Split Vertical"
     },
     {
       "before": ["<leader>", "w", "s"],
-      "commands": ["workbench.action.splitEditorDown"]
+      "commands": ["workbench.action.splitEditorDown"],
+      "name": "Split Horizontal"
     },
     {
       "before": ["<leader>", "w", "d"],
-      "commands": ["workbench.action.closeEditorsInGroup"]
+      "commands": ["workbench.action.closeEditorsInGroup"],
+      "name": "Close Window"
     }
   ],
   "vim.visualModeKeyBindingsNonRecursive": [
     {
       "before": ["<leader>", "c", "f"],
-      "commands": ["editor.action.formatSelection"]
+      "commands": ["editor.action.formatSelection"],
+      "name": "Format Selection"
     }
   ]
 }
