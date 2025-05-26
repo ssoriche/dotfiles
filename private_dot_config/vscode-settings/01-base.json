@@ -57,6 +57,15 @@
   "breadcrumbs.enabled": true,
   "editor.suggest.insertMode": "replace",
   "editor.acceptSuggestionOnCommitCharacter": false,
+  "security.workspace.trust.enabled": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  "security.workspace.trust.startupPrompt": "never",
+  "security.workspace.trust.emptyWindow": true,
+  "security.workspace.trust.directories": [
+    "/Users/shawns/.local/share/chezmoi",
+    "/Volumes/ziprecruiter/zr"
+  ],
+  "workbench.editor.untitled.hint": "hidden",
   "window.closeWhenEmpty": false,
   "window.restoreWindows": "all",
   "git.enableSmartCommit": false,
