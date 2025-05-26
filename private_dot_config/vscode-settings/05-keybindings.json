@@ -1,8 +1,13 @@
 {
+  // Keyboard Input Settings
   "keyboard.dispatch": "keyCode",
+
+  // List Navigation Settings
   "workbench.list.automaticKeyboardNavigation": false,
   "workbench.list.defaultFindMode": "highlight",
   "workbench.list.typeNavigationMode": "automatic",
+
+  // Command Palette Settings
   "workbench.commandPalette.history": 50,
   "workbench.quickOpen.closeOnFocusLost": false
 }

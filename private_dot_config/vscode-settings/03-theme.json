@@ -1,8 +1,11 @@
 {
+  // Theme Configuration
   "workbench.colorTheme": "Catppuccin Mocha",
   "workbench.iconTheme": "catppuccin-mocha",
   "workbench.colorCustomizations": {},
   "editor.tokenColorCustomizations": {},
+
+  // Terminal Appearance
   "terminal.integrated.fontFamily": "JetBrains Mono, Menlo, Monaco, 'Courier New', monospace",
   "terminal.integrated.fontSize": 13,
   "terminal.integrated.lineHeight": 1.2,

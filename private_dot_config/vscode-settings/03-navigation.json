@@ -1,5 +1,7 @@
 {
+  // Navigation Key Bindings
   "vim.normalModeKeyBindingsNonRecursive": [
+    // Navigation Menu Triggers
     {
       "before": ["["],
       "commands": ["whichkey.show", { "args": ["["] }],
@@ -10,6 +12,8 @@
       "commands": ["whichkey.show", { "args": ["]"] }],
       "name": "+next"
     },
+
+    // Buffer Navigation
     {
       "before": ["[", "b"],
       "commands": ["workbench.action.previousEditor"],
@@ -34,6 +38,8 @@
       "name": "Next Recent Buffer",
       "whichkey": true
     },
+
+    // Tab Management
     {
       "before": ["[", "t"],
       "commands": ["workbench.action.previousEditorInGroup"],
@@ -58,6 +64,8 @@
       "name": "Move Tab Right",
       "whichkey": true
     },
+
+    // Problem Navigation
     {
       "before": ["[", "q"],
       "commands": ["editor.action.marker.prev"],
@@ -82,6 +90,8 @@
       "name": "Next Problem (Global)",
       "whichkey": true
     },
+
+    // Diagnostic Navigation
     {
       "before": ["[", "d"],
       "commands": ["editor.action.marker.prevInFiles"],
@@ -94,6 +104,8 @@
       "name": "Next Diagnostic",
       "whichkey": true
     },
+
+    // Error Navigation
     {
       "before": ["[", "e"],
       "commands": ["editor.action.marker.prev"],
@@ -106,6 +118,8 @@
       "name": "Next Error",
       "whichkey": true
     },
+
+    // Warning Navigation
     {
       "before": ["[", "w"],
       "commands": ["editor.action.marker.prev"],
@@ -118,6 +132,8 @@
       "name": "Next Warning",
       "whichkey": true
     },
+
+    // Change Navigation
     {
       "before": ["[", "c"],
       "commands": ["workbench.action.editor.previousChange"],
@@ -130,6 +146,8 @@
       "name": "Next Change",
       "whichkey": true
     },
+
+    // Git Hunk Navigation
     {
       "before": ["[", "h"],
       "commands": ["workbench.action.editor.previousChange"],
@@ -142,6 +160,8 @@
       "name": "Next Hunk",
       "whichkey": true
     },
+
+    // Symbol Navigation
     {
       "before": ["[", "s"],
       "commands": ["editor.action.wordHighlight.prev"],
@@ -154,6 +174,8 @@
       "name": "Next Symbol",
       "whichkey": true
     },
+
+    // Reference Navigation
     {
       "before": ["[", "f"],
       "commands": ["references-view.prev"],
@@ -166,6 +188,8 @@
       "name": "Next Reference",
       "whichkey": true
     },
+
+    // Location Navigation
     {
       "before": ["[", "l"],
       "commands": ["workbench.action.navigateBack"],

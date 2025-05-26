@@ -1,4 +1,10 @@
 {
+  // Enable JSON with Comments for all JSON files in this directory
+  "files.associations": {
+    "**/.local/share/chezmoi/private_dot_config/vscode-settings/*.json": "jsonc"
+  },
+
+  // Editor Display
   "editor.lineNumbers": "relative",
   "editor.cursorSurroundingLines": 8,
   "editor.scrolloff": 8,
@@ -6,9 +12,13 @@
   "editor.minimap.enabled": false,
   "editor.renderWhitespace": "none",
   "editor.renderControlCharacters": false,
+
+  // Font Configuration
   "editor.fontFamily": "JetBrains Mono, Menlo, Monaco, 'Courier New', monospace",
   "editor.fontSize": 14,
   "editor.lineHeight": 1.5,
+
+  // Editor Behavior
   "editor.tabSize": 2,
   "editor.insertSpaces": true,
   "editor.detectIndentation": true,
@@ -16,20 +26,28 @@
   "editor.codeActionsOnSave": {
     "source.organizeImports": "explicit"
   },
+
+  // File Handling
   "files.trimTrailingWhitespace": true,
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
   "files.autoSave": "onFocusChange",
+
+  // Workbench UI
   "workbench.startupEditor": "none",
   "workbench.editor.enablePreview": false,
   "workbench.activityBar.visible": false,
   "workbench.statusBar.visible": true,
   "workbench.editor.showTabs": "multiple",
   "workbench.editor.tabCloseButton": "right",
+
+  // Explorer Configuration
   "explorer.compactFolders": false,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "workbench.tree.indent": 20,
+
+  // Search Configuration
   "search.useGlobalIgnoreFiles": true,
   "search.exclude": {
     "**/node_modules": true,
@@ -43,6 +61,8 @@
     "**/.DS_Store": true,
     "**/Thumbs.db": true
   },
+
+  // File Explorer Exclusions
   "files.exclude": {
     "**/.git": true,
     "**/.svn": true,
@@ -51,12 +71,18 @@
     "**/.DS_Store": true,
     "**/Thumbs.db": true
   },
+
+  // Terminal Settings
   "terminal.integrated.scrollback": 10000,
   "terminal.integrated.copyOnSelection": true,
+
+  // Window Settings
   "window.zoomLevel": 0,
   "breadcrumbs.enabled": true,
   "editor.suggest.insertMode": "replace",
   "editor.acceptSuggestionOnCommitCharacter": false,
+
+  // Workspace Trust
   "security.workspace.trust.enabled": true,
   "security.workspace.trust.untrustedFiles": "open",
   "security.workspace.trust.startupPrompt": "never",
@@ -65,9 +91,13 @@
     "/Users/shawns/.local/share/chezmoi",
     "/Volumes/ziprecruiter/zr"
   ],
+
+  // Window Behavior
   "workbench.editor.untitled.hint": "hidden",
   "window.closeWhenEmpty": false,
   "window.restoreWindows": "all",
+
+  // Git Configuration
   "git.enableSmartCommit": false,
   "git.inputValidation": "always",
   "git.inputValidationSubjectLength": 72,
@@ -80,6 +110,8 @@
     "publish": false,
     "sync": false
   },
+
+  // Git Commit Editor
   "[git-commit]": {
     "editor.rulers": [50, 72],
     "editor.wordWrap": "off",
@@ -91,8 +123,12 @@
       "other": false
     }
   },
+
+  // Git Commit Message Validation
   "git.inputValidationSubjectRegex": "^(feat|fix|docs|style|refactor|perf|test|build|ci|chore|revert)(\\([a-z0-9-]+\\))?: [a-z].*$",
   "git.inputValidationErrorMessage": "Commit message must follow conventional commit format: <type>(<scope>): <description>",
+
+  // Source Control Management
   "scm.inputFontSize": 13,
   "scm.showInputActionButton": false,
   "scm.defaultViewMode": "tree",
@@ -100,6 +136,8 @@
   "scm.showOutgoingChanges": "never",
   "scm.alwaysShowActions": false,
   "scm.alwaysShowRepositories": false,
+
+  // GitHub Actions
   "github-actions.workflows.pinned.workflows": [],
   "github-actions.workflows.pinned.refresh.enabled": true,
   "github-actions.workflows.pinned.refresh.interval": 65,
@@ -110,7 +148,11 @@
   "github-actions.workflows.validate.onSave": true,
   "github-actions.workflows.validate.schema": true,
   "github-actions.workflows.icons.enabled": true,
+
+  // Editor UI
   "editor.lightbulb.enabled": false,
+
+  // Status Bar Configuration
   "workbench.statusBar.height": 24,
   "workbench.statusBar.reduceMotion": true,
   "workbench.statusBar.noFolderText": "",
@@ -122,6 +164,8 @@
     "separator": " ",
     "sectionSeparator": " "
   },
+
+  // Status Bar Items
   "workbench.statusBar.items": {
     "mode": {
       "name": "mode",

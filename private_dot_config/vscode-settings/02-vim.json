@@ -1,4 +1,5 @@
 {
+  // Vim Core Settings
   "vim.leader": "<space>",
   "vim.useSystemClipboard": true,
   "vim.easymotion": true,
@@ -6,9 +7,13 @@
   "vim.useCtrlKeys": true,
   "vim.hlsearch": true,
   "vim.smartRelativeLine": true,
+
+  // Which Key Configuration
   "vim.whichkey.enabled": true,
   "vim.whichkey.delay": 0,
   "vim.whichkey.showMenu": "onlyMenu",
+
+  // Key Handling Exceptions
   "vim.handleKeys": {
     "<C-a>": false,
     "<C-f>": false,
@@ -17,13 +22,18 @@
     "<C-x>": false,
     "<C-z>": false
   },
+
+  // Insert Mode Keybindings
   "vim.insertModeKeyBindings": [
     {
       "before": ["j", "k"],
       "after": ["<Esc>"]
     }
   ],
+
+  // Normal Mode Keybindings
   "vim.normalModeKeyBindingsNonRecursive": [
+    // File Operations
     {
       "before": ["<leader>", "f"],
       "name": "+file"
@@ -53,6 +63,8 @@
       "commands": ["workbench.action.files.saveAll"],
       "name": "Save All Files"
     },
+
+    // Buffer Operations
     {
       "before": ["<leader>", "b"],
       "name": "+buffer"
@@ -77,6 +89,8 @@
       "commands": ["workbench.action.previousEditor"],
       "name": "Previous Buffer"
     },
+
+    // Quick Access
     {
       "before": ["<leader>", "e"],
       "commands": ["workbench.view.explorer"],
@@ -87,6 +101,8 @@
       "commands": ["workbench.action.terminal.toggleTerminal"],
       "name": "Toggle Terminal"
     },
+
+    // Git Operations
     {
       "before": ["<leader>", "g"],
       "name": "+git"
@@ -106,6 +122,8 @@
       "commands": ["git.unstage"],
       "name": "Unstage Changes"
     },
+
+    // Code Actions
     {
       "before": ["<leader>", "c"],
       "name": "+code"
@@ -135,6 +153,8 @@
       "commands": ["editor.action.goToImplementation"],
       "name": "Go to Implementation"
     },
+
+    // Window Management
     {
       "before": ["<leader>", "w"],
       "name": "+window"
@@ -175,6 +195,8 @@
       "name": "Close Window"
     }
   ],
+
+  // Visual Mode Keybindings
   "vim.visualModeKeyBindingsNonRecursive": [
     {
       "before": ["<leader>", "c", "f"],
