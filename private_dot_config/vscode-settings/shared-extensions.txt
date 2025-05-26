@@ -4,6 +4,7 @@ vspacecode.whichkey
 
 # Git integration
 eamodio.gitlens
+vivaxy.vscode-conventional-commits
 
 # Theme and icons
 catppuccin.catppuccin-vsc
