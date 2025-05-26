@@ -1,17 +1,63 @@
-{{/* Auto-assembled VS Code settings for Codium */}}
+{{/* Auto-assembled VS Code settings for VSCodium */}}
 {{- $settings := dict -}}
+{{- $allVimNormalBindings := list -}}
+{{- $allVimVisualBindings := list -}}
+{{- $allVimInsertBindings := list -}}
+
 {{- $settingsDir := joinPath .chezmoi.sourceDir "private_dot_config/vscode-settings" -}}
 {{- if stat $settingsDir -}}
   {{- range (glob (joinPath $settingsDir "*.json")) -}}
     {{- $content := include . | fromJson -}}
+
+    {{/* Safely collect vim keybindings */}}
+    {{- if and (hasKey $content "vim") (hasKey $content.vim "normalModeKeyBindingsNonRecursive") -}}
+      {{- $allVimNormalBindings = concat $allVimNormalBindings $content.vim.normalModeKeyBindingsNonRecursive -}}
+      {{- $content = unset $content.vim "normalModeKeyBindingsNonRecursive" -}}
+    {{- else if hasKey $content "vim.normalModeKeyBindingsNonRecursive" -}}
+      {{- $allVimNormalBindings = concat $allVimNormalBindings (index $content "vim.normalModeKeyBindingsNonRecursive") -}}
+      {{- $content = unset $content "vim.normalModeKeyBindingsNonRecursive" -}}
+    {{- end -}}
+
+    {{- if and (hasKey $content "vim") (hasKey $content.vim "visualModeKeyBindingsNonRecursive") -}}
+      {{- $allVimVisualBindings = concat $allVimVisualBindings $content.vim.visualModeKeyBindingsNonRecursive -}}
+      {{- $content = unset $content.vim "visualModeKeyBindingsNonRecursive" -}}
+    {{- else if hasKey $content "vim.visualModeKeyBindingsNonRecursive" -}}
+      {{- $allVimVisualBindings = concat $allVimVisualBindings (index $content "vim.visualModeKeyBindingsNonRecursive") -}}
+      {{- $content = unset $content "vim.visualModeKeyBindingsNonRecursive" -}}
+    {{- end -}}
+
+    {{- if and (hasKey $content "vim") (hasKey $content.vim "insertModeKeyBindings") -}}
+      {{- $allVimInsertBindings = concat $allVimInsertBindings $content.vim.insertModeKeyBindings -}}
+      {{- $content = unset $content.vim "insertModeKeyBindings" -}}
+    {{- else if hasKey $content "vim.insertModeKeyBindings" -}}
+      {{- $allVimInsertBindings = concat $allVimInsertBindings (index $content "vim.insertModeKeyBindings") -}}
+      {{- $content = unset $content "vim.insertModeKeyBindings" -}}
+    {{- end -}}
+
+    {{/* Merge the rest of the settings */}}
     {{- $settings = merge $settings $content -}}
   {{- end -}}
 {{- end -}}
 
-{{/* Codium-specific overrides */}}
+{{/* Add collected vim keybindings back */}}
+{{- if $allVimNormalBindings -}}
+  {{- $settings = merge $settings (dict "vim.normalModeKeyBindingsNonRecursive" $allVimNormalBindings) -}}
+{{- end -}}
+
+{{- if $allVimVisualBindings -}}
+  {{- $settings = merge $settings (dict "vim.visualModeKeyBindingsNonRecursive" $allVimVisualBindings) -}}
+{{- end -}}
+
+{{- if $allVimInsertBindings -}}
+  {{- $settings = merge $settings (dict "vim.insertModeKeyBindings" $allVimInsertBindings) -}}
+{{- end -}}
+
+{{/* VSCodium-specific overrides */}}
 {{- $codiumOverrides := dict -}}
 {{- $codiumOverrides = merge $codiumOverrides (dict "telemetry.telemetryLevel" "off") -}}
 {{- $codiumOverrides = merge $codiumOverrides (dict "update.mode" "manual") -}}
+{{- $codiumOverrides = merge $codiumOverrides (dict "extensions.autoCheckUpdates" false) -}}
+{{- $codiumOverrides = merge $codiumOverrides (dict "extensions.autoUpdate" false) -}}
 
 {{- $settings = merge $settings $codiumOverrides -}}
 {{ $settings | toPrettyJson }}
