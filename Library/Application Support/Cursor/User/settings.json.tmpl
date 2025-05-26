@@ -7,7 +7,7 @@
 {{- $settingsDir := joinPath .chezmoi.sourceDir "private_dot_config/vscode-settings" -}}
 {{- if stat $settingsDir -}}
   {{- range (glob (joinPath $settingsDir "*.json")) -}}
-    {{- $content := include . | fromJson -}}
+    {{- $content := include . | fromJsonc -}}
 
     {{/* Safely collect vim keybindings */}}
     {{- if and (hasKey $content "vim") (hasKey $content.vim "normalModeKeyBindingsNonRecursive") -}}
