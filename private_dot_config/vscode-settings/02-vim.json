@@ -33,6 +33,52 @@
 
   // Normal Mode Keybindings
   "vim.normalModeKeyBindingsNonRecursive": [
+    // Navigation and Code Intelligence
+    {
+      "before": ["g", "d"],
+      "commands": ["editor.action.revealDefinition"],
+      "name": "Go to Definition"
+    },
+    {
+      "before": ["g", "D"],
+      "commands": ["editor.action.peekDefinition"],
+      "name": "Peek Definition"
+    },
+    {
+      "before": ["g", "y"],
+      "commands": ["editor.action.goToTypeDefinition"],
+      "name": "Go to Type Definition"
+    },
+    {
+      "before": ["g", "i"],
+      "commands": ["editor.action.goToImplementation"],
+      "name": "Go to Implementation"
+    },
+    {
+      "before": ["g", "I"],
+      "commands": ["editor.action.peekImplementation"],
+      "name": "Peek Implementation"
+    },
+    {
+      "before": ["g", "r"],
+      "commands": ["editor.action.goToReferences"],
+      "name": "Go to References"
+    },
+
+    // Information and Documentation
+    {
+      "before": ["g", "h"],
+      "commands": ["editor.action.showHover"],
+      "name": "Show Hover"
+    },
+
+    // Code Actions
+    {
+      "before": ["g", "x"],
+      "commands": ["editor.action.quickFix"],
+      "name": "Quick Fix"
+    },
+
     // File Operations
     {
       "before": ["<leader>", "f"],

@@ -5,6 +5,63 @@
 
   // Which Key Menu Bindings
   "whichkey.bindings": [
+    // Navigation and Code Intelligence
+    {
+      "key": "g",
+      "name": "+goto",
+      "type": "bindings",
+      "bindings": [
+        {
+          "key": "d",
+          "name": "Go to Definition",
+          "type": "command",
+          "command": "editor.action.revealDefinition"
+        },
+        {
+          "key": "D",
+          "name": "Peek Definition",
+          "type": "command",
+          "command": "editor.action.peekDefinition"
+        },
+        {
+          "key": "y",
+          "name": "Go to Type Definition",
+          "type": "command",
+          "command": "editor.action.goToTypeDefinition"
+        },
+        {
+          "key": "i",
+          "name": "Go to Implementation",
+          "type": "command",
+          "command": "editor.action.goToImplementation"
+        },
+        {
+          "key": "I",
+          "name": "Peek Implementation",
+          "type": "command",
+          "command": "editor.action.peekImplementation"
+        },
+        {
+          "key": "r",
+          "name": "Go to References",
+          "type": "command",
+          "command": "editor.action.goToReferences"
+        },
+        {
+          "key": "h",
+          "name": "Show Hover",
+          "type": "command",
+          "command": "editor.action.showHover"
+        },
+        {
+          "key": "x",
+          "name": "Quick Fix",
+          "type": "command",
+          "command": "editor.action.quickFix"
+        }
+      ]
+    },
+
     // File Operations Menu
     {
       "key": "f",
