@@ -4,6 +4,10 @@
     "**/.local/share/chezmoi/private_dot_config/vscode-settings/*.json": "jsonc"
   },
 
+  // Extension Updates
+  "extensions.autoUpdate": false,
+  "extensions.autoCheckUpdates": false,
+
   // Editor Display
   "editor.lineNumbers": "relative",
   "editor.cursorSurroundingLines": 8,

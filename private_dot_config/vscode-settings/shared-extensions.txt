@@ -1,46 +1,45 @@
 # Core functionality
-vscodevim.vim
-vspacecode.whichkey
+vscodevim.vim@1.30.0
+vspacecode.whichkey@0.11.4
 
 # Git integration
-eamodio.gitlens
-github.vscode-github-actions
+eamodio.gitlens@17.1.1
+github.vscode-github-actions@0.27.1
 
 # Theme and icons
-catppuccin.catppuccin-vsc
-catppuccin.catppuccin-vsc-icons
+catppuccin.catppuccin-vsc@3.17.0
+catppuccin.catppuccin-vsc-icons@1.21.0
 
 # Language support
-ms-python.python
-ms-python.black-formatter
-golang.go
-ms-vscode.vscode-typescript-next
-bradlc.vscode-tailwindcss
-rust-lang.rust-analyzer
-ms-vscode.makefile-tools
+ms-python.python@2025.6.1
+ms-python.black-formatter@2025.2.0
+golang.go@0.46.1
+ms-vscode.vscode-typescript-next@5.9.20250525
+bradlc.vscode-tailwindcss@0.14.19
+rust-lang.rust-analyzer@0.3.2474
+ms-vscode.makefile-tools@0.12.17
 
 # Formatters and linters
-esbenp.prettier-vscode
-ms-vscode.vscode-eslint
-timonwong.shellcheck
-redhat.vscode-yaml
-be5invis.toml
-davidanson.vscode-markdownlint
+esbenp.prettier-vscode@11.0.0
+dbaeumer.vscode-eslint@3.0.13
+timonwong.shellcheck@0.37.7
+redhat.vscode-yaml@1.18.0
+be5invis.toml@0.6.0
+davidanson.vscode-markdownlint@0.60.0
 
 # Utilities
-streetsidesoftware.code-spell-checker
-ms-vscode.hexeditor
-ms-kubernetes-tools.vscode-kubernetes-tools
+streetsidesoftware.code-spell-checker@4.0.47
+ms-vscode.hexeditor@0.12.17
+ms-kubernetes-tools.vscode-kubernetes-tools@1.3.20
 
 # Docker and containers
-ms-vscode-remote.remote-containers
-ms-azuretools.vscode-docker
+ms-vscode-remote.remote-containers@0.394.0
+ms-azuretools.vscode-docker@1.29.6
 
 # Development tools
-ms-vscode.live-server
-formulahendry.auto-rename-tag
-christian-kohler.path-intellisense
-ms-vscode.vscode-json
+ms-vscode.live-server@0.4.15
+formulahendry.auto-rename-tag@0.1.10
+christian-kohler.path-intellisense@2.10.0
 
 # Fish Language Support
-bmalehorn.vscode-fish
+bmalehorn.vscode-fish@1.0.39
