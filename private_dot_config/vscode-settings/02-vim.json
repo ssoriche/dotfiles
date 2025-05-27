@@ -191,8 +191,8 @@
     },
     {
       "before": ["<leader>", "c", "d"],
-      "commands": ["editor.action.revealDefinition"],
-      "name": "Go to Definition"
+      "commands": ["editor.action.showHover"],
+      "name": "Line Diagnostics"
     },
     {
       "before": ["<leader>", "c", "i"],
