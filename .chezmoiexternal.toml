@@ -29,7 +29,7 @@ refreshPeriod = "168h"
 type = "file"
 url = "https://raw.githubusercontent.com/common-fate/granted/refs/heads/main/scripts/assume.fish"
 refreshPeriod = "168h"
-["Library/Application Support/k9s/skins"]
+[".config/k9s/skins"]
 type = "archive"
 url = "https://github.com/catppuccin/k9s/archive/main.tar.gz"
 refreshPeriod = "168h"
