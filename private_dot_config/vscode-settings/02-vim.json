@@ -7,6 +7,14 @@
   "vim.useCtrlKeys": true,
   "vim.hlsearch": true,
   "vim.smartRelativeLine": true,
+  "vim.textwidth": 0,
+  "vim.autoindent": true,
+  "vim.changeWordIncludesWhitespace": false,
+
+  // Undo Behavior
+  "vim.history": 1000,
+  "vim.undolevels": 1000,
+  "vim.foldfix": true,
 
   // Which Key Configuration
   "vim.whichkey.enabled": true,
