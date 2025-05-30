@@ -47,6 +47,14 @@
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
   "files.autoSave": "onFocusChange",
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true
+  },
 
   // Workbench UI
   "workbench.startupEditor": "none",
@@ -71,16 +79,6 @@
     "**/dist": true,
     "**/build": true,
     "**/target": true,
-    "**/.git": true,
-    "**/.svn": true,
-    "**/.hg": true,
-    "**/CVS": true,
-    "**/.DS_Store": true,
-    "**/Thumbs.db": true
-  },
-
-  // File Explorer Exclusions
-  "files.exclude": {
     "**/.git": true,
     "**/.svn": true,
     "**/.hg": true,
