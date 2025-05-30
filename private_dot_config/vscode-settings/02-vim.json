@@ -11,6 +11,9 @@
   "vim.autoindent": true,
   "vim.changeWordIncludesWhitespace": false,
 
+  // Surround Settings
+  "vim.surround": true,
+
   // Undo Behavior
   "vim.history": 1000,
   "vim.undolevels": 1000,

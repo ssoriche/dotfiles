@@ -5,6 +5,35 @@
 
   // Which Key Menu Bindings
   "whichkey.bindings": [
+    // Surround Operations
+    {
+      "key": "c s",
+      "name": "Change surroundings",
+      "type": "command",
+      "command": "vim.remap",
+      "args": {
+        "after": ["c", "s"]
+      }
+    },
+    {
+      "key": "d s",
+      "name": "Delete surroundings",
+      "type": "command",
+      "command": "vim.remap",
+      "args": {
+        "after": ["d", "s"]
+      }
+    },
+    {
+      "key": "y s",
+      "name": "Add surroundings",
+      "type": "command",
+      "command": "vim.remap",
+      "args": {
+        "after": ["y", "s"]
+      }
+    },
+
     // Navigation and Code Intelligence
     {
       "key": "g",
