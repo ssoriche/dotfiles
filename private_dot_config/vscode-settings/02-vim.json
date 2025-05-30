@@ -34,14 +34,6 @@
     "<C-z>": false
   },
 
-  // Insert Mode Keybindings
-  "vim.insertModeKeyBindings": [
-    {
-      "before": ["j", "k"],
-      "after": ["<Esc>"]
-    }
-  ],
-
   // Normal Mode Keybindings
   "vim.normalModeKeyBindingsNonRecursive": [
     // Navigation and Code Intelligence
