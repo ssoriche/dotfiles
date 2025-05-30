@@ -50,16 +50,18 @@
 
   // Workbench UI
   "workbench.startupEditor": "none",
-  "workbench.editor.enablePreview": false,
   "workbench.activityBar.visible": false,
   "workbench.statusBar.visible": true,
   "workbench.editor.showTabs": "multiple",
   "workbench.editor.tabCloseButton": "right",
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.enablePreviewFromQuickOpen": false,
 
   // Explorer Configuration
   "explorer.compactFolders": false,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
+  "workbench.list.openMode": "singleClick",
   "workbench.tree.indent": 20,
 
   // Search Configuration
