@@ -27,10 +27,7 @@
   "editor.renderWhitespace": "none",
   "editor.renderControlCharacters": false,
 
-  // Font Configuration
-  "editor.fontFamily": "JetBrains Mono, Menlo, Monaco, 'Courier New', monospace",
-  "editor.fontSize": 14,
-  "editor.lineHeight": 1.5,
+  // Font Configuration moved to 03-theme.json for consolidation
 
   // Editor Behavior
   "editor.tabSize": 2,
@@ -126,12 +123,10 @@
     "sync": false
   },
 
-  // Git Commit Editor
+  // Git Commit Editor (fonts moved to 03-theme.json)
   "[git-commit]": {
     "editor.rulers": [50, 72],
     "editor.wordWrap": "off",
-    "editor.fontFamily": "JetBrains Mono, Menlo, Monaco, 'Courier New', monospace",
-    "editor.fontSize": 13,
     "editor.quickSuggestions": {
       "comments": false,
       "strings": true,

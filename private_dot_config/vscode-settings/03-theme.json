@@ -42,8 +42,45 @@
   },
   "editor.tokenColorCustomizations": {},
 
+  // === UNIVERSAL FONT CONFIGURATION ===
+  // JetBrains Mono Nerd Font used everywhere for consistency and icons
+
+  // Editor Fonts
+  "editor.fontFamily": "JetBrains Mono Nerd Font, JetBrains Mono, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontSize": 14,
+  "editor.lineHeight": 1.5,
+
+  // Workbench and UI Fonts
+  "workbench.fontFamily": "JetBrains Mono Nerd Font, JetBrains Mono, -apple-system, BlinkMacSystemFont, sans-serif",
+
+  // Chat and AI Interface Fonts
+  "chat.editor.fontFamily": "JetBrains Mono Nerd Font, JetBrains Mono, Menlo, Monaco, 'Courier New', monospace",
+  "chat.editor.fontSize": 13,
+
+  // Sidebar and Explorer Fonts
+  "workbench.tree.fontFamily": "JetBrains Mono Nerd Font, JetBrains Mono, Menlo, Monaco, 'Courier New', monospace",
+  "workbench.list.fontFamily": "JetBrains Mono Nerd Font, JetBrains Mono, Menlo, Monaco, 'Courier New', monospace",
+
+  // Panel and UI Fonts
+  "workbench.panel.fontFamily": "JetBrains Mono Nerd Font, JetBrains Mono, Menlo, Monaco, 'Courier New', monospace",
+  "workbench.sideBar.fontFamily": "JetBrains Mono Nerd Font, JetBrains Mono, Menlo, Monaco, 'Courier New', monospace",
+
+  // Input and Control Fonts
+  "input.fontFamily": "JetBrains Mono Nerd Font, JetBrains Mono, Menlo, Monaco, 'Courier New', monospace",
+  "dropdown.fontFamily": "JetBrains Mono Nerd Font, JetBrains Mono, Menlo, Monaco, 'Courier New', monospace",
+
+  // Debug and Output Fonts
+  "debug.console.fontFamily": "JetBrains Mono Nerd Font, JetBrains Mono, Menlo, Monaco, 'Courier New', monospace",
+  "output.fontFamily": "JetBrains Mono Nerd Font, JetBrains Mono, Menlo, Monaco, 'Courier New', monospace",
+
+  // Git Commit Editor Fonts
+  "[git-commit]": {
+    "editor.fontFamily": "JetBrains Mono Nerd Font, JetBrains Mono, Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontSize": 13
+  },
+
   // Terminal Appearance
-  "terminal.integrated.fontFamily": "JetBrains Mono, Menlo, Monaco, 'Courier New', monospace",
+  "terminal.integrated.fontFamily": "JetBrains Mono Nerd Font, JetBrains Mono, Menlo, Monaco, 'Courier New', monospace",
   "terminal.integrated.fontSize": 13,
   "terminal.integrated.lineHeight": 1.2,
   "terminal.integrated.cursorBlinking": true,
