@@ -2,7 +2,44 @@
   // Theme Configuration
   "workbench.colorTheme": "Catppuccin Mocha",
   "workbench.iconTheme": "catppuccin-mocha",
-  "workbench.colorCustomizations": {},
+  "workbench.colorCustomizations": {
+    // Status Bar - Main sections with vibrant colors
+    "statusBar.background": "#89b4fa",
+    "statusBar.foreground": "#1e1e2e",
+    "statusBar.border": "#6c7086",
+
+    // Status Bar - No folder open
+    "statusBar.noFolderBackground": "#f38ba8",
+    "statusBar.noFolderForeground": "#1e1e2e",
+
+    // Status Bar - Debugging
+    "statusBar.debuggingBackground": "#fab387",
+    "statusBar.debuggingForeground": "#1e1e2e",
+
+    // Status Bar Items - Individual sections
+    "statusBarItem.activeBackground": "#cba6f7",
+    "statusBarItem.hoverBackground": "#b4befe",
+    "statusBarItem.prominentBackground": "#a6e3a1",
+    "statusBarItem.prominentForeground": "#1e1e2e",
+    "statusBarItem.prominentHoverBackground": "#94e2d5",
+
+    // Status Bar - Remote indicator
+    "statusBarItem.remoteBackground": "#f9e2af",
+    "statusBarItem.remoteForeground": "#1e1e2e",
+
+    // Status Bar - Error/Warning indicators
+    "statusBarItem.errorBackground": "#f38ba8",
+    "statusBarItem.errorForeground": "#1e1e2e",
+    "statusBarItem.warningBackground": "#fab387",
+    "statusBarItem.warningForeground": "#1e1e2e",
+
+    // Activity Bar to complement the colorful status bar
+    "activityBar.background": "#313244",
+    "activityBar.foreground": "#cdd6f4",
+    "activityBar.activeBorder": "#89b4fa",
+    "activityBarBadge.background": "#f38ba8",
+    "activityBarBadge.foreground": "#1e1e2e"
+  },
   "editor.tokenColorCustomizations": {},
 
   // Terminal Appearance
