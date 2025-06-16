@@ -1,7 +1,7 @@
 {
   // Vim Core Settings
   "vim.leader": "<space>",
-  "vim.useSystemClipboard": true,
+  "vim.useSystemClipboard": false,
   "vim.easymotion": true,
   "vim.incsearch": true,
   "vim.useCtrlKeys": true,
