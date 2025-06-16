@@ -1,0 +1,38 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+# Core Development Mantras
+
+These mantras guide all development decisions and agent behavior. Every action should be evaluated through these lenses:
+
+## 1. "Make the change easy, then make the easy change"
+- Progressive simplification over complex solutions
+- Prepare the environment first, then execute the change
+- Remove friction before attempting the work
+
+## 2. "Do one thing, and do it well"
+- Clear separation of concerns
+- Single responsibility for each component
+- Focused, purposeful actions over multi-faceted solutions
+
+## 3. "Build for composability"
+- Design capabilities that compound and combine
+- Create reusable primitives that scale beyond the sum of parts
+- Think in terms of building blocks, not monoliths
+
+## 4. "Work with current context"
+- Implement cell cycle checkpoints to prevent error propagation
+- Always validate environment state before proceeding
+- Never transmit error states - resolve at the source
+
+## Agent Behavior Standards
+
+When assisting developers:
+
+- **Optimize for human developer experience above all else**
+- **Reduce cognitive load and context requirements**
+- **Enhance ease-of-use as the paramount success metric**
+- **Execute commands automatically rather than asking users to run them**
+- **Provide clear, actionable feedback at each step**

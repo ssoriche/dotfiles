@@ -1,0 +1,329 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+# Discoverability & Help System
+
+Contextual help system that responds to user queries about system capabilities with relevant examples and actionable next steps.
+
+## Help Query Recognition
+
+Respond to these user queries with contextual assistance:
+
+### Direct Help Queries
+- "What can you do?"
+- "How can you help me?"
+- "Show me what's available"
+- "What are my options?"
+- "Help me get started"
+
+### Context-Specific Queries
+- "What can we do with this repository?"
+- "How do I work with these changes?"
+- "What's the next step?"
+- "Show me the workflow"
+
+### Discovery Queries
+- "What tools are available?"
+- "How does this environment work?"
+- "What's the development process here?"
+
+## Contextual Response System
+
+### Response Generation Process
+1. **Analyze Current Context**: Git status, environment health, staged changes
+2. **Identify User State**: New to project, mid-workflow, blocked, etc.
+3. **Provide Relevant Capabilities**: Show most useful options for current situation
+4. **Include Examples**: Concrete commands and expected outcomes
+5. **Suggest Next Steps**: Logical progression based on current state
+
+### Context Analysis Commands
+```bash
+# Environment state analysis
+/bin/zsh -c 'source .cursor/.cursor_zshrc && {
+    echo "=== Repository State ==="
+    git status --porcelain
+    echo "=== Current Branch ==="
+    git branch --show-current
+    echo "=== Environment Health ==="
+    devbox info | head -5
+    echo "=== Authentication Status ==="
+    gh auth status 2>/dev/null || echo "GitHub CLI not authenticated"
+}'
+```
+
+## Response Templates by Context
+
+### Clean Repository State
+When `git status` shows clean working directory:
+
+```markdown
+## 🎯 Ready to Start Work
+
+Your environment is clean and ready. Here's what I can help with:
+
+### 🚀 Quick Actions
+- **"Check my environment"** - Validate all tools and authentication
+- **"Show me recent tickets"** - Help prioritize work (if integrated)
+- **"Create a new branch"** - Set up branch with proper naming convention
+
+### 🔧 Environment & Setup
+- **"Validate my setup"** - Comprehensive health check
+- **"Fix Docker issues"** - Resolve common Docker/Colima problems
+- **"Refresh authentication"** - Update GitHub, AWS, Docker credentials
+
+### 📚 Learning & Discovery
+- **"Explain the workflow"** - Overview of development process
+- **"Show me best practices"** - Code quality and commit standards
+- **"What's the branching strategy?"** - Git workflow explanation
+
+**Suggested Next Step**: If you're starting new work, try "Check my environment" to ensure everything is ready.
+```
+
+### Staged Changes Present
+When `git status` shows staged files:
+
+```markdown
+## 📝 Ready to Commit
+
+I see you have staged changes. Here's how I can help:
+
+### 🎯 Commit Workflow
+- **"Commit my changes"** - Generate Tim Pope compliant commit message and commit
+- **"Show me what's staged"** - Analyze staged changes and impact
+- **"Generate commit message"** - Create message without committing yet
+
+### 🔍 Change Analysis
+- **"Analyze these changes"** - Review business impact and technical details
+- **"Check for issues"** - Validate no large files, secrets, or conflicts
+- **"Review commit quality"** - Ensure changes follow best practices
+
+### 🚀 Full Workflow
+- **"Commit and create PR"** - Complete workflow from commit to pull request
+- **"Just commit for now"** - Commit changes, create PR later
+
+**Current Status**:
+- Staged files: [list files from git status]
+- Branch: [current branch name]
+- Ready for commit with proper message generation
+
+**Suggested Next Step**: Try "commit my changes" for automated workflow with safety checks.
+```
+
+### Unstaged Changes Present
+When `git status` shows modified files:
+
+```markdown
+## ✏️ Work in Progress
+
+I see you have unstaged changes. Here's how I can help:
+
+### 📋 Change Management
+- **"Show me what changed"** - Review your modifications
+- **"Stage my changes"** - Smart staging with conflict detection (never blind git add .)
+- **"Stage specific files"** - Interactive staging for precise control
+
+### 🔍 Analysis & Review
+- **"Analyze my changes"** - Impact assessment and code review
+- **"Check for problems"** - Detect large files, secrets, formatting issues
+- **"Compare with main"** - See changes relative to main branch
+
+### 🎯 Next Steps
+- **"Prepare for commit"** - Stage changes and prepare commit workflow
+- **"Commit workflow"** - Stage, commit, and optionally create PR
+
+**Current Status**:
+- Modified files: [list modified files]
+- Branch: [current branch name]
+- Next: Stage changes when ready
+
+**Suggested Next Step**: Review changes with "show me what changed", then "stage my changes" when ready.
+```
+
+### Branch Behind Remote
+When local branch is behind remote:
+
+```markdown
+## 🔄 Sync Required
+
+Your branch is behind the remote. Here's how I can help:
+
+### 🔄 Sync Operations
+- **"Update my branch"** - Safe pull with rebase strategy
+- **"Check what's new"** - See incoming changes before pulling
+- **"Resolve conflicts"** - Help with merge conflict resolution
+
+### 📊 Branch Analysis
+- **"Show branch status"** - Detailed local vs remote comparison
+- **"Check for conflicts"** - Preview potential merge issues
+- **"Review incoming changes"** - Understand what others have done
+
+### ⚠️ Safety First
+- **"Stash my work"** - Save current changes before sync
+- **"Create backup branch"** - Safety backup before major operations
+
+**Current Status**:
+- Branch: [current branch] is [X] commits behind origin/[branch]
+- Working directory: [clean/dirty status]
+
+**Suggested Next Step**: "Update my branch" for safe synchronization with conflict detection.
+```
+
+### Environment Issues Detected
+When health checks fail:
+
+```markdown
+## 🔧 Environment Needs Attention
+
+I detected some environment issues. Here's how I can help:
+
+### 🚨 Immediate Fixes
+- **"Fix my environment"** - Automated repair of common issues
+- **"Check Docker"** - Diagnose and fix Docker/Colima problems
+- **"Refresh authentication"** - Update expired tokens and credentials
+
+### 🔍 Diagnostic Tools
+- **"Run health check"** - Comprehensive environment validation
+- **"Show me what's broken"** - Detailed problem analysis
+- **"Check devbox status"** - Validate devbox environment
+
+### 📚 Learning & Prevention
+- **"Explain the error"** - Understand what went wrong
+- **"Prevent this issue"** - Learn how to avoid future problems
+- **"Share this fix"** - Contribute solution to team knowledge
+
+**Current Issues Detected**:
+[List specific problems found]
+
+**Suggested Next Step**: Try "fix my environment" for automated repair, or "run health check" for detailed analysis.
+```
+
+### New to Repository
+When no git history or first time patterns detected:
+
+```markdown
+## 👋 Welcome to the Repository
+
+Looks like you're new here! Here's how I can help you get started:
+
+### 🚀 Getting Started
+- **"Set up my environment"** - Complete development environment setup
+- **"Explain this project"** - Overview of repository structure and purpose
+- **"Show me the workflow"** - Development process and best practices
+
+### 🔧 Environment Setup
+- **"Check my tools"** - Validate required development tools
+- **"Configure git"** - Set up git with proper configuration
+- **"Test my setup"** - End-to-end environment validation
+
+### 📚 Learning Resources
+- **"What are the standards?"** - Code quality and commit message guidelines
+- **"How do I contribute?"** - Contribution workflow and review process
+- **"Show me examples"** - Sample workflows and common patterns
+
+### 🎯 First Steps
+- **"Create my first branch"** - Proper branch naming and setup
+- **"Find a starter task"** - Help identify good first issues
+
+**Suggested Next Step**: Start with "set up my environment" to ensure everything is configured properly.
+```
+
+## Dynamic Capability Listing
+
+### Core Capabilities Always Available
+```markdown
+## 🎯 Core Capabilities
+
+### Git Workflow Automation
+- Smart staging (never blind git add .)
+- Tim Pope compliant commit messages
+- Safe branch operations with validation
+- Automated PR creation with templates
+
+### Environment Management
+- Health monitoring and validation
+- Automated repair of common issues
+- Docker/Colima management
+- Authentication handling (GitHub, AWS, Docker)
+
+### Self-Healing System
+- Failure detection and learning
+- Automated fix implementation
+- Knowledge sharing via PRs to dev systems team
+- Pattern recognition for prevention
+
+### Development Support
+- Code change analysis and impact assessment
+- Best practice guidance and education
+- Context validation before starting work
+- Composable workflow primitives
+```
+
+### Context-Specific Capabilities
+Generate additional sections based on detected context:
+- **Repository-specific features** if README or docs found
+- **CI/CD integration** if workflows detected
+- **Testing capabilities** if test frameworks present
+- **Documentation generation** if docs structure exists
+
+## Educational Responses
+
+### Best Practice Guidance
+When showing capabilities, include educational context:
+
+```
+💡 **Why This Approach?**
+This system follows biological checkpoint patterns - just like cells validate
+their environment before dividing, we validate our development environment
+before making changes. This prevents "corrupted state" from spreading.
+
+🧩 **Composability Design**
+Each capability is a building block that combines with others. For example:
+validate-env → stage-files → create-commit → push-branch → create-pr
+
+This means you can use pieces independently or chain them into larger workflows.
+```
+
+### Learning Integration
+Connect capabilities to learning opportunities:
+
+```
+📚 **Learn More About:**
+- Tim Pope commit message standards: Why imperative mood matters
+- Git workflow safety: Why we never use 'git add .' blindly
+- Checkpoint protocols: How biological patterns improve software reliability
+- Composability principles: Building systems that scale and evolve
+```
+
+## Implementation Guidelines
+
+### Response Prioritization
+1. **Address Immediate Needs**: If user is blocked, prioritize unblocking actions
+2. **Match User State**: Show most relevant capabilities for current context
+3. **Provide Learning**: Include educational context without overwhelming
+4. **Suggest Next Steps**: Clear, actionable progression path
+
+### Response Format Standards
+- **Lead with Action**: Start with what user can do right now
+- **Group by Purpose**: Organize capabilities by user goals
+- **Include Examples**: Show exact commands and expected outcomes
+- **Explain Benefits**: Why this approach vs alternatives
+- **Connect to Principles**: Link to core mantras and composability
+
+### Failure Handling
+If context analysis fails:
+```markdown
+## 🤔 Let Me Help You Get Started
+
+I had trouble analyzing your current context, but I can still help! Here are some universal starting points:
+
+### 🔍 Diagnostic First Steps
+- **"Check my environment"** - Comprehensive health validation
+- **"Show repository status"** - Current git and project state
+- **"Validate my setup"** - Ensure all tools are working
+
+Once I understand your situation better, I can provide more targeted assistance.
+```
+
+This discoverability system transforms the cursor rules from a passive system into an active guide that meets users where they are and helps them understand what's possible.
