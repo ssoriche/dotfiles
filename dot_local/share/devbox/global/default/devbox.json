@@ -1,9 +1,8 @@
 {
   "packages": {
     "ripgrep": "latest",
-    "github:nix-community/neovim-nightly-overlay/7545e949aa9bc2396130191100f1fbf9765bc448": "",
+    "github:nix-community/neovim-nightly-overlay/a2f0b8e4d30ea28a8021fa3314eb2244cc133199": "",
     "direnv": "latest",
-    "go": "1.21.4",
     "fd": "latest",
     "tig": "latest",
     "jless": "latest",
@@ -53,7 +52,15 @@
     "luarocks": "latest",
     "_1password-cli": "latest",
     "uv": "latest",
-    "lima": "latest"
+    "lima": "latest",
+    "github:wez/wezterm/5663e749948df3ed3c2d8ee0bfea6c85226310d9?dir=nix": "",
+    "obsidian": "latest",
+    "step-cli": "latest",
+    "go": "1.24",
+    "git-absorb": "latest",
+    "restic": "latest",
+    "maccy": "latest",
+    "dyff": "latest"
   },
   "shell": {
     "init_hook": [
