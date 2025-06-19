@@ -26,7 +26,6 @@
         ui = true
 [alias]
   ci = commit -v
-  fx = commit --no-edit --amend -C HEAD
   st = status
   mt = mergetool
   hist = log --all --graph --pretty='[%C(cyan)%h%Creset]%C(bold cyan)%d%Creset %s'
@@ -104,3 +103,5 @@
 [commit]
   gpgsign = true
   verbose = true
+[log]
+	date = local
