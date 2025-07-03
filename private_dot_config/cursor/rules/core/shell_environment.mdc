@@ -1,0 +1,34 @@
+# Shell Environment Configuration
+
+shell_prefix: "/usr/bin/env fish -c 'source ~/.config/cursor/cursor_config.fish &&"
+shell_suffix: "'"
+
+## Requirements
+
+- **ALWAYS prefix terminal commands with shell_prefix and append shell_suffix**
+- This ensures devbox environment is loaded with all tools and configurations
+- Commands should be wrapped like: `/usr/bin/env fish -c 'source ~/.config/cursor/cursor_config.fish && your_command_here'`
+- Never run commands in bare bash - always use the standardized fish environment
+- The cursor_config.fish file provides: devbox global, direnv integration, fixed PAGER settings
+
+## Environment Features
+
+The cursor_config.fish configuration provides:
+
+- **Devbox Integration**: Automatic loading of devbox global environment
+- **Direnv Support**: Automatic project environment loading
+- **Git Optimization**: Disabled git pager to prevent hanging in AI context
+- **PAGER Configuration**: Proper less configuration to avoid pipe errors
+- **PATH Management**: Consistent PATH setup across environments
+
+## Usage Examples
+
+```fish
+# Correct usage with environment
+/usr/bin/env fish -c 'source ~/.config/cursor/cursor_config.fish && git status'
+
+# Incorrect usage (bare command)
+git status
+```
+
+This ensures consistent behavior across all AI assistant interactions with the shell environment.
