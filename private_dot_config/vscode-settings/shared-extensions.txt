@@ -21,7 +21,7 @@ ms-vscode.makefile-tools@0.12.17
 
 # Formatters and linters
 esbenp.prettier-vscode@11.0.0
-dbaeumer.vscode-eslint@3.0.13
+dbaeumer.vscode-eslint@3.0.10
 timonwong.shellcheck@0.37.7
 redhat.vscode-yaml@1.18.0
 be5invis.toml@0.6.0
@@ -29,7 +29,7 @@ davidanson.vscode-markdownlint@0.60.0
 
 # Utilities
 streetsidesoftware.code-spell-checker@4.0.47
-ms-vscode.hexeditor@0.12.17
+ms-vscode.hexeditor@1.11.1
 ms-kubernetes-tools.vscode-kubernetes-tools@1.3.20
 
 # Docker and containers

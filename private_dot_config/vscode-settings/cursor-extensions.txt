@@ -1,2 +1,3 @@
 # Cursor AI features are built-in
 # Add any Cursor-specific extensions here
+specstory.specstory-vscode@0.15.0
