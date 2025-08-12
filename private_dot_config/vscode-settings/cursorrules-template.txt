@@ -1,0 +1,57 @@
+# Project-Specific Cursor AI Rules Template
+# Copy this file to your project root as `.cursorrules`
+# Customize these rules for your specific project needs
+
+# Environment & Tools (Inherited from Global Rules)
+- I use the fish shell
+- My primary development environment is macOS
+- I prefer using git worktrees for project management
+
+# Project-Specific Context
+- This is a [INSERT PROJECT TYPE: web app/mobile app/CLI tool/library/etc.]
+- Built with [INSERT TECH STACK: React/Vue/Python/Go/etc.]
+- [INSERT ARCHITECTURAL PATTERN: MVC/microservices/monolith/etc.]
+
+# Code Style (Project Specific)
+- Use [INSERT INDENTATION: 2/4 spaces/tabs]
+- Follow [INSERT STYLE GUIDE: company style guide/PEP8/Google Style/etc.]
+- Prefer [INSERT PATTERNS: functional/OOP/reactive/etc.] programming patterns
+
+# Project Structure
+# Describe your project structure here, e.g.:
+# src/
+#   components/     - Reusable UI components
+#   pages/         - Page-level components
+#   services/      - API and business logic
+#   utils/         - Helper functions
+#   types/         - TypeScript type definitions
+
+# Dependencies & Libraries
+- Use [INSERT PREFERRED LIBRARIES]
+- Avoid [INSERT LIBRARIES TO AVOID]
+- For [FUNCTIONALITY], prefer [SPECIFIC LIBRARY/APPROACH]
+
+# Testing Requirements
+- Write tests for all [INSERT: public APIs/critical functions/components]
+- Use [INSERT TESTING FRAMEWORK] for testing
+- Maintain [INSERT COVERAGE TARGET]% test coverage
+
+# Documentation Standards
+- Document all [INSERT: public APIs/complex algorithms/configuration]
+- Use [INSERT: JSDoc/Docstrings/README format]
+- Include examples for [INSERT: usage patterns/APIs/configurations]
+
+# Deployment & Environment
+- Target environment: [INSERT: production/staging/development specifics]
+- Build tool: [INSERT: webpack/vite/cargo/etc.]
+- Deployment method: [INSERT: Docker/serverless/static hosting/etc.]
+
+# Security & Performance
+- [INSERT SECURITY REQUIREMENTS]
+- Performance targets: [INSERT TARGETS]
+- Accessibility requirements: [INSERT: WCAG level/specific needs]
+
+# Team Conventions
+- [INSERT TEAM-SPECIFIC PATTERNS]
+- [INSERT REVIEW REQUIREMENTS]
+- [INSERT COMMIT MESSAGE FORMAT]

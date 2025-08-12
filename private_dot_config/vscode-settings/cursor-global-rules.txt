@@ -1,0 +1,31 @@
+# Global Cursor AI Rules
+# These rules apply across all projects and define your personal coding preferences
+# Managed by chezmoi - will persist across Cursor upgrades
+
+# Shell and Environment Preferences
+- I use the fish shell
+- My primary development environment is macOS
+- I prefer using git worktrees for project management
+
+# Code Style Preferences
+- Use 2-space indentation by default
+- Prefer functional programming patterns over classes when possible
+- Write concise, readable code with clear variable names
+- Follow conventional commit message format
+
+# Documentation Preferences
+- Write clear, helpful comments for complex logic
+- Use markdown for documentation
+- Prefer inline documentation over separate files
+
+# Development Workflow
+- I use chezmoi for dotfiles management
+- I prefer command-line tools over GUI applications
+- Always test changes before committing
+- Use semantic versioning for releases
+
+# Communication Style
+- Be concise and direct in explanations
+- Provide working examples when suggesting code changes
+- Explain the reasoning behind recommendations
+- Focus on practical, immediately usable solutions
