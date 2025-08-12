@@ -31,10 +31,11 @@ This repository contains my personal dotfiles and configuration files for:
 2. **Initialize with this repository**:
 
    ```bash
-   chezmoi init --apply https://github.com/YOUR_USERNAME/dotfiles.git
+   chezmoi init --apply https://github.com/USERNAME/dotfiles.git
    ```
 
 3. **Apply configurations**:
+
    ```bash
    chezmoi apply
    ```
@@ -47,7 +48,7 @@ This dotfiles setup uses a modular approach to manage Cursor and VSCode settings
 
 #### Settings Structure
 
-```
+```text
 private_dot_config/vscode-settings/
 ├── 01-base.json          # Core editor settings
 ├── 02-vim.json           # Vim keybindings and behavior
@@ -83,11 +84,13 @@ manage-vscode-settings.fish diff all
 
 Extensions are managed through text files that list required extensions:
 
-```
+```text
 private_dot_config/vscode-settings/
-├── cursor-extensions.txt     # Cursor-specific extensions
-├── codium-extensions.txt     # VSCodium-specific extensions
-└── shared-extensions.txt     # Extensions for both editors
+├── cursor-extensions.txt        # Cursor-specific extensions
+├── codium-extensions.txt        # VSCodium-specific extensions
+├── shared-extensions.txt        # Extensions for both editors
+├── cursor-global-rules.txt      # Legacy global Cursor rules
+└── cursorrules-template.txt     # Project-specific rules template
 ```
 
 #### Installing Extensions
@@ -111,20 +114,19 @@ manage-vscode-settings.fish sync-extensions all
 
 AI-powered development assistance through Cursor rules:
 
-```
+```text
 private_dot_config/cursor/rules/
 ├── core/
-│   └── mantras.mdc              # Core development principles
+│   └── personal-preferences.mdc # Personal development environment and workflow preferences
 └── development/
-    ├── discoverability.mdc      # Contextual help system
-    └── conventional-commits.mdc # Commit message standards
+    └── coding-standards.mdc     # General coding standards and best practices
 ```
 
 #### Cursor Rules Features
 
-- **Core Mantras**: Fundamental development principles and agent behavior standards
-- **Discoverability**: Contextual help system that responds to user queries
-- **Conventional Commits**: Automated generation of standardized commit messages
+- **Personal Preferences**: Development environment setup, code style preferences, and workflow guidelines
+- **Coding Standards**: Best practices for code quality, function design, performance, and security
+- **Modular Structure**: Rules organized by category with frontmatter configuration for conditional application
 
 ## Key Features
 
@@ -184,7 +186,7 @@ chezmoi update
 1. **Settings Updates**: Modify JSON files in `private_dot_config/vscode-settings/`
 2. **Apply Changes**: Run `manage-vscode-settings.fish apply all`
 3. **Extension Management**: Update extension lists and run `manage-vscode-settings.fish sync-extensions all`
-4. **Cursor Rules**: Add new `.mdc` files to enhance AI assistance
+4. **Cursor Rules**: Add new `.mdc` files to enhance AI assistance, deploy with `chezmoi apply ~/.config/cursor/`
 5. **Complete Setup**: Use `manage-vscode-settings.fish setup all` for new installations
 
 ### Adding New Extensions
@@ -223,6 +225,11 @@ manage-vscode-settings.fish setup all
 
 # Check status of all editors
 manage-vscode-settings.fish status
+
+# Cursor Rules Management
+manage-vscode-settings.fish cursor-rules-status  # Show Cursor rules configuration status
+manage-vscode-settings.fish apply-cursor-rules   # Apply global Cursor rules (legacy)
+manage-vscode-settings.fish backup-cursor-rules  # Backup current Cursor rules
 ```
 
 ## Upstream Projects
@@ -236,25 +243,25 @@ This configuration builds upon and integrates with several excellent open-source
 - [VSCode](https://code.visualstudio.com/) - Microsoft's code editor
 - [Neovim](https://neovim.io/) - Hyperextensible Vim-based text editor
 
-### Terminal & Shell
+### Terminal & Shell Tools
 
 - [Fish Shell](https://fishshell.com/) - Smart and user-friendly command line shell
 - [Wezterm](https://wezfurlong.org/wezterm/) - GPU-accelerated terminal emulator
 - [Ghostty](https://ghostty.org/) - Fast, native terminal emulator
 - [Atuin](https://atuin.sh/) - Magical shell history
 
-### Development Environment
+### Development Environment Tools
 
 - [Devbox](https://www.jetpack.io/devbox/) - Instant, easy, predictable development environments
 - [Nix](https://nixos.org/) - Purely functional package manager
 
-### Window Management
+### Window Management Tools
 
 - [Aerospace](https://github.com/nikitabobko/AeroSpace) - Tiling window manager for macOS
 - [Hammerspoon](https://www.hammerspoon.org/) - Desktop automation for macOS
 - [Karabiner-Elements](https://karabiner-elements.pqrs.org/) - Keyboard customizer
 
-### Cursor Rules
+### Cursor Rules Resources
 
 - [awesome-cursorrules](https://github.com/PatrickJS/awesome-cursorrules) - Collection of Cursor rules
 - [Conventional Commits](https://www.conventionalcommits.org/) - Commit message specification
@@ -276,14 +283,16 @@ This configuration builds upon and integrates with several excellent open-source
    ```
 
 3. **Apply changes**:
+
    ```bash
    chezmoi apply
    ```
 
 ### Modifying Cursor Rules
 
-1. Create new `.mdc` files in `private_dot_config/cursor/rules/`
+1. **Structured Rules**: Create new `.mdc` files in `private_dot_config/cursor/rules/core/` or `private_dot_config/cursor/rules/development/`
 2. Use the frontmatter format:
+
    ```yaml
    ---
    description: Rule description
@@ -291,6 +300,9 @@ This configuration builds upon and integrates with several excellent open-source
    alwaysApply: false
    ---
    ```
+
+3. **Deploy Rules**: Run `chezmoi apply ~/.config/cursor/` to deploy changes
+4. **Legacy Support**: Global rules file and project templates available via `manage-vscode-settings.fish` commands
 
 ### VSCode Settings Customization
 
@@ -320,4 +332,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-_This README is maintained as part of the dotfiles and is automatically deployed via chezmoi._
+_This README is maintained as part of the dotfiles repository for documentation purposes._

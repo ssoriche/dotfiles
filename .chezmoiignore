@@ -1,0 +1,19 @@
+# Documentation files that should stay in the dotfiles repo
+README.md
+
+# Temporary and backup files
+*.tmp
+*.bak
+*~
+
+# Version control
+.git/
+.gitignore
+
+# Editor files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
