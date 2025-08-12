@@ -1,0 +1,37 @@
+---
+description: General coding standards and best practices
+globs:
+alwaysApply: false
+---
+
+# Coding Standards & Best Practices
+
+These standards should be applied when writing or reviewing code.
+
+## Code Quality
+
+- **Readability First**: Code should be self-documenting and easy to understand
+- **Single Responsibility**: Each function/class should have one clear purpose
+- **DRY Principle**: Don't repeat yourself - extract common patterns
+- **YAGNI**: You aren't gonna need it - avoid over-engineering
+
+## Function Design
+
+- **Pure Functions**: Prefer pure functions with predictable inputs/outputs
+- **Error Handling**: Handle errors gracefully with meaningful messages
+- **Type Safety**: Use strong typing when available
+- **Immutability**: Prefer immutable data structures when possible
+
+## Performance Considerations
+
+- **Premature Optimization**: Avoid it - focus on correctness first
+- **Profiling**: Measure before optimizing
+- **Resource Management**: Clean up resources (memory, files, connections)
+- **Async Patterns**: Use appropriate async patterns for I/O operations
+
+## Security Practices
+
+- **Input Validation**: Validate all user inputs
+- **Secrets Management**: Never commit secrets or credentials
+- **Dependency Updates**: Keep dependencies updated for security patches
+- **Least Privilege**: Grant minimum necessary permissions

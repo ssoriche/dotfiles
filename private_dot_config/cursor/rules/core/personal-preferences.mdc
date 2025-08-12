@@ -1,0 +1,61 @@
+---
+description: Personal development environment and workflow preferences
+globs:
+alwaysApply: true
+---
+
+# Personal Development Preferences
+
+These are my personal environment and workflow preferences that should be considered in all interactions.
+
+## Environment Setup
+
+- **Shell**: I use the fish shell
+- **OS**: My primary development environment is macOS
+- **Version Control**: I prefer using git worktrees for project management
+- **Dotfiles**: I use chezmoi for dotfiles management
+
+## Code Style Preferences
+
+- **Indentation**: Use 2-space indentation by default
+- **Programming Paradigm**: Prefer functional programming patterns over classes when possible
+- **Variable Naming**: Write concise, readable code with clear variable names
+- **Documentation**:
+  - Write clear, helpful comments for complex logic
+  - Use markdown for documentation
+  - Prefer inline documentation over separate files
+
+## Development Workflow
+
+- **Tools**: I prefer command-line tools over GUI applications
+- **Testing**: Always test changes before committing
+- **Versioning**: Use semantic versioning for releases
+- **Commits**: Follow conventional commit message format (handled by conventional-commits.mdc)
+
+## Preferred Command-Line Tools
+
+When suggesting or using command-line tools, prefer these modern alternatives:
+
+- **File Search**: Use `fd` instead of `find` for finding files and directories
+
+  - Example: `fd "*.js"` instead of `find . -name "*.js"`
+  - Benefits: Faster, respects .gitignore, simpler syntax
+
+- **Text Search**: Use `rg` (ripgrep) instead of `grep` for searching file contents
+
+  - Example: `rg "function.*export"` instead of `grep -r "function.*export"`
+  - Benefits: Much faster, better defaults, respects .gitignore
+
+- **Directory Listing**: Both tools work well with pipes and other commands
+  - Example: `fd -t f | rg -l "TODO"` to find files containing TODO
+
+## Communication Style
+
+When providing assistance:
+
+- **Be concise and direct in explanations**
+- **Provide working examples when suggesting code changes**
+- **Explain the reasoning behind recommendations**
+- **Focus on practical, immediately usable solutions**
+
+These preferences should guide all suggestions, code generation, and problem-solving approaches.
