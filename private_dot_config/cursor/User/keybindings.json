@@ -1,0 +1,15 @@
+[
+  {
+    "key": "ctrl+t",
+    "command": "vim.remap",
+    "when": "editorTextFocus && vim.mode == 'Normal'",
+    "args": {
+      "after": ["<C-o>"]
+    }
+  },
+  {
+    "key": "ctrl+t",
+    "command": "workbench.action.navigateBack",
+    "when": "editorTextFocus"
+  }
+]
