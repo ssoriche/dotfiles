@@ -77,6 +77,36 @@ private_dot_config/cursor/rules/
 3. `chezmoi apply`
 4. Commit with appropriate conventional commit message
 
+### Applying Changes with chezmoi
+
+**Key Insight**: `chezmoi apply` uses TARGET paths (where files should be deployed), not SOURCE paths (in the chezmoi directory).
+
+```bash
+# ❌ Wrong - using source path
+chezmoi apply private_dot_config/cursor/rules/file.mdc
+
+# ✅ Correct - using target path
+chezmoi apply ~/.config/cursor/rules/file.mdc
+
+# Apply all changes
+chezmoi apply
+
+# Apply specific directory (target path)
+chezmoi apply ~/.config/cursor/
+
+# Apply specific file (target path)
+chezmoi apply ~/.config/cursor/rules/development/git-commit-practices.mdc
+
+# Only use --force when explicitly requested or needed
+chezmoi apply --force ~/.config/cursor/rules/development/git-commit-practices.mdc
+```
+
+**When to use `--force`** (use sparingly):
+
+- Only when explicitly requested by the user
+- When you specifically want chezmoi-managed files to override existing local changes
+- When deploying and you need to ensure the repository version takes precedence
+
 ### Managing Cursor Rules
 
 1. Create `.mdc` files in appropriate subdirectory
@@ -132,6 +162,8 @@ private_dot_config/cursor/rules/
 - Don't create files unnecessarily - prefer editing existing ones
 - Don't ignore chezmoi conventions for file naming
 - Don't forget to source-attribute external configurations
+- **Don't use source paths with `chezmoi apply`** - always use target paths (where files should be deployed)
+- Don't apply all configurations when only specific files need updating - use targeted `chezmoi apply` commands
 
 ### Quality Standards
 
