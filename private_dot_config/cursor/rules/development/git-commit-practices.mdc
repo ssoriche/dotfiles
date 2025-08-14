@@ -1,0 +1,92 @@
+---
+description: Git commit message best practices and conventions
+globs:
+  - "**/.git/**"
+  - "**/COMMIT_EDITMSG"
+alwaysApply: true
+---
+
+# Git Commit Best Practices
+
+## Commit Message Structure
+
+Follow conventional commits format:
+```
+type(scope): brief description
+
+Longer explanation of WHY this change was made, not WHAT was changed.
+The diff shows what changed; the message should explain the motivation,
+context, and reasoning behind the change.
+
+- Focus on the problem being solved
+- Explain the business/technical justification
+- Include any relevant context or constraints
+- Reference issues/tickets if applicable
+```
+
+## Focus on WHY, Not WHAT
+
+### ❌ Poor Examples (focuses on WHAT)
+```
+feat: add new function to calculate totals
+fix: change variable name from x to count
+docs: update README with installation steps
+```
+
+### ✅ Good Examples (focuses on WHY)
+```
+feat(auth): prevent unauthorized access to admin endpoints
+
+Users were able to bypass admin checks by manipulating headers.
+This implements proper token validation to ensure only authenticated
+admin users can access sensitive operations.
+
+fix(performance): reduce memory usage in large dataset processing
+
+Application was running out of memory on datasets >10GB due to
+loading entire dataset into memory. Switch to streaming approach
+to handle arbitrarily large files.
+
+docs(setup): clarify environment requirements for new developers
+
+Multiple developers struggled with initial setup due to unclear
+dependency versions and missing prerequisites. Add specific
+version requirements and troubleshooting section.
+```
+
+## Commit Guidelines
+
+### Types
+- **feat**: New feature that solves a user problem
+- **fix**: Bug fix that resolves an issue
+- **docs**: Documentation that improves understanding
+- **style**: Code style/formatting (no logic change)
+- **refactor**: Code restructuring for maintainability
+- **test**: Adding or fixing tests
+- **chore**: Maintenance tasks, dependency updates
+
+### Scope
+- Use meaningful scope that indicates the area of change
+- Examples: `auth`, `api`, `ui`, `config`, `cursor`, `fish`
+- Keep scopes consistent within a project
+
+### Description
+- Start with imperative verb (add, fix, prevent, implement)
+- Keep under 50 characters for the summary line
+- Don't end with a period
+- Be specific about the problem solved
+
+### Body (when needed)
+- Explain WHY the change was necessary
+- Provide context that isn't obvious from the code
+- Reference related issues or previous decisions
+- Include any breaking changes or migration notes
+
+## Review Checklist
+
+Before committing, ask:
+- [ ] Does the message explain WHY this change was made?
+- [ ] Would a new team member understand the motivation?
+- [ ] Is the scope appropriate and consistent?
+- [ ] Does the type accurately reflect the nature of the change?
+- [ ] Is there sufficient context for future maintainers?

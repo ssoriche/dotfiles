@@ -1,0 +1,88 @@
+---
+description: Fish shell syntax awareness and command usage
+globs:
+alwaysApply: true
+---
+
+# Fish Shell Syntax Rules
+
+**CRITICAL**: The user's default shell is fish, NOT bash/zsh. Always use fish syntax.
+
+## Key Fish Syntax Differences
+
+### Conditionals
+```fish
+# CORRECT - Fish syntax
+if command -v tool >/dev/null 2>&1
+    echo "tool found"
+else
+    echo "tool not found"
+end
+
+# WRONG - Bash/zsh syntax  
+if command -v tool >/dev/null 2>&1; then
+    echo "tool found"
+else
+    echo "tool not found"
+fi
+```
+
+### Loops
+```fish
+# CORRECT - Fish syntax
+for file in (find . -name "*.txt")
+    echo $file
+end
+
+# WRONG - Bash syntax
+for file in $(find . -name "*.txt"); do
+    echo $file
+done
+```
+
+### Environment Variables
+```fish
+# CORRECT - Fish syntax
+set -gx VARIABLE value
+set -l local_var value
+
+# WRONG - Bash/zsh syntax
+export VARIABLE=value
+local_var=value
+```
+
+### Command Substitution
+```fish
+# CORRECT - Fish syntax
+set files (ls *.txt)
+for file in (find . -name "*.md")
+
+# WRONG - Bash/zsh syntax  
+files=$(ls *.txt)
+for file in $(find . -name "*.md")
+```
+
+### String Comparison
+```fish
+# CORRECT - Fish syntax
+if test "$var" = "value"
+if string match -q "pattern" $var
+
+# WRONG - Bash syntax
+if [[ "$var" == "value" ]]
+if [ "$var" = "value" ]
+```
+
+## Command Usage Guidelines
+
+- Always test commands in fish syntax before suggesting
+- Use `and`/`or` instead of `&&`/`||` for command chaining
+- Remember fish uses different quoting and variable expansion rules
+- Fish functions are different from bash functions
+
+## When Writing Scripts
+
+- Use `#!/usr/bin/env fish` shebang for fish scripts
+- Consider the user's shell environment configuration
+- Test complex commands before providing them
+- Remember that fish is more strict about syntax than bash
