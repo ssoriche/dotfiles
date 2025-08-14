@@ -11,6 +11,7 @@ alwaysApply: true
 ## Commit Message Structure
 
 Follow conventional commits format:
+
 ```
 type(scope): brief description
 
@@ -27,6 +28,7 @@ context, and reasoning behind the change.
 ## Focus on WHY, Not WHAT
 
 ### ❌ Poor Examples (focuses on WHAT)
+
 ```
 feat: add new function to calculate totals
 fix: change variable name from x to count
@@ -34,6 +36,7 @@ docs: update README with installation steps
 ```
 
 ### ✅ Good Examples (focuses on WHY)
+
 ```
 feat(auth): prevent unauthorized access to admin endpoints
 
@@ -57,6 +60,7 @@ version requirements and troubleshooting section.
 ## Commit Guidelines
 
 ### Types
+
 - **feat**: New feature that solves a user problem
 - **fix**: Bug fix that resolves an issue
 - **docs**: Documentation that improves understanding
@@ -66,27 +70,75 @@ version requirements and troubleshooting section.
 - **chore**: Maintenance tasks, dependency updates
 
 ### Scope
+
 - Use meaningful scope that indicates the area of change
 - Examples: `auth`, `api`, `ui`, `config`, `cursor`, `fish`
 - Keep scopes consistent within a project
 
 ### Description
+
 - Start with imperative verb (add, fix, prevent, implement)
 - Keep under 50 characters for the summary line
 - Don't end with a period
 - Be specific about the problem solved
 
 ### Body (when needed)
+
 - Explain WHY the change was necessary
 - Provide context that isn't obvious from the code
 - Reference related issues or previous decisions
 - Include any breaking changes or migration notes
 
+## Commit Separation Guidelines
+
+### Separate Style from Logic
+
+**Always separate whitespace/formatting changes from functional changes:**
+
+```bash
+# ❌ Bad: Mixed style and logic changes
+feat(auth): improve user validation and fix formatting
+
+# ✅ Good: Separate commits
+style(auth): standardize indentation and spacing
+
+Improve code consistency by applying project formatting standards.
+Previous inconsistent formatting made code reviews difficult.
+
+feat(auth): strengthen password validation rules
+
+Prevent weak passwords by requiring special characters and minimum
+length. Recent security audit showed 40% of user passwords were
+easily guessable.
+```
+
+### When to Separate
+
+**Always separate when:**
+- Reformatting entire files or large sections
+- Changing indentation, spacing, or line endings
+- Applying linter fixes that don't change logic
+- Renaming variables without changing behavior
+
+**Consider combining when:**
+- Minor formatting fixes in the same lines being changed
+- Single-line style improvements alongside small logic changes
+- The style change directly enables the logic change
+
+### Benefits of Separation
+
+- **Easier code reviews**: Reviewers can focus on logic in one commit and quickly approve style-only changes
+- **Cleaner git history**: `git blame` and `git bisect` work more effectively
+- **Reduced conflicts**: Style-only commits rarely cause merge conflicts
+- **Better rollbacks**: Can revert logic changes without losing formatting improvements
+
 ## Review Checklist
 
 Before committing, ask:
+
 - [ ] Does the message explain WHY this change was made?
 - [ ] Would a new team member understand the motivation?
 - [ ] Is the scope appropriate and consistent?
 - [ ] Does the type accurately reflect the nature of the change?
+- [ ] Are style/formatting changes separated from logic changes?
 - [ ] Is there sufficient context for future maintainers?
