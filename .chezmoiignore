@@ -14,6 +14,9 @@ README.md
 .vscode/
 .idea/
 
+# AI assistant context (project-specific, not for deployment)
+.cursor/
+
 # OS files
 .DS_Store
 Thumbs.db
