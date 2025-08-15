@@ -233,6 +233,7 @@ chezmoi apply --force ~/.config/cursor/rules/development/git-commit-practices.md
 - **Don't mix project-specific settings with generic dotfiles** - kubernetes configs belong in project repos, not personal dotfiles
 - **Don't assume shared extensions belong in editor-specific lists** - categorize extensions properly based on compatibility
 - **Don't deploy management tools with chezmoi** - directories like `vscode-settings/` contain build tools, not target configurations
+- **Don't duplicate editor configurations** - avoid redundant config directories like `Code/` when the editor isn't installed; Cursor uses `Library/Application Support/Cursor/` on macOS, not `~/.config/Code/`
 
 ### Quality Standards
 
