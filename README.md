@@ -46,10 +46,12 @@ This repository contains my personal dotfiles and configuration files for:
 
 This dotfiles setup uses a modular approach to manage Cursor and VSCode settings:
 
+> **Architecture Note**: The `vscode-settings/` directory is located at the repository root (not in `private_dot_config/`) because it contains management tools and source files that should not be deployed by chezmoi. The actual settings are deployed via templates to the proper editor locations.
+
 #### Settings Structure
 
 ```text
-private_dot_config/vscode-settings/
+vscode-settings/
 ├── 01-base.json          # Core editor settings
 ├── 02-vim.json           # Vim keybindings and behavior
 ├── 03-navigation.json    # File navigation and search
@@ -69,15 +71,15 @@ The settings are automatically merged and applied using the management script:
 
 ```bash
 # Apply settings to specific editor
-manage-vscode-settings.fish apply cursor
-manage-vscode-settings.fish apply codium
+vscode-settings/bin/manage-vscode-settings.fish apply cursor
+vscode-settings/bin/manage-vscode-settings.fish apply codium
 
 # Apply settings to all editors
-manage-vscode-settings.fish apply all
+vscode-settings/bin/manage-vscode-settings.fish apply all
 
 # Show differences before applying
-manage-vscode-settings.fish diff cursor
-manage-vscode-settings.fish diff all
+vscode-settings/bin/manage-vscode-settings.fish diff cursor
+vscode-settings/bin/manage-vscode-settings.fish diff all
 ```
 
 ### Extension Management
@@ -85,7 +87,7 @@ manage-vscode-settings.fish diff all
 Extensions are managed through text files that list required extensions:
 
 ```text
-private_dot_config/vscode-settings/
+vscode-settings/
 ├── cursor-extensions.txt        # Cursor-specific extensions
 ├── codium-extensions.txt        # VSCodium-specific extensions
 ├── shared-extensions.txt        # Extensions for both editors
@@ -99,15 +101,15 @@ The management script provides convenient commands for extension installation:
 
 ```bash
 # Install extensions for specific editor
-manage-vscode-settings.fish install-extensions cursor
-manage-vscode-settings.fish install-extensions codium
+vscode-settings/bin/manage-vscode-settings.fish install-extensions cursor
+vscode-settings/bin/manage-vscode-settings.fish install-extensions codium
 
 # Install extensions for all editors
-manage-vscode-settings.fish install-extensions all
+vscode-settings/bin/manage-vscode-settings.fish install-extensions all
 
 # Sync extensions (install missing, keep existing)
-manage-vscode-settings.fish sync-extensions cursor
-manage-vscode-settings.fish sync-extensions all
+vscode-settings/bin/manage-vscode-settings.fish sync-extensions cursor
+vscode-settings/bin/manage-vscode-settings.fish sync-extensions all
 ```
 
 ### Cursor Rules
@@ -183,11 +185,11 @@ chezmoi update
 
 ### Cursor/VSCode Workflow
 
-1. **Settings Updates**: Modify JSON files in `private_dot_config/vscode-settings/`
-2. **Apply Changes**: Run `manage-vscode-settings.fish apply all`
-3. **Extension Management**: Update extension lists and run `manage-vscode-settings.fish sync-extensions all`
+1. **Settings Updates**: Modify JSON files in `vscode-settings/`
+2. **Apply Changes**: Run `vscode-settings/bin/manage-vscode-settings.fish apply all`
+3. **Extension Management**: Update extension lists and run `vscode-settings/bin/manage-vscode-settings.fish sync-extensions all`
 4. **Cursor Rules**: Add new `.mdc` files to enhance AI assistance, deploy with `chezmoi apply ~/.config/cursor/`
-5. **Complete Setup**: Use `manage-vscode-settings.fish setup all` for new installations
+5. **Complete Setup**: Use `vscode-settings/bin/manage-vscode-settings.fish setup all` for new installations
 
 ### Adding New Extensions
 
@@ -201,10 +203,10 @@ chezmoi update
 
    ```bash
    # Sync extensions (installs any missing extensions)
-   manage-vscode-settings.fish sync-extensions all
+   vscode-settings/bin/manage-vscode-settings.fish sync-extensions all
 
    # Or install for specific editor
-   manage-vscode-settings.fish install-extensions cursor
+   vscode-settings/bin/manage-vscode-settings.fish install-extensions cursor
    ```
 
 ### Additional Extension Management
@@ -213,23 +215,23 @@ The script provides several other useful extension management commands:
 
 ```bash
 # List currently installed extensions
-manage-vscode-settings.fish list-extensions cursor
-manage-vscode-settings.fish list-extensions all
+vscode-settings/bin/manage-vscode-settings.fish list-extensions cursor
+vscode-settings/bin/manage-vscode-settings.fish list-extensions all
 
 # Export currently installed extensions to a file
-manage-vscode-settings.fish export-extensions cursor
+vscode-settings/bin/manage-vscode-settings.fish export-extensions cursor
 
 # Complete setup (settings + extensions)
-manage-vscode-settings.fish setup cursor
-manage-vscode-settings.fish setup all
+vscode-settings/bin/manage-vscode-settings.fish setup cursor
+vscode-settings/bin/manage-vscode-settings.fish setup all
 
 # Check status of all editors
-manage-vscode-settings.fish status
+vscode-settings/bin/manage-vscode-settings.fish status
 
 # Cursor Rules Management
-manage-vscode-settings.fish cursor-rules-status  # Show Cursor rules configuration status
-manage-vscode-settings.fish apply-cursor-rules   # Apply global Cursor rules (legacy)
-manage-vscode-settings.fish backup-cursor-rules  # Backup current Cursor rules
+vscode-settings/bin/manage-vscode-settings.fish cursor-rules-status  # Show Cursor rules configuration status
+vscode-settings/bin/manage-vscode-settings.fish apply-cursor-rules   # Apply global Cursor rules (legacy)
+vscode-settings/bin/manage-vscode-settings.fish backup-cursor-rules  # Backup current Cursor rules
 ```
 
 ## Upstream Projects
@@ -302,12 +304,12 @@ This configuration builds upon and integrates with several excellent open-source
    ```
 
 3. **Deploy Rules**: Run `chezmoi apply ~/.config/cursor/` to deploy changes
-4. **Legacy Support**: Global rules file and project templates available via `manage-vscode-settings.fish` commands
+4. **Legacy Support**: Global rules file and project templates available via `vscode-settings/bin/manage-vscode-settings.fish` commands
 
 ### VSCode Settings Customization
 
-1. Modify the appropriate JSON file in `private_dot_config/vscode-settings/`
-2. Run `manage-vscode-settings.fish` to apply changes
+1. Modify the appropriate JSON file in `vscode-settings/`
+2. Run `vscode-settings/bin/manage-vscode-settings.fish` to apply changes
 3. Settings are merged in numerical order (01, 02, 03, etc.)
 
 ## Contributing
