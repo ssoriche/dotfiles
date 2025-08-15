@@ -4,7 +4,7 @@
 {{- $allVimVisualBindings := list -}}
 {{- $allVimInsertBindings := list -}}
 
-{{- $settingsDir := joinPath .chezmoi.sourceDir "private_dot_config/vscode-settings" -}}
+{{- $settingsDir := joinPath .chezmoi.sourceDir "vscode-settings" -}}
 {{- if stat $settingsDir -}}
   {{- range (glob (joinPath $settingsDir "*.json")) -}}
     {{- $content := include . | fromJsonc -}}

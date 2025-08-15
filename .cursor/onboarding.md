@@ -80,21 +80,24 @@ private_dot_config/cursor/rules/
 ### Git Workflow Best Practices
 
 **Staging Changes:**
+
 - **Use `git add -u`** for tracked files only (avoids staging untracked work files)
 - **Avoid `git add -A`** unless you specifically want to include all untracked files
 - **Example workflow**:
+
   ```bash
   # Stage only changes to tracked files (recommended)
   git add -u
-  
+
   # Or stage specific files
   git add file1.txt file2.txt
-  
+
   # Avoid staging everything (includes untracked files)
   git add -A  # ❌ Use with caution
   ```
 
 **Managing Untracked Files:**
+
 - Work files in `.cursor/extracted-rules/` and similar directories should remain untracked
 - Use `.gitignore` or specific staging to avoid committing temporary files
 
