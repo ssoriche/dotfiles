@@ -24,7 +24,7 @@ esbenp.prettier-vscode@11.0.0
 dbaeumer.vscode-eslint@3.0.10
 timonwong.shellcheck@0.37.7
 redhat.vscode-yaml@1.18.0
-be5invis.toml@0.6.0
+tamasfe.even-better-toml@0.21.2
 davidanson.vscode-markdownlint@0.60.0
 
 # Utilities
