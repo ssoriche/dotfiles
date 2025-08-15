@@ -9,6 +9,7 @@ alwaysApply: true
 ## General Approach
 
 ### Investigation Steps
+
 1. **Understand the context** - What system/component is involved?
 2. **Reproduce the issue** - Can we consistently trigger the problem?
 3. **Isolate variables** - What changed recently?
@@ -18,12 +19,14 @@ alwaysApply: true
 ## Language-Specific Debugging
 
 ### Go Debugging Patterns
+
 - **Variable mutation**: Check if functions modify variables in-place vs. returning new values
 - **Pointer vs. value semantics**: Understand when you're working with copies
 - **Error handling**: Always check error returns
 - **Interface behavior**: Verify interface implementations match expectations
 
 #### Common Go Pitfalls
+
 ```go
 // bytes.ReplaceAll returns a new slice, doesn't modify in-place
 b = bytes.ReplaceAll(b, old, new)  // ✅ Correct
@@ -36,6 +39,7 @@ defer resp.Body.Close()  // ✅ Always close
 ```
 
 ### HTTP/Networking Debugging
+
 - **Request/Response inspection**: Log headers, body, status codes
 - **Proxy behavior**: Understand request modification and upstream routing
 - **Content-Length**: Update when modifying response bodies
@@ -44,12 +48,14 @@ defer resp.Body.Close()  // ✅ Always close
 ## Infrastructure Debugging
 
 ### Kubernetes Issues
+
 - **Pod logs**: Check application and init container logs
 - **Events**: Look for scheduling, networking, or volume issues
 - **Resource constraints**: Verify CPU, memory, and storage limits
 - **Network policies**: Check service-to-service communication
 
 ### Service Discovery
+
 - **DNS resolution**: Verify service names and namespaces
 - **Port configuration**: Ensure target ports match container ports
 - **Load balancer behavior**: Check upstream health and routing
@@ -57,12 +63,14 @@ defer resp.Body.Close()  // ✅ Always close
 ## Systematic Problem Solving
 
 ### Documentation Practice
+
 - **Record assumptions** at the start of debugging
 - **Document findings** even if they don't solve the problem
 - **Share context** when asking for help
 - **Update documentation** when issues are resolved
 
 ### Code Review Considerations
+
 - **Focus on logic** over formatting during debugging
 - **Minimize changes** to isolate the actual fix
 - **Test thoroughly** in appropriate environments
