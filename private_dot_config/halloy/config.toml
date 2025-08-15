@@ -2,62 +2,76 @@
 theme = "Catppuccin Mocha"
 
 [font]
-  # Font settings for the application
-  family = "JetBrains Mono"
-  size = 14
-  bold = true
-  italic = false
+# Font settings for the application
+family = "JetBrains Mono"
+size = 14
+bold = true
+italic = false
 
 # Buffer Display Settings
 [buffer]
-  # Server Messages
-  [buffer.server_messages]
-    [buffer.server_messages.join]
-    enabled = false
+# Server Messages
+[buffer.server_messages]
+[buffer.server_messages.join]
+enabled = false
 
-    [buffer.server_messages.quit]
-    enabled = false
+[buffer.server_messages.quit]
+enabled = false
 
-    [buffer.server_messages.topic]
-    enabled = false
+[buffer.server_messages.topic]
+enabled = false
 
-    [buffer.server_messages.status_success]
-    enabled = true  # Re-enabled for connection status and history replay
+[buffer.server_messages.status_success]
+enabled = true # Re-enabled for connection status and history replay
+smart = 180
 
-    [buffer.server_messages.status_error]
-    enabled = true  # Re-enabled for error messages and troubleshooting
+[buffer.server_messages.status_error]
+enabled = true # Re-enabled for error messages and troubleshooting
+smart = 180
 
-  # Internal Messages
-  [buffer.internal_messages]
-    [buffer.internal_messages.success]
-    enabled = true  # Re-enabled for history replay notifications
+# Internal Messages
+[buffer.internal_messages]
+[buffer.internal_messages.success]
+enabled = true # Re-enabled for history replay notifications
+smart = 180
 
-    [buffer.internal_messages.error]
-    enabled = true  # Re-enabled for error handling
+[buffer.internal_messages.error]
+enabled = true # Re-enabled for error handling
+smart = 180
 
-  # Channel Settings
-  [buffer.channel]
-    [buffer.channel.topic]
-    enabled = false
+# Channel Settings
+[buffer.channel]
+[buffer.channel.topic]
+enabled = false
 
-  # Read Status Management
-  [buffer.mark_as_read]
-  on_scroll_to_bottom = true
-  on_buffer_close = true
+# Read Status Management
+[buffer.mark_as_read]
+on_scroll_to_bottom = true
+on_buffer_close = true
 
 # Server Configurations
 [servers]
-  # Sackheads Network
-  [servers.sackheads]
-  nickname = "hide"
-  server = "bnc.irccloud.com"
-  password_command = "/Users/ssoriche/.local/share/devbox/global/default/.devbox/nix/profile/default/bin/op item get 'Halloy IRC - Sackheads' --fields password"
-  chathistory = true
+# Sackheads Network
+[servers.sackheads]
+nickname = "hide"
+server = "bnc.irccloud.com"
+password_command = "/Users/ssoriche/.local/share/devbox/global/default/.devbox/nix/profile/default/bin/op item get 'Halloy IRC - Sackheads' --fields password --reveal"
+chathistory = true
 
-  # Perl Network
-  [servers.perl]
-  nickname = "hide"
-  server = "bnc.irccloud.com"
-  password_command = "/Users/ssoriche/.local/share/devbox/global/default/.devbox/nix/profile/default/bin/op item get 'Halloy IRC - Perl' --fields password"
-  chathistory = true
+# Perl Network
+[servers.perl]
+nickname = "hide"
+server = "bnc.irccloud.com"
+password_command = "/Users/ssoriche/.local/share/devbox/global/default/.devbox/nix/profile/default/bin/op item get 'Halloy IRC - Perl' --fields password --reveal"
+chathistory = true
 
+[servers.s8i]
+nickname = "hide"
+server = "c.s8i.io"
+port = 6697
+chathistory = true
+channels = ["#ibmrox", "#bofh"]
+
+[servers.s8i.sasl.plain]
+username = "hide"
+password_command = "/Users/ssoriche/.local/share/devbox/global/default/.devbox/nix/profile/default/bin/op item get 'c.s8i.io' --fields password --reveal"
