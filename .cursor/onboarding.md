@@ -28,6 +28,7 @@ This is a comprehensive dotfiles configuration managed with [chezmoi](https://ww
 - Use chezmoi naming conventions (`private_dot_config` = `~/.config`)
 - Keep AI-specific context in `.cursor/` (ignored by chezmoi)
 - **Separate generic vs project-specific**: Generic user settings belong in dotfiles, project-specific configurations belong in project repositories
+- **Separate management tools from deployable configs**: Build tools and source files should not be deployed by chezmoi
 
 ### Documentation
 
@@ -35,16 +36,36 @@ This is a comprehensive dotfiles configuration managed with [chezmoi](https://ww
 - Be accurate about script capabilities (don't document manual workarounds)
 - Include upstream project attribution
 
+## Architecture Principles
+
+### Deployment vs Management Separation
+
+**Key Insight**: Not everything in the repository should be deployed by chezmoi. Some directories contain tools that build or manage configurations.
+
+**Examples**:
+
+- ✅ **Deployable**: `private_dot_config/cursor/rules/` → `~/.config/cursor/rules/`
+- ✅ **Deployable**: `Library/Application Support/Cursor/User/settings.json.tmpl` → `~/Library/Application Support/Cursor/User/settings.json`
+- ❌ **Management Tool**: `vscode-settings/` (contains source files and build scripts)
+- ❌ **Work Files**: `.cursor/extracted-rules/` (temporary analysis files)
+
+**Implementation**:
+
+- Management tools live at repository root
+- Use `.chezmoiignore` to exclude them from deployment
+- Templates read from management directories to build final configs
+
 ## Critical Project Components
 
 ### VSCode/Cursor Settings Management
 
-- **Script**: `private_dot_config/vscode-settings/bin/manage-vscode-settings.fish`
+- **Script**: `vscode-settings/bin/manage-vscode-settings.fish` (moved to repository root)
 - **Modular Settings**: Numbered JSON files (01-base.json, 02-vim.json, etc.)
+- **Architecture**: Management directory at repository root, not deployed by chezmoi
 - **Key Commands**:
-  - `manage-vscode-settings.fish apply all` - Apply settings
-  - `manage-vscode-settings.fish sync-extensions all` - Install extensions
-  - `manage-vscode-settings.fish setup all` - Complete setup
+  - `vscode-settings/bin/manage-vscode-settings.fish apply all` - Apply settings
+  - `vscode-settings/bin/manage-vscode-settings.fish sync-extensions all` - Install extensions
+  - `vscode-settings/bin/manage-vscode-settings.fish setup all` - Complete setup
 
 ### Extension Management
 
@@ -147,16 +168,28 @@ chezmoi apply --force ~/.config/cursor/rules/development/git-commit-practices.md
 
 ### VSCode/Cursor Settings Updates
 
-1. Modify appropriate JSON file in `private_dot_config/vscode-settings/`
-2. Run `manage-vscode-settings.fish apply all`
+1. Modify appropriate JSON file in `vscode-settings/`
+2. Run `vscode-settings/bin/manage-vscode-settings.fish apply all`
 3. Test the changes
 4. Commit the JSON file changes
 
 ### Extension Management
 
 1. Add extension ID to appropriate txt file
-2. Run `manage-vscode-settings.fish sync-extensions all`
+2. Run `vscode-settings/bin/manage-vscode-settings.fish sync-extensions all`
 3. Commit the updated extension list
+
+### Theme Configuration Best Practices
+
+**Installation Order Matters**: Extensions must be installed before settings templates are applied to ensure theme settings work properly.
+
+**Correct Order**:
+
+1. Install extensions: `vscode-settings/bin/manage-vscode-settings.fish sync-extensions cursor`
+2. Apply settings: `vscode-settings/bin/manage-vscode-settings.fish apply cursor`
+3. Deploy with chezmoi: `chezmoi apply "~/Library/Application Support/Cursor/User/settings.json"`
+
+**Or use complete setup**: `vscode-settings/bin/manage-vscode-settings.fish setup cursor` (handles order automatically)
 
 ## Project History & Context
 
@@ -199,6 +232,7 @@ chezmoi apply --force ~/.config/cursor/rules/development/git-commit-practices.md
 - **Don't version control intermediary files** - files like `*-exported.txt` are temporary artifacts
 - **Don't mix project-specific settings with generic dotfiles** - kubernetes configs belong in project repos, not personal dotfiles
 - **Don't assume shared extensions belong in editor-specific lists** - categorize extensions properly based on compatibility
+- **Don't deploy management tools with chezmoi** - directories like `vscode-settings/` contain build tools, not target configurations
 
 ### Quality Standards
 
