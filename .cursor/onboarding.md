@@ -19,6 +19,7 @@ This is a comprehensive dotfiles configuration managed with [chezmoi](https://ww
 - **ALWAYS use conventional commits format**: `type(scope): description`
 - Common types: `feat`, `fix`, `docs`, `style`, `refactor`, `chore`
 - Common scopes: `cursor`, `vscode`, `fish`, `git`, `config`
+- **Focus on WHY not WHAT**: Emphasize rationale and benefits over technical details
 - Include source attribution when adapting from other repositories
 
 ### File Management
@@ -26,6 +27,7 @@ This is a comprehensive dotfiles configuration managed with [chezmoi](https://ww
 - **Prefer editing existing files** over creating new ones
 - Use chezmoi naming conventions (`private_dot_config` = `~/.config`)
 - Keep AI-specific context in `.cursor/` (ignored by chezmoi)
+- **Separate generic vs project-specific**: Generic user settings belong in dotfiles, project-specific configurations belong in project repositories
 
 ### Documentation
 
@@ -49,6 +51,11 @@ This is a comprehensive dotfiles configuration managed with [chezmoi](https://ww
 - **Files**: `cursor-extensions.txt`, `codium-extensions.txt`, `shared-extensions.txt`
 - **Never use manual cat/xargs** - the script handles this properly
 - Extensions are automatically merged and installed via the management script
+- **Extension categorization**:
+  - `shared-extensions.txt`: Extensions that work in both VSCode and Cursor
+  - `cursor-extensions.txt`: Cursor-only extensions
+  - `codium-extensions.txt`: VSCodium-only extensions
+- **Avoid intermediary files**: Files like `cursor-extensions-exported.txt` are temporary and shouldn't be version controlled
 
 ### Cursor Rules Structure
 
@@ -69,6 +76,27 @@ private_dot_config/cursor/rules/
 - **Integration**: Devbox + Direnv for consistent development environments
 
 ## Common Workflows
+
+### Git Workflow Best Practices
+
+**Staging Changes:**
+- **Use `git add -u`** for tracked files only (avoids staging untracked work files)
+- **Avoid `git add -A`** unless you specifically want to include all untracked files
+- **Example workflow**:
+  ```bash
+  # Stage only changes to tracked files (recommended)
+  git add -u
+  
+  # Or stage specific files
+  git add file1.txt file2.txt
+  
+  # Avoid staging everything (includes untracked files)
+  git add -A  # ❌ Use with caution
+  ```
+
+**Managing Untracked Files:**
+- Work files in `.cursor/extracted-rules/` and similar directories should remain untracked
+- Use `.gitignore` or specific staging to avoid committing temporary files
 
 ### Adding New Configurations
 
@@ -164,6 +192,10 @@ chezmoi apply --force ~/.config/cursor/rules/development/git-commit-practices.md
 - Don't forget to source-attribute external configurations
 - **Don't use source paths with `chezmoi apply`** - always use target paths (where files should be deployed)
 - Don't apply all configurations when only specific files need updating - use targeted `chezmoi apply` commands
+- **Don't use `git add -A` carelessly** - prefer `git add -u` to avoid staging untracked work files
+- **Don't version control intermediary files** - files like `*-exported.txt` are temporary artifacts
+- **Don't mix project-specific settings with generic dotfiles** - kubernetes configs belong in project repos, not personal dotfiles
+- **Don't assume shared extensions belong in editor-specific lists** - categorize extensions properly based on compatibility
 
 ### Quality Standards
 
