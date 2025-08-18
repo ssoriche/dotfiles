@@ -870,9 +870,9 @@
     "github:NixOS/nixpkgs/nixpkgs-unstable": {
       "resolved": "github:NixOS/nixpkgs/6a39c6e495eefabc935d8ddf66aa45d85b85fa3f?lastModified=1744157173&narHash=sha256-bWSjxDwq7iVePrhmA7tY2dyMWHuNJo8knkO4y%2Bq4ZkY%3D"
     },
-    "github:atuinsh/atuin/v18.6.1": {
-      "last_modified": "2025-05-08T21:10:38Z",
-      "resolved": "github:atuinsh/atuin/84589cab15253300984bfaca1392795c39d137fc?lastModified=1746738638&narHash=sha256-aRaUiGH2CTPtmbfrtLlNfoQzQWG817eazWctqwRlOCE%3D"
+    "github:atuinsh/atuin/v18.8.0": {
+      "last_modified": "2025-08-04T10:33:08Z",
+      "resolved": "github:atuinsh/atuin/5614596c8165e6f5e22b5524c7bb127bf55bc48a?lastModified=1754303588&narHash=sha256-FJEXIxdeg6ExXvrQ3dtugMK5xw%2BNwWyB%2Bld9rj7okoU%3D"
     },
     "github:nix-community/neovim-nightly-overlay/a2f0b8e4d30ea28a8021fa3314eb2244cc133199": {
       "last_modified": "1970-01-01T00:00:00Z",

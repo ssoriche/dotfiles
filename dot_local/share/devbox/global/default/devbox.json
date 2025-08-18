@@ -10,7 +10,7 @@
     "delta": "latest",
     "spacer": "latest",
     "chezmoi": "latest",
-    "github:atuinsh/atuin/v18.6.1": "",
+    "github:atuinsh/atuin/v18.8.0": "",
     "q": "latest",
     "kustomize": "latest",
     "golangci-lint": "latest",
