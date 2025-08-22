@@ -46,7 +46,6 @@
     "yazi": "latest",
     "sd": "latest",
     "aerospace": "latest",
-    "ollama": "latest",
     "jujutsu": "latest",
     "dotenv-linter": "latest",
     "luarocks": "latest",
@@ -60,7 +59,8 @@
     "git-absorb": "latest",
     "restic": "latest",
     "maccy": "latest",
-    "dyff": "latest"
+    "dyff": "latest",
+    "ollama": "latest"
   },
   "shell": {
     "init_hook": [
