@@ -60,7 +60,8 @@
     "restic": "latest",
     "maccy": "latest",
     "dyff": "latest",
-    "ollama": "latest"
+    "ollama": "latest",
+    "zoxide": "latest"
   },
   "shell": {
     "init_hook": [
