@@ -1,0 +1,360 @@
+{
+  // === GENERAL CONFIGURATION ===
+  "theme": {
+    "mode": "system",
+    "light": "Catppuccin Latte",
+    "dark": "Catppuccin Mocha"
+  },
+
+  // === FONT CONFIGURATION ===
+  // Consistent with VS Code/Cursor setup
+  "buffer_font_family": "JetBrains Mono Nerd Font",
+  "buffer_font_size": 14,
+  "buffer_line_height": {
+    "custom": 1.5
+  },
+  "ui_font_family": "JetBrains Mono Nerd Font",
+  "ui_font_size": 13,
+
+  // === VIM MODE CONFIGURATION ===
+  "vim_mode": true,
+  "vim": {
+    "use_system_clipboard": "never",
+    "use_multiline_find": true,
+    "use_smartcase_find": true,
+    "custom_digraphs": {}
+  },
+
+  // === EDITOR BEHAVIOR ===
+  "scrollbar": {
+    "show": "auto",
+    "cursors": true,
+    "git_diff": true,
+    "search_results": true,
+    "selected_symbol": true,
+    "diagnostics": true
+  },
+
+  // Editor display settings matching VS Code setup
+  "relative_line_numbers": true,
+  "cursor_blink": false,
+  "cursor_shape": "block",
+  "wrap_guides": [],
+  "show_whitespaces": "none",
+  "wrap": "none",
+  "soft_wrap": "none",
+  "tab_size": 2,
+  "hard_tabs": false,
+  "preferred_line_length": 100,
+  "show_completion_documentation": true,
+  "completion_documentation_secondary_query_debounce": 300,
+
+  // === FILE HANDLING ===
+  "autosave": "on_focus_change", // matches VS Code "onFocusChange"
+  "format_on_save": "off", // disabled by default, enabled per language
+  "ensure_final_newline_on_save": true,
+  "remove_trailing_whitespace_on_save": true,
+  "restore_on_startup": "last_workspace",
+  "when_closing_with_no_tabs": "platform_default",
+  "drop_target_size": 0.2,
+
+  // === SEARCH BEHAVIOR ===
+  "search": {
+    "whole_word": false,
+    "case_sensitive": false,
+    "include_ignored": false,
+    "regex": false
+  },
+
+  // === PROJECT PANEL ===
+  "project_panel": {
+    "button": true,
+    "default_width": 240,
+    "dock": "left",
+    "file_icons": true,
+    "folder_icons": true,
+    "git_status": true,
+    "indent_size": 20,
+    "auto_reveal_entries": true,
+    "auto_fold_dirs": true,
+    "scrollbar": {
+      "show": "auto"
+    }
+  },
+
+  // === TERMINAL CONFIGURATION ===
+  "terminal": {
+    "blinking": "terminal_controlled",
+    "copy_on_select": true,
+    "cursor_shape": "block",
+    "env": {
+      "EDITOR": "zed --wait"
+    },
+    "font_family": "JetBrains Mono Nerd Font",
+    "font_size": 13,
+    "line_height": {
+      "custom": 1.2
+    },
+    "option_as_meta": false,
+    "button": false,
+    "working_directory": "current_project_directory",
+    "toolbar": {
+      "title": true
+    }
+  },
+
+  // === GIT CONFIGURATION ===
+  "git": {
+    "git_gutter": "tracked_files",
+    "inline_blame": {
+      "enabled": true,
+      "delay_ms": 600
+    }
+  },
+
+  // === UI CUSTOMIZATION ===
+  "ui_density": "compact",
+  "current_line_highlight": "gutter",
+  "vertical_scroll_margin": 8, // matches VS Code cursorSurroundingLines
+  "gutter": {
+    "line_numbers": true,
+    "code_actions": true,
+    "runnables": true,
+    "folds": true
+  },
+  "scrollbar": {
+    "show": "auto",
+    "cursors": true,
+    "git_diff": true,
+    "search_results": true,
+    "selected_symbol": true,
+    "diagnostics": true
+  },
+
+  // === COLLABORATION & CHAT ===
+  "collaboration_panel": {
+    "button": false,
+    "dock": "left",
+    "default_width": 240
+  },
+  "chat_panel": {
+    "button": false,
+    "dock": "right",
+    "default_width": 240
+  },
+
+  // === PREVIEW SETTINGS ===
+  "preview_tabs": {
+    "enable_preview_from_file_finder": false,
+    "enable_preview_from_code_navigation": true
+  },
+  "auto_update": false,
+  "diagnostics": {
+    "include_warnings": true
+  },
+
+  // === LANGUAGE-SPECIFIC CONFIGURATION ===
+  "languages": {
+    // Programming Languages
+    "Python": {
+      "tab_size": 4,
+      "hard_tabs": false,
+      "format_on_save": "on",
+      "formatter": "language_server",
+      "show_inline_completions": true
+    },
+    "Go": {
+      "tab_size": 4,
+      "hard_tabs": true,
+      "format_on_save": "on",
+      "formatter": "language_server"
+    },
+    "Rust": {
+      "tab_size": 4,
+      "hard_tabs": false,
+      "format_on_save": "on",
+      "formatter": "language_server"
+    },
+
+    // Web Languages
+    "JavaScript": {
+      "tab_size": 2,
+      "hard_tabs": false,
+      "format_on_save": "on",
+      "formatter": {
+        "external": {
+          "command": "prettier",
+          "arguments": ["--stdin-filepath", "{buffer_path}"]
+        }
+      },
+      "code_actions_on_format": ["source.organizeImports"]
+    },
+    "TypeScript": {
+      "tab_size": 2,
+      "hard_tabs": false,
+      "format_on_save": "on",
+      "formatter": {
+        "external": {
+          "command": "prettier",
+          "arguments": ["--stdin-filepath", "{buffer_path}"]
+        }
+      },
+      "code_actions_on_format": ["source.organizeImports"]
+    },
+    "TSX": {
+      "tab_size": 2,
+      "hard_tabs": false,
+      "format_on_save": "on",
+      "formatter": {
+        "external": {
+          "command": "prettier",
+          "arguments": ["--stdin-filepath", "{buffer_path}"]
+        }
+      }
+    },
+    "JSX": {
+      "tab_size": 2,
+      "hard_tabs": false,
+      "format_on_save": "on",
+      "formatter": {
+        "external": {
+          "command": "prettier",
+          "arguments": ["--stdin-filepath", "{buffer_path}"]
+        }
+      }
+    },
+    "HTML": {
+      "tab_size": 2,
+      "hard_tabs": false,
+      "format_on_save": "on",
+      "formatter": {
+        "external": {
+          "command": "prettier",
+          "arguments": ["--stdin-filepath", "{buffer_path}"]
+        }
+      }
+    },
+    "CSS": {
+      "tab_size": 2,
+      "hard_tabs": false,
+      "format_on_save": "on",
+      "formatter": {
+        "external": {
+          "command": "prettier",
+          "arguments": ["--stdin-filepath", "{buffer_path}"]
+        }
+      }
+    },
+    "SCSS": {
+      "tab_size": 2,
+      "hard_tabs": false,
+      "format_on_save": "on",
+      "formatter": {
+        "external": {
+          "command": "prettier",
+          "arguments": ["--stdin-filepath", "{buffer_path}"]
+        }
+      }
+    },
+
+    // Configuration Languages
+    "JSON": {
+      "tab_size": 2,
+      "hard_tabs": false,
+      "format_on_save": "on",
+      "formatter": {
+        "external": {
+          "command": "prettier",
+          "arguments": ["--stdin-filepath", "{buffer_path}"]
+        }
+      }
+    },
+    "JSONC": {
+      "tab_size": 2,
+      "hard_tabs": false,
+      "format_on_save": "on",
+      "formatter": {
+        "external": {
+          "command": "prettier",
+          "arguments": ["--stdin-filepath", "{buffer_path}"]
+        }
+      }
+    },
+    "YAML": {
+      "tab_size": 2,
+      "hard_tabs": false,
+      "format_on_save": "on",
+      "formatter": "prettier"
+    },
+    "TOML": {
+      "tab_size": 2,
+      "hard_tabs": false,
+      "format_on_save": "on"
+    },
+
+    // Documentation
+    "Markdown": {
+      "format_on_save": "on",
+      "formatter": {
+        "external": {
+          "command": "prettier",
+          "arguments": ["--stdin-filepath", "{buffer_path}"]
+        }
+      },
+      "soft_wrap": "preferred_line_length",
+      "preferred_line_length": 80,
+      "show_inline_completions": false
+    },
+
+    // Shell Languages
+    "Fish": {
+      "tab_size": 4,
+      "hard_tabs": false
+    },
+    "Shell Script": {
+      "tab_size": 2,
+      "hard_tabs": false
+    },
+    "Dockerfile": {
+      "tab_size": 4,
+      "hard_tabs": false
+    },
+    "Makefile": {
+      "tab_size": 4,
+      "hard_tabs": true,
+      "show_whitespaces": "all"
+    }
+  },
+
+  // === ADVANCED SETTINGS ===
+  "journal": {
+    "hour_format": "hour24"
+  },
+  "calls": {
+    "mute_on_join": false,
+    "share_on_join": false
+  },
+  "notification_panel": {
+    "button": true,
+    "dock": "right",
+    "default_width": 380
+  },
+  "outline_panel": {
+    "button": true,
+    "dock": "right",
+    "default_width": 300
+  },
+  "tabs": {
+    "close_position": "right",
+    "file_icons": true,
+    "git_status": true
+  },
+  "tab_bar": {
+    "show": true,
+    "show_nav_history_buttons": true
+  },
+  "toolbar": {
+    "breadcrumbs": true,
+    "quick_actions": false
+  }
+}
