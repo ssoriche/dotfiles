@@ -181,6 +181,7 @@ better workflow efficiency."
 - **Commit message**: "implement C to solve problem X"
 
 **Why this matters**:
+
 - Future developers see the final change, not your thought process
 - `git blame` and `git bisect` work on actual code changes
 - Commit messages should explain the diff, not the development journey
