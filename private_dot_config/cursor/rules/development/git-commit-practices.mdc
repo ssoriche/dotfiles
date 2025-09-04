@@ -144,3 +144,44 @@ Before committing, ask:
 - [ ] Does the type accurately reflect the nature of the change?
 - [ ] Are style/formatting changes separated from logic changes?
 - [ ] Is there sufficient context for future maintainers?
+- [ ] **Does the commit message reflect the actual diff, not the development process?**
+
+## Base Messages on Actual Diffs
+
+**CRITICAL**: Always review `git diff --cached` before writing commit messages.
+
+### ❌ Poor Practice (Process-Based)
+
+```bash
+# Developer added feature X, then removed it, then added feature Y
+git commit -m "feat: add feature X, remove it, then add feature Y"
+
+# What actually happened in the diff: only feature Y was added
+# The message describes the development journey, not the actual change
+```
+
+### ✅ Good Practice (Diff-Based)
+
+```bash
+# Check what's actually changing
+git diff --cached
+
+# Write message based on the actual diff content
+git commit -m "feat: add feature Y to improve user workflow
+
+Feature Y was needed to solve problem Z, providing users with
+better workflow efficiency."
+```
+
+### Development Process vs. Final Result
+
+**Remember**: Commits capture **end state changes**, not development steps.
+
+- **Development process**: "I tried A, then B, then settled on C"
+- **Commit message**: "implement C to solve problem X"
+
+**Why this matters**:
+- Future developers see the final change, not your thought process
+- `git blame` and `git bisect` work on actual code changes
+- Commit messages should explain the diff, not the development journey
+- Clean history focuses on **what changed** and **why it was needed**
