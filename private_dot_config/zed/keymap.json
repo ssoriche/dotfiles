@@ -34,12 +34,20 @@
       "space f g": "project_search::ToggleFocus",
       "space f s": "workspace::Save",
       "space f S": "workspace::SaveAll",
+      "space f n": "workspace::NewFile",
+      "space f o": "project_panel::ToggleFocus",
+      "space f t": "project_panel::ToggleFocus",
+      "space f e": "project_panel::ToggleFocus",
+      "space f w": "workspace::Save",
 
       // === BUFFER OPERATIONS (leader+b) ===
       "space b b": "tab_switcher::Toggle",
       "space b d": "pane::CloseActiveItem",
       "space b n": "pane::ActivateNextItem",
       "space b p": "pane::ActivatePrevItem",
+      "space b o": "pane::CloseInactiveItems",
+      "space b a": "pane::CloseAllItems",
+      "space b r": "pane::ReopenClosedItem",
 
       // === WINDOW MANAGEMENT (leader+w) ===
       "space w h": "workspace::ActivatePaneInDirection(Left)",
@@ -56,15 +64,51 @@
       "space c f": "editor::Format",
       "space c d": "editor::Hover",
       "space c i": "editor::GoToImplementation",
+      "space c o": "editor::ToggleCodeActions",
+      "space c s": "outline::Toggle",
+      "space c x": "editor::ToggleCodeActions",
+      "space c l": "editor::ToggleCodeActions",
 
       // === GIT OPERATIONS (leader+g) ===
       "space g g": "project_panel::ToggleFocus",
       "space g s": "editor::ToggleHunkDiff",
       "space g b": "editor::ToggleGitBlame",
+      "space g h s": "editor::ToggleHunkDiff",
+      "space g h p": "editor::ToggleHunkDiff",
+      "space g h r": "editor::RevertSelectedHunks",
+      "space g l": "editor::ToggleGitBlame",
+      "space g d": "editor::ToggleHunkDiff",
 
       // === QUICK ACCESS ===
       "space e": "project_panel::ToggleFocus",
-      "space t": "terminal_panel::ToggleFocus"
+      "space t": "terminal_panel::ToggleFocus",
+
+      // === ADDITIONAL LAZYVIM-STYLE BINDINGS ===
+      "space s f": "file_finder::Toggle",
+      "space s g": "project_search::ToggleFocus",
+      "space s s": "outline::Toggle",
+      "space s w": "project_search::ToggleFocus",
+      "space u": "editor::ToggleGitBlame",
+      "space x": "editor::ToggleCodeActions",
+      "space q": "pane::CloseActiveItem",
+      "space .": "file_finder::Toggle",
+
+      // === LAZYVIM SHORTCUTS ===
+      "space space": "file_finder::Toggle",
+      "space ,": "tab_switcher::Toggle",
+      "space /": "buffer_search::Deploy"
+    }
+  },
+
+  // === CUSTOM ARROW KEY MAPPINGS (matching Neovim) ===
+  // Maps arrow keys to window navigation like Neovim: <Down> -> <C-w>j, etc.
+  {
+    "context": "Editor && vim_mode == normal",
+    "bindings": {
+      "down": "workspace::ActivatePaneInDirection(Down)",
+      "up": "workspace::ActivatePaneInDirection(Up)",
+      "right": "workspace::ActivatePaneInDirection(Right)",
+      "left": "workspace::ActivatePaneInDirection(Left)"
     }
   },
 

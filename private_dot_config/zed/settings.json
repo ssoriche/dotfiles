@@ -183,11 +183,13 @@
       "format_on_save": "on",
       "formatter": {
         "external": {
-          "command": "prettier",
-          "arguments": ["--stdin-filepath", "{buffer_path}"]
+          "command": "dprint",
+          "arguments": ["fmt", "--stdin", "{buffer_path}"]
         }
       },
-      "code_actions_on_format": ["source.organizeImports"]
+      "code_actions_on_format": ["source.organizeImports"],
+      "enable_language_server": true,
+      "show_inline_completions": true
     },
     "TypeScript": {
       "tab_size": 2,
@@ -195,11 +197,13 @@
       "format_on_save": "on",
       "formatter": {
         "external": {
-          "command": "prettier",
-          "arguments": ["--stdin-filepath", "{buffer_path}"]
+          "command": "dprint",
+          "arguments": ["fmt", "--stdin", "{buffer_path}"]
         }
       },
-      "code_actions_on_format": ["source.organizeImports"]
+      "code_actions_on_format": ["source.organizeImports"],
+      "enable_language_server": true,
+      "show_inline_completions": true
     },
     "TSX": {
       "tab_size": 2,
