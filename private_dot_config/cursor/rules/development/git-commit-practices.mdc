@@ -115,12 +115,14 @@ easily guessable.
 ### When to Separate
 
 **Always separate when:**
+
 - Reformatting entire files or large sections
 - Changing indentation, spacing, or line endings
 - Applying linter fixes that don't change logic
 - Renaming variables without changing behavior
 
 **Consider combining when:**
+
 - Minor formatting fixes in the same lines being changed
 - Single-line style improvements alongside small logic changes
 - The style change directly enables the logic change
