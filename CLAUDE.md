@@ -2,6 +2,21 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## Quick Reference
+
+**Working Directory**: This is the chezmoi source directory (typically `~/.local/share/chezmoi`)
+
+**Most Common Commands**:
+```bash
+chezmoi diff                          # See what would change
+chezmoi apply                         # Apply all changes
+chezmoi edit <target-file>            # Edit a managed file
+
+# VSCode/Cursor settings
+./vscode-settings/bin/manage-vscode-settings.fish apply all
+./vscode-settings/bin/manage-vscode-settings.fish sync-extensions cursor
+```
+
 ## Repository Overview
 
 This is a personal dotfiles repository managed with **chezmoi**, containing comprehensive macOS development environment configurations for editors (Cursor, VSCode, Neovim), terminal tools, window managers, and development utilities.
@@ -41,6 +56,11 @@ The repository uses a unique modular approach for editor settings:
 - Format: `.mdc` files with YAML frontmatter
 - Categories: `core/` (always-apply rules) and `development/` (context-specific)
 - Deployment: `chezmoi apply ~/.config/cursor/rules/`
+- **Auto-loading**: Cursor automatically loads rules from `~/.config/cursor/rules/` - no manual activation needed
+
+**Current Rules in Repository**:
+- Core rules: `mantras.mdc`, `shell_environment.mdc`, `fish-shell.mdc`, `personal-preferences.mdc`
+- Development rules: `conventional-commits.mdc`, `discoverability.mdc`, `coding-standards.mdc`, `git-commit-practices.mdc`, `debugging-methodology.mdc`
 
 **Frontmatter Format**:
 ```yaml
@@ -162,6 +182,18 @@ Configured in this repository:
 - **Hammerspoon**: Lua automation - `dot_hammerspoon/`
 - **Karabiner**: Keyboard customization - `private_dot_config/private_karabiner/`
 
+### Claude Code Configuration
+
+- **User Settings**: `dot_claude/settings.json` (deployed to `~/.claude/settings.json`)
+- **Configuration Options**:
+  - `includeCoAuthoredBy`: false - Disables "Co-Authored-By: Claude" in git commits
+  - `permissions.allow/deny/ask`: Tool permission rules
+  - `env`: Environment variables for sessions
+  - `model`: Default model override
+  - `outputStyle`: System prompt style configuration
+
+**Note**: Runtime state files (`.claude.json`, conversation history, todos) are NOT managed by chezmoi as they contain session-specific data.
+
 ## Working with This Repository
 
 ### Adding New Extensions
@@ -265,11 +297,13 @@ These exist in the repo but are NOT deployed (per `.chezmoiignore`):
 ## Important Notes
 
 1. **Never directly edit deployed files**: Always edit in the chezmoi source directory and apply changes
-2. **Settings merge order matters**: VSCode/Cursor settings are merged numerically (01, 02, 03...)
-3. **Cursor rules use .mdc format**: Not plain text; must include YAML frontmatter
-4. **Extension versions are tracked**: Use sync-extensions to keep versions in sync
-5. **The vscode-settings directory is NOT deployed**: It contains management tools only
-6. **Use the management script**: Don't manually merge settings or install extensions when the script can do it
+2. **Working directory context**: Commands in this doc assume you're in the chezmoi source directory (`~/.local/share/chezmoi`)
+3. **Settings merge order matters**: VSCode/Cursor settings are merged numerically (01, 02, 03...)
+4. **Cursor rules use .mdc format**: Not plain text; must include YAML frontmatter
+5. **Cursor auto-loads rules**: Once deployed to `~/.config/cursor/rules/`, Cursor automatically loads them
+6. **Extension versions are tracked**: Use sync-extensions to keep versions in sync
+7. **The vscode-settings directory is NOT deployed**: It contains management tools only
+8. **Use the management script**: Don't manually merge settings or install extensions when the script can do it
 
 ## Troubleshooting
 
