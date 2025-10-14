@@ -1,7 +1,7 @@
 {
   "packages": {
     "ripgrep": "latest",
-    "github:nix-community/neovim-nightly-overlay/a2f0b8e4d30ea28a8021fa3314eb2244cc133199": "",
+    "neovim": "latest",
     "direnv": "latest",
     "fd": "latest",
     "tig": "latest",
@@ -63,7 +63,8 @@
     "ollama": "latest",
     "zoxide": "latest",
     "halloy": "latest",
-    "github:NixOS/nixpkgs/119489c3aeae42efef7c5bfc8a600e7418f91600#claude-code": ""
+    "github:NixOS/nixpkgs/119489c3aeae42efef7c5bfc8a600e7418f91600#claude-code": "",
+    "tree-sitter": "latest"
   },
   "shell": {
     "init_hook": [

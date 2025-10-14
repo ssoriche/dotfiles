@@ -1095,10 +1095,6 @@
       "last_modified": "2025-08-04T10:33:08Z",
       "resolved": "github:atuinsh/atuin/5614596c8165e6f5e22b5524c7bb127bf55bc48a?lastModified=1754303588&narHash=sha256-FJEXIxdeg6ExXvrQ3dtugMK5xw%2BNwWyB%2Bld9rj7okoU%3D"
     },
-    "github:nix-community/neovim-nightly-overlay/a2f0b8e4d30ea28a8021fa3314eb2244cc133199": {
-      "last_modified": "1970-01-01T00:00:00Z",
-      "resolved": "github:nix-community/neovim-nightly-overlay/a2f0b8e4d30ea28a8021fa3314eb2244cc133199"
-    },
     "github:wez/wezterm/5663e749948df3ed3c2d8ee0bfea6c85226310d9?dir=nix": {
       "last_modified": "1970-01-01T00:00:00Z",
       "resolved": "github:wez/wezterm/5663e749948df3ed3c2d8ee0bfea6c85226310d9?dir=nix"
@@ -1740,6 +1736,54 @@
             }
           ],
           "store_path": "/nix/store/4dqsz1xx47n1s3bhd9fcv4n1jcfnm713-moreutils-0.70"
+        }
+      }
+    },
+    "neovim@latest": {
+      "last_modified": "2025-09-18T16:33:27Z",
+      "resolved": "github:NixOS/nixpkgs/f4b140d5b253f5e2a1ff4e5506edbf8267724bde#neovim",
+      "source": "devbox-search",
+      "version": "0.11.4",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/vm0v91a9b9k5kch8f404c1w12lmg386p-neovim-0.11.4",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/vm0v91a9b9k5kch8f404c1w12lmg386p-neovim-0.11.4"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/vidxax8nj9gnd8d0va8zjbbfja4r0c99-neovim-0.11.4",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/vidxax8nj9gnd8d0va8zjbbfja4r0c99-neovim-0.11.4"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/k700yk7zhiipzp6p5ixvmk2snxxn5s4y-neovim-0.11.4",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/k700yk7zhiipzp6p5ixvmk2snxxn5s4y-neovim-0.11.4"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/r99hbj4brg6nr0hz7kbylns5fr6xpcjf-neovim-0.11.4",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/r99hbj4brg6nr0hz7kbylns5fr6xpcjf-neovim-0.11.4"
         }
       }
     },
@@ -2461,6 +2505,54 @@
             }
           ],
           "store_path": "/nix/store/zdlbfch9mhm63mpvvhvgpg2inrhx9wj8-tldr-3.3.0"
+        }
+      }
+    },
+    "tree-sitter@latest": {
+      "last_modified": "2025-09-18T16:33:27Z",
+      "resolved": "github:NixOS/nixpkgs/f4b140d5b253f5e2a1ff4e5506edbf8267724bde#tree-sitter",
+      "source": "devbox-search",
+      "version": "0.25.6",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/94d521g569s9yjjdqfpwpdbzx885knvv-tree-sitter-0.25.6",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/94d521g569s9yjjdqfpwpdbzx885knvv-tree-sitter-0.25.6"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/lf8is5wgkdgrmjri1z6p9ccxiscs8iys-tree-sitter-0.25.6",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/lf8is5wgkdgrmjri1z6p9ccxiscs8iys-tree-sitter-0.25.6"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/4s2242qdis9bpfjiaj5sfdnkjjbq52f2-tree-sitter-0.25.6",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/4s2242qdis9bpfjiaj5sfdnkjjbq52f2-tree-sitter-0.25.6"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/ixb7pzkjklaakcgcb43xrlsqnrdbi1fz-tree-sitter-0.25.6",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/ixb7pzkjklaakcgcb43xrlsqnrdbi1fz-tree-sitter-0.25.6"
         }
       }
     },
