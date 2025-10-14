@@ -1,0 +1,2 @@
+- Do not take credit in git commits
+- Always use conventional commits structure when making commits.

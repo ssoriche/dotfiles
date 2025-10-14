@@ -185,14 +185,21 @@ Configured in this repository:
 ### Claude Code Configuration
 
 - **User Settings**: `dot_claude/settings.json` (deployed to `~/.claude/settings.json`)
-- **Configuration Options**:
+- **Global Memories**: `dot_claude/CLAUDE.md` (deployed to `~/.claude/CLAUDE.md`)
+
+**Configuration Options in settings.json**:
   - `includeCoAuthoredBy`: false - Disables "Co-Authored-By: Claude" in git commits
   - `permissions.allow/deny/ask`: Tool permission rules
   - `env`: Environment variables for sessions
   - `model`: Default model override
   - `outputStyle`: System prompt style configuration
 
-**Note**: Runtime state files (`.claude.json`, conversation history, todos) are NOT managed by chezmoi as they contain session-specific data.
+**Global Memories in CLAUDE.md**:
+  - User preferences and instructions that apply across all projects
+  - Added via `#` prefix in Claude Code prompts (e.g., "#Always use conventional commits")
+  - Automatically loaded in every Claude Code session
+
+**Note**: Runtime state files (`.claude.json`, conversation history, project-specific state, todos) are NOT managed by chezmoi as they contain session-specific and machine-local data. UI preferences like vim mode (`editorMode`) are currently stored in `.claude.json` and not yet configurable via `settings.json`.
 
 ## Working with This Repository
 
