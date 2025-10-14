@@ -61,7 +61,9 @@
     "maccy": "latest",
     "dyff": "latest",
     "ollama": "latest",
-    "zoxide": "latest"
+    "zoxide": "latest",
+    "halloy": "latest",
+    "github:NixOS/nixpkgs/119489c3aeae42efef7c5bfc8a600e7418f91600#claude-code": ""
   },
   "shell": {
     "init_hook": [
