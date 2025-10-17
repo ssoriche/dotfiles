@@ -219,7 +219,7 @@ alt-shift-semicolon = 'mode service'
 # of not being able to use right option to specify alternative characters like
 # ™.
 # See: https://github.com/nikitabobko/AeroSpace/issues/28
-cmd-semicolon = 'mode X'
+cmd-alt-semicolon = 'mode X'
 
 # 'service' binding mode declaration.
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
