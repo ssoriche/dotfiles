@@ -1,2 +1,5 @@
 - Do not take credit in git commits
-- Always use conventional commits structure when making commits.
+- Always use conventional commits structure when making commits
+- Use fish shell syntax, not bash/zsh (e.g., `if/end` not `if/fi`, command substitution with `()` not `$()`)
+- Prefer modern CLI tools: `fd` over `find`, `rg` over `grep`, `bat` over `cat`
+- Default to 4-space indentation and functional programming patterns over classes
