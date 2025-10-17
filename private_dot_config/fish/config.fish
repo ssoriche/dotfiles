@@ -36,6 +36,10 @@ if command -v devbox >/dev/null
     devbox global shellenv --init-hook | source
 end
 
+if command -v zoxide >/dev/null
+    zoxide init fish | source
+end
+
 eval (direnv hook fish)
 
 if command -v anyenv >/dev/null
