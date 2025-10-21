@@ -63,7 +63,7 @@
     "ollama": "latest",
     "zoxide": "latest",
     "halloy": "latest",
-    "github:NixOS/nixpkgs/119489c3aeae42efef7c5bfc8a600e7418f91600#claude-code": "",
+    "github:NixOS/nixpkgs/3f2acd2406f5e98e758d3cc67a8c519759c50f9d#claude-code": "",
     "tree-sitter": "latest"
   },
   "shell": {
