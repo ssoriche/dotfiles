@@ -11,6 +11,7 @@ return {
         "shellcheck",
         "shfmt",
         "write-good",
+        "prettierd",
       })
     end,
   },
@@ -81,6 +82,8 @@ return {
         ["javascriptreact"] = { "dprint" },
         ["typescript"] = { "dprint", { "prettierd", "prettier" } },
         ["typescriptreact"] = { "dprint" },
+        ["markdown"] = { "prettierd", "prettier" },
+        ["markdown.mdx"] = { "prettierd", "prettier" },
       },
       formatters = {
         dprint = {
