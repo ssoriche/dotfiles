@@ -100,6 +100,9 @@ return {
         gitcommit = { "write_good" },
       },
       linters = {
+        markdownlint = {
+          cmd = "markdownlint-cli2",
+        },
         selene = {
           condition = function(ctx)
             local root = LazyVim.root.get({ normalize = true })
