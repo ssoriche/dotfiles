@@ -22,15 +22,17 @@ return {
     opts = {
       diagnostics = { virtual_text = { prefix = "icons" } },
       inlay_hints = { enabled = false },
-      capabilities = {
-        workspace = {
-          didChangeWatchedFiles = {
-            dynamicRegistration = false,
-          },
-        },
-      },
       ---@type lspconfig.options
       servers = {
+        ["*"] = {
+          capabilities = {
+            workspace = {
+              didChangeWatchedFiles = {
+                dynamicRegistration = false,
+              },
+            },
+          },
+        },
         lua_ls = {
           -- cmd = { "/home/folke/projects/lua-language-server/bin/lua-language-server" },
           -- single_file_support = true,
