@@ -1695,6 +1695,70 @@
         }
       }
     },
+    "lua51Packages.lua@latest": {
+      "last_modified": "2025-10-22T20:59:19Z",
+      "resolved": "github:NixOS/nixpkgs/01b6809f7f9d1183a2b3e081f0a1e6f8f415cb09#lua51Packages.lua",
+      "source": "devbox-search",
+      "version": "5.1.5",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/8zxfzra9r3d6xwkxzqdi28b3ri1q30bl-lua-5.1.5",
+              "default": true
+            },
+            {
+              "name": "doc",
+              "path": "/nix/store/mjh23i3pbanrn28qw99r0vnq3n2ibgd1-lua-5.1.5-doc"
+            }
+          ],
+          "store_path": "/nix/store/8zxfzra9r3d6xwkxzqdi28b3ri1q30bl-lua-5.1.5"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/m930g82m15hr92j1ymldbglgj2hld79a-lua-5.1.5",
+              "default": true
+            },
+            {
+              "name": "doc",
+              "path": "/nix/store/qmghzd8hf074kbg930z68pzq94l0qvik-lua-5.1.5-doc"
+            }
+          ],
+          "store_path": "/nix/store/m930g82m15hr92j1ymldbglgj2hld79a-lua-5.1.5"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/gfmdh4x5l7g2qr5n2z950m9g9sdcfq54-lua-5.1.5",
+              "default": true
+            },
+            {
+              "name": "doc",
+              "path": "/nix/store/xkxqnp6q0bm2dypj9algwjvzr2bx9aw2-lua-5.1.5-doc"
+            }
+          ],
+          "store_path": "/nix/store/gfmdh4x5l7g2qr5n2z950m9g9sdcfq54-lua-5.1.5"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/bg1bimfglxpm746wn9g2fw0mbckzpgha-lua-5.1.5",
+              "default": true
+            },
+            {
+              "name": "doc",
+              "path": "/nix/store/l3nhsjz74xfir6icjl7dr7d8i4m4sk92-lua-5.1.5-doc"
+            }
+          ],
+          "store_path": "/nix/store/bg1bimfglxpm746wn9g2fw0mbckzpgha-lua-5.1.5"
+        }
+      }
+    },
     "luarocks@latest": {
       "last_modified": "2023-02-24T09:01:09Z",
       "resolved": "github:NixOS/nixpkgs/7d0ed7f2e5aea07ab22ccb338d27fbe347ed2f11#luarocks",
