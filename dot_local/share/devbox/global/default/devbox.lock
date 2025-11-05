@@ -1143,9 +1143,9 @@
       "last_modified": "2025-10-21T21:37:49Z",
       "resolved": "github:atuinsh/atuin/37e257105ab801b49fd07a927d707a36a2e771a1?lastModified=1761082669&narHash=sha256-bfSa3RtVXxHt3usDqqpE%2FoXKKDUZOrf%2BtD9uL59fr6M%3D"
     },
-    "github:wez/wezterm/5663e749948df3ed3c2d8ee0bfea6c85226310d9?dir=nix": {
+    "github:wez/wezterm/b6e75fd7c8f9c9ad5af4efbba1d28df0969f6b17?dir=nix": {
       "last_modified": "1970-01-01T00:00:00Z",
-      "resolved": "github:wez/wezterm/5663e749948df3ed3c2d8ee0bfea6c85226310d9?dir=nix"
+      "resolved": "github:wez/wezterm/b6e75fd7c8f9c9ad5af4efbba1d28df0969f6b17?dir=nix"
     },
     "go@1.24": {
       "last_modified": "2025-10-22T20:59:19Z",
