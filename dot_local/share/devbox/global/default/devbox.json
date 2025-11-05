@@ -52,7 +52,7 @@
     "_1password-cli": "latest",
     "uv": "latest",
     "lima": "latest",
-    "github:wez/wezterm/5663e749948df3ed3c2d8ee0bfea6c85226310d9?dir=nix": "",
+    "github:wez/wezterm/b6e75fd7c8f9c9ad5af4efbba1d28df0969f6b17?dir=nix": "",
     "obsidian": "latest",
     "step-cli": "latest",
     "go": "1.24",
