@@ -161,7 +161,7 @@ ls -la ~/.config/cursor/rules/development/
 Key tools managed via Devbox (see `dot_local/share/devbox/global/default/devbox.json`):
 
 - **Search/Navigation**: `fd`, `rg` (ripgrep), `fzf`, `eza`
-- **Text Processing**: `bat`, `jq`, `fastgron`, `jless`, `sd`
+- **Text Processing**: `bat`, `fx`, `fastgron`, `jless`, `sd`
 - **Version Control**: `git`, `gh`, `tig`, `delta`, `difftastic`, `git-absorb`, `jujutsu`
 - **Editors**: Neovim (nightly), `lua-language-server`
 - **Shell Enhancements**: `atuin`, `direnv`
