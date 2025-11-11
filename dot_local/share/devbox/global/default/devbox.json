@@ -64,7 +64,8 @@
     "zoxide": "latest",
     "halloy": "latest",
     "github:NixOS/nixpkgs/3f2acd2406f5e98e758d3cc67a8c519759c50f9d#claude-code": "",
-    "tree-sitter": "latest"
+    "tree-sitter": "latest",
+    "fx": "latest"
   },
   "shell": {
     "init_hook": [
