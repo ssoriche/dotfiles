@@ -1,6 +1,6 @@
 - Do not take credit in git commits
 - Always use conventional commits structure when making commits
-- Use fish shell syntax, not bash/zsh (e.g., `if/end` not `if/fi`, command substitution with `()` not `$()`)
+- Shell syntax: Use bash for shell scripts (saved .sh files), use fish syntax for interactive commands given to the user (e.g., fish uses `if/end` not `if/fi`, command substitution with `()` not `$()`)
 - Prefer modern CLI tools: `fd` over `find`, `rg` over `grep`, `bat` over `cat`
 - Default to 4-space indentation and functional programming patterns over classes
 - When writing Go code use idioms appropriate for the project's Go version (e.g., `any` instead of `interface{}` for Go 1.18+, use generics when available)
