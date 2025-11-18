@@ -52,7 +52,6 @@
     "_1password-cli": "latest",
     "uv": "latest",
     "lima": "latest",
-    "github:wez/wezterm/b6e75fd7c8f9c9ad5af4efbba1d28df0969f6b17?dir=nix": "",
     "obsidian": "latest",
     "step-cli": "latest",
     "go": "1.24",
@@ -66,7 +65,8 @@
     "github:NixOS/nixpkgs/3f2acd2406f5e98e758d3cc67a8c519759c50f9d#claude-code": "",
     "tree-sitter": "latest",
     "fx": "latest",
-    "lua51Packages.lua": "latest"
+    "lua51Packages.lua": "latest",
+    "wezterm": "latest"
   },
   "shell": {
     "init_hook": [
