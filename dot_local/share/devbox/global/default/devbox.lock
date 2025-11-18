@@ -2089,50 +2089,50 @@
       }
     },
     "obsidian@latest": {
-      "last_modified": "2025-10-22T20:59:19Z",
-      "resolved": "github:NixOS/nixpkgs/01b6809f7f9d1183a2b3e081f0a1e6f8f415cb09#obsidian",
+      "last_modified": "2025-11-15T07:28:48Z",
+      "resolved": "github:NixOS/nixpkgs/1d4c88323ac36805d09657d13a5273aea1b34f0c#obsidian",
       "source": "devbox-search",
-      "version": "1.9.14",
+      "version": "1.10.3",
       "systems": {
         "aarch64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/jfjh7xd07qmgm58h6sg2chz28pqpbd57-obsidian-1.9.14",
+              "path": "/nix/store/xym4n32vgf65hc6d44zpx6s66xcanlzp-obsidian-1.10.3",
               "default": true
             }
           ],
-          "store_path": "/nix/store/jfjh7xd07qmgm58h6sg2chz28pqpbd57-obsidian-1.9.14"
+          "store_path": "/nix/store/xym4n32vgf65hc6d44zpx6s66xcanlzp-obsidian-1.10.3"
         },
         "aarch64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/8j07ddmr5774ibb941046cy78bswgrly-obsidian-1.9.14",
+              "path": "/nix/store/8gg3fzr3d3hxdl4cz8pzc2ijw9y29j77-obsidian-1.10.3",
               "default": true
             }
           ],
-          "store_path": "/nix/store/8j07ddmr5774ibb941046cy78bswgrly-obsidian-1.9.14"
+          "store_path": "/nix/store/8gg3fzr3d3hxdl4cz8pzc2ijw9y29j77-obsidian-1.10.3"
         },
         "x86_64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/zscsb8qkg867k5briy7bjyk4kn7d95sy-obsidian-1.9.14",
+              "path": "/nix/store/5k9yv03hrzysc8iylvy8m86aqb6787sr-obsidian-1.10.3",
               "default": true
             }
           ],
-          "store_path": "/nix/store/zscsb8qkg867k5briy7bjyk4kn7d95sy-obsidian-1.9.14"
+          "store_path": "/nix/store/5k9yv03hrzysc8iylvy8m86aqb6787sr-obsidian-1.10.3"
         },
         "x86_64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/hiq5fxvbzqp5k1q0jljv00c88xja61w2-obsidian-1.9.14",
+              "path": "/nix/store/lnm187ssqs3x9nnq27cgb6vd63xxdvr3-obsidian-1.10.3",
               "default": true
             }
           ],
-          "store_path": "/nix/store/hiq5fxvbzqp5k1q0jljv00c88xja61w2-obsidian-1.9.14"
+          "store_path": "/nix/store/lnm187ssqs3x9nnq27cgb6vd63xxdvr3-obsidian-1.10.3"
         }
       }
     },
