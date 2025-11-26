@@ -21,10 +21,11 @@ type = "archive"
 url = "https://github.com/catppuccin/btop/releases/download/1.0.0/themes.tar.gz"
 refreshPeriod = "168h"
 stripComponents = 1
-["Library/Fonts/"]
+["Library/Fonts/JetBrainsMono/"]
 type = "archive"
 url = "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/JetBrainsMono.zip"
 refreshPeriod = "168h"
+exact = true
 ["bin/assume.fish"]
 type = "file"
 url = "https://raw.githubusercontent.com/common-fate/granted/refs/heads/main/scripts/assume.fish"
