@@ -71,11 +71,15 @@
   },
   "shell": {
     "init_hook": [
-      "echo 'Welcome to devbox!' > /dev/null"
+      "export PATH=\"$HOME/.local/bin:$PATH\""
     ],
     "scripts": {
-      "test": [
-        "echo \"Error: no test specified\" && exit 1"
+      "setup-tools": [
+        "uv tool install --force --python python3.14 llm@latest",
+        "uv tool install --force --python python3.14 aider@latest"
+      ],
+      "update-tools": [
+        "uv tool upgrade --all"
       ]
     }
   }
