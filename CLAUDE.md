@@ -15,6 +15,10 @@ chezmoi edit <target-file>            # Edit a managed file
 # VSCode/Cursor settings
 ./vscode-settings/bin/manage-vscode-settings.fish apply all
 ./vscode-settings/bin/manage-vscode-settings.fish sync-extensions cursor
+
+# Python tool management (uv via devbox)
+devbox run setup-tools                # Install Python CLI tools (llm, aider)
+devbox run update-tools               # Update all uv-managed tools
 ```
 
 ## Repository Overview
@@ -147,6 +151,31 @@ ls -la ~/.config/cursor/rules/core/
 ls -la ~/.config/cursor/rules/development/
 ```
 
+### Python Tool Management with uv
+
+Python CLI tools are managed using `uv` within devbox. Tools are installed to `~/.local/bin` and automatically available in your PATH.
+
+**Configured Tools**:
+- `llm` - CLI tool for interacting with LLMs
+- `aider` - AI pair programming assistant
+
+**Commands**:
+```bash
+# First-time installation of Python tools
+devbox run setup-tools
+
+# Update all uv-managed tools
+devbox run update-tools
+
+# Install additional tools manually
+uv tool install --python python3.14 <tool-name>@latest
+
+# List installed tools
+uv tool list
+```
+
+**Note**: uv automatically downloads and manages Python 3.14 - no need to add Python to devbox packages.
+
 ## Development Environment
 
 ### Shell Environment
@@ -165,7 +194,7 @@ Key tools managed via Devbox (see `dot_local/share/devbox/global/default/devbox.
 - **Version Control**: `git`, `gh`, `tig`, `delta`, `difftastic`, `git-absorb`, `jujutsu`
 - **Editors**: Neovim (nightly), `lua-language-server`
 - **Shell Enhancements**: `atuin`, `direnv`
-- **Development**: `nodejs`, `go`, `uv`, `typos`, `dotenv-linter`
+- **Development**: `nodejs`, `go`, `uv` (Python tool manager - see Python Tool Management section), `typos`, `dotenv-linter`
 - **Kubernetes**: `k9s`, `kustomize`
 - **System Monitoring**: `btop`
 - **Utilities**: `chezmoi`, `age`, `passage`, `tldr`, `yazi`
@@ -311,6 +340,7 @@ These exist in the repo but are NOT deployed (per `.chezmoiignore`):
 6. **Extension versions are tracked**: Use sync-extensions to keep versions in sync
 7. **The vscode-settings directory is NOT deployed**: It contains management tools only
 8. **Use the management script**: Don't manually merge settings or install extensions when the script can do it
+9. **Python tools managed by uv**: Run `devbox run setup-tools` after initial devbox setup to install Python CLI tools
 
 ## Troubleshooting
 
