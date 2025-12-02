@@ -3,6 +3,9 @@ set fish_function_path $HOME/.config/fish/functions/theme-pure $fish_function_pa
 
 set -gx XDG_CONFIG_HOME $HOME/.config
 
+# Disable default fish greeting
+set -g fish_greeting ""
+
 function custom_key_binds
     fish_vi_key_bindings
 
