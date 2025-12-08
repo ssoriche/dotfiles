@@ -1195,9 +1195,9 @@
         }
       }
     },
-    "github:NixOS/nixpkgs/a6c9f9e760efead88822e051aba9258b6badaa5d#claude-code": {
+    "github:NixOS/nixpkgs/de8f975abb50d25e6b510edb4e46f00025fde906#claude-code": {
       "last_modified": "1970-01-01T00:00:00Z",
-      "resolved": "github:NixOS/nixpkgs/a6c9f9e760efead88822e051aba9258b6badaa5d#claude-code"
+      "resolved": "github:NixOS/nixpkgs/de8f975abb50d25e6b510edb4e46f00025fde906#claude-code"
     },
     "github:NixOS/nixpkgs/nixpkgs-unstable": {
       "last_modified": "2025-11-07T02:32:13Z",
