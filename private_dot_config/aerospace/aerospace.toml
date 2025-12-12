@@ -79,7 +79,7 @@ gaps.outer.bottom = [
 ]
 gaps.outer.top = [
   { monitor."Built-in Retina Display" = 10 },
-  { monitor."LG UltraFine" = 60 },
+  { monitor."LG UltraFine" = 20 },
   { monitor."DELL P2721Q.*" = 20 },
   { monitor."DELL P2721Q.*2.*" = 20 },
   60,
