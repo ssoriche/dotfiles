@@ -26,6 +26,8 @@
         ui = true
 [alias]
   ci = commit -v
+  cu = !git -c commit.gpgsign=false commit
+  ru = !git -c commit.gpgsign=false revert
   st = status
   mt = mergetool
   hist = log --all --graph --pretty='[%C(cyan)%h%Creset]%C(bold cyan)%d%Creset %s'
