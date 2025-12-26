@@ -57,7 +57,7 @@
     "go": "1.24",
     "git-absorb": "latest",
     "restic": "latest",
-    "maccy": "latest",
+    "github:NixOS/nixpkgs/9ccc4f514369dd2e94af75d0132772f5927e26bb#maccy": "",
     "dyff": "latest",
     "ollama": "latest",
     "zoxide": "latest",

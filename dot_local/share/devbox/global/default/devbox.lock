@@ -1195,9 +1195,9 @@
         }
       }
     },
-    "github:NixOS/nixpkgs/de8f975abb50d25e6b510edb4e46f00025fde906#claude-code": {
+    "github:NixOS/nixpkgs/9ccc4f514369dd2e94af75d0132772f5927e26bb#maccy": {
       "last_modified": "1970-01-01T00:00:00Z",
-      "resolved": "github:NixOS/nixpkgs/de8f975abb50d25e6b510edb4e46f00025fde906#claude-code"
+      "resolved": "github:NixOS/nixpkgs/9ccc4f514369dd2e94af75d0132772f5927e26bb#maccy"
     },
     "github:NixOS/nixpkgs/nixpkgs-unstable": {
       "last_modified": "2025-11-07T02:32:13Z",
@@ -1832,34 +1832,6 @@
               "default": true
             }
           ]
-        }
-      }
-    },
-    "maccy@latest": {
-      "last_modified": "2025-10-22T20:59:19Z",
-      "resolved": "github:NixOS/nixpkgs/01b6809f7f9d1183a2b3e081f0a1e6f8f415cb09#maccy",
-      "source": "devbox-search",
-      "version": "2.5.1",
-      "systems": {
-        "aarch64-darwin": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/0wbxaw4l8021hvpx4b9z48yc5p81awka-maccy-2.5.1",
-              "default": true
-            }
-          ],
-          "store_path": "/nix/store/0wbxaw4l8021hvpx4b9z48yc5p81awka-maccy-2.5.1"
-        },
-        "x86_64-darwin": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/5bj6jai28v04hc28rfa8r48iv2s7q5as-maccy-2.5.1",
-              "default": true
-            }
-          ],
-          "store_path": "/nix/store/5bj6jai28v04hc28rfa8r48iv2s7q5as-maccy-2.5.1"
         }
       }
     },
@@ -3063,6 +3035,10 @@
           "store_path": "/nix/store/9bj5cgf15bbx3h2ad3jqffm3n5z5s65m-zoxide-0.9.8"
         }
       }
+    },
+    "github:NixOS/nixpkgs/de8f975abb50d25e6b510edb4e46f00025fde906#claude-code": {
+      "last_modified": "1970-01-01T00:00:00Z",
+      "resolved": "github:NixOS/nixpkgs/de8f975abb50d25e6b510edb4e46f00025fde906#claude-code"
     }
   }
 }
