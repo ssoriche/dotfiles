@@ -1199,6 +1199,10 @@
       "last_modified": "1970-01-01T00:00:00Z",
       "resolved": "github:NixOS/nixpkgs/9ccc4f514369dd2e94af75d0132772f5927e26bb#maccy"
     },
+    "github:NixOS/nixpkgs/fa876358557ba628565d929adb26e3eecfe28b01#claude-code": {
+      "last_modified": "1970-01-01T00:00:00Z",
+      "resolved": "github:NixOS/nixpkgs/fa876358557ba628565d929adb26e3eecfe28b01#claude-code"
+    },
     "github:NixOS/nixpkgs/nixpkgs-unstable": {
       "last_modified": "2025-11-07T02:32:13Z",
       "resolved": "github:NixOS/nixpkgs/e1ebeec86b771e9d387dd02d82ffdc77ac753abc?lastModified=1762482733&narHash=sha256-g%2Fda4FzvckvbiZT075Sb1%2FYDNDr%2BtGQgh4N8i5ceYMg%3D"
@@ -3035,10 +3039,6 @@
           "store_path": "/nix/store/9bj5cgf15bbx3h2ad3jqffm3n5z5s65m-zoxide-0.9.8"
         }
       }
-    },
-    "github:NixOS/nixpkgs/de8f975abb50d25e6b510edb4e46f00025fde906#claude-code": {
-      "last_modified": "1970-01-01T00:00:00Z",
-      "resolved": "github:NixOS/nixpkgs/de8f975abb50d25e6b510edb4e46f00025fde906#claude-code"
     }
   }
 }
