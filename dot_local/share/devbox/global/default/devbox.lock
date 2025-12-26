@@ -50,30 +50,30 @@
       }
     },
     "aerospace@latest": {
-      "last_modified": "2025-10-22T20:59:19Z",
-      "resolved": "github:NixOS/nixpkgs/01b6809f7f9d1183a2b3e081f0a1e6f8f415cb09#aerospace",
+      "last_modified": "2025-11-26T14:39:26Z",
+      "resolved": "github:NixOS/nixpkgs/5c46f3bd98147c8d82366df95bbef2cab3a967ea#aerospace",
       "source": "devbox-search",
-      "version": "0.19.2-Beta",
+      "version": "0.20.0-Beta",
       "systems": {
         "aarch64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/gx73hr8agyk7mlfi4jjxry9swicxady4-aerospace-0.19.2-Beta",
+              "path": "/nix/store/nnaa2ngahmzp3bmb3n6cljbxpcndnf4r-aerospace-0.20.0-Beta",
               "default": true
             }
           ],
-          "store_path": "/nix/store/gx73hr8agyk7mlfi4jjxry9swicxady4-aerospace-0.19.2-Beta"
+          "store_path": "/nix/store/nnaa2ngahmzp3bmb3n6cljbxpcndnf4r-aerospace-0.20.0-Beta"
         },
         "x86_64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/brw5gdsfmlzm8ny0a0v1i7c58ga7rq6l-aerospace-0.19.2-Beta",
+              "path": "/nix/store/b8xgkfd8n6nxcxxx6r5akb6jqdhz9hy7-aerospace-0.20.0-Beta",
               "default": true
             }
           ],
-          "store_path": "/nix/store/brw5gdsfmlzm8ny0a0v1i7c58ga7rq6l-aerospace-0.19.2-Beta"
+          "store_path": "/nix/store/b8xgkfd8n6nxcxxx6r5akb6jqdhz9hy7-aerospace-0.20.0-Beta"
         }
       }
     },
