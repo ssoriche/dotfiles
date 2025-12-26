@@ -1304,8 +1304,8 @@
       }
     },
     "halloy@latest": {
-      "last_modified": "2025-11-01T04:38:15Z",
-      "resolved": "github:NixOS/nixpkgs/f1e8ae508a9a467a9f51d29b8639e96db2b52c30#halloy",
+      "last_modified": "2025-11-23T21:50:36Z",
+      "resolved": "github:NixOS/nixpkgs/ee09932cedcef15aaf476f9343d1dea2cb77e261#halloy",
       "source": "devbox-search",
       "version": "2025.11",
       "systems": {
@@ -1313,41 +1313,41 @@
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/yzkkp1k979d3l5rkhckhlfd58c8vd1ka-halloy-2025.11",
+              "path": "/nix/store/whs7yjmji34l062wzcbcanv10xqzma0c-halloy-2025.11",
               "default": true
             }
           ],
-          "store_path": "/nix/store/yzkkp1k979d3l5rkhckhlfd58c8vd1ka-halloy-2025.11"
+          "store_path": "/nix/store/whs7yjmji34l062wzcbcanv10xqzma0c-halloy-2025.11"
         },
         "aarch64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/qnqdj1wplslj157m0967ak85j4k7qqq6-halloy-2025.11",
+              "path": "/nix/store/99zjm1qns7byg2lkcs7wrdbz1qxbf19d-halloy-2025.11",
               "default": true
             }
           ],
-          "store_path": "/nix/store/qnqdj1wplslj157m0967ak85j4k7qqq6-halloy-2025.11"
+          "store_path": "/nix/store/99zjm1qns7byg2lkcs7wrdbz1qxbf19d-halloy-2025.11"
         },
         "x86_64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/jfvaa4i5xdi7c4dfmz716gs4g8cmwy90-halloy-2025.11",
+              "path": "/nix/store/wyvv6jsi7dz48vpfylja4k74jk1h9q3z-halloy-2025.11",
               "default": true
             }
           ],
-          "store_path": "/nix/store/jfvaa4i5xdi7c4dfmz716gs4g8cmwy90-halloy-2025.11"
+          "store_path": "/nix/store/wyvv6jsi7dz48vpfylja4k74jk1h9q3z-halloy-2025.11"
         },
         "x86_64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/iax5yisxdf3n5f4pqpra0v9vf3nz2h4x-halloy-2025.11",
+              "path": "/nix/store/qnk9kx8f0zb64cdcc0k7057z655p9q8m-halloy-2025.11",
               "default": true
             }
           ],
-          "store_path": "/nix/store/iax5yisxdf3n5f4pqpra0v9vf3nz2h4x-halloy-2025.11"
+          "store_path": "/nix/store/qnk9kx8f0zb64cdcc0k7057z655p9q8m-halloy-2025.11"
         }
       }
     },
