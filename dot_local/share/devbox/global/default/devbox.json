@@ -68,7 +68,8 @@
     "lua51Packages.lua": "latest",
     "awscli2": "latest",
     "wezterm": "latest",
-    "granted": "0.36.3"
+    "granted": "0.36.3",
+    "gitu": "latest"
   },
   "shell": {
     "init_hook": [
