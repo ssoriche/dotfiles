@@ -1,0 +1,34 @@
+{
+  "alwaysThinkingEnabled": true,
+  "env": {},
+  "hooks": {
+    "PreCompact": [
+      {
+        "hooks": [
+          {
+            "command": "bd prime",
+            "type": "command"
+          }
+        ],
+        "matcher": ""
+      }
+    ],
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "command": "bd prime",
+            "type": "command"
+          }
+        ],
+        "matcher": ""
+      }
+    ]
+  },
+  "includeCoAuthoredBy": false,
+  "permissions": {
+    "allow": [],
+    "ask": [],
+    "deny": []
+  }
+}
