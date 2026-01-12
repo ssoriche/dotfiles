@@ -80,6 +80,7 @@ if status is-interactive
         set -gx GIT_EDITOR vim
         set -gx VISUAL vim
     end
+    set -gx CLAUDE_CODE_DISABLE_FEEDBACK_SURVEY 1
 end
 
 alias assume="source $HOME/bin/assume.fish"
