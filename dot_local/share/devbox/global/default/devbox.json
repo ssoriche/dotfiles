@@ -79,7 +79,8 @@
     "scripts": {
       "setup-tools": [
         "uv tool install --force --python python3.14 llm@latest",
-        "uv tool install --force --python python3.14 aider@latest"
+        "uv tool install --force --python python3.14 aider@latest",
+        "uv tool install --force --python python3.14 claude-code-transcripts"
       ],
       "update-tools": [
         "uv tool upgrade --all"
