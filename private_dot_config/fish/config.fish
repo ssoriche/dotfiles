@@ -87,3 +87,8 @@ alias assume="source $HOME/bin/assume.fish"
 
 # uv
 fish_add_path "/Users/shawns/.local/bin"
+
+if test "$TERM_PROGRAM" = vscode
+    set -gx PAGER cat
+    set -gx GIT_PAGER cat
+end
