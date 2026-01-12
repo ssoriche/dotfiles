@@ -69,7 +69,8 @@
     "awscli2": "latest",
     "wezterm": "latest",
     "granted": "0.36.3",
-    "gitu": "latest"
+    "gitu": "latest",
+    "github:steveyegge/beads": ""
   },
   "shell": {
     "init_hook": [
