@@ -397,6 +397,54 @@
         }
       }
     },
+    "bun@latest": {
+      "last_modified": "2026-01-23T17:20:52Z",
+      "resolved": "github:NixOS/nixpkgs/a1bab9e494f5f4939442a57a58d0449a109593fe#bun",
+      "source": "devbox-search",
+      "version": "1.3.6",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/4p5rq1ss65p08xcj71kj33jn2m673bqi-bun-1.3.6",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/4p5rq1ss65p08xcj71kj33jn2m673bqi-bun-1.3.6"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/yd59kr0362s39k25gcm4vkvnrm9x9b8w-bun-1.3.6",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/yd59kr0362s39k25gcm4vkvnrm9x9b8w-bun-1.3.6"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/2bg6bm7hqi7yqfcx34an9nhpnjjrldnl-bun-1.3.6",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/2bg6bm7hqi7yqfcx34an9nhpnjjrldnl-bun-1.3.6"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/bya2xzd49g08c7c371g36wma3d5ggbp2-bun-1.3.6",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/bya2xzd49g08c7c371g36wma3d5ggbp2-bun-1.3.6"
+        }
+      }
+    },
     "chezmoi@latest": {
       "last_modified": "2025-10-28T12:57:11Z",
       "resolved": "github:NixOS/nixpkgs/e99366c665bdd53b7b500ccdc5226675cfc51f45#chezmoi",
