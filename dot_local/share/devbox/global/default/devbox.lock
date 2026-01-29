@@ -1199,9 +1199,9 @@
       "last_modified": "1970-01-01T00:00:00Z",
       "resolved": "github:NixOS/nixpkgs/9ccc4f514369dd2e94af75d0132772f5927e26bb#maccy"
     },
-    "github:NixOS/nixpkgs/fa876358557ba628565d929adb26e3eecfe28b01#claude-code": {
+    "github:NixOS/nixpkgs/81c48c2f5da251300a32dd5f745ea0f3f85ca97e#claude-code": {
       "last_modified": "1970-01-01T00:00:00Z",
-      "resolved": "github:NixOS/nixpkgs/fa876358557ba628565d929adb26e3eecfe28b01#claude-code"
+      "resolved": "github:NixOS/nixpkgs/81c48c2f5da251300a32dd5f745ea0f3f85ca97e#claude-code"
     },
     "github:NixOS/nixpkgs/nixpkgs-unstable": {
       "last_modified": "2025-11-07T02:32:13Z",
@@ -1211,9 +1211,9 @@
       "last_modified": "2025-10-21T21:37:49Z",
       "resolved": "github:atuinsh/atuin/37e257105ab801b49fd07a927d707a36a2e771a1?lastModified=1761082669&narHash=sha256-bfSa3RtVXxHt3usDqqpE%2FoXKKDUZOrf%2BtD9uL59fr6M%3D"
     },
-    "github:steveyegge/beads": {
-      "last_modified": "2026-01-12T11:21:12Z",
-      "resolved": "github:steveyegge/beads/279192c5fbf851d0e47feaa7a5b5a9a6df325866?lastModified=1768216872&narHash=sha256-DwIR%2Fr1TJnpVd%2FCT1E2OTkAjU7k9%2FKHbcVwg5zziFVg%3D"
+    "github:steveyegge/beads#default": {
+      "last_modified": "2026-01-22T08:13:02Z",
+      "resolved": "github:steveyegge/beads/b5178e1895e7db638725f9aeaad3cd5039eb7e73?lastModified=1769069582&narHash=sha256-m0gVLeWfFeaWZpARuXgP00npmZcO7XCm7mXWA52bqTc%3D#default"
     },
     "gitu@latest": {
       "last_modified": "2025-12-23T06:39:02Z",
