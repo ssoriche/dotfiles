@@ -70,7 +70,8 @@
     "wezterm": "latest",
     "granted": "0.36.3",
     "gitu": "latest",
-    "github:steveyegge/beads#default": ""
+    "github:steveyegge/beads#default": "",
+    "ncdu": "latest"
   },
   "shell": {
     "init_hook": [

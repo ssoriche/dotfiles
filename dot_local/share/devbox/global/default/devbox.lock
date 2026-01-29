@@ -1987,6 +1987,54 @@
         }
       }
     },
+    "ncdu@latest": {
+      "last_modified": "2026-01-10T08:02:33Z",
+      "resolved": "github:NixOS/nixpkgs/3146c6aa9995e7351a398e17470e15305e6e18ff#ncdu",
+      "source": "devbox-search",
+      "version": "2.9.2",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/2jswsz6m2ni6cc3dvrwjlf34qx4d6hh6-ncdu-2.9.2",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/2jswsz6m2ni6cc3dvrwjlf34qx4d6hh6-ncdu-2.9.2"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/v4lyxpza8wjbkl4wamf6y5fpp514wfdj-ncdu-2.9.2",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/v4lyxpza8wjbkl4wamf6y5fpp514wfdj-ncdu-2.9.2"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/npiswg7j2s72051ppqg4xg0lb86k5ksj-ncdu-2.9.2",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/npiswg7j2s72051ppqg4xg0lb86k5ksj-ncdu-2.9.2"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/r4gw4762zxnszk6hl7sxqcijlyjs9bl4-ncdu-2.9.2",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/r4gw4762zxnszk6hl7sxqcijlyjs9bl4-ncdu-2.9.2"
+        }
+      }
+    },
     "neovim@latest": {
       "last_modified": "2025-11-01T04:38:15Z",
       "resolved": "github:NixOS/nixpkgs/f1e8ae508a9a467a9f51d29b8639e96db2b52c30#neovim",
