@@ -51,6 +51,11 @@
             install -m755 $TMPDIR/analyze-go $out/share/mole/bin/
             install -m755 $TMPDIR/status-go $out/share/mole/bin/
 
+            # Shell scripts from bin/
+            for script in bin/*.sh; do
+              install -m755 "$script" $out/share/mole/bin/
+            done
+
             # Patch SCRIPT_DIR - the script sets it dynamically, so we replace that line
             substituteInPlace $out/bin/mole \
               --replace 'SCRIPT_DIR="$(cd "$(dirname "''${BASH_SOURCE[0]}")" && pwd)"' \
