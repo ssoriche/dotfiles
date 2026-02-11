@@ -62,7 +62,7 @@
     "ollama": "latest",
     "zoxide": "latest",
     "halloy": "latest",
-    "github:NixOS/nixpkgs/ddc4f91790e958996696f0e0c4c7a688af98da2f#claude-code": "",
+    "github:NixOS/nixpkgs/e0eaf9d78f39b1ea7f4cca30e6e47ac4fc13a24f#claude-code": "",
     "tree-sitter": "latest",
     "fx": "latest",
     "lua51Packages.lua": "latest",

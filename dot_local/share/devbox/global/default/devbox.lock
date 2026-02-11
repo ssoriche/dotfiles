@@ -1247,9 +1247,9 @@
       "last_modified": "1970-01-01T00:00:00Z",
       "resolved": "github:NixOS/nixpkgs/9ccc4f514369dd2e94af75d0132772f5927e26bb#maccy"
     },
-    "github:NixOS/nixpkgs/ddc4f91790e958996696f0e0c4c7a688af98da2f#claude-code": {
+    "github:NixOS/nixpkgs/e0eaf9d78f39b1ea7f4cca30e6e47ac4fc13a24f#claude-code": {
       "last_modified": "1970-01-01T00:00:00Z",
-      "resolved": "github:NixOS/nixpkgs/ddc4f91790e958996696f0e0c4c7a688af98da2f#claude-code"
+      "resolved": "github:NixOS/nixpkgs/e0eaf9d78f39b1ea7f4cca30e6e47ac4fc13a24f#claude-code"
     },
     "github:NixOS/nixpkgs/nixpkgs-unstable": {
       "last_modified": "2025-11-07T02:32:13Z",
