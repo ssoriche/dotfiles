@@ -176,18 +176,16 @@ uv tool list
 
 **Note**: uv automatically downloads and manages Python 3.14 - no need to add Python to devbox packages.
 
-### macOS App Aliases for Spotlight
+### Accessing Devbox GUI Apps
 
-GUI applications installed via devbox (like AeroSpace, Wezterm) live in the Nix store and aren't discoverable by Spotlight. The `link-apps` script creates macOS Finder aliases in `/Applications/` so Spotlight can find them.
+GUI applications installed via devbox (like AeroSpace, Wezterm) live in the Nix store and aren't discoverable by Spotlight. Add the devbox Applications folder to the Dock as a stack for easy access:
 
 ```bash
-# Create/update aliases for all devbox-installed apps
-devbox global run link-apps
+# Add devbox Applications folder to Dock as a fan
+defaults write com.apple.dock persistent-others -array-add "<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>$HOME/.local/share/devbox/global/default/.devbox/nix/profile/default/Applications</string><key>_CFURLStringType</key><integer>0</integer></dict><key>file-label</key><string>Devbox Apps</string><key>file-type</key><integer>2</integer><key>displayas</key><integer>1</integer><key>showas</key><integer>2</integer></dict><key>tile-type</key><string>directory-tile</string></dict>" && killall Dock
 ```
 
-**When to run**: After installing or updating any GUI application via devbox (e.g., adding a new app to `devbox.json` or running `devbox update`).
-
-**How it works**: The script iterates over `.app` bundles in the devbox profile, resolves symlinks to get the actual Nix store path, and uses AppleScript to create proper macOS aliases that Spotlight can index.
+Right-click the Dock folder to customize display (fan/grid/list, sort order).
 
 ## Development Environment
 
