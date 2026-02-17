@@ -176,6 +176,19 @@ uv tool list
 
 **Note**: uv automatically downloads and manages Python 3.14 - no need to add Python to devbox packages.
 
+### macOS App Aliases for Spotlight
+
+GUI applications installed via devbox (like AeroSpace, Wezterm) live in the Nix store and aren't discoverable by Spotlight. The `link-apps` script creates macOS Finder aliases in `/Applications/` so Spotlight can find them.
+
+```bash
+# Create/update aliases for all devbox-installed apps
+devbox global run link-apps
+```
+
+**When to run**: After installing or updating any GUI application via devbox (e.g., adding a new app to `devbox.json` or running `devbox update`).
+
+**How it works**: The script iterates over `.app` bundles in the devbox profile, resolves symlinks to get the actual Nix store path, and uses AppleScript to create proper macOS aliases that Spotlight can index.
+
 ## Development Environment
 
 ### Shell Environment
