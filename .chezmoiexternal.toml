@@ -35,3 +35,9 @@ type = "archive"
 url = "https://github.com/catppuccin/k9s/archive/main.tar.gz"
 refreshPeriod = "168h"
 stripComponents = 2
+[".claude/agents"]
+type = "git-repo"
+url = "ssh://soft-serve.metroplex.coloredblocks.net:23231/claude-agents.git"
+refreshPeriod = "168h"
+clone.args = ["--depth", "1"]
+pull.args = ["--ff-only"]
