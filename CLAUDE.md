@@ -178,12 +178,7 @@ uv tool list
 
 ### Accessing Devbox GUI Apps
 
-GUI applications installed via devbox (like AeroSpace, Wezterm) live in the Nix store and aren't discoverable by Spotlight. Add the devbox Applications folder to the Dock as a stack for easy access:
-
-```bash
-# Add devbox Applications folder to Dock as a fan
-defaults write com.apple.dock persistent-others -array-add "<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>$HOME/.local/share/devbox/global/default/.devbox/nix/profile/default/Applications</string><key>_CFURLStringType</key><integer>0</integer></dict><key>file-label</key><string>Devbox Apps</string><key>file-type</key><integer>2</integer><key>displayas</key><integer>1</integer><key>showas</key><integer>2</integer></dict><key>tile-type</key><string>directory-tile</string></dict>" && killall Dock
-```
+GUI applications installed via devbox (like AeroSpace, Wezterm) live in the Nix store and aren't discoverable by Spotlight. A chezmoi `run_once` script (`run_once_add-devbox-apps-to-dock.sh`) automatically adds the devbox Applications folder to the Dock as a stack on first `chezmoi apply`.
 
 Right-click the Dock folder to customize display (fan/grid/list, sort order).
 

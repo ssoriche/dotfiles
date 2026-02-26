@@ -76,8 +76,7 @@
   },
   "shell": {
     "init_hook": [
-      "export PATH=\"$HOME/.local/bin:$PATH\"",
-      "bash \"$HOME/.local/bin/sync-devbox-apps.sh\" 2>/dev/null || true"
+      "export PATH=\"$HOME/.local/bin:$PATH\""
     ],
     "scripts": {
       "setup-tools": [
