@@ -21,6 +21,9 @@ CLAUDE.md
 # VSCode/Cursor settings management tools (not for deployment)
 vscode-settings/
 
+# Flox lock file (auto-generated, platform-specific)
+.flox-global/.flox/manifest.lock
+
 # OS files
 .DS_Store
 Thumbs.db

@@ -47,7 +47,7 @@ Respond to these user queries with contextual assistance:
     echo "=== Current Branch ==="
     git branch --show-current
     echo "=== Environment Health ==="
-    devbox info | head -5
+    flox list -d ~/.flox-global 2>/dev/null || devbox info 2>/dev/null | head -5
     echo "=== Authentication Status ==="
     gh auth status 2>/dev/null || echo "GitHub CLI not authenticated"
 }'
@@ -186,7 +186,7 @@ I detected some environment issues. Here's how I can help:
 ### 🔍 Diagnostic Tools
 - **"Run health check"** - Comprehensive environment validation
 - **"Show me what's broken"** - Detailed problem analysis
-- **"Check devbox status"** - Validate devbox environment
+- **"Check flox/devbox status"** - Validate package environment
 
 ### 📚 Learning & Prevention
 - **"Explain the error"** - Understand what went wrong

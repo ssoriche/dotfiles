@@ -1,0 +1,143 @@
+# Flox global environment — mirrors devbox global packages
+# Evaluate alongside devbox; fish shell prefers Flox when available
+
+version = 1
+
+[install]
+# Search / Navigation
+ripgrep.pkg-path = "ripgrep"
+fd.pkg-path = "fd"
+fzf.pkg-path = "fzf"
+eza.pkg-path = "eza"
+tree.pkg-path = "tree"
+zoxide.pkg-path = "zoxide"
+yazi.pkg-path = "yazi"
+
+# Text / JSON processing
+bat.pkg-path = "bat"
+jq.pkg-path = "jq"
+jless.pkg-path = "jless"
+jnv.pkg-path = "jnv"
+fastgron.pkg-path = "fastgron"
+fx.pkg-path = "fx"
+sd.pkg-path = "sd"
+
+# Version control
+git.pkg-path = "git"
+gh.pkg-path = "gh"
+tig.pkg-path = "tig"
+delta.pkg-path = "delta"
+difftastic.pkg-path = "difftastic"
+git-absorb.pkg-path = "git-absorb"
+git-credential-manager.pkg-path = "git-credential-manager"
+jujutsu.pkg-path = "jujutsu"
+gitu.pkg-path = "gitu"
+
+# Editors / Language servers
+neovim.pkg-path = "neovim"
+lua-language-server.pkg-path = "lua-language-server"
+tree-sitter.pkg-path = "tree-sitter"
+
+# Shells / Shell enhancements
+direnv.pkg-path = "direnv"
+
+# Languages / Runtimes
+nodejs.pkg-path = "nodejs"
+go.pkg-path = "go"
+go.version = "1.24"
+uv.pkg-path = "uv"
+bun.pkg-path = "bun"
+luarocks.pkg-path = "luarocks"
+lua.pkg-path = "lua51Packages.lua"
+
+# Linters / Analysis
+golangci-lint.pkg-path = "golangci-lint"
+typos.pkg-path = "typos"
+dotenv-linter.pkg-path = "dotenv-linter"
+
+# Kubernetes
+kustomize.pkg-path = "kustomize"
+
+# Networking / Security
+nmap.pkg-path = "nmap"
+age.pkg-path = "age"
+passage.pkg-path = "passage"
+step-cli.pkg-path = "step-cli"
+wget.pkg-path = "wget"
+_1password-cli.pkg-path = "_1password-cli"
+
+# Cloud
+awscli2.pkg-path = "awscli2"
+granted.pkg-path = "granted"
+granted.version = "0.36.3"
+
+# System monitoring / Utilities
+btop.pkg-path = "btop"
+pv.pkg-path = "pv"
+ncdu.pkg-path = "ncdu"
+spacer.pkg-path = "spacer"
+moreutils.pkg-path = "moreutils"
+tldr.pkg-path = "tldr"
+chezmoi.pkg-path = "chezmoi"
+q.pkg-path = "q"
+dyff.pkg-path = "dyff"
+
+# Recording
+asciinema.pkg-path = "asciinema"
+asciinema-agg.pkg-path = "asciinema-agg"
+
+# Virtualization
+lima.pkg-path = "lima"
+
+# Backup
+restic.pkg-path = "restic"
+
+# AI / LLM
+ollama.pkg-path = "ollama"
+
+# GUI Applications
+aerospace.pkg-path = "aerospace"
+wezterm.pkg-path = "wezterm"
+obsidian.pkg-path = "obsidian"
+halloy.pkg-path = "halloy"
+
+# macOS SDK frameworks (needed by some builds)
+CoreServices.pkg-path = "darwin.apple_sdk.frameworks.CoreServices"
+
+# Flake-based packages (pinned to specific commits/repos)
+atuin.flake = "github:atuinsh/atuin/v18.10.0"
+maccy.flake = "github:NixOS/nixpkgs/9ccc4f514369dd2e94af75d0132772f5927e26bb#maccy"
+claude-code.flake = "github:NixOS/nixpkgs/8b9f22d5a45eefefd9bf4fe342f09238ed2c48f1#claude-code"
+beads.flake = "github:steveyegge/beads#default"
+
+[hook]
+on-activate = """
+  export PATH="$HOME/.local/bin:$PATH"
+"""
+
+[profile.bash]
+bash = """
+  setup-tools() {
+    uv tool install --force --python python3.14 llm@latest
+    uv tool install --force --python python3.14 aider@latest
+    uv tool install --force --python python3.14 claude-code-transcripts
+  }
+  update-tools() {
+    uv tool upgrade --all
+  }
+"""
+
+[profile.fish]
+fish = """
+  function setup-tools
+    uv tool install --force --python python3.14 llm@latest
+    uv tool install --force --python python3.14 aider@latest
+    uv tool install --force --python python3.14 claude-code-transcripts
+  end
+  function update-tools
+    uv tool upgrade --all
+  end
+"""
+
+[options]
+systems = ["aarch64-darwin"]

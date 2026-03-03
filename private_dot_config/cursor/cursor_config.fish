@@ -3,11 +3,13 @@
 # Minimal fish setup for consistent AI assistant behavior
 # This file is version controlled and shared across the team
 
-# Initialize devbox global environment with completions and hooks
-if command -v devbox >/dev/null 2>&1
+# Initialize global environment (prefer Flox, fall back to devbox)
+if command -v flox >/dev/null 2>&1; and test -d "$HOME/.flox-global/.flox"
+    flox activate -d "$HOME/.flox-global" -m run | source
+else if command -v devbox >/dev/null 2>&1
     devbox global shellenv --init-hook | source
 else
-    echo "Warning: devbox not found in PATH" >&2
+    echo "Warning: neither flox nor devbox found in PATH" >&2
 end
 
 # Initialize direnv for automatic devbox.json loading
