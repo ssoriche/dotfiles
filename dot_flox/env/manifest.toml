@@ -115,7 +115,7 @@ on-activate = """
   export PATH="$HOME/.local/bin:$PATH"
 """
 
-[profile.bash]
+[profile]
 bash = """
   setup-tools() {
     uv tool install --force --python python3.14 llm@latest
@@ -126,8 +126,6 @@ bash = """
     uv tool upgrade --all
   }
 """
-
-[profile.fish]
 fish = """
   function setup-tools
     uv tool install --force --python python3.14 llm@latest

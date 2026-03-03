@@ -22,7 +22,6 @@ CLAUDE.md
 vscode-settings/
 
 # Flox runtime/generated files (not managed by chezmoi)
-.flox/.flox
 .flox/cache
 .flox/log
 .flox/run
