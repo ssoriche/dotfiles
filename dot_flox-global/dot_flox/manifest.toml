@@ -141,3 +141,6 @@ fish = """
 
 [options]
 systems = ["aarch64-darwin"]
+
+[options.activate]
+mode = "run"

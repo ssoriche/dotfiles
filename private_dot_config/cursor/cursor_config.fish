@@ -5,7 +5,7 @@
 
 # Initialize global environment (prefer Flox, fall back to devbox)
 if command -v flox >/dev/null 2>&1; and test -d "$HOME/.flox-global/.flox"
-    flox activate -d "$HOME/.flox-global" -m run | source
+    flox activate -d "$HOME/.flox-global" | source
 else if command -v devbox >/dev/null 2>&1
     devbox global shellenv --init-hook | source
 else
