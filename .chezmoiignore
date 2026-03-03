@@ -21,8 +21,12 @@ CLAUDE.md
 # VSCode/Cursor settings management tools (not for deployment)
 vscode-settings/
 
-# Flox lock file (auto-generated, platform-specific)
-.flox/.flox/manifest.lock
+# Flox runtime/generated files (not managed by chezmoi)
+.flox/.flox
+.flox/cache
+.flox/log
+.flox/run
+.flox/env/manifest.lock
 
 # OS files
 .DS_Store

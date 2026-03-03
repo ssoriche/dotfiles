@@ -4,7 +4,7 @@
 # This file is version controlled and shared across the team
 
 # Initialize global environment (prefer Flox, fall back to devbox)
-if command -v flox >/dev/null 2>&1; and test -d "$HOME/.flox/.flox"
+if command -v flox >/dev/null 2>&1; and test -f "$HOME/.flox/env/manifest.toml"
     flox activate -d "$HOME/.flox" | source
 else if command -v devbox >/dev/null 2>&1
     devbox global shellenv --init-hook | source

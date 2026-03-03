@@ -3,16 +3,16 @@
 # This runs once per machine via chezmoi to make Flox-installed GUI apps
 # (AeroSpace, WezTerm, Obsidian, etc.) easily accessible.
 
-FLOX_ENV_DIR="$HOME/.flox/.flox"
+FLOX_ENV_DIR="$HOME/.flox"
 
 # Skip if the Flox environment doesn't exist
-if [ ! -d "$FLOX_ENV_DIR" ]; then
+if [ ! -f "$FLOX_ENV_DIR/env/manifest.toml" ]; then
     echo "Flox global environment not found, skipping Dock setup"
     exit 0
 fi
 
 # Find the Applications directory inside the Flox environment
-# Path varies by architecture: .flox/run/<arch>-<os>/...
+# Path varies by architecture: run/<arch>-<os>.<name>.<mode>/...
 APPS_DIR=$(find "$FLOX_ENV_DIR/run" -type d -name "Applications" 2>/dev/null | head -1)
 
 if [ -z "$APPS_DIR" ] || [ ! -d "$APPS_DIR" ]; then
