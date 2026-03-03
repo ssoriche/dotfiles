@@ -35,8 +35,8 @@ fish_add_path "$HOME/.pgenv/bin"
 fish_add_path "$HOME/.pgenv/pgsql/bin"
 fish_add_path "$HOME/go/bin"
 
-if command -v flox >/dev/null; and test -d "$HOME/.flox-global/.flox"
-    flox activate -d "$HOME/.flox-global" | source
+if command -v flox >/dev/null; and test -d "$HOME/.flox/.flox"
+    flox activate -d "$HOME/.flox" | source
 else if command -v devbox >/dev/null
     devbox global shellenv --init-hook | source
 end

@@ -22,7 +22,7 @@ CLAUDE.md
 vscode-settings/
 
 # Flox lock file (auto-generated, platform-specific)
-.flox-global/.flox/manifest.lock
+.flox/.flox/manifest.lock
 
 # OS files
 .DS_Store

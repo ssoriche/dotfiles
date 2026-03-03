@@ -3,7 +3,7 @@
 # This runs once per machine via chezmoi to make Flox-installed GUI apps
 # (AeroSpace, WezTerm, Obsidian, etc.) easily accessible.
 
-FLOX_ENV_DIR="$HOME/.flox-global/.flox"
+FLOX_ENV_DIR="$HOME/.flox/.flox"
 
 # Skip if the Flox environment doesn't exist
 if [ ! -d "$FLOX_ENV_DIR" ]; then
