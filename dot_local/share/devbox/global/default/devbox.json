@@ -59,7 +59,6 @@
     "restic": "latest",
     "github:NixOS/nixpkgs/9ccc4f514369dd2e94af75d0132772f5927e26bb#maccy": "",
     "dyff": "latest",
-    "ollama": "latest",
     "zoxide": "latest",
     "halloy": "latest",
     "github:NixOS/nixpkgs/8b9f22d5a45eefefd9bf4fe342f09238ed2c48f1#claude-code": "",
