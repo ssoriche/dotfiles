@@ -70,6 +70,7 @@ _1password-cli.pkg-path = "_1password-cli"
 awscli2.pkg-path = "awscli2"
 granted.pkg-path = "granted"
 granted.version = "0.36.3"
+granted.pkg-group = "pinned"
 
 # System monitoring / Utilities
 btop.pkg-path = "btop"
@@ -93,7 +94,7 @@ lima.pkg-path = "lima"
 restic.pkg-path = "restic"
 
 # AI / LLM
-ollama.pkg-path = "ollama"
+claude-code.pkg-path = "claude-code"
 
 # GUI Applications
 aerospace.pkg-path = "aerospace"
@@ -107,7 +108,6 @@ CoreServices.pkg-path = "darwin.apple_sdk.frameworks.CoreServices"
 # Flake-based packages (pinned to specific commits/repos)
 atuin.flake = "github:atuinsh/atuin/v18.10.0"
 maccy.flake = "github:NixOS/nixpkgs/9ccc4f514369dd2e94af75d0132772f5927e26bb#maccy"
-claude-code.flake = "github:NixOS/nixpkgs/8b9f22d5a45eefefd9bf4fe342f09238ed2c48f1#claude-code"
 beads.flake = "github:steveyegge/beads#default"
 
 [hook]
@@ -139,6 +139,9 @@ fish = """
 
 [options]
 systems = ["aarch64-darwin"]
+
+[options.allow]
+unfree = true
 
 [options.activate]
 mode = "run"
