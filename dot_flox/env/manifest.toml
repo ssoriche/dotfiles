@@ -26,62 +26,8 @@ fastgron.pkg-path = "fastgron"
 fx.pkg-path = "fx"
 sd.pkg-path = "sd"
 
-# Version control — git ecosystem tools share a revision
-git.pkg-path = "git"
-git.pkg-group = "git"
-gh.pkg-path = "gh"
-gh.pkg-group = "git"
-tig.pkg-path = "tig"
-tig.pkg-group = "git"
-delta.pkg-path = "delta"
-delta.pkg-group = "git"
-difftastic.pkg-path = "difftastic"
-difftastic.pkg-group = "git"
-git-absorb.pkg-path = "git-absorb"
-git-absorb.pkg-group = "git"
-git-credential-manager.pkg-path = "git-credential-manager"
-git-credential-manager.pkg-group = "git"
-jujutsu.pkg-path = "jujutsu"
-jujutsu.pkg-group = "git"
-gitu.pkg-path = "gitu"
-gitu.pkg-group = "git"
-
-# Editors / Language servers — must stay compatible
-neovim.pkg-path = "neovim"
-neovim.pkg-group = "editors"
-lua-language-server.pkg-path = "lua-language-server"
-lua-language-server.pkg-group = "editors"
-tree-sitter.pkg-path = "tree-sitter"
-tree-sitter.pkg-group = "editors"
-
 # Shells / Shell enhancements
 direnv.pkg-path = "direnv"
-
-# Languages / Runtimes
-nodejs.pkg-path = "nodejs"
-nodejs.pkg-group = "node"
-bun.pkg-path = "bun"
-bun.pkg-group = "node"
-
-go.pkg-path = "go"
-go.version = "1.24"
-go.pkg-group = "go"
-golangci-lint.pkg-path = "golangci-lint"
-golangci-lint.pkg-group = "go"
-
-uv.pkg-path = "uv"
-uv.pkg-group = "python"
-
-luarocks.pkg-path = "luarocks"
-luarocks.pkg-group = "lua"
-lua.pkg-path = "lua51Packages.lua"
-lua.pkg-group = "lua"
-
-# Linters / Analysis
-typos.pkg-path = "typos"
-typos.pkg-group = "linters"
-dotenv-linter.pkg-path = "dotenv-linter"
-dotenv-linter.pkg-group = "linters"
 
 # Kubernetes
 kustomize.pkg-path = "kustomize"
@@ -93,13 +39,6 @@ passage.pkg-path = "passage"
 step-cli.pkg-path = "step-cli"
 wget.pkg-path = "wget"
 _1password-cli.pkg-path = "_1password-cli"
-
-# Cloud
-awscli2.pkg-path = "awscli2"
-awscli2.pkg-group = "cloud"
-granted.pkg-path = "granted"
-granted.version = "0.36.3"
-granted.pkg-group = "pinned"
 
 # System monitoring / Utilities
 btop.pkg-path = "btop"
@@ -122,22 +61,60 @@ lima.pkg-path = "lima"
 # Backup
 restic.pkg-path = "restic"
 
-# AI / LLM
-claude-code.pkg-path = "claude-code"
-claude-code.pkg-group = "claude"
-
-# GUI Applications — avoid blocking CLI tool upgrades
-aerospace.pkg-path = "aerospace"
-aerospace.pkg-group = "gui"
-wezterm.pkg-path = "wezterm"
-wezterm.pkg-group = "gui"
-obsidian.pkg-path = "obsidian"
-obsidian.pkg-group = "gui"
-halloy.pkg-path = "halloy"
-halloy.pkg-group = "gui"
-
 # macOS SDK frameworks (needed by some builds)
 CoreServices.pkg-path = "darwin.apple_sdk.frameworks.CoreServices"
+
+# --- Grouped packages (inline tables) ---
+
+# git — ecosystem tools share a revision
+git = { pkg-path = "git", pkg-group = "git" }
+gh = { pkg-path = "gh", pkg-group = "git" }
+tig = { pkg-path = "tig", pkg-group = "git" }
+delta = { pkg-path = "delta", pkg-group = "git" }
+difftastic = { pkg-path = "difftastic", pkg-group = "git" }
+git-absorb = { pkg-path = "git-absorb", pkg-group = "git" }
+git-credential-manager = { pkg-path = "git-credential-manager", pkg-group = "git" }
+jujutsu = { pkg-path = "jujutsu", pkg-group = "git" }
+gitu = { pkg-path = "gitu", pkg-group = "git" }
+
+# editors — neovim + language server ABI compatibility
+neovim = { pkg-path = "neovim", pkg-group = "editors" }
+lua-language-server = { pkg-path = "lua-language-server", pkg-group = "editors" }
+tree-sitter = { pkg-path = "tree-sitter", pkg-group = "editors" }
+
+# go — linter must match Go version
+go = { pkg-path = "go", version = "1.24", pkg-group = "go" }
+golangci-lint = { pkg-path = "golangci-lint", pkg-group = "go" }
+
+# node — JS runtimes
+nodejs = { pkg-path = "nodejs", pkg-group = "node" }
+bun = { pkg-path = "bun", pkg-group = "node" }
+
+# lua — Lua ecosystem
+luarocks = { pkg-path = "luarocks", pkg-group = "lua" }
+lua = { pkg-path = "lua51Packages.lua", pkg-group = "lua" }
+
+# python — standalone, frequent updates
+uv = { pkg-path = "uv", pkg-group = "python" }
+
+# linters — standalone analysis tools
+typos = { pkg-path = "typos", pkg-group = "linters" }
+dotenv-linter = { pkg-path = "dotenv-linter", pkg-group = "linters" }
+
+# cloud — large package, independent update cadence
+awscli2 = { pkg-path = "awscli2", pkg-group = "cloud" }
+
+# pinned — version-locked packages
+granted = { pkg-path = "granted", version = "0.36.3", pkg-group = "pinned" }
+
+# claude — fast-moving, unfree
+claude-code = { pkg-path = "claude-code", pkg-group = "claude" }
+
+# gui — avoid blocking CLI tool upgrades
+aerospace = { pkg-path = "aerospace", pkg-group = "gui" }
+wezterm = { pkg-path = "wezterm", pkg-group = "gui" }
+obsidian = { pkg-path = "obsidian", pkg-group = "gui" }
+halloy = { pkg-path = "halloy", pkg-group = "gui" }
 
 # Flake-based packages (pinned to specific commits/repos)
 atuin.flake = "github:atuinsh/atuin/v18.10.0"
