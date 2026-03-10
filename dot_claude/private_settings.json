@@ -1,5 +1,8 @@
 {
   "alwaysThinkingEnabled": true,
+  "enabledPlugins": {
+    "gopls-lsp@claude-plugins-official": true
+  },
   "env": {},
   "hooks": {
     "PreCompact": [
@@ -26,6 +29,7 @@
     ]
   },
   "includeCoAuthoredBy": false,
+  "model": "opus",
   "permissions": {
     "allow": [],
     "ask": [],
