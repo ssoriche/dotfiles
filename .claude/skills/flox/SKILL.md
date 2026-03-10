@@ -45,14 +45,31 @@ Create a new group when:
 - A package is blocking upgrades of unrelated packages in its group
 - A large package (like awscli2) is slowing resolution for the whole group
 
+## TOML style convention
+
+The manifest uses a **hybrid style**:
+- **Dot notation** for toplevel packages (no pkg-group, one line each)
+- **Inline tables** for grouped packages (pkg-group visible at a glance)
+
+```toml
+# toplevel — dot notation
+ripgrep.pkg-path = "ripgrep"
+
+# grouped — inline table
+git = { pkg-path = "git", pkg-group = "git" }
+go = { pkg-path = "go", version = "1.24", pkg-group = "go" }
+```
+
 ## Common operations
 
 ### Add a package
 
 ```toml
-# In dot_flox/env/manifest.toml under [install]
+# Toplevel (no group needed) — dot notation
 mypackage.pkg-path = "mypackage"
-mypackage.pkg-group = "appropriate-group"  # omit for toplevel
+
+# Grouped — inline table
+mypackage = { pkg-path = "mypackage", pkg-group = "appropriate-group" }
 ```
 
 Then apply and install:
@@ -63,7 +80,7 @@ flox install mypackage  # or just let flox resolve on next activation
 
 ### Remove a package
 
-1. Delete the relevant lines from `dot_flox/env/manifest.toml`
+1. Delete the relevant line(s) from `dot_flox/env/manifest.toml`
 2. Apply: `chezmoi apply ~/.flox/env/manifest.toml`
 3. Uninstall: `flox uninstall mypackage`
 
@@ -84,9 +101,7 @@ flox upgrade claude-code
 ### Pin a version
 
 ```toml
-mypackage.pkg-path = "mypackage"
-mypackage.version = "1.2.3"
-mypackage.pkg-group = "pinned"  # or its own group
+mypackage = { pkg-path = "mypackage", version = "1.2.3", pkg-group = "pinned" }
 ```
 
 ### Search for available packages
@@ -119,8 +134,7 @@ This usually means the package shares a nixpkgs revision with other packages (th
 **Fix**: Move the package to its own `pkg-group` so it resolves independently:
 
 ```toml
-mypackage.pkg-path = "mypackage"
-mypackage.pkg-group = "mypackage"  # isolate into own group
+mypackage = { pkg-path = "mypackage", pkg-group = "mypackage" }  # isolate into own group
 ```
 
 Then: `chezmoi apply ~/.flox/env/manifest.toml && flox upgrade mypackage`
