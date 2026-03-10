@@ -95,6 +95,7 @@ restic.pkg-path = "restic"
 
 # AI / LLM
 claude-code.pkg-path = "claude-code"
+claude-code.pkg-group = "claude"
 
 # GUI Applications
 aerospace.pkg-path = "aerospace"
