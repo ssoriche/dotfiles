@@ -1,5 +1,9 @@
 # Flox global environment — mirrors devbox global packages
 # Evaluate alongside devbox; fish shell prefers Flox when available
+#
+# Package groups isolate nixpkgs revisions so fast-moving or
+# ABI-coupled packages can upgrade independently.  Packages without
+# an explicit pkg-group share the implicit "toplevel" group.
 
 version = 1
 
@@ -22,38 +26,62 @@ fastgron.pkg-path = "fastgron"
 fx.pkg-path = "fx"
 sd.pkg-path = "sd"
 
-# Version control
+# Version control — git ecosystem tools share a revision
 git.pkg-path = "git"
+git.pkg-group = "git"
 gh.pkg-path = "gh"
+gh.pkg-group = "git"
 tig.pkg-path = "tig"
+tig.pkg-group = "git"
 delta.pkg-path = "delta"
+delta.pkg-group = "git"
 difftastic.pkg-path = "difftastic"
+difftastic.pkg-group = "git"
 git-absorb.pkg-path = "git-absorb"
+git-absorb.pkg-group = "git"
 git-credential-manager.pkg-path = "git-credential-manager"
+git-credential-manager.pkg-group = "git"
 jujutsu.pkg-path = "jujutsu"
+jujutsu.pkg-group = "git"
 gitu.pkg-path = "gitu"
+gitu.pkg-group = "git"
 
-# Editors / Language servers
+# Editors / Language servers — must stay compatible
 neovim.pkg-path = "neovim"
+neovim.pkg-group = "editors"
 lua-language-server.pkg-path = "lua-language-server"
+lua-language-server.pkg-group = "editors"
 tree-sitter.pkg-path = "tree-sitter"
+tree-sitter.pkg-group = "editors"
 
 # Shells / Shell enhancements
 direnv.pkg-path = "direnv"
 
 # Languages / Runtimes
 nodejs.pkg-path = "nodejs"
+nodejs.pkg-group = "node"
+bun.pkg-path = "bun"
+bun.pkg-group = "node"
+
 go.pkg-path = "go"
 go.version = "1.24"
+go.pkg-group = "go"
+golangci-lint.pkg-path = "golangci-lint"
+golangci-lint.pkg-group = "go"
+
 uv.pkg-path = "uv"
-bun.pkg-path = "bun"
+uv.pkg-group = "python"
+
 luarocks.pkg-path = "luarocks"
+luarocks.pkg-group = "lua"
 lua.pkg-path = "lua51Packages.lua"
+lua.pkg-group = "lua"
 
 # Linters / Analysis
-golangci-lint.pkg-path = "golangci-lint"
 typos.pkg-path = "typos"
+typos.pkg-group = "linters"
 dotenv-linter.pkg-path = "dotenv-linter"
+dotenv-linter.pkg-group = "linters"
 
 # Kubernetes
 kustomize.pkg-path = "kustomize"
@@ -68,6 +96,7 @@ _1password-cli.pkg-path = "_1password-cli"
 
 # Cloud
 awscli2.pkg-path = "awscli2"
+awscli2.pkg-group = "cloud"
 granted.pkg-path = "granted"
 granted.version = "0.36.3"
 granted.pkg-group = "pinned"
@@ -97,11 +126,15 @@ restic.pkg-path = "restic"
 claude-code.pkg-path = "claude-code"
 claude-code.pkg-group = "claude"
 
-# GUI Applications
+# GUI Applications — avoid blocking CLI tool upgrades
 aerospace.pkg-path = "aerospace"
+aerospace.pkg-group = "gui"
 wezterm.pkg-path = "wezterm"
+wezterm.pkg-group = "gui"
 obsidian.pkg-path = "obsidian"
+obsidian.pkg-group = "gui"
 halloy.pkg-path = "halloy"
+halloy.pkg-group = "gui"
 
 # macOS SDK frameworks (needed by some builds)
 CoreServices.pkg-path = "darwin.apple_sdk.frameworks.CoreServices"

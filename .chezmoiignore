@@ -17,6 +17,7 @@ CLAUDE.md
 
 # AI assistant context (project-specific, not for deployment)
 .cursor/
+.claude/
 
 # VSCode/Cursor settings management tools (not for deployment)
 vscode-settings/
