@@ -1,0 +1,151 @@
+---
+name: flox
+description: Manage Flox packages in the chezmoi dotfiles repository. Use when adding, removing, upgrading, or troubleshooting Flox packages.
+argument-hint: "<action> [package]"
+disable-model-invocation: true
+---
+
+# Flox Package Management
+
+## How Flox works in this repo
+
+The Flox manifest lives in the **chezmoi source directory**:
+
+```
+Source:  ~/.local/share/chezmoi/dot_flox/env/manifest.toml
+Deploy:  ~/.flox/env/manifest.toml
+```
+
+**Always edit the chezmoi source file**, then apply. Never edit `~/.flox/env/manifest.toml` directly — chezmoi will overwrite it.
+
+## Package group strategy
+
+Packages are organized into **pkg-groups** so they can resolve against independent nixpkgs revisions. This prevents slow-moving or large packages from blocking upgrades of fast-moving ones.
+
+| Group | Contents | When to use |
+|---|---|---|
+| `toplevel` (default) | Stable CLI tools (ripgrep, fd, bat, jq, etc.) | No `pkg-group` needed — this is the implicit default |
+| `git` | git, gh, tig, delta, difftastic, git-absorb, git-credential-manager, jujutsu, gitu | Git ecosystem tools that should match git's version |
+| `editors` | neovim, lua-language-server, tree-sitter | Editor + language server ABI compatibility |
+| `go` | go, golangci-lint | Linter must match Go version |
+| `node` | nodejs, bun | JS runtimes |
+| `lua` | luarocks, lua | Lua ecosystem |
+| `python` | uv | Standalone; updates frequently |
+| `linters` | typos, dotenv-linter | Standalone linters |
+| `cloud` | awscli2 | Large package, independent update cadence |
+| `pinned` | granted | Version-pinned packages |
+| `claude` | claude-code | Fast-moving, unfree; needs independent upgrades |
+| `gui` | aerospace, wezterm, obsidian, halloy | GUI apps — keep separate from CLI tools |
+
+### When to create a new group
+
+Create a new group when:
+- A package updates much faster or slower than its current group
+- Two packages have ABI/version compatibility requirements with each other but not with their current group
+- A package is blocking upgrades of unrelated packages in its group
+- A large package (like awscli2) is slowing resolution for the whole group
+
+## Common operations
+
+### Add a package
+
+```toml
+# In dot_flox/env/manifest.toml under [install]
+mypackage.pkg-path = "mypackage"
+mypackage.pkg-group = "appropriate-group"  # omit for toplevel
+```
+
+Then apply and install:
+```bash
+chezmoi apply ~/.flox/env/manifest.toml
+flox install mypackage  # or just let flox resolve on next activation
+```
+
+### Remove a package
+
+1. Delete the relevant lines from `dot_flox/env/manifest.toml`
+2. Apply: `chezmoi apply ~/.flox/env/manifest.toml`
+3. Uninstall: `flox uninstall mypackage`
+
+### Upgrade packages
+
+```bash
+# Upgrade all packages
+flox upgrade
+
+# Upgrade a specific package group
+flox upgrade git
+flox upgrade claude
+
+# Upgrade a single package
+flox upgrade claude-code
+```
+
+### Pin a version
+
+```toml
+mypackage.pkg-path = "mypackage"
+mypackage.version = "1.2.3"
+mypackage.pkg-group = "pinned"  # or its own group
+```
+
+### Search for available packages
+
+```bash
+flox search <query>
+flox show <package>  # detailed info including available versions
+```
+
+### Check current state
+
+```bash
+flox list           # all installed packages with versions
+flox list -c        # show config (groups, options)
+```
+
+## Workflow
+
+1. **Edit** the chezmoi source: `~/.local/share/chezmoi/dot_flox/env/manifest.toml`
+2. **Apply** via chezmoi: `chezmoi apply ~/.flox/env/manifest.toml`
+3. **Verify** resolution: `flox list`
+4. **Commit** changes in the chezmoi repo
+
+## Troubleshooting
+
+### `flox upgrade` doesn't pick up a new version
+
+This usually means the package shares a nixpkgs revision with other packages (the `toplevel` group) and that revision doesn't have the newer version yet.
+
+**Fix**: Move the package to its own `pkg-group` so it resolves independently:
+
+```toml
+mypackage.pkg-path = "mypackage"
+mypackage.pkg-group = "mypackage"  # isolate into own group
+```
+
+Then: `chezmoi apply ~/.flox/env/manifest.toml && flox upgrade mypackage`
+
+### Resolution fails for a group
+
+A group may fail to resolve if packages within it have conflicting version requirements.
+
+**Fix**: Split the conflicting package into its own group, or relax version constraints.
+
+### Package not found
+
+```bash
+flox search <name>   # verify exact package name
+flox show <name>     # check if it exists in the catalog
+```
+
+Some packages use different names in nixpkgs (e.g., `_1password-cli` not `1password-cli`).
+
+### Flake-based packages
+
+Packages pinned to specific git commits or repos use `flake` instead of `pkg-path`:
+
+```toml
+mypackage.flake = "github:owner/repo/ref#output"
+```
+
+These bypass pkg-groups entirely — each flake resolves independently.
