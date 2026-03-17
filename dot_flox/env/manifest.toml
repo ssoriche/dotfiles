@@ -66,16 +66,16 @@ CoreServices.pkg-path = "darwin.apple_sdk.frameworks.CoreServices"
 
 # --- Grouped packages (inline tables) ---
 
-# git — ecosystem tools share a revision
-git = { pkg-path = "git", pkg-group = "git" }
-gh = { pkg-path = "gh", pkg-group = "git" }
-tig = { pkg-path = "tig", pkg-group = "git" }
-delta = { pkg-path = "delta", pkg-group = "git" }
-difftastic = { pkg-path = "difftastic", pkg-group = "git" }
-git-absorb = { pkg-path = "git-absorb", pkg-group = "git" }
-git-credential-manager = { pkg-path = "git-credential-manager", pkg-group = "git" }
-jujutsu = { pkg-path = "jujutsu", pkg-group = "git" }
-gitu = { pkg-path = "gitu", pkg-group = "git" }
+# vcs — ecosystem tools share a revision
+git = { pkg-path = "git", pkg-group = "vcs" }
+gh = { pkg-path = "gh", pkg-group = "vcs" }
+tig = { pkg-path = "tig", pkg-group = "vcs" }
+delta = { pkg-path = "delta", pkg-group = "vcs" }
+difftastic = { pkg-path = "difftastic", pkg-group = "vcs" }
+git-absorb = { pkg-path = "git-absorb", pkg-group = "vcs" }
+git-credential-manager = { pkg-path = "git-credential-manager", pkg-group = "vcs" }
+jujutsu = { pkg-path = "jujutsu", pkg-group = "vcs" }
+gitu = { pkg-path = "gitu", pkg-group = "vcs" }
 
 # editors — neovim + language server ABI compatibility
 neovim = { pkg-path = "neovim", pkg-group = "editors" }
