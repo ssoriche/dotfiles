@@ -257,35 +257,6 @@
   },
   "packages": [
     {
-      "attr_path": "claude-code",
-      "broken": false,
-      "derivation": "/nix/store/bb4n0ks6amvb5qx6hk0zid98byns0gqc-claude-code-2.1.70.drv",
-      "description": "Agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster",
-      "install_id": "claude-code",
-      "license": "Unfree",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=9dcb002ca1690658be4a04645215baea8b95f31d",
-      "name": "claude-code-2.1.70",
-      "pname": "claude-code",
-      "rev": "9dcb002ca1690658be4a04645215baea8b95f31d",
-      "rev_count": 960399,
-      "rev_date": "2026-03-08T09:52:19Z",
-      "scrape_date": "2026-03-10T04:46:37.251173Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": true,
-      "version": "2.1.70",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/037cdibak041lxsg43brxcr8ny38shr8-claude-code-2.1.70"
-      },
-      "system": "aarch64-darwin",
-      "group": "claude",
-      "priority": 5
-    },
-    {
       "attr_path": "awscli2",
       "broken": false,
       "derivation": "/nix/store/3jlkfzbdcl0by92b174pi6vdwpqv9k49-awscli2-2.33.2.drv",
@@ -2194,6 +2165,35 @@
       },
       "system": "aarch64-darwin",
       "group": "vcs",
+      "priority": 5
+    },
+    {
+      "attr_path": "claude-code",
+      "broken": false,
+      "derivation": "/nix/store/gc810wq8d92sbakm5gp76zrvcv9kfzvr-claude-code-2.1.77.drv",
+      "description": "Agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster",
+      "install_id": "claude-code",
+      "license": "Unfree",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b40629efe5d6ec48dd1efba650c797ddbd39ace0",
+      "name": "claude-code-2.1.77",
+      "pname": "claude-code",
+      "rev": "b40629efe5d6ec48dd1efba650c797ddbd39ace0",
+      "rev_count": 964859,
+      "rev_date": "2026-03-18T08:17:15Z",
+      "scrape_date": "2026-03-20T00:40:11.305027Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "2.1.77",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/mi8a4givmdscf0rflilrr2cxq876jgi7-claude-code-2.1.77"
+      },
+      "system": "aarch64-darwin",
+      "group": "claude",
       "priority": 5
     },
     {
