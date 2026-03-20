@@ -118,7 +118,7 @@ obsidian = { pkg-path = "obsidian", pkg-group = "gui" }
 halloy = { pkg-path = "halloy", pkg-group = "gui" }
 
 # Flake-based packages (pinned to specific commits/repos)
-atuin.flake = "github:atuinsh/atuin/v18.10.0"
+atuin.flake = "github:atuinsh/atuin/v18.13.3"
 maccy.flake = "github:NixOS/nixpkgs/9ccc4f514369dd2e94af75d0132772f5927e26bb#maccy"
 
 

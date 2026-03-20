@@ -23,7 +23,7 @@
         "pkg-path": "asciinema-agg"
       },
       "atuin": {
-        "flake": "github:atuinsh/atuin/v18.10.0"
+        "flake": "github:atuinsh/atuin/v18.13.3"
       },
       "awscli2": {
         "pkg-path": "awscli2",
@@ -256,6 +256,35 @@
     }
   },
   "packages": [
+    {
+      "attr_path": "claude-code",
+      "broken": false,
+      "derivation": "/nix/store/gc810wq8d92sbakm5gp76zrvcv9kfzvr-claude-code-2.1.77.drv",
+      "description": "Agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster",
+      "install_id": "claude-code",
+      "license": "Unfree",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b40629efe5d6ec48dd1efba650c797ddbd39ace0",
+      "name": "claude-code-2.1.77",
+      "pname": "claude-code",
+      "rev": "b40629efe5d6ec48dd1efba650c797ddbd39ace0",
+      "rev_count": 964859,
+      "rev_date": "2026-03-18T08:17:15Z",
+      "scrape_date": "2026-03-20T00:40:11.305027Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "2.1.77",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/mi8a4givmdscf0rflilrr2cxq876jgi7-claude-code-2.1.77"
+      },
+      "system": "aarch64-darwin",
+      "group": "claude",
+      "priority": 5
+    },
     {
       "attr_path": "awscli2",
       "broken": false,
@@ -2168,61 +2197,6 @@
       "priority": 5
     },
     {
-      "attr_path": "claude-code",
-      "broken": false,
-      "derivation": "/nix/store/gc810wq8d92sbakm5gp76zrvcv9kfzvr-claude-code-2.1.77.drv",
-      "description": "Agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster",
-      "install_id": "claude-code",
-      "license": "Unfree",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=b40629efe5d6ec48dd1efba650c797ddbd39ace0",
-      "name": "claude-code-2.1.77",
-      "pname": "claude-code",
-      "rev": "b40629efe5d6ec48dd1efba650c797ddbd39ace0",
-      "rev_count": 964859,
-      "rev_date": "2026-03-18T08:17:15Z",
-      "scrape_date": "2026-03-20T00:40:11.305027Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": true,
-      "version": "2.1.77",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/mi8a4givmdscf0rflilrr2cxq876jgi7-claude-code-2.1.77"
-      },
-      "system": "aarch64-darwin",
-      "group": "claude",
-      "priority": 5
-    },
-    {
-      "install_id": "atuin",
-      "locked-url": "github:atuinsh/atuin/37e257105ab801b49fd07a927d707a36a2e771a1?narHash=sha256-bfSa3RtVXxHt3usDqqpE/oXKKDUZOrf%2BtD9uL59fr6M%3D",
-      "locked-flake-attr-path": "packages.aarch64-darwin.default",
-      "derivation": "/nix/store/jpc1g0prraia579g6wbbnv846psdjwk7-atuin.drv",
-      "outputs": {
-        "out": "/nix/store/a2g9rjr3djq5figb5cfk8dk19xsx8hhi-atuin"
-      },
-      "output-names": [
-        "out"
-      ],
-      "outputs-to-install": [
-        "out"
-      ],
-      "requested-outputs-to-install": [],
-      "package-system": "aarch64-darwin",
-      "system": "aarch64-darwin",
-      "name": "atuin",
-      "description": "Replacement for a shell history which records additional commands context with optional encrypted synchronization between machines",
-      "licenses": [
-        "MIT"
-      ],
-      "broken": false,
-      "unfree": false,
-      "priority": 5
-    },
-    {
       "install_id": "maccy",
       "locked-url": "github:NixOS/nixpkgs/9ccc4f514369dd2e94af75d0132772f5927e26bb?narHash=sha256-Em2Rxhn7dZFPhMY0CnqU76QPOF1nvdc6eM/MBpSBz%2Bc%3D",
       "flake-description": "A collection of packages for the Nix package manager",
@@ -2244,6 +2218,32 @@
       "pname": "maccy",
       "version": "2.6.1",
       "description": "Simple clipboard manager for macOS",
+      "licenses": [
+        "MIT"
+      ],
+      "broken": false,
+      "unfree": false,
+      "priority": 5
+    },
+    {
+      "install_id": "atuin",
+      "locked-url": "github:atuinsh/atuin/e737ba5b9a149eaec706418bc560e8ba7ea8c81b?narHash=sha256-hLt6CDHEPV8BVpOADVn4bLNcBz89eC2jKtIexHG0yAY%3D",
+      "locked-flake-attr-path": "packages.aarch64-darwin.default",
+      "derivation": "/nix/store/1814yrp7v6wq24rb84cysz31mv73rfwr-atuin.drv",
+      "outputs": {
+        "out": "/nix/store/hmb8ra6hs88bx4pmv5q9i82rkmw36ycs-atuin"
+      },
+      "output-names": [
+        "out"
+      ],
+      "outputs-to-install": [
+        "out"
+      ],
+      "requested-outputs-to-install": [],
+      "package-system": "aarch64-darwin",
+      "system": "aarch64-darwin",
+      "name": "atuin",
+      "description": "Replacement for a shell history which records additional commands context with optional encrypted synchronization between machines",
       "licenses": [
         "MIT"
       ],
