@@ -84,7 +84,7 @@ lua-language-server = { pkg-path = "lua-language-server", pkg-group = "editors" 
 tree-sitter = { pkg-path = "tree-sitter", pkg-group = "editors" }
 
 # golang — linter must match Go version
-go = { pkg-path = "go", version = "1.24", pkg-group = "golang" }
+go = { pkg-path = "go", version = "1.25", pkg-group = "golang" }
 golangci-lint = { pkg-path = "golangci-lint", pkg-group = "golang" }
 
 # node — JS runtimes

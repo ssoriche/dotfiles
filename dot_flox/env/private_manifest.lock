@@ -1,7 +1,7 @@
 {
   "lockfile-version": 1,
   "manifest": {
-    "version": 1,
+    "schema-version": "1.11.0",
     "install": {
       "CoreServices": {
         "pkg-path": "darwin.apple_sdk.frameworks.CoreServices"
@@ -17,7 +17,8 @@
         "pkg-path": "age"
       },
       "asciinema": {
-        "pkg-path": "asciinema"
+        "pkg-path": "asciinema",
+        "outputs": "all"
       },
       "asciinema-agg": {
         "pkg-path": "asciinema-agg"
@@ -27,7 +28,8 @@
       },
       "awscli2": {
         "pkg-path": "awscli2",
-        "pkg-group": "cloud"
+        "pkg-group": "cloud",
+        "outputs": "all"
       },
       "bat": {
         "pkg-path": "bat"
@@ -89,7 +91,8 @@
       },
       "git": {
         "pkg-path": "git",
-        "pkg-group": "vcs"
+        "pkg-group": "vcs",
+        "outputs": "all"
       },
       "git-absorb": {
         "pkg-path": "git-absorb",
@@ -105,12 +108,12 @@
       },
       "go": {
         "pkg-path": "go",
-        "pkg-group": "go",
-        "version": "1.24"
+        "pkg-group": "golang",
+        "version": "1.25"
       },
       "golangci-lint": {
         "pkg-path": "golangci-lint",
-        "pkg-group": "go"
+        "pkg-group": "golang"
       },
       "granted": {
         "pkg-path": "granted",
@@ -128,7 +131,8 @@
         "pkg-path": "jnv"
       },
       "jq": {
-        "pkg-path": "jq"
+        "pkg-path": "jq",
+        "outputs": "all"
       },
       "jujutsu": {
         "pkg-path": "jujutsu",
@@ -142,7 +146,8 @@
       },
       "lua": {
         "pkg-path": "lua51Packages.lua",
-        "pkg-group": "lua"
+        "pkg-group": "lua",
+        "outputs": "all"
       },
       "lua-language-server": {
         "pkg-path": "lua-language-server",
@@ -202,10 +207,12 @@
       },
       "tig": {
         "pkg-path": "tig",
-        "pkg-group": "vcs"
+        "pkg-group": "vcs",
+        "outputs": "all"
       },
       "tldr": {
-        "pkg-path": "tldr"
+        "pkg-path": "tldr",
+        "outputs": "all"
       },
       "tree": {
         "pkg-path": "tree"
@@ -405,61 +412,63 @@
     {
       "attr_path": "go",
       "broken": false,
-      "derivation": "/nix/store/b4f7b08k5wnka70sax9qx3d2p1x2sfb9-go-1.24.6.drv",
+      "derivation": "/nix/store/lpl3ynayhbwbzg5wj2d4dpw2mc1czmdd-go-1.25.7.drv",
       "description": "Go Programming language",
       "install_id": "go",
       "license": "BSD-3-Clause",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=8eb28adfa3dc4de28e792e3bf49fcf9007ca8ac9",
-      "name": "go-1.24.6",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b40629efe5d6ec48dd1efba650c797ddbd39ace0",
+      "name": "go-1.25.7",
       "pname": "go",
-      "rev": "8eb28adfa3dc4de28e792e3bf49fcf9007ca8ac9",
-      "rev_count": 856926,
-      "rev_date": "2025-09-05T10:37:24Z",
-      "scrape_date": "2025-09-08T03:40:12.684933Z",
+      "rev": "b40629efe5d6ec48dd1efba650c797ddbd39ace0",
+      "rev_count": 964859,
+      "rev_date": "2026-03-18T08:17:15Z",
+      "scrape_date": "2026-03-20T00:40:12.361477Z",
       "stabilities": [
+        "staging",
         "unstable"
       ],
       "unfree": false,
-      "version": "1.24.6",
+      "version": "1.25.7",
       "outputs_to_install": [
         "out",
         "out",
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/rgmygksbfyy75iappxpinv0y8lxfq35x-go-1.24.6"
+        "out": "/nix/store/hj3rkkp4azj65qvalnbl6ax0sgrfgmgh-go-1.25.7"
       },
       "system": "aarch64-darwin",
-      "group": "go",
+      "group": "golang",
       "priority": 5
     },
     {
       "attr_path": "golangci-lint",
       "broken": false,
-      "derivation": "/nix/store/sd4l6xndf9k09jmgai10sg3kklbjg0q9-golangci-lint-2.4.0.drv",
+      "derivation": "/nix/store/5bwp29d69xn494k0jx405bybpw3j5cjl-golangci-lint-2.11.3.drv",
       "description": "Fast linters Runner for Go",
       "install_id": "golangci-lint",
       "license": "GPL-3.0-or-later",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=8eb28adfa3dc4de28e792e3bf49fcf9007ca8ac9",
-      "name": "golangci-lint-2.4.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b40629efe5d6ec48dd1efba650c797ddbd39ace0",
+      "name": "golangci-lint-2.11.3",
       "pname": "golangci-lint",
-      "rev": "8eb28adfa3dc4de28e792e3bf49fcf9007ca8ac9",
-      "rev_count": 856926,
-      "rev_date": "2025-09-05T10:37:24Z",
-      "scrape_date": "2025-09-08T03:40:12.747822Z",
+      "rev": "b40629efe5d6ec48dd1efba650c797ddbd39ace0",
+      "rev_count": 964859,
+      "rev_date": "2026-03-18T08:17:15Z",
+      "scrape_date": "2026-03-20T00:40:12.423034Z",
       "stabilities": [
+        "staging",
         "unstable"
       ],
       "unfree": false,
-      "version": "2.4.0",
+      "version": "2.11.3",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/sb46fd5699khd39wwh6i1i6nqpvxs96c-golangci-lint-2.4.0"
+        "out": "/nix/store/zalxgqwyng4jdbv5cpsmm9xbmim9hjjj-golangci-lint-2.11.3"
       },
       "system": "aarch64-darwin",
-      "group": "go",
+      "group": "golang",
       "priority": 5
     },
     {
@@ -2197,6 +2206,32 @@
       "priority": 5
     },
     {
+      "install_id": "atuin",
+      "locked-url": "github:atuinsh/atuin/e737ba5b9a149eaec706418bc560e8ba7ea8c81b?narHash=sha256-hLt6CDHEPV8BVpOADVn4bLNcBz89eC2jKtIexHG0yAY%3D",
+      "locked-flake-attr-path": "packages.aarch64-darwin.default",
+      "derivation": "/nix/store/1814yrp7v6wq24rb84cysz31mv73rfwr-atuin.drv",
+      "outputs": {
+        "out": "/nix/store/hmb8ra6hs88bx4pmv5q9i82rkmw36ycs-atuin"
+      },
+      "output-names": [
+        "out"
+      ],
+      "outputs-to-install": [
+        "out"
+      ],
+      "requested-outputs-to-install": [],
+      "package-system": "aarch64-darwin",
+      "system": "aarch64-darwin",
+      "name": "atuin",
+      "description": "Replacement for a shell history which records additional commands context with optional encrypted synchronization between machines",
+      "licenses": [
+        "MIT"
+      ],
+      "broken": false,
+      "unfree": false,
+      "priority": 5
+    },
+    {
       "install_id": "maccy",
       "locked-url": "github:NixOS/nixpkgs/9ccc4f514369dd2e94af75d0132772f5927e26bb?narHash=sha256-Em2Rxhn7dZFPhMY0CnqU76QPOF1nvdc6eM/MBpSBz%2Bc%3D",
       "flake-description": "A collection of packages for the Nix package manager",
@@ -2218,32 +2253,6 @@
       "pname": "maccy",
       "version": "2.6.1",
       "description": "Simple clipboard manager for macOS",
-      "licenses": [
-        "MIT"
-      ],
-      "broken": false,
-      "unfree": false,
-      "priority": 5
-    },
-    {
-      "install_id": "atuin",
-      "locked-url": "github:atuinsh/atuin/e737ba5b9a149eaec706418bc560e8ba7ea8c81b?narHash=sha256-hLt6CDHEPV8BVpOADVn4bLNcBz89eC2jKtIexHG0yAY%3D",
-      "locked-flake-attr-path": "packages.aarch64-darwin.default",
-      "derivation": "/nix/store/1814yrp7v6wq24rb84cysz31mv73rfwr-atuin.drv",
-      "outputs": {
-        "out": "/nix/store/hmb8ra6hs88bx4pmv5q9i82rkmw36ycs-atuin"
-      },
-      "output-names": [
-        "out"
-      ],
-      "outputs-to-install": [
-        "out"
-      ],
-      "requested-outputs-to-install": [],
-      "package-system": "aarch64-darwin",
-      "system": "aarch64-darwin",
-      "name": "atuin",
-      "description": "Replacement for a shell history which records additional commands context with optional encrypted synchronization between machines",
       "licenses": [
         "MIT"
       ],
