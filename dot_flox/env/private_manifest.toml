@@ -5,7 +5,7 @@
 # ABI-coupled packages can upgrade independently.  Packages without
 # an explicit pkg-group share the implicit "toplevel" group.
 
-version = 1
+schema-version = "1.11.0"
 
 [install]
 # Search / Navigation
@@ -20,6 +20,7 @@ yazi.pkg-path = "yazi"
 # Text / JSON processing
 bat.pkg-path = "bat"
 jq.pkg-path = "jq"
+jq.outputs = "all"
 jless.pkg-path = "jless"
 jnv.pkg-path = "jnv"
 fastgron.pkg-path = "fastgron"
@@ -47,12 +48,14 @@ ncdu.pkg-path = "ncdu"
 spacer.pkg-path = "spacer"
 moreutils.pkg-path = "moreutils"
 tldr.pkg-path = "tldr"
+tldr.outputs = "all"
 chezmoi.pkg-path = "chezmoi"
 q.pkg-path = "q"
 dyff.pkg-path = "dyff"
 
 # Recording
 asciinema.pkg-path = "asciinema"
+asciinema.outputs = "all"
 asciinema-agg.pkg-path = "asciinema-agg"
 
 # Virtualization
@@ -67,9 +70,9 @@ CoreServices.pkg-path = "darwin.apple_sdk.frameworks.CoreServices"
 # --- Grouped packages (inline tables) ---
 
 # vcs — ecosystem tools share a revision
-git = { pkg-path = "git", pkg-group = "vcs" }
+git = { pkg-path = "git", pkg-group = "vcs" , outputs = "all" }
 gh = { pkg-path = "gh", pkg-group = "vcs" }
-tig = { pkg-path = "tig", pkg-group = "vcs" }
+tig = { pkg-path = "tig", pkg-group = "vcs" , outputs = "all" }
 delta = { pkg-path = "delta", pkg-group = "vcs" }
 difftastic = { pkg-path = "difftastic", pkg-group = "vcs" }
 git-absorb = { pkg-path = "git-absorb", pkg-group = "vcs" }
@@ -93,7 +96,7 @@ bun = { pkg-path = "bun", pkg-group = "node" }
 
 # lua — Lua ecosystem
 luarocks = { pkg-path = "luarocks", pkg-group = "lua" }
-lua = { pkg-path = "lua51Packages.lua", pkg-group = "lua" }
+lua = { pkg-path = "lua51Packages.lua", pkg-group = "lua" , outputs = "all" }
 
 # python — standalone, frequent updates
 uv = { pkg-path = "uv", pkg-group = "python" }
@@ -103,7 +106,7 @@ typos = { pkg-path = "typos", pkg-group = "linters" }
 dotenv-linter = { pkg-path = "dotenv-linter", pkg-group = "linters" }
 
 # cloud — large package, independent update cadence
-awscli2 = { pkg-path = "awscli2", pkg-group = "cloud" }
+awscli2 = { pkg-path = "awscli2", pkg-group = "cloud" , outputs = "all" }
 
 # pinned — version-locked packages
 granted = { pkg-path = "granted", version = "0.36.3", pkg-group = "pinned" }
