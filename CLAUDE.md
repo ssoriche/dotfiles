@@ -77,6 +77,51 @@ alwaysApply: true        # Apply to all projects
 
 **Legacy**: `vscode-settings/cursor-global-rules.txt` exists for backward compatibility but is deprecated.
 
+### Flox Package Management
+
+Flox is the **preferred** package manager (fish config prioritizes it over devbox, which is maintained as a fallback). The manifest and lockfile are managed via chezmoi:
+
+```
+Source:  dot_flox/env/manifest.toml          → ~/.flox/env/manifest.toml
+         dot_flox/env/private_manifest.lock   → ~/.flox/env/manifest.lock
+```
+
+**Always edit the chezmoi source manifest**, then apply. The lockfile is tracked for reproducibility — sync it back after any upgrade.
+
+**Key commands**:
+```bash
+flox search <pkg>                   # Find packages
+flox show <pkg>                     # Available versions
+flox list                           # Current installed versions
+flox upgrade --dry-run <group>      # Always dry-run first
+flox upgrade <group>                # Upgrade a specific group
+chezmoi add ~/.flox/env/manifest.lock  # Sync lockfile after changes
+```
+
+**Package groups** isolate nixpkgs revisions so fast-moving or ABI-coupled packages upgrade independently:
+
+| Group | Contents | Purpose |
+|---|---|---|
+| *toplevel* (default) | ripgrep, fd, bat, jq, etc. | Stable CLI tools — no `pkg-group` needed |
+| `vcs` | git, gh, tig, delta, difftastic, jujutsu, etc. | Git ecosystem, shared revision |
+| `editors` | neovim, lua-language-server, tree-sitter | Editor + language server ABI compatibility |
+| `golang` | go, golangci-lint | Linter must match Go version |
+| `node` | nodejs, bun | JS runtimes |
+| `lua` | luarocks, lua | Lua ecosystem |
+| `python` | uv | Standalone, frequent updates |
+| `linters` | typos, dotenv-linter | Standalone analysis tools |
+| `cloud` | awscli2 | Large package, independent cadence |
+| `pinned` | granted | Version-locked packages |
+| `claude` | claude-code | Fast-moving, unfree |
+| `opencode` | opencode | Fast-moving AI tooling |
+| `gui` | aerospace, wezterm, obsidian, halloy | GUI apps separate from CLI |
+
+**TOML style**: Dot notation for toplevel (`ripgrep.pkg-path = "ripgrep"`), inline tables for grouped (`git = { pkg-path = "git", pkg-group = "vcs" }`).
+
+**Flake-based packages** bypass groups entirely, pinned to specific commits: `atuin`, `maccy`.
+
+For detailed operational docs (adding/removing packages, troubleshooting, etc.), see the flox skill: `.claude/skills/flox/SKILL.md`.
+
 ## Common Development Commands
 
 ### Chezmoi Operations
@@ -153,7 +198,7 @@ ls -la ~/.config/cursor/rules/development/
 
 ### Python Tool Management with uv
 
-Python CLI tools are managed using `uv` within devbox. Tools are installed to `~/.local/bin` and automatically available in your PATH.
+Python CLI tools are managed using `uv` within flox (or devbox as fallback). Tools are installed to `~/.local/bin` and automatically available in your PATH.
 
 **Configured Tools**:
 - `llm` - CLI tool for interacting with LLMs
@@ -188,12 +233,12 @@ Right-click the Dock folder to customize display (fan/grid/list, sort order).
 
 - **Primary Shell**: Fish shell
 - **OS**: macOS (Darwin)
-- **Package Manager**: Devbox (Nix-based) for development tools
+- **Package Manager**: Flox (preferred) and Devbox (fallback) — both Nix-based
 - **Dotfiles Manager**: chezmoi
 
 ### Installed Development Tools
 
-Key tools managed via Devbox (see `dot_local/share/devbox/global/default/devbox.json`):
+Key tools managed via Flox (see `dot_flox/env/manifest.toml`) and Devbox (see `dot_local/share/devbox/global/default/devbox.json`):
 
 - **Search/Navigation**: `fd`, `rg` (ripgrep), `fzf`, `eza`
 - **Text Processing**: `bat`, `fx`, `fastgron`, `jless`, `sd`
