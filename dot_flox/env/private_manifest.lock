@@ -181,6 +181,10 @@
         "pkg-path": "obsidian",
         "pkg-group": "gui"
       },
+      "opencode": {
+        "pkg-path": "opencode",
+        "pkg-group": "opencode"
+      },
       "passage": {
         "pkg-path": "passage"
       },
@@ -320,93 +324,6 @@
       },
       "system": "aarch64-darwin",
       "group": "cloud",
-      "priority": 5
-    },
-    {
-      "attr_path": "lua-language-server",
-      "broken": false,
-      "derivation": "/nix/store/5navjyx8wz5bz1mkzk76bcysx03h88z0-lua-language-server-3.17.1.drv",
-      "description": "Language server that offers Lua language support",
-      "install_id": "lua-language-server",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=9dcb002ca1690658be4a04645215baea8b95f31d",
-      "name": "lua-language-server-3.17.1",
-      "pname": "lua-language-server",
-      "rev": "9dcb002ca1690658be4a04645215baea8b95f31d",
-      "rev_count": 960399,
-      "rev_date": "2026-03-08T09:52:19Z",
-      "scrape_date": "2026-03-10T04:46:56.193464Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "3.17.1",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/zzn4ckkvbzcbflh3r9hwrjlzpc600fg2-lua-language-server-3.17.1"
-      },
-      "system": "aarch64-darwin",
-      "group": "editors",
-      "priority": 5
-    },
-    {
-      "attr_path": "neovim",
-      "broken": false,
-      "derivation": "/nix/store/zk7cljax69ar39gaa1c5rq5a45csdj1d-neovim-0.11.6.drv",
-      "description": "Vim text editor fork focused on extensibility and agility",
-      "install_id": "neovim",
-      "license": "[ Apache-2.0, Vim ]",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=9dcb002ca1690658be4a04645215baea8b95f31d",
-      "name": "neovim-0.11.6",
-      "pname": "neovim",
-      "rev": "9dcb002ca1690658be4a04645215baea8b95f31d",
-      "rev_count": 960399,
-      "rev_date": "2026-03-08T09:52:19Z",
-      "scrape_date": "2026-03-10T04:46:59.630289Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.11.6",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/9fsifz2z5amw8ik0mnvwk3qm7fyk76gi-neovim-0.11.6"
-      },
-      "system": "aarch64-darwin",
-      "group": "editors",
-      "priority": 5
-    },
-    {
-      "attr_path": "tree-sitter",
-      "broken": false,
-      "derivation": "/nix/store/iwng6314pxw5c9imci4zckbad847i95z-tree-sitter-0.25.10.drv",
-      "description": "Parser generator tool and an incremental parsing library",
-      "install_id": "tree-sitter",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=9dcb002ca1690658be4a04645215baea8b95f31d",
-      "name": "tree-sitter-0.25.10",
-      "pname": "tree-sitter",
-      "rev": "9dcb002ca1690658be4a04645215baea8b95f31d",
-      "rev_count": 960399,
-      "rev_date": "2026-03-08T09:52:19Z",
-      "scrape_date": "2026-03-10T04:48:45.513360Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.25.10",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/7d7zhi9f7d3i5b3av1pwsrzlzyvydxnz-tree-sitter-0.25.10"
-      },
-      "system": "aarch64-darwin",
-      "group": "editors",
       "priority": 5
     },
     {
@@ -761,6 +678,35 @@
       },
       "system": "aarch64-darwin",
       "group": "node",
+      "priority": 5
+    },
+    {
+      "attr_path": "opencode",
+      "broken": false,
+      "derivation": "/nix/store/a4yp1yibja4671brmvwpgrn6063fd5sv-opencode-1.3.2.drv",
+      "description": "AI coding agent built for the terminal",
+      "install_id": "opencode",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=8110df5ad7abf5d4c0f6fb0f8f978390e77f9685",
+      "name": "opencode-1.3.2",
+      "pname": "opencode",
+      "rev": "8110df5ad7abf5d4c0f6fb0f8f978390e77f9685",
+      "rev_count": 971119,
+      "rev_date": "2026-03-28T14:48:23Z",
+      "scrape_date": "2026-03-30T03:37:48.922381Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.3.2",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/wjgvg299pnnpvnqviq74f7w4hq6pbjzp-opencode-1.3.2"
+      },
+      "system": "aarch64-darwin",
+      "group": "opencode",
       "priority": 5
     },
     {
@@ -2203,6 +2149,93 @@
       },
       "system": "aarch64-darwin",
       "group": "vcs",
+      "priority": 5
+    },
+    {
+      "attr_path": "lua-language-server",
+      "broken": false,
+      "derivation": "/nix/store/p6d06dcqpm96x131fkxlqm9lwv62njr5-lua-language-server-3.17.1.drv",
+      "description": "Language server that offers Lua language support",
+      "install_id": "lua-language-server",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=8110df5ad7abf5d4c0f6fb0f8f978390e77f9685",
+      "name": "lua-language-server-3.17.1",
+      "pname": "lua-language-server",
+      "rev": "8110df5ad7abf5d4c0f6fb0f8f978390e77f9685",
+      "rev_count": 971119,
+      "rev_date": "2026-03-28T14:48:23Z",
+      "scrape_date": "2026-03-30T03:37:39.179853Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "3.17.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/gwsyb3qmv66q2x7s4h46r3954z83ghrk-lua-language-server-3.17.1"
+      },
+      "system": "aarch64-darwin",
+      "group": "editors",
+      "priority": 5
+    },
+    {
+      "attr_path": "neovim",
+      "broken": false,
+      "derivation": "/nix/store/r0a12r6f9mii4l8jgkllaa0rbk13s0i4-neovim-0.11.6.drv",
+      "description": "Vim text editor fork focused on extensibility and agility",
+      "install_id": "neovim",
+      "license": "[ Apache-2.0, Vim ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=8110df5ad7abf5d4c0f6fb0f8f978390e77f9685",
+      "name": "neovim-0.11.6",
+      "pname": "neovim",
+      "rev": "8110df5ad7abf5d4c0f6fb0f8f978390e77f9685",
+      "rev_count": 971119,
+      "rev_date": "2026-03-28T14:48:23Z",
+      "scrape_date": "2026-03-30T03:37:42.776839Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.11.6",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/9d62235x8y4ssvjry62wi45caq8v8hgs-neovim-0.11.6"
+      },
+      "system": "aarch64-darwin",
+      "group": "editors",
+      "priority": 5
+    },
+    {
+      "attr_path": "tree-sitter",
+      "broken": false,
+      "derivation": "/nix/store/s0jqn1r7rkg0wzhqpxjajll14vvwkj29-tree-sitter-0.25.10.drv",
+      "description": "Parser generator tool and an incremental parsing library",
+      "install_id": "tree-sitter",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=8110df5ad7abf5d4c0f6fb0f8f978390e77f9685",
+      "name": "tree-sitter-0.25.10",
+      "pname": "tree-sitter",
+      "rev": "8110df5ad7abf5d4c0f6fb0f8f978390e77f9685",
+      "rev_count": 971119,
+      "rev_date": "2026-03-28T14:48:23Z",
+      "scrape_date": "2026-03-30T03:39:29.195917Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.25.10",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/ia0i7d3sacvpa8y84x2rgk5y807i2mrk-tree-sitter-0.25.10"
+      },
+      "system": "aarch64-darwin",
+      "group": "editors",
       "priority": 5
     },
     {

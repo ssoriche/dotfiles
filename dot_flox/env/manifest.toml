@@ -111,6 +111,9 @@ granted = { pkg-path = "granted", version = "0.36.3", pkg-group = "pinned" }
 # claude — fast-moving, unfree
 claude-code = { pkg-path = "claude-code", pkg-group = "claude" }
 
+# opencode — fast-moving AI tooling
+opencode = { pkg-path = "opencode", pkg-group = "opencode" }
+
 # gui — avoid blocking CLI tool upgrades
 aerospace = { pkg-path = "aerospace", pkg-group = "gui" }
 wezterm = { pkg-path = "wezterm", pkg-group = "gui" }
