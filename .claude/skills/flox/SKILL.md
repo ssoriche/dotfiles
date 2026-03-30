@@ -33,9 +33,9 @@ Packages are organized into **pkg-groups** so they can resolve against independe
 | Group | Contents | When to use |
 |---|---|---|
 | `toplevel` (default) | Stable CLI tools (ripgrep, fd, bat, jq, etc.) | No `pkg-group` needed — this is the implicit default |
-| `git` | git, gh, tig, delta, difftastic, git-absorb, git-credential-manager, jujutsu, gitu | Git ecosystem tools that should match git's version |
+| `vcs` | git, gh, tig, delta, difftastic, git-absorb, git-credential-manager, jujutsu, gitu, gh-dash | Git ecosystem tools that should share a revision |
 | `editors` | neovim, lua-language-server, tree-sitter | Editor + language server ABI compatibility |
-| `go` | go, golangci-lint | Linter must match Go version |
+| `golang` | go, golangci-lint | Linter must match Go version |
 | `node` | nodejs, bun | JS runtimes |
 | `lua` | luarocks, lua | Lua ecosystem |
 | `python` | uv | Standalone; updates frequently |
@@ -43,6 +43,7 @@ Packages are organized into **pkg-groups** so they can resolve against independe
 | `cloud` | awscli2 | Large package, independent update cadence |
 | `pinned` | granted | Version-pinned packages |
 | `claude` | claude-code | Fast-moving, unfree; needs independent upgrades |
+| `opencode` | opencode | Fast-moving AI tooling; needs independent upgrades |
 | `gui` | aerospace, wezterm, obsidian, halloy | GUI apps — keep separate from CLI tools |
 
 ### When to create a new group
@@ -64,8 +65,8 @@ The manifest uses a **hybrid style**:
 ripgrep.pkg-path = "ripgrep"
 
 # grouped — inline table
-git = { pkg-path = "git", pkg-group = "git" }
-go = { pkg-path = "go", version = "1.24", pkg-group = "go" }
+git = { pkg-path = "git", pkg-group = "vcs" }
+go = { pkg-path = "go", version = "1.25", pkg-group = "golang" }
 ```
 
 ## Common operations
