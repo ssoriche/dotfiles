@@ -145,6 +145,19 @@ flox list -c        # show config (groups, options)
 4. **Sync lockfile**: `chezmoi add ~/.flox/env/manifest.lock`
 5. **Commit** both manifest and lockfile in the chezmoi repo
 
+### Commit discipline for the lockfile
+
+Flox uses a **single lockfile** for all packages. When making multiple changes (e.g., adding a package AND upgrading a group), perform each operation as a separate cycle:
+
+1. Make change A (e.g., add package to manifest)
+2. Apply, verify, sync lockfile
+3. **Commit** — lockfile reflects only change A
+4. Make change B (e.g., `flox upgrade editors`)
+5. Sync lockfile
+6. **Commit** — lockfile reflects only change B
+
+This keeps each commit's lockfile diff attributable to that commit's manifest or upgrade change. Batching multiple operations before syncing the lockfile produces a single diff that conflates unrelated changes.
+
 ## Troubleshooting
 
 ### `flox upgrade` proposes downgrades
