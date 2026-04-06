@@ -32,6 +32,7 @@ direnv.pkg-path = "direnv"
 
 # Kubernetes
 kustomize.pkg-path = "kustomize"
+krew.pkg-path = "krew"
 
 # Networking / Security
 nmap.pkg-path = "nmap"
