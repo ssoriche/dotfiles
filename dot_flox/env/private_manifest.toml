@@ -31,8 +31,8 @@ sd.pkg-path = "sd"
 direnv.pkg-path = "direnv"
 
 # Kubernetes
-kustomize.pkg-path = "kustomize"
-krew.pkg-path = "krew"
+kustomize = { pkg-path = "kustomize", pkg-group = "kubernetes" }
+krew = { pkg-path = "krew", pkg-group = "kubernetes" }
 
 # Networking / Security
 nmap.pkg-path = "nmap"

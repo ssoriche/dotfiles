@@ -105,6 +105,7 @@ chezmoi add ~/.flox/env/manifest.lock  # Sync lockfile after changes
 | *toplevel* (default) | ripgrep, fd, bat, jq, etc. | Stable CLI tools — no `pkg-group` needed |
 | `vcs` | git, gh, tig, delta, difftastic, jujutsu, etc. | Git ecosystem, shared revision |
 | `editors` | neovim, lua-language-server, tree-sitter | Editor + language server ABI compatibility |
+| `kubernetes` | kustomize, krew | Kubernetes tooling, shared revision |
 | `golang` | go, golangci-lint | Linter must match Go version |
 | `node` | nodejs, bun | JS runtimes |
 | `lua` | luarocks, lua | Lua ecosystem |
@@ -246,7 +247,7 @@ Key tools managed via Flox (see `dot_flox/env/manifest.toml`) and Devbox (see `d
 - **Editors**: Neovim (nightly), `lua-language-server`
 - **Shell Enhancements**: `atuin`, `direnv`
 - **Development**: `nodejs`, `go`, `uv` (Python tool manager - see Python Tool Management section), `typos`, `dotenv-linter`
-- **Kubernetes**: `k9s`, `kustomize`
+- **Kubernetes**: `k9s`, `kustomize`, `krew`
 - **System Monitoring**: `btop`
 - **Utilities**: `chezmoi`, `age`, `passage`, `tldr`, `yazi`
 
