@@ -332,93 +332,6 @@
       "priority": 5
     },
     {
-      "attr_path": "lua-language-server",
-      "broken": false,
-      "derivation": "/nix/store/p6d06dcqpm96x131fkxlqm9lwv62njr5-lua-language-server-3.17.1.drv",
-      "description": "Language server that offers Lua language support",
-      "install_id": "lua-language-server",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=8110df5ad7abf5d4c0f6fb0f8f978390e77f9685",
-      "name": "lua-language-server-3.17.1",
-      "pname": "lua-language-server",
-      "rev": "8110df5ad7abf5d4c0f6fb0f8f978390e77f9685",
-      "rev_count": 971119,
-      "rev_date": "2026-03-28T14:48:23Z",
-      "scrape_date": "2026-03-30T03:37:39.179853Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "3.17.1",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/gwsyb3qmv66q2x7s4h46r3954z83ghrk-lua-language-server-3.17.1"
-      },
-      "system": "aarch64-darwin",
-      "group": "editors",
-      "priority": 5
-    },
-    {
-      "attr_path": "neovim",
-      "broken": false,
-      "derivation": "/nix/store/r0a12r6f9mii4l8jgkllaa0rbk13s0i4-neovim-0.11.6.drv",
-      "description": "Vim text editor fork focused on extensibility and agility",
-      "install_id": "neovim",
-      "license": "[ Apache-2.0, Vim ]",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=8110df5ad7abf5d4c0f6fb0f8f978390e77f9685",
-      "name": "neovim-0.11.6",
-      "pname": "neovim",
-      "rev": "8110df5ad7abf5d4c0f6fb0f8f978390e77f9685",
-      "rev_count": 971119,
-      "rev_date": "2026-03-28T14:48:23Z",
-      "scrape_date": "2026-03-30T03:37:42.776839Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.11.6",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/9d62235x8y4ssvjry62wi45caq8v8hgs-neovim-0.11.6"
-      },
-      "system": "aarch64-darwin",
-      "group": "editors",
-      "priority": 5
-    },
-    {
-      "attr_path": "tree-sitter",
-      "broken": false,
-      "derivation": "/nix/store/s0jqn1r7rkg0wzhqpxjajll14vvwkj29-tree-sitter-0.25.10.drv",
-      "description": "Parser generator tool and an incremental parsing library",
-      "install_id": "tree-sitter",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=8110df5ad7abf5d4c0f6fb0f8f978390e77f9685",
-      "name": "tree-sitter-0.25.10",
-      "pname": "tree-sitter",
-      "rev": "8110df5ad7abf5d4c0f6fb0f8f978390e77f9685",
-      "rev_count": 971119,
-      "rev_date": "2026-03-28T14:48:23Z",
-      "scrape_date": "2026-03-30T03:39:29.195917Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.25.10",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/ia0i7d3sacvpa8y84x2rgk5y807i2mrk-tree-sitter-0.25.10"
-      },
-      "system": "aarch64-darwin",
-      "group": "editors",
-      "priority": 5
-    },
-    {
       "attr_path": "go",
       "broken": false,
       "derivation": "/nix/store/lpl3ynayhbwbzg5wj2d4dpw2mc1czmdd-go-1.25.7.drv",
@@ -2269,6 +2182,93 @@
       },
       "system": "aarch64-darwin",
       "group": "vcs",
+      "priority": 5
+    },
+    {
+      "attr_path": "lua-language-server",
+      "broken": false,
+      "derivation": "/nix/store/p6d06dcqpm96x131fkxlqm9lwv62njr5-lua-language-server-3.17.1.drv",
+      "description": "Language server that offers Lua language support",
+      "install_id": "lua-language-server",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=68d8aa3d661f0e6bd5862291b5bb263b2a6595c9",
+      "name": "lua-language-server-3.17.1",
+      "pname": "lua-language-server",
+      "rev": "68d8aa3d661f0e6bd5862291b5bb263b2a6595c9",
+      "rev_count": 975402,
+      "rev_date": "2026-04-05T21:03:29Z",
+      "scrape_date": "2026-04-07T06:03:51.436435Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "3.17.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/gwsyb3qmv66q2x7s4h46r3954z83ghrk-lua-language-server-3.17.1"
+      },
+      "system": "aarch64-darwin",
+      "group": "editors",
+      "priority": 5
+    },
+    {
+      "attr_path": "neovim",
+      "broken": false,
+      "derivation": "/nix/store/9qqj5h7z6d33acbx1bzxh7lgrks9zpgi-neovim-0.12.0.drv",
+      "description": "Vim text editor fork focused on extensibility and agility",
+      "install_id": "neovim",
+      "license": "[ Apache-2.0, Vim ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=68d8aa3d661f0e6bd5862291b5bb263b2a6595c9",
+      "name": "neovim-0.12.0",
+      "pname": "neovim",
+      "rev": "68d8aa3d661f0e6bd5862291b5bb263b2a6595c9",
+      "rev_count": 975402,
+      "rev_date": "2026-04-05T21:03:29Z",
+      "scrape_date": "2026-04-07T06:03:55.164361Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.12.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/hlffjy4n24cl1dihbk7svq7l1bhcpdgp-neovim-0.12.0"
+      },
+      "system": "aarch64-darwin",
+      "group": "editors",
+      "priority": 5
+    },
+    {
+      "attr_path": "tree-sitter",
+      "broken": false,
+      "derivation": "/nix/store/s0jqn1r7rkg0wzhqpxjajll14vvwkj29-tree-sitter-0.25.10.drv",
+      "description": "Parser generator tool and an incremental parsing library",
+      "install_id": "tree-sitter",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=68d8aa3d661f0e6bd5862291b5bb263b2a6595c9",
+      "name": "tree-sitter-0.25.10",
+      "pname": "tree-sitter",
+      "rev": "68d8aa3d661f0e6bd5862291b5bb263b2a6595c9",
+      "rev_count": 975402,
+      "rev_date": "2026-04-05T21:03:29Z",
+      "scrape_date": "2026-04-07T06:05:45.313452Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.25.10",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/ia0i7d3sacvpa8y84x2rgk5y807i2mrk-tree-sitter-0.25.10"
+      },
+      "system": "aarch64-darwin",
+      "group": "editors",
       "priority": 5
     },
     {
