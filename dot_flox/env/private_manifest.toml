@@ -12,23 +12,31 @@ schema-version = "1.11.0"
 ripgrep.pkg-path = "ripgrep"
 fd.pkg-path = "fd"
 fzf.pkg-path = "fzf"
+fzf.version = ">=0.65.1"
 eza.pkg-path = "eza"
+eza.version = ">=0.23.0"
 tree.pkg-path = "tree"
 zoxide.pkg-path = "zoxide"
+zoxide.version = ">=0.9.8"
 yazi.pkg-path = "yazi"
+yazi.version = ">=25.5.31"
 
 # Text / JSON processing
 bat.pkg-path = "bat"
 jq.pkg-path = "jq"
+jq.version = ">=1.8.1"
 jq.outputs = "all"
 jless.pkg-path = "jless"
 jnv.pkg-path = "jnv"
+jnv.version = ">=0.6.1"
 fastgron.pkg-path = "fastgron"
 fx.pkg-path = "fx"
+fx.version = ">=38.0.0"
 sd.pkg-path = "sd"
 
 # Shells / Shell enhancements
 direnv.pkg-path = "direnv"
+direnv.version = ">=2.37.1"
 
 # Kubernetes
 kustomize = { pkg-path = "kustomize", pkg-group = "kubernetes" }
@@ -36,22 +44,30 @@ krew = { pkg-path = "krew", pkg-group = "kubernetes" }
 
 # Networking / Security
 nmap.pkg-path = "nmap"
+nmap.version = ">=7.97"
 age.pkg-path = "age"
 passage.pkg-path = "passage"
 step-cli.pkg-path = "step-cli"
 wget.pkg-path = "wget"
 _1password-cli.pkg-path = "_1password-cli"
+_1password-cli.version = ">=2.31.1"
 
 # System monitoring / Utilities
 btop.pkg-path = "btop"
+btop.version = ">=1.4.4"
 pv.pkg-path = "pv"
+pv.version = ">=1.9.34"
 ncdu.pkg-path = "ncdu"
+ncdu.version = ">=2.8.2"
 spacer.pkg-path = "spacer"
+spacer.version = ">=0.4.5"
 moreutils.pkg-path = "moreutils"
 tldr.pkg-path = "tldr"
 tldr.outputs = "all"
 chezmoi.pkg-path = "chezmoi"
+chezmoi.version = ">=2.63.1"
 q.pkg-path = "q"
+q.version = ">=0.19.5"
 dyff.pkg-path = "dyff"
 
 # Recording
@@ -61,6 +77,7 @@ asciinema-agg.pkg-path = "asciinema-agg"
 
 # Virtualization
 lima.pkg-path = "lima"
+lima.version = ">=1.2.0"
 
 # Backup
 restic.pkg-path = "restic"

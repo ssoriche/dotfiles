@@ -7,7 +7,8 @@
         "pkg-path": "darwin.apple_sdk.frameworks.CoreServices"
       },
       "_1password-cli": {
-        "pkg-path": "_1password-cli"
+        "pkg-path": "_1password-cli",
+        "version": ">=2.31.1"
       },
       "aerospace": {
         "pkg-path": "aerospace",
@@ -35,14 +36,16 @@
         "pkg-path": "bat"
       },
       "btop": {
-        "pkg-path": "btop"
+        "pkg-path": "btop",
+        "version": ">=1.4.4"
       },
       "bun": {
         "pkg-path": "bun",
         "pkg-group": "node"
       },
       "chezmoi": {
-        "pkg-path": "chezmoi"
+        "pkg-path": "chezmoi",
+        "version": ">=2.63.1"
       },
       "claude-code": {
         "pkg-path": "claude-code",
@@ -57,7 +60,8 @@
         "pkg-group": "vcs"
       },
       "direnv": {
-        "pkg-path": "direnv"
+        "pkg-path": "direnv",
+        "version": ">=2.37.1"
       },
       "dotenv-linter": {
         "pkg-path": "dotenv-linter",
@@ -67,7 +71,8 @@
         "pkg-path": "dyff"
       },
       "eza": {
-        "pkg-path": "eza"
+        "pkg-path": "eza",
+        "version": ">=0.23.0"
       },
       "fastgron": {
         "pkg-path": "fastgron"
@@ -76,10 +81,12 @@
         "pkg-path": "fd"
       },
       "fx": {
-        "pkg-path": "fx"
+        "pkg-path": "fx",
+        "version": ">=38.0.0"
       },
       "fzf": {
-        "pkg-path": "fzf"
+        "pkg-path": "fzf",
+        "version": ">=0.65.1"
       },
       "gh": {
         "pkg-path": "gh",
@@ -128,10 +135,12 @@
         "pkg-path": "jless"
       },
       "jnv": {
-        "pkg-path": "jnv"
+        "pkg-path": "jnv",
+        "version": ">=0.6.1"
       },
       "jq": {
         "pkg-path": "jq",
+        "version": ">=1.8.1",
         "outputs": "all"
       },
       "jujutsu": {
@@ -147,7 +156,8 @@
         "pkg-group": "kubernetes"
       },
       "lima": {
-        "pkg-path": "lima"
+        "pkg-path": "lima",
+        "version": ">=1.2.0"
       },
       "lua": {
         "pkg-path": "lua51Packages.lua",
@@ -169,14 +179,16 @@
         "pkg-path": "moreutils"
       },
       "ncdu": {
-        "pkg-path": "ncdu"
+        "pkg-path": "ncdu",
+        "version": ">=2.8.2"
       },
       "neovim": {
         "pkg-path": "neovim",
         "pkg-group": "editors"
       },
       "nmap": {
-        "pkg-path": "nmap"
+        "pkg-path": "nmap",
+        "version": ">=7.97"
       },
       "nodejs": {
         "pkg-path": "nodejs",
@@ -194,10 +206,12 @@
         "pkg-path": "passage"
       },
       "pv": {
-        "pkg-path": "pv"
+        "pkg-path": "pv",
+        "version": ">=1.9.34"
       },
       "q": {
-        "pkg-path": "q"
+        "pkg-path": "q",
+        "version": ">=0.19.5"
       },
       "restic": {
         "pkg-path": "restic"
@@ -209,7 +223,8 @@
         "pkg-path": "sd"
       },
       "spacer": {
-        "pkg-path": "spacer"
+        "pkg-path": "spacer",
+        "version": ">=0.4.5"
       },
       "step-cli": {
         "pkg-path": "step-cli"
@@ -246,10 +261,12 @@
         "pkg-path": "wget"
       },
       "yazi": {
-        "pkg-path": "yazi"
+        "pkg-path": "yazi",
+        "version": ">=25.5.31"
       },
       "zoxide": {
-        "pkg-path": "zoxide"
+        "pkg-path": "zoxide",
+        "version": ">=0.9.8"
       }
     },
     "hook": {
