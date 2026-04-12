@@ -51,6 +51,10 @@
         "pkg-path": "claude-code",
         "pkg-group": "claude"
       },
+      "coderabbit-cli": {
+        "pkg-path": "flox/coderabbit-cli",
+        "pkg-group": "coderabbit-cli"
+      },
       "delta": {
         "pkg-path": "delta",
         "pkg-group": "vcs"
@@ -2288,6 +2292,37 @@
       },
       "system": "aarch64-darwin",
       "group": "vcs",
+      "priority": 5
+    },
+    {
+      "attr_path": "coderabbit-cli",
+      "broken": false,
+      "derivation": "/nix/store/hg9kb1xq6sxqkj0m483l1m284fgk0dq2-coderabbit-cli-0.4.1.drv",
+      "description": "AI-powered code review CLI tool",
+      "install_id": "coderabbit-cli",
+      "license": "Unfree",
+      "locked_url": "https://github.com/barstoolbluz/nix-ai-tools?rev=3aee7a91ffd7c1af9591199db16c06ffcfd6103e",
+      "name": "coderabbit-cli-0.4.1",
+      "pname": "coderabbit-cli",
+      "rev": "3aee7a91ffd7c1af9591199db16c06ffcfd6103e",
+      "rev_count": 1,
+      "rev_date": "2026-04-12T05:55:16Z",
+      "scrape_date": "2026-04-12T18:36:08.629126Z",
+      "stabilities": [
+        "unstable",
+        "staging",
+        "stable"
+      ],
+      "unfree": true,
+      "version": "0.4.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/nk6ngyd03893swiszp67mxaygq1aq24a-coderabbit-cli-0.4.1"
+      },
+      "system": "aarch64-darwin",
+      "group": "coderabbit-cli",
       "priority": 5
     },
     {
