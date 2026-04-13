@@ -13,7 +13,7 @@ fi
 
 # Find the Applications directory inside the Flox environment
 # Path varies by architecture: run/<arch>-<os>.<name>.<mode>/...
-APPS_DIR=$(find "$FLOX_ENV_DIR/run" -type d -name "Applications" 2>/dev/null | head -1)
+APPS_DIR=$(find -L "$FLOX_ENV_DIR/run" -type d -name "Applications" 2>/dev/null | head -1)
 
 if [ -z "$APPS_DIR" ] || [ ! -d "$APPS_DIR" ]; then
     echo "Flox Applications directory not found, skipping Dock setup"
