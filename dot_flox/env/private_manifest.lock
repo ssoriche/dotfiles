@@ -17,6 +17,9 @@
       "age": {
         "pkg-path": "age"
       },
+      "agent-safehouse": {
+        "flake": "github:NixOS/nixpkgs/b0ec52b771f1207053090f4ea9cf73a6040f0489#agent-safehouse"
+      },
       "asciinema": {
         "pkg-path": "asciinema",
         "outputs": "all"
@@ -2323,6 +2326,35 @@
       },
       "system": "aarch64-darwin",
       "group": "vcs",
+      "priority": 5
+    },
+    {
+      "install_id": "agent-safehouse",
+      "locked-url": "github:NixOS/nixpkgs/b0ec52b771f1207053090f4ea9cf73a6040f0489?narHash=sha256-aHMZ4hV9ZAjbc35VGcrqAtAigteaHCfXHeMiiVB/vAs%3D",
+      "flake-description": "A collection of packages for the Nix package manager",
+      "locked-flake-attr-path": "legacyPackages.aarch64-darwin.agent-safehouse",
+      "derivation": "/nix/store/r1r78qv8ni60p2h3fwv1jxxx9j956zr1-safehouse-0.9.0.drv",
+      "outputs": {
+        "out": "/nix/store/xvikpq2w8hwyl1z41720655ixv8jla1v-safehouse-0.9.0"
+      },
+      "output-names": [
+        "out"
+      ],
+      "outputs-to-install": [
+        "out"
+      ],
+      "requested-outputs-to-install": [],
+      "package-system": "aarch64-darwin",
+      "system": "aarch64-darwin",
+      "name": "safehouse-0.9.0",
+      "pname": "safehouse",
+      "version": "0.9.0",
+      "description": "Sandbox your local AI agents so they can read/write only what they need",
+      "licenses": [
+        "Apache-2.0"
+      ],
+      "broken": false,
+      "unfree": false,
       "priority": 5
     },
     {
