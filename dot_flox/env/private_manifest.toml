@@ -41,6 +41,7 @@ direnv.version = ">=2.37.1"
 # Kubernetes
 kustomize = { pkg-path = "kustomize", pkg-group = "kubernetes" }
 krew = { pkg-path = "krew", pkg-group = "kubernetes" }
+kns = { pkg-path = "kns", pkg-group = "kubernetes" }
 
 # Networking / Security
 nmap.pkg-path = "nmap"
