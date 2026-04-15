@@ -154,6 +154,10 @@
         "pkg-path": "jujutsu",
         "pkg-group": "vcs"
       },
+      "kns": {
+        "pkg-path": "kns",
+        "pkg-group": "kubernetes"
+      },
       "krew": {
         "pkg-path": "krew",
         "pkg-group": "kubernetes"
@@ -649,6 +653,35 @@
       },
       "system": "aarch64-darwin",
       "group": "gui",
+      "priority": 5
+    },
+    {
+      "attr_path": "kns",
+      "broken": false,
+      "derivation": "/nix/store/5hyi5d24sajpgkzannhnygd218vsma0h-kns-0-unstable-2023-04-25.drv",
+      "description": "Kubernetes namespace switcher",
+      "install_id": "kns",
+      "license": "ISC",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=4c1018dae018162ec878d42fec712642d214fdfa",
+      "name": "kns-0-unstable-2023-04-25",
+      "pname": "kns",
+      "rev": "4c1018dae018162ec878d42fec712642d214fdfa",
+      "rev_count": 977467,
+      "rev_date": "2026-04-09T04:48:10Z",
+      "scrape_date": "2026-04-11T06:03:50.503532Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2023-04-25",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/6pgd610m72y663z3ggw13z8jljnjs16l-kns-0-unstable-2023-04-25"
+      },
+      "system": "aarch64-darwin",
+      "group": "kubernetes",
       "priority": 5
     },
     {
