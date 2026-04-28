@@ -114,9 +114,9 @@ golangci-lint = { pkg-path = "golangci-lint", pkg-group = "golang" }
 nodejs = { pkg-path = "nodejs", pkg-group = "node" }
 bun = { pkg-path = "bun", pkg-group = "node" }
 
-# lua — Lua ecosystem
-luarocks = { pkg-path = "luarocks", pkg-group = "lua" }
-lua = { pkg-path = "lua51Packages.lua", pkg-group = "lua" , outputs = "all" }
+# lua.org — Lua ecosystem
+luarocks = { pkg-path = "luarocks", pkg-group = "lua.org" }
+lua = { pkg-path = "lua51Packages.lua", pkg-group = "lua.org" , outputs = "all" }
 
 # python — standalone, frequent updates
 uv = { pkg-path = "uv", pkg-group = "python" }
