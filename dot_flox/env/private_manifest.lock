@@ -333,35 +333,6 @@
       "priority": 5
     },
     {
-      "attr_path": "claude-code",
-      "broken": false,
-      "derivation": "/nix/store/a919rfiwqx8rmznldfd5li5ws5bm98v8-claude-code-2.1.104.drv",
-      "description": "Agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster",
-      "install_id": "claude-code",
-      "license": "Unfree",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=4bd9165a9165d7b5e33ae57f3eecbcb28fb231c9",
-      "name": "claude-code-2.1.104",
-      "pname": "claude-code",
-      "rev": "4bd9165a9165d7b5e33ae57f3eecbcb28fb231c9",
-      "rev_count": 980183,
-      "rev_date": "2026-04-14T12:31:25Z",
-      "scrape_date": "2026-04-16T06:05:18.226478Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": true,
-      "version": "2.1.104",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/mzb7ph3wfmics5wx0bqnns0gga03g3p6-claude-code-2.1.104"
-      },
-      "system": "aarch64-darwin",
-      "group": "claude",
-      "priority": 5
-    },
-    {
       "attr_path": "awscli2",
       "broken": false,
       "derivation": "/nix/store/pz2il020jyk94qrv76csk0v94rsi2ail-awscli2-2.34.24.drv",
@@ -1038,6 +1009,36 @@
       },
       "system": "aarch64-darwin",
       "group": "pinned",
+      "priority": 5
+    },
+    {
+      "attr_path": "uv",
+      "broken": false,
+      "derivation": "/nix/store/f3vpfb905azsacncqzlcsyav7pnl67jj-uv-0.11.7.drv",
+      "description": "Extremely fast Python package installer and resolver, written in Rust",
+      "install_id": "uv",
+      "license": "[ Apache-2.0, MIT ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b12141ef619e0a9c1c84dc8c684040326f27cdcc",
+      "name": "uv-0.11.7",
+      "pname": "uv",
+      "rev": "b12141ef619e0a9c1c84dc8c684040326f27cdcc",
+      "rev_count": 982522,
+      "rev_date": "2026-04-18T21:33:21Z",
+      "scrape_date": "2026-04-21T06:05:50.988050Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.11.7",
+      "outputs_to_install": [
+        "out",
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/c5mvzqnf5y07ssv0bcb1a46n2zmz0njv-uv-0.11.7"
+      },
+      "system": "aarch64-darwin",
+      "group": "python",
       "priority": 5
     },
     {
@@ -2395,33 +2396,32 @@
       "priority": 5
     },
     {
-      "attr_path": "uv",
+      "attr_path": "claude-code",
       "broken": false,
-      "derivation": "/nix/store/f3vpfb905azsacncqzlcsyav7pnl67jj-uv-0.11.7.drv",
-      "description": "Extremely fast Python package installer and resolver, written in Rust",
-      "install_id": "uv",
-      "license": "[ Apache-2.0, MIT ]",
+      "derivation": "/nix/store/xig1b7nkm9vni46c718i90q2r8yd2sf0-claude-code-2.1.112.drv",
+      "description": "Agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster",
+      "install_id": "claude-code",
+      "license": "Unfree",
       "locked_url": "https://github.com/flox/nixpkgs?rev=b12141ef619e0a9c1c84dc8c684040326f27cdcc",
-      "name": "uv-0.11.7",
-      "pname": "uv",
+      "name": "claude-code-2.1.112",
+      "pname": "claude-code",
       "rev": "b12141ef619e0a9c1c84dc8c684040326f27cdcc",
       "rev_count": 982522,
       "rev_date": "2026-04-18T21:33:21Z",
-      "scrape_date": "2026-04-21T06:05:50.988050Z",
+      "scrape_date": "2026-04-21T06:03:20.080867Z",
       "stabilities": [
         "unstable"
       ],
-      "unfree": false,
-      "version": "0.11.7",
+      "unfree": true,
+      "version": "2.1.112",
       "outputs_to_install": [
-        "out",
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/c5mvzqnf5y07ssv0bcb1a46n2zmz0njv-uv-0.11.7"
+        "out": "/nix/store/17dk1jy33ka7hi8gm54sgclvycgs5vz0-claude-code-2.1.112"
       },
       "system": "aarch64-darwin",
-      "group": "python",
+      "group": "claude",
       "priority": 5
     },
     {
