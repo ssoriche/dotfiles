@@ -392,37 +392,6 @@
       "priority": 5
     },
     {
-      "attr_path": "coderabbit-cli",
-      "broken": false,
-      "derivation": "/nix/store/hg9kb1xq6sxqkj0m483l1m284fgk0dq2-coderabbit-cli-0.4.1.drv",
-      "description": "AI-powered code review CLI tool",
-      "install_id": "coderabbit-cli",
-      "license": "Unfree",
-      "locked_url": "https://github.com/barstoolbluz/nix-ai-tools?rev=f4ff0b5bd27e762a02d7e2a88cc88e2a625d8863",
-      "name": "coderabbit-cli-0.4.1",
-      "pname": "coderabbit-cli",
-      "rev": "f4ff0b5bd27e762a02d7e2a88cc88e2a625d8863",
-      "rev_count": 1,
-      "rev_date": "2026-04-17T06:29:27Z",
-      "scrape_date": "2026-04-17T13:59:15.324512Z",
-      "stabilities": [
-        "unstable",
-        "staging",
-        "stable"
-      ],
-      "unfree": true,
-      "version": "0.4.1",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/nk6ngyd03893swiszp67mxaygq1aq24a-coderabbit-cli-0.4.1"
-      },
-      "system": "aarch64-darwin",
-      "group": "coderabbit-cli",
-      "priority": 5
-    },
-    {
       "attr_path": "lua-language-server",
       "broken": false,
       "derivation": "/nix/store/1psdis1p82zh01d8r42px6frkl2cz7p6-lua-language-server-3.18.1.drv",
@@ -979,6 +948,35 @@
       },
       "system": "aarch64-darwin",
       "group": "node",
+      "priority": 5
+    },
+    {
+      "attr_path": "opencode",
+      "broken": false,
+      "derivation": "/nix/store/z6srjp0yx9y386d9xk4nazvbjiidfzdj-opencode-1.4.11.drv",
+      "description": "AI coding agent built for the terminal",
+      "install_id": "opencode",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b12141ef619e0a9c1c84dc8c684040326f27cdcc",
+      "name": "opencode-1.4.11",
+      "pname": "opencode",
+      "rev": "b12141ef619e0a9c1c84dc8c684040326f27cdcc",
+      "rev_count": 982522,
+      "rev_date": "2026-04-18T21:33:21Z",
+      "scrape_date": "2026-04-21T06:03:48.654668Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.4.11",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/rzlgcw58ai68yw57fb8f2wafhpdqmrf4-opencode-1.4.11"
+      },
+      "system": "aarch64-darwin",
+      "group": "opencode",
       "priority": 5
     },
     {
@@ -2396,32 +2394,34 @@
       "priority": 5
     },
     {
-      "attr_path": "opencode",
+      "attr_path": "coderabbit-cli",
       "broken": false,
-      "derivation": "/nix/store/z6srjp0yx9y386d9xk4nazvbjiidfzdj-opencode-1.4.11.drv",
-      "description": "AI coding agent built for the terminal",
-      "install_id": "opencode",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=b12141ef619e0a9c1c84dc8c684040326f27cdcc",
-      "name": "opencode-1.4.11",
-      "pname": "opencode",
-      "rev": "b12141ef619e0a9c1c84dc8c684040326f27cdcc",
-      "rev_count": 982522,
-      "rev_date": "2026-04-18T21:33:21Z",
-      "scrape_date": "2026-04-21T06:03:48.654668Z",
+      "derivation": "/nix/store/hgwflgjbll76zayrgmlimfxrmcx3dcla-coderabbit-cli-0.4.2.drv",
+      "description": "AI-powered code review CLI tool",
+      "install_id": "coderabbit-cli",
+      "license": "Unfree",
+      "locked_url": "https://github.com/barstoolbluz/nix-ai-tools?rev=4305bb29005f77a384e1ebe22ec59789ed2bbb02",
+      "name": "coderabbit-cli-0.4.2",
+      "pname": "coderabbit-cli",
+      "rev": "4305bb29005f77a384e1ebe22ec59789ed2bbb02",
+      "rev_count": 1,
+      "rev_date": "2026-04-23T06:07:42Z",
+      "scrape_date": "2026-04-28T15:18:51.599178Z",
       "stabilities": [
-        "unstable"
+        "unstable",
+        "staging",
+        "stable"
       ],
-      "unfree": false,
-      "version": "1.4.11",
+      "unfree": true,
+      "version": "0.4.2",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/rzlgcw58ai68yw57fb8f2wafhpdqmrf4-opencode-1.4.11"
+        "out": "/nix/store/34gmapad7zg7wc0xh2aggg3jmf9gx66f-coderabbit-cli-0.4.2"
       },
       "system": "aarch64-darwin",
-      "group": "opencode",
+      "group": "coderabbit-cli",
       "priority": 5
     },
     {
