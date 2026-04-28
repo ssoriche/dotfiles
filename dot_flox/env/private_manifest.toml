@@ -35,6 +35,7 @@ fx.version = ">=38.0.0"
 sd.pkg-path = "sd"
 
 # Shells / Shell enhancements
+atuin.pkg-path = "atuin"
 direnv.pkg-path = "direnv"
 direnv.version = ">=2.37.1"
 
@@ -143,7 +144,6 @@ obsidian = { pkg-path = "obsidian", pkg-group = "gui" }
 halloy = { pkg-path = "halloy", pkg-group = "gui" }
 
 # Flake-based packages (pinned to specific commits/repos)
-atuin.flake = "github:atuinsh/atuin/v18.13.3"
 maccy.flake = "github:NixOS/nixpkgs/9ccc4f514369dd2e94af75d0132772f5927e26bb#maccy"
 coderabbit-cli.pkg-path = "flox/coderabbit-cli"
 coderabbit-cli.pkg-group = "coderabbit-cli"
