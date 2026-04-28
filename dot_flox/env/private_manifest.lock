@@ -303,6 +303,36 @@
   },
   "packages": [
     {
+      "attr_path": "atuin",
+      "broken": false,
+      "derivation": "/nix/store/9zs3bdv61pkxibislwj2a60mmjgvz0la-atuin-18.13.6.drv",
+      "description": "Replacement for a shell history which records additional commands context with optional encrypted synchronization between machines",
+      "install_id": "atuin",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=4bd9165a9165d7b5e33ae57f3eecbcb28fb231c9",
+      "name": "atuin-18.13.6",
+      "pname": "atuin",
+      "rev": "4bd9165a9165d7b5e33ae57f3eecbcb28fb231c9",
+      "rev_count": 980183,
+      "rev_date": "2026-04-14T12:31:25Z",
+      "scrape_date": "2026-04-16T06:05:17.888925Z",
+      "stabilities": [
+        "unstable",
+        "staging"
+      ],
+      "unfree": false,
+      "version": "18.13.6",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/806src7rmf6xr41f2kcmzgz7gids9zx1-atuin-18.13.6"
+      },
+      "system": "aarch64-darwin",
+      "group": "atuin.sh",
+      "priority": 5
+    },
+    {
       "attr_path": "claude-code",
       "broken": false,
       "derivation": "/nix/store/a919rfiwqx8rmznldfd5li5ws5bm98v8-claude-code-2.1.104.drv",
@@ -2105,13 +2135,13 @@
       "description": "Syntax-highlighting pager for git",
       "install_id": "delta",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=4bd9165a9165d7b5e33ae57f3eecbcb28fb231c9",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b12141ef619e0a9c1c84dc8c684040326f27cdcc",
       "name": "delta-0.19.2",
       "pname": "delta",
-      "rev": "4bd9165a9165d7b5e33ae57f3eecbcb28fb231c9",
-      "rev_count": 980183,
-      "rev_date": "2026-04-14T12:31:25Z",
-      "scrape_date": "2026-04-16T06:05:18.458050Z",
+      "rev": "b12141ef619e0a9c1c84dc8c684040326f27cdcc",
+      "rev_count": 982522,
+      "rev_date": "2026-04-18T21:33:21Z",
+      "scrape_date": "2026-04-21T06:03:20.327747Z",
       "stabilities": [
         "unstable"
       ],
@@ -2134,13 +2164,13 @@
       "description": "Syntax-aware diff",
       "install_id": "difftastic",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=4bd9165a9165d7b5e33ae57f3eecbcb28fb231c9",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b12141ef619e0a9c1c84dc8c684040326f27cdcc",
       "name": "difftastic-0.68.0",
       "pname": "difftastic",
-      "rev": "4bd9165a9165d7b5e33ae57f3eecbcb28fb231c9",
-      "rev_count": 980183,
-      "rev_date": "2026-04-14T12:31:25Z",
-      "scrape_date": "2026-04-16T06:05:18.485854Z",
+      "rev": "b12141ef619e0a9c1c84dc8c684040326f27cdcc",
+      "rev_count": 982522,
+      "rev_date": "2026-04-18T21:33:21Z",
+      "scrape_date": "2026-04-21T06:03:20.360280Z",
       "stabilities": [
         "unstable"
       ],
@@ -2159,27 +2189,27 @@
     {
       "attr_path": "gh",
       "broken": false,
-      "derivation": "/nix/store/l0b2d8r7qkarzii23xqjvp9hblppxr67-gh-2.89.0.drv",
+      "derivation": "/nix/store/8ydmrwpg4qgh5d1zxs76sbk95867v40q-gh-2.90.0.drv",
       "description": "GitHub CLI tool",
       "install_id": "gh",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=4bd9165a9165d7b5e33ae57f3eecbcb28fb231c9",
-      "name": "gh-2.89.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b12141ef619e0a9c1c84dc8c684040326f27cdcc",
+      "name": "gh-2.90.0",
       "pname": "gh",
-      "rev": "4bd9165a9165d7b5e33ae57f3eecbcb28fb231c9",
-      "rev_count": 980183,
-      "rev_date": "2026-04-14T12:31:25Z",
-      "scrape_date": "2026-04-16T06:05:19.049613Z",
+      "rev": "b12141ef619e0a9c1c84dc8c684040326f27cdcc",
+      "rev_count": 982522,
+      "rev_date": "2026-04-18T21:33:21Z",
+      "scrape_date": "2026-04-21T06:03:20.934180Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "2.89.0",
+      "version": "2.90.0",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/ifqpbjcfx5snmahgny6lx40wxbh2yr7g-gh-2.89.0"
+        "out": "/nix/store/43jrlgq2a9dgcb5dilpn8zlfb916xn9g-gh-2.90.0"
       },
       "system": "aarch64-darwin",
       "group": "vcs",
@@ -2192,13 +2222,13 @@
       "description": "Github Cli extension to display a dashboard with pull requests and issues",
       "install_id": "gh-dash",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=4bd9165a9165d7b5e33ae57f3eecbcb28fb231c9",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b12141ef619e0a9c1c84dc8c684040326f27cdcc",
       "name": "gh-dash-4.23.2",
       "pname": "gh-dash",
-      "rev": "4bd9165a9165d7b5e33ae57f3eecbcb28fb231c9",
-      "rev_count": 980183,
-      "rev_date": "2026-04-14T12:31:25Z",
-      "scrape_date": "2026-04-16T06:05:19.051439Z",
+      "rev": "b12141ef619e0a9c1c84dc8c684040326f27cdcc",
+      "rev_count": 982522,
+      "rev_date": "2026-04-18T21:33:21Z",
+      "scrape_date": "2026-04-21T06:03:20.935993Z",
       "stabilities": [
         "unstable"
       ],
@@ -2221,13 +2251,13 @@
       "description": "Distributed version control system",
       "install_id": "git",
       "license": "GPL-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=4bd9165a9165d7b5e33ae57f3eecbcb28fb231c9",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b12141ef619e0a9c1c84dc8c684040326f27cdcc",
       "name": "git-2.53.0",
       "pname": "git",
-      "rev": "4bd9165a9165d7b5e33ae57f3eecbcb28fb231c9",
-      "rev_count": 980183,
-      "rev_date": "2026-04-14T12:31:25Z",
-      "scrape_date": "2026-04-16T06:05:19.089509Z",
+      "rev": "b12141ef619e0a9c1c84dc8c684040326f27cdcc",
+      "rev_count": 982522,
+      "rev_date": "2026-04-18T21:33:21Z",
+      "scrape_date": "2026-04-21T06:03:20.971890Z",
       "stabilities": [
         "unstable"
       ],
@@ -2252,13 +2282,13 @@
       "description": "git commit --fixup, but automatic",
       "install_id": "git-absorb",
       "license": "[ BSD-3-Clause ]",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=4bd9165a9165d7b5e33ae57f3eecbcb28fb231c9",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b12141ef619e0a9c1c84dc8c684040326f27cdcc",
       "name": "git-absorb-0.9.0",
       "pname": "git-absorb",
-      "rev": "4bd9165a9165d7b5e33ae57f3eecbcb28fb231c9",
-      "rev_count": 980183,
-      "rev_date": "2026-04-14T12:31:25Z",
-      "scrape_date": "2026-04-16T06:05:19.089820Z",
+      "rev": "b12141ef619e0a9c1c84dc8c684040326f27cdcc",
+      "rev_count": 982522,
+      "rev_date": "2026-04-18T21:33:21Z",
+      "scrape_date": "2026-04-21T06:03:20.972188Z",
       "stabilities": [
         "unstable"
       ],
@@ -2277,17 +2307,17 @@
     {
       "attr_path": "git-credential-manager",
       "broken": false,
-      "derivation": "/nix/store/f70ax333ni4lyb5wjrvzq8sgx3j0k46c-git-credential-manager-2.7.3.drv",
+      "derivation": "/nix/store/rmp69dkcn0bg9d90s6wky5v09dcxfkzz-git-credential-manager-2.7.3.drv",
       "description": "Secure, cross-platform Git credential storage with authentication to GitHub, Azure Repos, and other popular Git hosting services",
       "install_id": "git-credential-manager",
       "license": "[ MIT ]",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=4bd9165a9165d7b5e33ae57f3eecbcb28fb231c9",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b12141ef619e0a9c1c84dc8c684040326f27cdcc",
       "name": "git-credential-manager-2.7.3",
       "pname": "git-credential-manager",
-      "rev": "4bd9165a9165d7b5e33ae57f3eecbcb28fb231c9",
-      "rev_count": 980183,
-      "rev_date": "2026-04-14T12:31:25Z",
-      "scrape_date": "2026-04-16T06:05:19.100736Z",
+      "rev": "b12141ef619e0a9c1c84dc8c684040326f27cdcc",
+      "rev_count": 982522,
+      "rev_date": "2026-04-18T21:33:21Z",
+      "scrape_date": "2026-04-21T06:03:20.982811Z",
       "stabilities": [
         "unstable"
       ],
@@ -2297,7 +2327,7 @@
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/62lcnan5sz8ncsjl8wfslldhgyahpphl-git-credential-manager-2.7.3"
+        "out": "/nix/store/2691d76qi86j03y0pn5bkk7ifrnlcjmv-git-credential-manager-2.7.3"
       },
       "system": "aarch64-darwin",
       "group": "vcs",
@@ -2310,13 +2340,13 @@
       "description": "TUI Git client inspired by Magit",
       "install_id": "gitu",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=4bd9165a9165d7b5e33ae57f3eecbcb28fb231c9",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b12141ef619e0a9c1c84dc8c684040326f27cdcc",
       "name": "gitu-0.41.0",
       "pname": "gitu",
-      "rev": "4bd9165a9165d7b5e33ae57f3eecbcb28fb231c9",
-      "rev_count": 980183,
-      "rev_date": "2026-04-14T12:31:25Z",
-      "scrape_date": "2026-04-16T06:05:19.154227Z",
+      "rev": "b12141ef619e0a9c1c84dc8c684040326f27cdcc",
+      "rev_count": 982522,
+      "rev_date": "2026-04-18T21:33:21Z",
+      "scrape_date": "2026-04-21T06:03:21.047351Z",
       "stabilities": [
         "unstable"
       ],
@@ -2335,17 +2365,17 @@
     {
       "attr_path": "jujutsu",
       "broken": false,
-      "derivation": "/nix/store/p2i8hix1sn31i4mkq0678q2hmjg4psfg-jujutsu-0.40.0.drv",
+      "derivation": "/nix/store/qg7fgjfds5rgrnslf5cfl8z5z6n5wcpc-jujutsu-0.40.0.drv",
       "description": "Git-compatible DVCS that is both simple and powerful",
       "install_id": "jujutsu",
       "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=4bd9165a9165d7b5e33ae57f3eecbcb28fb231c9",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b12141ef619e0a9c1c84dc8c684040326f27cdcc",
       "name": "jujutsu-0.40.0",
       "pname": "jujutsu",
-      "rev": "4bd9165a9165d7b5e33ae57f3eecbcb28fb231c9",
-      "rev_count": 980183,
-      "rev_date": "2026-04-14T12:31:25Z",
-      "scrape_date": "2026-04-16T06:05:34.640268Z",
+      "rev": "b12141ef619e0a9c1c84dc8c684040326f27cdcc",
+      "rev_count": 982522,
+      "rev_date": "2026-04-18T21:33:21Z",
+      "scrape_date": "2026-04-21T06:03:36.354153Z",
       "stabilities": [
         "unstable"
       ],
@@ -2355,7 +2385,7 @@
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/dg1b4pmf864yqshfkjvhjhmnrghjv5iv-jujutsu-0.40.0"
+        "out": "/nix/store/xpbxnhcldpfcg44pi6iicrhw5hi23a0s-jujutsu-0.40.0"
       },
       "system": "aarch64-darwin",
       "group": "vcs",
@@ -2368,13 +2398,13 @@
       "description": "Text-mode interface for git",
       "install_id": "tig",
       "license": "GPL-2.0-or-later",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=4bd9165a9165d7b5e33ae57f3eecbcb28fb231c9",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b12141ef619e0a9c1c84dc8c684040326f27cdcc",
       "name": "tig-2.6.0",
       "pname": "tig",
-      "rev": "4bd9165a9165d7b5e33ae57f3eecbcb28fb231c9",
-      "rev_count": 980183,
-      "rev_date": "2026-04-14T12:31:25Z",
-      "scrape_date": "2026-04-16T06:07:29.358930Z",
+      "rev": "b12141ef619e0a9c1c84dc8c684040326f27cdcc",
+      "rev_count": 982522,
+      "rev_date": "2026-04-18T21:33:21Z",
+      "scrape_date": "2026-04-21T06:05:30.573041Z",
       "stabilities": [
         "unstable"
       ],
@@ -2391,36 +2421,6 @@
       },
       "system": "aarch64-darwin",
       "group": "vcs",
-      "priority": 5
-    },
-    {
-      "attr_path": "atuin",
-      "broken": false,
-      "derivation": "/nix/store/9zs3bdv61pkxibislwj2a60mmjgvz0la-atuin-18.13.6.drv",
-      "description": "Replacement for a shell history which records additional commands context with optional encrypted synchronization between machines",
-      "install_id": "atuin",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=4bd9165a9165d7b5e33ae57f3eecbcb28fb231c9",
-      "name": "atuin-18.13.6",
-      "pname": "atuin",
-      "rev": "4bd9165a9165d7b5e33ae57f3eecbcb28fb231c9",
-      "rev_count": 980183,
-      "rev_date": "2026-04-14T12:31:25Z",
-      "scrape_date": "2026-04-16T06:05:17.888925Z",
-      "stabilities": [
-        "unstable",
-        "staging"
-      ],
-      "unfree": false,
-      "version": "18.13.6",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/806src7rmf6xr41f2kcmzgz7gids9zx1-atuin-18.13.6"
-      },
-      "system": "aarch64-darwin",
-      "group": "atuin.sh",
       "priority": 5
     },
     {
