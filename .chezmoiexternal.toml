@@ -41,3 +41,10 @@ url = "ssh://soft-serve.metroplex.coloredblocks.net:23231/claude-agents.git"
 refreshPeriod = "168h"
 clone.args = ["--depth", "1"]
 pull.args = ["--ff-only"]
+
+[".kube/templates"]
+type = "archive"
+url = "https://github.com/ssoriche/kubectl.fish/archive/refs/heads/main.tar.gz"
+stripComponents = 2
+include = ["*/templates/*.tmpl"]
+refreshPeriod = "168h"
