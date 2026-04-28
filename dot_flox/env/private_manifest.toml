@@ -142,9 +142,9 @@ aerospace = { pkg-path = "aerospace", pkg-group = "gui" }
 wezterm = { pkg-path = "wezterm", pkg-group = "gui" }
 obsidian = { pkg-path = "obsidian", pkg-group = "gui" }
 halloy = { pkg-path = "halloy", pkg-group = "gui" }
+maccy = { pkg-path = "maccy", pkg-group = "gui" }
 
 # Flake-based packages (pinned to specific commits/repos)
-maccy.flake = "github:NixOS/nixpkgs/9ccc4f514369dd2e94af75d0132772f5927e26bb#maccy"
 coderabbit-cli.pkg-path = "flox/coderabbit-cli"
 coderabbit-cli.pkg-group = "coderabbit-cli"
 agent-safehouse.flake = "github:NixOS/nixpkgs/b0ec52b771f1207053090f4ea9cf73a6040f0489#agent-safehouse"
