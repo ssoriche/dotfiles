@@ -29,7 +29,8 @@
       },
       "atuin": {
         "pkg-path": "atuin",
-        "pkg-group": "atuin.sh"
+        "pkg-group": "atuin.sh",
+        "version": ">=18.15"
       },
       "awscli2": {
         "pkg-path": "awscli2",
@@ -303,36 +304,6 @@
   },
   "packages": [
     {
-      "attr_path": "atuin",
-      "broken": false,
-      "derivation": "/nix/store/9zs3bdv61pkxibislwj2a60mmjgvz0la-atuin-18.13.6.drv",
-      "description": "Replacement for a shell history which records additional commands context with optional encrypted synchronization between machines",
-      "install_id": "atuin",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=4bd9165a9165d7b5e33ae57f3eecbcb28fb231c9",
-      "name": "atuin-18.13.6",
-      "pname": "atuin",
-      "rev": "4bd9165a9165d7b5e33ae57f3eecbcb28fb231c9",
-      "rev_count": 980183,
-      "rev_date": "2026-04-14T12:31:25Z",
-      "scrape_date": "2026-04-16T06:05:17.888925Z",
-      "stabilities": [
-        "unstable",
-        "staging"
-      ],
-      "unfree": false,
-      "version": "18.13.6",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/806src7rmf6xr41f2kcmzgz7gids9zx1-atuin-18.13.6"
-      },
-      "system": "aarch64-darwin",
-      "group": "atuin.sh",
-      "priority": 5
-    },
-    {
       "attr_path": "claude-code",
       "broken": false,
       "derivation": "/nix/store/xig1b7nkm9vni46c718i90q2r8yd2sf0-claude-code-2.1.112.drv",
@@ -389,6 +360,37 @@
       },
       "system": "aarch64-darwin",
       "group": "cloud",
+      "priority": 5
+    },
+    {
+      "attr_path": "coderabbit-cli",
+      "broken": false,
+      "derivation": "/nix/store/hgwflgjbll76zayrgmlimfxrmcx3dcla-coderabbit-cli-0.4.2.drv",
+      "description": "AI-powered code review CLI tool",
+      "install_id": "coderabbit-cli",
+      "license": "Unfree",
+      "locked_url": "https://github.com/barstoolbluz/nix-ai-tools?rev=4305bb29005f77a384e1ebe22ec59789ed2bbb02",
+      "name": "coderabbit-cli-0.4.2",
+      "pname": "coderabbit-cli",
+      "rev": "4305bb29005f77a384e1ebe22ec59789ed2bbb02",
+      "rev_count": 1,
+      "rev_date": "2026-04-23T06:07:42Z",
+      "scrape_date": "2026-04-28T15:18:51.599178Z",
+      "stabilities": [
+        "unstable",
+        "staging",
+        "stable"
+      ],
+      "unfree": true,
+      "version": "0.4.2",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/34gmapad7zg7wc0xh2aggg3jmf9gx66f-coderabbit-cli-0.4.2"
+      },
+      "system": "aarch64-darwin",
+      "group": "coderabbit-cli",
       "priority": 5
     },
     {
@@ -2394,34 +2396,32 @@
       "priority": 5
     },
     {
-      "attr_path": "coderabbit-cli",
+      "attr_path": "atuin",
       "broken": false,
-      "derivation": "/nix/store/hgwflgjbll76zayrgmlimfxrmcx3dcla-coderabbit-cli-0.4.2.drv",
-      "description": "AI-powered code review CLI tool",
-      "install_id": "coderabbit-cli",
-      "license": "Unfree",
-      "locked_url": "https://github.com/barstoolbluz/nix-ai-tools?rev=4305bb29005f77a384e1ebe22ec59789ed2bbb02",
-      "name": "coderabbit-cli-0.4.2",
-      "pname": "coderabbit-cli",
-      "rev": "4305bb29005f77a384e1ebe22ec59789ed2bbb02",
-      "rev_count": 1,
-      "rev_date": "2026-04-23T06:07:42Z",
-      "scrape_date": "2026-04-28T15:18:51.599178Z",
+      "derivation": "/nix/store/28jzmakghvg2rjqhav319bwwlhwcwfkf-atuin-18.15.2.drv",
+      "description": "Replacement for a shell history which records additional commands context with optional encrypted synchronization between machines",
+      "install_id": "atuin",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b12141ef619e0a9c1c84dc8c684040326f27cdcc",
+      "name": "atuin-18.15.2",
+      "pname": "atuin",
+      "rev": "b12141ef619e0a9c1c84dc8c684040326f27cdcc",
+      "rev_count": 982522,
+      "rev_date": "2026-04-18T21:33:21Z",
+      "scrape_date": "2026-04-21T06:03:19.729273Z",
       "stabilities": [
-        "unstable",
-        "staging",
-        "stable"
+        "unstable"
       ],
-      "unfree": true,
-      "version": "0.4.2",
+      "unfree": false,
+      "version": "18.15.2",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/34gmapad7zg7wc0xh2aggg3jmf9gx66f-coderabbit-cli-0.4.2"
+        "out": "/nix/store/ld833h6dklx3mmffxvvmh6jc7qxykbla-atuin-18.15.2"
       },
       "system": "aarch64-darwin",
-      "group": "coderabbit-cli",
+      "group": "atuin.sh",
       "priority": 5
     },
     {
