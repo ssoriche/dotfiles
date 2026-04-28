@@ -35,7 +35,7 @@ fx.version = ">=38.0.0"
 sd.pkg-path = "sd"
 
 # Shells / Shell enhancements
-atuin.pkg-path = "atuin"
+atuin = { pkg-path = "atuin", pkg-group = "atuin.sh" }
 direnv.pkg-path = "direnv"
 direnv.version = ">=2.37.1"
 

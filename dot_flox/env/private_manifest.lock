@@ -28,7 +28,8 @@
         "pkg-path": "asciinema-agg"
       },
       "atuin": {
-        "pkg-path": "atuin"
+        "pkg-path": "atuin",
+        "pkg-group": "atuin.sh"
       },
       "awscli2": {
         "pkg-path": "awscli2",
@@ -172,7 +173,7 @@
       },
       "lua": {
         "pkg-path": "lua51Packages.lua",
-        "pkg-group": "lua",
+        "pkg-group": "lua.org",
         "outputs": "all"
       },
       "lua-language-server": {
@@ -181,7 +182,7 @@
       },
       "luarocks": {
         "pkg-path": "luarocks",
-        "pkg-group": "lua"
+        "pkg-group": "lua.org"
       },
       "maccy": {
         "pkg-path": "maccy",
@@ -541,6 +542,151 @@
       "priority": 5
     },
     {
+      "attr_path": "aerospace",
+      "broken": false,
+      "derivation": "/nix/store/91smjgvdzvy34gzkdaa2mr1kz2dx7lpp-aerospace-0.20.3-Beta.drv",
+      "description": "i3-like tiling window manager for macOS",
+      "install_id": "aerospace",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b12141ef619e0a9c1c84dc8c684040326f27cdcc",
+      "name": "aerospace-0.20.3-Beta",
+      "pname": "aerospace",
+      "rev": "b12141ef619e0a9c1c84dc8c684040326f27cdcc",
+      "rev_count": 982522,
+      "rev_date": "2026-04-18T21:33:21Z",
+      "scrape_date": "2026-04-21T06:03:19.530778Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.20.3-Beta",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/y5sd638gi7np9z910657qj418p7iv578-aerospace-0.20.3-Beta"
+      },
+      "system": "aarch64-darwin",
+      "group": "gui",
+      "priority": 5
+    },
+    {
+      "attr_path": "halloy",
+      "broken": false,
+      "derivation": "/nix/store/xvpx4v1q6l2h1f1l21qzd7dc0vs2lxrj-halloy-2026.5.drv",
+      "description": "IRC application",
+      "install_id": "halloy",
+      "license": "GPL-3.0-only",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b12141ef619e0a9c1c84dc8c684040326f27cdcc",
+      "name": "halloy-2026.5",
+      "pname": "halloy",
+      "rev": "b12141ef619e0a9c1c84dc8c684040326f27cdcc",
+      "rev_count": 982522,
+      "rev_date": "2026-04-18T21:33:21Z",
+      "scrape_date": "2026-04-21T06:03:21.356Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2026.5",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/6akj5y2bwn10x1ya8353iy3870n2bq77-halloy-2026.5"
+      },
+      "system": "aarch64-darwin",
+      "group": "gui",
+      "priority": 5
+    },
+    {
+      "attr_path": "maccy",
+      "broken": false,
+      "derivation": "/nix/store/040rp576wclfq8g8c7wkg64qiyvj7q21-maccy-2.6.1.drv",
+      "description": "Simple clipboard manager for macOS",
+      "install_id": "maccy",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b12141ef619e0a9c1c84dc8c684040326f27cdcc",
+      "name": "maccy-2.6.1",
+      "pname": "maccy",
+      "rev": "b12141ef619e0a9c1c84dc8c684040326f27cdcc",
+      "rev_count": 982522,
+      "rev_date": "2026-04-18T21:33:21Z",
+      "scrape_date": "2026-04-21T06:03:41.350266Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2.6.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/w4kky9hf09k49v0yjji5jhg1hwbv8ljb-maccy-2.6.1"
+      },
+      "system": "aarch64-darwin",
+      "group": "gui",
+      "priority": 5
+    },
+    {
+      "attr_path": "obsidian",
+      "broken": false,
+      "derivation": "/nix/store/5b12nwy8k9afnvlgvrv0v73k5cgnmrzf-obsidian-1.12.7.drv",
+      "description": "Powerful knowledge base that works on top of a local folder of plain text Markdown files",
+      "install_id": "obsidian",
+      "license": "Obsidian End User Agreement",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b12141ef619e0a9c1c84dc8c684040326f27cdcc",
+      "name": "obsidian-1.12.7",
+      "pname": "obsidian",
+      "rev": "b12141ef619e0a9c1c84dc8c684040326f27cdcc",
+      "rev_count": 982522,
+      "rev_date": "2026-04-18T21:33:21Z",
+      "scrape_date": "2026-04-21T06:03:44.236883Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "1.12.7",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/cn3jrn8306kbk5b168kbjjjaqygq4nfx-obsidian-1.12.7"
+      },
+      "system": "aarch64-darwin",
+      "group": "gui",
+      "priority": 5
+    },
+    {
+      "attr_path": "wezterm",
+      "broken": false,
+      "derivation": "/nix/store/w8l26m44wly77lfcazimy9f4pqplfr89-wezterm-0-unstable-2026-03-31.drv",
+      "description": "GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust",
+      "install_id": "wezterm",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b12141ef619e0a9c1c84dc8c684040326f27cdcc",
+      "name": "wezterm-0-unstable-2026-03-31",
+      "pname": "wezterm",
+      "rev": "b12141ef619e0a9c1c84dc8c684040326f27cdcc",
+      "rev_count": 982522,
+      "rev_date": "2026-04-18T21:33:21Z",
+      "scrape_date": "2026-04-21T06:06:03.352215Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2026-03-31",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/vsalbmsh2jwjnprfsd45jqci02spxqqf-wezterm-0-unstable-2026-03-31"
+      },
+      "system": "aarch64-darwin",
+      "group": "gui",
+      "priority": 5
+    },
+    {
       "attr_path": "kns",
       "broken": false,
       "derivation": "/nix/store/5hyi5d24sajpgkzannhnygd218vsma0h-kns-0-unstable-2023-04-25.drv",
@@ -692,13 +838,13 @@
       "description": "Powerful, fast, lightweight, embeddable scripting language",
       "install_id": "lua",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=4bd9165a9165d7b5e33ae57f3eecbcb28fb231c9",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b12141ef619e0a9c1c84dc8c684040326f27cdcc",
       "name": "lua-5.1.5",
       "pname": "lua",
-      "rev": "4bd9165a9165d7b5e33ae57f3eecbcb28fb231c9",
-      "rev_count": 980183,
-      "rev_date": "2026-04-14T12:31:25Z",
-      "scrape_date": "2026-04-16T06:05:37.753126Z",
+      "rev": "b12141ef619e0a9c1c84dc8c684040326f27cdcc",
+      "rev_count": 982522,
+      "rev_date": "2026-04-18T21:33:21Z",
+      "scrape_date": "2026-04-21T06:03:39.474046Z",
       "stabilities": [
         "unstable"
       ],
@@ -712,7 +858,7 @@
         "out": "/nix/store/4x6228ymndrsdcwlskpiyf37ndfzhxyd-lua-5.1.5"
       },
       "system": "aarch64-darwin",
-      "group": "lua",
+      "group": "lua.org",
       "priority": 5
     },
     {
@@ -722,13 +868,13 @@
       "description": "A package manager for Lua modules.",
       "install_id": "luarocks",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=4bd9165a9165d7b5e33ae57f3eecbcb28fb231c9",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b12141ef619e0a9c1c84dc8c684040326f27cdcc",
       "name": "lua5.2-luarocks-3.13.0-1",
       "pname": "luarocks",
-      "rev": "4bd9165a9165d7b5e33ae57f3eecbcb28fb231c9",
-      "rev_count": 980183,
-      "rev_date": "2026-04-14T12:31:25Z",
-      "scrape_date": "2026-04-16T06:05:39.427486Z",
+      "rev": "b12141ef619e0a9c1c84dc8c684040326f27cdcc",
+      "rev_count": 982522,
+      "rev_date": "2026-04-18T21:33:21Z",
+      "scrape_date": "2026-04-21T06:03:41.235404Z",
       "stabilities": [
         "unstable"
       ],
@@ -741,7 +887,7 @@
         "out": "/nix/store/v8rccvjvp9xlgga6k2lx0fqh28hxdnpi-lua5.2-luarocks-3.13.0-1"
       },
       "system": "aarch64-darwin",
-      "group": "lua",
+      "group": "lua.org",
       "priority": 5
     },
     {
@@ -1037,36 +1183,6 @@
       ],
       "outputs": {
         "out": "/nix/store/cyd9jc9iiv3qrsswbsrihd017dfkhn9n-agg-1.5.0"
-      },
-      "system": "aarch64-darwin",
-      "group": "toplevel",
-      "priority": 5
-    },
-    {
-      "attr_path": "atuin",
-      "broken": false,
-      "derivation": "/nix/store/h1js8bvjj0hv4vjy0v53si22xrdjq702-atuin-18.8.0.drv",
-      "description": "Replacement for a shell history which records additional commands context with optional encrypted synchronization between machines",
-      "install_id": "atuin",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=c2ae88e026f9525daf89587f3cbee584b92b6134",
-      "name": "atuin-18.8.0",
-      "pname": "atuin",
-      "rev": "c2ae88e026f9525daf89587f3cbee584b92b6134",
-      "rev_count": 840654,
-      "rev_date": "2025-08-06T16:41:31Z",
-      "scrape_date": "2025-08-08T00:31:30.705722Z",
-      "stabilities": [
-        "unstable",
-        "staging"
-      ],
-      "unfree": false,
-      "version": "18.8.0",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/7y41iqq9gda2g2dciczimf3i5sj98gbi-atuin-18.8.0"
       },
       "system": "aarch64-darwin",
       "group": "toplevel",
@@ -2278,148 +2394,33 @@
       "priority": 5
     },
     {
-      "attr_path": "aerospace",
+      "attr_path": "atuin",
       "broken": false,
-      "derivation": "/nix/store/91smjgvdzvy34gzkdaa2mr1kz2dx7lpp-aerospace-0.20.3-Beta.drv",
-      "description": "i3-like tiling window manager for macOS",
-      "install_id": "aerospace",
+      "derivation": "/nix/store/9zs3bdv61pkxibislwj2a60mmjgvz0la-atuin-18.13.6.drv",
+      "description": "Replacement for a shell history which records additional commands context with optional encrypted synchronization between machines",
+      "install_id": "atuin",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=b12141ef619e0a9c1c84dc8c684040326f27cdcc",
-      "name": "aerospace-0.20.3-Beta",
-      "pname": "aerospace",
-      "rev": "b12141ef619e0a9c1c84dc8c684040326f27cdcc",
-      "rev_count": 982522,
-      "rev_date": "2026-04-18T21:33:21Z",
-      "scrape_date": "2026-04-21T06:03:19.530778Z",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=4bd9165a9165d7b5e33ae57f3eecbcb28fb231c9",
+      "name": "atuin-18.13.6",
+      "pname": "atuin",
+      "rev": "4bd9165a9165d7b5e33ae57f3eecbcb28fb231c9",
+      "rev_count": 980183,
+      "rev_date": "2026-04-14T12:31:25Z",
+      "scrape_date": "2026-04-16T06:05:17.888925Z",
       "stabilities": [
-        "unstable"
+        "unstable",
+        "staging"
       ],
       "unfree": false,
-      "version": "0.20.3-Beta",
+      "version": "18.13.6",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/y5sd638gi7np9z910657qj418p7iv578-aerospace-0.20.3-Beta"
+        "out": "/nix/store/806src7rmf6xr41f2kcmzgz7gids9zx1-atuin-18.13.6"
       },
       "system": "aarch64-darwin",
-      "group": "gui",
-      "priority": 5
-    },
-    {
-      "attr_path": "halloy",
-      "broken": false,
-      "derivation": "/nix/store/xvpx4v1q6l2h1f1l21qzd7dc0vs2lxrj-halloy-2026.5.drv",
-      "description": "IRC application",
-      "install_id": "halloy",
-      "license": "GPL-3.0-only",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=b12141ef619e0a9c1c84dc8c684040326f27cdcc",
-      "name": "halloy-2026.5",
-      "pname": "halloy",
-      "rev": "b12141ef619e0a9c1c84dc8c684040326f27cdcc",
-      "rev_count": 982522,
-      "rev_date": "2026-04-18T21:33:21Z",
-      "scrape_date": "2026-04-21T06:03:21.356Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "2026.5",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/6akj5y2bwn10x1ya8353iy3870n2bq77-halloy-2026.5"
-      },
-      "system": "aarch64-darwin",
-      "group": "gui",
-      "priority": 5
-    },
-    {
-      "attr_path": "maccy",
-      "broken": false,
-      "derivation": "/nix/store/040rp576wclfq8g8c7wkg64qiyvj7q21-maccy-2.6.1.drv",
-      "description": "Simple clipboard manager for macOS",
-      "install_id": "maccy",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=b12141ef619e0a9c1c84dc8c684040326f27cdcc",
-      "name": "maccy-2.6.1",
-      "pname": "maccy",
-      "rev": "b12141ef619e0a9c1c84dc8c684040326f27cdcc",
-      "rev_count": 982522,
-      "rev_date": "2026-04-18T21:33:21Z",
-      "scrape_date": "2026-04-21T06:03:41.350266Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "2.6.1",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/w4kky9hf09k49v0yjji5jhg1hwbv8ljb-maccy-2.6.1"
-      },
-      "system": "aarch64-darwin",
-      "group": "gui",
-      "priority": 5
-    },
-    {
-      "attr_path": "obsidian",
-      "broken": false,
-      "derivation": "/nix/store/5b12nwy8k9afnvlgvrv0v73k5cgnmrzf-obsidian-1.12.7.drv",
-      "description": "Powerful knowledge base that works on top of a local folder of plain text Markdown files",
-      "install_id": "obsidian",
-      "license": "Obsidian End User Agreement",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=b12141ef619e0a9c1c84dc8c684040326f27cdcc",
-      "name": "obsidian-1.12.7",
-      "pname": "obsidian",
-      "rev": "b12141ef619e0a9c1c84dc8c684040326f27cdcc",
-      "rev_count": 982522,
-      "rev_date": "2026-04-18T21:33:21Z",
-      "scrape_date": "2026-04-21T06:03:44.236883Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": true,
-      "version": "1.12.7",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/cn3jrn8306kbk5b168kbjjjaqygq4nfx-obsidian-1.12.7"
-      },
-      "system": "aarch64-darwin",
-      "group": "gui",
-      "priority": 5
-    },
-    {
-      "attr_path": "wezterm",
-      "broken": false,
-      "derivation": "/nix/store/w8l26m44wly77lfcazimy9f4pqplfr89-wezterm-0-unstable-2026-03-31.drv",
-      "description": "GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust",
-      "install_id": "wezterm",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=b12141ef619e0a9c1c84dc8c684040326f27cdcc",
-      "name": "wezterm-0-unstable-2026-03-31",
-      "pname": "wezterm",
-      "rev": "b12141ef619e0a9c1c84dc8c684040326f27cdcc",
-      "rev_count": 982522,
-      "rev_date": "2026-04-18T21:33:21Z",
-      "scrape_date": "2026-04-21T06:06:03.352215Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "2026-03-31",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/vsalbmsh2jwjnprfsd45jqci02spxqqf-wezterm-0-unstable-2026-03-31"
-      },
-      "system": "aarch64-darwin",
-      "group": "gui",
+      "group": "atuin.sh",
       "priority": 5
     },
     {
