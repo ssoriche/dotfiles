@@ -208,6 +208,10 @@
         "pkg-path": "nodejs",
         "pkg-group": "node"
       },
+      "nono": {
+        "pkg-path": "nono",
+        "pkg-group": "nono"
+      },
       "obsidian": {
         "pkg-path": "obsidian",
         "pkg-group": "gui"
@@ -2417,6 +2421,35 @@
       },
       "system": "aarch64-darwin",
       "group": "vcs",
+      "priority": 5
+    },
+    {
+      "attr_path": "nono",
+      "broken": false,
+      "derivation": "/nix/store/vnwdqgpadyf52iky6vdl2w985ja6y5w8-nono-0.43.1.drv",
+      "description": "Secure, kernel-enforced sandbox for AI agents, MCP and LLM workloads",
+      "install_id": "nono",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=15f4ee454b1dce334612fa6843b3e05cf546efab",
+      "name": "nono-0.43.1",
+      "pname": "nono",
+      "rev": "15f4ee454b1dce334612fa6843b3e05cf546efab",
+      "rev_count": 990025,
+      "rev_date": "2026-04-30T19:45:37Z",
+      "scrape_date": "2026-05-03T08:10:46.977022Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.43.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/qaivd6bm4f43qw5vf19nijgrwh7f3ydf-nono-0.43.1"
+      },
+      "system": "aarch64-darwin",
+      "group": "nono",
       "priority": 5
     },
     {

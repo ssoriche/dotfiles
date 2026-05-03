@@ -137,6 +137,9 @@ claude-code = { pkg-path = "claude-code", pkg-group = "claude" }
 # opencode — fast-moving AI tooling
 opencode = { pkg-path = "opencode", pkg-group = "opencode" }
 
+# nono — AI agent sandbox
+nono = { pkg-path = "nono", pkg-group = "nono" }
+
 # gui — avoid blocking CLI tool upgrades
 aerospace = { pkg-path = "aerospace", pkg-group = "gui" }
 wezterm = { pkg-path = "wezterm", pkg-group = "gui" }
