@@ -1,0 +1,168 @@
+# jj (Jujutsu) configuration — tuned for a git veteran learning jj.
+#
+# Every option below is annotated. When a line overrides a jj 0.40 default,
+# the comment notes both the original default and the rationale for changing it.
+# The config doubles as a study guide; re-read it as you build muscle memory.
+#
+# Reference: https://docs.jj-vcs.dev/latest/config/
+# Inspect any option's effective value with:  jj config get <key>
+# List everything (including defaults):       jj config list --include-defaults
+
+# ─── Identity ──────────────────────────────────────────────────────────────
+# These match the global git config. The no-reply address keeps personal
+# commits unattributable to the work email; work repos override locally
+# with `git config user.email shawns@ziprecruiter.com` (and likewise jj).
+[user]
+name  = "Shawn Sorichetti"
+email = "ssoriche@users.noreply.github.com"
+
+# Recorded operator identity in jj's operation log. Set explicitly to keep
+# this consistent across machines: the work laptop's OS user is "shawns" but
+# the canonical identity everywhere else is "ssoriche". Without this override
+# the op log on the work laptop would show "shawns" while every other machine
+# shows "ssoriche", muddying multi-machine op-log archaeology.
+# Hostname is left to jj's default (auto-detected per machine) on purpose —
+# per-machine hostname context is useful when tracking down "where did this
+# op happen?" later.
+[operation]
+username = "ssoriche"
+
+# ─── UI shaped like git ────────────────────────────────────────────────────
+[ui]
+
+# `jj` with no arguments runs `jj log` instead of erroring out. Mirrors the
+# git muscle-memory of typing the command and thinking about the verb after.
+# Default: no command (errors). Override is no-op-safe — a bare `jj` only reads.
+default-command = "log"
+
+# Render diffs in git's familiar unified format ("@@ -1,3 +1,3 @@") instead of
+# jj's default color-words inline format. Lower cognitive load while learning.
+# Default: ":color-words". Switch back later if you ever want jj's native style.
+diff-formatter = ["delta", "--color-only"]
+
+# Surface signature status (✓ / ? / ✗) in `jj log` and `jj show`. Pairs with
+# the [signing] block below; without this you sign commits but never see the
+# verification result.
+# Default: false.
+show-cryptographic-signatures = true
+
+# Ungrouped: ui.editor defaults to $VISUAL/$EDITOR/nvim — already correct here.
+# Ungrouped: ui.pager.command defaults to ["less", "-FRX"] — already correct.
+
+# ─── Log template that looks like home ─────────────────────────────────────
+# `builtin_log_oneline` is jj's stock one-line-per-commit template. Renders:
+#   <short change-id> <author email-local> <timestamp> <bookmarks/tags>
+#   <short commit-hash> <signature> <description-first-line>
+# Closest jj equivalent to `git log --oneline --graph --decorate`.
+# Default: 'builtin_log_compact' (multi-line, more visually unfamiliar).
+[templates]
+log = 'builtin_log_oneline'
+
+# ─── Behavior toggles a git veteran wants ──────────────────────────────────
+[git]
+
+# When `jj git push` runs, sign any unsigned mutable commits before pushing.
+# Belt-and-suspenders so nothing reaches soft-serve unsigned, even if the
+# `signing.behavior` setting somehow misses one.
+# Default: false.
+sign-on-push = true
+
+# When jj fetches from `origin`, automatically create local bookmarks tracking
+# each remote bookmark. Mirrors how `git fetch` populates remote-tracking refs
+# that are then usable by name. Without this, newly-fetched remote bookmarks
+# need a manual `jj bookmark track` step before they show up locally.
+#
+# This replaced the deprecated top-level `git.auto-local-bookmark` setting.
+# It is per-remote; add additional `remotes.<name>.auto-track-bookmarks = "*"`
+# entries when you have more than one remote. The "*" is a glob over bookmark
+# names — restrict it (e.g. "main") if you ever want auto-tracking for only
+# specific bookmarks on a remote.
+[remotes.origin]
+auto-track-bookmarks = "*"
+
+# ─── Snapshot guards ───────────────────────────────────────────────────────
+[snapshot]
+
+# Refuse to auto-snapshot (pull into the working-copy commit) any new file
+# larger than 10 MiB. Stops a stray binary from accidentally landing in `@`
+# and from there into a commit. Files above this threshold can still be
+# tracked manually with `jj file track`.
+# Default: 1MiB.
+max-new-file-size = "10MiB"
+
+# ─── SSH commit signing (via 1Password agent) ──────────────────────────────
+# Mirrors the existing git setup:
+#   git: gpg.format=ssh, gpg.ssh.program=op-ssh-sign, commit.gpgsign=true
+# jj does NOT inherit gpg.ssh.allowedSignersFile from git config — you must
+# point jj at the file explicitly via signing.backends.ssh.allowed-signers
+# below, or the show-cryptographic-signatures column will never display ✓.
+[signing]
+
+# Use SSH keys (not GPG/GPGSM). Other valid values: "gpg", "gpgsm", "none".
+# Default: "none".
+backend = "ssh"
+
+# Sign commits *you* author. When rewriting commits authored by someone else
+# (e.g. during a rebase), leave their signatures alone instead of re-signing
+# under your identity. Closest match to git's commit.gpgsign=true semantics.
+# Other values:
+#   "drop"  — strip signatures during any rewrite
+#   "keep"  — preserve existing signatures, never add new
+#   "force" — sign every commit including rewrites of others' work
+# Default: "keep".
+behavior = "own"
+
+# The SSH public key to sign with. Note the key path is `signing.key`
+# (top-level), NOT `signing.backends.ssh.key` — easy to get wrong because
+# `program` and `allowed-signers` *do* live under signing.backends.ssh.
+# A path is also accepted, e.g. "~/.ssh/id_for_signing.pub", but the literal
+# pubkey string is canonical when the private key lives in 1Password.
+# Default: unset (no signing happens).
+key = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICznCAl6WoraDSM76FuSahtnEkVOGY26+nc9/NKbkN1K"
+
+[signing.backends.ssh]
+
+# The signing program. 1Password's op-ssh-sign reads SSH keys held in the
+# 1Password vault and signs without exposing the private key to the shell.
+# Same binary git uses (gpg.ssh.program in ~/.gitconfig).
+# Default: "ssh-keygen" (only useful if your private key is on disk).
+program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+
+# Path to the file used to verify *whose* signatures are trusted. Same format
+# as ssh-keygen's allowed_signers. Without this, jj can sign but cannot tell
+# you whether existing signatures verify — the ✓/?/✗ column stays at "?".
+# Default: unset.
+allowed-signers = "~/.ssh/allowed_signers"
+
+# ─── Aliases (deliberately small) ──────────────────────────────────────────
+# jj already ships with a useful default alias set:
+#   b -> bookmark, ci -> commit, desc -> describe, st -> status
+# (See: jj config list --include-defaults aliases)
+#
+# These four additions cover the highest-friction commands during the on-ramp.
+# Resist adding more until real friction surfaces — you want to learn jj's
+# verbs, not re-skin git on top of it.
+[aliases]
+
+# `jj l` — log. Shorter than `jj log`. Matches habit of typing `git l`
+# (which most git veterans alias to a fancier log).
+l = ["log"]
+
+# `jj d` — diff. Short for `jj diff`. Matches `git d`.
+d = ["diff"]
+
+# `jj nb <name>` — "name bookmark": anchor a bookmark on the previous commit
+# (`@-`), the one you just finished describing. Does NOT create a new working
+# copy — that's still a separate `jj new` step. Two-step on purpose: the
+# bookmark anchors an immutable handle while `@` stays fluid.
+#
+# Workflow: edit → describe → `jj nb <feature-name>` → push or `jj new`.
+# Expands to: `jj bookmark create -r @- <name>`.
+nb = ["bookmark", "create", "-r", "@-"]
+
+# `jj sync` — fetch from origin. That's it; one verb. The rebase-onto-new-trunk
+# step stays manual on purpose because reflexive auto-rebase can surprise you
+# on shared work. After `jj sync`, the typical follow-up is:
+#     jj rebase -d 'trunk()' -r 'mutable()'
+# which moves your mutable commits onto the new trunk tip.
+sync = ["git", "fetch"]
