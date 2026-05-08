@@ -1,0 +1,6 @@
+# SSH signing allowed_signers — used by git/jj for signature verification.
+# Format: <principal,principal,...> [namespaces="..."] <key-type> <key-base64>
+# Multiple principals on one line authorize the same key for any of them.
+# Add new lines as new keys/principals come into use.
+
+ssoriche@users.noreply.github.com,shawns@ziprecruiter.com,shawn@sorichetti.org ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICznCAl6WoraDSM76FuSahtnEkVOGY26+nc9/NKbkN1K
