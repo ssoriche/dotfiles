@@ -1,6 +1,7 @@
 # Documentation files that should stay in the dotfiles repo
 README.md
 CLAUDE.md
+docs/
 
 # Temporary and backup files
 *.tmp
