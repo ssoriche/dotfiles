@@ -17,8 +17,14 @@ docs/
 .idea/
 
 # AI assistant context (project-specific, not for deployment)
+# Ignore .claude/ contents by default, but allow tracked subdirectories
+# (agents come from .chezmoiexternal.toml; skills live in dot_claude/skills/)
 .cursor/
-.claude/
+.claude/*
+!.claude/agents
+!.claude/agents/**
+!.claude/skills
+!.claude/skills/**
 
 # VSCode/Cursor settings management tools (not for deployment)
 vscode-settings/
