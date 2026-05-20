@@ -38,7 +38,13 @@ default-command = "log"
 # Render diffs in git's familiar unified format ("@@ -1,3 +1,3 @@") instead of
 # jj's default color-words inline format. Lower cognitive load while learning.
 # Default: ":color-words". Switch back later if you ever want jj's native style.
-diff-formatter = ["delta", "--color-only"]
+#
+# Delta is wired in as the pager below — NOT as the diff-formatter. Putting
+# delta in the formatter slot with --color-only is fragile: delta's stdout is
+# then a pipe back to jj, its TTY detection turns colors off, and --color-only
+# emits zero bytes. The canonical jj+delta pairing is :git formatter → delta
+# pager, mirroring how delta works with `git diff` via core.pager.
+diff-formatter = ":git"
 
 # Surface signature status (✓ / ? / ✗) in `jj log` and `jj show`. Pairs with
 # the [signing] block below; without this you sign commits but never see the
@@ -47,7 +53,17 @@ diff-formatter = ["delta", "--color-only"]
 show-cryptographic-signatures = true
 
 # Ungrouped: ui.editor defaults to $VISUAL/$EDITOR/nvim — already correct here.
-# Ungrouped: ui.pager.command defaults to ["less", "-FRX"] — already correct.
+
+# Pipe jj's diff output (and `jj show`) through delta. Delta sits on stdin,
+# reads the git-format diff from `ui.diff-formatter = ":git"` above, and
+# renders it with whatever `[delta]` features are configured in ~/.gitconfig
+# (line-numbers, decorations, etc.) — same path as `git diff` via core.pager.
+# Delta handles TTY/color detection itself; jj stays out of its way.
+#
+# Known caveat: `jj log -p` doesn't currently route through ui.pager the same
+# way `jj diff` / `jj show` do (upstream open issue) — affects -p output only.
+# Default: ["less", "-FRX"].
+pager = "delta"
 
 # ─── Log template that looks like home ─────────────────────────────────────
 # `builtin_log_oneline` is jj's stock one-line-per-commit template. Renders:
