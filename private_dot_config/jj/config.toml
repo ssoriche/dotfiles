@@ -74,6 +74,26 @@ pager = "delta"
 [templates]
 log = 'builtin_log_oneline'
 
+# ─── git commit -v equivalent ──────────────────────────────────────────────
+# Append the working-copy diff to the describe-buffer so the current change
+# is visible in the editor while writing the description. jj reads everything
+# above `JJ: ignore-rest` as the description and drops the rest (scissors line
+# semantics, same idea as git's `# ------ >8 ------`).
+#
+# Fires for every editor-open of a description, including empty `@` — in that
+# case the diff section is just empty, so there's no noise.
+#
+# Swap `diff.git()` for `diff.color_words()` (word-level), `diff.stat()` (the
+# --stat summary), or `diff.summary()` (changed-file list) to taste.
+# Default: just `builtin_draft_commit_description` (no diff).
+draft_commit_description = '''
+concat(
+  builtin_draft_commit_description,
+  "\nJJ: ignore-rest\n",
+  diff.git(),
+)
+'''
+
 # ─── Behavior toggles a git veteran wants ──────────────────────────────────
 [git]
 
