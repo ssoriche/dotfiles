@@ -29,6 +29,9 @@ docs/
 # VSCode/Cursor settings management tools (not for deployment)
 vscode-settings/
 
+# Repo-local helper scripts (not for deployment)
+bin/
+
 # Flox runtime/generated files (not managed by chezmoi)
 .flox/cache
 .flox/log
