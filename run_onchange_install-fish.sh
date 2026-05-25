@@ -33,22 +33,21 @@ if ! command -v nix >/dev/null 2>&1; then
 fi
 
 # Fast path: already at the pinned version.
+# If `~/.nix-profile/bin/fish` exists we know nix-profile owns it (that
+# directory is the nix-profile symlink farm), so we can decide remove-vs-skip
+# from the version alone — no need to parse `nix profile list`, whose ANSI
+# bolding around package names makes regex matching brittle.
 if [ -x "$HOME/.nix-profile/bin/fish" ]; then
     CURRENT=$("$HOME/.nix-profile/bin/fish" --version 2>/dev/null | awk '{print $NF}')
     if [ "$CURRENT" = "$EXPECTED_VERSION" ]; then
         echo "fish $CURRENT already installed from pinned ref"
         exit 0
     fi
-    echo "fish $CURRENT installed; upgrading to $EXPECTED_VERSION"
-fi
-
-# Remove any existing fish entry so we can install from the new flake ref.
-# `nix profile install` refuses to replace a same-named package silently.
-if nix profile list 2>/dev/null | grep -E '^Name:[[:space:]]+fish$' >/dev/null; then
+    echo "fish $CURRENT installed; removing to install $EXPECTED_VERSION"
     nix profile remove fish
 fi
 
-nix profile install "$FLAKE_REF"
+nix profile add "$FLAKE_REF"
 
 echo "Installed: $("$HOME/.nix-profile/bin/fish" --version)"
 echo
