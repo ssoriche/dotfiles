@@ -16,7 +16,6 @@ function custom_key_binds
 end
 set -g fish_key_bindings custom_key_binds
 
-fish_add_path "$HOME/.nix-profile/bin"
 fish_add_path /sbin
 fish_add_path /bin
 fish_add_path /usr/sbin
@@ -40,6 +39,19 @@ if command -v flox >/dev/null; and test -f "$HOME/.flox/env/manifest.toml"
     flox activate -d ~ | source
 else if command -v devbox >/dev/null
     devbox global shellenv --init-hook | source
+end
+
+# Add ~/.nix-profile/bin AFTER flox activation: flox snapshots PATH on
+# first activation and re-applies that copy on every subsequent shell, so
+# anything fish_add_path-ed before flox activates gets dropped. Fish (the
+# login shell) lives in nix-profile, so this matters for any shell-out to
+# `fish` and for nix CLI tools.
+#
+# Set $PATH directly rather than via fish_add_path: flox's PATH rewrite
+# desyncs $PATH from $fish_user_paths, after which fish_add_path sees the
+# path "already present" in fish_user_paths and skips the PATH update.
+if not contains -- "$HOME/.nix-profile/bin" $PATH
+    set -gx PATH "$HOME/.nix-profile/bin" $PATH
 end
 
 if command -v zoxide >/dev/null
