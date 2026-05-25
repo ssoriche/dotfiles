@@ -16,6 +16,7 @@ function custom_key_binds
 end
 set -g fish_key_bindings custom_key_binds
 
+fish_add_path "$HOME/.nix-profile/bin"
 fish_add_path /sbin
 fish_add_path /bin
 fish_add_path /usr/sbin
