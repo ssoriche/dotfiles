@@ -1,43 +1,48 @@
 {
-  "alwaysThinkingEnabled": true,
-  "enabledPlugins": {
-    "gopls-lsp@claude-plugins-official": true
-  },
   "env": {},
+  "includeCoAuthoredBy": false,
+  "permissions": {
+    "allow": [],
+    "deny": [],
+    "ask": []
+  },
+  "model": "opus[1m]",
   "hooks": {
     "PreCompact": [
       {
+        "matcher": "",
         "hooks": [
           {
-            "command": "bd prime",
-            "type": "command"
+            "type": "command",
+            "command": "bd prime"
           }
-        ],
-        "matcher": ""
+        ]
       }
     ],
     "SessionStart": [
       {
+        "matcher": "",
         "hooks": [
           {
-            "command": "bd prime",
-            "type": "command"
+            "type": "command",
+            "command": "bd prime"
           }
-        ],
-        "matcher": ""
+        ]
       }
     ]
   },
-  "includeCoAuthoredBy": false,
-  "model": "opus",
-  "permissions": {
-    "allow": [],
-    "ask": [],
-    "deny": []
-  },
   "statusLine": {
     "type": "command",
-    "command": "bunx -y ccstatusline@latest",
+    "command": "~/.bun/bin/ccstatusline",
     "padding": 0
-  }
+  },
+  "enabledPlugins": {
+    "gopls-lsp@claude-plugins-official": true,
+    "superpowers@superpowers-marketplace": true,
+    "superpowers@claude-plugins-official": true
+  },
+  "alwaysThinkingEnabled": true,
+  "skipDangerousModePermissionPrompt": true,
+  "editorMode": "vim",
+  "skipAutoPermissionPrompt": true
 }
