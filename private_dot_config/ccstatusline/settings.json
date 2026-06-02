@@ -1,40 +1,86 @@
 {
   "version": 3,
+  "minimalistMode": true,
   "lines": [
     [
       {
         "id": "1",
         "type": "model",
-        "color": "cyan"
+        "color": "hex:1e1e2e",
+        "backgroundColor": "hex:89b4fa",
+        "bold": true
+      },
+      {
+        "id": "2",
+        "type": "current-working-dir",
+        "color": "hex:bac2de",
+        "metadata": {
+          "abbreviateHome": "true",
+          "fishStyle": "true",
+          "segments": "2"
+        },
+        "backgroundColor": "hex:585b70"
       },
       {
         "id": "3",
-        "type": "context-length",
-        "color": "brightBlack"
+        "type": "git-branch",
+        "color": "hex:cba6f7",
+        "backgroundColor": "hex:45475a"
       },
       {
         "id": "5",
-        "type": "git-branch",
-        "color": "magenta"
+        "type": "git-changes",
+        "color": "hex:fab387",
+        "backgroundColor": "hex:313244"
+      },
+      {
+        "id": "6",
+        "type": "flex-separator"
       },
       {
         "id": "7",
-        "type": "git-changes",
-        "color": "yellow"
+        "type": "context-bar",
+        "color": "hex:a6e3a1",
+        "backgroundColor": "hex:181825"
+      },
+      {
+        "id": "9",
+        "type": "session-usage",
+        "color": "hex:f9e2af",
+        "backgroundColor": "hex:45475a"
+      },
+      {
+        "id": "10",
+        "type": "reset-timer",
+        "color": "hex:9399b2",
+        "backgroundColor": "hex:585b70"
+      },
+      {
+        "id": "12",
+        "type": "session-cost",
+        "color": "hex:1e1e2e",
+        "backgroundColor": "hex:89b4fa",
+        "bold": true
+      },
+      {
+        "id": "13",
+        "type": "date",
+        "color": "hex:bac2de",
+        "backgroundColor": "hex:45475a"
       }
     ],
     [],
     []
   ],
-  "flexMode": "full-minus-40",
+  "flexMode": "full",
   "compactThreshold": 60,
-  "colorLevel": 2,
+  "colorLevel": 3,
   "inheritSeparatorColors": false,
   "globalBold": false,
   "powerline": {
     "enabled": true,
     "separators": [
-      ""
+      "\ue0b0"
     ],
     "separatorInvertBackground": [
       false
@@ -42,7 +88,7 @@
     "startCaps": [],
     "endCaps": [],
     "autoAlign": false,
-    "theme": "catppuccin"
+    "theme": "custom"
   },
   "defaultPadding": " "
 }
