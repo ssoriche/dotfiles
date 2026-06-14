@@ -37,7 +37,7 @@ refreshPeriod = "168h"
 stripComponents = 2
 [".claude/agents"]
 type = "git-repo"
-url = "ssh://soft-serve.metroplex.coloredblocks.net:23231/claude-agents.git"
+url = "ssh://git@git.s8i.app:23231/shawn/claude-agents.git"
 refreshPeriod = "168h"
 clone.args = ["--depth", "1"]
 pull.args = ["--ff-only"]
