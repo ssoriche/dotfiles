@@ -41,7 +41,7 @@
         "id": "7",
         "type": "context-bar",
         "color": "hex:a6e3a1",
-        "backgroundColor": "hex:181825"
+        "backgroundColor": "hex:313244"
       },
       {
         "id": "9",
@@ -80,13 +80,31 @@
   "powerline": {
     "enabled": true,
     "separators": [
-      "\ue0b0"
+      "\ue0b0",
+      "\ue0b0",
+      "\ue0b0",
+      "\ue0b2",
+      "\ue0b2",
+      "\ue0b2",
+      "\ue0b2"
     ],
     "separatorInvertBackground": [
-      false
+      false,
+      false,
+      false,
+      true,
+      true,
+      true,
+      true
     ],
-    "startCaps": [],
-    "endCaps": [],
+    "startCaps": [
+      "",
+      "\ue0b2"
+    ],
+    "endCaps": [
+      "\ue0b0",
+      ""
+    ],
     "autoAlign": false,
     "theme": "custom"
   },
