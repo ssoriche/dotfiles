@@ -83,6 +83,16 @@ return {
 			action = wezterm.action({ ActivateTabRelative = -1 }),
 		},
 		{
+			key = "n",
+			mods = "LEADER|SHIFT",
+			action = wezterm.action.MoveTabRelative(1),
+		},
+		{
+			key = "p",
+			mods = "LEADER|SHIFT",
+			action = wezterm.action.MoveTabRelative(-1),
+		},
+		{
 			key = "h",
 			mods = "LEADER",
 			action = wezterm.action({ ActivatePaneDirection = "Left" }),
