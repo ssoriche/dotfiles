@@ -216,12 +216,12 @@
         "pkg-path": "obsidian",
         "pkg-group": "gui"
       },
-      "opencode": {
-        "pkg-path": "opencode",
-        "pkg-group": "opencode"
-      },
       "passage": {
         "pkg-path": "passage"
+      },
+      "pi-coding-agent": {
+        "pkg-path": "pi-coding-agent",
+        "pkg-group": "pi-coding-agent"
       },
       "pv": {
         "pkg-path": "pv",
@@ -1036,36 +1036,6 @@
       },
       "system": "aarch64-darwin",
       "group": "nono",
-      "priority": 5
-    },
-    {
-      "attr_path": "opencode",
-      "broken": false,
-      "derivation": "/nix/store/rfgwzvh3n6jim76ssg7g43knc9l2dz22-opencode-1.17.7.drv",
-      "description": "AI coding agent built for the terminal",
-      "install_id": "opencode",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=567a49d1913ce81ac6e9582e3553dd90a955875f",
-      "name": "opencode-1.17.7",
-      "pname": "opencode",
-      "rev": "567a49d1913ce81ac6e9582e3553dd90a955875f",
-      "rev_count": 1017464,
-      "rev_date": "2026-06-16T02:33:49Z",
-      "scrape_date": "2026-06-17T03:13:44.435542Z",
-      "stabilities": [
-        "staging",
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "1.17.7",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/yxclajlc2f9b6wiwa0hazn1xqy42py5x-opencode-1.17.7"
-      },
-      "system": "aarch64-darwin",
-      "group": "opencode",
       "priority": 5
     },
     {
@@ -2492,6 +2462,36 @@
       },
       "system": "aarch64-darwin",
       "group": "vcs",
+      "priority": 5
+    },
+    {
+      "attr_path": "pi-coding-agent",
+      "broken": false,
+      "derivation": "/nix/store/73b9xbb3m40k0rsww16n428kz0p7al4s-pi-coding-agent-0.79.1.drv",
+      "description": "Coding agent CLI with read, bash, edit, write tools and session management",
+      "install_id": "pi-coding-agent",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=567a49d1913ce81ac6e9582e3553dd90a955875f",
+      "name": "pi-coding-agent-0.79.1",
+      "pname": "pi-coding-agent",
+      "rev": "567a49d1913ce81ac6e9582e3553dd90a955875f",
+      "rev_count": 1017464,
+      "rev_date": "2026-06-16T02:33:49Z",
+      "scrape_date": "2026-06-17T03:13:53.722769Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.79.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/q7ga94bfzvkvkgkihlbpvyf70l8wgqgp-pi-coding-agent-0.79.1"
+      },
+      "system": "aarch64-darwin",
+      "group": "pi-coding-agent",
       "priority": 5
     },
     {

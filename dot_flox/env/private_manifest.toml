@@ -134,8 +134,8 @@ granted = { pkg-path = "granted", version = "0.36.3", pkg-group = "pinned" }
 # claude — fast-moving, unfree
 claude-code = { pkg-path = "claude-code", pkg-group = "claude" }
 
-# opencode — fast-moving AI tooling
-opencode = { pkg-path = "opencode", pkg-group = "opencode" }
+# pi-coding-agent — fast-moving AI tooling
+pi-coding-agent = { pkg-path = "pi-coding-agent", pkg-group = "pi-coding-agent" }
 
 # nono — AI agent sandbox
 nono = { pkg-path = "nono", pkg-group = "nono" }
