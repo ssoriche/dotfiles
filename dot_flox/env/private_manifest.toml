@@ -140,6 +140,9 @@ pi-coding-agent = { pkg-path = "pi-coding-agent", pkg-group = "pi-coding-agent" 
 # nono — AI agent sandbox
 nono = { pkg-path = "nono", pkg-group = "nono" }
 
+# container — Apple's Linux container runtime; isolate so it resolves to latest
+container = { pkg-path = "container", pkg-group = "container" }
+
 # gui — avoid blocking CLI tool upgrades
 aerospace = { pkg-path = "aerospace", pkg-group = "gui" }
 wezterm = { pkg-path = "wezterm", pkg-group = "gui" }
