@@ -170,14 +170,27 @@ program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
 # Default: unset.
 allowed-signers = "~/.ssh/allowed_signers"
 
+# ─── Revset aliases ────────────────────────────────────────────────────────
+# Named revset expressions usable anywhere a revset is accepted. Only one so
+# far, and it exists solely to power the `tug` alias below.
+[revset-aliases]
+
+# `closest_bookmark(to)` — the nearest bookmark at or below revision `to`.
+# `heads(::to & bookmarks())` reads as: of all bookmarked commits that are
+# ancestors-or-equal of `to`, take the head (the lowest-down / most recent one).
+# This is the community-standard helper that lets `tug` find "the bookmark I'm
+# working on top of" without you naming it.
+'closest_bookmark(to)' = 'heads(::to & bookmarks())'
+
 # ─── Aliases (deliberately small) ──────────────────────────────────────────
 # jj already ships with a useful default alias set:
 #   b -> bookmark, ci -> commit, desc -> describe, st -> status
 # (See: jj config list --include-defaults aliases)
 #
-# These four additions cover the highest-friction commands during the on-ramp.
+# These additions cover the highest-friction commands during the on-ramp.
 # Resist adding more until real friction surfaces — you want to learn jj's
-# verbs, not re-skin git on top of it.
+# verbs, not re-skin git on top of it. (`tug` earned its place: bookmarks not
+# following your new commits is the #1 remote-workflow friction for git brains.)
 [aliases]
 
 # `jj l` — log. Shorter than `jj log`. Matches habit of typing `git l`
@@ -202,3 +215,18 @@ nb = ["bookmark", "create", "-r", "@-"]
 #     jj rebase -d 'trunk()' -r 'mutable()'
 # which moves your mutable commits onto the new trunk tip.
 sync = ["git", "fetch"]
+
+# `jj tug` — drag the closest bookmark up to `@-` (the commit you just
+# finished). This is the canonical community answer to "my bookmark didn't
+# follow my new commits": unlike git branches, jj bookmarks are stationary
+# labels, so after a few `jj new`s the bookmark sits behind you. `jj tug` moves
+# `closest_bookmark(@-)` (see [revset-aliases] above) up to `@-` in one verb,
+# then you `jj git push --bookmark <name>` to update the remote.
+#
+# When you DON'T have a named bookmark to move — throwaway feature work — reach
+# for the built-in `jj git push -c @` instead (no alias needed): it auto-creates
+# a `push-<change-id>` bookmark and pushes it, which is jj's documented GitHub
+# PR workflow. Customize that prefix via `templates.git_push_bookmark` if the
+# `push-` names bother you.
+# Expands to: `jj bookmark move --from 'closest_bookmark(@-)' --to @-`.
+tug = ["bookmark", "move", "--from", "closest_bookmark(@-)", "--to", "@-"]

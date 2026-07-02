@@ -15,6 +15,8 @@ Aliases assumed by this sheet:
 - `d` → `diff` (custom)
 - `nb` → `bookmark create -r @-` (custom)
 - `sync` → `git fetch` (custom)
+- `tug` → `bookmark move --from 'closest_bookmark(@-)' --to @-` (custom; the
+  community-standard "drag my bookmark up to where I am now" verb)
 
 ---
 
@@ -216,7 +218,9 @@ Aliases assumed by this sheet:
 | Fetch from origin | `git fetch` | `jj sync` (alias for `jj git fetch`) |
 | Fetch from a specific remote | `git fetch foo` | `jj git fetch --remote foo` |
 | Pull (fetch + integrate) | `git pull` | `jj sync` then `jj rebase -d 'trunk()' -r 'mutable()'` |
-| Push the current branch | `git push` | `jj git push --bookmark <name>` (no "current" — see note) |
+| Push a named bookmark | `git push` | `jj git push --bookmark <name>` (no "current" — see note) |
+| Push my in-progress work (no bookmark yet) | `git push -u origin HEAD` | `jj git push -c @` (auto-creates `push-<id>`, see note) |
+| Move my bookmark up before pushing | `git push` (branch already moved) | `jj tug` then `jj git push --bookmark <name>` |
 | Push all bookmarks | `git push --all` | `jj git push --all-bookmarks` |
 | Push and create the remote bookmark | `git push -u origin foo` | `jj git push --bookmark foo --allow-new` |
 | Push a deletion | `git push origin --delete foo` | `jj git push --deleted` (after `jj b delete foo`) |
@@ -229,6 +233,26 @@ Aliases assumed by this sheet:
   always specify what to push: a specific bookmark via `--bookmark`, or
   all of them via `--all-bookmarks`. This is annoying once and then
   prevents the entire class of "I pushed the wrong branch" mistakes.
+- **The two remote-workflow frictions and their idiomatic fixes** (these are
+  the jj-community consensus, not local invention — see the jj docs' GitHub
+  page and the `tug` alias that shows up in nearly every "jj tips" post):
+  - *"I just want to push what I'm working on."* Use `jj git push -c @`
+    (`-c` = `--change`). jj auto-creates a bookmark named `push-<change-id>`,
+    anchors it on `@`, and pushes it — no `jj b create`, no `--allow-new`.
+    This is jj's *documented* GitHub PR workflow, not a shortcut. Customize
+    the generated name with the `templates.git_push_bookmark` template (e.g.
+    prefix it with your username) if the `push-` names bother you; the
+    default prefix is deliberate — it visually flags throwaway auto-bookmarks
+    apart from ones you hand-named.
+  - *"My named bookmark didn't follow my new commits."* Bookmarks are
+    stationary labels (concept #3), so after a few `jj new`s the bookmark
+    sits behind `@`. `jj tug` drags the closest bookmark up to `@-` in one
+    verb, then `jj git push --bookmark <name>`. This beats a bespoke `push`
+    alias precisely because it keeps the model visible: you still push a
+    named bookmark, you've just automated the "move it up" step.
+- The deliberately-manual pull (`jj sync` + explicit rebase) is a *local*
+  choice, not a jj-community standard — the community is split on aliasing
+  it. We keep the rebase explicit so integration never happens reflexively.
 - `git.sign-on-push = true` (in our config) ensures any unsigned mutable
   commits get signed at push time. Belt-and-suspenders against the
   `signing.behavior = "own"` setting somehow missing one.
