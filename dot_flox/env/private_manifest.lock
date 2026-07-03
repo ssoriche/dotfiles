@@ -53,7 +53,7 @@
         "version": ">=2.63.1"
       },
       "claude-code": {
-        "pkg-path": "claude-code",
+        "pkg-path": "flox/claude-code",
         "pkg-group": "claude"
       },
       "coderabbit-cli": {
@@ -338,35 +338,6 @@
       },
       "system": "aarch64-darwin",
       "group": "atuin.sh",
-      "priority": 5
-    },
-    {
-      "attr_path": "claude-code",
-      "broken": false,
-      "derivation": "/nix/store/sbnk2yb71lgfrrqwpxrlam07z5zgml5b-claude-code-2.1.193.drv",
-      "description": "Agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster",
-      "install_id": "claude-code",
-      "license": "Unfree",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=b5aa0fbd538984f6e3d201be0005b4463d8b09f8",
-      "name": "claude-code-2.1.193",
-      "pname": "claude-code",
-      "rev": "b5aa0fbd538984f6e3d201be0005b4463d8b09f8",
-      "rev_count": 1024265,
-      "rev_date": "2026-06-29T09:01:53Z",
-      "scrape_date": "2026-07-01T03:12:47.413540Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": true,
-      "version": "2.1.193",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/ps5l33598d756pzvrnms18y6hgxlgy95-claude-code-2.1.193"
-      },
-      "system": "aarch64-darwin",
-      "group": "claude",
       "priority": 5
     },
     {
@@ -2502,6 +2473,36 @@
       },
       "system": "aarch64-darwin",
       "group": "vcs",
+      "priority": 5
+    },
+    {
+      "attr_path": "claude-code",
+      "broken": false,
+      "derivation": "/nix/store/rvndmi0kgd3q6xjzik2by9p5k6j0d2ir-claude-code-2.1.196.drv",
+      "description": "Agentic coding tool from Anthropic",
+      "install_id": "claude-code",
+      "license": "Unfree",
+      "locked_url": "https://github.com/flox/floxenvs?rev=9beaf019e4ff75d1456dc4658d6ac789fcc20f5b",
+      "name": "claude-code-2.1.196",
+      "pname": "claude-code",
+      "rev": "9beaf019e4ff75d1456dc4658d6ac789fcc20f5b",
+      "rev_count": 11617,
+      "rev_date": "2026-06-30T01:00:10Z",
+      "scrape_date": "2026-07-03T19:38:11.435799Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "2.1.196",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/v3lnxcwgxx0k2kqdig6l1ccz7i2bcdbr-claude-code-2.1.196"
+      },
+      "system": "aarch64-darwin",
+      "group": "claude",
       "priority": 5
     },
     {

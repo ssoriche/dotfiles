@@ -131,8 +131,8 @@ awscli2 = { pkg-path = "awscli2", pkg-group = "cloud" , outputs = "all" }
 # pinned — version-locked packages
 granted = { pkg-path = "granted", version = "0.36.3", pkg-group = "pinned" }
 
-# claude — fast-moving, unfree
-claude-code = { pkg-path = "claude-code", pkg-group = "claude" }
+# claude — fast-moving, unfree; flox catalog tracks upstream ahead of nixpkgs
+claude-code = { pkg-path = "flox/claude-code", pkg-group = "claude" }
 
 # pi-coding-agent — fast-moving AI tooling
 pi-coding-agent = { pkg-path = "pi-coding-agent", pkg-group = "pi-coding-agent" }
