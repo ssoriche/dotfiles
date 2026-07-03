@@ -42,7 +42,7 @@ Packages are organized into **pkg-groups** so they can resolve against independe
 | `linters` | typos, dotenv-linter | Standalone linters |
 | `cloud` | awscli2 | Large package, independent update cadence |
 | `pinned` | granted | Version-pinned packages |
-| `claude` | claude-code | Fast-moving, unfree; needs independent upgrades |
+| `claude` | claude-code (`flox/claude-code`) | Fast-moving, unfree; sourced from the flox catalog (see Catalogs below) |
 | `opencode` | opencode | Fast-moving AI tooling; needs independent upgrades |
 | `gui` | aerospace, wezterm, obsidian, halloy | GUI apps — keep separate from CLI tools |
 
@@ -53,6 +53,42 @@ Create a new group when:
 - Two packages have ABI/version compatibility requirements with each other but not with their current group
 - A package is blocking upgrades of unrelated packages in its group
 - A large package (like awscli2) is slowing resolution for the whole group
+
+## Catalogs (nixpkgs vs flox)
+
+Flox resolves packages from **catalogs**. Which one a package comes from is determined by its `pkg-path`:
+
+- **nixpkgs** (default) — a bare `pkg-path` like `"claude-code"` or `"ripgrep"` resolves from nixpkgs.
+- **flox** — prefixing with `flox/` (e.g. `"flox/claude-code"`) resolves from the flox catalog, curated by Flox. It often tracks fast-moving upstream tools **ahead of** nixpkgs.
+
+`flox search <pkg>` lists both variants when they exist:
+
+```bash
+$ flox search claude-code
+claude-code        Agentic coding tool that lives in your terminal...   # nixpkgs
+flox/claude-code   Agentic coding tool from Anthropic                    # flox catalog
+```
+
+Compare their latest versions before choosing a source:
+
+```bash
+flox show claude-code        # Catalog: nixpkgs   → Latest: 2.1.193
+flox show flox/claude-code   # Catalog: flox      → Latest: 2.1.196
+```
+
+To switch a package's source, change only its `pkg-path` (the install id / attribute name stays the same), then apply and re-lock:
+
+```toml
+claude-code = { pkg-path = "flox/claude-code", pkg-group = "claude" }
+```
+
+```bash
+chezmoi apply ~/.flox/env/manifest.toml
+flox activate -- claude --version   # fresh activation re-locks; confirm the new version
+chezmoi add ~/.flox/env/manifest.lock
+```
+
+`claude-code` is sourced from the flox catalog for exactly this reason — it stays current faster than nixpkgs.
 
 ## TOML style convention
 

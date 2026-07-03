@@ -113,11 +113,13 @@ chezmoi add ~/.flox/env/manifest.lock  # Sync lockfile after changes
 | `linters` | typos, dotenv-linter | Standalone analysis tools |
 | `cloud` | awscli2 | Large package, independent cadence |
 | `pinned` | granted | Version-locked packages |
-| `claude` | claude-code | Fast-moving, unfree |
+| `claude` | claude-code (`flox/claude-code`) | Fast-moving, unfree; sourced from the flox catalog |
 | `opencode` | opencode | Fast-moving AI tooling |
 | `gui` | aerospace, wezterm, obsidian, halloy | GUI apps separate from CLI |
 
 **TOML style**: Dot notation for toplevel (`ripgrep.pkg-path = "ripgrep"`), inline tables for grouped (`git = { pkg-path = "git", pkg-group = "vcs" }`).
+
+**Catalogs**: A bare `pkg-path` (`claude-code`) resolves from the **nixpkgs** catalog. Prefixing with `flox/` (`flox/claude-code`) resolves from the **flox** catalog, which is curated by Flox and often tracks fast-moving upstream tools *ahead of* nixpkgs. `flox search <pkg>` lists both variants; compare with `flox show <pkg>` vs `flox show flox/<pkg>`. `claude-code` uses the flox catalog for this reason.
 
 **Flake-based packages** bypass groups entirely, pinned to specific commits: `atuin`, `maccy`.
 
