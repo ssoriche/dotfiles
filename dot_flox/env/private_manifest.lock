@@ -333,35 +333,6 @@
   },
   "packages": [
     {
-      "attr_path": "container",
-      "broken": false,
-      "derivation": "/nix/store/cfgdz618mqv843xns7z84dxv6dzh3arw-container-0.12.3.drv",
-      "description": "Create and run Linux containers using lightweight virtual machines on a Mac",
-      "install_id": "container",
-      "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=b5aa0fbd538984f6e3d201be0005b4463d8b09f8",
-      "name": "container-0.12.3",
-      "pname": "container",
-      "rev": "b5aa0fbd538984f6e3d201be0005b4463d8b09f8",
-      "rev_count": 1024265,
-      "rev_date": "2026-06-29T09:01:53Z",
-      "scrape_date": "2026-07-01T03:12:47.487554Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.12.3",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/db8yxhnp6kl1h1d55z58vcyd25xkggzf-container-0.12.3"
-      },
-      "system": "aarch64-darwin",
-      "group": "container",
-      "priority": 5
-    },
-    {
       "attr_path": "atuin",
       "broken": false,
       "derivation": "/nix/store/5lvy5h6d7d0sgj0r35nfwk1cgiipr2ya-atuin-18.16.1.drv",
@@ -725,6 +696,35 @@
       },
       "system": "x86_64-linux",
       "group": "coderabbit-cli",
+      "priority": 5
+    },
+    {
+      "attr_path": "container",
+      "broken": false,
+      "derivation": "/nix/store/cfgdz618mqv843xns7z84dxv6dzh3arw-container-0.12.3.drv",
+      "description": "Create and run Linux containers using lightweight virtual machines on a Mac",
+      "install_id": "container",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b5aa0fbd538984f6e3d201be0005b4463d8b09f8",
+      "name": "container-0.12.3",
+      "pname": "container",
+      "rev": "b5aa0fbd538984f6e3d201be0005b4463d8b09f8",
+      "rev_count": 1024265,
+      "rev_date": "2026-06-29T09:01:53Z",
+      "scrape_date": "2026-07-01T03:12:47.487554Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.12.3",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/db8yxhnp6kl1h1d55z58vcyd25xkggzf-container-0.12.3"
+      },
+      "system": "aarch64-darwin",
+      "group": "container",
       "priority": 5
     },
     {
