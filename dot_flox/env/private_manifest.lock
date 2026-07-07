@@ -260,6 +260,13 @@
         "pkg-path": "q",
         "version": ">=0.19.5"
       },
+      "raycast": {
+        "pkg-path": "raycast",
+        "pkg-group": "gui",
+        "systems": [
+          "aarch64-darwin"
+        ]
+      },
       "restic": {
         "pkg-path": "restic"
       },
@@ -1505,6 +1512,37 @@
         "out": "/nix/store/bm09z1wrd5p7yp29iicf7pfr79vj54fc-obsidian-1.12.7"
       },
       "system": "x86_64-linux",
+      "group": "gui",
+      "priority": 5
+    },
+    {
+      "attr_path": "raycast",
+      "broken": false,
+      "derivation": "/nix/store/xgb0xw1f7m9qyw58csx9ylzbbfyxrbzj-raycast-1.104.17.drv",
+      "description": "Control your tools with a few keystrokes",
+      "install_id": "raycast",
+      "license": "Unfree",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=567a49d1913ce81ac6e9582e3553dd90a955875f",
+      "name": "raycast-1.104.17",
+      "pname": "raycast",
+      "rev": "567a49d1913ce81ac6e9582e3553dd90a955875f",
+      "rev_count": 1017464,
+      "rev_date": "2026-06-16T02:33:49Z",
+      "scrape_date": "2026-06-17T03:14:47.536116Z",
+      "stabilities": [
+        "stable",
+        "staging",
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "1.104.17",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/pkv72g8pnf9sgqm4a02psxqiqgshayab-raycast-1.104.17"
+      },
+      "system": "aarch64-darwin",
       "group": "gui",
       "priority": 5
     },
