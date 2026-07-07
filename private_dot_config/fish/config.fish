@@ -71,6 +71,9 @@ if status is-interactive
     if command -v atuin >/dev/null
         atuin init fish --disable-up-arrow | source
     end
+    if command -v kubie >/dev/null
+        kubie generate-completion fish | source
+    end
     # Add some aliases I use often
     if command -s batcat >/dev/null
         alias bat batcat

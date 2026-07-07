@@ -1,0 +1,20 @@
+# Kubie configuration. Full schema: https://github.com/kubie-org/kubie#configuration
+
+# Explicit rather than relying on autodetection, since this machine is fish-only.
+shell: fish
+
+# Used by `kubie edit`/`kubie edit-config`.
+default_editor: vim
+
+# Per-cluster kubeconfigs live at ~/.kube/configs/<cluster-name> with no
+# file extension, so the default *.yml/*.yaml globs never match them.
+configs:
+  include:
+    - ~/.kube/config
+    - ~/.kube/configs/*
+
+prompt:
+  # Show context/namespace on the right side of the fish prompt instead of
+  # prepending to the left prompt (theme-pure), matching how zoxide/atuin/
+  # direnv stay out of the way until there's something to show.
+  fish_use_rprompt: true

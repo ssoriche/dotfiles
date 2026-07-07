@@ -184,6 +184,10 @@
         "pkg-path": "krew",
         "pkg-group": "kubernetes"
       },
+      "kubie": {
+        "pkg-path": "kubie",
+        "pkg-group": "kubernetes"
+      },
       "kustomize": {
         "pkg-path": "kustomize",
         "pkg-group": "kubernetes"
@@ -1759,6 +1763,93 @@
       ],
       "outputs": {
         "out": "/nix/store/b2pk5j8ccdlp5lzncycvjhjfp4ydgw6s-krew-0.5.0"
+      },
+      "system": "x86_64-linux",
+      "group": "kubernetes",
+      "priority": 5
+    },
+    {
+      "attr_path": "kubie",
+      "broken": false,
+      "derivation": "/nix/store/fc0alxqv2wk4p01mgqdjnhx97xnmqg93-kubie-0.26.1.drv",
+      "description": "Shell independent context and namespace switcher for kubectl",
+      "install_id": "kubie",
+      "license": "[ Zlib ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=61b7c44c4073f0b827768aff0049561b5110ea5a",
+      "name": "kubie-0.26.1",
+      "pname": "kubie",
+      "rev": "61b7c44c4073f0b827768aff0049561b5110ea5a",
+      "rev_count": 1036777,
+      "rev_date": "2026-07-18T06:39:13Z",
+      "scrape_date": "2026-07-19T04:53:56.039793Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.26.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/gsn56qwkqlyy2q7il7rl5dl30g046r71-kubie-0.26.1"
+      },
+      "system": "aarch64-darwin",
+      "group": "kubernetes",
+      "priority": 5
+    },
+    {
+      "attr_path": "kubie",
+      "broken": false,
+      "derivation": "/nix/store/ikpglg4jzzq8k49arfdx8m0xzgifmfp1-kubie-0.26.1.drv",
+      "description": "Shell independent context and namespace switcher for kubectl",
+      "install_id": "kubie",
+      "license": "[ Zlib ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=61b7c44c4073f0b827768aff0049561b5110ea5a",
+      "name": "kubie-0.26.1",
+      "pname": "kubie",
+      "rev": "61b7c44c4073f0b827768aff0049561b5110ea5a",
+      "rev_count": 1036777,
+      "rev_date": "2026-07-18T06:39:13Z",
+      "scrape_date": "2026-07-19T05:23:46.272400Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.26.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/0izamqh6y9rnj2wx85054mvlnzf9av4j-kubie-0.26.1"
+      },
+      "system": "aarch64-linux",
+      "group": "kubernetes",
+      "priority": 5
+    },
+    {
+      "attr_path": "kubie",
+      "broken": false,
+      "derivation": "/nix/store/jn50n2b9cwg9gn3lbxcfkni48v1i0dzv-kubie-0.26.1.drv",
+      "description": "Shell independent context and namespace switcher for kubectl",
+      "install_id": "kubie",
+      "license": "[ Zlib ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=61b7c44c4073f0b827768aff0049561b5110ea5a",
+      "name": "kubie-0.26.1",
+      "pname": "kubie",
+      "rev": "61b7c44c4073f0b827768aff0049561b5110ea5a",
+      "rev_count": 1036777,
+      "rev_date": "2026-07-18T06:39:13Z",
+      "scrape_date": "2026-07-19T05:57:34.871618Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.26.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/43y1mg0qxx0m648d2qvcln8zh1k39zal-kubie-0.26.1"
       },
       "system": "x86_64-linux",
       "group": "kubernetes",
