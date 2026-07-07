@@ -53,7 +53,7 @@
         "version": ">=2.63.1"
       },
       "claude-code": {
-        "pkg-path": "flox/claude-code",
+        "pkg-path": "claude-code",
         "pkg-group": "claude"
       },
       "coderabbit-cli": {
@@ -2478,28 +2478,27 @@
     {
       "attr_path": "claude-code",
       "broken": false,
-      "derivation": "/nix/store/rvndmi0kgd3q6xjzik2by9p5k6j0d2ir-claude-code-2.1.196.drv",
-      "description": "Agentic coding tool from Anthropic",
+      "derivation": "/nix/store/a4dizbyxlcf9s6r98dlcdin0cc4s26p7-claude-code-2.1.201.drv",
+      "description": "Agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster",
       "install_id": "claude-code",
       "license": "Unfree",
-      "locked_url": "https://github.com/flox/floxenvs?rev=9beaf019e4ff75d1456dc4658d6ac789fcc20f5b",
-      "name": "claude-code-2.1.196",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=d407951447dcd00442e97087bf374aad70c04cea",
+      "name": "claude-code-2.1.201",
       "pname": "claude-code",
-      "rev": "9beaf019e4ff75d1456dc4658d6ac789fcc20f5b",
-      "rev_count": 11617,
-      "rev_date": "2026-06-30T01:00:10Z",
-      "scrape_date": "2026-07-03T19:38:11.435799Z",
+      "rev": "d407951447dcd00442e97087bf374aad70c04cea",
+      "rev_count": 1027867,
+      "rev_date": "2026-07-05T04:06:12Z",
+      "scrape_date": "2026-07-06T03:12:55.152631Z",
       "stabilities": [
-        "staging",
         "unstable"
       ],
       "unfree": true,
-      "version": "2.1.196",
+      "version": "2.1.201",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/v3lnxcwgxx0k2kqdig6l1ccz7i2bcdbr-claude-code-2.1.196"
+        "out": "/nix/store/djcx0bg3258x3sjwcjbf6kr7f0xlr0wq-claude-code-2.1.201"
       },
       "system": "aarch64-darwin",
       "group": "claude",
