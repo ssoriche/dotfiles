@@ -144,6 +144,10 @@
         "pkg-path": "halloy",
         "pkg-group": "gui"
       },
+      "herdr": {
+        "pkg-path": "herdr",
+        "pkg-group": "herdr"
+      },
       "jless": {
         "pkg-path": "jless"
       },
@@ -338,6 +342,35 @@
       },
       "system": "aarch64-darwin",
       "group": "atuin.sh",
+      "priority": 5
+    },
+    {
+      "attr_path": "claude-code",
+      "broken": false,
+      "derivation": "/nix/store/a4dizbyxlcf9s6r98dlcdin0cc4s26p7-claude-code-2.1.201.drv",
+      "description": "Agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster",
+      "install_id": "claude-code",
+      "license": "Unfree",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=d407951447dcd00442e97087bf374aad70c04cea",
+      "name": "claude-code-2.1.201",
+      "pname": "claude-code",
+      "rev": "d407951447dcd00442e97087bf374aad70c04cea",
+      "rev_count": 1027867,
+      "rev_date": "2026-07-05T04:06:12Z",
+      "scrape_date": "2026-07-06T03:12:55.152631Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "2.1.201",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/djcx0bg3258x3sjwcjbf6kr7f0xlr0wq-claude-code-2.1.201"
+      },
+      "system": "aarch64-darwin",
+      "group": "claude",
       "priority": 5
     },
     {
@@ -726,6 +759,35 @@
       },
       "system": "aarch64-darwin",
       "group": "gui",
+      "priority": 5
+    },
+    {
+      "attr_path": "herdr",
+      "broken": false,
+      "derivation": "/nix/store/8v837xpiyix00xyi5zz9z3mgbc7qhp4z-herdr-0.7.1.drv",
+      "description": "Agent multiplexer that lives in your terminal",
+      "install_id": "herdr",
+      "license": "AGPL-3.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=d407951447dcd00442e97087bf374aad70c04cea",
+      "name": "herdr-0.7.1",
+      "pname": "herdr",
+      "rev": "d407951447dcd00442e97087bf374aad70c04cea",
+      "rev_count": 1027867,
+      "rev_date": "2026-07-05T04:06:12Z",
+      "scrape_date": "2026-07-06T03:13:10.971483Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.7.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/1v3hzvsnsgsff57kz00s6g05ydg7xwjf-herdr-0.7.1"
+      },
+      "system": "aarch64-darwin",
+      "group": "herdr",
       "priority": 5
     },
     {
@@ -2473,35 +2535,6 @@
       },
       "system": "aarch64-darwin",
       "group": "vcs",
-      "priority": 5
-    },
-    {
-      "attr_path": "claude-code",
-      "broken": false,
-      "derivation": "/nix/store/a4dizbyxlcf9s6r98dlcdin0cc4s26p7-claude-code-2.1.201.drv",
-      "description": "Agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster",
-      "install_id": "claude-code",
-      "license": "Unfree",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=d407951447dcd00442e97087bf374aad70c04cea",
-      "name": "claude-code-2.1.201",
-      "pname": "claude-code",
-      "rev": "d407951447dcd00442e97087bf374aad70c04cea",
-      "rev_count": 1027867,
-      "rev_date": "2026-07-05T04:06:12Z",
-      "scrape_date": "2026-07-06T03:12:55.152631Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": true,
-      "version": "2.1.201",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/djcx0bg3258x3sjwcjbf6kr7f0xlr0wq-claude-code-2.1.201"
-      },
-      "system": "aarch64-darwin",
-      "group": "claude",
       "priority": 5
     },
     {

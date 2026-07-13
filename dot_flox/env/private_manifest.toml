@@ -140,6 +140,9 @@ pi-coding-agent = { pkg-path = "pi-coding-agent", pkg-group = "pi-coding-agent" 
 # nono — AI agent sandbox
 nono = { pkg-path = "nono", pkg-group = "nono" }
 
+# herdr — fast-moving AI tooling; nixpkgs currently tracks upstream ahead of the flox catalog
+herdr = { pkg-path = "herdr", pkg-group = "herdr" }
+
 # container — Apple's Linux container runtime; isolate so it resolves to latest
 container = { pkg-path = "container", pkg-group = "container" }
 
