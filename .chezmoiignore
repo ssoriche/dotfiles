@@ -34,6 +34,10 @@ vscode-settings/
 # Repo-local helper scripts (not for deployment)
 bin/
 
+# CI/CD configuration (not for deployment)
+renovate.json
+.woodpecker/
+
 # Flox runtime/generated files (not managed by chezmoi)
 .flox/cache
 .flox/log

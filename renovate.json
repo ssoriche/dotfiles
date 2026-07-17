@@ -1,0 +1,29 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended"],
+  "enabledManagers": ["custom.regex"],
+  "customManagers": [
+    {
+      "customType": "regex",
+      "description": "Bump pinned ripgrep version (Flox manifest pilot)",
+      "fileMatch": ["^dot_flox/env/private_manifest\\.toml$"],
+      "matchStrings": [
+        "ripgrep\\.version = \"(?<currentValue>[^\"]+)\""
+      ],
+      "depNameTemplate": "ripgrep",
+      "packageNameTemplate": "nix_unstable/ripgrep",
+      "datasourceTemplate": "repology"
+    },
+    {
+      "customType": "regex",
+      "description": "Bump pinned fd version (Flox manifest pilot)",
+      "fileMatch": ["^dot_flox/env/private_manifest\\.toml$"],
+      "matchStrings": [
+        "fd\\.version = \"(?<currentValue>[^\"]+)\""
+      ],
+      "depNameTemplate": "fd",
+      "packageNameTemplate": "nix_unstable/fd-find",
+      "datasourceTemplate": "repology"
+    }
+  ]
+}
