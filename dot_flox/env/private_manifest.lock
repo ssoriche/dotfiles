@@ -103,7 +103,8 @@
         "pkg-path": "fastgron"
       },
       "fd": {
-        "pkg-path": "fd"
+        "pkg-path": "fd",
+        "version": "10.2.0"
       },
       "fx": {
         "pkg-path": "fx",
@@ -262,7 +263,8 @@
         "pkg-path": "restic"
       },
       "ripgrep": {
-        "pkg-path": "ripgrep"
+        "pkg-path": "ripgrep",
+        "version": "14.1.1"
       },
       "sd": {
         "pkg-path": "sd"
@@ -613,7 +615,7 @@
       "rev": "69304793cb90e07c2adefd7a05f0f678aed9bf55",
       "rev_count": 14161,
       "rev_date": "2026-07-13T15:44:29Z",
-      "scrape_date": "2026-07-20T13:50:55.426972Z",
+      "scrape_date": "2026-07-20T15:42:10.047381Z",
       "stabilities": [
         "stable",
         "staging",
@@ -644,7 +646,7 @@
       "rev": "69304793cb90e07c2adefd7a05f0f678aed9bf55",
       "rev_count": 14161,
       "rev_date": "2026-07-13T15:44:29Z",
-      "scrape_date": "2026-07-20T13:50:55.426972Z",
+      "scrape_date": "2026-07-20T15:42:10.047382Z",
       "stabilities": [
         "stable",
         "staging",
@@ -675,7 +677,7 @@
       "rev": "69304793cb90e07c2adefd7a05f0f678aed9bf55",
       "rev_count": 14161,
       "rev_date": "2026-07-13T15:44:29Z",
-      "scrape_date": "2026-07-20T13:50:55.426973Z",
+      "scrape_date": "2026-07-20T15:42:10.047383Z",
       "stabilities": [
         "stable",
         "staging",

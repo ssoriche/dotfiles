@@ -10,7 +10,9 @@ schema-version = "1.11.0"
 [install]
 # Search / Navigation
 ripgrep.pkg-path = "ripgrep"
+ripgrep.version = "14.1.1"
 fd.pkg-path = "fd"
+fd.version = "10.2.0"
 fzf.pkg-path = "fzf"
 fzf.version = ">=0.65.1"
 eza.pkg-path = "eza"
