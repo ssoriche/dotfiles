@@ -104,6 +104,7 @@
       },
       "fd": {
         "pkg-path": "fd",
+        "pkg-group": "fd",
         "version": "10.2.0"
       },
       "fx": {
@@ -264,6 +265,7 @@
       },
       "ripgrep": {
         "pkg-path": "ripgrep",
+        "pkg-group": "ripgrep",
         "version": "14.1.1"
       },
       "sd": {
@@ -615,7 +617,7 @@
       "rev": "69304793cb90e07c2adefd7a05f0f678aed9bf55",
       "rev_count": 14161,
       "rev_date": "2026-07-13T15:44:29Z",
-      "scrape_date": "2026-07-20T15:42:10.047381Z",
+      "scrape_date": "2026-07-20T15:21:46.401407Z",
       "stabilities": [
         "stable",
         "staging",
@@ -646,7 +648,7 @@
       "rev": "69304793cb90e07c2adefd7a05f0f678aed9bf55",
       "rev_count": 14161,
       "rev_date": "2026-07-13T15:44:29Z",
-      "scrape_date": "2026-07-20T15:42:10.047382Z",
+      "scrape_date": "2026-07-20T15:21:46.401408Z",
       "stabilities": [
         "stable",
         "staging",
@@ -677,7 +679,7 @@
       "rev": "69304793cb90e07c2adefd7a05f0f678aed9bf55",
       "rev_count": 14161,
       "rev_date": "2026-07-13T15:44:29Z",
-      "scrape_date": "2026-07-20T15:42:10.047383Z",
+      "scrape_date": "2026-07-20T15:21:46.401409Z",
       "stabilities": [
         "stable",
         "staging",
@@ -983,6 +985,96 @@
       },
       "system": "x86_64-linux",
       "group": "editors",
+      "priority": 5
+    },
+    {
+      "attr_path": "fd",
+      "broken": false,
+      "derivation": "/nix/store/yh03daq7ghfp8rnjp5nbwxmmrlfw30br-fd-10.2.0.drv",
+      "description": "Simple, fast and user-friendly alternative to find",
+      "install_id": "fd",
+      "license": "[ Apache-2.0, MIT ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=005433b926e16227259a1843015b5b2b7f7d1fc3",
+      "name": "fd-10.2.0",
+      "pname": "fd",
+      "rev": "005433b926e16227259a1843015b5b2b7f7d1fc3",
+      "rev_count": 843472,
+      "rev_date": "2025-08-12T19:39:21Z",
+      "scrape_date": "2025-08-14T00:26:12.515709Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "10.2.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/40nk6ri500aip6a34x8nnhr9k0ikgl8f-fd-10.2.0"
+      },
+      "system": "aarch64-darwin",
+      "group": "fd",
+      "priority": 5
+    },
+    {
+      "attr_path": "fd",
+      "broken": false,
+      "derivation": "/nix/store/b3z2wdmzrx5kbww4slhachmkyp3h66pg-fd-10.2.0.drv",
+      "description": "Simple, fast and user-friendly alternative to find",
+      "install_id": "fd",
+      "license": "[ Apache-2.0, MIT ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=005433b926e16227259a1843015b5b2b7f7d1fc3",
+      "name": "fd-10.2.0",
+      "pname": "fd",
+      "rev": "005433b926e16227259a1843015b5b2b7f7d1fc3",
+      "rev_count": 843472,
+      "rev_date": "2025-08-12T19:39:21Z",
+      "scrape_date": "2025-08-14T01:59:38.850386Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "10.2.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/f0cm3mr35dxk6ziwcarwmk5psnzklg6k-fd-10.2.0"
+      },
+      "system": "aarch64-linux",
+      "group": "fd",
+      "priority": 5
+    },
+    {
+      "attr_path": "fd",
+      "broken": false,
+      "derivation": "/nix/store/p9fk1mz5sxbrk7cjccpzqaqzragy0nll-fd-10.2.0.drv",
+      "description": "Simple, fast and user-friendly alternative to find",
+      "install_id": "fd",
+      "license": "[ Apache-2.0, MIT ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=005433b926e16227259a1843015b5b2b7f7d1fc3",
+      "name": "fd-10.2.0",
+      "pname": "fd",
+      "rev": "005433b926e16227259a1843015b5b2b7f7d1fc3",
+      "rev_count": 843472,
+      "rev_date": "2025-08-12T19:39:21Z",
+      "scrape_date": "2025-08-14T03:13:25.731791Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "10.2.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/d8gs5vih8f1nkck5q8jrndzxzdkpsl01-fd-10.2.0"
+      },
+      "system": "x86_64-linux",
+      "group": "fd",
       "priority": 5
     },
     {
@@ -2824,6 +2916,96 @@
       "priority": 5
     },
     {
+      "attr_path": "ripgrep",
+      "broken": false,
+      "derivation": "/nix/store/4c2819a6la9yp8n85zpfrj810kl1qahy-ripgrep-14.1.1.drv",
+      "description": "Utility that combines the usability of The Silver Searcher with the raw speed of grep",
+      "install_id": "ripgrep",
+      "license": "[ Unlicense, MIT ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=544961dfcce86422ba200ed9a0b00dd4b1486ec5",
+      "name": "ripgrep-14.1.1",
+      "pname": "ripgrep",
+      "rev": "544961dfcce86422ba200ed9a0b00dd4b1486ec5",
+      "rev_count": 878042,
+      "rev_date": "2025-10-15T10:27:37Z",
+      "scrape_date": "2025-10-17T03:46:26.956011Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "14.1.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/jfkzxhxczh5gvac89vn7kchwi6d0vx8n-ripgrep-14.1.1"
+      },
+      "system": "aarch64-darwin",
+      "group": "ripgrep",
+      "priority": 5
+    },
+    {
+      "attr_path": "ripgrep",
+      "broken": false,
+      "derivation": "/nix/store/azy6lfb7ana3g2xviw6f2b2gz08810qg-ripgrep-14.1.1.drv",
+      "description": "Utility that combines the usability of The Silver Searcher with the raw speed of grep",
+      "install_id": "ripgrep",
+      "license": "[ Unlicense, MIT ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=544961dfcce86422ba200ed9a0b00dd4b1486ec5",
+      "name": "ripgrep-14.1.1",
+      "pname": "ripgrep",
+      "rev": "544961dfcce86422ba200ed9a0b00dd4b1486ec5",
+      "rev_count": 878042,
+      "rev_date": "2025-10-15T10:27:37Z",
+      "scrape_date": "2025-10-17T04:20:52.300490Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "14.1.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/f1y10yp76065wk25izd1vbmg2q2cqijz-ripgrep-14.1.1"
+      },
+      "system": "aarch64-linux",
+      "group": "ripgrep",
+      "priority": 5
+    },
+    {
+      "attr_path": "ripgrep",
+      "broken": false,
+      "derivation": "/nix/store/628qcry0fcsd6rns55gazz63mw1j92yf-ripgrep-14.1.1.drv",
+      "description": "Utility that combines the usability of The Silver Searcher with the raw speed of grep",
+      "install_id": "ripgrep",
+      "license": "[ Unlicense, MIT ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=544961dfcce86422ba200ed9a0b00dd4b1486ec5",
+      "name": "ripgrep-14.1.1",
+      "pname": "ripgrep",
+      "rev": "544961dfcce86422ba200ed9a0b00dd4b1486ec5",
+      "rev_count": 878042,
+      "rev_date": "2025-10-15T10:27:37Z",
+      "scrape_date": "2025-10-17T05:29:24.053913Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "14.1.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/13gbxm9yy9vnzdal1czjjka9qmqj3y3d-ripgrep-14.1.1"
+      },
+      "system": "x86_64-linux",
+      "group": "ripgrep",
+      "priority": 5
+    },
+    {
       "attr_path": "darwin.apple_sdk.frameworks.CoreServices",
       "broken": false,
       "derivation": "/nix/store/v2dh3p6ayaxs1lkf0yncird8vl0f5aq8-CoreServices-11.0.drv",
@@ -3845,96 +4027,6 @@
       ],
       "outputs": {
         "out": "/nix/store/9b5x465sfjhhpwa9ssjaxaw9xks7fafr-fastgron-0.7.7"
-      },
-      "system": "x86_64-linux",
-      "group": "toplevel",
-      "priority": 5
-    },
-    {
-      "attr_path": "fd",
-      "broken": false,
-      "derivation": "/nix/store/bpimihr56s8ga3i0yw7gy1s5ff3q0nlc-fd-10.2.0.drv",
-      "description": "Simple, fast and user-friendly alternative to find",
-      "install_id": "fd",
-      "license": "[ Apache-2.0, MIT ]",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=c2ae88e026f9525daf89587f3cbee584b92b6134",
-      "name": "fd-10.2.0",
-      "pname": "fd",
-      "rev": "c2ae88e026f9525daf89587f3cbee584b92b6134",
-      "rev_count": 840654,
-      "rev_date": "2025-08-06T16:41:31Z",
-      "scrape_date": "2025-08-08T00:31:31.322735Z",
-      "stabilities": [
-        "staging",
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "10.2.0",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/40nk6ri500aip6a34x8nnhr9k0ikgl8f-fd-10.2.0"
-      },
-      "system": "aarch64-darwin",
-      "group": "toplevel",
-      "priority": 5
-    },
-    {
-      "attr_path": "fd",
-      "broken": false,
-      "derivation": "/nix/store/v8njmzpwy690zsycspba9wf2r1f6bfc3-fd-10.2.0.drv",
-      "description": "Simple, fast and user-friendly alternative to find",
-      "install_id": "fd",
-      "license": "[ Apache-2.0, MIT ]",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=c2ae88e026f9525daf89587f3cbee584b92b6134",
-      "name": "fd-10.2.0",
-      "pname": "fd",
-      "rev": "c2ae88e026f9525daf89587f3cbee584b92b6134",
-      "rev_count": 840654,
-      "rev_date": "2025-08-06T16:41:31Z",
-      "scrape_date": "2025-08-11T18:56:24.437560Z",
-      "stabilities": [
-        "staging",
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "10.2.0",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/f0cm3mr35dxk6ziwcarwmk5psnzklg6k-fd-10.2.0"
-      },
-      "system": "aarch64-linux",
-      "group": "toplevel",
-      "priority": 5
-    },
-    {
-      "attr_path": "fd",
-      "broken": false,
-      "derivation": "/nix/store/m8i0zrc7jc4mrydzg17qgqmf1wpvl0j7-fd-10.2.0.drv",
-      "description": "Simple, fast and user-friendly alternative to find",
-      "install_id": "fd",
-      "license": "[ Apache-2.0, MIT ]",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=c2ae88e026f9525daf89587f3cbee584b92b6134",
-      "name": "fd-10.2.0",
-      "pname": "fd",
-      "rev": "c2ae88e026f9525daf89587f3cbee584b92b6134",
-      "rev_count": 840654,
-      "rev_date": "2025-08-06T16:41:31Z",
-      "scrape_date": "2025-08-11T21:07:09.961776Z",
-      "stabilities": [
-        "staging",
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "10.2.0",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/d8gs5vih8f1nkck5q8jrndzxzdkpsl01-fd-10.2.0"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
@@ -5126,96 +5218,6 @@
       ],
       "outputs": {
         "out": "/nix/store/8cphgdf4ggzg3wlwbpgha732xv3yh7pa-restic-0.18.0"
-      },
-      "system": "x86_64-linux",
-      "group": "toplevel",
-      "priority": 5
-    },
-    {
-      "attr_path": "ripgrep",
-      "broken": false,
-      "derivation": "/nix/store/grqxqfjd29pd87r5bs3jcdh4v4w0mklg-ripgrep-14.1.1.drv",
-      "description": "Utility that combines the usability of The Silver Searcher with the raw speed of grep",
-      "install_id": "ripgrep",
-      "license": "[ Unlicense, MIT ]",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=c2ae88e026f9525daf89587f3cbee584b92b6134",
-      "name": "ripgrep-14.1.1",
-      "pname": "ripgrep",
-      "rev": "c2ae88e026f9525daf89587f3cbee584b92b6134",
-      "rev_count": 840654,
-      "rev_date": "2025-08-06T16:41:31Z",
-      "scrape_date": "2025-08-08T00:32:01.700405Z",
-      "stabilities": [
-        "staging",
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "14.1.1",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/md9kfvsz7axcb5b1z2yw2mybi3lhxyha-ripgrep-14.1.1"
-      },
-      "system": "aarch64-darwin",
-      "group": "toplevel",
-      "priority": 5
-    },
-    {
-      "attr_path": "ripgrep",
-      "broken": false,
-      "derivation": "/nix/store/dl7vljk8knpr2j77vvdsxd2lm75jldqx-ripgrep-14.1.1.drv",
-      "description": "Utility that combines the usability of The Silver Searcher with the raw speed of grep",
-      "install_id": "ripgrep",
-      "license": "[ Unlicense, MIT ]",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=c2ae88e026f9525daf89587f3cbee584b92b6134",
-      "name": "ripgrep-14.1.1",
-      "pname": "ripgrep",
-      "rev": "c2ae88e026f9525daf89587f3cbee584b92b6134",
-      "rev_count": 840654,
-      "rev_date": "2025-08-06T16:41:31Z",
-      "scrape_date": "2025-08-11T18:57:32.179355Z",
-      "stabilities": [
-        "staging",
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "14.1.1",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/slgpwy2f6j68p47hifz503251dgxb075-ripgrep-14.1.1"
-      },
-      "system": "aarch64-linux",
-      "group": "toplevel",
-      "priority": 5
-    },
-    {
-      "attr_path": "ripgrep",
-      "broken": false,
-      "derivation": "/nix/store/fqp1zlda15dsg1rgfbqcl4fbd33s6gwj-ripgrep-14.1.1.drv",
-      "description": "Utility that combines the usability of The Silver Searcher with the raw speed of grep",
-      "install_id": "ripgrep",
-      "license": "[ Unlicense, MIT ]",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=c2ae88e026f9525daf89587f3cbee584b92b6134",
-      "name": "ripgrep-14.1.1",
-      "pname": "ripgrep",
-      "rev": "c2ae88e026f9525daf89587f3cbee584b92b6134",
-      "rev_count": 840654,
-      "rev_date": "2025-08-06T16:41:31Z",
-      "scrape_date": "2025-08-11T21:08:23.729446Z",
-      "stabilities": [
-        "staging",
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "14.1.1",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/1ijacjhy42pqx7vfi5mnsqrps2k3b8xf-ripgrep-14.1.1"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
