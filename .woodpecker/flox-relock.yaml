@@ -1,0 +1,20 @@
+when:
+  - event: pull_request
+    path: 'dot_flox/env/private_manifest.toml'
+    evaluate: 'CI_COMMIT_AUTHOR_EMAIL != "woodpecker-ci@noreply.git.s8i.app"'
+
+clone:
+  - name: git
+    image: woodpeckerci/plugin-git
+    settings:
+      partial: false
+      depth: 0
+
+steps:
+  - name: relock
+    image: ghcr.io/flox/flox:latest
+    environment:
+      FORGEJO_TOKEN:
+        from_secret: forgejo_token
+    commands:
+      - bash .woodpecker/scripts/flox-relock.sh
