@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+git config --global --add safe.directory "$(pwd)"
+
 # Reconstruct the .flox/ layout Flox expects from the chezmoi source
 # encoding (dot_flox/... -> .flox/..., private_manifest.* -> manifest.*).
 # Do NOT use `chezmoi apply` here: it runs unrelated run_once_/run_onchange_
