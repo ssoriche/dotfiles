@@ -22,7 +22,7 @@ cat > "$SCRATCH/.flox/env.json" <<EOF
 {"name":"flox-version-check","version":1}
 EOF
 cat > "$SCRATCH/.flox/env/manifest.toml" <<EOF
-version = 1
+schema-version = "1.11.0"
 [install]
 ripgrep.pkg-path = "ripgrep"
 ripgrep.pkg-group = "ripgrep"
@@ -35,3 +35,4 @@ systems = ["x86_64-linux", "aarch64-linux"]
 EOF
 
 flox activate -d "$SCRATCH" -c "true"
+rm -rf "$SCRATCH"
