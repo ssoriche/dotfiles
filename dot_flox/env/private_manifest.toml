@@ -9,6 +9,10 @@ schema-version = "1.11.0"
 
 [install]
 # Search / Navigation
+# ripgrep/fd are Renovate-managed (see renovate.json). Each needs its own
+# pkg-group: two exact pins sharing a group must resolve from one nixpkgs
+# snapshot, so an independent bump fails "constraints too tight" otherwise.
+# Adding a third Renovate-managed pin needs the same treatment.
 ripgrep.pkg-path = "ripgrep"
 ripgrep.pkg-group = "ripgrep"
 ripgrep.version = "14.1.1"
