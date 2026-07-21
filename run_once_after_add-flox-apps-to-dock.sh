@@ -17,7 +17,9 @@
 
 FLOX_ENV_DIR="$HOME/.flox"
 
-# Desired stack display: showas 1 = fan, 2 = grid, 3 = list.
+# Desired display: displayas 0 = stack (icon is the pile of contents),
+# 1 = plain folder icon. showas 1 = fan, 2 = grid, 3 = list.
+WANT_DISPLAYAS=0
 WANT_SHOWAS=1
 
 # Skip if the Flox environment doesn't exist
@@ -56,12 +58,14 @@ defaults export com.apple.dock "$TMP_PLIST"
 flox_idx=-1
 cur_url=""
 cur_showas=""
+cur_displayas=""
 idx=0
 while label=$(/usr/libexec/PlistBuddy -c "Print persistent-others:$idx:tile-data:file-label" "$TMP_PLIST" 2>/dev/null); do
     if [ "$label" = "Flox Apps" ]; then
         flox_idx=$idx
         cur_url=$(/usr/libexec/PlistBuddy -c "Print persistent-others:$idx:tile-data:file-data:_CFURLString" "$TMP_PLIST" 2>/dev/null || echo "")
         cur_showas=$(/usr/libexec/PlistBuddy -c "Print persistent-others:$idx:tile-data:showas" "$TMP_PLIST" 2>/dev/null || echo "")
+        cur_displayas=$(/usr/libexec/PlistBuddy -c "Print persistent-others:$idx:tile-data:displayas" "$TMP_PLIST" 2>/dev/null || echo "")
         break
     fi
     idx=$((idx + 1))
@@ -72,7 +76,7 @@ done
 cur_real=$(resolve_url "$cur_url")
 
 # Already correct (same resolved target AND right display) → nothing to do.
-if [ "$flox_idx" -ge 0 ] && [ -n "$cur_real" ] && [ "$cur_real" = "$WANT_DIR" ] && [ "$cur_showas" = "$WANT_SHOWAS" ]; then
+if [ "$flox_idx" -ge 0 ] && [ -n "$cur_real" ] && [ "$cur_real" = "$WANT_DIR" ] && [ "$cur_showas" = "$WANT_SHOWAS" ] && [ "$cur_displayas" = "$WANT_DISPLAYAS" ]; then
     echo "Flox Apps already in Dock, pointing at the current generation — nothing to do"
     rm -f "$TMP_PLIST"
     exit 0
@@ -80,7 +84,7 @@ fi
 
 # Remove a stale/misconfigured tile before re-adding.
 if [ "$flox_idx" -ge 0 ]; then
-    echo "Flox Apps tile is stale (resolved='$cur_real' showas='$cur_showas'), repointing..."
+    echo "Flox Apps tile is stale (resolved='$cur_real' showas='$cur_showas' displayas='$cur_displayas'), repointing..."
     /usr/libexec/PlistBuddy -c "Delete persistent-others:$flox_idx" "$TMP_PLIST"
     defaults import com.apple.dock "$TMP_PLIST"
 fi
@@ -103,7 +107,7 @@ defaults write com.apple.dock persistent-others -array-add \
             <key>file-type</key>
             <integer>2</integer>
             <key>displayas</key>
-            <integer>1</integer>
+            <integer>${WANT_DISPLAYAS}</integer>
             <key>showas</key>
             <integer>${WANT_SHOWAS}</integer>
         </dict>
