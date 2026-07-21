@@ -162,7 +162,6 @@ wezterm = { pkg-path = "wezterm", pkg-group = "gui" }
 obsidian = { pkg-path = "obsidian", pkg-group = "gui" }
 halloy = { pkg-path = "halloy", pkg-group = "gui" }
 maccy = { pkg-path = "maccy", pkg-group = "gui", systems = ["aarch64-darwin"] }
-raycast = { pkg-path = "raycast", pkg-group = "gui", systems = ["aarch64-darwin"] }
 
 # Flake-based packages (pinned to specific commits/repos)
 coderabbit-cli.pkg-path = "flox/coderabbit-cli"
