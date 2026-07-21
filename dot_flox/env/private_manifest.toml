@@ -41,6 +41,7 @@ fastgron.pkg-path = "fastgron"
 fx.pkg-path = "fx"
 fx.version = ">=38.0.0"
 sd.pkg-path = "sd"
+glow.pkg-path = "glow"
 
 # Shells / Shell enhancements
 atuin = { pkg-path = "atuin", version = ">=18.15", pkg-group = "atuin.sh" }
