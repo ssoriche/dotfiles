@@ -15,7 +15,7 @@ schema-version = "1.11.0"
 # Adding a third Renovate-managed pin needs the same treatment.
 ripgrep.pkg-path = "ripgrep"
 ripgrep.pkg-group = "ripgrep"
-ripgrep.version = "14.1.1"
+ripgrep.version = "15.2.0"
 fd.pkg-path = "fd"
 fd.pkg-group = "fd"
 fd.version = "10.2.0"
