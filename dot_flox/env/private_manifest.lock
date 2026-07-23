@@ -316,6 +316,12 @@
         "pkg-path": "yazi",
         "version": ">=25.5.31"
       },
+      "zap": {
+        "flake": "github:natejsimonsen/zap",
+        "systems": [
+          "aarch64-darwin"
+        ]
+      },
       "zoxide": {
         "pkg-path": "zoxide",
         "version": ">=0.9.8"
@@ -6947,6 +6953,35 @@
       "description": "Sandbox your local AI agents so they can read/write only what they need",
       "licenses": [
         "Apache-2.0"
+      ],
+      "broken": false,
+      "unfree": false,
+      "priority": 5
+    },
+    {
+      "install_id": "zap",
+      "locked-url": "github:natejsimonsen/zap/9fca89565aa152ff5fddf6afa39f074eb62db664?narHash=sha256-ui9CJLpY1TR8MaX51/lVJbZsl0ivJeh4ehO6umhF6n8%3D",
+      "flake-description": "Zap — a minimal macOS application launcher bound to Cmd+Space",
+      "locked-flake-attr-path": "packages.aarch64-darwin.default",
+      "derivation": "/nix/store/iaw8sbnjp22qckazg4ac2ynabj0sby3q-zap-0.1.0.drv",
+      "outputs": {
+        "out": "/nix/store/3dbfzzg1nwfd9z86m33l1vs2y6ljgy2m-zap-0.1.0"
+      },
+      "output-names": [
+        "out"
+      ],
+      "outputs-to-install": [
+        "out"
+      ],
+      "requested-outputs-to-install": [],
+      "package-system": "aarch64-darwin",
+      "system": "aarch64-darwin",
+      "name": "zap-0.1.0",
+      "pname": "zap",
+      "version": "0.1.0",
+      "description": "Minimal macOS application launcher bound to Cmd+Space",
+      "licenses": [
+        "MIT"
       ],
       "broken": false,
       "unfree": false,

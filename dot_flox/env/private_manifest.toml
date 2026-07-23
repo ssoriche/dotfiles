@@ -169,6 +169,8 @@ coderabbit-cli.pkg-path = "flox/coderabbit-cli"
 coderabbit-cli.pkg-group = "coderabbit-cli"
 agent-safehouse.flake = "github:NixOS/nixpkgs/b0ec52b771f1207053090f4ea9cf73a6040f0489#agent-safehouse"
 agent-safehouse.systems = ["aarch64-darwin"]
+zap.flake = "github:natejsimonsen/zap"
+zap.systems = ["aarch64-darwin"]
 
 
 [hook]
