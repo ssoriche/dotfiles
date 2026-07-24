@@ -125,23 +125,6 @@ chezmoi add ~/.flox/env/manifest.lock  # Sync lockfile after changes
 
 For detailed operational docs (adding/removing packages, troubleshooting, etc.), see the flox skill: `.claude/skills/flox/SKILL.md`.
 
-### Jujutsu (jj) On-ramp
-
-This repo is the practice substrate for the user's Jujutsu (jj) learning track. The repo is **colocated**: both `.git/` and `.jj/` exist at the root, both tools work, soft-serve never sees `.jj/`. When the user mentions jj, falls back to git from frustration with jj concepts, or wants to make commits via jj, consult these (all chezmoi-ignored, repo-only):
-
-- **Design rationale and decisions log**: `docs/plans/2026-05-08-jj-onramp-design.md`
-- **Mental model (ELI5 for git veterans)**: `docs/jj-onramp/mental-model.md` — seven concepts framed as "git brain expects → jj reality"
-- **git→jj cheatsheet**: `docs/jj-onramp/cheatsheet.md` — comprehensive translation table with anti-patterns flagged ⚠
-- **Practice missions**: `docs/jj-onramp/missions.md` — eight-mission ladder (0–7), each with Goal/Trigger/Steps/Checkpoint/"If it goes wrong"
-
-Deployed config (chezmoi-managed, not repo-only):
-- `private_dot_config/jj/config.toml` → `~/.config/jj/config.toml` — wall-to-wall comments; the config doubles as a study guide. SSH commit signing via 1Password's `op-ssh-sign` is configured here.
-- `private_dot_ssh/private_allowed_signers` → `~/.ssh/allowed_signers` — multiple principals on one line; expect the list to grow as new identities surface.
-
-**Picking up the on-ramp on a fresh machine**: `chezmoi update && chezmoi apply` deploys the jj config and `allowed_signers`, then `cd ~/.local/share/chezmoi && jj git init --colocate` enables jj on that machine's clone. The docs above arrive in the repo automatically.
-
-Mission 6 (deliberate disaster-recovery rehearsal with `jj op log` / `jj op restore`) is the one mission that should not be deferred — recovery muscle memory has to be rehearsed before it's needed, not after.
-
 ## Common Development Commands
 
 ### Chezmoi Operations

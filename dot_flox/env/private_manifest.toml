@@ -108,7 +108,6 @@ delta = { pkg-path = "delta", pkg-group = "vcs" }
 difftastic = { pkg-path = "difftastic", pkg-group = "vcs" }
 git-absorb = { pkg-path = "git-absorb", pkg-group = "vcs" }
 git-credential-manager = { pkg-path = "git-credential-manager", pkg-group = "vcs" }
-jujutsu = { pkg-path = "jujutsu", pkg-group = "vcs" }
 gitu = { pkg-path = "gitu", pkg-group = "vcs" }
 gh-dash = { pkg-path = "gh-dash", pkg-group = "vcs" }
 
