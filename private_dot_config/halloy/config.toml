@@ -55,14 +55,14 @@ on_buffer_close = true
 [servers.sackheads]
 nickname = "hide"
 server = "bnc.irccloud.com"
-password_command = "/Users/ssoriche/.local/share/devbox/global/default/.devbox/nix/profile/default/bin/op item get 'Halloy IRC - Sackheads' --fields password --reveal"
+password_command = "/Users/ssoriche/.flox/run/aarch64-darwin.default-run/bin/op item get 'Halloy IRC - Sackheads' --fields password --reveal"
 chathistory = true
 
 # Perl Network
 [servers.perl]
 nickname = "hide"
 server = "bnc.irccloud.com"
-password_command = "/Users/ssoriche/.local/share/devbox/global/default/.devbox/nix/profile/default/bin/op item get 'Halloy IRC - Perl' --fields password --reveal"
+password_command = "/Users/ssoriche/.flox/run/aarch64-darwin.default-run/bin/op item get 'Halloy IRC - Perl' --fields password --reveal"
 chathistory = true
 
 [servers.s8i]
@@ -74,4 +74,4 @@ channels = ["#ibmrox", "#bofh"]
 
 [servers.s8i.sasl.plain]
 username = "hide"
-password_command = "/Users/ssoriche/.local/share/devbox/global/default/.devbox/nix/profile/default/bin/op item get 'c.s8i.io' --fields password --reveal"
+password_command = "/Users/ssoriche/.flox/run/aarch64-darwin.default-run/bin/op item get 'c.s8i.io' --fields password --reveal"

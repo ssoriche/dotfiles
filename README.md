@@ -10,7 +10,7 @@ This repository contains my personal dotfiles and configuration files for:
 - **Terminal**: Fish shell, Wezterm, Ghostty
 - **Development Tools**: Git, Atuin, Bat, K9s
 - **Window Management**: Aerospace, Hammerspoon, Karabiner
-- **Package Management**: Devbox (Nix-based)
+- **Package Management**: Flox (Nix-based)
 - **AI Development**: Cursor rules for enhanced coding assistance
 
 ## Quick Start
@@ -155,7 +155,7 @@ private_dot_config/cursor/rules/
 ### Development Tools
 
 - **Git**: Comprehensive git configuration with templates
-- **Devbox**: Nix-based development environment management
+- **Flox**: Nix-based development environment management
 - **K9s**: Kubernetes cluster management
 - **Neovim**: Highly configured editor setup
 
@@ -254,7 +254,7 @@ This configuration builds upon and integrates with several excellent open-source
 
 ### Development Environment Tools
 
-- [Devbox](https://www.jetpack.io/devbox/) - Instant, easy, predictable development environments
+- [Flox](https://flox.dev/) - Reproducible developer environments built on Nix
 - [Nix](https://nixos.org/) - Purely functional package manager
 
 ### Window Management Tools

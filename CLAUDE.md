@@ -16,9 +16,9 @@ chezmoi edit <target-file>            # Edit a managed file
 ./vscode-settings/bin/manage-vscode-settings.fish apply all
 ./vscode-settings/bin/manage-vscode-settings.fish sync-extensions cursor
 
-# Python tool management (uv via devbox)
-devbox run setup-tools                # Install Python CLI tools (llm, aider)
-devbox run update-tools               # Update all uv-managed tools
+# Python tool management (uv via flox profile functions)
+setup-tools                           # Install Python CLI tools (llm, aider)
+update-tools                          # Update all uv-managed tools
 ```
 
 ## Repository Overview
@@ -79,7 +79,7 @@ alwaysApply: true        # Apply to all projects
 
 ### Flox Package Management
 
-Flox is the **preferred** package manager (fish config prioritizes it over devbox, which is maintained as a fallback). The manifest and lockfile are managed via chezmoi:
+Flox is the machine's package manager. The manifest and lockfile are managed via chezmoi:
 
 ```
 Source:  dot_flox/env/manifest.toml          → ~/.flox/env/manifest.toml
@@ -201,7 +201,7 @@ ls -la ~/.config/cursor/rules/development/
 
 ### Python Tool Management with uv
 
-Python CLI tools are managed using `uv` within flox (or devbox as fallback). Tools are installed to `~/.local/bin` and automatically available in your PATH.
+Python CLI tools are managed using `uv` within flox. Tools are installed to `~/.local/bin` and automatically available in your PATH. The `setup-tools`/`update-tools` helpers are defined in the flox `[profile]` section (`dot_flox/env/private_manifest.toml`).
 
 **Configured Tools**:
 - `llm` - CLI tool for interacting with LLMs
@@ -209,11 +209,11 @@ Python CLI tools are managed using `uv` within flox (or devbox as fallback). Too
 
 **Commands**:
 ```bash
-# First-time installation of Python tools
-devbox run setup-tools
+# First-time installation of Python tools (flox profile function)
+setup-tools
 
-# Update all uv-managed tools
-devbox run update-tools
+# Update all uv-managed tools (flox profile function)
+update-tools
 
 # Install additional tools manually
 uv tool install --python python3.14 <tool-name>@latest
@@ -222,11 +222,11 @@ uv tool install --python python3.14 <tool-name>@latest
 uv tool list
 ```
 
-**Note**: uv automatically downloads and manages Python 3.14 - no need to add Python to devbox packages.
+**Note**: uv automatically downloads and manages Python 3.14 - no need to add Python to flox packages.
 
-### Accessing Devbox GUI Apps
+### Accessing Flox GUI Apps
 
-GUI applications installed via devbox (like AeroSpace, Wezterm) live in the Nix store and aren't discoverable by Spotlight. A chezmoi `run_once` script (`run_once_add-devbox-apps-to-dock.sh`) automatically adds the devbox Applications folder to the Dock as a stack on first `chezmoi apply`.
+GUI applications installed via flox (like AeroSpace, Wezterm) live in the Nix store and aren't discoverable by Spotlight. A chezmoi `run_once` script (`run_once_after_add-flox-apps-to-dock.sh`) automatically adds the Flox Apps folder to the Dock as a stack on first `chezmoi apply`.
 
 Right-click the Dock folder to customize display (fan/grid/list, sort order).
 
@@ -236,12 +236,12 @@ Right-click the Dock folder to customize display (fan/grid/list, sort order).
 
 - **Primary Shell**: Fish shell
 - **OS**: macOS (Darwin)
-- **Package Manager**: Flox (preferred) and Devbox (fallback) — both Nix-based
+- **Package Manager**: Flox (Nix-based)
 - **Dotfiles Manager**: chezmoi
 
 ### Installed Development Tools
 
-Key tools managed via Flox (see `dot_flox/env/manifest.toml`) and Devbox (see `dot_local/share/devbox/global/default/devbox.json`):
+Key tools managed via Flox (see `dot_flox/env/manifest.toml`):
 
 - **Search/Navigation**: `fd`, `rg` (ripgrep), `fzf`, `eza`
 - **Text Processing**: `bat`, `fx`, `fastgron`, `jless`, `sd`
@@ -372,7 +372,6 @@ dot_gitconfig                                 → ~/.gitconfig
 private_dot_config/fish/config.fish           → ~/.config/fish/config.fish
 private_dot_config/cursor/rules/              → ~/.config/cursor/rules/
 dot_hammerspoon/                              → ~/.hammerspoon/
-dot_local/share/devbox/                       → ~/.local/share/devbox/
 Library/                                      → ~/Library/
 ```
 
@@ -394,7 +393,7 @@ These exist in the repo but are NOT deployed (per `.chezmoiignore`):
 6. **Extension versions are tracked**: Use sync-extensions to keep versions in sync
 7. **The vscode-settings directory is NOT deployed**: It contains management tools only
 8. **Use the management script**: Don't manually merge settings or install extensions when the script can do it
-9. **Python tools managed by uv**: Run `devbox run setup-tools` after initial devbox setup to install Python CLI tools
+9. **Python tools managed by uv**: Run `setup-tools` (a flox profile function) to install Python CLI tools
 
 ## Troubleshooting
 

@@ -37,8 +37,6 @@ fish_add_path "$HOME/go/bin"
 
 if command -v flox >/dev/null; and test -f "$HOME/.flox/env/manifest.toml"
     flox activate -d ~ | source
-else if command -v devbox >/dev/null
-    devbox global shellenv --init-hook | source
 end
 
 # Add ~/.nix-profile/bin AFTER flox activation: flox snapshots PATH on

@@ -1,5 +1,4 @@
-# Flox global environment — mirrors devbox global packages
-# Evaluate alongside devbox; fish shell prefers Flox when available
+# Flox global environment — the machine's package manager
 #
 # Package groups isolate nixpkgs revisions so fast-moving or
 # ABI-coupled packages can upgrade independently.  Packages without
