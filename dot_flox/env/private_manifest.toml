@@ -47,11 +47,15 @@ atuin = { pkg-path = "atuin", version = ">=18.15", pkg-group = "atuin.sh" }
 direnv.pkg-path = "direnv"
 direnv.version = ">=2.37.1"
 
-# Kubernetes
+# Kubernetes. kubie is Renovate-managed (see renovate.json); the rest stay
+# unpinned in the same group, same "editors" rationale as above.
 kustomize = { pkg-path = "kustomize", pkg-group = "kubernetes" }
 krew = { pkg-path = "krew", pkg-group = "kubernetes" }
 kns = { pkg-path = "kns", pkg-group = "kubernetes" }
-kubie = { pkg-path = "kubie", pkg-group = "kubernetes" }
+k9s = { pkg-path = "k9s", pkg-group = "kubernetes" }
+kubie.pkg-path = "kubie"
+kubie.pkg-group = "kubernetes"
+kubie.version = "0.26.1"
 
 # Networking / Security
 nmap.pkg-path = "nmap"
@@ -132,8 +136,10 @@ bun = { pkg-path = "bun", pkg-group = "node" }
 luarocks = { pkg-path = "luarocks", pkg-group = "lua.org" }
 lua = { pkg-path = "lua51Packages.lua", pkg-group = "lua.org" , outputs = "all" }
 
-# python — standalone, frequent updates
-uv = { pkg-path = "uv", pkg-group = "python" }
+# python — standalone, frequent updates. Renovate-managed (see renovate.json).
+uv.pkg-path = "uv"
+uv.pkg-group = "python"
+uv.version = "0.11.28"
 
 # linters — standalone analysis tools
 typos = { pkg-path = "typos", pkg-group = "linters" }
@@ -157,8 +163,11 @@ pi-coding-agent = { pkg-path = "pi-coding-agent", pkg-group = "pi-coding-agent" 
 # nono — AI agent sandbox
 nono = { pkg-path = "nono", pkg-group = "nono" }
 
-# herdr — fast-moving AI tooling; nixpkgs currently tracks upstream ahead of the flox catalog
-herdr = { pkg-path = "herdr", pkg-group = "herdr" }
+# herdr — fast-moving AI tooling; nixpkgs currently tracks upstream ahead of the
+# flox catalog. Renovate-managed (see renovate.json).
+herdr.pkg-path = "herdr"
+herdr.pkg-group = "herdr"
+herdr.version = "0.7.4"
 
 # container — Apple's Linux container runtime; isolate so it resolves to latest
 container = { pkg-path = "container", pkg-group = "container", systems = ["aarch64-darwin"] }
