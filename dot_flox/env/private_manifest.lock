@@ -227,7 +227,8 @@
       },
       "neovim": {
         "pkg-path": "neovim",
-        "pkg-group": "editors"
+        "pkg-group": "editors",
+        "version": "0.12.4"
       },
       "nmap": {
         "pkg-path": "nmap",
@@ -431,6 +432,93 @@
       },
       "system": "x86_64-linux",
       "group": "atuin.sh",
+      "priority": 5
+    },
+    {
+      "attr_path": "claude-code",
+      "broken": false,
+      "derivation": "/nix/store/frlkl06jgjirrfzh6j1r2by9slzbz6pm-claude-code-2.1.212.drv",
+      "description": "Agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster",
+      "install_id": "claude-code",
+      "license": "Unfree",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=61b7c44c4073f0b827768aff0049561b5110ea5a",
+      "name": "claude-code-2.1.212",
+      "pname": "claude-code",
+      "rev": "61b7c44c4073f0b827768aff0049561b5110ea5a",
+      "rev_count": 1036777,
+      "rev_date": "2026-07-18T06:39:13Z",
+      "scrape_date": "2026-07-19T04:53:38.069881Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "2.1.212",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/m92kp6bylhnyx3fzk2ls39rwfb8axgqd-claude-code-2.1.212"
+      },
+      "system": "aarch64-darwin",
+      "group": "claude",
+      "priority": 5
+    },
+    {
+      "attr_path": "claude-code",
+      "broken": false,
+      "derivation": "/nix/store/7nvvbscpr1rydjnxw4i8lggdf5lxhr8r-claude-code-2.1.212.drv",
+      "description": "Agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster",
+      "install_id": "claude-code",
+      "license": "Unfree",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=61b7c44c4073f0b827768aff0049561b5110ea5a",
+      "name": "claude-code-2.1.212",
+      "pname": "claude-code",
+      "rev": "61b7c44c4073f0b827768aff0049561b5110ea5a",
+      "rev_count": 1036777,
+      "rev_date": "2026-07-18T06:39:13Z",
+      "scrape_date": "2026-07-19T05:23:20.912816Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "2.1.212",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/bf0z5y9z1k0jx79gr1g1080xclc2230p-claude-code-2.1.212"
+      },
+      "system": "aarch64-linux",
+      "group": "claude",
+      "priority": 5
+    },
+    {
+      "attr_path": "claude-code",
+      "broken": false,
+      "derivation": "/nix/store/3jl394gyjr3s3ih94917vac72nzkms4i-claude-code-2.1.212.drv",
+      "description": "Agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster",
+      "install_id": "claude-code",
+      "license": "Unfree",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=61b7c44c4073f0b827768aff0049561b5110ea5a",
+      "name": "claude-code-2.1.212",
+      "pname": "claude-code",
+      "rev": "61b7c44c4073f0b827768aff0049561b5110ea5a",
+      "rev_count": 1036777,
+      "rev_date": "2026-07-18T06:39:13Z",
+      "scrape_date": "2026-07-19T05:57:09.084392Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "2.1.212",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/31kfyspp0q5aazsjm6plqhi4bi7a8pb2-claude-code-2.1.212"
+      },
+      "system": "x86_64-linux",
+      "group": "claude",
       "priority": 5
     },
     {
@@ -643,267 +731,6 @@
       },
       "system": "aarch64-darwin",
       "group": "container",
-      "priority": 5
-    },
-    {
-      "attr_path": "lua-language-server",
-      "broken": false,
-      "derivation": "/nix/store/kn3c3xaqkq1cax4abmja5hhbhpf3fb3b-lua-language-server-3.18.2.drv",
-      "description": "Language server that offers Lua language support",
-      "install_id": "lua-language-server",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=61b7c44c4073f0b827768aff0049561b5110ea5a",
-      "name": "lua-language-server-3.18.2",
-      "pname": "lua-language-server",
-      "rev": "61b7c44c4073f0b827768aff0049561b5110ea5a",
-      "rev_count": 1036777,
-      "rev_date": "2026-07-18T06:39:13Z",
-      "scrape_date": "2026-07-19T04:53:58.359863Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "3.18.2",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/2sfdjhxfksbizqz61vlykfr5w5mflps1-lua-language-server-3.18.2"
-      },
-      "system": "aarch64-darwin",
-      "group": "editors",
-      "priority": 5
-    },
-    {
-      "attr_path": "lua-language-server",
-      "broken": false,
-      "derivation": "/nix/store/xnwn77nv5bqb7h1q8d8xbi09xxp4b2gb-lua-language-server-3.18.2.drv",
-      "description": "Language server that offers Lua language support",
-      "install_id": "lua-language-server",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=61b7c44c4073f0b827768aff0049561b5110ea5a",
-      "name": "lua-language-server-3.18.2",
-      "pname": "lua-language-server",
-      "rev": "61b7c44c4073f0b827768aff0049561b5110ea5a",
-      "rev_count": 1036777,
-      "rev_date": "2026-07-18T06:39:13Z",
-      "scrape_date": "2026-07-19T05:23:53.599637Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "3.18.2",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/6281b1rkzbqihqhw383b7xsd4wnvj03r-lua-language-server-3.18.2"
-      },
-      "system": "aarch64-linux",
-      "group": "editors",
-      "priority": 5
-    },
-    {
-      "attr_path": "lua-language-server",
-      "broken": false,
-      "derivation": "/nix/store/nap4rh2q1h30nf8s9a4ri4y3rsmzpz74-lua-language-server-3.18.2.drv",
-      "description": "Language server that offers Lua language support",
-      "install_id": "lua-language-server",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=61b7c44c4073f0b827768aff0049561b5110ea5a",
-      "name": "lua-language-server-3.18.2",
-      "pname": "lua-language-server",
-      "rev": "61b7c44c4073f0b827768aff0049561b5110ea5a",
-      "rev_count": 1036777,
-      "rev_date": "2026-07-18T06:39:13Z",
-      "scrape_date": "2026-07-19T05:57:43.222917Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "3.18.2",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/wwwdv9p36q9ipd0fi5z7yx4rbwv91997-lua-language-server-3.18.2"
-      },
-      "system": "x86_64-linux",
-      "group": "editors",
-      "priority": 5
-    },
-    {
-      "attr_path": "neovim",
-      "broken": false,
-      "derivation": "/nix/store/989raxhg1kj079c0p11ry25qf7zjsx82-neovim-0.12.4.drv",
-      "description": "Vim text editor fork focused on extensibility and agility",
-      "install_id": "neovim",
-      "license": "[ Apache-2.0, Vim ]",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=61b7c44c4073f0b827768aff0049561b5110ea5a",
-      "name": "neovim-0.12.4",
-      "pname": "neovim",
-      "rev": "61b7c44c4073f0b827768aff0049561b5110ea5a",
-      "rev_count": 1036777,
-      "rev_date": "2026-07-18T06:39:13Z",
-      "scrape_date": "2026-07-19T04:54:02.394589Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.12.4",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/qa69nvgf2lnc9wnp4j836162z1l4q7v2-neovim-0.12.4"
-      },
-      "system": "aarch64-darwin",
-      "group": "editors",
-      "priority": 5
-    },
-    {
-      "attr_path": "neovim",
-      "broken": false,
-      "derivation": "/nix/store/sb7vf5i98p1jbyzgc9mypcl2r1gczkwn-neovim-0.12.4.drv",
-      "description": "Vim text editor fork focused on extensibility and agility",
-      "install_id": "neovim",
-      "license": "[ Apache-2.0, Vim ]",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=61b7c44c4073f0b827768aff0049561b5110ea5a",
-      "name": "neovim-0.12.4",
-      "pname": "neovim",
-      "rev": "61b7c44c4073f0b827768aff0049561b5110ea5a",
-      "rev_count": 1036777,
-      "rev_date": "2026-07-18T06:39:13Z",
-      "scrape_date": "2026-07-19T05:23:59.635586Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.12.4",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/2zsx432ccv28yy810l03j14zgcwiclf6-neovim-0.12.4"
-      },
-      "system": "aarch64-linux",
-      "group": "editors",
-      "priority": 5
-    },
-    {
-      "attr_path": "neovim",
-      "broken": false,
-      "derivation": "/nix/store/1pspfb7l936akyia9bm728w00p63y0xg-neovim-0.12.4.drv",
-      "description": "Vim text editor fork focused on extensibility and agility",
-      "install_id": "neovim",
-      "license": "[ Apache-2.0, Vim ]",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=61b7c44c4073f0b827768aff0049561b5110ea5a",
-      "name": "neovim-0.12.4",
-      "pname": "neovim",
-      "rev": "61b7c44c4073f0b827768aff0049561b5110ea5a",
-      "rev_count": 1036777,
-      "rev_date": "2026-07-18T06:39:13Z",
-      "scrape_date": "2026-07-19T05:57:49.542988Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.12.4",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/pblln96m3fwl041drh0id31dcv0i78m9-neovim-0.12.4"
-      },
-      "system": "x86_64-linux",
-      "group": "editors",
-      "priority": 5
-    },
-    {
-      "attr_path": "tree-sitter",
-      "broken": false,
-      "derivation": "/nix/store/j46np3njp7kxx0jmig5yc78naqvpfnpl-tree-sitter-0.26.9.drv",
-      "description": "Parser generator tool and an incremental parsing library",
-      "install_id": "tree-sitter",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=61b7c44c4073f0b827768aff0049561b5110ea5a",
-      "name": "tree-sitter-0.26.9",
-      "pname": "tree-sitter",
-      "rev": "61b7c44c4073f0b827768aff0049561b5110ea5a",
-      "rev_count": 1036777,
-      "rev_date": "2026-07-18T06:39:13Z",
-      "scrape_date": "2026-07-19T04:55:59.162848Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.26.9",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/sbn8bszbbvn7l80k1xliji5v7xh5cv7b-tree-sitter-0.26.9"
-      },
-      "system": "aarch64-darwin",
-      "group": "editors",
-      "priority": 5
-    },
-    {
-      "attr_path": "tree-sitter",
-      "broken": false,
-      "derivation": "/nix/store/jcc9lskjflkjfkq3hhp5nx6s4z3kazby-tree-sitter-0.26.9.drv",
-      "description": "Parser generator tool and an incremental parsing library",
-      "install_id": "tree-sitter",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=61b7c44c4073f0b827768aff0049561b5110ea5a",
-      "name": "tree-sitter-0.26.9",
-      "pname": "tree-sitter",
-      "rev": "61b7c44c4073f0b827768aff0049561b5110ea5a",
-      "rev_count": 1036777,
-      "rev_date": "2026-07-18T06:39:13Z",
-      "scrape_date": "2026-07-19T05:26:35.762530Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.26.9",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/lca6nmpdsqrly82sfvs4kfi9yhni98w0-tree-sitter-0.26.9"
-      },
-      "system": "aarch64-linux",
-      "group": "editors",
-      "priority": 5
-    },
-    {
-      "attr_path": "tree-sitter",
-      "broken": false,
-      "derivation": "/nix/store/5f3c97xh2jwhy007jfhvr0w26qh3q2z7-tree-sitter-0.26.9.drv",
-      "description": "Parser generator tool and an incremental parsing library",
-      "install_id": "tree-sitter",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=61b7c44c4073f0b827768aff0049561b5110ea5a",
-      "name": "tree-sitter-0.26.9",
-      "pname": "tree-sitter",
-      "rev": "61b7c44c4073f0b827768aff0049561b5110ea5a",
-      "rev_count": 1036777,
-      "rev_date": "2026-07-18T06:39:13Z",
-      "scrape_date": "2026-07-19T06:00:24.132868Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.26.9",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/ccl8x0hh2kg4b2k82cn7a2lc0xwkxy02-tree-sitter-0.26.9"
-      },
-      "system": "x86_64-linux",
-      "group": "editors",
       "priority": 5
     },
     {
@@ -6741,90 +6568,273 @@
       "priority": 5
     },
     {
-      "attr_path": "claude-code",
+      "attr_path": "lua-language-server",
       "broken": false,
-      "derivation": "/nix/store/frlkl06jgjirrfzh6j1r2by9slzbz6pm-claude-code-2.1.212.drv",
-      "description": "Agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster",
-      "install_id": "claude-code",
-      "license": "Unfree",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=61b7c44c4073f0b827768aff0049561b5110ea5a",
-      "name": "claude-code-2.1.212",
-      "pname": "claude-code",
-      "rev": "61b7c44c4073f0b827768aff0049561b5110ea5a",
-      "rev_count": 1036777,
-      "rev_date": "2026-07-18T06:39:13Z",
-      "scrape_date": "2026-07-19T04:53:38.069881Z",
+      "derivation": "/nix/store/kn3c3xaqkq1cax4abmja5hhbhpf3fb3b-lua-language-server-3.18.2.drv",
+      "description": "Language server that offers Lua language support",
+      "install_id": "lua-language-server",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=241313f4e8e508cb9b13278c2b0fa25b9ca27163",
+      "name": "lua-language-server-3.18.2",
+      "pname": "lua-language-server",
+      "rev": "241313f4e8e508cb9b13278c2b0fa25b9ca27163",
+      "rev_count": 1037713,
+      "rev_date": "2026-07-19T21:52:44Z",
+      "scrape_date": "2026-07-21T04:54:17.276400Z",
       "stabilities": [
+        "staging",
         "unstable"
       ],
-      "unfree": true,
-      "version": "2.1.212",
+      "unfree": false,
+      "version": "3.18.2",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/m92kp6bylhnyx3fzk2ls39rwfb8axgqd-claude-code-2.1.212"
+        "out": "/nix/store/2sfdjhxfksbizqz61vlykfr5w5mflps1-lua-language-server-3.18.2"
       },
       "system": "aarch64-darwin",
-      "group": "claude",
+      "group": "editors",
       "priority": 5
     },
     {
-      "attr_path": "claude-code",
+      "attr_path": "lua-language-server",
       "broken": false,
-      "derivation": "/nix/store/7nvvbscpr1rydjnxw4i8lggdf5lxhr8r-claude-code-2.1.212.drv",
-      "description": "Agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster",
-      "install_id": "claude-code",
-      "license": "Unfree",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=61b7c44c4073f0b827768aff0049561b5110ea5a",
-      "name": "claude-code-2.1.212",
-      "pname": "claude-code",
-      "rev": "61b7c44c4073f0b827768aff0049561b5110ea5a",
-      "rev_count": 1036777,
-      "rev_date": "2026-07-18T06:39:13Z",
-      "scrape_date": "2026-07-19T05:23:20.912816Z",
+      "derivation": "/nix/store/xnwn77nv5bqb7h1q8d8xbi09xxp4b2gb-lua-language-server-3.18.2.drv",
+      "description": "Language server that offers Lua language support",
+      "install_id": "lua-language-server",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=241313f4e8e508cb9b13278c2b0fa25b9ca27163",
+      "name": "lua-language-server-3.18.2",
+      "pname": "lua-language-server",
+      "rev": "241313f4e8e508cb9b13278c2b0fa25b9ca27163",
+      "rev_count": 1037713,
+      "rev_date": "2026-07-19T21:52:44Z",
+      "scrape_date": "2026-07-21T05:24:53.185277Z",
       "stabilities": [
+        "staging",
         "unstable"
       ],
-      "unfree": true,
-      "version": "2.1.212",
+      "unfree": false,
+      "version": "3.18.2",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/bf0z5y9z1k0jx79gr1g1080xclc2230p-claude-code-2.1.212"
+        "out": "/nix/store/6281b1rkzbqihqhw383b7xsd4wnvj03r-lua-language-server-3.18.2"
       },
       "system": "aarch64-linux",
-      "group": "claude",
+      "group": "editors",
       "priority": 5
     },
     {
-      "attr_path": "claude-code",
+      "attr_path": "lua-language-server",
       "broken": false,
-      "derivation": "/nix/store/3jl394gyjr3s3ih94917vac72nzkms4i-claude-code-2.1.212.drv",
-      "description": "Agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster",
-      "install_id": "claude-code",
-      "license": "Unfree",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=61b7c44c4073f0b827768aff0049561b5110ea5a",
-      "name": "claude-code-2.1.212",
-      "pname": "claude-code",
-      "rev": "61b7c44c4073f0b827768aff0049561b5110ea5a",
-      "rev_count": 1036777,
-      "rev_date": "2026-07-18T06:39:13Z",
-      "scrape_date": "2026-07-19T05:57:09.084392Z",
+      "derivation": "/nix/store/nap4rh2q1h30nf8s9a4ri4y3rsmzpz74-lua-language-server-3.18.2.drv",
+      "description": "Language server that offers Lua language support",
+      "install_id": "lua-language-server",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=241313f4e8e508cb9b13278c2b0fa25b9ca27163",
+      "name": "lua-language-server-3.18.2",
+      "pname": "lua-language-server",
+      "rev": "241313f4e8e508cb9b13278c2b0fa25b9ca27163",
+      "rev_count": 1037713,
+      "rev_date": "2026-07-19T21:52:44Z",
+      "scrape_date": "2026-07-21T05:59:12.413978Z",
       "stabilities": [
+        "staging",
         "unstable"
       ],
-      "unfree": true,
-      "version": "2.1.212",
+      "unfree": false,
+      "version": "3.18.2",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/31kfyspp0q5aazsjm6plqhi4bi7a8pb2-claude-code-2.1.212"
+        "out": "/nix/store/wwwdv9p36q9ipd0fi5z7yx4rbwv91997-lua-language-server-3.18.2"
       },
       "system": "x86_64-linux",
-      "group": "claude",
+      "group": "editors",
+      "priority": 5
+    },
+    {
+      "attr_path": "neovim",
+      "broken": false,
+      "derivation": "/nix/store/989raxhg1kj079c0p11ry25qf7zjsx82-neovim-0.12.4.drv",
+      "description": "Vim text editor fork focused on extensibility and agility",
+      "install_id": "neovim",
+      "license": "[ Apache-2.0, Vim ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=241313f4e8e508cb9b13278c2b0fa25b9ca27163",
+      "name": "neovim-0.12.4",
+      "pname": "neovim",
+      "rev": "241313f4e8e508cb9b13278c2b0fa25b9ca27163",
+      "rev_count": 1037713,
+      "rev_date": "2026-07-19T21:52:44Z",
+      "scrape_date": "2026-07-21T04:54:21.322593Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.12.4",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/qa69nvgf2lnc9wnp4j836162z1l4q7v2-neovim-0.12.4"
+      },
+      "system": "aarch64-darwin",
+      "group": "editors",
+      "priority": 5
+    },
+    {
+      "attr_path": "neovim",
+      "broken": false,
+      "derivation": "/nix/store/sb7vf5i98p1jbyzgc9mypcl2r1gczkwn-neovim-0.12.4.drv",
+      "description": "Vim text editor fork focused on extensibility and agility",
+      "install_id": "neovim",
+      "license": "[ Apache-2.0, Vim ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=241313f4e8e508cb9b13278c2b0fa25b9ca27163",
+      "name": "neovim-0.12.4",
+      "pname": "neovim",
+      "rev": "241313f4e8e508cb9b13278c2b0fa25b9ca27163",
+      "rev_count": 1037713,
+      "rev_date": "2026-07-19T21:52:44Z",
+      "scrape_date": "2026-07-21T05:24:59.441295Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.12.4",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/2zsx432ccv28yy810l03j14zgcwiclf6-neovim-0.12.4"
+      },
+      "system": "aarch64-linux",
+      "group": "editors",
+      "priority": 5
+    },
+    {
+      "attr_path": "neovim",
+      "broken": false,
+      "derivation": "/nix/store/1pspfb7l936akyia9bm728w00p63y0xg-neovim-0.12.4.drv",
+      "description": "Vim text editor fork focused on extensibility and agility",
+      "install_id": "neovim",
+      "license": "[ Apache-2.0, Vim ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=241313f4e8e508cb9b13278c2b0fa25b9ca27163",
+      "name": "neovim-0.12.4",
+      "pname": "neovim",
+      "rev": "241313f4e8e508cb9b13278c2b0fa25b9ca27163",
+      "rev_count": 1037713,
+      "rev_date": "2026-07-19T21:52:44Z",
+      "scrape_date": "2026-07-21T05:59:18.711918Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.12.4",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/pblln96m3fwl041drh0id31dcv0i78m9-neovim-0.12.4"
+      },
+      "system": "x86_64-linux",
+      "group": "editors",
+      "priority": 5
+    },
+    {
+      "attr_path": "tree-sitter",
+      "broken": false,
+      "derivation": "/nix/store/j46np3njp7kxx0jmig5yc78naqvpfnpl-tree-sitter-0.26.9.drv",
+      "description": "Parser generator tool and an incremental parsing library",
+      "install_id": "tree-sitter",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=241313f4e8e508cb9b13278c2b0fa25b9ca27163",
+      "name": "tree-sitter-0.26.9",
+      "pname": "tree-sitter",
+      "rev": "241313f4e8e508cb9b13278c2b0fa25b9ca27163",
+      "rev_count": 1037713,
+      "rev_date": "2026-07-19T21:52:44Z",
+      "scrape_date": "2026-07-21T04:56:21.054892Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.26.9",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/sbn8bszbbvn7l80k1xliji5v7xh5cv7b-tree-sitter-0.26.9"
+      },
+      "system": "aarch64-darwin",
+      "group": "editors",
+      "priority": 5
+    },
+    {
+      "attr_path": "tree-sitter",
+      "broken": false,
+      "derivation": "/nix/store/jcc9lskjflkjfkq3hhp5nx6s4z3kazby-tree-sitter-0.26.9.drv",
+      "description": "Parser generator tool and an incremental parsing library",
+      "install_id": "tree-sitter",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=241313f4e8e508cb9b13278c2b0fa25b9ca27163",
+      "name": "tree-sitter-0.26.9",
+      "pname": "tree-sitter",
+      "rev": "241313f4e8e508cb9b13278c2b0fa25b9ca27163",
+      "rev_count": 1037713,
+      "rev_date": "2026-07-19T21:52:44Z",
+      "scrape_date": "2026-07-21T05:27:42.778805Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.26.9",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/lca6nmpdsqrly82sfvs4kfi9yhni98w0-tree-sitter-0.26.9"
+      },
+      "system": "aarch64-linux",
+      "group": "editors",
+      "priority": 5
+    },
+    {
+      "attr_path": "tree-sitter",
+      "broken": false,
+      "derivation": "/nix/store/5f3c97xh2jwhy007jfhvr0w26qh3q2z7-tree-sitter-0.26.9.drv",
+      "description": "Parser generator tool and an incremental parsing library",
+      "install_id": "tree-sitter",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=241313f4e8e508cb9b13278c2b0fa25b9ca27163",
+      "name": "tree-sitter-0.26.9",
+      "pname": "tree-sitter",
+      "rev": "241313f4e8e508cb9b13278c2b0fa25b9ca27163",
+      "rev_count": 1037713,
+      "rev_date": "2026-07-19T21:52:44Z",
+      "scrape_date": "2026-07-21T06:01:53.480128Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.26.9",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/ccl8x0hh2kg4b2k82cn7a2lc0xwkxy02-tree-sitter-0.26.9"
+      },
+      "system": "x86_64-linux",
+      "group": "editors",
       "priority": 5
     },
     {

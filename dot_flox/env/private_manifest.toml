@@ -110,8 +110,13 @@ git-credential-manager = { pkg-path = "git-credential-manager", pkg-group = "vcs
 gitu = { pkg-path = "gitu", pkg-group = "vcs" }
 gh-dash = { pkg-path = "gh-dash", pkg-group = "vcs" }
 
-# editors — neovim + language server ABI compatibility
-neovim = { pkg-path = "neovim", pkg-group = "editors" }
+# editors — neovim + language server ABI compatibility. neovim is
+# Renovate-managed (see renovate.json); lua-language-server/tree-sitter stay
+# unpinned in the same group so they keep resolving from whatever snapshot
+# satisfies neovim's pin.
+neovim.pkg-path = "neovim"
+neovim.pkg-group = "editors"
+neovim.version = "0.12.4"
 lua-language-server = { pkg-path = "lua-language-server", pkg-group = "editors" }
 tree-sitter = { pkg-path = "tree-sitter", pkg-group = "editors" }
 

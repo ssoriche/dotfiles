@@ -35,6 +35,17 @@
       "depNameTemplate": "claude-code",
       "packageNameTemplate": "nix_unstable/claude-code",
       "datasourceTemplate": "repology"
+    },
+    {
+      "customType": "regex",
+      "description": "Bump pinned neovim version (Flox manifest pilot)",
+      "fileMatch": ["^dot_flox/env/private_manifest\\.toml$"],
+      "matchStrings": [
+        "neovim\\.version = \"(?<currentValue>[^\"]+)\""
+      ],
+      "depNameTemplate": "neovim",
+      "packageNameTemplate": "nix_unstable/neovim",
+      "datasourceTemplate": "repology"
     }
   ]
 }
