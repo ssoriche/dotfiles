@@ -22,7 +22,18 @@
         "fd\\.version = \"(?<currentValue>[^\"]+)\""
       ],
       "depNameTemplate": "fd",
-      "packageNameTemplate": "nix_unstable/fd-find",
+      "packageNameTemplate": "nix_unstable/fd",
+      "datasourceTemplate": "repology"
+    },
+    {
+      "customType": "regex",
+      "description": "Bump pinned claude-code version (Flox manifest pilot)",
+      "fileMatch": ["^dot_flox/env/private_manifest\\.toml$"],
+      "matchStrings": [
+        "claude-code\\.version = \"(?<currentValue>[^\"]+)\""
+      ],
+      "depNameTemplate": "claude-code",
+      "packageNameTemplate": "nix_unstable/claude-code",
       "datasourceTemplate": "repology"
     }
   ]
