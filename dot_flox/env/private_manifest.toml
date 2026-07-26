@@ -140,8 +140,11 @@ awscli2 = { pkg-path = "awscli2", pkg-group = "cloud" , outputs = "all" }
 # pinned — version-locked packages
 granted = { pkg-path = "granted", version = "0.36.3", pkg-group = "pinned" }
 
-# claude — fast-moving, unfree; nixpkgs currently tracks upstream ahead of the flox catalog
-claude-code = { pkg-path = "claude-code", pkg-group = "claude" }
+# claude — fast-moving, unfree; nixpkgs currently tracks upstream ahead of the flox
+# catalog. Renovate-managed (see renovate.json).
+claude-code.pkg-path = "claude-code"
+claude-code.pkg-group = "claude"
+claude-code.version = "2.1.212"
 
 # pi-coding-agent — fast-moving AI tooling
 pi-coding-agent = { pkg-path = "pi-coding-agent", pkg-group = "pi-coding-agent" }
