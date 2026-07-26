@@ -106,7 +106,7 @@
       "fd": {
         "pkg-path": "fd",
         "pkg-group": "fd",
-        "version": "10.2.0"
+        "version": "10.4.2"
       },
       "fx": {
         "pkg-path": "fx",
@@ -1011,96 +1011,6 @@
       "priority": 5
     },
     {
-      "attr_path": "fd",
-      "broken": false,
-      "derivation": "/nix/store/yh03daq7ghfp8rnjp5nbwxmmrlfw30br-fd-10.2.0.drv",
-      "description": "Simple, fast and user-friendly alternative to find",
-      "install_id": "fd",
-      "license": "[ Apache-2.0, MIT ]",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=005433b926e16227259a1843015b5b2b7f7d1fc3",
-      "name": "fd-10.2.0",
-      "pname": "fd",
-      "rev": "005433b926e16227259a1843015b5b2b7f7d1fc3",
-      "rev_count": 843472,
-      "rev_date": "2025-08-12T19:39:21Z",
-      "scrape_date": "2025-08-14T00:26:12.515709Z",
-      "stabilities": [
-        "staging",
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "10.2.0",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/40nk6ri500aip6a34x8nnhr9k0ikgl8f-fd-10.2.0"
-      },
-      "system": "aarch64-darwin",
-      "group": "fd",
-      "priority": 5
-    },
-    {
-      "attr_path": "fd",
-      "broken": false,
-      "derivation": "/nix/store/b3z2wdmzrx5kbww4slhachmkyp3h66pg-fd-10.2.0.drv",
-      "description": "Simple, fast and user-friendly alternative to find",
-      "install_id": "fd",
-      "license": "[ Apache-2.0, MIT ]",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=005433b926e16227259a1843015b5b2b7f7d1fc3",
-      "name": "fd-10.2.0",
-      "pname": "fd",
-      "rev": "005433b926e16227259a1843015b5b2b7f7d1fc3",
-      "rev_count": 843472,
-      "rev_date": "2025-08-12T19:39:21Z",
-      "scrape_date": "2025-08-14T01:59:38.850386Z",
-      "stabilities": [
-        "staging",
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "10.2.0",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/f0cm3mr35dxk6ziwcarwmk5psnzklg6k-fd-10.2.0"
-      },
-      "system": "aarch64-linux",
-      "group": "fd",
-      "priority": 5
-    },
-    {
-      "attr_path": "fd",
-      "broken": false,
-      "derivation": "/nix/store/p9fk1mz5sxbrk7cjccpzqaqzragy0nll-fd-10.2.0.drv",
-      "description": "Simple, fast and user-friendly alternative to find",
-      "install_id": "fd",
-      "license": "[ Apache-2.0, MIT ]",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=005433b926e16227259a1843015b5b2b7f7d1fc3",
-      "name": "fd-10.2.0",
-      "pname": "fd",
-      "rev": "005433b926e16227259a1843015b5b2b7f7d1fc3",
-      "rev_count": 843472,
-      "rev_date": "2025-08-12T19:39:21Z",
-      "scrape_date": "2025-08-14T03:13:25.731791Z",
-      "stabilities": [
-        "staging",
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "10.2.0",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/d8gs5vih8f1nkck5q8jrndzxzdkpsl01-fd-10.2.0"
-      },
-      "system": "x86_64-linux",
-      "group": "fd",
-      "priority": 5
-    },
-    {
       "attr_path": "go",
       "broken": false,
       "derivation": "/nix/store/bvd94hgv76ckwlzgjga880ripp4217xh-go-1.26.4.drv",
@@ -1613,6 +1523,528 @@
       },
       "system": "x86_64-linux",
       "group": "gui",
+      "priority": 5
+    },
+    {
+      "attr_path": "herdr",
+      "broken": false,
+      "derivation": "/nix/store/ca51nlcz9dkdyhpd7sc8llnx0f1ry70n-herdr-0.7.4.drv",
+      "description": "Agent multiplexer that lives in your terminal",
+      "install_id": "herdr",
+      "license": "AGPL-3.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=e2587caef70cea85dd97d7daab492899902dbf5d",
+      "name": "herdr-0.7.4",
+      "pname": "herdr",
+      "rev": "e2587caef70cea85dd97d7daab492899902dbf5d",
+      "rev_count": 1040357,
+      "rev_date": "2026-07-23T08:54:16Z",
+      "scrape_date": "2026-07-25T04:59:18.223696Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.7.4",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/x4dd79gd9bsvh06i068chydyca2jv3bv-herdr-0.7.4"
+      },
+      "system": "aarch64-darwin",
+      "group": "herdr",
+      "priority": 5
+    },
+    {
+      "attr_path": "herdr",
+      "broken": false,
+      "derivation": "/nix/store/1rskzqdhfizw8dv9g5fm6dldb7bif715-herdr-0.7.4.drv",
+      "description": "Agent multiplexer that lives in your terminal",
+      "install_id": "herdr",
+      "license": "AGPL-3.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=e2587caef70cea85dd97d7daab492899902dbf5d",
+      "name": "herdr-0.7.4",
+      "pname": "herdr",
+      "rev": "e2587caef70cea85dd97d7daab492899902dbf5d",
+      "rev_count": 1040357,
+      "rev_date": "2026-07-23T08:54:16Z",
+      "scrape_date": "2026-07-25T05:34:07.882707Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.7.4",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/zx3qkgqfd8hg01dphizyjkdpnpnmkphy-herdr-0.7.4"
+      },
+      "system": "aarch64-linux",
+      "group": "herdr",
+      "priority": 5
+    },
+    {
+      "attr_path": "herdr",
+      "broken": false,
+      "derivation": "/nix/store/q4a5k4bp8hb1l8dxc37xl4bq2q0gsfmg-herdr-0.7.4.drv",
+      "description": "Agent multiplexer that lives in your terminal",
+      "install_id": "herdr",
+      "license": "AGPL-3.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=e2587caef70cea85dd97d7daab492899902dbf5d",
+      "name": "herdr-0.7.4",
+      "pname": "herdr",
+      "rev": "e2587caef70cea85dd97d7daab492899902dbf5d",
+      "rev_count": 1040357,
+      "rev_date": "2026-07-23T08:54:16Z",
+      "scrape_date": "2026-07-25T06:17:57.606427Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.7.4",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/dzw3f6gkg66zz1vmvnng1wkfwlhd1lhf-herdr-0.7.4"
+      },
+      "system": "x86_64-linux",
+      "group": "herdr",
+      "priority": 5
+    },
+    {
+      "attr_path": "k9s",
+      "broken": false,
+      "derivation": "/nix/store/0f14vq0farvp6nijbhxakhp6r5mpxc7p-k9s-0.51.0.drv",
+      "description": "Kubernetes CLI To Manage Your Clusters In Style",
+      "install_id": "k9s",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=61b7c44c4073f0b827768aff0049561b5110ea5a",
+      "name": "k9s-0.51.0",
+      "pname": "k9s",
+      "rev": "61b7c44c4073f0b827768aff0049561b5110ea5a",
+      "rev_count": 1036777,
+      "rev_date": "2026-07-18T06:39:13Z",
+      "scrape_date": "2026-07-19T04:53:55.356908Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.51.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/hz94y15b4qigvhs7kx16j7cgpkzh86kd-k9s-0.51.0"
+      },
+      "system": "aarch64-darwin",
+      "group": "kubernetes",
+      "priority": 5
+    },
+    {
+      "attr_path": "k9s",
+      "broken": false,
+      "derivation": "/nix/store/r43yd03wa5xpk6z8jz2ihsiqvikvnry5-k9s-0.51.0.drv",
+      "description": "Kubernetes CLI To Manage Your Clusters In Style",
+      "install_id": "k9s",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=61b7c44c4073f0b827768aff0049561b5110ea5a",
+      "name": "k9s-0.51.0",
+      "pname": "k9s",
+      "rev": "61b7c44c4073f0b827768aff0049561b5110ea5a",
+      "rev_count": 1036777,
+      "rev_date": "2026-07-18T06:39:13Z",
+      "scrape_date": "2026-07-19T05:23:44.407365Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.51.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/jfm55kc9i10zk3rv18vfz4idvkmg3f5a-k9s-0.51.0"
+      },
+      "system": "aarch64-linux",
+      "group": "kubernetes",
+      "priority": 5
+    },
+    {
+      "attr_path": "k9s",
+      "broken": false,
+      "derivation": "/nix/store/nq9cqix2jr7w418fb57f0nn6yfcrh1z6-k9s-0.51.0.drv",
+      "description": "Kubernetes CLI To Manage Your Clusters In Style",
+      "install_id": "k9s",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=61b7c44c4073f0b827768aff0049561b5110ea5a",
+      "name": "k9s-0.51.0",
+      "pname": "k9s",
+      "rev": "61b7c44c4073f0b827768aff0049561b5110ea5a",
+      "rev_count": 1036777,
+      "rev_date": "2026-07-18T06:39:13Z",
+      "scrape_date": "2026-07-19T05:57:33.095267Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.51.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/chwjm4wxzq56q0c1i7zmk0x7czbx7954-k9s-0.51.0"
+      },
+      "system": "x86_64-linux",
+      "group": "kubernetes",
+      "priority": 5
+    },
+    {
+      "attr_path": "kns",
+      "broken": false,
+      "derivation": "/nix/store/frizwpzyym1v64kz2mdbrir1z1qsrcis-kns-0-unstable-2023-04-25.drv",
+      "description": "Kubernetes namespace switcher",
+      "install_id": "kns",
+      "license": "ISC",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=61b7c44c4073f0b827768aff0049561b5110ea5a",
+      "name": "kns-0-unstable-2023-04-25",
+      "pname": "kns",
+      "rev": "61b7c44c4073f0b827768aff0049561b5110ea5a",
+      "rev_count": 1036777,
+      "rev_date": "2026-07-18T06:39:13Z",
+      "scrape_date": "2026-07-19T04:53:55.755164Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2023-04-25",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/qfrp362zacy7nyc4ilfrpd0d1bb8aqps-kns-0-unstable-2023-04-25"
+      },
+      "system": "aarch64-darwin",
+      "group": "kubernetes",
+      "priority": 5
+    },
+    {
+      "attr_path": "kns",
+      "broken": false,
+      "derivation": "/nix/store/jm26mrygzq3619jx39hwhm4dp4wqvfv9-kns-0-unstable-2023-04-25.drv",
+      "description": "Kubernetes namespace switcher",
+      "install_id": "kns",
+      "license": "ISC",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=61b7c44c4073f0b827768aff0049561b5110ea5a",
+      "name": "kns-0-unstable-2023-04-25",
+      "pname": "kns",
+      "rev": "61b7c44c4073f0b827768aff0049561b5110ea5a",
+      "rev_count": 1036777,
+      "rev_date": "2026-07-18T06:39:13Z",
+      "scrape_date": "2026-07-19T05:23:45.756361Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2023-04-25",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/6z1cz8b9baklyljzlagr2lrfvpxirpc0-kns-0-unstable-2023-04-25"
+      },
+      "system": "aarch64-linux",
+      "group": "kubernetes",
+      "priority": 5
+    },
+    {
+      "attr_path": "kns",
+      "broken": false,
+      "derivation": "/nix/store/gwl5j4v192fxk77cd3daawnz07cg7ipd-kns-0-unstable-2023-04-25.drv",
+      "description": "Kubernetes namespace switcher",
+      "install_id": "kns",
+      "license": "ISC",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=61b7c44c4073f0b827768aff0049561b5110ea5a",
+      "name": "kns-0-unstable-2023-04-25",
+      "pname": "kns",
+      "rev": "61b7c44c4073f0b827768aff0049561b5110ea5a",
+      "rev_count": 1036777,
+      "rev_date": "2026-07-18T06:39:13Z",
+      "scrape_date": "2026-07-19T05:57:34.393667Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2023-04-25",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/vvr7w1sqrmpnhkk6sxn13bl58mjcx58h-kns-0-unstable-2023-04-25"
+      },
+      "system": "x86_64-linux",
+      "group": "kubernetes",
+      "priority": 5
+    },
+    {
+      "attr_path": "krew",
+      "broken": false,
+      "derivation": "/nix/store/77di4hyr41a43liqx9gi0i6gyvi46jk7-krew-0.5.0.drv",
+      "description": "Package manager for kubectl plugins",
+      "install_id": "krew",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=61b7c44c4073f0b827768aff0049561b5110ea5a",
+      "name": "krew-0.5.0",
+      "pname": "krew",
+      "rev": "61b7c44c4073f0b827768aff0049561b5110ea5a",
+      "rev_count": 1036777,
+      "rev_date": "2026-07-18T06:39:13Z",
+      "scrape_date": "2026-07-19T04:53:55.902409Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.5.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/nwmhylkqcqy4p091m803way6q9awd49d-krew-0.5.0"
+      },
+      "system": "aarch64-darwin",
+      "group": "kubernetes",
+      "priority": 5
+    },
+    {
+      "attr_path": "krew",
+      "broken": false,
+      "derivation": "/nix/store/bbk04aiq9b8fv377wj017qp1pbh898ph-krew-0.5.0.drv",
+      "description": "Package manager for kubectl plugins",
+      "install_id": "krew",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=61b7c44c4073f0b827768aff0049561b5110ea5a",
+      "name": "krew-0.5.0",
+      "pname": "krew",
+      "rev": "61b7c44c4073f0b827768aff0049561b5110ea5a",
+      "rev_count": 1036777,
+      "rev_date": "2026-07-18T06:39:13Z",
+      "scrape_date": "2026-07-19T05:23:46.061225Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.5.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/6qb0zfkxq3mcyzycsf8r5axg9i5nym7f-krew-0.5.0"
+      },
+      "system": "aarch64-linux",
+      "group": "kubernetes",
+      "priority": 5
+    },
+    {
+      "attr_path": "krew",
+      "broken": false,
+      "derivation": "/nix/store/nxm4q5nx9pr2iybbwyg3n5j4i3cw32hm-krew-0.5.0.drv",
+      "description": "Package manager for kubectl plugins",
+      "install_id": "krew",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=61b7c44c4073f0b827768aff0049561b5110ea5a",
+      "name": "krew-0.5.0",
+      "pname": "krew",
+      "rev": "61b7c44c4073f0b827768aff0049561b5110ea5a",
+      "rev_count": 1036777,
+      "rev_date": "2026-07-18T06:39:13Z",
+      "scrape_date": "2026-07-19T05:57:34.677252Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.5.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/b2pk5j8ccdlp5lzncycvjhjfp4ydgw6s-krew-0.5.0"
+      },
+      "system": "x86_64-linux",
+      "group": "kubernetes",
+      "priority": 5
+    },
+    {
+      "attr_path": "kubie",
+      "broken": false,
+      "derivation": "/nix/store/fc0alxqv2wk4p01mgqdjnhx97xnmqg93-kubie-0.26.1.drv",
+      "description": "Shell independent context and namespace switcher for kubectl",
+      "install_id": "kubie",
+      "license": "[ Zlib ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=61b7c44c4073f0b827768aff0049561b5110ea5a",
+      "name": "kubie-0.26.1",
+      "pname": "kubie",
+      "rev": "61b7c44c4073f0b827768aff0049561b5110ea5a",
+      "rev_count": 1036777,
+      "rev_date": "2026-07-18T06:39:13Z",
+      "scrape_date": "2026-07-19T04:53:56.039793Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.26.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/gsn56qwkqlyy2q7il7rl5dl30g046r71-kubie-0.26.1"
+      },
+      "system": "aarch64-darwin",
+      "group": "kubernetes",
+      "priority": 5
+    },
+    {
+      "attr_path": "kubie",
+      "broken": false,
+      "derivation": "/nix/store/ikpglg4jzzq8k49arfdx8m0xzgifmfp1-kubie-0.26.1.drv",
+      "description": "Shell independent context and namespace switcher for kubectl",
+      "install_id": "kubie",
+      "license": "[ Zlib ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=61b7c44c4073f0b827768aff0049561b5110ea5a",
+      "name": "kubie-0.26.1",
+      "pname": "kubie",
+      "rev": "61b7c44c4073f0b827768aff0049561b5110ea5a",
+      "rev_count": 1036777,
+      "rev_date": "2026-07-18T06:39:13Z",
+      "scrape_date": "2026-07-19T05:23:46.272400Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.26.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/0izamqh6y9rnj2wx85054mvlnzf9av4j-kubie-0.26.1"
+      },
+      "system": "aarch64-linux",
+      "group": "kubernetes",
+      "priority": 5
+    },
+    {
+      "attr_path": "kubie",
+      "broken": false,
+      "derivation": "/nix/store/jn50n2b9cwg9gn3lbxcfkni48v1i0dzv-kubie-0.26.1.drv",
+      "description": "Shell independent context and namespace switcher for kubectl",
+      "install_id": "kubie",
+      "license": "[ Zlib ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=61b7c44c4073f0b827768aff0049561b5110ea5a",
+      "name": "kubie-0.26.1",
+      "pname": "kubie",
+      "rev": "61b7c44c4073f0b827768aff0049561b5110ea5a",
+      "rev_count": 1036777,
+      "rev_date": "2026-07-18T06:39:13Z",
+      "scrape_date": "2026-07-19T05:57:34.871618Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.26.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/43y1mg0qxx0m648d2qvcln8zh1k39zal-kubie-0.26.1"
+      },
+      "system": "x86_64-linux",
+      "group": "kubernetes",
+      "priority": 5
+    },
+    {
+      "attr_path": "kustomize",
+      "broken": false,
+      "derivation": "/nix/store/h6cxrysiffvmz9v3bwglyc5nxczz3nzd-kustomize-5.8.1.drv",
+      "description": "Customization of kubernetes YAML configurations",
+      "install_id": "kustomize",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=61b7c44c4073f0b827768aff0049561b5110ea5a",
+      "name": "kustomize-5.8.1",
+      "pname": "kustomize",
+      "rev": "61b7c44c4073f0b827768aff0049561b5110ea5a",
+      "rev_count": 1036777,
+      "rev_date": "2026-07-18T06:39:13Z",
+      "scrape_date": "2026-07-19T04:53:56.055885Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "5.8.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/9z4d6rs46w252b83x3b170a0g00qgx9y-kustomize-5.8.1"
+      },
+      "system": "aarch64-darwin",
+      "group": "kubernetes",
+      "priority": 5
+    },
+    {
+      "attr_path": "kustomize",
+      "broken": false,
+      "derivation": "/nix/store/id9z7dnfx3ldm3967jc7ivw2qh9h4lnx-kustomize-5.8.1.drv",
+      "description": "Customization of kubernetes YAML configurations",
+      "install_id": "kustomize",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=61b7c44c4073f0b827768aff0049561b5110ea5a",
+      "name": "kustomize-5.8.1",
+      "pname": "kustomize",
+      "rev": "61b7c44c4073f0b827768aff0049561b5110ea5a",
+      "rev_count": 1036777,
+      "rev_date": "2026-07-18T06:39:13Z",
+      "scrape_date": "2026-07-19T05:23:46.295154Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "5.8.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/zirx3xn7cr1am1xkpbj3pj1zcafywzyf-kustomize-5.8.1"
+      },
+      "system": "aarch64-linux",
+      "group": "kubernetes",
+      "priority": 5
+    },
+    {
+      "attr_path": "kustomize",
+      "broken": false,
+      "derivation": "/nix/store/rc3018ya8rcgjfdsr921x5vp7kfny7mf-kustomize-5.8.1.drv",
+      "description": "Customization of kubernetes YAML configurations",
+      "install_id": "kustomize",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=61b7c44c4073f0b827768aff0049561b5110ea5a",
+      "name": "kustomize-5.8.1",
+      "pname": "kustomize",
+      "rev": "61b7c44c4073f0b827768aff0049561b5110ea5a",
+      "rev_count": 1036777,
+      "rev_date": "2026-07-18T06:39:13Z",
+      "scrape_date": "2026-07-19T05:57:34.893276Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "5.8.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/58plmzknjfgbcysydrrvv4y59krx1j2y-kustomize-5.8.1"
+      },
+      "system": "x86_64-linux",
+      "group": "kubernetes",
       "priority": 5
     },
     {
@@ -2405,6 +2837,93 @@
       },
       "system": "x86_64-linux",
       "group": "pinned",
+      "priority": 5
+    },
+    {
+      "attr_path": "uv",
+      "broken": false,
+      "derivation": "/nix/store/9ik3ydcapzdsv9242ps6gcx8pszb61fs-uv-0.11.28.drv",
+      "description": "Extremely fast Python package installer and resolver, written in Rust",
+      "install_id": "uv",
+      "license": "[ Apache-2.0, MIT ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=e2587caef70cea85dd97d7daab492899902dbf5d",
+      "name": "uv-0.11.28",
+      "pname": "uv",
+      "rev": "e2587caef70cea85dd97d7daab492899902dbf5d",
+      "rev_count": 1040357,
+      "rev_date": "2026-07-23T08:54:16Z",
+      "scrape_date": "2026-07-25T05:01:53.009063Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.11.28",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/yn36m1y6l2kmhx1dkqsmy3kf6acx77mz-uv-0.11.28"
+      },
+      "system": "aarch64-darwin",
+      "group": "python",
+      "priority": 5
+    },
+    {
+      "attr_path": "uv",
+      "broken": false,
+      "derivation": "/nix/store/s6kl4ib60nig4lc1fg1cfys7pzcgyb97-uv-0.11.28.drv",
+      "description": "Extremely fast Python package installer and resolver, written in Rust",
+      "install_id": "uv",
+      "license": "[ Apache-2.0, MIT ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=e2587caef70cea85dd97d7daab492899902dbf5d",
+      "name": "uv-0.11.28",
+      "pname": "uv",
+      "rev": "e2587caef70cea85dd97d7daab492899902dbf5d",
+      "rev_count": 1040357,
+      "rev_date": "2026-07-23T08:54:16Z",
+      "scrape_date": "2026-07-25T05:37:27.870558Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.11.28",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/lj1akylx79l52f6yp3j2a55gf7s7vhx1-uv-0.11.28"
+      },
+      "system": "aarch64-linux",
+      "group": "python",
+      "priority": 5
+    },
+    {
+      "attr_path": "uv",
+      "broken": false,
+      "derivation": "/nix/store/746v5xlv9cjbcmkmsr56rz6f1hvf3vqc-uv-0.11.28.drv",
+      "description": "Extremely fast Python package installer and resolver, written in Rust",
+      "install_id": "uv",
+      "license": "[ Apache-2.0, MIT ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=e2587caef70cea85dd97d7daab492899902dbf5d",
+      "name": "uv-0.11.28",
+      "pname": "uv",
+      "rev": "e2587caef70cea85dd97d7daab492899902dbf5d",
+      "rev_count": 1040357,
+      "rev_date": "2026-07-23T08:54:16Z",
+      "scrape_date": "2026-07-25T06:21:23.398571Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.11.28",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/zrq88ys031mx35ib1lb3xahcm4dsq71r-uv-0.11.28"
+      },
+      "system": "x86_64-linux",
+      "group": "python",
       "priority": 5
     },
     {
@@ -6323,612 +6842,90 @@
       "priority": 5
     },
     {
-      "attr_path": "herdr",
+      "attr_path": "fd",
       "broken": false,
-      "derivation": "/nix/store/ca51nlcz9dkdyhpd7sc8llnx0f1ry70n-herdr-0.7.4.drv",
-      "description": "Agent multiplexer that lives in your terminal",
-      "install_id": "herdr",
-      "license": "AGPL-3.0-or-later",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=e2587caef70cea85dd97d7daab492899902dbf5d",
-      "name": "herdr-0.7.4",
-      "pname": "herdr",
-      "rev": "e2587caef70cea85dd97d7daab492899902dbf5d",
-      "rev_count": 1040357,
-      "rev_date": "2026-07-23T08:54:16Z",
-      "scrape_date": "2026-07-25T04:59:18.223696Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.7.4",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/x4dd79gd9bsvh06i068chydyca2jv3bv-herdr-0.7.4"
-      },
-      "system": "aarch64-darwin",
-      "group": "herdr",
-      "priority": 5
-    },
-    {
-      "attr_path": "herdr",
-      "broken": false,
-      "derivation": "/nix/store/1rskzqdhfizw8dv9g5fm6dldb7bif715-herdr-0.7.4.drv",
-      "description": "Agent multiplexer that lives in your terminal",
-      "install_id": "herdr",
-      "license": "AGPL-3.0-or-later",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=e2587caef70cea85dd97d7daab492899902dbf5d",
-      "name": "herdr-0.7.4",
-      "pname": "herdr",
-      "rev": "e2587caef70cea85dd97d7daab492899902dbf5d",
-      "rev_count": 1040357,
-      "rev_date": "2026-07-23T08:54:16Z",
-      "scrape_date": "2026-07-25T05:34:07.882707Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.7.4",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/zx3qkgqfd8hg01dphizyjkdpnpnmkphy-herdr-0.7.4"
-      },
-      "system": "aarch64-linux",
-      "group": "herdr",
-      "priority": 5
-    },
-    {
-      "attr_path": "herdr",
-      "broken": false,
-      "derivation": "/nix/store/q4a5k4bp8hb1l8dxc37xl4bq2q0gsfmg-herdr-0.7.4.drv",
-      "description": "Agent multiplexer that lives in your terminal",
-      "install_id": "herdr",
-      "license": "AGPL-3.0-or-later",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=e2587caef70cea85dd97d7daab492899902dbf5d",
-      "name": "herdr-0.7.4",
-      "pname": "herdr",
-      "rev": "e2587caef70cea85dd97d7daab492899902dbf5d",
-      "rev_count": 1040357,
-      "rev_date": "2026-07-23T08:54:16Z",
-      "scrape_date": "2026-07-25T06:17:57.606427Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.7.4",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/dzw3f6gkg66zz1vmvnng1wkfwlhd1lhf-herdr-0.7.4"
-      },
-      "system": "x86_64-linux",
-      "group": "herdr",
-      "priority": 5
-    },
-    {
-      "attr_path": "k9s",
-      "broken": false,
-      "derivation": "/nix/store/0f14vq0farvp6nijbhxakhp6r5mpxc7p-k9s-0.51.0.drv",
-      "description": "Kubernetes CLI To Manage Your Clusters In Style",
-      "install_id": "k9s",
-      "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=61b7c44c4073f0b827768aff0049561b5110ea5a",
-      "name": "k9s-0.51.0",
-      "pname": "k9s",
-      "rev": "61b7c44c4073f0b827768aff0049561b5110ea5a",
-      "rev_count": 1036777,
-      "rev_date": "2026-07-18T06:39:13Z",
-      "scrape_date": "2026-07-19T04:53:55.356908Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.51.0",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/hz94y15b4qigvhs7kx16j7cgpkzh86kd-k9s-0.51.0"
-      },
-      "system": "aarch64-darwin",
-      "group": "kubernetes",
-      "priority": 5
-    },
-    {
-      "attr_path": "k9s",
-      "broken": false,
-      "derivation": "/nix/store/r43yd03wa5xpk6z8jz2ihsiqvikvnry5-k9s-0.51.0.drv",
-      "description": "Kubernetes CLI To Manage Your Clusters In Style",
-      "install_id": "k9s",
-      "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=61b7c44c4073f0b827768aff0049561b5110ea5a",
-      "name": "k9s-0.51.0",
-      "pname": "k9s",
-      "rev": "61b7c44c4073f0b827768aff0049561b5110ea5a",
-      "rev_count": 1036777,
-      "rev_date": "2026-07-18T06:39:13Z",
-      "scrape_date": "2026-07-19T05:23:44.407365Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.51.0",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/jfm55kc9i10zk3rv18vfz4idvkmg3f5a-k9s-0.51.0"
-      },
-      "system": "aarch64-linux",
-      "group": "kubernetes",
-      "priority": 5
-    },
-    {
-      "attr_path": "k9s",
-      "broken": false,
-      "derivation": "/nix/store/nq9cqix2jr7w418fb57f0nn6yfcrh1z6-k9s-0.51.0.drv",
-      "description": "Kubernetes CLI To Manage Your Clusters In Style",
-      "install_id": "k9s",
-      "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=61b7c44c4073f0b827768aff0049561b5110ea5a",
-      "name": "k9s-0.51.0",
-      "pname": "k9s",
-      "rev": "61b7c44c4073f0b827768aff0049561b5110ea5a",
-      "rev_count": 1036777,
-      "rev_date": "2026-07-18T06:39:13Z",
-      "scrape_date": "2026-07-19T05:57:33.095267Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.51.0",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/chwjm4wxzq56q0c1i7zmk0x7czbx7954-k9s-0.51.0"
-      },
-      "system": "x86_64-linux",
-      "group": "kubernetes",
-      "priority": 5
-    },
-    {
-      "attr_path": "kns",
-      "broken": false,
-      "derivation": "/nix/store/frizwpzyym1v64kz2mdbrir1z1qsrcis-kns-0-unstable-2023-04-25.drv",
-      "description": "Kubernetes namespace switcher",
-      "install_id": "kns",
-      "license": "ISC",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=61b7c44c4073f0b827768aff0049561b5110ea5a",
-      "name": "kns-0-unstable-2023-04-25",
-      "pname": "kns",
-      "rev": "61b7c44c4073f0b827768aff0049561b5110ea5a",
-      "rev_count": 1036777,
-      "rev_date": "2026-07-18T06:39:13Z",
-      "scrape_date": "2026-07-19T04:53:55.755164Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "2023-04-25",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/qfrp362zacy7nyc4ilfrpd0d1bb8aqps-kns-0-unstable-2023-04-25"
-      },
-      "system": "aarch64-darwin",
-      "group": "kubernetes",
-      "priority": 5
-    },
-    {
-      "attr_path": "kns",
-      "broken": false,
-      "derivation": "/nix/store/jm26mrygzq3619jx39hwhm4dp4wqvfv9-kns-0-unstable-2023-04-25.drv",
-      "description": "Kubernetes namespace switcher",
-      "install_id": "kns",
-      "license": "ISC",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=61b7c44c4073f0b827768aff0049561b5110ea5a",
-      "name": "kns-0-unstable-2023-04-25",
-      "pname": "kns",
-      "rev": "61b7c44c4073f0b827768aff0049561b5110ea5a",
-      "rev_count": 1036777,
-      "rev_date": "2026-07-18T06:39:13Z",
-      "scrape_date": "2026-07-19T05:23:45.756361Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "2023-04-25",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/6z1cz8b9baklyljzlagr2lrfvpxirpc0-kns-0-unstable-2023-04-25"
-      },
-      "system": "aarch64-linux",
-      "group": "kubernetes",
-      "priority": 5
-    },
-    {
-      "attr_path": "kns",
-      "broken": false,
-      "derivation": "/nix/store/gwl5j4v192fxk77cd3daawnz07cg7ipd-kns-0-unstable-2023-04-25.drv",
-      "description": "Kubernetes namespace switcher",
-      "install_id": "kns",
-      "license": "ISC",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=61b7c44c4073f0b827768aff0049561b5110ea5a",
-      "name": "kns-0-unstable-2023-04-25",
-      "pname": "kns",
-      "rev": "61b7c44c4073f0b827768aff0049561b5110ea5a",
-      "rev_count": 1036777,
-      "rev_date": "2026-07-18T06:39:13Z",
-      "scrape_date": "2026-07-19T05:57:34.393667Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "2023-04-25",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/vvr7w1sqrmpnhkk6sxn13bl58mjcx58h-kns-0-unstable-2023-04-25"
-      },
-      "system": "x86_64-linux",
-      "group": "kubernetes",
-      "priority": 5
-    },
-    {
-      "attr_path": "krew",
-      "broken": false,
-      "derivation": "/nix/store/77di4hyr41a43liqx9gi0i6gyvi46jk7-krew-0.5.0.drv",
-      "description": "Package manager for kubectl plugins",
-      "install_id": "krew",
-      "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=61b7c44c4073f0b827768aff0049561b5110ea5a",
-      "name": "krew-0.5.0",
-      "pname": "krew",
-      "rev": "61b7c44c4073f0b827768aff0049561b5110ea5a",
-      "rev_count": 1036777,
-      "rev_date": "2026-07-18T06:39:13Z",
-      "scrape_date": "2026-07-19T04:53:55.902409Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.5.0",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/nwmhylkqcqy4p091m803way6q9awd49d-krew-0.5.0"
-      },
-      "system": "aarch64-darwin",
-      "group": "kubernetes",
-      "priority": 5
-    },
-    {
-      "attr_path": "krew",
-      "broken": false,
-      "derivation": "/nix/store/bbk04aiq9b8fv377wj017qp1pbh898ph-krew-0.5.0.drv",
-      "description": "Package manager for kubectl plugins",
-      "install_id": "krew",
-      "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=61b7c44c4073f0b827768aff0049561b5110ea5a",
-      "name": "krew-0.5.0",
-      "pname": "krew",
-      "rev": "61b7c44c4073f0b827768aff0049561b5110ea5a",
-      "rev_count": 1036777,
-      "rev_date": "2026-07-18T06:39:13Z",
-      "scrape_date": "2026-07-19T05:23:46.061225Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.5.0",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/6qb0zfkxq3mcyzycsf8r5axg9i5nym7f-krew-0.5.0"
-      },
-      "system": "aarch64-linux",
-      "group": "kubernetes",
-      "priority": 5
-    },
-    {
-      "attr_path": "krew",
-      "broken": false,
-      "derivation": "/nix/store/nxm4q5nx9pr2iybbwyg3n5j4i3cw32hm-krew-0.5.0.drv",
-      "description": "Package manager for kubectl plugins",
-      "install_id": "krew",
-      "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=61b7c44c4073f0b827768aff0049561b5110ea5a",
-      "name": "krew-0.5.0",
-      "pname": "krew",
-      "rev": "61b7c44c4073f0b827768aff0049561b5110ea5a",
-      "rev_count": 1036777,
-      "rev_date": "2026-07-18T06:39:13Z",
-      "scrape_date": "2026-07-19T05:57:34.677252Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.5.0",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/b2pk5j8ccdlp5lzncycvjhjfp4ydgw6s-krew-0.5.0"
-      },
-      "system": "x86_64-linux",
-      "group": "kubernetes",
-      "priority": 5
-    },
-    {
-      "attr_path": "kubie",
-      "broken": false,
-      "derivation": "/nix/store/fc0alxqv2wk4p01mgqdjnhx97xnmqg93-kubie-0.26.1.drv",
-      "description": "Shell independent context and namespace switcher for kubectl",
-      "install_id": "kubie",
-      "license": "[ Zlib ]",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=61b7c44c4073f0b827768aff0049561b5110ea5a",
-      "name": "kubie-0.26.1",
-      "pname": "kubie",
-      "rev": "61b7c44c4073f0b827768aff0049561b5110ea5a",
-      "rev_count": 1036777,
-      "rev_date": "2026-07-18T06:39:13Z",
-      "scrape_date": "2026-07-19T04:53:56.039793Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.26.1",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/gsn56qwkqlyy2q7il7rl5dl30g046r71-kubie-0.26.1"
-      },
-      "system": "aarch64-darwin",
-      "group": "kubernetes",
-      "priority": 5
-    },
-    {
-      "attr_path": "kubie",
-      "broken": false,
-      "derivation": "/nix/store/ikpglg4jzzq8k49arfdx8m0xzgifmfp1-kubie-0.26.1.drv",
-      "description": "Shell independent context and namespace switcher for kubectl",
-      "install_id": "kubie",
-      "license": "[ Zlib ]",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=61b7c44c4073f0b827768aff0049561b5110ea5a",
-      "name": "kubie-0.26.1",
-      "pname": "kubie",
-      "rev": "61b7c44c4073f0b827768aff0049561b5110ea5a",
-      "rev_count": 1036777,
-      "rev_date": "2026-07-18T06:39:13Z",
-      "scrape_date": "2026-07-19T05:23:46.272400Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.26.1",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/0izamqh6y9rnj2wx85054mvlnzf9av4j-kubie-0.26.1"
-      },
-      "system": "aarch64-linux",
-      "group": "kubernetes",
-      "priority": 5
-    },
-    {
-      "attr_path": "kubie",
-      "broken": false,
-      "derivation": "/nix/store/jn50n2b9cwg9gn3lbxcfkni48v1i0dzv-kubie-0.26.1.drv",
-      "description": "Shell independent context and namespace switcher for kubectl",
-      "install_id": "kubie",
-      "license": "[ Zlib ]",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=61b7c44c4073f0b827768aff0049561b5110ea5a",
-      "name": "kubie-0.26.1",
-      "pname": "kubie",
-      "rev": "61b7c44c4073f0b827768aff0049561b5110ea5a",
-      "rev_count": 1036777,
-      "rev_date": "2026-07-18T06:39:13Z",
-      "scrape_date": "2026-07-19T05:57:34.871618Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.26.1",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/43y1mg0qxx0m648d2qvcln8zh1k39zal-kubie-0.26.1"
-      },
-      "system": "x86_64-linux",
-      "group": "kubernetes",
-      "priority": 5
-    },
-    {
-      "attr_path": "kustomize",
-      "broken": false,
-      "derivation": "/nix/store/h6cxrysiffvmz9v3bwglyc5nxczz3nzd-kustomize-5.8.1.drv",
-      "description": "Customization of kubernetes YAML configurations",
-      "install_id": "kustomize",
-      "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=61b7c44c4073f0b827768aff0049561b5110ea5a",
-      "name": "kustomize-5.8.1",
-      "pname": "kustomize",
-      "rev": "61b7c44c4073f0b827768aff0049561b5110ea5a",
-      "rev_count": 1036777,
-      "rev_date": "2026-07-18T06:39:13Z",
-      "scrape_date": "2026-07-19T04:53:56.055885Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "5.8.1",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/9z4d6rs46w252b83x3b170a0g00qgx9y-kustomize-5.8.1"
-      },
-      "system": "aarch64-darwin",
-      "group": "kubernetes",
-      "priority": 5
-    },
-    {
-      "attr_path": "kustomize",
-      "broken": false,
-      "derivation": "/nix/store/id9z7dnfx3ldm3967jc7ivw2qh9h4lnx-kustomize-5.8.1.drv",
-      "description": "Customization of kubernetes YAML configurations",
-      "install_id": "kustomize",
-      "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=61b7c44c4073f0b827768aff0049561b5110ea5a",
-      "name": "kustomize-5.8.1",
-      "pname": "kustomize",
-      "rev": "61b7c44c4073f0b827768aff0049561b5110ea5a",
-      "rev_count": 1036777,
-      "rev_date": "2026-07-18T06:39:13Z",
-      "scrape_date": "2026-07-19T05:23:46.295154Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "5.8.1",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/zirx3xn7cr1am1xkpbj3pj1zcafywzyf-kustomize-5.8.1"
-      },
-      "system": "aarch64-linux",
-      "group": "kubernetes",
-      "priority": 5
-    },
-    {
-      "attr_path": "kustomize",
-      "broken": false,
-      "derivation": "/nix/store/rc3018ya8rcgjfdsr921x5vp7kfny7mf-kustomize-5.8.1.drv",
-      "description": "Customization of kubernetes YAML configurations",
-      "install_id": "kustomize",
-      "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=61b7c44c4073f0b827768aff0049561b5110ea5a",
-      "name": "kustomize-5.8.1",
-      "pname": "kustomize",
-      "rev": "61b7c44c4073f0b827768aff0049561b5110ea5a",
-      "rev_count": 1036777,
-      "rev_date": "2026-07-18T06:39:13Z",
-      "scrape_date": "2026-07-19T05:57:34.893276Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "5.8.1",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/58plmzknjfgbcysydrrvv4y59krx1j2y-kustomize-5.8.1"
-      },
-      "system": "x86_64-linux",
-      "group": "kubernetes",
-      "priority": 5
-    },
-    {
-      "attr_path": "uv",
-      "broken": false,
-      "derivation": "/nix/store/9ik3ydcapzdsv9242ps6gcx8pszb61fs-uv-0.11.28.drv",
-      "description": "Extremely fast Python package installer and resolver, written in Rust",
-      "install_id": "uv",
+      "derivation": "/nix/store/jg67b8bch3b7n88k8b723z8gdvngi31n-fd-10.4.2.drv",
+      "description": "Simple, fast and user-friendly alternative to find",
+      "install_id": "fd",
       "license": "[ Apache-2.0, MIT ]",
       "locked_url": "https://github.com/flox/nixpkgs?rev=e2587caef70cea85dd97d7daab492899902dbf5d",
-      "name": "uv-0.11.28",
-      "pname": "uv",
+      "name": "fd-10.4.2",
+      "pname": "fd",
       "rev": "e2587caef70cea85dd97d7daab492899902dbf5d",
       "rev_count": 1040357,
       "rev_date": "2026-07-23T08:54:16Z",
-      "scrape_date": "2026-07-25T05:01:53.009063Z",
+      "scrape_date": "2026-07-25T04:59:02.795927Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "0.11.28",
+      "version": "10.4.2",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/yn36m1y6l2kmhx1dkqsmy3kf6acx77mz-uv-0.11.28"
+        "out": "/nix/store/8ynrwafbw0vkqai0v95r8f4g4jjm4x0i-fd-10.4.2"
       },
       "system": "aarch64-darwin",
-      "group": "python",
+      "group": "fd",
       "priority": 5
     },
     {
-      "attr_path": "uv",
+      "attr_path": "fd",
       "broken": false,
-      "derivation": "/nix/store/s6kl4ib60nig4lc1fg1cfys7pzcgyb97-uv-0.11.28.drv",
-      "description": "Extremely fast Python package installer and resolver, written in Rust",
-      "install_id": "uv",
+      "derivation": "/nix/store/im57ya2max9ac2gbbsdg960alhvm60s0-fd-10.4.2.drv",
+      "description": "Simple, fast and user-friendly alternative to find",
+      "install_id": "fd",
       "license": "[ Apache-2.0, MIT ]",
       "locked_url": "https://github.com/flox/nixpkgs?rev=e2587caef70cea85dd97d7daab492899902dbf5d",
-      "name": "uv-0.11.28",
-      "pname": "uv",
+      "name": "fd-10.4.2",
+      "pname": "fd",
       "rev": "e2587caef70cea85dd97d7daab492899902dbf5d",
       "rev_count": 1040357,
       "rev_date": "2026-07-23T08:54:16Z",
-      "scrape_date": "2026-07-25T05:37:27.870558Z",
+      "scrape_date": "2026-07-25T05:33:47.860008Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "0.11.28",
+      "version": "10.4.2",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/lj1akylx79l52f6yp3j2a55gf7s7vhx1-uv-0.11.28"
+        "out": "/nix/store/glfgzmbbnaw2lifg5sdwx9136s411ifx-fd-10.4.2"
       },
       "system": "aarch64-linux",
-      "group": "python",
+      "group": "fd",
       "priority": 5
     },
     {
-      "attr_path": "uv",
+      "attr_path": "fd",
       "broken": false,
-      "derivation": "/nix/store/746v5xlv9cjbcmkmsr56rz6f1hvf3vqc-uv-0.11.28.drv",
-      "description": "Extremely fast Python package installer and resolver, written in Rust",
-      "install_id": "uv",
+      "derivation": "/nix/store/f91wmjwz4pgqdkm3q8amdh5pk8bx7xp1-fd-10.4.2.drv",
+      "description": "Simple, fast and user-friendly alternative to find",
+      "install_id": "fd",
       "license": "[ Apache-2.0, MIT ]",
       "locked_url": "https://github.com/flox/nixpkgs?rev=e2587caef70cea85dd97d7daab492899902dbf5d",
-      "name": "uv-0.11.28",
-      "pname": "uv",
+      "name": "fd-10.4.2",
+      "pname": "fd",
       "rev": "e2587caef70cea85dd97d7daab492899902dbf5d",
       "rev_count": 1040357,
       "rev_date": "2026-07-23T08:54:16Z",
-      "scrape_date": "2026-07-25T06:21:23.398571Z",
+      "scrape_date": "2026-07-25T06:17:36.394632Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "0.11.28",
+      "version": "10.4.2",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/zrq88ys031mx35ib1lb3xahcm4dsq71r-uv-0.11.28"
+        "out": "/nix/store/k3r8yf4k9n9aij3a0yk1sddg4ylv0a91-fd-10.4.2"
       },
       "system": "x86_64-linux",
-      "group": "python",
+      "group": "fd",
       "priority": 5
     },
     {
