@@ -64,7 +64,7 @@
       "claude-code": {
         "pkg-path": "claude-code",
         "pkg-group": "claude",
-        "version": "2.1.212"
+        "version": "2.1.217"
       },
       "coderabbit-cli": {
         "pkg-path": "flox/coderabbit-cli",
@@ -439,93 +439,6 @@
       },
       "system": "x86_64-linux",
       "group": "atuin.sh",
-      "priority": 5
-    },
-    {
-      "attr_path": "claude-code",
-      "broken": false,
-      "derivation": "/nix/store/frlkl06jgjirrfzh6j1r2by9slzbz6pm-claude-code-2.1.212.drv",
-      "description": "Agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster",
-      "install_id": "claude-code",
-      "license": "Unfree",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=61b7c44c4073f0b827768aff0049561b5110ea5a",
-      "name": "claude-code-2.1.212",
-      "pname": "claude-code",
-      "rev": "61b7c44c4073f0b827768aff0049561b5110ea5a",
-      "rev_count": 1036777,
-      "rev_date": "2026-07-18T06:39:13Z",
-      "scrape_date": "2026-07-19T04:53:38.069881Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": true,
-      "version": "2.1.212",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/m92kp6bylhnyx3fzk2ls39rwfb8axgqd-claude-code-2.1.212"
-      },
-      "system": "aarch64-darwin",
-      "group": "claude",
-      "priority": 5
-    },
-    {
-      "attr_path": "claude-code",
-      "broken": false,
-      "derivation": "/nix/store/7nvvbscpr1rydjnxw4i8lggdf5lxhr8r-claude-code-2.1.212.drv",
-      "description": "Agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster",
-      "install_id": "claude-code",
-      "license": "Unfree",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=61b7c44c4073f0b827768aff0049561b5110ea5a",
-      "name": "claude-code-2.1.212",
-      "pname": "claude-code",
-      "rev": "61b7c44c4073f0b827768aff0049561b5110ea5a",
-      "rev_count": 1036777,
-      "rev_date": "2026-07-18T06:39:13Z",
-      "scrape_date": "2026-07-19T05:23:20.912816Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": true,
-      "version": "2.1.212",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/bf0z5y9z1k0jx79gr1g1080xclc2230p-claude-code-2.1.212"
-      },
-      "system": "aarch64-linux",
-      "group": "claude",
-      "priority": 5
-    },
-    {
-      "attr_path": "claude-code",
-      "broken": false,
-      "derivation": "/nix/store/3jl394gyjr3s3ih94917vac72nzkms4i-claude-code-2.1.212.drv",
-      "description": "Agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster",
-      "install_id": "claude-code",
-      "license": "Unfree",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=61b7c44c4073f0b827768aff0049561b5110ea5a",
-      "name": "claude-code-2.1.212",
-      "pname": "claude-code",
-      "rev": "61b7c44c4073f0b827768aff0049561b5110ea5a",
-      "rev_count": 1036777,
-      "rev_date": "2026-07-18T06:39:13Z",
-      "scrape_date": "2026-07-19T05:57:09.084392Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": true,
-      "version": "2.1.212",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/31kfyspp0q5aazsjm6plqhi4bi7a8pb2-claude-code-2.1.212"
-      },
-      "system": "x86_64-linux",
-      "group": "claude",
       "priority": 5
     },
     {
@@ -1008,6 +921,93 @@
       },
       "system": "x86_64-linux",
       "group": "editors",
+      "priority": 5
+    },
+    {
+      "attr_path": "fd",
+      "broken": false,
+      "derivation": "/nix/store/jg67b8bch3b7n88k8b723z8gdvngi31n-fd-10.4.2.drv",
+      "description": "Simple, fast and user-friendly alternative to find",
+      "install_id": "fd",
+      "license": "[ Apache-2.0, MIT ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=e2587caef70cea85dd97d7daab492899902dbf5d",
+      "name": "fd-10.4.2",
+      "pname": "fd",
+      "rev": "e2587caef70cea85dd97d7daab492899902dbf5d",
+      "rev_count": 1040357,
+      "rev_date": "2026-07-23T08:54:16Z",
+      "scrape_date": "2026-07-25T04:59:02.795927Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "10.4.2",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/8ynrwafbw0vkqai0v95r8f4g4jjm4x0i-fd-10.4.2"
+      },
+      "system": "aarch64-darwin",
+      "group": "fd",
+      "priority": 5
+    },
+    {
+      "attr_path": "fd",
+      "broken": false,
+      "derivation": "/nix/store/im57ya2max9ac2gbbsdg960alhvm60s0-fd-10.4.2.drv",
+      "description": "Simple, fast and user-friendly alternative to find",
+      "install_id": "fd",
+      "license": "[ Apache-2.0, MIT ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=e2587caef70cea85dd97d7daab492899902dbf5d",
+      "name": "fd-10.4.2",
+      "pname": "fd",
+      "rev": "e2587caef70cea85dd97d7daab492899902dbf5d",
+      "rev_count": 1040357,
+      "rev_date": "2026-07-23T08:54:16Z",
+      "scrape_date": "2026-07-25T05:33:47.860008Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "10.4.2",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/glfgzmbbnaw2lifg5sdwx9136s411ifx-fd-10.4.2"
+      },
+      "system": "aarch64-linux",
+      "group": "fd",
+      "priority": 5
+    },
+    {
+      "attr_path": "fd",
+      "broken": false,
+      "derivation": "/nix/store/f91wmjwz4pgqdkm3q8amdh5pk8bx7xp1-fd-10.4.2.drv",
+      "description": "Simple, fast and user-friendly alternative to find",
+      "install_id": "fd",
+      "license": "[ Apache-2.0, MIT ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=e2587caef70cea85dd97d7daab492899902dbf5d",
+      "name": "fd-10.4.2",
+      "pname": "fd",
+      "rev": "e2587caef70cea85dd97d7daab492899902dbf5d",
+      "rev_count": 1040357,
+      "rev_date": "2026-07-23T08:54:16Z",
+      "scrape_date": "2026-07-25T06:17:36.394632Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "10.4.2",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/k3r8yf4k9n9aij3a0yk1sddg4ylv0a91-fd-10.4.2"
+      },
+      "system": "x86_64-linux",
+      "group": "fd",
       "priority": 5
     },
     {
@@ -6842,90 +6842,90 @@
       "priority": 5
     },
     {
-      "attr_path": "fd",
+      "attr_path": "claude-code",
       "broken": false,
-      "derivation": "/nix/store/jg67b8bch3b7n88k8b723z8gdvngi31n-fd-10.4.2.drv",
-      "description": "Simple, fast and user-friendly alternative to find",
-      "install_id": "fd",
-      "license": "[ Apache-2.0, MIT ]",
+      "derivation": "/nix/store/xhm319rn72hp1rzrdv0mkq39d3gcx7fs-claude-code-2.1.217.drv",
+      "description": "Agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster",
+      "install_id": "claude-code",
+      "license": "Unfree",
       "locked_url": "https://github.com/flox/nixpkgs?rev=e2587caef70cea85dd97d7daab492899902dbf5d",
-      "name": "fd-10.4.2",
-      "pname": "fd",
+      "name": "claude-code-2.1.217",
+      "pname": "claude-code",
       "rev": "e2587caef70cea85dd97d7daab492899902dbf5d",
       "rev_count": 1040357,
       "rev_date": "2026-07-23T08:54:16Z",
-      "scrape_date": "2026-07-25T04:59:02.795927Z",
+      "scrape_date": "2026-07-25T04:59:02.199706Z",
       "stabilities": [
         "unstable"
       ],
-      "unfree": false,
-      "version": "10.4.2",
+      "unfree": true,
+      "version": "2.1.217",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/8ynrwafbw0vkqai0v95r8f4g4jjm4x0i-fd-10.4.2"
+        "out": "/nix/store/ifg9gi4xhi29d7xyvyi5imnzl6nw153q-claude-code-2.1.217"
       },
       "system": "aarch64-darwin",
-      "group": "fd",
+      "group": "claude",
       "priority": 5
     },
     {
-      "attr_path": "fd",
+      "attr_path": "claude-code",
       "broken": false,
-      "derivation": "/nix/store/im57ya2max9ac2gbbsdg960alhvm60s0-fd-10.4.2.drv",
-      "description": "Simple, fast and user-friendly alternative to find",
-      "install_id": "fd",
-      "license": "[ Apache-2.0, MIT ]",
+      "derivation": "/nix/store/vy59ix5p7q3hg3ipwd145iqg28kgmw4y-claude-code-2.1.217.drv",
+      "description": "Agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster",
+      "install_id": "claude-code",
+      "license": "Unfree",
       "locked_url": "https://github.com/flox/nixpkgs?rev=e2587caef70cea85dd97d7daab492899902dbf5d",
-      "name": "fd-10.4.2",
-      "pname": "fd",
+      "name": "claude-code-2.1.217",
+      "pname": "claude-code",
       "rev": "e2587caef70cea85dd97d7daab492899902dbf5d",
       "rev_count": 1040357,
       "rev_date": "2026-07-23T08:54:16Z",
-      "scrape_date": "2026-07-25T05:33:47.860008Z",
+      "scrape_date": "2026-07-25T05:33:46.976710Z",
       "stabilities": [
         "unstable"
       ],
-      "unfree": false,
-      "version": "10.4.2",
+      "unfree": true,
+      "version": "2.1.217",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/glfgzmbbnaw2lifg5sdwx9136s411ifx-fd-10.4.2"
+        "out": "/nix/store/rmlirxcvznmqnixh6j4cail6kzkiykbx-claude-code-2.1.217"
       },
       "system": "aarch64-linux",
-      "group": "fd",
+      "group": "claude",
       "priority": 5
     },
     {
-      "attr_path": "fd",
+      "attr_path": "claude-code",
       "broken": false,
-      "derivation": "/nix/store/f91wmjwz4pgqdkm3q8amdh5pk8bx7xp1-fd-10.4.2.drv",
-      "description": "Simple, fast and user-friendly alternative to find",
-      "install_id": "fd",
-      "license": "[ Apache-2.0, MIT ]",
+      "derivation": "/nix/store/r38rydmmr5ffrskwgvv80473mczh7bfn-claude-code-2.1.217.drv",
+      "description": "Agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster",
+      "install_id": "claude-code",
+      "license": "Unfree",
       "locked_url": "https://github.com/flox/nixpkgs?rev=e2587caef70cea85dd97d7daab492899902dbf5d",
-      "name": "fd-10.4.2",
-      "pname": "fd",
+      "name": "claude-code-2.1.217",
+      "pname": "claude-code",
       "rev": "e2587caef70cea85dd97d7daab492899902dbf5d",
       "rev_count": 1040357,
       "rev_date": "2026-07-23T08:54:16Z",
-      "scrape_date": "2026-07-25T06:17:36.394632Z",
+      "scrape_date": "2026-07-25T06:17:35.382322Z",
       "stabilities": [
         "unstable"
       ],
-      "unfree": false,
-      "version": "10.4.2",
+      "unfree": true,
+      "version": "2.1.217",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/k3r8yf4k9n9aij3a0yk1sddg4ylv0a91-fd-10.4.2"
+        "out": "/nix/store/f780avppg80awacdn4xvznxdgaqgccrc-claude-code-2.1.217"
       },
       "system": "x86_64-linux",
-      "group": "fd",
+      "group": "claude",
       "priority": 5
     },
     {
