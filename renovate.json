@@ -87,5 +87,12 @@
       "datasourceTemplate": "repology",
       "minimumReleaseAge": "3 days"
     }
+  ],
+  "packageRules": [
+    {
+      "description": "Force-recreate pinned Flox PRs each run so a failed flox-relock check gets retried once the catalog catches up",
+      "matchDatasources": ["repology"],
+      "recreateWhen": "always"
+    }
   ]
 }
