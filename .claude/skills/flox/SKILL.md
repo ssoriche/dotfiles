@@ -243,3 +243,11 @@ mypackage.flake = "github:owner/repo/ref#output"
 ```
 
 These bypass pkg-groups entirely — each flake resolves independently.
+
+### GUI app hotkeys/permissions stop working after `gui` group upgrade
+
+Upgrading the `gui` group (aerospace, wezterm, obsidian, halloy) rebuilds each app at a **new `/nix/store/<hash>-<pkg>-<version>` path**. macOS ties TCC permissions (Accessibility, Input Monitoring, etc.) to that specific bundle path, so a permission granted to the old path does not carry over — the app silently loses it, even though System Settings may still show a (now-stale) entry checked.
+
+Symptom for AeroSpace specifically: global hotkeys (e.g. `alt-2`) stop being intercepted and fall through to normal macOS key behavior (e.g. `alt-2` types `™` instead of switching workspaces), while the AeroSpace server itself is otherwise healthy (`aerospace list-workspaces` still responds).
+
+**Fix**: After any `gui` group upgrade, re-grant Accessibility (System Settings → Privacy & Security → Accessibility) for the affected app — remove the stale entry with `-` and re-add it from its current `/nix/store/...` path if simply toggling doesn't work, then relaunch the app.
