@@ -12,8 +12,7 @@
       ],
       "depNameTemplate": "ripgrep",
       "packageNameTemplate": "nix_unstable/ripgrep",
-      "datasourceTemplate": "repology",
-      "minimumReleaseAge": "3 days"
+      "datasourceTemplate": "repology"
     },
     {
       "customType": "regex",
@@ -24,8 +23,7 @@
       ],
       "depNameTemplate": "fd",
       "packageNameTemplate": "nix_unstable/fd",
-      "datasourceTemplate": "repology",
-      "minimumReleaseAge": "3 days"
+      "datasourceTemplate": "repology"
     },
     {
       "customType": "regex",
@@ -36,8 +34,7 @@
       ],
       "depNameTemplate": "claude-code",
       "packageNameTemplate": "nix_unstable/claude-code",
-      "datasourceTemplate": "repology",
-      "minimumReleaseAge": "3 days"
+      "datasourceTemplate": "repology"
     },
     {
       "customType": "regex",
@@ -48,8 +45,7 @@
       ],
       "depNameTemplate": "neovim",
       "packageNameTemplate": "nix_unstable/neovim",
-      "datasourceTemplate": "repology",
-      "minimumReleaseAge": "3 days"
+      "datasourceTemplate": "repology"
     },
     {
       "customType": "regex",
@@ -60,8 +56,7 @@
       ],
       "depNameTemplate": "kubie",
       "packageNameTemplate": "nix_unstable/kubie",
-      "datasourceTemplate": "repology",
-      "minimumReleaseAge": "3 days"
+      "datasourceTemplate": "repology"
     },
     {
       "customType": "regex",
@@ -72,8 +67,7 @@
       ],
       "depNameTemplate": "herdr",
       "packageNameTemplate": "nix_unstable/herdr",
-      "datasourceTemplate": "repology",
-      "minimumReleaseAge": "3 days"
+      "datasourceTemplate": "repology"
     },
     {
       "customType": "regex",
@@ -84,8 +78,7 @@
       ],
       "depNameTemplate": "uv",
       "packageNameTemplate": "nix_unstable/uv",
-      "datasourceTemplate": "repology",
-      "minimumReleaseAge": "3 days"
+      "datasourceTemplate": "repology"
     }
   ],
   "packageRules": [
