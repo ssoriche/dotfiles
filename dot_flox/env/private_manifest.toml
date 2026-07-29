@@ -43,7 +43,11 @@ sd.pkg-path = "sd"
 glow.pkg-path = "glow"
 
 # Shells / Shell enhancements
-atuin = { pkg-path = "atuin", version = ">=18.15", pkg-group = "atuin.sh" }
+# atuin is Renovate-managed (see renovate.json); its own pkg-group keeps the
+# exact pin from constraining anything else.
+atuin.pkg-path = "atuin"
+atuin.pkg-group = "atuin.sh"
+atuin.version = "18.17.1"
 direnv.pkg-path = "direnv"
 direnv.version = ">=2.37.1"
 
@@ -157,8 +161,10 @@ claude-code.pkg-path = "claude-code"
 claude-code.pkg-group = "claude"
 claude-code.version = "2.1.220"
 
-# pi-coding-agent — fast-moving AI tooling
-pi-coding-agent = { pkg-path = "pi-coding-agent", pkg-group = "pi-coding-agent" }
+# pi-coding-agent — fast-moving AI tooling. Renovate-managed (see renovate.json).
+pi-coding-agent.pkg-path = "pi-coding-agent"
+pi-coding-agent.pkg-group = "pi-coding-agent"
+pi-coding-agent.version = "0.81.1"
 
 # nono — AI agent sandbox
 nono = { pkg-path = "nono", pkg-group = "nono" }
@@ -184,7 +190,9 @@ coderabbit-cli.pkg-path = "flox/coderabbit-cli"
 coderabbit-cli.pkg-group = "coderabbit-cli"
 agent-safehouse.flake = "github:NixOS/nixpkgs/b0ec52b771f1207053090f4ea9cf73a6040f0489#agent-safehouse"
 agent-safehouse.systems = ["aarch64-darwin"]
-zap.flake = "github:natejsimonsen/zap"
+# zap now cuts tagged releases, so follow the release tag instead of the default
+# branch. Renovate-managed (see renovate.json) via the github-releases datasource.
+zap.flake = "github:natejsimonsen/zap/v0.1.0"
 zap.systems = ["aarch64-darwin"]
 
 
