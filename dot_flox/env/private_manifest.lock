@@ -15,7 +15,8 @@
       },
       "aerospace": {
         "pkg-path": "aerospace",
-        "pkg-group": "gui",
+        "pkg-group": "aerospace",
+        "version": "0.21.2-Beta",
         "systems": [
           "aarch64-darwin"
         ]
@@ -160,7 +161,8 @@
       },
       "halloy": {
         "pkg-path": "halloy",
-        "pkg-group": "gui"
+        "pkg-group": "halloy",
+        "version": "2026.7.2"
       },
       "herdr": {
         "pkg-path": "herdr",
@@ -219,7 +221,8 @@
       },
       "maccy": {
         "pkg-path": "maccy",
-        "pkg-group": "gui",
+        "pkg-group": "maccy",
+        "version": "2.6.1",
         "systems": [
           "aarch64-darwin"
         ]
@@ -250,7 +253,8 @@
       },
       "obsidian": {
         "pkg-path": "obsidian",
-        "pkg-group": "gui"
+        "pkg-group": "obsidian",
+        "version": "1.12.7"
       },
       "passage": {
         "pkg-path": "passage"
@@ -313,7 +317,8 @@
       },
       "wezterm": {
         "pkg-path": "wezterm",
-        "pkg-group": "gui"
+        "pkg-group": "wezterm",
+        "version": "2026-07-16"
       },
       "wget": {
         "pkg-path": "wget"
@@ -1090,322 +1095,177 @@
       "priority": 5
     },
     {
-      "attr_path": "aerospace",
+      "attr_path": "go",
       "broken": false,
-      "derivation": "/nix/store/1dcwn4vm5kzg580ic24dmq7kg6481h96-aerospace-0.21.2-Beta.drv",
-      "description": "i3-like tiling window manager for macOS",
-      "install_id": "aerospace",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=e2587caef70cea85dd97d7daab492899902dbf5d",
-      "name": "aerospace-0.21.2-Beta",
-      "pname": "aerospace",
-      "rev": "e2587caef70cea85dd97d7daab492899902dbf5d",
-      "rev_count": 1040357,
-      "rev_date": "2026-07-23T08:54:16Z",
-      "scrape_date": "2026-07-25T04:59:01.715210Z",
+      "derivation": "/nix/store/4nx4s2ybamjrzx486h9yad48hrhmn1wn-go-1.26.5.drv",
+      "description": "Go Programming language",
+      "install_id": "go",
+      "license": "BSD-3-Clause",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=624af665418d3c65d544145b4d34ad696439570e",
+      "name": "go-1.26.5",
+      "pname": "go",
+      "rev": "624af665418d3c65d544145b4d34ad696439570e",
+      "rev_count": 1042126,
+      "rev_date": "2026-07-26T18:26:09Z",
+      "scrape_date": "2026-07-28T04:53:58.450129Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "0.21.2-Beta",
+      "version": "1.26.5",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/mdn44qrla8c3wjnrnail7d9ms6a3q0hp-aerospace-0.21.2-Beta"
+        "out": "/nix/store/naw4mj4s58ymzlc10a76y79m40w3wfpp-go-1.26.5"
       },
       "system": "aarch64-darwin",
-      "group": "gui",
+      "group": "golang",
       "priority": 5
     },
     {
-      "attr_path": "halloy",
+      "attr_path": "go",
       "broken": false,
-      "derivation": "/nix/store/k1s3dpqrwb525n6acbfnw38djfrfp0y5-halloy-2026.7.2.drv",
-      "description": "IRC application",
-      "install_id": "halloy",
-      "license": "GPL-3.0-only",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=e2587caef70cea85dd97d7daab492899902dbf5d",
-      "name": "halloy-2026.7.2",
-      "pname": "halloy",
-      "rev": "e2587caef70cea85dd97d7daab492899902dbf5d",
-      "rev_count": 1040357,
-      "rev_date": "2026-07-23T08:54:16Z",
-      "scrape_date": "2026-07-25T04:59:03.557347Z",
+      "derivation": "/nix/store/8fmcg8gw1gibidq3c2fknnyfi9l8mxsa-go-1.26.5.drv",
+      "description": "Go Programming language",
+      "install_id": "go",
+      "license": "BSD-3-Clause",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=624af665418d3c65d544145b4d34ad696439570e",
+      "name": "go-1.26.5",
+      "pname": "go",
+      "rev": "624af665418d3c65d544145b4d34ad696439570e",
+      "rev_count": 1042126,
+      "rev_date": "2026-07-26T18:26:09Z",
+      "scrape_date": "2026-07-28T05:24:07.737589Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "2026.7.2",
+      "version": "1.26.5",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/gfd7h8p8a22k8rl1rfmk01ilb6sg6dnm-halloy-2026.7.2"
-      },
-      "system": "aarch64-darwin",
-      "group": "gui",
-      "priority": 5
-    },
-    {
-      "attr_path": "halloy",
-      "broken": false,
-      "derivation": "/nix/store/kbn4sgsw4bqmhj30sg1hzsk4qnpn2z5z-halloy-2026.7.2.drv",
-      "description": "IRC application",
-      "install_id": "halloy",
-      "license": "GPL-3.0-only",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=e2587caef70cea85dd97d7daab492899902dbf5d",
-      "name": "halloy-2026.7.2",
-      "pname": "halloy",
-      "rev": "e2587caef70cea85dd97d7daab492899902dbf5d",
-      "rev_count": 1040357,
-      "rev_date": "2026-07-23T08:54:16Z",
-      "scrape_date": "2026-07-25T05:33:50.156920Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "2026.7.2",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/ckk858hpindimwr65abylga4aslpjc3j-halloy-2026.7.2"
+        "out": "/nix/store/fhg6v8k9hbqpr4b2zcmd099afxh7qxw0-go-1.26.5"
       },
       "system": "aarch64-linux",
-      "group": "gui",
+      "group": "golang",
       "priority": 5
     },
     {
-      "attr_path": "halloy",
+      "attr_path": "go",
       "broken": false,
-      "derivation": "/nix/store/v8qywsw9k8b0x6wlkmnkiy2llb0d7a8l-halloy-2026.7.2.drv",
-      "description": "IRC application",
-      "install_id": "halloy",
-      "license": "GPL-3.0-only",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=e2587caef70cea85dd97d7daab492899902dbf5d",
-      "name": "halloy-2026.7.2",
-      "pname": "halloy",
-      "rev": "e2587caef70cea85dd97d7daab492899902dbf5d",
-      "rev_count": 1040357,
-      "rev_date": "2026-07-23T08:54:16Z",
-      "scrape_date": "2026-07-25T06:17:38.339150Z",
+      "derivation": "/nix/store/sgdy02bby4g2mg0qnlzmsi2p2srb63dn-go-1.26.5.drv",
+      "description": "Go Programming language",
+      "install_id": "go",
+      "license": "BSD-3-Clause",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=624af665418d3c65d544145b4d34ad696439570e",
+      "name": "go-1.26.5",
+      "pname": "go",
+      "rev": "624af665418d3c65d544145b4d34ad696439570e",
+      "rev_count": 1042126,
+      "rev_date": "2026-07-26T18:26:09Z",
+      "scrape_date": "2026-07-28T05:56:53.547446Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "2026.7.2",
+      "version": "1.26.5",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/5nq1hcfr488kdkzps198a6ly7pxsxhjc-halloy-2026.7.2"
+        "out": "/nix/store/rcz9i4msbg3178grqll9h98b07dwk7zg-go-1.26.5"
       },
       "system": "x86_64-linux",
-      "group": "gui",
+      "group": "golang",
       "priority": 5
     },
     {
-      "attr_path": "maccy",
+      "attr_path": "golangci-lint",
       "broken": false,
-      "derivation": "/nix/store/liq34fq1glj0kcibbmqsiqqlnbw0l0kg-maccy-2.6.1.drv",
-      "description": "Simple clipboard manager for macOS",
-      "install_id": "maccy",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=e2587caef70cea85dd97d7daab492899902dbf5d",
-      "name": "maccy-2.6.1",
-      "pname": "maccy",
-      "rev": "e2587caef70cea85dd97d7daab492899902dbf5d",
-      "rev_count": 1040357,
-      "rev_date": "2026-07-23T08:54:16Z",
-      "scrape_date": "2026-07-25T04:59:25.303973Z",
+      "derivation": "/nix/store/26k2z6wiij4m72xc2c1cy2phdbig1yiz-golangci-lint-2.12.2.drv",
+      "description": "Fast linters Runner for Go",
+      "install_id": "golangci-lint",
+      "license": "GPL-3.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=624af665418d3c65d544145b4d34ad696439570e",
+      "name": "golangci-lint-2.12.2",
+      "pname": "golangci-lint",
+      "rev": "624af665418d3c65d544145b4d34ad696439570e",
+      "rev_count": 1042126,
+      "rev_date": "2026-07-26T18:26:09Z",
+      "scrape_date": "2026-07-28T04:53:58.520035Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "2.6.1",
+      "version": "2.12.2",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/brsrdajjqi0qzxri7vc2vp9g579avvs6-maccy-2.6.1"
+        "out": "/nix/store/l2j3j7nvynbk0gw5km9pknizq593633j-golangci-lint-2.12.2"
       },
       "system": "aarch64-darwin",
-      "group": "gui",
+      "group": "golang",
       "priority": 5
     },
     {
-      "attr_path": "obsidian",
+      "attr_path": "golangci-lint",
       "broken": false,
-      "derivation": "/nix/store/fr12a95bikpnhi58dknxb06srg7p7gqq-obsidian-1.12.7.drv",
-      "description": "Powerful knowledge base that works on top of a local folder of plain text Markdown files",
-      "install_id": "obsidian",
-      "license": "Obsidian End User Agreement",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=e2587caef70cea85dd97d7daab492899902dbf5d",
-      "name": "obsidian-1.12.7",
-      "pname": "obsidian",
-      "rev": "e2587caef70cea85dd97d7daab492899902dbf5d",
-      "rev_count": 1040357,
-      "rev_date": "2026-07-23T08:54:16Z",
-      "scrape_date": "2026-07-25T04:59:28.456533Z",
+      "derivation": "/nix/store/0cczprsfla1r3q2vanw4j2hgvhnz6jv8-golangci-lint-2.12.2.drv",
+      "description": "Fast linters Runner for Go",
+      "install_id": "golangci-lint",
+      "license": "GPL-3.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=624af665418d3c65d544145b4d34ad696439570e",
+      "name": "golangci-lint-2.12.2",
+      "pname": "golangci-lint",
+      "rev": "624af665418d3c65d544145b4d34ad696439570e",
+      "rev_count": 1042126,
+      "rev_date": "2026-07-26T18:26:09Z",
+      "scrape_date": "2026-07-28T05:24:07.843502Z",
       "stabilities": [
         "unstable"
       ],
-      "unfree": true,
-      "version": "1.12.7",
+      "unfree": false,
+      "version": "2.12.2",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/438lbich62s9hrr9g9rxp4q2y33syh0f-obsidian-1.12.7"
-      },
-      "system": "aarch64-darwin",
-      "group": "gui",
-      "priority": 5
-    },
-    {
-      "attr_path": "obsidian",
-      "broken": false,
-      "derivation": "/nix/store/yqspm2mkx1fcq43xrhchj3zszqwyr4af-obsidian-1.12.7.drv",
-      "description": "Powerful knowledge base that works on top of a local folder of plain text Markdown files",
-      "install_id": "obsidian",
-      "license": "Obsidian End User Agreement",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=e2587caef70cea85dd97d7daab492899902dbf5d",
-      "name": "obsidian-1.12.7",
-      "pname": "obsidian",
-      "rev": "e2587caef70cea85dd97d7daab492899902dbf5d",
-      "rev_count": 1040357,
-      "rev_date": "2026-07-23T08:54:16Z",
-      "scrape_date": "2026-07-25T05:34:27.729971Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": true,
-      "version": "1.12.7",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/5pb4ydx3w7pfqird5vcg4qv5q67ahfi2-obsidian-1.12.7"
+        "out": "/nix/store/gpyxbilsvyw9wv49nh4ng6lva95z38j3-golangci-lint-2.12.2"
       },
       "system": "aarch64-linux",
-      "group": "gui",
+      "group": "golang",
       "priority": 5
     },
     {
-      "attr_path": "obsidian",
+      "attr_path": "golangci-lint",
       "broken": false,
-      "derivation": "/nix/store/z67llklbk1h2k94q383a3nl6yal09nh0-obsidian-1.12.7.drv",
-      "description": "Powerful knowledge base that works on top of a local folder of plain text Markdown files",
-      "install_id": "obsidian",
-      "license": "Obsidian End User Agreement",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=e2587caef70cea85dd97d7daab492899902dbf5d",
-      "name": "obsidian-1.12.7",
-      "pname": "obsidian",
-      "rev": "e2587caef70cea85dd97d7daab492899902dbf5d",
-      "rev_count": 1040357,
-      "rev_date": "2026-07-23T08:54:16Z",
-      "scrape_date": "2026-07-25T06:18:19.786178Z",
+      "derivation": "/nix/store/hnx2xpg3rskjckwjjahpqjajjwl90v7i-golangci-lint-2.12.2.drv",
+      "description": "Fast linters Runner for Go",
+      "install_id": "golangci-lint",
+      "license": "GPL-3.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=624af665418d3c65d544145b4d34ad696439570e",
+      "name": "golangci-lint-2.12.2",
+      "pname": "golangci-lint",
+      "rev": "624af665418d3c65d544145b4d34ad696439570e",
+      "rev_count": 1042126,
+      "rev_date": "2026-07-26T18:26:09Z",
+      "scrape_date": "2026-07-28T05:56:53.661474Z",
       "stabilities": [
         "unstable"
       ],
-      "unfree": true,
-      "version": "1.12.7",
+      "unfree": false,
+      "version": "2.12.2",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/2vwvv16l3zmvz23m0kp0k6jx4m4yraav-obsidian-1.12.7"
+        "out": "/nix/store/47w5wfrc8bcvggamqqlvkyavpc9l2bsm-golangci-lint-2.12.2"
       },
       "system": "x86_64-linux",
-      "group": "gui",
-      "priority": 5
-    },
-    {
-      "attr_path": "wezterm",
-      "broken": false,
-      "derivation": "/nix/store/yvnqygywyqq44vf0vqiz9grkzqh82l18-wezterm-0-unstable-2026-07-16.drv",
-      "description": "GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust",
-      "install_id": "wezterm",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=e2587caef70cea85dd97d7daab492899902dbf5d",
-      "name": "wezterm-0-unstable-2026-07-16",
-      "pname": "wezterm",
-      "rev": "e2587caef70cea85dd97d7daab492899902dbf5d",
-      "rev_count": 1040357,
-      "rev_date": "2026-07-23T08:54:16Z",
-      "scrape_date": "2026-07-25T05:02:06.627652Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "2026-07-16",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/jw7c81ndjxkmsc90q3myd1sh07f7nln6-wezterm-0-unstable-2026-07-16"
-      },
-      "system": "aarch64-darwin",
-      "group": "gui",
-      "priority": 5
-    },
-    {
-      "attr_path": "wezterm",
-      "broken": false,
-      "derivation": "/nix/store/13zrpbwhh2dhkxb67byfzm9ydwwgqpba-wezterm-0-unstable-2026-07-16.drv",
-      "description": "GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust",
-      "install_id": "wezterm",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=e2587caef70cea85dd97d7daab492899902dbf5d",
-      "name": "wezterm-0-unstable-2026-07-16",
-      "pname": "wezterm",
-      "rev": "e2587caef70cea85dd97d7daab492899902dbf5d",
-      "rev_count": 1040357,
-      "rev_date": "2026-07-23T08:54:16Z",
-      "scrape_date": "2026-07-25T05:37:44.948534Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "2026-07-16",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/cqi9anki7f2afhc2xdzk61i5p1mbhm0l-wezterm-0-unstable-2026-07-16"
-      },
-      "system": "aarch64-linux",
-      "group": "gui",
-      "priority": 5
-    },
-    {
-      "attr_path": "wezterm",
-      "broken": false,
-      "derivation": "/nix/store/f9pzij9f3cmdlycrp8imylp7h9k8b8ji-wezterm-0-unstable-2026-07-16.drv",
-      "description": "GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust",
-      "install_id": "wezterm",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=e2587caef70cea85dd97d7daab492899902dbf5d",
-      "name": "wezterm-0-unstable-2026-07-16",
-      "pname": "wezterm",
-      "rev": "e2587caef70cea85dd97d7daab492899902dbf5d",
-      "rev_count": 1040357,
-      "rev_date": "2026-07-23T08:54:16Z",
-      "scrape_date": "2026-07-25T06:21:39.675357Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "2026-07-16",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/xcda1bvbn8afhmxk34fknf4dwwqq6k57-wezterm-0-unstable-2026-07-16"
-      },
-      "system": "x86_64-linux",
-      "group": "gui",
+      "group": "golang",
       "priority": 5
     },
     {
@@ -6722,177 +6582,322 @@
       "priority": 5
     },
     {
-      "attr_path": "go",
+      "attr_path": "aerospace",
       "broken": false,
-      "derivation": "/nix/store/4nx4s2ybamjrzx486h9yad48hrhmn1wn-go-1.26.5.drv",
-      "description": "Go Programming language",
-      "install_id": "go",
-      "license": "BSD-3-Clause",
+      "derivation": "/nix/store/1dcwn4vm5kzg580ic24dmq7kg6481h96-aerospace-0.21.2-Beta.drv",
+      "description": "i3-like tiling window manager for macOS",
+      "install_id": "aerospace",
+      "license": "MIT",
       "locked_url": "https://github.com/flox/nixpkgs?rev=624af665418d3c65d544145b4d34ad696439570e",
-      "name": "go-1.26.5",
-      "pname": "go",
+      "name": "aerospace-0.21.2-Beta",
+      "pname": "aerospace",
       "rev": "624af665418d3c65d544145b4d34ad696439570e",
       "rev_count": 1042126,
       "rev_date": "2026-07-26T18:26:09Z",
-      "scrape_date": "2026-07-28T04:53:58.450129Z",
+      "scrape_date": "2026-07-28T04:53:56.785246Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "1.26.5",
+      "version": "0.21.2-Beta",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/naw4mj4s58ymzlc10a76y79m40w3wfpp-go-1.26.5"
+        "out": "/nix/store/mdn44qrla8c3wjnrnail7d9ms6a3q0hp-aerospace-0.21.2-Beta"
       },
       "system": "aarch64-darwin",
-      "group": "golang",
+      "group": "aerospace",
       "priority": 5
     },
     {
-      "attr_path": "go",
+      "attr_path": "halloy",
       "broken": false,
-      "derivation": "/nix/store/8fmcg8gw1gibidq3c2fknnyfi9l8mxsa-go-1.26.5.drv",
-      "description": "Go Programming language",
-      "install_id": "go",
-      "license": "BSD-3-Clause",
+      "derivation": "/nix/store/m5mq4vk52zpzh9ffzpxm9kidbww2mipm-halloy-2026.7.2.drv",
+      "description": "IRC application",
+      "install_id": "halloy",
+      "license": "GPL-3.0-only",
       "locked_url": "https://github.com/flox/nixpkgs?rev=624af665418d3c65d544145b4d34ad696439570e",
-      "name": "go-1.26.5",
-      "pname": "go",
+      "name": "halloy-2026.7.2",
+      "pname": "halloy",
       "rev": "624af665418d3c65d544145b4d34ad696439570e",
       "rev_count": 1042126,
       "rev_date": "2026-07-26T18:26:09Z",
-      "scrape_date": "2026-07-28T05:24:07.737589Z",
+      "scrape_date": "2026-07-28T04:53:58.712626Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "1.26.5",
+      "version": "2026.7.2",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/fhg6v8k9hbqpr4b2zcmd099afxh7qxw0-go-1.26.5"
-      },
-      "system": "aarch64-linux",
-      "group": "golang",
-      "priority": 5
-    },
-    {
-      "attr_path": "go",
-      "broken": false,
-      "derivation": "/nix/store/sgdy02bby4g2mg0qnlzmsi2p2srb63dn-go-1.26.5.drv",
-      "description": "Go Programming language",
-      "install_id": "go",
-      "license": "BSD-3-Clause",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=624af665418d3c65d544145b4d34ad696439570e",
-      "name": "go-1.26.5",
-      "pname": "go",
-      "rev": "624af665418d3c65d544145b4d34ad696439570e",
-      "rev_count": 1042126,
-      "rev_date": "2026-07-26T18:26:09Z",
-      "scrape_date": "2026-07-28T05:56:53.547446Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "1.26.5",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/rcz9i4msbg3178grqll9h98b07dwk7zg-go-1.26.5"
-      },
-      "system": "x86_64-linux",
-      "group": "golang",
-      "priority": 5
-    },
-    {
-      "attr_path": "golangci-lint",
-      "broken": false,
-      "derivation": "/nix/store/26k2z6wiij4m72xc2c1cy2phdbig1yiz-golangci-lint-2.12.2.drv",
-      "description": "Fast linters Runner for Go",
-      "install_id": "golangci-lint",
-      "license": "GPL-3.0-or-later",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=624af665418d3c65d544145b4d34ad696439570e",
-      "name": "golangci-lint-2.12.2",
-      "pname": "golangci-lint",
-      "rev": "624af665418d3c65d544145b4d34ad696439570e",
-      "rev_count": 1042126,
-      "rev_date": "2026-07-26T18:26:09Z",
-      "scrape_date": "2026-07-28T04:53:58.520035Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "2.12.2",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/l2j3j7nvynbk0gw5km9pknizq593633j-golangci-lint-2.12.2"
+        "out": "/nix/store/l4zl92i53j7h31b33lv4i2hhjim9w6z0-halloy-2026.7.2"
       },
       "system": "aarch64-darwin",
-      "group": "golang",
+      "group": "halloy",
       "priority": 5
     },
     {
-      "attr_path": "golangci-lint",
+      "attr_path": "halloy",
       "broken": false,
-      "derivation": "/nix/store/0cczprsfla1r3q2vanw4j2hgvhnz6jv8-golangci-lint-2.12.2.drv",
-      "description": "Fast linters Runner for Go",
-      "install_id": "golangci-lint",
-      "license": "GPL-3.0-or-later",
+      "derivation": "/nix/store/5yda7vjdzhvhg1cvwikpkq1h31gff6z7-halloy-2026.7.2.drv",
+      "description": "IRC application",
+      "install_id": "halloy",
+      "license": "GPL-3.0-only",
       "locked_url": "https://github.com/flox/nixpkgs?rev=624af665418d3c65d544145b4d34ad696439570e",
-      "name": "golangci-lint-2.12.2",
-      "pname": "golangci-lint",
+      "name": "halloy-2026.7.2",
+      "pname": "halloy",
       "rev": "624af665418d3c65d544145b4d34ad696439570e",
       "rev_count": 1042126,
       "rev_date": "2026-07-26T18:26:09Z",
-      "scrape_date": "2026-07-28T05:24:07.843502Z",
+      "scrape_date": "2026-07-28T05:24:08.187939Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "2.12.2",
+      "version": "2026.7.2",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/gpyxbilsvyw9wv49nh4ng6lva95z38j3-golangci-lint-2.12.2"
+        "out": "/nix/store/8y2gw0qj14aw0bla4bpacarxzsql1j7r-halloy-2026.7.2"
       },
       "system": "aarch64-linux",
-      "group": "golang",
+      "group": "halloy",
       "priority": 5
     },
     {
-      "attr_path": "golangci-lint",
+      "attr_path": "halloy",
       "broken": false,
-      "derivation": "/nix/store/hnx2xpg3rskjckwjjahpqjajjwl90v7i-golangci-lint-2.12.2.drv",
-      "description": "Fast linters Runner for Go",
-      "install_id": "golangci-lint",
-      "license": "GPL-3.0-or-later",
+      "derivation": "/nix/store/bz0p7sfam6jv41vcs0gpwajiwnmzghk8-halloy-2026.7.2.drv",
+      "description": "IRC application",
+      "install_id": "halloy",
+      "license": "GPL-3.0-only",
       "locked_url": "https://github.com/flox/nixpkgs?rev=624af665418d3c65d544145b4d34ad696439570e",
-      "name": "golangci-lint-2.12.2",
-      "pname": "golangci-lint",
+      "name": "halloy-2026.7.2",
+      "pname": "halloy",
       "rev": "624af665418d3c65d544145b4d34ad696439570e",
       "rev_count": 1042126,
       "rev_date": "2026-07-26T18:26:09Z",
-      "scrape_date": "2026-07-28T05:56:53.661474Z",
+      "scrape_date": "2026-07-28T05:56:54.034300Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "2.12.2",
+      "version": "2026.7.2",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/47w5wfrc8bcvggamqqlvkyavpc9l2bsm-golangci-lint-2.12.2"
+        "out": "/nix/store/b9ra07lk3zpj7jy23r56hmyn3w93k4jv-halloy-2026.7.2"
       },
       "system": "x86_64-linux",
-      "group": "golang",
+      "group": "halloy",
+      "priority": 5
+    },
+    {
+      "attr_path": "maccy",
+      "broken": false,
+      "derivation": "/nix/store/liq34fq1glj0kcibbmqsiqqlnbw0l0kg-maccy-2.6.1.drv",
+      "description": "Simple clipboard manager for macOS",
+      "install_id": "maccy",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=624af665418d3c65d544145b4d34ad696439570e",
+      "name": "maccy-2.6.1",
+      "pname": "maccy",
+      "rev": "624af665418d3c65d544145b4d34ad696439570e",
+      "rev_count": 1042126,
+      "rev_date": "2026-07-26T18:26:09Z",
+      "scrape_date": "2026-07-28T04:54:20.318105Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2.6.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/brsrdajjqi0qzxri7vc2vp9g579avvs6-maccy-2.6.1"
+      },
+      "system": "aarch64-darwin",
+      "group": "maccy",
+      "priority": 5
+    },
+    {
+      "attr_path": "obsidian",
+      "broken": false,
+      "derivation": "/nix/store/fr12a95bikpnhi58dknxb06srg7p7gqq-obsidian-1.12.7.drv",
+      "description": "Powerful knowledge base that works on top of a local folder of plain text Markdown files",
+      "install_id": "obsidian",
+      "license": "Obsidian End User Agreement",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=624af665418d3c65d544145b4d34ad696439570e",
+      "name": "obsidian-1.12.7",
+      "pname": "obsidian",
+      "rev": "624af665418d3c65d544145b4d34ad696439570e",
+      "rev_count": 1042126,
+      "rev_date": "2026-07-26T18:26:09Z",
+      "scrape_date": "2026-07-28T04:54:23.588771Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "1.12.7",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/438lbich62s9hrr9g9rxp4q2y33syh0f-obsidian-1.12.7"
+      },
+      "system": "aarch64-darwin",
+      "group": "obsidian",
+      "priority": 5
+    },
+    {
+      "attr_path": "obsidian",
+      "broken": false,
+      "derivation": "/nix/store/yqspm2mkx1fcq43xrhchj3zszqwyr4af-obsidian-1.12.7.drv",
+      "description": "Powerful knowledge base that works on top of a local folder of plain text Markdown files",
+      "install_id": "obsidian",
+      "license": "Obsidian End User Agreement",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=624af665418d3c65d544145b4d34ad696439570e",
+      "name": "obsidian-1.12.7",
+      "pname": "obsidian",
+      "rev": "624af665418d3c65d544145b4d34ad696439570e",
+      "rev_count": 1042126,
+      "rev_date": "2026-07-26T18:26:09Z",
+      "scrape_date": "2026-07-28T05:24:44.631694Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "1.12.7",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/5pb4ydx3w7pfqird5vcg4qv5q67ahfi2-obsidian-1.12.7"
+      },
+      "system": "aarch64-linux",
+      "group": "obsidian",
+      "priority": 5
+    },
+    {
+      "attr_path": "obsidian",
+      "broken": false,
+      "derivation": "/nix/store/z67llklbk1h2k94q383a3nl6yal09nh0-obsidian-1.12.7.drv",
+      "description": "Powerful knowledge base that works on top of a local folder of plain text Markdown files",
+      "install_id": "obsidian",
+      "license": "Obsidian End User Agreement",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=624af665418d3c65d544145b4d34ad696439570e",
+      "name": "obsidian-1.12.7",
+      "pname": "obsidian",
+      "rev": "624af665418d3c65d544145b4d34ad696439570e",
+      "rev_count": 1042126,
+      "rev_date": "2026-07-26T18:26:09Z",
+      "scrape_date": "2026-07-28T05:57:34.038332Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "1.12.7",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/2vwvv16l3zmvz23m0kp0k6jx4m4yraav-obsidian-1.12.7"
+      },
+      "system": "x86_64-linux",
+      "group": "obsidian",
+      "priority": 5
+    },
+    {
+      "attr_path": "wezterm",
+      "broken": false,
+      "derivation": "/nix/store/yvnqygywyqq44vf0vqiz9grkzqh82l18-wezterm-0-unstable-2026-07-16.drv",
+      "description": "GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust",
+      "install_id": "wezterm",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=624af665418d3c65d544145b4d34ad696439570e",
+      "name": "wezterm-0-unstable-2026-07-16",
+      "pname": "wezterm",
+      "rev": "624af665418d3c65d544145b4d34ad696439570e",
+      "rev_count": 1042126,
+      "rev_date": "2026-07-26T18:26:09Z",
+      "scrape_date": "2026-07-28T04:57:01.608399Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2026-07-16",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/jw7c81ndjxkmsc90q3myd1sh07f7nln6-wezterm-0-unstable-2026-07-16"
+      },
+      "system": "aarch64-darwin",
+      "group": "wezterm",
+      "priority": 5
+    },
+    {
+      "attr_path": "wezterm",
+      "broken": false,
+      "derivation": "/nix/store/13zrpbwhh2dhkxb67byfzm9ydwwgqpba-wezterm-0-unstable-2026-07-16.drv",
+      "description": "GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust",
+      "install_id": "wezterm",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=624af665418d3c65d544145b4d34ad696439570e",
+      "name": "wezterm-0-unstable-2026-07-16",
+      "pname": "wezterm",
+      "rev": "624af665418d3c65d544145b4d34ad696439570e",
+      "rev_count": 1042126,
+      "rev_date": "2026-07-26T18:26:09Z",
+      "scrape_date": "2026-07-28T05:27:53.610244Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2026-07-16",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/cqi9anki7f2afhc2xdzk61i5p1mbhm0l-wezterm-0-unstable-2026-07-16"
+      },
+      "system": "aarch64-linux",
+      "group": "wezterm",
+      "priority": 5
+    },
+    {
+      "attr_path": "wezterm",
+      "broken": false,
+      "derivation": "/nix/store/f9pzij9f3cmdlycrp8imylp7h9k8b8ji-wezterm-0-unstable-2026-07-16.drv",
+      "description": "GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust",
+      "install_id": "wezterm",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=624af665418d3c65d544145b4d34ad696439570e",
+      "name": "wezterm-0-unstable-2026-07-16",
+      "pname": "wezterm",
+      "rev": "624af665418d3c65d544145b4d34ad696439570e",
+      "rev_count": 1042126,
+      "rev_date": "2026-07-26T18:26:09Z",
+      "scrape_date": "2026-07-28T06:00:51.647461Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2026-07-16",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/xcda1bvbn8afhmxk34fknf4dwwqq6k57-wezterm-0-unstable-2026-07-16"
+      },
+      "system": "x86_64-linux",
+      "group": "wezterm",
       "priority": 5
     },
     {

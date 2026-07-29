@@ -98,30 +98,34 @@ flox upgrade <group>                # Upgrade a specific group
 chezmoi add ~/.flox/env/manifest.lock  # Sync lockfile after changes
 ```
 
-**Package groups** isolate nixpkgs revisions so fast-moving or ABI-coupled packages upgrade independently:
+**Package groups** isolate nixpkgs revisions so fast-moving or ABI-coupled packages upgrade independently.
 
-| Group | Contents | Purpose |
-|---|---|---|
-| *toplevel* (default) | ripgrep, fd, bat, jq, etc. | Stable CLI tools — no `pkg-group` needed |
-| `vcs` | git, gh, tig, delta, difftastic, jujutsu, etc. | Git ecosystem, shared revision |
-| `editors` | neovim, lua-language-server, tree-sitter | Editor + language server ABI compatibility |
-| `kubernetes` | kustomize, krew | Kubernetes tooling, shared revision |
-| `golang` | go, golangci-lint | Linter must match Go version |
-| `node` | nodejs, bun | JS runtimes |
-| `lua` | luarocks, lua | Lua ecosystem |
-| `python` | uv | Standalone, frequent updates |
-| `linters` | typos, dotenv-linter | Standalone analysis tools |
-| `cloud` | awscli2 | Large package, independent cadence |
-| `pinned` | granted | Version-locked packages |
-| `claude` | claude-code (`flox/claude-code`) | Fast-moving, unfree; sourced from the flox catalog |
-| `opencode` | opencode | Fast-moving AI tooling |
-| `gui` | aerospace, wezterm, obsidian, halloy | GUI apps separate from CLI |
+**The one-pin-per-group rule.** Exact pins *can* share a group, but only while a single catalog snapshot satisfies all of them — `ripgrep 15.2.0` + `fd 10.4.2` locks, `ripgrep 15.2.0` + `fd 8.7.0` fails `constraints too tight`. Renovate bumps packages on independent schedules, so co-pinned versions drift apart eventually. Hence: **at most one Renovate-managed pin per group**, with unpinned packages free to share it as *followers* — they carry no constraint and resolve from whatever snapshot the pin picks.
 
-**TOML style**: Dot notation for toplevel (`ripgrep.pkg-path = "ripgrep"`), inline tables for grouped (`git = { pkg-path = "git", pkg-group = "vcs" }`).
+Multi-package groups, each driven by one pin (or none):
+
+| Group | Driver (pinned) | Followers (unpinned) | Purpose |
+|---|---|---|---|
+| *toplevel* (default) | — | bat, jq, fzf, eza, etc. | Stable CLI tools — no `pkg-group` needed |
+| `vcs` | — | git, gh, tig, delta, difftastic, git-absorb, gitu, gh-dash, git-credential-manager | Git ecosystem, shared revision |
+| `editors` | `neovim` | lua-language-server, tree-sitter | Editor + language server ABI compatibility |
+| `golang` | `go` | golangci-lint | Linter must match Go version |
+| `kubernetes` | `kubie` | kustomize, krew, kns, k9s | Kubernetes tooling, shared revision |
+| `node` | — | nodejs, bun | JS runtimes |
+| `lua.org` | — | luarocks, lua | Lua ecosystem |
+| `linters` | — | typos, dotenv-linter | Standalone analysis tools |
+
+Single-package groups exist purely to isolate one pin so it bumps independently: `ripgrep`, `fd`, `atuin.sh`, `python` (uv), `claude` (claude-code), `herdr`, `pi-coding-agent`, `aerospace`, `wezterm`, `obsidian`, `halloy`, `maccy`, plus unpinned singletons `cloud` (awscli2), `nono`, `container`, `coderabbit-cli`, and `pinned` (granted, held deliberately).
+
+GUI apps each get their own group rather than a shared `gui` one: nothing among them is ABI coupled, and separate groups both keep them from blocking CLI upgrades and allow independent pinning.
+
+**TOML style**: inline tables for grouped followers (`git = { pkg-path = "git", pkg-group = "vcs" }`), dot notation for anything Renovate manages (`atuin.version = "18.17.1"`) — the custom manager in `renovate.json` only matches the dot-notation `<pkg>.version = "..."` form, so an inline-table pin like `granted` is skipped and stays held.
 
 **Catalogs**: A bare `pkg-path` (`claude-code`) resolves from the **nixpkgs** catalog. Prefixing with `flox/` (`flox/claude-code`) resolves from the **flox** catalog, which is curated by Flox and often tracks fast-moving upstream tools *ahead of* nixpkgs. `flox search <pkg>` lists both variants; compare with `flox show <pkg>` vs `flox show flox/<pkg>`. `claude-code` uses the flox catalog for this reason.
 
-**Flake-based packages** bypass groups entirely, pinned to specific commits: `atuin`, `maccy`.
+**Flake-based packages** bypass groups entirely: `zap` (follows its release tag, `github:natejsimonsen/zap/v0.1.0`, Renovate-managed via the `github-releases` datasource) and `agent-safehouse` (pinned to a specific nixpkgs commit).
+
+**Renovate integration**: `renovate.json` resolves versions from the Flox catalog API (`api.flox.dev`) rather than repology, which tracks nixpkgs directly and runs ahead of the lagging `flox/nixpkgs` snapshots — it would propose versions Flox cannot resolve. One custom manager covers every dot-notation exact pin, so **pinning a package is the only step needed to put it under Renovate**. Darwin-only packages (`aerospace`, `maccy`, `container`) use a second datasource scoped to `aarch64-darwin`, since the default rule only offers versions built for every system in `[options].systems`.
 
 For detailed operational docs (adding/removing packages, troubleshooting, etc.), see the flox skill: `.claude/skills/flox/SKILL.md`.
 
