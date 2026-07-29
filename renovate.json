@@ -2,110 +2,30 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:recommended"],
   "enabledManagers": ["custom.regex"],
+  "customDatasources": {
+    "flox-catalog": {
+      "description": "Versions the Flox catalog can actually resolve, unlike repology's nix_unstable which tracks nixpkgs directly and runs ahead of the flox/nixpkgs snapshots. Only versions built for every system in [options].systems are offered, so a bump cannot break the lock on one system.",
+      "defaultRegistryUrlTemplate": "https://api.flox.dev/api/v1/catalog/packages/{{packageName}}?pageSize=200",
+      "format": "json",
+      "transformTemplates": [
+        "( $sys := [\"aarch64-darwin\", \"aarch64-linux\", \"x86_64-linux\"]; $byVersion := items[system in $sys]{ version: system }; { \"releases\": [ $each($byVersion, function($systems, $version) { $count($systems) = $count($sys) ? { \"version\": $version } }) ] } )"
+      ]
+    }
+  },
   "customManagers": [
     {
       "customType": "regex",
-      "description": "Bump pinned ripgrep version (Flox manifest pilot)",
-      "fileMatch": ["^dot_flox/env/private_manifest\\.toml$"],
+      "description": "Bump every exact version pin in the Flox manifest. Requiring the value to start with a digit skips the >= ranges (which float on their own) and the inline-table pins go/granted (deliberately held). Pins may share a pkg-group only while a single catalog snapshot satisfies all of them; once they drift apart the group fails to lock with 'constraints too tight', so give each independently-bumped pin its own group.",
+      "managerFilePatterns": ["/^dot_flox/env/private_manifest\\.toml$/"],
       "matchStrings": [
-        "ripgrep\\.version = \"(?<currentValue>[^\"]+)\""
+        "(?<depName>[a-z0-9-]+)\\.version = \"(?<currentValue>\\d[^\"]*)\""
       ],
-      "depNameTemplate": "ripgrep",
-      "packageNameTemplate": "nix_unstable/ripgrep",
-      "datasourceTemplate": "repology"
-    },
-    {
-      "customType": "regex",
-      "description": "Bump pinned fd version (Flox manifest pilot)",
-      "fileMatch": ["^dot_flox/env/private_manifest\\.toml$"],
-      "matchStrings": [
-        "fd\\.version = \"(?<currentValue>[^\"]+)\""
-      ],
-      "depNameTemplate": "fd",
-      "packageNameTemplate": "nix_unstable/fd",
-      "datasourceTemplate": "repology"
-    },
-    {
-      "customType": "regex",
-      "description": "Bump pinned claude-code version (Flox manifest pilot)",
-      "fileMatch": ["^dot_flox/env/private_manifest\\.toml$"],
-      "matchStrings": [
-        "claude-code\\.version = \"(?<currentValue>[^\"]+)\""
-      ],
-      "depNameTemplate": "claude-code",
-      "packageNameTemplate": "nix_unstable/claude-code",
-      "datasourceTemplate": "repology"
-    },
-    {
-      "customType": "regex",
-      "description": "Bump pinned neovim version (Flox manifest pilot)",
-      "fileMatch": ["^dot_flox/env/private_manifest\\.toml$"],
-      "matchStrings": [
-        "neovim\\.version = \"(?<currentValue>[^\"]+)\""
-      ],
-      "depNameTemplate": "neovim",
-      "packageNameTemplate": "nix_unstable/neovim",
-      "datasourceTemplate": "repology"
-    },
-    {
-      "customType": "regex",
-      "description": "Bump pinned kubie version (Flox manifest pilot)",
-      "fileMatch": ["^dot_flox/env/private_manifest\\.toml$"],
-      "matchStrings": [
-        "kubie\\.version = \"(?<currentValue>[^\"]+)\""
-      ],
-      "depNameTemplate": "kubie",
-      "packageNameTemplate": "nix_unstable/kubie",
-      "datasourceTemplate": "repology"
-    },
-    {
-      "customType": "regex",
-      "description": "Bump pinned herdr version (Flox manifest pilot)",
-      "fileMatch": ["^dot_flox/env/private_manifest\\.toml$"],
-      "matchStrings": [
-        "herdr\\.version = \"(?<currentValue>[^\"]+)\""
-      ],
-      "depNameTemplate": "herdr",
-      "packageNameTemplate": "nix_unstable/herdr",
-      "datasourceTemplate": "repology"
-    },
-    {
-      "customType": "regex",
-      "description": "Bump pinned uv version (Flox manifest pilot)",
-      "fileMatch": ["^dot_flox/env/private_manifest\\.toml$"],
-      "matchStrings": [
-        "uv\\.version = \"(?<currentValue>[^\"]+)\""
-      ],
-      "depNameTemplate": "uv",
-      "packageNameTemplate": "nix_unstable/uv",
-      "datasourceTemplate": "repology"
-    },
-    {
-      "customType": "regex",
-      "description": "Bump pinned atuin version (Flox manifest pilot)",
-      "fileMatch": ["^dot_flox/env/private_manifest\\.toml$"],
-      "matchStrings": [
-        "atuin\\.version = \"(?<currentValue>[^\"]+)\""
-      ],
-      "depNameTemplate": "atuin",
-      "packageNameTemplate": "nix_unstable/atuin",
-      "datasourceTemplate": "repology"
-    },
-    {
-      "customType": "regex",
-      "description": "Bump pinned pi-coding-agent version (Flox manifest pilot)",
-      "fileMatch": ["^dot_flox/env/private_manifest\\.toml$"],
-      "matchStrings": [
-        "pi-coding-agent\\.version = \"(?<currentValue>[^\"]+)\""
-      ],
-      "depNameTemplate": "pi-coding-agent",
-      "packageNameTemplate": "nix_unstable/pi-coding-agent",
-      "datasourceTemplate": "repology"
+      "datasourceTemplate": "custom.flox-catalog"
     },
     {
       "customType": "regex",
       "description": "Bump zap flake ref to the latest tagged release",
-      "fileMatch": ["^dot_flox/env/private_manifest\\.toml$"],
+      "managerFilePatterns": ["/^dot_flox/env/private_manifest\\.toml$/"],
       "matchStrings": [
         "zap\\.flake = \"github:natejsimonsen/zap/(?<currentValue>[^\"]+)\""
       ],
@@ -116,8 +36,8 @@
   ],
   "packageRules": [
     {
-      "description": "Force-recreate pinned Flox PRs each run so a failed flox-relock check gets retried once the catalog catches up",
-      "matchDatasources": ["repology"],
+      "description": "Retained from the repology era so a failed flox-relock check still gets retried. The flox-catalog datasource only offers resolvable versions, so this should become unnecessary; drop it after a few clean runs.",
+      "matchDatasources": ["custom.flox-catalog"],
       "recreateWhen": "always"
     }
   ]
