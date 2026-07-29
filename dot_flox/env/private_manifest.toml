@@ -188,12 +188,35 @@ herdr.version = "0.7.4"
 # container — Apple's Linux container runtime; isolate so it resolves to latest
 container = { pkg-path = "container", pkg-group = "container", systems = ["aarch64-darwin"] }
 
-# gui — avoid blocking CLI tool upgrades
-aerospace = { pkg-path = "aerospace", pkg-group = "gui", systems = ["aarch64-darwin"] }
-wezterm = { pkg-path = "wezterm", pkg-group = "gui" }
-obsidian = { pkg-path = "obsidian", pkg-group = "gui" }
-halloy = { pkg-path = "halloy", pkg-group = "gui" }
-maccy = { pkg-path = "maccy", pkg-group = "gui", systems = ["aarch64-darwin"] }
+# gui — was a single "gui" group; now one group per app. Nothing here is ABI
+# coupled, so there is no reason to co-resolve them, and one pin per group is
+# required for independent Renovate bumps (see the header comment). Separate
+# groups still keep GUI apps from blocking CLI tool upgrades. All pinned to the
+# version already locked, so the split is behaviour-neutral.
+#
+# aerospace/maccy are aarch64-darwin only, so Renovate resolves them through the
+# flox-catalog-darwin datasource; requiring all three env systems would offer
+# them nothing. Each also needs non-default versioning, see renovate.json:
+# aerospace ships only -Beta prereleases, halloy uses YYYY.M[.P], and wezterm
+# has a legacy YYYYMMDD-HHMMSS-hash format that sorts above its current
+# YYYY-MM-DD one.
+aerospace.pkg-path = "aerospace"
+aerospace.pkg-group = "aerospace"
+aerospace.systems = ["aarch64-darwin"]
+aerospace.version = "0.21.2-Beta"
+wezterm.pkg-path = "wezterm"
+wezterm.pkg-group = "wezterm"
+wezterm.version = "2026-07-16"
+obsidian.pkg-path = "obsidian"
+obsidian.pkg-group = "obsidian"
+obsidian.version = "1.12.7"
+halloy.pkg-path = "halloy"
+halloy.pkg-group = "halloy"
+halloy.version = "2026.7.2"
+maccy.pkg-path = "maccy"
+maccy.pkg-group = "maccy"
+maccy.systems = ["aarch64-darwin"]
+maccy.version = "2.6.1"
 
 # Flake-based packages (pinned to specific commits/repos)
 coderabbit-cli.pkg-path = "flox/coderabbit-cli"
