@@ -10,17 +10,34 @@
       "transformTemplates": [
         "( $sys := [\"aarch64-darwin\", \"aarch64-linux\", \"x86_64-linux\"]; $byVersion := items[system in $sys]{ version: system }; { \"releases\": [ $each($byVersion, function($systems, $version) { $count($systems) = $count($sys) ? { \"version\": $version } }) ] } )"
       ]
+    },
+    "flox-catalog-darwin": {
+      "description": "For packages the manifest restricts to aarch64-darwin (aerospace, maccy, container). The all-systems rule yields them zero releases, since they are macOS-only and never build for linux.",
+      "defaultRegistryUrlTemplate": "https://api.flox.dev/api/v1/catalog/packages/{{packageName}}?pageSize=200",
+      "format": "json",
+      "transformTemplates": [
+        "( $byVersion := items[system = \"aarch64-darwin\"]{ version: system }; { \"releases\": [ $each($byVersion, function($systems, $version) { { \"version\": $version } }) ] } )"
+      ]
     }
   },
   "customManagers": [
     {
       "customType": "regex",
-      "description": "Bump every exact version pin in the Flox manifest. Requiring the value to start with a digit skips the >= ranges (which float on their own) and the inline-table pins go/granted (deliberately held). Pins may share a pkg-group only while a single catalog snapshot satisfies all of them; once they drift apart the group fails to lock with 'constraints too tight', so give each independently-bumped pin its own group.",
+      "description": "Bump exact version pins resolved across every system in [options].systems. Requiring the pinned value to start with a digit skips the >= ranges (which float on their own) and the inline-table pins go/granted (deliberately held). This also matches the darwin-only packages, which the manager below claims as well; the duplicate is suppressed by the packageRule that disables this datasource for them. Renovate compiles custom-manager regexes with RE2, so a negative lookahead is not available to exclude them here.",
       "managerFilePatterns": ["/^dot_flox/env/private_manifest\\.toml$/"],
       "matchStrings": [
-        "(?<depName>[a-z0-9-]+)\\.version = \"(?<currentValue>\\d[^\"]*)\""
+        "(?:^|\\n)(?<depName>[a-z0-9-]+)\\.version = \"(?<currentValue>\\d[^\"]*)\""
       ],
       "datasourceTemplate": "custom.flox-catalog"
+    },
+    {
+      "customType": "regex",
+      "description": "Bump exact version pins for packages the manifest restricts to aarch64-darwin. Keep this name list in sync with the matchDepNames of the packageRule that disables the all-systems datasource for them, or a package will be offered two conflicting updates.",
+      "managerFilePatterns": ["/^dot_flox/env/private_manifest\\.toml$/"],
+      "matchStrings": [
+        "(?:^|\\n)(?<depName>aerospace|maccy|container)\\.version = \"(?<currentValue>\\d[^\"]*)\""
+      ],
+      "datasourceTemplate": "custom.flox-catalog-darwin"
     },
     {
       "customType": "regex",
@@ -36,9 +53,30 @@
   ],
   "packageRules": [
     {
-      "description": "Retained from the repology era so a failed flox-relock check still gets retried. The flox-catalog datasource only offers resolvable versions, so this should become unnecessary; drop it after a few clean runs.",
-      "matchDatasources": ["custom.flox-catalog"],
+      "description": "Retained from the repology era so a failed flox-relock check still gets retried. The flox-catalog datasources only offer resolvable versions, so this should become unnecessary; drop it after a few clean runs.",
+      "matchDatasources": ["custom.flox-catalog", "custom.flox-catalog-darwin"],
       "recreateWhen": "always"
+    },
+    {
+      "description": "Darwin-only packages are matched by both custom managers, since RE2 gives the all-systems manager no way to exclude them. Disabling the all-systems datasource for them leaves the flox-catalog-darwin result as the only update source.",
+      "matchDatasources": ["custom.flox-catalog"],
+      "matchDepNames": ["aerospace", "maccy", "container"],
+      "enabled": false
+    },
+    {
+      "description": "aerospace has never cut a stable release; every catalog version is a -Beta prerelease. Without this Renovate finds no valid target and silently never opens a PR.",
+      "matchDepNames": ["aerospace"],
+      "ignoreUnstable": false
+    },
+    {
+      "description": "halloy versions are YYYY.M with an optional patch (2026.7, 2026.7.2), plus one legacy 23.1-alpha1. Not strict semver, but loose orders them correctly.",
+      "matchDepNames": ["halloy"],
+      "versioning": "loose"
+    },
+    {
+      "description": "wezterm currently tags YYYY-MM-DD but the catalog still carries 12 legacy YYYYMMDD-HHMMSS-hash versions. Under loose, 20240203 > 2026, so Renovate would propose a downgrade. This regex versioning matches only the current format, which makes the legacy versions invalid and therefore skipped.",
+      "matchDepNames": ["wezterm"],
+      "versioning": "regex:^(?<major>\\d{4})-(?<minor>\\d{2})-(?<patch>\\d{2})$"
     }
   ]
 }
