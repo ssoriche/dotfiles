@@ -39,7 +39,7 @@
       "atuin": {
         "pkg-path": "atuin",
         "pkg-group": "atuin.sh",
-        "version": ">=18.15"
+        "version": "18.17.1"
       },
       "awscli2": {
         "pkg-path": "awscli2",
@@ -257,7 +257,8 @@
       },
       "pi-coding-agent": {
         "pkg-path": "pi-coding-agent",
-        "pkg-group": "pi-coding-agent"
+        "pkg-group": "pi-coding-agent",
+        "version": "0.81.1"
       },
       "pv": {
         "pkg-path": "pv",
@@ -322,7 +323,7 @@
         "version": ">=25.5.31"
       },
       "zap": {
-        "flake": "github:natejsimonsen/zap",
+        "flake": "github:natejsimonsen/zap/v0.1.0",
         "systems": [
           "aarch64-darwin"
         ]
@@ -354,93 +355,6 @@
     }
   },
   "packages": [
-    {
-      "attr_path": "atuin",
-      "broken": false,
-      "derivation": "/nix/store/c5b0xkcxyc3qzrz2ls7xgrc7q1ynd21d-atuin-18.17.0.drv",
-      "description": "Replacement for a shell history which records additional commands context with optional encrypted synchronization between machines",
-      "install_id": "atuin",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=e2587caef70cea85dd97d7daab492899902dbf5d",
-      "name": "atuin-18.17.0",
-      "pname": "atuin",
-      "rev": "e2587caef70cea85dd97d7daab492899902dbf5d",
-      "rev_count": 1040357,
-      "rev_date": "2026-07-23T08:54:16Z",
-      "scrape_date": "2026-07-25T04:59:01.849396Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "18.17.0",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/bfrr0yf4rsdi6f6rv0v10l9w0d646fy2-atuin-18.17.0"
-      },
-      "system": "aarch64-darwin",
-      "group": "atuin.sh",
-      "priority": 5
-    },
-    {
-      "attr_path": "atuin",
-      "broken": false,
-      "derivation": "/nix/store/7nql0vqcdw38470zsjy8k95f30jwbj72-atuin-18.17.0.drv",
-      "description": "Replacement for a shell history which records additional commands context with optional encrypted synchronization between machines",
-      "install_id": "atuin",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=e2587caef70cea85dd97d7daab492899902dbf5d",
-      "name": "atuin-18.17.0",
-      "pname": "atuin",
-      "rev": "e2587caef70cea85dd97d7daab492899902dbf5d",
-      "rev_count": 1040357,
-      "rev_date": "2026-07-23T08:54:16Z",
-      "scrape_date": "2026-07-25T05:33:46.529033Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "18.17.0",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/vkd075njq7cxsh7l2x1ps46csrxyaa55-atuin-18.17.0"
-      },
-      "system": "aarch64-linux",
-      "group": "atuin.sh",
-      "priority": 5
-    },
-    {
-      "attr_path": "atuin",
-      "broken": false,
-      "derivation": "/nix/store/zb6d1z24y2fy3p11md0kv4bwpy67zkr0-atuin-18.17.0.drv",
-      "description": "Replacement for a shell history which records additional commands context with optional encrypted synchronization between machines",
-      "install_id": "atuin",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=e2587caef70cea85dd97d7daab492899902dbf5d",
-      "name": "atuin-18.17.0",
-      "pname": "atuin",
-      "rev": "e2587caef70cea85dd97d7daab492899902dbf5d",
-      "rev_count": 1040357,
-      "rev_date": "2026-07-23T08:54:16Z",
-      "scrape_date": "2026-07-25T06:17:34.874765Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "18.17.0",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/bw3sr0img9x8lam2dzim1spj6y3z2x61-atuin-18.17.0"
-      },
-      "system": "x86_64-linux",
-      "group": "atuin.sh",
-      "priority": 5
-    },
     {
       "attr_path": "claude-code",
       "broken": false,
@@ -2716,93 +2630,6 @@
       "priority": 5
     },
     {
-      "attr_path": "pi-coding-agent",
-      "broken": false,
-      "derivation": "/nix/store/v25giid6kshaq52hd9flzn2ncl4xfqf5-pi-coding-agent-0.80.10.drv",
-      "description": "Coding agent CLI with read, bash, edit, write tools and session management",
-      "install_id": "pi-coding-agent",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=e2587caef70cea85dd97d7daab492899902dbf5d",
-      "name": "pi-coding-agent-0.80.10",
-      "pname": "pi-coding-agent",
-      "rev": "e2587caef70cea85dd97d7daab492899902dbf5d",
-      "rev_count": 1040357,
-      "rev_date": "2026-07-23T08:54:16Z",
-      "scrape_date": "2026-07-25T04:59:42.545697Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.80.10",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/sjmllg00w1zvw5902bkj2p3qhm0hd9bl-pi-coding-agent-0.80.10"
-      },
-      "system": "aarch64-darwin",
-      "group": "pi-coding-agent",
-      "priority": 5
-    },
-    {
-      "attr_path": "pi-coding-agent",
-      "broken": false,
-      "derivation": "/nix/store/zdq9p759imqsa2wlvmn7xr22c7mn6rcw-pi-coding-agent-0.80.10.drv",
-      "description": "Coding agent CLI with read, bash, edit, write tools and session management",
-      "install_id": "pi-coding-agent",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=e2587caef70cea85dd97d7daab492899902dbf5d",
-      "name": "pi-coding-agent-0.80.10",
-      "pname": "pi-coding-agent",
-      "rev": "e2587caef70cea85dd97d7daab492899902dbf5d",
-      "rev_count": 1040357,
-      "rev_date": "2026-07-23T08:54:16Z",
-      "scrape_date": "2026-07-25T05:34:45.855261Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.80.10",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/4wgkz7v2p2s1zcaav0l7s0gpzca45syp-pi-coding-agent-0.80.10"
-      },
-      "system": "aarch64-linux",
-      "group": "pi-coding-agent",
-      "priority": 5
-    },
-    {
-      "attr_path": "pi-coding-agent",
-      "broken": false,
-      "derivation": "/nix/store/c53r4890frsabxgkk59vm3rjah52ic7j-pi-coding-agent-0.80.10.drv",
-      "description": "Coding agent CLI with read, bash, edit, write tools and session management",
-      "install_id": "pi-coding-agent",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=e2587caef70cea85dd97d7daab492899902dbf5d",
-      "name": "pi-coding-agent-0.80.10",
-      "pname": "pi-coding-agent",
-      "rev": "e2587caef70cea85dd97d7daab492899902dbf5d",
-      "rev_count": 1040357,
-      "rev_date": "2026-07-23T08:54:16Z",
-      "scrape_date": "2026-07-25T06:18:38.678370Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.80.10",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/46l2syffzlyylqhs4mlzaxxyj5ivglry-pi-coding-agent-0.80.10"
-      },
-      "system": "x86_64-linux",
-      "group": "pi-coding-agent",
-      "priority": 5
-    },
-    {
       "attr_path": "granted",
       "broken": false,
       "derivation": "/nix/store/ikdsyv0q34m2i5h9h2ikjb842m2i0037-granted-0.36.3.drv",
@@ -2890,6 +2717,93 @@
       },
       "system": "x86_64-linux",
       "group": "pinned",
+      "priority": 5
+    },
+    {
+      "attr_path": "uv",
+      "broken": false,
+      "derivation": "/nix/store/21fmr9z2wvd1q2xg7667km3yqlib3w9z-uv-0.11.32.drv",
+      "description": "Extremely fast Python package installer and resolver, written in Rust",
+      "install_id": "uv",
+      "license": "[ Apache-2.0, MIT ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=624af665418d3c65d544145b4d34ad696439570e",
+      "name": "uv-0.11.32",
+      "pname": "uv",
+      "rev": "624af665418d3c65d544145b4d34ad696439570e",
+      "rev_count": 1042126,
+      "rev_date": "2026-07-26T18:26:09Z",
+      "scrape_date": "2026-07-28T04:56:48.492582Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.11.32",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/g6amvg34a647nrchb4dvf4iy2xalrwj6-uv-0.11.32"
+      },
+      "system": "aarch64-darwin",
+      "group": "python",
+      "priority": 5
+    },
+    {
+      "attr_path": "uv",
+      "broken": false,
+      "derivation": "/nix/store/sr1mjx5z1fkpr97k4gb1b69jk4qq9arc-uv-0.11.32.drv",
+      "description": "Extremely fast Python package installer and resolver, written in Rust",
+      "install_id": "uv",
+      "license": "[ Apache-2.0, MIT ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=624af665418d3c65d544145b4d34ad696439570e",
+      "name": "uv-0.11.32",
+      "pname": "uv",
+      "rev": "624af665418d3c65d544145b4d34ad696439570e",
+      "rev_count": 1042126,
+      "rev_date": "2026-07-26T18:26:09Z",
+      "scrape_date": "2026-07-28T05:27:38.433610Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.11.32",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/jagiivdq93j5rs830iv4kbyjgrfj3av7-uv-0.11.32"
+      },
+      "system": "aarch64-linux",
+      "group": "python",
+      "priority": 5
+    },
+    {
+      "attr_path": "uv",
+      "broken": false,
+      "derivation": "/nix/store/m34xgx7y42f152l0lmyr9r510l78da9w-uv-0.11.32.drv",
+      "description": "Extremely fast Python package installer and resolver, written in Rust",
+      "install_id": "uv",
+      "license": "[ Apache-2.0, MIT ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=624af665418d3c65d544145b4d34ad696439570e",
+      "name": "uv-0.11.32",
+      "pname": "uv",
+      "rev": "624af665418d3c65d544145b4d34ad696439570e",
+      "rev_count": 1042126,
+      "rev_date": "2026-07-26T18:26:09Z",
+      "scrape_date": "2026-07-28T06:00:33.915346Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.11.32",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/dvr55z1smhg85vsx7iig1ks443pd954k-uv-0.11.32"
+      },
+      "system": "x86_64-linux",
+      "group": "python",
       "priority": 5
     },
     {
@@ -6808,90 +6722,177 @@
       "priority": 5
     },
     {
-      "attr_path": "uv",
+      "attr_path": "atuin",
       "broken": false,
-      "derivation": "/nix/store/21fmr9z2wvd1q2xg7667km3yqlib3w9z-uv-0.11.32.drv",
-      "description": "Extremely fast Python package installer and resolver, written in Rust",
-      "install_id": "uv",
-      "license": "[ Apache-2.0, MIT ]",
+      "derivation": "/nix/store/z6zsk2rjgx3wj7zikdg1ik1b9b394zg1-atuin-18.17.1.drv",
+      "description": "Replacement for a shell history which records additional commands context with optional encrypted synchronization between machines",
+      "install_id": "atuin",
+      "license": "MIT",
       "locked_url": "https://github.com/flox/nixpkgs?rev=624af665418d3c65d544145b4d34ad696439570e",
-      "name": "uv-0.11.32",
-      "pname": "uv",
+      "name": "atuin-18.17.1",
+      "pname": "atuin",
       "rev": "624af665418d3c65d544145b4d34ad696439570e",
       "rev_count": 1042126,
       "rev_date": "2026-07-26T18:26:09Z",
-      "scrape_date": "2026-07-28T04:56:48.492582Z",
+      "scrape_date": "2026-07-28T04:53:56.994909Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "0.11.32",
+      "version": "18.17.1",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/g6amvg34a647nrchb4dvf4iy2xalrwj6-uv-0.11.32"
+        "out": "/nix/store/ybywqx6nxfmds9lpwln48grdnywhgihx-atuin-18.17.1"
       },
       "system": "aarch64-darwin",
-      "group": "python",
+      "group": "atuin.sh",
       "priority": 5
     },
     {
-      "attr_path": "uv",
+      "attr_path": "atuin",
       "broken": false,
-      "derivation": "/nix/store/sr1mjx5z1fkpr97k4gb1b69jk4qq9arc-uv-0.11.32.drv",
-      "description": "Extremely fast Python package installer and resolver, written in Rust",
-      "install_id": "uv",
-      "license": "[ Apache-2.0, MIT ]",
+      "derivation": "/nix/store/6mmwd2y8q1fscfiamnnb153ymij5r5rk-atuin-18.17.1.drv",
+      "description": "Replacement for a shell history which records additional commands context with optional encrypted synchronization between machines",
+      "install_id": "atuin",
+      "license": "MIT",
       "locked_url": "https://github.com/flox/nixpkgs?rev=624af665418d3c65d544145b4d34ad696439570e",
-      "name": "uv-0.11.32",
-      "pname": "uv",
+      "name": "atuin-18.17.1",
+      "pname": "atuin",
       "rev": "624af665418d3c65d544145b4d34ad696439570e",
       "rev_count": 1042126,
       "rev_date": "2026-07-26T18:26:09Z",
-      "scrape_date": "2026-07-28T05:27:38.433610Z",
+      "scrape_date": "2026-07-28T05:24:05.082026Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "0.11.32",
+      "version": "18.17.1",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/jagiivdq93j5rs830iv4kbyjgrfj3av7-uv-0.11.32"
+        "out": "/nix/store/wdmljglby98x4wgvaiyxdqycy5dwsm27-atuin-18.17.1"
       },
       "system": "aarch64-linux",
-      "group": "python",
+      "group": "atuin.sh",
       "priority": 5
     },
     {
-      "attr_path": "uv",
+      "attr_path": "atuin",
       "broken": false,
-      "derivation": "/nix/store/m34xgx7y42f152l0lmyr9r510l78da9w-uv-0.11.32.drv",
-      "description": "Extremely fast Python package installer and resolver, written in Rust",
-      "install_id": "uv",
-      "license": "[ Apache-2.0, MIT ]",
+      "derivation": "/nix/store/3406wwhip626psn0a3krl0i488yy0yqw-atuin-18.17.1.drv",
+      "description": "Replacement for a shell history which records additional commands context with optional encrypted synchronization between machines",
+      "install_id": "atuin",
+      "license": "MIT",
       "locked_url": "https://github.com/flox/nixpkgs?rev=624af665418d3c65d544145b4d34ad696439570e",
-      "name": "uv-0.11.32",
-      "pname": "uv",
+      "name": "atuin-18.17.1",
+      "pname": "atuin",
       "rev": "624af665418d3c65d544145b4d34ad696439570e",
       "rev_count": 1042126,
       "rev_date": "2026-07-26T18:26:09Z",
-      "scrape_date": "2026-07-28T06:00:33.915346Z",
+      "scrape_date": "2026-07-28T05:56:50.602436Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "0.11.32",
+      "version": "18.17.1",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/dvr55z1smhg85vsx7iig1ks443pd954k-uv-0.11.32"
+        "out": "/nix/store/czs6dxsdni75035fqxvcdnr8cfsmxydx-atuin-18.17.1"
       },
       "system": "x86_64-linux",
-      "group": "python",
+      "group": "atuin.sh",
+      "priority": 5
+    },
+    {
+      "attr_path": "pi-coding-agent",
+      "broken": false,
+      "derivation": "/nix/store/qfw10jqbiljwflf762pkr40nmzb7alks-pi-coding-agent-0.81.1.drv",
+      "description": "Coding agent CLI with read, bash, edit, write tools and session management",
+      "install_id": "pi-coding-agent",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=624af665418d3c65d544145b4d34ad696439570e",
+      "name": "pi-coding-agent-0.81.1",
+      "pname": "pi-coding-agent",
+      "rev": "624af665418d3c65d544145b4d34ad696439570e",
+      "rev_count": 1042126,
+      "rev_date": "2026-07-26T18:26:09Z",
+      "scrape_date": "2026-07-28T04:54:37.755123Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.81.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/6bnk1lng2cwysy27fdn12z6mjrvv37mj-pi-coding-agent-0.81.1"
+      },
+      "system": "aarch64-darwin",
+      "group": "pi-coding-agent",
+      "priority": 5
+    },
+    {
+      "attr_path": "pi-coding-agent",
+      "broken": false,
+      "derivation": "/nix/store/iq10hrw6rx71r7z01b0pdfr9d438mm2a-pi-coding-agent-0.81.1.drv",
+      "description": "Coding agent CLI with read, bash, edit, write tools and session management",
+      "install_id": "pi-coding-agent",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=624af665418d3c65d544145b4d34ad696439570e",
+      "name": "pi-coding-agent-0.81.1",
+      "pname": "pi-coding-agent",
+      "rev": "624af665418d3c65d544145b4d34ad696439570e",
+      "rev_count": 1042126,
+      "rev_date": "2026-07-26T18:26:09Z",
+      "scrape_date": "2026-07-28T05:25:02.334522Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.81.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/568fb4r3vjs9mfnbqpyin5nb7q91jv1m-pi-coding-agent-0.81.1"
+      },
+      "system": "aarch64-linux",
+      "group": "pi-coding-agent",
+      "priority": 5
+    },
+    {
+      "attr_path": "pi-coding-agent",
+      "broken": false,
+      "derivation": "/nix/store/1fgv7skmhpab9i3sial6h7znrf8x87bp-pi-coding-agent-0.81.1.drv",
+      "description": "Coding agent CLI with read, bash, edit, write tools and session management",
+      "install_id": "pi-coding-agent",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=624af665418d3c65d544145b4d34ad696439570e",
+      "name": "pi-coding-agent-0.81.1",
+      "pname": "pi-coding-agent",
+      "rev": "624af665418d3c65d544145b4d34ad696439570e",
+      "rev_count": 1042126,
+      "rev_date": "2026-07-26T18:26:09Z",
+      "scrape_date": "2026-07-28T05:57:52.734124Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.81.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/v5071rnp4m8m8qgrrzdbbslij96zjv74-pi-coding-agent-0.81.1"
+      },
+      "system": "x86_64-linux",
+      "group": "pi-coding-agent",
       "priority": 5
     },
     {
@@ -6925,12 +6926,12 @@
     },
     {
       "install_id": "zap",
-      "locked-url": "github:natejsimonsen/zap/40fb4784fcd471988a4db7019d64d619563a1a16?narHash=sha256-9yUYV1qux9pkAmUv3AfusyGcvEeyKsaFAN2cob93KNE%3D",
+      "locked-url": "github:natejsimonsen/zap/588f68fda871e3594328961c2fbf0513efc33db6?narHash=sha256-BMHX69GtGcNABI3tcvaal9SxYrRIUAcf56s1dwVwZO0%3D",
       "flake-description": "Zap — a minimal macOS application launcher bound to Cmd+Space",
       "locked-flake-attr-path": "packages.aarch64-darwin.default",
-      "derivation": "/nix/store/4899axi7v3dvy5jxn4ly0lbk64s3zjmc-zap-0.1.0.drv",
+      "derivation": "/nix/store/dv668l28lmidaf3x6bj4n6fwmw0sz1q2-zap-0.1.0.drv",
       "outputs": {
-        "out": "/nix/store/f9qk2qbnyszkgbw6pnm9899awjgp3dyv-zap-0.1.0"
+        "out": "/nix/store/9gz8n218z2kcd7ghalxynh5n3dvxmcwr-zap-0.1.0"
       },
       "output-names": [
         "out"
