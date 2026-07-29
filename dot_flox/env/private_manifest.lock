@@ -308,7 +308,7 @@
       "uv": {
         "pkg-path": "uv",
         "pkg-group": "python",
-        "version": "0.11.28"
+        "version": "0.11.32"
       },
       "wezterm": {
         "pkg-path": "wezterm",
@@ -439,6 +439,93 @@
       },
       "system": "x86_64-linux",
       "group": "atuin.sh",
+      "priority": 5
+    },
+    {
+      "attr_path": "claude-code",
+      "broken": false,
+      "derivation": "/nix/store/0aqgs8bahbiqdkb6xgs8ns1g6lpfb17h-claude-code-2.1.220.drv",
+      "description": "Agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster",
+      "install_id": "claude-code",
+      "license": "Unfree",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=624af665418d3c65d544145b4d34ad696439570e",
+      "name": "claude-code-2.1.220",
+      "pname": "claude-code",
+      "rev": "624af665418d3c65d544145b4d34ad696439570e",
+      "rev_count": 1042126,
+      "rev_date": "2026-07-26T18:26:09Z",
+      "scrape_date": "2026-07-28T04:53:57.345414Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "2.1.220",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/1y8f7j2n7m77rx5873xzksxh1x7ip3v3-claude-code-2.1.220"
+      },
+      "system": "aarch64-darwin",
+      "group": "claude",
+      "priority": 5
+    },
+    {
+      "attr_path": "claude-code",
+      "broken": false,
+      "derivation": "/nix/store/znm067mg4bkdbgn8fzdk3ljvhqj5s2ry-claude-code-2.1.220.drv",
+      "description": "Agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster",
+      "install_id": "claude-code",
+      "license": "Unfree",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=624af665418d3c65d544145b4d34ad696439570e",
+      "name": "claude-code-2.1.220",
+      "pname": "claude-code",
+      "rev": "624af665418d3c65d544145b4d34ad696439570e",
+      "rev_count": 1042126,
+      "rev_date": "2026-07-26T18:26:09Z",
+      "scrape_date": "2026-07-28T05:24:05.526275Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "2.1.220",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/z8nabn39pfy29avsdmyb7acjll35i2ca-claude-code-2.1.220"
+      },
+      "system": "aarch64-linux",
+      "group": "claude",
+      "priority": 5
+    },
+    {
+      "attr_path": "claude-code",
+      "broken": false,
+      "derivation": "/nix/store/k3jd3fk8g3hc6c6wbh4imch0hxlna69d-claude-code-2.1.220.drv",
+      "description": "Agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster",
+      "install_id": "claude-code",
+      "license": "Unfree",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=624af665418d3c65d544145b4d34ad696439570e",
+      "name": "claude-code-2.1.220",
+      "pname": "claude-code",
+      "rev": "624af665418d3c65d544145b4d34ad696439570e",
+      "rev_count": 1042126,
+      "rev_date": "2026-07-26T18:26:09Z",
+      "scrape_date": "2026-07-28T05:56:51.091625Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "2.1.220",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/00277lm5kyqi68xjzy95a891kc1ca3vh-claude-code-2.1.220"
+      },
+      "system": "x86_64-linux",
+      "group": "claude",
       "priority": 5
     },
     {
@@ -2803,93 +2890,6 @@
       },
       "system": "x86_64-linux",
       "group": "pinned",
-      "priority": 5
-    },
-    {
-      "attr_path": "uv",
-      "broken": false,
-      "derivation": "/nix/store/9ik3ydcapzdsv9242ps6gcx8pszb61fs-uv-0.11.28.drv",
-      "description": "Extremely fast Python package installer and resolver, written in Rust",
-      "install_id": "uv",
-      "license": "[ Apache-2.0, MIT ]",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=e2587caef70cea85dd97d7daab492899902dbf5d",
-      "name": "uv-0.11.28",
-      "pname": "uv",
-      "rev": "e2587caef70cea85dd97d7daab492899902dbf5d",
-      "rev_count": 1040357,
-      "rev_date": "2026-07-23T08:54:16Z",
-      "scrape_date": "2026-07-25T05:01:53.009063Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.11.28",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/yn36m1y6l2kmhx1dkqsmy3kf6acx77mz-uv-0.11.28"
-      },
-      "system": "aarch64-darwin",
-      "group": "python",
-      "priority": 5
-    },
-    {
-      "attr_path": "uv",
-      "broken": false,
-      "derivation": "/nix/store/s6kl4ib60nig4lc1fg1cfys7pzcgyb97-uv-0.11.28.drv",
-      "description": "Extremely fast Python package installer and resolver, written in Rust",
-      "install_id": "uv",
-      "license": "[ Apache-2.0, MIT ]",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=e2587caef70cea85dd97d7daab492899902dbf5d",
-      "name": "uv-0.11.28",
-      "pname": "uv",
-      "rev": "e2587caef70cea85dd97d7daab492899902dbf5d",
-      "rev_count": 1040357,
-      "rev_date": "2026-07-23T08:54:16Z",
-      "scrape_date": "2026-07-25T05:37:27.870558Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.11.28",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/lj1akylx79l52f6yp3j2a55gf7s7vhx1-uv-0.11.28"
-      },
-      "system": "aarch64-linux",
-      "group": "python",
-      "priority": 5
-    },
-    {
-      "attr_path": "uv",
-      "broken": false,
-      "derivation": "/nix/store/746v5xlv9cjbcmkmsr56rz6f1hvf3vqc-uv-0.11.28.drv",
-      "description": "Extremely fast Python package installer and resolver, written in Rust",
-      "install_id": "uv",
-      "license": "[ Apache-2.0, MIT ]",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=e2587caef70cea85dd97d7daab492899902dbf5d",
-      "name": "uv-0.11.28",
-      "pname": "uv",
-      "rev": "e2587caef70cea85dd97d7daab492899902dbf5d",
-      "rev_count": 1040357,
-      "rev_date": "2026-07-23T08:54:16Z",
-      "scrape_date": "2026-07-25T06:21:23.398571Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.11.28",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/zrq88ys031mx35ib1lb3xahcm4dsq71r-uv-0.11.28"
-      },
-      "system": "x86_64-linux",
-      "group": "python",
       "priority": 5
     },
     {
@@ -6808,90 +6808,90 @@
       "priority": 5
     },
     {
-      "attr_path": "claude-code",
+      "attr_path": "uv",
       "broken": false,
-      "derivation": "/nix/store/0aqgs8bahbiqdkb6xgs8ns1g6lpfb17h-claude-code-2.1.220.drv",
-      "description": "Agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster",
-      "install_id": "claude-code",
-      "license": "Unfree",
+      "derivation": "/nix/store/21fmr9z2wvd1q2xg7667km3yqlib3w9z-uv-0.11.32.drv",
+      "description": "Extremely fast Python package installer and resolver, written in Rust",
+      "install_id": "uv",
+      "license": "[ Apache-2.0, MIT ]",
       "locked_url": "https://github.com/flox/nixpkgs?rev=624af665418d3c65d544145b4d34ad696439570e",
-      "name": "claude-code-2.1.220",
-      "pname": "claude-code",
+      "name": "uv-0.11.32",
+      "pname": "uv",
       "rev": "624af665418d3c65d544145b4d34ad696439570e",
       "rev_count": 1042126,
       "rev_date": "2026-07-26T18:26:09Z",
-      "scrape_date": "2026-07-28T04:53:57.345414Z",
+      "scrape_date": "2026-07-28T04:56:48.492582Z",
       "stabilities": [
         "unstable"
       ],
-      "unfree": true,
-      "version": "2.1.220",
+      "unfree": false,
+      "version": "0.11.32",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/1y8f7j2n7m77rx5873xzksxh1x7ip3v3-claude-code-2.1.220"
+        "out": "/nix/store/g6amvg34a647nrchb4dvf4iy2xalrwj6-uv-0.11.32"
       },
       "system": "aarch64-darwin",
-      "group": "claude",
+      "group": "python",
       "priority": 5
     },
     {
-      "attr_path": "claude-code",
+      "attr_path": "uv",
       "broken": false,
-      "derivation": "/nix/store/znm067mg4bkdbgn8fzdk3ljvhqj5s2ry-claude-code-2.1.220.drv",
-      "description": "Agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster",
-      "install_id": "claude-code",
-      "license": "Unfree",
+      "derivation": "/nix/store/sr1mjx5z1fkpr97k4gb1b69jk4qq9arc-uv-0.11.32.drv",
+      "description": "Extremely fast Python package installer and resolver, written in Rust",
+      "install_id": "uv",
+      "license": "[ Apache-2.0, MIT ]",
       "locked_url": "https://github.com/flox/nixpkgs?rev=624af665418d3c65d544145b4d34ad696439570e",
-      "name": "claude-code-2.1.220",
-      "pname": "claude-code",
+      "name": "uv-0.11.32",
+      "pname": "uv",
       "rev": "624af665418d3c65d544145b4d34ad696439570e",
       "rev_count": 1042126,
       "rev_date": "2026-07-26T18:26:09Z",
-      "scrape_date": "2026-07-28T05:24:05.526275Z",
+      "scrape_date": "2026-07-28T05:27:38.433610Z",
       "stabilities": [
         "unstable"
       ],
-      "unfree": true,
-      "version": "2.1.220",
+      "unfree": false,
+      "version": "0.11.32",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/z8nabn39pfy29avsdmyb7acjll35i2ca-claude-code-2.1.220"
+        "out": "/nix/store/jagiivdq93j5rs830iv4kbyjgrfj3av7-uv-0.11.32"
       },
       "system": "aarch64-linux",
-      "group": "claude",
+      "group": "python",
       "priority": 5
     },
     {
-      "attr_path": "claude-code",
+      "attr_path": "uv",
       "broken": false,
-      "derivation": "/nix/store/k3jd3fk8g3hc6c6wbh4imch0hxlna69d-claude-code-2.1.220.drv",
-      "description": "Agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster",
-      "install_id": "claude-code",
-      "license": "Unfree",
+      "derivation": "/nix/store/m34xgx7y42f152l0lmyr9r510l78da9w-uv-0.11.32.drv",
+      "description": "Extremely fast Python package installer and resolver, written in Rust",
+      "install_id": "uv",
+      "license": "[ Apache-2.0, MIT ]",
       "locked_url": "https://github.com/flox/nixpkgs?rev=624af665418d3c65d544145b4d34ad696439570e",
-      "name": "claude-code-2.1.220",
-      "pname": "claude-code",
+      "name": "uv-0.11.32",
+      "pname": "uv",
       "rev": "624af665418d3c65d544145b4d34ad696439570e",
       "rev_count": 1042126,
       "rev_date": "2026-07-26T18:26:09Z",
-      "scrape_date": "2026-07-28T05:56:51.091625Z",
+      "scrape_date": "2026-07-28T06:00:33.915346Z",
       "stabilities": [
         "unstable"
       ],
-      "unfree": true,
-      "version": "2.1.220",
+      "unfree": false,
+      "version": "0.11.32",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/00277lm5kyqi68xjzy95a891kc1ca3vh-claude-code-2.1.220"
+        "out": "/nix/store/dvr55z1smhg85vsx7iig1ks443pd954k-uv-0.11.32"
       },
       "system": "x86_64-linux",
-      "group": "claude",
+      "group": "python",
       "priority": 5
     },
     {
