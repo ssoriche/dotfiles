@@ -147,7 +147,7 @@
       "go": {
         "pkg-path": "go",
         "pkg-group": "golang",
-        "version": "1.26"
+        "version": "1.26.5"
       },
       "golangci-lint": {
         "pkg-path": "golangci-lint",
@@ -355,6 +355,93 @@
     }
   },
   "packages": [
+    {
+      "attr_path": "atuin",
+      "broken": false,
+      "derivation": "/nix/store/z6zsk2rjgx3wj7zikdg1ik1b9b394zg1-atuin-18.17.1.drv",
+      "description": "Replacement for a shell history which records additional commands context with optional encrypted synchronization between machines",
+      "install_id": "atuin",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=624af665418d3c65d544145b4d34ad696439570e",
+      "name": "atuin-18.17.1",
+      "pname": "atuin",
+      "rev": "624af665418d3c65d544145b4d34ad696439570e",
+      "rev_count": 1042126,
+      "rev_date": "2026-07-26T18:26:09Z",
+      "scrape_date": "2026-07-28T04:53:56.994909Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "18.17.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/ybywqx6nxfmds9lpwln48grdnywhgihx-atuin-18.17.1"
+      },
+      "system": "aarch64-darwin",
+      "group": "atuin.sh",
+      "priority": 5
+    },
+    {
+      "attr_path": "atuin",
+      "broken": false,
+      "derivation": "/nix/store/6mmwd2y8q1fscfiamnnb153ymij5r5rk-atuin-18.17.1.drv",
+      "description": "Replacement for a shell history which records additional commands context with optional encrypted synchronization between machines",
+      "install_id": "atuin",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=624af665418d3c65d544145b4d34ad696439570e",
+      "name": "atuin-18.17.1",
+      "pname": "atuin",
+      "rev": "624af665418d3c65d544145b4d34ad696439570e",
+      "rev_count": 1042126,
+      "rev_date": "2026-07-26T18:26:09Z",
+      "scrape_date": "2026-07-28T05:24:05.082026Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "18.17.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/wdmljglby98x4wgvaiyxdqycy5dwsm27-atuin-18.17.1"
+      },
+      "system": "aarch64-linux",
+      "group": "atuin.sh",
+      "priority": 5
+    },
+    {
+      "attr_path": "atuin",
+      "broken": false,
+      "derivation": "/nix/store/3406wwhip626psn0a3krl0i488yy0yqw-atuin-18.17.1.drv",
+      "description": "Replacement for a shell history which records additional commands context with optional encrypted synchronization between machines",
+      "install_id": "atuin",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=624af665418d3c65d544145b4d34ad696439570e",
+      "name": "atuin-18.17.1",
+      "pname": "atuin",
+      "rev": "624af665418d3c65d544145b4d34ad696439570e",
+      "rev_count": 1042126,
+      "rev_date": "2026-07-26T18:26:09Z",
+      "scrape_date": "2026-07-28T05:56:50.602436Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "18.17.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/czs6dxsdni75035fqxvcdnr8cfsmxydx-atuin-18.17.1"
+      },
+      "system": "x86_64-linux",
+      "group": "atuin.sh",
+      "priority": 5
+    },
     {
       "attr_path": "claude-code",
       "broken": false,
@@ -1000,180 +1087,6 @@
       },
       "system": "x86_64-linux",
       "group": "fd",
-      "priority": 5
-    },
-    {
-      "attr_path": "go",
-      "broken": false,
-      "derivation": "/nix/store/4nx4s2ybamjrzx486h9yad48hrhmn1wn-go-1.26.5.drv",
-      "description": "Go Programming language",
-      "install_id": "go",
-      "license": "BSD-3-Clause",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=624af665418d3c65d544145b4d34ad696439570e",
-      "name": "go-1.26.5",
-      "pname": "go",
-      "rev": "624af665418d3c65d544145b4d34ad696439570e",
-      "rev_count": 1042126,
-      "rev_date": "2026-07-26T18:26:09Z",
-      "scrape_date": "2026-07-28T04:53:58.450129Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "1.26.5",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/naw4mj4s58ymzlc10a76y79m40w3wfpp-go-1.26.5"
-      },
-      "system": "aarch64-darwin",
-      "group": "golang",
-      "priority": 5
-    },
-    {
-      "attr_path": "go",
-      "broken": false,
-      "derivation": "/nix/store/8fmcg8gw1gibidq3c2fknnyfi9l8mxsa-go-1.26.5.drv",
-      "description": "Go Programming language",
-      "install_id": "go",
-      "license": "BSD-3-Clause",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=624af665418d3c65d544145b4d34ad696439570e",
-      "name": "go-1.26.5",
-      "pname": "go",
-      "rev": "624af665418d3c65d544145b4d34ad696439570e",
-      "rev_count": 1042126,
-      "rev_date": "2026-07-26T18:26:09Z",
-      "scrape_date": "2026-07-28T05:24:07.737589Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "1.26.5",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/fhg6v8k9hbqpr4b2zcmd099afxh7qxw0-go-1.26.5"
-      },
-      "system": "aarch64-linux",
-      "group": "golang",
-      "priority": 5
-    },
-    {
-      "attr_path": "go",
-      "broken": false,
-      "derivation": "/nix/store/sgdy02bby4g2mg0qnlzmsi2p2srb63dn-go-1.26.5.drv",
-      "description": "Go Programming language",
-      "install_id": "go",
-      "license": "BSD-3-Clause",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=624af665418d3c65d544145b4d34ad696439570e",
-      "name": "go-1.26.5",
-      "pname": "go",
-      "rev": "624af665418d3c65d544145b4d34ad696439570e",
-      "rev_count": 1042126,
-      "rev_date": "2026-07-26T18:26:09Z",
-      "scrape_date": "2026-07-28T05:56:53.547446Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "1.26.5",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/rcz9i4msbg3178grqll9h98b07dwk7zg-go-1.26.5"
-      },
-      "system": "x86_64-linux",
-      "group": "golang",
-      "priority": 5
-    },
-    {
-      "attr_path": "golangci-lint",
-      "broken": false,
-      "derivation": "/nix/store/26k2z6wiij4m72xc2c1cy2phdbig1yiz-golangci-lint-2.12.2.drv",
-      "description": "Fast linters Runner for Go",
-      "install_id": "golangci-lint",
-      "license": "GPL-3.0-or-later",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=624af665418d3c65d544145b4d34ad696439570e",
-      "name": "golangci-lint-2.12.2",
-      "pname": "golangci-lint",
-      "rev": "624af665418d3c65d544145b4d34ad696439570e",
-      "rev_count": 1042126,
-      "rev_date": "2026-07-26T18:26:09Z",
-      "scrape_date": "2026-07-28T04:53:58.520035Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "2.12.2",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/l2j3j7nvynbk0gw5km9pknizq593633j-golangci-lint-2.12.2"
-      },
-      "system": "aarch64-darwin",
-      "group": "golang",
-      "priority": 5
-    },
-    {
-      "attr_path": "golangci-lint",
-      "broken": false,
-      "derivation": "/nix/store/0cczprsfla1r3q2vanw4j2hgvhnz6jv8-golangci-lint-2.12.2.drv",
-      "description": "Fast linters Runner for Go",
-      "install_id": "golangci-lint",
-      "license": "GPL-3.0-or-later",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=624af665418d3c65d544145b4d34ad696439570e",
-      "name": "golangci-lint-2.12.2",
-      "pname": "golangci-lint",
-      "rev": "624af665418d3c65d544145b4d34ad696439570e",
-      "rev_count": 1042126,
-      "rev_date": "2026-07-26T18:26:09Z",
-      "scrape_date": "2026-07-28T05:24:07.843502Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "2.12.2",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/gpyxbilsvyw9wv49nh4ng6lva95z38j3-golangci-lint-2.12.2"
-      },
-      "system": "aarch64-linux",
-      "group": "golang",
-      "priority": 5
-    },
-    {
-      "attr_path": "golangci-lint",
-      "broken": false,
-      "derivation": "/nix/store/hnx2xpg3rskjckwjjahpqjajjwl90v7i-golangci-lint-2.12.2.drv",
-      "description": "Fast linters Runner for Go",
-      "install_id": "golangci-lint",
-      "license": "GPL-3.0-or-later",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=624af665418d3c65d544145b4d34ad696439570e",
-      "name": "golangci-lint-2.12.2",
-      "pname": "golangci-lint",
-      "rev": "624af665418d3c65d544145b4d34ad696439570e",
-      "rev_count": 1042126,
-      "rev_date": "2026-07-26T18:26:09Z",
-      "scrape_date": "2026-07-28T05:56:53.661474Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "2.12.2",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/47w5wfrc8bcvggamqqlvkyavpc9l2bsm-golangci-lint-2.12.2"
-      },
-      "system": "x86_64-linux",
-      "group": "golang",
       "priority": 5
     },
     {
@@ -2627,6 +2540,93 @@
       },
       "system": "x86_64-linux",
       "group": "nono",
+      "priority": 5
+    },
+    {
+      "attr_path": "pi-coding-agent",
+      "broken": false,
+      "derivation": "/nix/store/qfw10jqbiljwflf762pkr40nmzb7alks-pi-coding-agent-0.81.1.drv",
+      "description": "Coding agent CLI with read, bash, edit, write tools and session management",
+      "install_id": "pi-coding-agent",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=624af665418d3c65d544145b4d34ad696439570e",
+      "name": "pi-coding-agent-0.81.1",
+      "pname": "pi-coding-agent",
+      "rev": "624af665418d3c65d544145b4d34ad696439570e",
+      "rev_count": 1042126,
+      "rev_date": "2026-07-26T18:26:09Z",
+      "scrape_date": "2026-07-28T04:54:37.755123Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.81.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/6bnk1lng2cwysy27fdn12z6mjrvv37mj-pi-coding-agent-0.81.1"
+      },
+      "system": "aarch64-darwin",
+      "group": "pi-coding-agent",
+      "priority": 5
+    },
+    {
+      "attr_path": "pi-coding-agent",
+      "broken": false,
+      "derivation": "/nix/store/iq10hrw6rx71r7z01b0pdfr9d438mm2a-pi-coding-agent-0.81.1.drv",
+      "description": "Coding agent CLI with read, bash, edit, write tools and session management",
+      "install_id": "pi-coding-agent",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=624af665418d3c65d544145b4d34ad696439570e",
+      "name": "pi-coding-agent-0.81.1",
+      "pname": "pi-coding-agent",
+      "rev": "624af665418d3c65d544145b4d34ad696439570e",
+      "rev_count": 1042126,
+      "rev_date": "2026-07-26T18:26:09Z",
+      "scrape_date": "2026-07-28T05:25:02.334522Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.81.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/568fb4r3vjs9mfnbqpyin5nb7q91jv1m-pi-coding-agent-0.81.1"
+      },
+      "system": "aarch64-linux",
+      "group": "pi-coding-agent",
+      "priority": 5
+    },
+    {
+      "attr_path": "pi-coding-agent",
+      "broken": false,
+      "derivation": "/nix/store/1fgv7skmhpab9i3sial6h7znrf8x87bp-pi-coding-agent-0.81.1.drv",
+      "description": "Coding agent CLI with read, bash, edit, write tools and session management",
+      "install_id": "pi-coding-agent",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=624af665418d3c65d544145b4d34ad696439570e",
+      "name": "pi-coding-agent-0.81.1",
+      "pname": "pi-coding-agent",
+      "rev": "624af665418d3c65d544145b4d34ad696439570e",
+      "rev_count": 1042126,
+      "rev_date": "2026-07-26T18:26:09Z",
+      "scrape_date": "2026-07-28T05:57:52.734124Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.81.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/v5071rnp4m8m8qgrrzdbbslij96zjv74-pi-coding-agent-0.81.1"
+      },
+      "system": "x86_64-linux",
+      "group": "pi-coding-agent",
       "priority": 5
     },
     {
@@ -6722,177 +6722,177 @@
       "priority": 5
     },
     {
-      "attr_path": "atuin",
+      "attr_path": "go",
       "broken": false,
-      "derivation": "/nix/store/z6zsk2rjgx3wj7zikdg1ik1b9b394zg1-atuin-18.17.1.drv",
-      "description": "Replacement for a shell history which records additional commands context with optional encrypted synchronization between machines",
-      "install_id": "atuin",
-      "license": "MIT",
+      "derivation": "/nix/store/4nx4s2ybamjrzx486h9yad48hrhmn1wn-go-1.26.5.drv",
+      "description": "Go Programming language",
+      "install_id": "go",
+      "license": "BSD-3-Clause",
       "locked_url": "https://github.com/flox/nixpkgs?rev=624af665418d3c65d544145b4d34ad696439570e",
-      "name": "atuin-18.17.1",
-      "pname": "atuin",
+      "name": "go-1.26.5",
+      "pname": "go",
       "rev": "624af665418d3c65d544145b4d34ad696439570e",
       "rev_count": 1042126,
       "rev_date": "2026-07-26T18:26:09Z",
-      "scrape_date": "2026-07-28T04:53:56.994909Z",
+      "scrape_date": "2026-07-28T04:53:58.450129Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "18.17.1",
+      "version": "1.26.5",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/ybywqx6nxfmds9lpwln48grdnywhgihx-atuin-18.17.1"
+        "out": "/nix/store/naw4mj4s58ymzlc10a76y79m40w3wfpp-go-1.26.5"
       },
       "system": "aarch64-darwin",
-      "group": "atuin.sh",
+      "group": "golang",
       "priority": 5
     },
     {
-      "attr_path": "atuin",
+      "attr_path": "go",
       "broken": false,
-      "derivation": "/nix/store/6mmwd2y8q1fscfiamnnb153ymij5r5rk-atuin-18.17.1.drv",
-      "description": "Replacement for a shell history which records additional commands context with optional encrypted synchronization between machines",
-      "install_id": "atuin",
-      "license": "MIT",
+      "derivation": "/nix/store/8fmcg8gw1gibidq3c2fknnyfi9l8mxsa-go-1.26.5.drv",
+      "description": "Go Programming language",
+      "install_id": "go",
+      "license": "BSD-3-Clause",
       "locked_url": "https://github.com/flox/nixpkgs?rev=624af665418d3c65d544145b4d34ad696439570e",
-      "name": "atuin-18.17.1",
-      "pname": "atuin",
+      "name": "go-1.26.5",
+      "pname": "go",
       "rev": "624af665418d3c65d544145b4d34ad696439570e",
       "rev_count": 1042126,
       "rev_date": "2026-07-26T18:26:09Z",
-      "scrape_date": "2026-07-28T05:24:05.082026Z",
+      "scrape_date": "2026-07-28T05:24:07.737589Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "18.17.1",
+      "version": "1.26.5",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/wdmljglby98x4wgvaiyxdqycy5dwsm27-atuin-18.17.1"
+        "out": "/nix/store/fhg6v8k9hbqpr4b2zcmd099afxh7qxw0-go-1.26.5"
       },
       "system": "aarch64-linux",
-      "group": "atuin.sh",
+      "group": "golang",
       "priority": 5
     },
     {
-      "attr_path": "atuin",
+      "attr_path": "go",
       "broken": false,
-      "derivation": "/nix/store/3406wwhip626psn0a3krl0i488yy0yqw-atuin-18.17.1.drv",
-      "description": "Replacement for a shell history which records additional commands context with optional encrypted synchronization between machines",
-      "install_id": "atuin",
-      "license": "MIT",
+      "derivation": "/nix/store/sgdy02bby4g2mg0qnlzmsi2p2srb63dn-go-1.26.5.drv",
+      "description": "Go Programming language",
+      "install_id": "go",
+      "license": "BSD-3-Clause",
       "locked_url": "https://github.com/flox/nixpkgs?rev=624af665418d3c65d544145b4d34ad696439570e",
-      "name": "atuin-18.17.1",
-      "pname": "atuin",
+      "name": "go-1.26.5",
+      "pname": "go",
       "rev": "624af665418d3c65d544145b4d34ad696439570e",
       "rev_count": 1042126,
       "rev_date": "2026-07-26T18:26:09Z",
-      "scrape_date": "2026-07-28T05:56:50.602436Z",
+      "scrape_date": "2026-07-28T05:56:53.547446Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "18.17.1",
+      "version": "1.26.5",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/czs6dxsdni75035fqxvcdnr8cfsmxydx-atuin-18.17.1"
+        "out": "/nix/store/rcz9i4msbg3178grqll9h98b07dwk7zg-go-1.26.5"
       },
       "system": "x86_64-linux",
-      "group": "atuin.sh",
+      "group": "golang",
       "priority": 5
     },
     {
-      "attr_path": "pi-coding-agent",
+      "attr_path": "golangci-lint",
       "broken": false,
-      "derivation": "/nix/store/qfw10jqbiljwflf762pkr40nmzb7alks-pi-coding-agent-0.81.1.drv",
-      "description": "Coding agent CLI with read, bash, edit, write tools and session management",
-      "install_id": "pi-coding-agent",
-      "license": "MIT",
+      "derivation": "/nix/store/26k2z6wiij4m72xc2c1cy2phdbig1yiz-golangci-lint-2.12.2.drv",
+      "description": "Fast linters Runner for Go",
+      "install_id": "golangci-lint",
+      "license": "GPL-3.0-or-later",
       "locked_url": "https://github.com/flox/nixpkgs?rev=624af665418d3c65d544145b4d34ad696439570e",
-      "name": "pi-coding-agent-0.81.1",
-      "pname": "pi-coding-agent",
+      "name": "golangci-lint-2.12.2",
+      "pname": "golangci-lint",
       "rev": "624af665418d3c65d544145b4d34ad696439570e",
       "rev_count": 1042126,
       "rev_date": "2026-07-26T18:26:09Z",
-      "scrape_date": "2026-07-28T04:54:37.755123Z",
+      "scrape_date": "2026-07-28T04:53:58.520035Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "0.81.1",
+      "version": "2.12.2",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/6bnk1lng2cwysy27fdn12z6mjrvv37mj-pi-coding-agent-0.81.1"
+        "out": "/nix/store/l2j3j7nvynbk0gw5km9pknizq593633j-golangci-lint-2.12.2"
       },
       "system": "aarch64-darwin",
-      "group": "pi-coding-agent",
+      "group": "golang",
       "priority": 5
     },
     {
-      "attr_path": "pi-coding-agent",
+      "attr_path": "golangci-lint",
       "broken": false,
-      "derivation": "/nix/store/iq10hrw6rx71r7z01b0pdfr9d438mm2a-pi-coding-agent-0.81.1.drv",
-      "description": "Coding agent CLI with read, bash, edit, write tools and session management",
-      "install_id": "pi-coding-agent",
-      "license": "MIT",
+      "derivation": "/nix/store/0cczprsfla1r3q2vanw4j2hgvhnz6jv8-golangci-lint-2.12.2.drv",
+      "description": "Fast linters Runner for Go",
+      "install_id": "golangci-lint",
+      "license": "GPL-3.0-or-later",
       "locked_url": "https://github.com/flox/nixpkgs?rev=624af665418d3c65d544145b4d34ad696439570e",
-      "name": "pi-coding-agent-0.81.1",
-      "pname": "pi-coding-agent",
+      "name": "golangci-lint-2.12.2",
+      "pname": "golangci-lint",
       "rev": "624af665418d3c65d544145b4d34ad696439570e",
       "rev_count": 1042126,
       "rev_date": "2026-07-26T18:26:09Z",
-      "scrape_date": "2026-07-28T05:25:02.334522Z",
+      "scrape_date": "2026-07-28T05:24:07.843502Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "0.81.1",
+      "version": "2.12.2",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/568fb4r3vjs9mfnbqpyin5nb7q91jv1m-pi-coding-agent-0.81.1"
+        "out": "/nix/store/gpyxbilsvyw9wv49nh4ng6lva95z38j3-golangci-lint-2.12.2"
       },
       "system": "aarch64-linux",
-      "group": "pi-coding-agent",
+      "group": "golang",
       "priority": 5
     },
     {
-      "attr_path": "pi-coding-agent",
+      "attr_path": "golangci-lint",
       "broken": false,
-      "derivation": "/nix/store/1fgv7skmhpab9i3sial6h7znrf8x87bp-pi-coding-agent-0.81.1.drv",
-      "description": "Coding agent CLI with read, bash, edit, write tools and session management",
-      "install_id": "pi-coding-agent",
-      "license": "MIT",
+      "derivation": "/nix/store/hnx2xpg3rskjckwjjahpqjajjwl90v7i-golangci-lint-2.12.2.drv",
+      "description": "Fast linters Runner for Go",
+      "install_id": "golangci-lint",
+      "license": "GPL-3.0-or-later",
       "locked_url": "https://github.com/flox/nixpkgs?rev=624af665418d3c65d544145b4d34ad696439570e",
-      "name": "pi-coding-agent-0.81.1",
-      "pname": "pi-coding-agent",
+      "name": "golangci-lint-2.12.2",
+      "pname": "golangci-lint",
       "rev": "624af665418d3c65d544145b4d34ad696439570e",
       "rev_count": 1042126,
       "rev_date": "2026-07-26T18:26:09Z",
-      "scrape_date": "2026-07-28T05:57:52.734124Z",
+      "scrape_date": "2026-07-28T05:56:53.661474Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "0.81.1",
+      "version": "2.12.2",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/v5071rnp4m8m8qgrrzdbbslij96zjv74-pi-coding-agent-0.81.1"
+        "out": "/nix/store/47w5wfrc8bcvggamqqlvkyavpc9l2bsm-golangci-lint-2.12.2"
       },
       "system": "x86_64-linux",
-      "group": "pi-coding-agent",
+      "group": "golang",
       "priority": 5
     },
     {
