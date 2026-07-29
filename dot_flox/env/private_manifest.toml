@@ -8,10 +8,15 @@ schema-version = "1.11.0"
 
 [install]
 # Search / Navigation
-# ripgrep/fd are Renovate-managed (see renovate.json). Each needs its own
-# pkg-group: two exact pins sharing a group must resolve from one nixpkgs
-# snapshot, so an independent bump fails "constraints too tight" otherwise.
-# Adding a third Renovate-managed pin needs the same treatment.
+# ripgrep/fd are Renovate-managed (see renovate.json) and each has its own
+# pkg-group. Two exact pins *can* share a group, but only while a single
+# catalog snapshot satisfies both: ripgrep 15.2.0 + fd 10.4.2 locks fine,
+# ripgrep 15.2.0 + fd 8.7.0 fails "constraints too tight". Renovate bumps
+# packages on independent schedules, so co-pinned versions drift apart
+# eventually. Hence the rule for this file: at most one Renovate-managed pin
+# per pkg-group, with unpinned packages free to share it as followers —
+# they carry no constraint and resolve from whatever snapshot the pin picks.
+# See the editors and golang groups for that driver/follower pattern.
 ripgrep.pkg-path = "ripgrep"
 ripgrep.pkg-group = "ripgrep"
 ripgrep.version = "15.2.0"
@@ -128,8 +133,13 @@ neovim.version = "0.12.4"
 lua-language-server = { pkg-path = "lua-language-server", pkg-group = "editors" }
 tree-sitter = { pkg-path = "tree-sitter", pkg-group = "editors" }
 
-# golang — linter must match Go version
-go = { pkg-path = "go", version = "1.26", pkg-group = "golang" }
+# golang — linter must match Go version, so the group is driven by go's pin and
+# golangci-lint follows whatever snapshot satisfies it. go is Renovate-managed
+# (see renovate.json); the "1.26" minor track is now an exact pin, set to the
+# 1.26.5 the lock already resolved so this stays behaviour-neutral.
+go.pkg-path = "go"
+go.pkg-group = "golang"
+go.version = "1.26.5"
 golangci-lint = { pkg-path = "golangci-lint", pkg-group = "golang" }
 
 # node — JS runtimes
