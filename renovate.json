@@ -1,7 +1,7 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:recommended"],
-  "enabledManagers": ["custom.regex"],
+  "enabledManagers": ["custom.regex", "woodpecker"],
   "customDatasources": {
     "flox-catalog": {
       "description": "Versions the Flox catalog can actually resolve, unlike repology's nix_unstable which tracks nixpkgs directly and runs ahead of the flox/nixpkgs snapshots. Only versions built for every system in [options].systems are offered, so a bump cannot break the lock on one system.",
@@ -52,6 +52,19 @@
     }
   ],
   "packageRules": [
+    {
+      "description": "Keep the renovate-validate pipeline image in step with the CronJob pinned in devops-blocks (kubernetes/cicd/renovate/manifests/base/kustomization.yaml), so the validator never accepts config the deployed bot rejects. Upstream ships ~6 releases/day, so batch to one PR per week and let releases settle. timestamp-optional keeps the rule fail-open if the docker datasource cannot resolve a releaseTimestamp, which would otherwise block the bump indefinitely.",
+      "matchPackageNames": ["ghcr.io/renovatebot/renovate"],
+      "schedule": ["* 0-6 * * 1"],
+      "minimumReleaseAge": "3 days",
+      "minimumReleaseAgeBehaviour": "timestamp-optional"
+    },
+    {
+      "description": "The woodpecker manager is enabled only to track the pinned renovate validator image. The other pipeline images are floating (plugin-git is untagged, flox is :latest), so they yield no updates.",
+      "matchManagers": ["woodpecker"],
+      "matchPackageNames": ["!ghcr.io/renovatebot/renovate"],
+      "enabled": false
+    },
     {
       "description": "Retained from the repology era so a failed flox-relock check still gets retried. The flox-catalog datasources only offer resolvable versions, so this should become unnecessary; drop it after a few clean runs.",
       "matchDatasources": ["custom.flox-catalog", "custom.flox-catalog-darwin"],
