@@ -52,7 +52,7 @@ glow.pkg-path = "glow"
 # exact pin from constraining anything else.
 atuin.pkg-path = "atuin"
 atuin.pkg-group = "atuin.sh"
-atuin.version = "18.17.1"
+atuin.version = "18.18.0"
 direnv.pkg-path = "direnv"
 direnv.version = ">=2.37.1"
 
