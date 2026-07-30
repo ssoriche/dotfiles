@@ -40,7 +40,7 @@
       "atuin": {
         "pkg-path": "atuin",
         "pkg-group": "atuin.sh",
-        "version": "18.17.1"
+        "version": "18.18.0"
       },
       "awscli2": {
         "pkg-path": "awscli2",
@@ -361,90 +361,32 @@
   },
   "packages": [
     {
-      "attr_path": "atuin",
+      "attr_path": "aerospace",
       "broken": false,
-      "derivation": "/nix/store/z6zsk2rjgx3wj7zikdg1ik1b9b394zg1-atuin-18.17.1.drv",
-      "description": "Replacement for a shell history which records additional commands context with optional encrypted synchronization between machines",
-      "install_id": "atuin",
+      "derivation": "/nix/store/1dcwn4vm5kzg580ic24dmq7kg6481h96-aerospace-0.21.2-Beta.drv",
+      "description": "i3-like tiling window manager for macOS",
+      "install_id": "aerospace",
       "license": "MIT",
       "locked_url": "https://github.com/flox/nixpkgs?rev=624af665418d3c65d544145b4d34ad696439570e",
-      "name": "atuin-18.17.1",
-      "pname": "atuin",
+      "name": "aerospace-0.21.2-Beta",
+      "pname": "aerospace",
       "rev": "624af665418d3c65d544145b4d34ad696439570e",
       "rev_count": 1042126,
       "rev_date": "2026-07-26T18:26:09Z",
-      "scrape_date": "2026-07-28T04:53:56.994909Z",
+      "scrape_date": "2026-07-28T04:53:56.785246Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "18.17.1",
+      "version": "0.21.2-Beta",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/ybywqx6nxfmds9lpwln48grdnywhgihx-atuin-18.17.1"
+        "out": "/nix/store/mdn44qrla8c3wjnrnail7d9ms6a3q0hp-aerospace-0.21.2-Beta"
       },
       "system": "aarch64-darwin",
-      "group": "atuin.sh",
-      "priority": 5
-    },
-    {
-      "attr_path": "atuin",
-      "broken": false,
-      "derivation": "/nix/store/6mmwd2y8q1fscfiamnnb153ymij5r5rk-atuin-18.17.1.drv",
-      "description": "Replacement for a shell history which records additional commands context with optional encrypted synchronization between machines",
-      "install_id": "atuin",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=624af665418d3c65d544145b4d34ad696439570e",
-      "name": "atuin-18.17.1",
-      "pname": "atuin",
-      "rev": "624af665418d3c65d544145b4d34ad696439570e",
-      "rev_count": 1042126,
-      "rev_date": "2026-07-26T18:26:09Z",
-      "scrape_date": "2026-07-28T05:24:05.082026Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "18.17.1",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/wdmljglby98x4wgvaiyxdqycy5dwsm27-atuin-18.17.1"
-      },
-      "system": "aarch64-linux",
-      "group": "atuin.sh",
-      "priority": 5
-    },
-    {
-      "attr_path": "atuin",
-      "broken": false,
-      "derivation": "/nix/store/3406wwhip626psn0a3krl0i488yy0yqw-atuin-18.17.1.drv",
-      "description": "Replacement for a shell history which records additional commands context with optional encrypted synchronization between machines",
-      "install_id": "atuin",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=624af665418d3c65d544145b4d34ad696439570e",
-      "name": "atuin-18.17.1",
-      "pname": "atuin",
-      "rev": "624af665418d3c65d544145b4d34ad696439570e",
-      "rev_count": 1042126,
-      "rev_date": "2026-07-26T18:26:09Z",
-      "scrape_date": "2026-07-28T05:56:50.602436Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "18.17.1",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/czs6dxsdni75035fqxvcdnr8cfsmxydx-atuin-18.17.1"
-      },
-      "system": "x86_64-linux",
-      "group": "atuin.sh",
+      "group": "aerospace",
       "priority": 5
     },
     {
@@ -1266,6 +1208,93 @@
       },
       "system": "x86_64-linux",
       "group": "golang",
+      "priority": 5
+    },
+    {
+      "attr_path": "halloy",
+      "broken": false,
+      "derivation": "/nix/store/m5mq4vk52zpzh9ffzpxm9kidbww2mipm-halloy-2026.7.2.drv",
+      "description": "IRC application",
+      "install_id": "halloy",
+      "license": "GPL-3.0-only",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=624af665418d3c65d544145b4d34ad696439570e",
+      "name": "halloy-2026.7.2",
+      "pname": "halloy",
+      "rev": "624af665418d3c65d544145b4d34ad696439570e",
+      "rev_count": 1042126,
+      "rev_date": "2026-07-26T18:26:09Z",
+      "scrape_date": "2026-07-28T04:53:58.712626Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2026.7.2",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/l4zl92i53j7h31b33lv4i2hhjim9w6z0-halloy-2026.7.2"
+      },
+      "system": "aarch64-darwin",
+      "group": "halloy",
+      "priority": 5
+    },
+    {
+      "attr_path": "halloy",
+      "broken": false,
+      "derivation": "/nix/store/5yda7vjdzhvhg1cvwikpkq1h31gff6z7-halloy-2026.7.2.drv",
+      "description": "IRC application",
+      "install_id": "halloy",
+      "license": "GPL-3.0-only",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=624af665418d3c65d544145b4d34ad696439570e",
+      "name": "halloy-2026.7.2",
+      "pname": "halloy",
+      "rev": "624af665418d3c65d544145b4d34ad696439570e",
+      "rev_count": 1042126,
+      "rev_date": "2026-07-26T18:26:09Z",
+      "scrape_date": "2026-07-28T05:24:08.187939Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2026.7.2",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/8y2gw0qj14aw0bla4bpacarxzsql1j7r-halloy-2026.7.2"
+      },
+      "system": "aarch64-linux",
+      "group": "halloy",
+      "priority": 5
+    },
+    {
+      "attr_path": "halloy",
+      "broken": false,
+      "derivation": "/nix/store/bz0p7sfam6jv41vcs0gpwajiwnmzghk8-halloy-2026.7.2.drv",
+      "description": "IRC application",
+      "install_id": "halloy",
+      "license": "GPL-3.0-only",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=624af665418d3c65d544145b4d34ad696439570e",
+      "name": "halloy-2026.7.2",
+      "pname": "halloy",
+      "rev": "624af665418d3c65d544145b4d34ad696439570e",
+      "rev_count": 1042126,
+      "rev_date": "2026-07-26T18:26:09Z",
+      "scrape_date": "2026-07-28T05:56:54.034300Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2026.7.2",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/b9ra07lk3zpj7jy23r56hmyn3w93k4jv-halloy-2026.7.2"
+      },
+      "system": "x86_64-linux",
+      "group": "halloy",
       "priority": 5
     },
     {
@@ -2142,6 +2171,35 @@
       "priority": 5
     },
     {
+      "attr_path": "maccy",
+      "broken": false,
+      "derivation": "/nix/store/liq34fq1glj0kcibbmqsiqqlnbw0l0kg-maccy-2.6.1.drv",
+      "description": "Simple clipboard manager for macOS",
+      "install_id": "maccy",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=624af665418d3c65d544145b4d34ad696439570e",
+      "name": "maccy-2.6.1",
+      "pname": "maccy",
+      "rev": "624af665418d3c65d544145b4d34ad696439570e",
+      "rev_count": 1042126,
+      "rev_date": "2026-07-26T18:26:09Z",
+      "scrape_date": "2026-07-28T04:54:20.318105Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2.6.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/brsrdajjqi0qzxri7vc2vp9g579avvs6-maccy-2.6.1"
+      },
+      "system": "aarch64-darwin",
+      "group": "maccy",
+      "priority": 5
+    },
+    {
       "attr_path": "bun",
       "broken": false,
       "derivation": "/nix/store/2igxa3lq9zzhq3dhp77z813jh1wq3yb5-bun-1.3.13.drv",
@@ -2400,6 +2458,93 @@
       },
       "system": "x86_64-linux",
       "group": "nono",
+      "priority": 5
+    },
+    {
+      "attr_path": "obsidian",
+      "broken": false,
+      "derivation": "/nix/store/fr12a95bikpnhi58dknxb06srg7p7gqq-obsidian-1.12.7.drv",
+      "description": "Powerful knowledge base that works on top of a local folder of plain text Markdown files",
+      "install_id": "obsidian",
+      "license": "Obsidian End User Agreement",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=624af665418d3c65d544145b4d34ad696439570e",
+      "name": "obsidian-1.12.7",
+      "pname": "obsidian",
+      "rev": "624af665418d3c65d544145b4d34ad696439570e",
+      "rev_count": 1042126,
+      "rev_date": "2026-07-26T18:26:09Z",
+      "scrape_date": "2026-07-28T04:54:23.588771Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "1.12.7",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/438lbich62s9hrr9g9rxp4q2y33syh0f-obsidian-1.12.7"
+      },
+      "system": "aarch64-darwin",
+      "group": "obsidian",
+      "priority": 5
+    },
+    {
+      "attr_path": "obsidian",
+      "broken": false,
+      "derivation": "/nix/store/yqspm2mkx1fcq43xrhchj3zszqwyr4af-obsidian-1.12.7.drv",
+      "description": "Powerful knowledge base that works on top of a local folder of plain text Markdown files",
+      "install_id": "obsidian",
+      "license": "Obsidian End User Agreement",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=624af665418d3c65d544145b4d34ad696439570e",
+      "name": "obsidian-1.12.7",
+      "pname": "obsidian",
+      "rev": "624af665418d3c65d544145b4d34ad696439570e",
+      "rev_count": 1042126,
+      "rev_date": "2026-07-26T18:26:09Z",
+      "scrape_date": "2026-07-28T05:24:44.631694Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "1.12.7",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/5pb4ydx3w7pfqird5vcg4qv5q67ahfi2-obsidian-1.12.7"
+      },
+      "system": "aarch64-linux",
+      "group": "obsidian",
+      "priority": 5
+    },
+    {
+      "attr_path": "obsidian",
+      "broken": false,
+      "derivation": "/nix/store/z67llklbk1h2k94q383a3nl6yal09nh0-obsidian-1.12.7.drv",
+      "description": "Powerful knowledge base that works on top of a local folder of plain text Markdown files",
+      "install_id": "obsidian",
+      "license": "Obsidian End User Agreement",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=624af665418d3c65d544145b4d34ad696439570e",
+      "name": "obsidian-1.12.7",
+      "pname": "obsidian",
+      "rev": "624af665418d3c65d544145b4d34ad696439570e",
+      "rev_count": 1042126,
+      "rev_date": "2026-07-26T18:26:09Z",
+      "scrape_date": "2026-07-28T05:57:34.038332Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "1.12.7",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/2vwvv16l3zmvz23m0kp0k6jx4m4yraav-obsidian-1.12.7"
+      },
+      "system": "x86_64-linux",
+      "group": "obsidian",
       "priority": 5
     },
     {
@@ -6582,238 +6727,6 @@
       "priority": 5
     },
     {
-      "attr_path": "aerospace",
-      "broken": false,
-      "derivation": "/nix/store/1dcwn4vm5kzg580ic24dmq7kg6481h96-aerospace-0.21.2-Beta.drv",
-      "description": "i3-like tiling window manager for macOS",
-      "install_id": "aerospace",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=624af665418d3c65d544145b4d34ad696439570e",
-      "name": "aerospace-0.21.2-Beta",
-      "pname": "aerospace",
-      "rev": "624af665418d3c65d544145b4d34ad696439570e",
-      "rev_count": 1042126,
-      "rev_date": "2026-07-26T18:26:09Z",
-      "scrape_date": "2026-07-28T04:53:56.785246Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.21.2-Beta",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/mdn44qrla8c3wjnrnail7d9ms6a3q0hp-aerospace-0.21.2-Beta"
-      },
-      "system": "aarch64-darwin",
-      "group": "aerospace",
-      "priority": 5
-    },
-    {
-      "attr_path": "halloy",
-      "broken": false,
-      "derivation": "/nix/store/m5mq4vk52zpzh9ffzpxm9kidbww2mipm-halloy-2026.7.2.drv",
-      "description": "IRC application",
-      "install_id": "halloy",
-      "license": "GPL-3.0-only",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=624af665418d3c65d544145b4d34ad696439570e",
-      "name": "halloy-2026.7.2",
-      "pname": "halloy",
-      "rev": "624af665418d3c65d544145b4d34ad696439570e",
-      "rev_count": 1042126,
-      "rev_date": "2026-07-26T18:26:09Z",
-      "scrape_date": "2026-07-28T04:53:58.712626Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "2026.7.2",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/l4zl92i53j7h31b33lv4i2hhjim9w6z0-halloy-2026.7.2"
-      },
-      "system": "aarch64-darwin",
-      "group": "halloy",
-      "priority": 5
-    },
-    {
-      "attr_path": "halloy",
-      "broken": false,
-      "derivation": "/nix/store/5yda7vjdzhvhg1cvwikpkq1h31gff6z7-halloy-2026.7.2.drv",
-      "description": "IRC application",
-      "install_id": "halloy",
-      "license": "GPL-3.0-only",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=624af665418d3c65d544145b4d34ad696439570e",
-      "name": "halloy-2026.7.2",
-      "pname": "halloy",
-      "rev": "624af665418d3c65d544145b4d34ad696439570e",
-      "rev_count": 1042126,
-      "rev_date": "2026-07-26T18:26:09Z",
-      "scrape_date": "2026-07-28T05:24:08.187939Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "2026.7.2",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/8y2gw0qj14aw0bla4bpacarxzsql1j7r-halloy-2026.7.2"
-      },
-      "system": "aarch64-linux",
-      "group": "halloy",
-      "priority": 5
-    },
-    {
-      "attr_path": "halloy",
-      "broken": false,
-      "derivation": "/nix/store/bz0p7sfam6jv41vcs0gpwajiwnmzghk8-halloy-2026.7.2.drv",
-      "description": "IRC application",
-      "install_id": "halloy",
-      "license": "GPL-3.0-only",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=624af665418d3c65d544145b4d34ad696439570e",
-      "name": "halloy-2026.7.2",
-      "pname": "halloy",
-      "rev": "624af665418d3c65d544145b4d34ad696439570e",
-      "rev_count": 1042126,
-      "rev_date": "2026-07-26T18:26:09Z",
-      "scrape_date": "2026-07-28T05:56:54.034300Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "2026.7.2",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/b9ra07lk3zpj7jy23r56hmyn3w93k4jv-halloy-2026.7.2"
-      },
-      "system": "x86_64-linux",
-      "group": "halloy",
-      "priority": 5
-    },
-    {
-      "attr_path": "maccy",
-      "broken": false,
-      "derivation": "/nix/store/liq34fq1glj0kcibbmqsiqqlnbw0l0kg-maccy-2.6.1.drv",
-      "description": "Simple clipboard manager for macOS",
-      "install_id": "maccy",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=624af665418d3c65d544145b4d34ad696439570e",
-      "name": "maccy-2.6.1",
-      "pname": "maccy",
-      "rev": "624af665418d3c65d544145b4d34ad696439570e",
-      "rev_count": 1042126,
-      "rev_date": "2026-07-26T18:26:09Z",
-      "scrape_date": "2026-07-28T04:54:20.318105Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "2.6.1",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/brsrdajjqi0qzxri7vc2vp9g579avvs6-maccy-2.6.1"
-      },
-      "system": "aarch64-darwin",
-      "group": "maccy",
-      "priority": 5
-    },
-    {
-      "attr_path": "obsidian",
-      "broken": false,
-      "derivation": "/nix/store/fr12a95bikpnhi58dknxb06srg7p7gqq-obsidian-1.12.7.drv",
-      "description": "Powerful knowledge base that works on top of a local folder of plain text Markdown files",
-      "install_id": "obsidian",
-      "license": "Obsidian End User Agreement",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=624af665418d3c65d544145b4d34ad696439570e",
-      "name": "obsidian-1.12.7",
-      "pname": "obsidian",
-      "rev": "624af665418d3c65d544145b4d34ad696439570e",
-      "rev_count": 1042126,
-      "rev_date": "2026-07-26T18:26:09Z",
-      "scrape_date": "2026-07-28T04:54:23.588771Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": true,
-      "version": "1.12.7",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/438lbich62s9hrr9g9rxp4q2y33syh0f-obsidian-1.12.7"
-      },
-      "system": "aarch64-darwin",
-      "group": "obsidian",
-      "priority": 5
-    },
-    {
-      "attr_path": "obsidian",
-      "broken": false,
-      "derivation": "/nix/store/yqspm2mkx1fcq43xrhchj3zszqwyr4af-obsidian-1.12.7.drv",
-      "description": "Powerful knowledge base that works on top of a local folder of plain text Markdown files",
-      "install_id": "obsidian",
-      "license": "Obsidian End User Agreement",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=624af665418d3c65d544145b4d34ad696439570e",
-      "name": "obsidian-1.12.7",
-      "pname": "obsidian",
-      "rev": "624af665418d3c65d544145b4d34ad696439570e",
-      "rev_count": 1042126,
-      "rev_date": "2026-07-26T18:26:09Z",
-      "scrape_date": "2026-07-28T05:24:44.631694Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": true,
-      "version": "1.12.7",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/5pb4ydx3w7pfqird5vcg4qv5q67ahfi2-obsidian-1.12.7"
-      },
-      "system": "aarch64-linux",
-      "group": "obsidian",
-      "priority": 5
-    },
-    {
-      "attr_path": "obsidian",
-      "broken": false,
-      "derivation": "/nix/store/z67llklbk1h2k94q383a3nl6yal09nh0-obsidian-1.12.7.drv",
-      "description": "Powerful knowledge base that works on top of a local folder of plain text Markdown files",
-      "install_id": "obsidian",
-      "license": "Obsidian End User Agreement",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=624af665418d3c65d544145b4d34ad696439570e",
-      "name": "obsidian-1.12.7",
-      "pname": "obsidian",
-      "rev": "624af665418d3c65d544145b4d34ad696439570e",
-      "rev_count": 1042126,
-      "rev_date": "2026-07-26T18:26:09Z",
-      "scrape_date": "2026-07-28T05:57:34.038332Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": true,
-      "version": "1.12.7",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/2vwvv16l3zmvz23m0kp0k6jx4m4yraav-obsidian-1.12.7"
-      },
-      "system": "x86_64-linux",
-      "group": "obsidian",
-      "priority": 5
-    },
-    {
       "attr_path": "wezterm",
       "broken": false,
       "derivation": "/nix/store/yvnqygywyqq44vf0vqiz9grkzqh82l18-wezterm-0-unstable-2026-07-16.drv",
@@ -6898,6 +6811,93 @@
       },
       "system": "x86_64-linux",
       "group": "wezterm",
+      "priority": 5
+    },
+    {
+      "attr_path": "atuin",
+      "broken": false,
+      "derivation": "/nix/store/gh80gfbnv17p5xkaabix3brrg2imrv8w-atuin-18.18.0.drv",
+      "description": "Replacement for a shell history which records additional commands context with optional encrypted synchronization between machines",
+      "install_id": "atuin",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=0954f7ee2f6bb3dc7d4e3d0d8bcb8fd4bde4cfc5",
+      "name": "atuin-18.18.0",
+      "pname": "atuin",
+      "rev": "0954f7ee2f6bb3dc7d4e3d0d8bcb8fd4bde4cfc5",
+      "rev_count": 1043649,
+      "rev_date": "2026-07-29T09:51:10Z",
+      "scrape_date": "2026-07-30T04:54:32.698677Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "18.18.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/0wj86jxbmkd74xqbva8g5a3icnk4p0xq-atuin-18.18.0"
+      },
+      "system": "aarch64-darwin",
+      "group": "atuin.sh",
+      "priority": 5
+    },
+    {
+      "attr_path": "atuin",
+      "broken": false,
+      "derivation": "/nix/store/b7zazdia8yr85799dvj56cimza6irr9h-atuin-18.18.0.drv",
+      "description": "Replacement for a shell history which records additional commands context with optional encrypted synchronization between machines",
+      "install_id": "atuin",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=0954f7ee2f6bb3dc7d4e3d0d8bcb8fd4bde4cfc5",
+      "name": "atuin-18.18.0",
+      "pname": "atuin",
+      "rev": "0954f7ee2f6bb3dc7d4e3d0d8bcb8fd4bde4cfc5",
+      "rev_count": 1043649,
+      "rev_date": "2026-07-29T09:51:10Z",
+      "scrape_date": "2026-07-30T05:24:28.060785Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "18.18.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/krwj21in2109an8b879w4z9kw692qy8d-atuin-18.18.0"
+      },
+      "system": "aarch64-linux",
+      "group": "atuin.sh",
+      "priority": 5
+    },
+    {
+      "attr_path": "atuin",
+      "broken": false,
+      "derivation": "/nix/store/7p8iy5frg7jlx8dnq62lwvdd8gri8xsx-atuin-18.18.0.drv",
+      "description": "Replacement for a shell history which records additional commands context with optional encrypted synchronization between machines",
+      "install_id": "atuin",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=0954f7ee2f6bb3dc7d4e3d0d8bcb8fd4bde4cfc5",
+      "name": "atuin-18.18.0",
+      "pname": "atuin",
+      "rev": "0954f7ee2f6bb3dc7d4e3d0d8bcb8fd4bde4cfc5",
+      "rev_count": 1043649,
+      "rev_date": "2026-07-29T09:51:10Z",
+      "scrape_date": "2026-07-30T05:58:15.270724Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "18.18.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/mhx893swl6kynk3l51wfikpkgfckw2g7-atuin-18.18.0"
+      },
+      "system": "x86_64-linux",
+      "group": "atuin.sh",
       "priority": 5
     },
     {
