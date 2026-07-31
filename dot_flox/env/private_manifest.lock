@@ -16,7 +16,7 @@
       "aerospace": {
         "pkg-path": "aerospace",
         "pkg-group": "aerospace",
-        "version": "0.21.2-Beta",
+        "version": "0.21.3-Beta",
         "systems": [
           "aarch64-darwin"
         ]
@@ -361,32 +361,90 @@
   },
   "packages": [
     {
-      "attr_path": "aerospace",
+      "attr_path": "atuin",
       "broken": false,
-      "derivation": "/nix/store/1dcwn4vm5kzg580ic24dmq7kg6481h96-aerospace-0.21.2-Beta.drv",
-      "description": "i3-like tiling window manager for macOS",
-      "install_id": "aerospace",
+      "derivation": "/nix/store/gh80gfbnv17p5xkaabix3brrg2imrv8w-atuin-18.18.0.drv",
+      "description": "Replacement for a shell history which records additional commands context with optional encrypted synchronization between machines",
+      "install_id": "atuin",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=624af665418d3c65d544145b4d34ad696439570e",
-      "name": "aerospace-0.21.2-Beta",
-      "pname": "aerospace",
-      "rev": "624af665418d3c65d544145b4d34ad696439570e",
-      "rev_count": 1042126,
-      "rev_date": "2026-07-26T18:26:09Z",
-      "scrape_date": "2026-07-28T04:53:56.785246Z",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=0954f7ee2f6bb3dc7d4e3d0d8bcb8fd4bde4cfc5",
+      "name": "atuin-18.18.0",
+      "pname": "atuin",
+      "rev": "0954f7ee2f6bb3dc7d4e3d0d8bcb8fd4bde4cfc5",
+      "rev_count": 1043649,
+      "rev_date": "2026-07-29T09:51:10Z",
+      "scrape_date": "2026-07-30T04:54:32.698677Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "0.21.2-Beta",
+      "version": "18.18.0",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/mdn44qrla8c3wjnrnail7d9ms6a3q0hp-aerospace-0.21.2-Beta"
+        "out": "/nix/store/0wj86jxbmkd74xqbva8g5a3icnk4p0xq-atuin-18.18.0"
       },
       "system": "aarch64-darwin",
-      "group": "aerospace",
+      "group": "atuin.sh",
+      "priority": 5
+    },
+    {
+      "attr_path": "atuin",
+      "broken": false,
+      "derivation": "/nix/store/b7zazdia8yr85799dvj56cimza6irr9h-atuin-18.18.0.drv",
+      "description": "Replacement for a shell history which records additional commands context with optional encrypted synchronization between machines",
+      "install_id": "atuin",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=0954f7ee2f6bb3dc7d4e3d0d8bcb8fd4bde4cfc5",
+      "name": "atuin-18.18.0",
+      "pname": "atuin",
+      "rev": "0954f7ee2f6bb3dc7d4e3d0d8bcb8fd4bde4cfc5",
+      "rev_count": 1043649,
+      "rev_date": "2026-07-29T09:51:10Z",
+      "scrape_date": "2026-07-30T05:24:28.060785Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "18.18.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/krwj21in2109an8b879w4z9kw692qy8d-atuin-18.18.0"
+      },
+      "system": "aarch64-linux",
+      "group": "atuin.sh",
+      "priority": 5
+    },
+    {
+      "attr_path": "atuin",
+      "broken": false,
+      "derivation": "/nix/store/7p8iy5frg7jlx8dnq62lwvdd8gri8xsx-atuin-18.18.0.drv",
+      "description": "Replacement for a shell history which records additional commands context with optional encrypted synchronization between machines",
+      "install_id": "atuin",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=0954f7ee2f6bb3dc7d4e3d0d8bcb8fd4bde4cfc5",
+      "name": "atuin-18.18.0",
+      "pname": "atuin",
+      "rev": "0954f7ee2f6bb3dc7d4e3d0d8bcb8fd4bde4cfc5",
+      "rev_count": 1043649,
+      "rev_date": "2026-07-29T09:51:10Z",
+      "scrape_date": "2026-07-30T05:58:15.270724Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "18.18.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/mhx893swl6kynk3l51wfikpkgfckw2g7-atuin-18.18.0"
+      },
+      "system": "x86_64-linux",
+      "group": "atuin.sh",
       "priority": 5
     },
     {
@@ -6814,90 +6872,32 @@
       "priority": 5
     },
     {
-      "attr_path": "atuin",
+      "attr_path": "aerospace",
       "broken": false,
-      "derivation": "/nix/store/gh80gfbnv17p5xkaabix3brrg2imrv8w-atuin-18.18.0.drv",
-      "description": "Replacement for a shell history which records additional commands context with optional encrypted synchronization between machines",
-      "install_id": "atuin",
+      "derivation": "/nix/store/l2dqyg8jsq90zdj3z3xzqp37338l6g27-aerospace-0.21.3-Beta.drv",
+      "description": "i3-like tiling window manager for macOS",
+      "install_id": "aerospace",
       "license": "MIT",
       "locked_url": "https://github.com/flox/nixpkgs?rev=0954f7ee2f6bb3dc7d4e3d0d8bcb8fd4bde4cfc5",
-      "name": "atuin-18.18.0",
-      "pname": "atuin",
+      "name": "aerospace-0.21.3-Beta",
+      "pname": "aerospace",
       "rev": "0954f7ee2f6bb3dc7d4e3d0d8bcb8fd4bde4cfc5",
       "rev_count": 1043649,
       "rev_date": "2026-07-29T09:51:10Z",
-      "scrape_date": "2026-07-30T04:54:32.698677Z",
+      "scrape_date": "2026-07-30T04:54:32.571958Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "18.18.0",
+      "version": "0.21.3-Beta",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/0wj86jxbmkd74xqbva8g5a3icnk4p0xq-atuin-18.18.0"
+        "out": "/nix/store/6b6p1ffsbgzlkbdck5l7f4sxssahicih-aerospace-0.21.3-Beta"
       },
       "system": "aarch64-darwin",
-      "group": "atuin.sh",
-      "priority": 5
-    },
-    {
-      "attr_path": "atuin",
-      "broken": false,
-      "derivation": "/nix/store/b7zazdia8yr85799dvj56cimza6irr9h-atuin-18.18.0.drv",
-      "description": "Replacement for a shell history which records additional commands context with optional encrypted synchronization between machines",
-      "install_id": "atuin",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=0954f7ee2f6bb3dc7d4e3d0d8bcb8fd4bde4cfc5",
-      "name": "atuin-18.18.0",
-      "pname": "atuin",
-      "rev": "0954f7ee2f6bb3dc7d4e3d0d8bcb8fd4bde4cfc5",
-      "rev_count": 1043649,
-      "rev_date": "2026-07-29T09:51:10Z",
-      "scrape_date": "2026-07-30T05:24:28.060785Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "18.18.0",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/krwj21in2109an8b879w4z9kw692qy8d-atuin-18.18.0"
-      },
-      "system": "aarch64-linux",
-      "group": "atuin.sh",
-      "priority": 5
-    },
-    {
-      "attr_path": "atuin",
-      "broken": false,
-      "derivation": "/nix/store/7p8iy5frg7jlx8dnq62lwvdd8gri8xsx-atuin-18.18.0.drv",
-      "description": "Replacement for a shell history which records additional commands context with optional encrypted synchronization between machines",
-      "install_id": "atuin",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=0954f7ee2f6bb3dc7d4e3d0d8bcb8fd4bde4cfc5",
-      "name": "atuin-18.18.0",
-      "pname": "atuin",
-      "rev": "0954f7ee2f6bb3dc7d4e3d0d8bcb8fd4bde4cfc5",
-      "rev_count": 1043649,
-      "rev_date": "2026-07-29T09:51:10Z",
-      "scrape_date": "2026-07-30T05:58:15.270724Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "18.18.0",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/mhx893swl6kynk3l51wfikpkgfckw2g7-atuin-18.18.0"
-      },
-      "system": "x86_64-linux",
-      "group": "atuin.sh",
+      "group": "aerospace",
       "priority": 5
     },
     {
