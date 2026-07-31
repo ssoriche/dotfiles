@@ -2,6 +2,7 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:recommended"],
   "enabledManagers": ["custom.regex", "woodpecker"],
+  "gitIgnoredAuthors": ["woodpecker-ci@noreply.git.s8i.app"],
   "customDatasources": {
     "flox-catalog": {
       "description": "Versions the Flox catalog can actually resolve, unlike repology's nix_unstable which tracks nixpkgs directly and runs ahead of the flox/nixpkgs snapshots. Only versions built for every system in [options].systems are offered, so a bump cannot break the lock on one system.",
