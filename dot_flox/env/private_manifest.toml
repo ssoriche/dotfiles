@@ -203,7 +203,7 @@ container = { pkg-path = "container", pkg-group = "container", systems = ["aarch
 aerospace.pkg-path = "aerospace"
 aerospace.pkg-group = "aerospace"
 aerospace.systems = ["aarch64-darwin"]
-aerospace.version = "0.21.2-Beta"
+aerospace.version = "0.21.3-Beta"
 wezterm.pkg-path = "wezterm"
 wezterm.pkg-group = "wezterm"
 wezterm.version = "2026-07-16"
