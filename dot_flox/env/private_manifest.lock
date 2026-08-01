@@ -262,7 +262,7 @@
       "pi-coding-agent": {
         "pkg-path": "pi-coding-agent",
         "pkg-group": "pi-coding-agent",
-        "version": "0.81.1"
+        "version": "0.82.1"
       },
       "pv": {
         "pkg-path": "pv",
@@ -360,6 +360,35 @@
     }
   },
   "packages": [
+    {
+      "attr_path": "aerospace",
+      "broken": false,
+      "derivation": "/nix/store/l2dqyg8jsq90zdj3z3xzqp37338l6g27-aerospace-0.21.3-Beta.drv",
+      "description": "i3-like tiling window manager for macOS",
+      "install_id": "aerospace",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=0954f7ee2f6bb3dc7d4e3d0d8bcb8fd4bde4cfc5",
+      "name": "aerospace-0.21.3-Beta",
+      "pname": "aerospace",
+      "rev": "0954f7ee2f6bb3dc7d4e3d0d8bcb8fd4bde4cfc5",
+      "rev_count": 1043649,
+      "rev_date": "2026-07-29T09:51:10Z",
+      "scrape_date": "2026-07-30T04:54:32.571958Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.21.3-Beta",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/6b6p1ffsbgzlkbdck5l7f4sxssahicih-aerospace-0.21.3-Beta"
+      },
+      "system": "aarch64-darwin",
+      "group": "aerospace",
+      "priority": 5
+    },
     {
       "attr_path": "atuin",
       "broken": false,
@@ -2603,93 +2632,6 @@
       },
       "system": "x86_64-linux",
       "group": "obsidian",
-      "priority": 5
-    },
-    {
-      "attr_path": "pi-coding-agent",
-      "broken": false,
-      "derivation": "/nix/store/qfw10jqbiljwflf762pkr40nmzb7alks-pi-coding-agent-0.81.1.drv",
-      "description": "Coding agent CLI with read, bash, edit, write tools and session management",
-      "install_id": "pi-coding-agent",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=624af665418d3c65d544145b4d34ad696439570e",
-      "name": "pi-coding-agent-0.81.1",
-      "pname": "pi-coding-agent",
-      "rev": "624af665418d3c65d544145b4d34ad696439570e",
-      "rev_count": 1042126,
-      "rev_date": "2026-07-26T18:26:09Z",
-      "scrape_date": "2026-07-28T04:54:37.755123Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.81.1",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/6bnk1lng2cwysy27fdn12z6mjrvv37mj-pi-coding-agent-0.81.1"
-      },
-      "system": "aarch64-darwin",
-      "group": "pi-coding-agent",
-      "priority": 5
-    },
-    {
-      "attr_path": "pi-coding-agent",
-      "broken": false,
-      "derivation": "/nix/store/iq10hrw6rx71r7z01b0pdfr9d438mm2a-pi-coding-agent-0.81.1.drv",
-      "description": "Coding agent CLI with read, bash, edit, write tools and session management",
-      "install_id": "pi-coding-agent",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=624af665418d3c65d544145b4d34ad696439570e",
-      "name": "pi-coding-agent-0.81.1",
-      "pname": "pi-coding-agent",
-      "rev": "624af665418d3c65d544145b4d34ad696439570e",
-      "rev_count": 1042126,
-      "rev_date": "2026-07-26T18:26:09Z",
-      "scrape_date": "2026-07-28T05:25:02.334522Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.81.1",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/568fb4r3vjs9mfnbqpyin5nb7q91jv1m-pi-coding-agent-0.81.1"
-      },
-      "system": "aarch64-linux",
-      "group": "pi-coding-agent",
-      "priority": 5
-    },
-    {
-      "attr_path": "pi-coding-agent",
-      "broken": false,
-      "derivation": "/nix/store/1fgv7skmhpab9i3sial6h7znrf8x87bp-pi-coding-agent-0.81.1.drv",
-      "description": "Coding agent CLI with read, bash, edit, write tools and session management",
-      "install_id": "pi-coding-agent",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=624af665418d3c65d544145b4d34ad696439570e",
-      "name": "pi-coding-agent-0.81.1",
-      "pname": "pi-coding-agent",
-      "rev": "624af665418d3c65d544145b4d34ad696439570e",
-      "rev_count": 1042126,
-      "rev_date": "2026-07-26T18:26:09Z",
-      "scrape_date": "2026-07-28T05:57:52.734124Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.81.1",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/v5071rnp4m8m8qgrrzdbbslij96zjv74-pi-coding-agent-0.81.1"
-      },
-      "system": "x86_64-linux",
-      "group": "pi-coding-agent",
       "priority": 5
     },
     {
@@ -6872,32 +6814,90 @@
       "priority": 5
     },
     {
-      "attr_path": "aerospace",
+      "attr_path": "pi-coding-agent",
       "broken": false,
-      "derivation": "/nix/store/l2dqyg8jsq90zdj3z3xzqp37338l6g27-aerospace-0.21.3-Beta.drv",
-      "description": "i3-like tiling window manager for macOS",
-      "install_id": "aerospace",
+      "derivation": "/nix/store/sd98cmp74xdpclvd1hlnha2cjf1girbb-pi-coding-agent-0.82.1.drv",
+      "description": "Coding agent CLI with read, bash, edit, write tools and session management",
+      "install_id": "pi-coding-agent",
       "license": "MIT",
       "locked_url": "https://github.com/flox/nixpkgs?rev=0954f7ee2f6bb3dc7d4e3d0d8bcb8fd4bde4cfc5",
-      "name": "aerospace-0.21.3-Beta",
-      "pname": "aerospace",
+      "name": "pi-coding-agent-0.82.1",
+      "pname": "pi-coding-agent",
       "rev": "0954f7ee2f6bb3dc7d4e3d0d8bcb8fd4bde4cfc5",
       "rev_count": 1043649,
       "rev_date": "2026-07-29T09:51:10Z",
-      "scrape_date": "2026-07-30T04:54:32.571958Z",
+      "scrape_date": "2026-07-30T04:55:11.065990Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "0.21.3-Beta",
+      "version": "0.82.1",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/6b6p1ffsbgzlkbdck5l7f4sxssahicih-aerospace-0.21.3-Beta"
+        "out": "/nix/store/sn90kwyr2wwgh51gc8v4gp755mnxkcq9-pi-coding-agent-0.82.1"
       },
       "system": "aarch64-darwin",
-      "group": "aerospace",
+      "group": "pi-coding-agent",
+      "priority": 5
+    },
+    {
+      "attr_path": "pi-coding-agent",
+      "broken": false,
+      "derivation": "/nix/store/pz99s3igrj6r4swq2ic7fsb2idgvbci8-pi-coding-agent-0.82.1.drv",
+      "description": "Coding agent CLI with read, bash, edit, write tools and session management",
+      "install_id": "pi-coding-agent",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=0954f7ee2f6bb3dc7d4e3d0d8bcb8fd4bde4cfc5",
+      "name": "pi-coding-agent-0.82.1",
+      "pname": "pi-coding-agent",
+      "rev": "0954f7ee2f6bb3dc7d4e3d0d8bcb8fd4bde4cfc5",
+      "rev_count": 1043649,
+      "rev_date": "2026-07-29T09:51:10Z",
+      "scrape_date": "2026-07-30T05:25:24.901361Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.82.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/36n605s0hx18azjkf9l7gb2qdz58g2gw-pi-coding-agent-0.82.1"
+      },
+      "system": "aarch64-linux",
+      "group": "pi-coding-agent",
+      "priority": 5
+    },
+    {
+      "attr_path": "pi-coding-agent",
+      "broken": false,
+      "derivation": "/nix/store/88v92z7kz176kx36v7yxcyrrp38cbii7-pi-coding-agent-0.82.1.drv",
+      "description": "Coding agent CLI with read, bash, edit, write tools and session management",
+      "install_id": "pi-coding-agent",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=0954f7ee2f6bb3dc7d4e3d0d8bcb8fd4bde4cfc5",
+      "name": "pi-coding-agent-0.82.1",
+      "pname": "pi-coding-agent",
+      "rev": "0954f7ee2f6bb3dc7d4e3d0d8bcb8fd4bde4cfc5",
+      "rev_count": 1043649,
+      "rev_date": "2026-07-29T09:51:10Z",
+      "scrape_date": "2026-07-30T05:59:13.782168Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.82.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/rg248h9sz8dylm8p6a9w9fj4zrv4sgm5-pi-coding-agent-0.82.1"
+      },
+      "system": "x86_64-linux",
+      "group": "pi-coding-agent",
       "priority": 5
     },
     {
