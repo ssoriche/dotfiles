@@ -313,7 +313,7 @@
       "uv": {
         "pkg-path": "uv",
         "pkg-group": "python",
-        "version": "0.11.32"
+        "version": "0.12.0"
       },
       "wezterm": {
         "pkg-path": "wezterm",
@@ -2635,6 +2635,93 @@
       "priority": 5
     },
     {
+      "attr_path": "pi-coding-agent",
+      "broken": false,
+      "derivation": "/nix/store/sd98cmp74xdpclvd1hlnha2cjf1girbb-pi-coding-agent-0.82.1.drv",
+      "description": "Coding agent CLI with read, bash, edit, write tools and session management",
+      "install_id": "pi-coding-agent",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=0954f7ee2f6bb3dc7d4e3d0d8bcb8fd4bde4cfc5",
+      "name": "pi-coding-agent-0.82.1",
+      "pname": "pi-coding-agent",
+      "rev": "0954f7ee2f6bb3dc7d4e3d0d8bcb8fd4bde4cfc5",
+      "rev_count": 1043649,
+      "rev_date": "2026-07-29T09:51:10Z",
+      "scrape_date": "2026-07-30T04:55:11.065990Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.82.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/sn90kwyr2wwgh51gc8v4gp755mnxkcq9-pi-coding-agent-0.82.1"
+      },
+      "system": "aarch64-darwin",
+      "group": "pi-coding-agent",
+      "priority": 5
+    },
+    {
+      "attr_path": "pi-coding-agent",
+      "broken": false,
+      "derivation": "/nix/store/pz99s3igrj6r4swq2ic7fsb2idgvbci8-pi-coding-agent-0.82.1.drv",
+      "description": "Coding agent CLI with read, bash, edit, write tools and session management",
+      "install_id": "pi-coding-agent",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=0954f7ee2f6bb3dc7d4e3d0d8bcb8fd4bde4cfc5",
+      "name": "pi-coding-agent-0.82.1",
+      "pname": "pi-coding-agent",
+      "rev": "0954f7ee2f6bb3dc7d4e3d0d8bcb8fd4bde4cfc5",
+      "rev_count": 1043649,
+      "rev_date": "2026-07-29T09:51:10Z",
+      "scrape_date": "2026-07-30T05:25:24.901361Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.82.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/36n605s0hx18azjkf9l7gb2qdz58g2gw-pi-coding-agent-0.82.1"
+      },
+      "system": "aarch64-linux",
+      "group": "pi-coding-agent",
+      "priority": 5
+    },
+    {
+      "attr_path": "pi-coding-agent",
+      "broken": false,
+      "derivation": "/nix/store/88v92z7kz176kx36v7yxcyrrp38cbii7-pi-coding-agent-0.82.1.drv",
+      "description": "Coding agent CLI with read, bash, edit, write tools and session management",
+      "install_id": "pi-coding-agent",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=0954f7ee2f6bb3dc7d4e3d0d8bcb8fd4bde4cfc5",
+      "name": "pi-coding-agent-0.82.1",
+      "pname": "pi-coding-agent",
+      "rev": "0954f7ee2f6bb3dc7d4e3d0d8bcb8fd4bde4cfc5",
+      "rev_count": 1043649,
+      "rev_date": "2026-07-29T09:51:10Z",
+      "scrape_date": "2026-07-30T05:59:13.782168Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.82.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/rg248h9sz8dylm8p6a9w9fj4zrv4sgm5-pi-coding-agent-0.82.1"
+      },
+      "system": "x86_64-linux",
+      "group": "pi-coding-agent",
+      "priority": 5
+    },
+    {
       "attr_path": "granted",
       "broken": false,
       "derivation": "/nix/store/ikdsyv0q34m2i5h9h2ikjb842m2i0037-granted-0.36.3.drv",
@@ -2722,93 +2809,6 @@
       },
       "system": "x86_64-linux",
       "group": "pinned",
-      "priority": 5
-    },
-    {
-      "attr_path": "uv",
-      "broken": false,
-      "derivation": "/nix/store/21fmr9z2wvd1q2xg7667km3yqlib3w9z-uv-0.11.32.drv",
-      "description": "Extremely fast Python package installer and resolver, written in Rust",
-      "install_id": "uv",
-      "license": "[ Apache-2.0, MIT ]",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=624af665418d3c65d544145b4d34ad696439570e",
-      "name": "uv-0.11.32",
-      "pname": "uv",
-      "rev": "624af665418d3c65d544145b4d34ad696439570e",
-      "rev_count": 1042126,
-      "rev_date": "2026-07-26T18:26:09Z",
-      "scrape_date": "2026-07-28T04:56:48.492582Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.11.32",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/g6amvg34a647nrchb4dvf4iy2xalrwj6-uv-0.11.32"
-      },
-      "system": "aarch64-darwin",
-      "group": "python",
-      "priority": 5
-    },
-    {
-      "attr_path": "uv",
-      "broken": false,
-      "derivation": "/nix/store/sr1mjx5z1fkpr97k4gb1b69jk4qq9arc-uv-0.11.32.drv",
-      "description": "Extremely fast Python package installer and resolver, written in Rust",
-      "install_id": "uv",
-      "license": "[ Apache-2.0, MIT ]",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=624af665418d3c65d544145b4d34ad696439570e",
-      "name": "uv-0.11.32",
-      "pname": "uv",
-      "rev": "624af665418d3c65d544145b4d34ad696439570e",
-      "rev_count": 1042126,
-      "rev_date": "2026-07-26T18:26:09Z",
-      "scrape_date": "2026-07-28T05:27:38.433610Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.11.32",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/jagiivdq93j5rs830iv4kbyjgrfj3av7-uv-0.11.32"
-      },
-      "system": "aarch64-linux",
-      "group": "python",
-      "priority": 5
-    },
-    {
-      "attr_path": "uv",
-      "broken": false,
-      "derivation": "/nix/store/m34xgx7y42f152l0lmyr9r510l78da9w-uv-0.11.32.drv",
-      "description": "Extremely fast Python package installer and resolver, written in Rust",
-      "install_id": "uv",
-      "license": "[ Apache-2.0, MIT ]",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=624af665418d3c65d544145b4d34ad696439570e",
-      "name": "uv-0.11.32",
-      "pname": "uv",
-      "rev": "624af665418d3c65d544145b4d34ad696439570e",
-      "rev_count": 1042126,
-      "rev_date": "2026-07-26T18:26:09Z",
-      "scrape_date": "2026-07-28T06:00:33.915346Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.11.32",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/dvr55z1smhg85vsx7iig1ks443pd954k-uv-0.11.32"
-      },
-      "system": "x86_64-linux",
-      "group": "python",
       "priority": 5
     },
     {
@@ -6814,90 +6814,90 @@
       "priority": 5
     },
     {
-      "attr_path": "pi-coding-agent",
+      "attr_path": "uv",
       "broken": false,
-      "derivation": "/nix/store/sd98cmp74xdpclvd1hlnha2cjf1girbb-pi-coding-agent-0.82.1.drv",
-      "description": "Coding agent CLI with read, bash, edit, write tools and session management",
-      "install_id": "pi-coding-agent",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=0954f7ee2f6bb3dc7d4e3d0d8bcb8fd4bde4cfc5",
-      "name": "pi-coding-agent-0.82.1",
-      "pname": "pi-coding-agent",
-      "rev": "0954f7ee2f6bb3dc7d4e3d0d8bcb8fd4bde4cfc5",
-      "rev_count": 1043649,
-      "rev_date": "2026-07-29T09:51:10Z",
-      "scrape_date": "2026-07-30T04:55:11.065990Z",
+      "derivation": "/nix/store/zvz5x2kwazw9lvz7y3d60pb4b889p2fz-uv-0.12.0.drv",
+      "description": "Extremely fast Python package installer and resolver, written in Rust",
+      "install_id": "uv",
+      "license": "[ Apache-2.0, MIT ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=1559d3daa3ecc813a650b79375ea61b6741b8746",
+      "name": "uv-0.12.0",
+      "pname": "uv",
+      "rev": "1559d3daa3ecc813a650b79375ea61b6741b8746",
+      "rev_count": 1044798,
+      "rev_date": "2026-07-30T23:37:10Z",
+      "scrape_date": "2026-08-01T04:56:45.708399Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "0.82.1",
+      "version": "0.12.0",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/sn90kwyr2wwgh51gc8v4gp755mnxkcq9-pi-coding-agent-0.82.1"
+        "out": "/nix/store/jhzybpxf83bngx9vka2kgmq1z856hgwj-uv-0.12.0"
       },
       "system": "aarch64-darwin",
-      "group": "pi-coding-agent",
+      "group": "python",
       "priority": 5
     },
     {
-      "attr_path": "pi-coding-agent",
+      "attr_path": "uv",
       "broken": false,
-      "derivation": "/nix/store/pz99s3igrj6r4swq2ic7fsb2idgvbci8-pi-coding-agent-0.82.1.drv",
-      "description": "Coding agent CLI with read, bash, edit, write tools and session management",
-      "install_id": "pi-coding-agent",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=0954f7ee2f6bb3dc7d4e3d0d8bcb8fd4bde4cfc5",
-      "name": "pi-coding-agent-0.82.1",
-      "pname": "pi-coding-agent",
-      "rev": "0954f7ee2f6bb3dc7d4e3d0d8bcb8fd4bde4cfc5",
-      "rev_count": 1043649,
-      "rev_date": "2026-07-29T09:51:10Z",
-      "scrape_date": "2026-07-30T05:25:24.901361Z",
+      "derivation": "/nix/store/a0ryq74x58q8y8yn37yw8j7gg5jg7v7x-uv-0.12.0.drv",
+      "description": "Extremely fast Python package installer and resolver, written in Rust",
+      "install_id": "uv",
+      "license": "[ Apache-2.0, MIT ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=1559d3daa3ecc813a650b79375ea61b6741b8746",
+      "name": "uv-0.12.0",
+      "pname": "uv",
+      "rev": "1559d3daa3ecc813a650b79375ea61b6741b8746",
+      "rev_count": 1044798,
+      "rev_date": "2026-07-30T23:37:10Z",
+      "scrape_date": "2026-08-01T05:27:06.271205Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "0.82.1",
+      "version": "0.12.0",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/36n605s0hx18azjkf9l7gb2qdz58g2gw-pi-coding-agent-0.82.1"
+        "out": "/nix/store/dwrshy7wikdcm07hgbmb8scg0mb9mmpk-uv-0.12.0"
       },
       "system": "aarch64-linux",
-      "group": "pi-coding-agent",
+      "group": "python",
       "priority": 5
     },
     {
-      "attr_path": "pi-coding-agent",
+      "attr_path": "uv",
       "broken": false,
-      "derivation": "/nix/store/88v92z7kz176kx36v7yxcyrrp38cbii7-pi-coding-agent-0.82.1.drv",
-      "description": "Coding agent CLI with read, bash, edit, write tools and session management",
-      "install_id": "pi-coding-agent",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=0954f7ee2f6bb3dc7d4e3d0d8bcb8fd4bde4cfc5",
-      "name": "pi-coding-agent-0.82.1",
-      "pname": "pi-coding-agent",
-      "rev": "0954f7ee2f6bb3dc7d4e3d0d8bcb8fd4bde4cfc5",
-      "rev_count": 1043649,
-      "rev_date": "2026-07-29T09:51:10Z",
-      "scrape_date": "2026-07-30T05:59:13.782168Z",
+      "derivation": "/nix/store/xi9h16dahh7lldxqkmm210zpfw3ffck6-uv-0.12.0.drv",
+      "description": "Extremely fast Python package installer and resolver, written in Rust",
+      "install_id": "uv",
+      "license": "[ Apache-2.0, MIT ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=1559d3daa3ecc813a650b79375ea61b6741b8746",
+      "name": "uv-0.12.0",
+      "pname": "uv",
+      "rev": "1559d3daa3ecc813a650b79375ea61b6741b8746",
+      "rev_count": 1044798,
+      "rev_date": "2026-07-30T23:37:10Z",
+      "scrape_date": "2026-08-01T06:00:52.018863Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "0.82.1",
+      "version": "0.12.0",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/rg248h9sz8dylm8p6a9w9fj4zrv4sgm5-pi-coding-agent-0.82.1"
+        "out": "/nix/store/161k3i22fy6zy2k0d69kk1p32i6n8kby-uv-0.12.0"
       },
       "system": "x86_64-linux",
-      "group": "pi-coding-agent",
+      "group": "python",
       "priority": 5
     },
     {
