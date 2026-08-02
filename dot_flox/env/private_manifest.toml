@@ -153,7 +153,7 @@ lua = { pkg-path = "lua51Packages.lua", pkg-group = "lua.org" , outputs = "all" 
 # python — standalone, frequent updates. Renovate-managed (see renovate.json).
 uv.pkg-path = "uv"
 uv.pkg-group = "python"
-uv.version = "0.11.32"
+uv.version = "0.12.0"
 
 # linters — standalone analysis tools
 typos = { pkg-path = "typos", pkg-group = "linters" }
