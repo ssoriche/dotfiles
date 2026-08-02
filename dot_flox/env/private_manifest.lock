@@ -40,7 +40,7 @@
       "atuin": {
         "pkg-path": "atuin",
         "pkg-group": "atuin.sh",
-        "version": "18.18.0"
+        "version": "18.18.1"
       },
       "awscli2": {
         "pkg-path": "awscli2",
@@ -387,93 +387,6 @@
       },
       "system": "aarch64-darwin",
       "group": "aerospace",
-      "priority": 5
-    },
-    {
-      "attr_path": "atuin",
-      "broken": false,
-      "derivation": "/nix/store/gh80gfbnv17p5xkaabix3brrg2imrv8w-atuin-18.18.0.drv",
-      "description": "Replacement for a shell history which records additional commands context with optional encrypted synchronization between machines",
-      "install_id": "atuin",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=0954f7ee2f6bb3dc7d4e3d0d8bcb8fd4bde4cfc5",
-      "name": "atuin-18.18.0",
-      "pname": "atuin",
-      "rev": "0954f7ee2f6bb3dc7d4e3d0d8bcb8fd4bde4cfc5",
-      "rev_count": 1043649,
-      "rev_date": "2026-07-29T09:51:10Z",
-      "scrape_date": "2026-07-30T04:54:32.698677Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "18.18.0",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/0wj86jxbmkd74xqbva8g5a3icnk4p0xq-atuin-18.18.0"
-      },
-      "system": "aarch64-darwin",
-      "group": "atuin.sh",
-      "priority": 5
-    },
-    {
-      "attr_path": "atuin",
-      "broken": false,
-      "derivation": "/nix/store/b7zazdia8yr85799dvj56cimza6irr9h-atuin-18.18.0.drv",
-      "description": "Replacement for a shell history which records additional commands context with optional encrypted synchronization between machines",
-      "install_id": "atuin",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=0954f7ee2f6bb3dc7d4e3d0d8bcb8fd4bde4cfc5",
-      "name": "atuin-18.18.0",
-      "pname": "atuin",
-      "rev": "0954f7ee2f6bb3dc7d4e3d0d8bcb8fd4bde4cfc5",
-      "rev_count": 1043649,
-      "rev_date": "2026-07-29T09:51:10Z",
-      "scrape_date": "2026-07-30T05:24:28.060785Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "18.18.0",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/krwj21in2109an8b879w4z9kw692qy8d-atuin-18.18.0"
-      },
-      "system": "aarch64-linux",
-      "group": "atuin.sh",
-      "priority": 5
-    },
-    {
-      "attr_path": "atuin",
-      "broken": false,
-      "derivation": "/nix/store/7p8iy5frg7jlx8dnq62lwvdd8gri8xsx-atuin-18.18.0.drv",
-      "description": "Replacement for a shell history which records additional commands context with optional encrypted synchronization between machines",
-      "install_id": "atuin",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=0954f7ee2f6bb3dc7d4e3d0d8bcb8fd4bde4cfc5",
-      "name": "atuin-18.18.0",
-      "pname": "atuin",
-      "rev": "0954f7ee2f6bb3dc7d4e3d0d8bcb8fd4bde4cfc5",
-      "rev_count": 1043649,
-      "rev_date": "2026-07-29T09:51:10Z",
-      "scrape_date": "2026-07-30T05:58:15.270724Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "18.18.0",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/mhx893swl6kynk3l51wfikpkgfckw2g7-atuin-18.18.0"
-      },
-      "system": "x86_64-linux",
-      "group": "atuin.sh",
       "priority": 5
     },
     {
@@ -2809,6 +2722,93 @@
       },
       "system": "x86_64-linux",
       "group": "pinned",
+      "priority": 5
+    },
+    {
+      "attr_path": "uv",
+      "broken": false,
+      "derivation": "/nix/store/zvz5x2kwazw9lvz7y3d60pb4b889p2fz-uv-0.12.0.drv",
+      "description": "Extremely fast Python package installer and resolver, written in Rust",
+      "install_id": "uv",
+      "license": "[ Apache-2.0, MIT ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=1559d3daa3ecc813a650b79375ea61b6741b8746",
+      "name": "uv-0.12.0",
+      "pname": "uv",
+      "rev": "1559d3daa3ecc813a650b79375ea61b6741b8746",
+      "rev_count": 1044798,
+      "rev_date": "2026-07-30T23:37:10Z",
+      "scrape_date": "2026-08-01T04:56:45.708399Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.12.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/jhzybpxf83bngx9vka2kgmq1z856hgwj-uv-0.12.0"
+      },
+      "system": "aarch64-darwin",
+      "group": "python",
+      "priority": 5
+    },
+    {
+      "attr_path": "uv",
+      "broken": false,
+      "derivation": "/nix/store/a0ryq74x58q8y8yn37yw8j7gg5jg7v7x-uv-0.12.0.drv",
+      "description": "Extremely fast Python package installer and resolver, written in Rust",
+      "install_id": "uv",
+      "license": "[ Apache-2.0, MIT ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=1559d3daa3ecc813a650b79375ea61b6741b8746",
+      "name": "uv-0.12.0",
+      "pname": "uv",
+      "rev": "1559d3daa3ecc813a650b79375ea61b6741b8746",
+      "rev_count": 1044798,
+      "rev_date": "2026-07-30T23:37:10Z",
+      "scrape_date": "2026-08-01T05:27:06.271205Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.12.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/dwrshy7wikdcm07hgbmb8scg0mb9mmpk-uv-0.12.0"
+      },
+      "system": "aarch64-linux",
+      "group": "python",
+      "priority": 5
+    },
+    {
+      "attr_path": "uv",
+      "broken": false,
+      "derivation": "/nix/store/xi9h16dahh7lldxqkmm210zpfw3ffck6-uv-0.12.0.drv",
+      "description": "Extremely fast Python package installer and resolver, written in Rust",
+      "install_id": "uv",
+      "license": "[ Apache-2.0, MIT ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=1559d3daa3ecc813a650b79375ea61b6741b8746",
+      "name": "uv-0.12.0",
+      "pname": "uv",
+      "rev": "1559d3daa3ecc813a650b79375ea61b6741b8746",
+      "rev_count": 1044798,
+      "rev_date": "2026-07-30T23:37:10Z",
+      "scrape_date": "2026-08-01T06:00:52.018863Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.12.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/161k3i22fy6zy2k0d69kk1p32i6n8kby-uv-0.12.0"
+      },
+      "system": "x86_64-linux",
+      "group": "python",
       "priority": 5
     },
     {
@@ -6814,90 +6814,90 @@
       "priority": 5
     },
     {
-      "attr_path": "uv",
+      "attr_path": "atuin",
       "broken": false,
-      "derivation": "/nix/store/zvz5x2kwazw9lvz7y3d60pb4b889p2fz-uv-0.12.0.drv",
-      "description": "Extremely fast Python package installer and resolver, written in Rust",
-      "install_id": "uv",
-      "license": "[ Apache-2.0, MIT ]",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=1559d3daa3ecc813a650b79375ea61b6741b8746",
-      "name": "uv-0.12.0",
-      "pname": "uv",
-      "rev": "1559d3daa3ecc813a650b79375ea61b6741b8746",
-      "rev_count": 1044798,
-      "rev_date": "2026-07-30T23:37:10Z",
-      "scrape_date": "2026-08-01T04:56:45.708399Z",
+      "derivation": "/nix/store/lzfa5ibqgy439rpqfzxnxl9kk8av3g5w-atuin-18.18.1.drv",
+      "description": "Replacement for a shell history which records additional commands context with optional encrypted synchronization between machines",
+      "install_id": "atuin",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=148bab9c1c3c53136ecb44a6ea356a0ed5b39b06",
+      "name": "atuin-18.18.1",
+      "pname": "atuin",
+      "rev": "148bab9c1c3c53136ecb44a6ea356a0ed5b39b06",
+      "rev_count": 1045728,
+      "rev_date": "2026-08-01T07:59:56Z",
+      "scrape_date": "2026-08-02T04:58:59.890990Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "0.12.0",
+      "version": "18.18.1",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/jhzybpxf83bngx9vka2kgmq1z856hgwj-uv-0.12.0"
+        "out": "/nix/store/5l68hxapbnkymml9jv9wq4hmd67vnwws-atuin-18.18.1"
       },
       "system": "aarch64-darwin",
-      "group": "python",
+      "group": "atuin.sh",
       "priority": 5
     },
     {
-      "attr_path": "uv",
+      "attr_path": "atuin",
       "broken": false,
-      "derivation": "/nix/store/a0ryq74x58q8y8yn37yw8j7gg5jg7v7x-uv-0.12.0.drv",
-      "description": "Extremely fast Python package installer and resolver, written in Rust",
-      "install_id": "uv",
-      "license": "[ Apache-2.0, MIT ]",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=1559d3daa3ecc813a650b79375ea61b6741b8746",
-      "name": "uv-0.12.0",
-      "pname": "uv",
-      "rev": "1559d3daa3ecc813a650b79375ea61b6741b8746",
-      "rev_count": 1044798,
-      "rev_date": "2026-07-30T23:37:10Z",
-      "scrape_date": "2026-08-01T05:27:06.271205Z",
+      "derivation": "/nix/store/gzgydpwgdms8hvv8vih1zaixnfrmp4kz-atuin-18.18.1.drv",
+      "description": "Replacement for a shell history which records additional commands context with optional encrypted synchronization between machines",
+      "install_id": "atuin",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=148bab9c1c3c53136ecb44a6ea356a0ed5b39b06",
+      "name": "atuin-18.18.1",
+      "pname": "atuin",
+      "rev": "148bab9c1c3c53136ecb44a6ea356a0ed5b39b06",
+      "rev_count": 1045728,
+      "rev_date": "2026-08-01T07:59:56Z",
+      "scrape_date": "2026-08-02T05:33:37.524853Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "0.12.0",
+      "version": "18.18.1",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/dwrshy7wikdcm07hgbmb8scg0mb9mmpk-uv-0.12.0"
+        "out": "/nix/store/qvs6xjnp5c96azmbjz8km6mcgmh8kyvw-atuin-18.18.1"
       },
       "system": "aarch64-linux",
-      "group": "python",
+      "group": "atuin.sh",
       "priority": 5
     },
     {
-      "attr_path": "uv",
+      "attr_path": "atuin",
       "broken": false,
-      "derivation": "/nix/store/xi9h16dahh7lldxqkmm210zpfw3ffck6-uv-0.12.0.drv",
-      "description": "Extremely fast Python package installer and resolver, written in Rust",
-      "install_id": "uv",
-      "license": "[ Apache-2.0, MIT ]",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=1559d3daa3ecc813a650b79375ea61b6741b8746",
-      "name": "uv-0.12.0",
-      "pname": "uv",
-      "rev": "1559d3daa3ecc813a650b79375ea61b6741b8746",
-      "rev_count": 1044798,
-      "rev_date": "2026-07-30T23:37:10Z",
-      "scrape_date": "2026-08-01T06:00:52.018863Z",
+      "derivation": "/nix/store/8yvp2yvcarmdgszhdp4xkbsgcq582h4l-atuin-18.18.1.drv",
+      "description": "Replacement for a shell history which records additional commands context with optional encrypted synchronization between machines",
+      "install_id": "atuin",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=148bab9c1c3c53136ecb44a6ea356a0ed5b39b06",
+      "name": "atuin-18.18.1",
+      "pname": "atuin",
+      "rev": "148bab9c1c3c53136ecb44a6ea356a0ed5b39b06",
+      "rev_count": 1045728,
+      "rev_date": "2026-08-01T07:59:56Z",
+      "scrape_date": "2026-08-02T06:12:15.930838Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "0.12.0",
+      "version": "18.18.1",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/161k3i22fy6zy2k0d69kk1p32i6n8kby-uv-0.12.0"
+        "out": "/nix/store/h1a5nwrkb0gan6m6i9i9jcbnq590m11f-atuin-18.18.1"
       },
       "system": "x86_64-linux",
-      "group": "python",
+      "group": "atuin.sh",
       "priority": 5
     },
     {
