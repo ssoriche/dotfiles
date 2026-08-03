@@ -183,7 +183,7 @@ nono = { pkg-path = "nono", pkg-group = "nono" }
 # flox catalog. Renovate-managed (see renovate.json).
 herdr.pkg-path = "herdr"
 herdr.pkg-group = "herdr"
-herdr.version = "0.7.4"
+herdr.version = "0.7.5"
 
 # container — Apple's Linux container runtime; isolate so it resolves to latest
 container = { pkg-path = "container", pkg-group = "container", systems = ["aarch64-darwin"] }
