@@ -10,7 +10,6 @@ default_editor: vim
 # file extension, so the default *.yml/*.yaml globs never match them.
 configs:
   include:
-    - ~/.kube/config
     - ~/.kube/configs/*
 
 prompt:
