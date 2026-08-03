@@ -262,7 +262,7 @@
       "pi-coding-agent": {
         "pkg-path": "pi-coding-agent",
         "pkg-group": "pi-coding-agent",
-        "version": "0.82.1"
+        "version": "0.83.0"
       },
       "pv": {
         "pkg-path": "pv",
@@ -387,6 +387,93 @@
       },
       "system": "aarch64-darwin",
       "group": "aerospace",
+      "priority": 5
+    },
+    {
+      "attr_path": "atuin",
+      "broken": false,
+      "derivation": "/nix/store/lzfa5ibqgy439rpqfzxnxl9kk8av3g5w-atuin-18.18.1.drv",
+      "description": "Replacement for a shell history which records additional commands context with optional encrypted synchronization between machines",
+      "install_id": "atuin",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=148bab9c1c3c53136ecb44a6ea356a0ed5b39b06",
+      "name": "atuin-18.18.1",
+      "pname": "atuin",
+      "rev": "148bab9c1c3c53136ecb44a6ea356a0ed5b39b06",
+      "rev_count": 1045728,
+      "rev_date": "2026-08-01T07:59:56Z",
+      "scrape_date": "2026-08-02T04:58:59.890990Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "18.18.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/5l68hxapbnkymml9jv9wq4hmd67vnwws-atuin-18.18.1"
+      },
+      "system": "aarch64-darwin",
+      "group": "atuin.sh",
+      "priority": 5
+    },
+    {
+      "attr_path": "atuin",
+      "broken": false,
+      "derivation": "/nix/store/gzgydpwgdms8hvv8vih1zaixnfrmp4kz-atuin-18.18.1.drv",
+      "description": "Replacement for a shell history which records additional commands context with optional encrypted synchronization between machines",
+      "install_id": "atuin",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=148bab9c1c3c53136ecb44a6ea356a0ed5b39b06",
+      "name": "atuin-18.18.1",
+      "pname": "atuin",
+      "rev": "148bab9c1c3c53136ecb44a6ea356a0ed5b39b06",
+      "rev_count": 1045728,
+      "rev_date": "2026-08-01T07:59:56Z",
+      "scrape_date": "2026-08-02T05:33:37.524853Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "18.18.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/qvs6xjnp5c96azmbjz8km6mcgmh8kyvw-atuin-18.18.1"
+      },
+      "system": "aarch64-linux",
+      "group": "atuin.sh",
+      "priority": 5
+    },
+    {
+      "attr_path": "atuin",
+      "broken": false,
+      "derivation": "/nix/store/8yvp2yvcarmdgszhdp4xkbsgcq582h4l-atuin-18.18.1.drv",
+      "description": "Replacement for a shell history which records additional commands context with optional encrypted synchronization between machines",
+      "install_id": "atuin",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=148bab9c1c3c53136ecb44a6ea356a0ed5b39b06",
+      "name": "atuin-18.18.1",
+      "pname": "atuin",
+      "rev": "148bab9c1c3c53136ecb44a6ea356a0ed5b39b06",
+      "rev_count": 1045728,
+      "rev_date": "2026-08-01T07:59:56Z",
+      "scrape_date": "2026-08-02T06:12:15.930838Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "18.18.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/h1a5nwrkb0gan6m6i9i9jcbnq590m11f-atuin-18.18.1"
+      },
+      "system": "x86_64-linux",
+      "group": "atuin.sh",
       "priority": 5
     },
     {
@@ -2545,93 +2632,6 @@
       },
       "system": "x86_64-linux",
       "group": "obsidian",
-      "priority": 5
-    },
-    {
-      "attr_path": "pi-coding-agent",
-      "broken": false,
-      "derivation": "/nix/store/sd98cmp74xdpclvd1hlnha2cjf1girbb-pi-coding-agent-0.82.1.drv",
-      "description": "Coding agent CLI with read, bash, edit, write tools and session management",
-      "install_id": "pi-coding-agent",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=0954f7ee2f6bb3dc7d4e3d0d8bcb8fd4bde4cfc5",
-      "name": "pi-coding-agent-0.82.1",
-      "pname": "pi-coding-agent",
-      "rev": "0954f7ee2f6bb3dc7d4e3d0d8bcb8fd4bde4cfc5",
-      "rev_count": 1043649,
-      "rev_date": "2026-07-29T09:51:10Z",
-      "scrape_date": "2026-07-30T04:55:11.065990Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.82.1",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/sn90kwyr2wwgh51gc8v4gp755mnxkcq9-pi-coding-agent-0.82.1"
-      },
-      "system": "aarch64-darwin",
-      "group": "pi-coding-agent",
-      "priority": 5
-    },
-    {
-      "attr_path": "pi-coding-agent",
-      "broken": false,
-      "derivation": "/nix/store/pz99s3igrj6r4swq2ic7fsb2idgvbci8-pi-coding-agent-0.82.1.drv",
-      "description": "Coding agent CLI with read, bash, edit, write tools and session management",
-      "install_id": "pi-coding-agent",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=0954f7ee2f6bb3dc7d4e3d0d8bcb8fd4bde4cfc5",
-      "name": "pi-coding-agent-0.82.1",
-      "pname": "pi-coding-agent",
-      "rev": "0954f7ee2f6bb3dc7d4e3d0d8bcb8fd4bde4cfc5",
-      "rev_count": 1043649,
-      "rev_date": "2026-07-29T09:51:10Z",
-      "scrape_date": "2026-07-30T05:25:24.901361Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.82.1",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/36n605s0hx18azjkf9l7gb2qdz58g2gw-pi-coding-agent-0.82.1"
-      },
-      "system": "aarch64-linux",
-      "group": "pi-coding-agent",
-      "priority": 5
-    },
-    {
-      "attr_path": "pi-coding-agent",
-      "broken": false,
-      "derivation": "/nix/store/88v92z7kz176kx36v7yxcyrrp38cbii7-pi-coding-agent-0.82.1.drv",
-      "description": "Coding agent CLI with read, bash, edit, write tools and session management",
-      "install_id": "pi-coding-agent",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=0954f7ee2f6bb3dc7d4e3d0d8bcb8fd4bde4cfc5",
-      "name": "pi-coding-agent-0.82.1",
-      "pname": "pi-coding-agent",
-      "rev": "0954f7ee2f6bb3dc7d4e3d0d8bcb8fd4bde4cfc5",
-      "rev_count": 1043649,
-      "rev_date": "2026-07-29T09:51:10Z",
-      "scrape_date": "2026-07-30T05:59:13.782168Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.82.1",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/rg248h9sz8dylm8p6a9w9fj4zrv4sgm5-pi-coding-agent-0.82.1"
-      },
-      "system": "x86_64-linux",
-      "group": "pi-coding-agent",
       "priority": 5
     },
     {
@@ -6814,90 +6814,90 @@
       "priority": 5
     },
     {
-      "attr_path": "atuin",
+      "attr_path": "pi-coding-agent",
       "broken": false,
-      "derivation": "/nix/store/lzfa5ibqgy439rpqfzxnxl9kk8av3g5w-atuin-18.18.1.drv",
-      "description": "Replacement for a shell history which records additional commands context with optional encrypted synchronization between machines",
-      "install_id": "atuin",
+      "derivation": "/nix/store/xrm2iv937svbfs5v1fx9b6q5d04d3zb4-pi-coding-agent-0.83.0.drv",
+      "description": "Coding agent CLI with read, bash, edit, write tools and session management",
+      "install_id": "pi-coding-agent",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=148bab9c1c3c53136ecb44a6ea356a0ed5b39b06",
-      "name": "atuin-18.18.1",
-      "pname": "atuin",
-      "rev": "148bab9c1c3c53136ecb44a6ea356a0ed5b39b06",
-      "rev_count": 1045728,
-      "rev_date": "2026-08-01T07:59:56Z",
-      "scrape_date": "2026-08-02T04:58:59.890990Z",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=1559d3daa3ecc813a650b79375ea61b6741b8746",
+      "name": "pi-coding-agent-0.83.0",
+      "pname": "pi-coding-agent",
+      "rev": "1559d3daa3ecc813a650b79375ea61b6741b8746",
+      "rev_count": 1044798,
+      "rev_date": "2026-07-30T23:37:10Z",
+      "scrape_date": "2026-08-01T04:54:47.576185Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "18.18.1",
+      "version": "0.83.0",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/5l68hxapbnkymml9jv9wq4hmd67vnwws-atuin-18.18.1"
+        "out": "/nix/store/g6c54bxmalkadbaw8vwzfjadws879q2n-pi-coding-agent-0.83.0"
       },
       "system": "aarch64-darwin",
-      "group": "atuin.sh",
+      "group": "pi-coding-agent",
       "priority": 5
     },
     {
-      "attr_path": "atuin",
+      "attr_path": "pi-coding-agent",
       "broken": false,
-      "derivation": "/nix/store/gzgydpwgdms8hvv8vih1zaixnfrmp4kz-atuin-18.18.1.drv",
-      "description": "Replacement for a shell history which records additional commands context with optional encrypted synchronization between machines",
-      "install_id": "atuin",
+      "derivation": "/nix/store/lgzn3yvf40jm4k6mbngrs6lx8lzn2nnw-pi-coding-agent-0.83.0.drv",
+      "description": "Coding agent CLI with read, bash, edit, write tools and session management",
+      "install_id": "pi-coding-agent",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=148bab9c1c3c53136ecb44a6ea356a0ed5b39b06",
-      "name": "atuin-18.18.1",
-      "pname": "atuin",
-      "rev": "148bab9c1c3c53136ecb44a6ea356a0ed5b39b06",
-      "rev_count": 1045728,
-      "rev_date": "2026-08-01T07:59:56Z",
-      "scrape_date": "2026-08-02T05:33:37.524853Z",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=1559d3daa3ecc813a650b79375ea61b6741b8746",
+      "name": "pi-coding-agent-0.83.0",
+      "pname": "pi-coding-agent",
+      "rev": "1559d3daa3ecc813a650b79375ea61b6741b8746",
+      "rev_count": 1044798,
+      "rev_date": "2026-07-30T23:37:10Z",
+      "scrape_date": "2026-08-01T05:24:34.881833Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "18.18.1",
+      "version": "0.83.0",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/qvs6xjnp5c96azmbjz8km6mcgmh8kyvw-atuin-18.18.1"
+        "out": "/nix/store/1ic68j188nxivqzg2dc2a1a2jr4l2jr5-pi-coding-agent-0.83.0"
       },
       "system": "aarch64-linux",
-      "group": "atuin.sh",
+      "group": "pi-coding-agent",
       "priority": 5
     },
     {
-      "attr_path": "atuin",
+      "attr_path": "pi-coding-agent",
       "broken": false,
-      "derivation": "/nix/store/8yvp2yvcarmdgszhdp4xkbsgcq582h4l-atuin-18.18.1.drv",
-      "description": "Replacement for a shell history which records additional commands context with optional encrypted synchronization between machines",
-      "install_id": "atuin",
+      "derivation": "/nix/store/13549lcy7kg965q6dni12mpppmrn87i0-pi-coding-agent-0.83.0.drv",
+      "description": "Coding agent CLI with read, bash, edit, write tools and session management",
+      "install_id": "pi-coding-agent",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=148bab9c1c3c53136ecb44a6ea356a0ed5b39b06",
-      "name": "atuin-18.18.1",
-      "pname": "atuin",
-      "rev": "148bab9c1c3c53136ecb44a6ea356a0ed5b39b06",
-      "rev_count": 1045728,
-      "rev_date": "2026-08-01T07:59:56Z",
-      "scrape_date": "2026-08-02T06:12:15.930838Z",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=1559d3daa3ecc813a650b79375ea61b6741b8746",
+      "name": "pi-coding-agent-0.83.0",
+      "pname": "pi-coding-agent",
+      "rev": "1559d3daa3ecc813a650b79375ea61b6741b8746",
+      "rev_count": 1044798,
+      "rev_date": "2026-07-30T23:37:10Z",
+      "scrape_date": "2026-08-01T05:58:17.678418Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "18.18.1",
+      "version": "0.83.0",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/h1a5nwrkb0gan6m6i9i9jcbnq590m11f-atuin-18.18.1"
+        "out": "/nix/store/qbxvq11k5mmj4lqfybhszjh1wk3hzmhr-pi-coding-agent-0.83.0"
       },
       "system": "x86_64-linux",
-      "group": "atuin.sh",
+      "group": "pi-coding-agent",
       "priority": 5
     },
     {
