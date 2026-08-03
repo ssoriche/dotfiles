@@ -1,7 +1,15 @@
 when:
+  # On a PR: prove the pins resolve. On main: land the regenerated lock.
+  # The relock commit touches only private_manifest.lock, so this path filter is
+  # what stops the commit step retriggering itself. The author-email guard is a
+  # redundant second stop -- cheap, and a relock loop on main is worth two locks.
   - event: pull_request
-    path: 'dot_flox/env/private_manifest.toml'
-    evaluate: 'CI_COMMIT_AUTHOR_EMAIL != "woodpecker-ci@noreply.git.s8i.app"'
+    path: &manifest 'dot_flox/env/private_manifest.toml'
+    evaluate: &not_bot 'CI_COMMIT_AUTHOR_EMAIL != "woodpecker-ci@noreply.git.s8i.app"'
+  - event: push
+    branch: main
+    path: *manifest
+    evaluate: *not_bot
 
 clone:
   - name: git
@@ -11,10 +19,22 @@ clone:
       depth: 0
 
 steps:
+  # No FORGEJO_TOKEN: this step never pushes, so the secret is not exposed to
+  # pipelines triggered by a pull request.
+  - name: check
+    image: ghcr.io/flox/flox:latest
+    when:
+      - event: pull_request
+    commands:
+      - bash .woodpecker/scripts/flox-relock.sh check
+
   - name: relock
     image: ghcr.io/flox/flox:latest
+    when:
+      - event: push
+        branch: main
     environment:
       FORGEJO_TOKEN:
         from_secret: forgejo_token
     commands:
-      - bash .woodpecker/scripts/flox-relock.sh
+      - bash .woodpecker/scripts/flox-relock.sh commit
