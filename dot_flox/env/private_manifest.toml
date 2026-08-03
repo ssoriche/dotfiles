@@ -174,7 +174,7 @@ claude-code.version = "2.1.220"
 # pi-coding-agent — fast-moving AI tooling. Renovate-managed (see renovate.json).
 pi-coding-agent.pkg-path = "pi-coding-agent"
 pi-coding-agent.pkg-group = "pi-coding-agent"
-pi-coding-agent.version = "0.82.1"
+pi-coding-agent.version = "0.83.0"
 
 # nono — AI agent sandbox
 nono = { pkg-path = "nono", pkg-group = "nono" }
