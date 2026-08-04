@@ -254,7 +254,7 @@
       "obsidian": {
         "pkg-path": "obsidian",
         "pkg-group": "obsidian",
-        "version": "1.12.7"
+        "version": "1.13.4"
       },
       "passage": {
         "pkg-path": "passage"
@@ -2548,93 +2548,6 @@
       "priority": 5
     },
     {
-      "attr_path": "obsidian",
-      "broken": false,
-      "derivation": "/nix/store/fr12a95bikpnhi58dknxb06srg7p7gqq-obsidian-1.12.7.drv",
-      "description": "Powerful knowledge base that works on top of a local folder of plain text Markdown files",
-      "install_id": "obsidian",
-      "license": "Obsidian End User Agreement",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=624af665418d3c65d544145b4d34ad696439570e",
-      "name": "obsidian-1.12.7",
-      "pname": "obsidian",
-      "rev": "624af665418d3c65d544145b4d34ad696439570e",
-      "rev_count": 1042126,
-      "rev_date": "2026-07-26T18:26:09Z",
-      "scrape_date": "2026-07-28T04:54:23.588771Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": true,
-      "version": "1.12.7",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/438lbich62s9hrr9g9rxp4q2y33syh0f-obsidian-1.12.7"
-      },
-      "system": "aarch64-darwin",
-      "group": "obsidian",
-      "priority": 5
-    },
-    {
-      "attr_path": "obsidian",
-      "broken": false,
-      "derivation": "/nix/store/yqspm2mkx1fcq43xrhchj3zszqwyr4af-obsidian-1.12.7.drv",
-      "description": "Powerful knowledge base that works on top of a local folder of plain text Markdown files",
-      "install_id": "obsidian",
-      "license": "Obsidian End User Agreement",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=624af665418d3c65d544145b4d34ad696439570e",
-      "name": "obsidian-1.12.7",
-      "pname": "obsidian",
-      "rev": "624af665418d3c65d544145b4d34ad696439570e",
-      "rev_count": 1042126,
-      "rev_date": "2026-07-26T18:26:09Z",
-      "scrape_date": "2026-07-28T05:24:44.631694Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": true,
-      "version": "1.12.7",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/5pb4ydx3w7pfqird5vcg4qv5q67ahfi2-obsidian-1.12.7"
-      },
-      "system": "aarch64-linux",
-      "group": "obsidian",
-      "priority": 5
-    },
-    {
-      "attr_path": "obsidian",
-      "broken": false,
-      "derivation": "/nix/store/z67llklbk1h2k94q383a3nl6yal09nh0-obsidian-1.12.7.drv",
-      "description": "Powerful knowledge base that works on top of a local folder of plain text Markdown files",
-      "install_id": "obsidian",
-      "license": "Obsidian End User Agreement",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=624af665418d3c65d544145b4d34ad696439570e",
-      "name": "obsidian-1.12.7",
-      "pname": "obsidian",
-      "rev": "624af665418d3c65d544145b4d34ad696439570e",
-      "rev_count": 1042126,
-      "rev_date": "2026-07-26T18:26:09Z",
-      "scrape_date": "2026-07-28T05:57:34.038332Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": true,
-      "version": "1.12.7",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/2vwvv16l3zmvz23m0kp0k6jx4m4yraav-obsidian-1.12.7"
-      },
-      "system": "x86_64-linux",
-      "group": "obsidian",
-      "priority": 5
-    },
-    {
       "attr_path": "pi-coding-agent",
       "broken": false,
       "derivation": "/nix/store/xrm2iv937svbfs5v1fx9b6q5d04d3zb4-pi-coding-agent-0.83.0.drv",
@@ -2809,6 +2722,93 @@
       },
       "system": "x86_64-linux",
       "group": "pinned",
+      "priority": 5
+    },
+    {
+      "attr_path": "uv",
+      "broken": false,
+      "derivation": "/nix/store/h7n18rda0n9x3myx6249a43hwl3yaw6b-uv-0.12.1.drv",
+      "description": "Extremely fast Python package installer and resolver, written in Rust",
+      "install_id": "uv",
+      "license": "[ Apache-2.0, MIT ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=643809054d65fdd466a63e3155b8c498cb483c04",
+      "name": "uv-0.12.1",
+      "pname": "uv",
+      "rev": "643809054d65fdd466a63e3155b8c498cb483c04",
+      "rev_count": 1046609,
+      "rev_date": "2026-08-02T17:49:26Z",
+      "scrape_date": "2026-08-04T05:01:30.347713Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.12.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/hnmvqbh6zd1v0wss6q9ps8j1jp2pfkf0-uv-0.12.1"
+      },
+      "system": "aarch64-darwin",
+      "group": "python",
+      "priority": 5
+    },
+    {
+      "attr_path": "uv",
+      "broken": false,
+      "derivation": "/nix/store/r0l7979k2zbz8wwvv1bgrci8frwfdhj0-uv-0.12.1.drv",
+      "description": "Extremely fast Python package installer and resolver, written in Rust",
+      "install_id": "uv",
+      "license": "[ Apache-2.0, MIT ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=643809054d65fdd466a63e3155b8c498cb483c04",
+      "name": "uv-0.12.1",
+      "pname": "uv",
+      "rev": "643809054d65fdd466a63e3155b8c498cb483c04",
+      "rev_count": 1046609,
+      "rev_date": "2026-08-02T17:49:26Z",
+      "scrape_date": "2026-08-04T05:31:38.855625Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.12.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/xn0b6fcg7zzifjjbpzi6bs57nbyjxqn1-uv-0.12.1"
+      },
+      "system": "aarch64-linux",
+      "group": "python",
+      "priority": 5
+    },
+    {
+      "attr_path": "uv",
+      "broken": false,
+      "derivation": "/nix/store/c16gmc9p78raiymahbbzias9qyixrpli-uv-0.12.1.drv",
+      "description": "Extremely fast Python package installer and resolver, written in Rust",
+      "install_id": "uv",
+      "license": "[ Apache-2.0, MIT ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=643809054d65fdd466a63e3155b8c498cb483c04",
+      "name": "uv-0.12.1",
+      "pname": "uv",
+      "rev": "643809054d65fdd466a63e3155b8c498cb483c04",
+      "rev_count": 1046609,
+      "rev_date": "2026-08-02T17:49:26Z",
+      "scrape_date": "2026-08-04T06:04:48.937172Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.12.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/6fgvwx21832s8ygpzm4x3i29p4ac8gxn-uv-0.12.1"
+      },
+      "system": "x86_64-linux",
+      "group": "python",
       "priority": 5
     },
     {
@@ -6814,90 +6814,90 @@
       "priority": 5
     },
     {
-      "attr_path": "uv",
+      "attr_path": "obsidian",
       "broken": false,
-      "derivation": "/nix/store/h7n18rda0n9x3myx6249a43hwl3yaw6b-uv-0.12.1.drv",
-      "description": "Extremely fast Python package installer and resolver, written in Rust",
-      "install_id": "uv",
-      "license": "[ Apache-2.0, MIT ]",
+      "derivation": "/nix/store/shvirpm1ydxby4npkbbw4ij33p9dgbjz-obsidian-1.13.4.drv",
+      "description": "Powerful knowledge base that works on top of a local folder of plain text Markdown files",
+      "install_id": "obsidian",
+      "license": "Obsidian End User Agreement",
       "locked_url": "https://github.com/flox/nixpkgs?rev=643809054d65fdd466a63e3155b8c498cb483c04",
-      "name": "uv-0.12.1",
-      "pname": "uv",
+      "name": "obsidian-1.13.4",
+      "pname": "obsidian",
       "rev": "643809054d65fdd466a63e3155b8c498cb483c04",
       "rev_count": 1046609,
       "rev_date": "2026-08-02T17:49:26Z",
-      "scrape_date": "2026-08-04T05:01:30.347713Z",
+      "scrape_date": "2026-08-04T04:59:12.096293Z",
       "stabilities": [
         "unstable"
       ],
-      "unfree": false,
-      "version": "0.12.1",
+      "unfree": true,
+      "version": "1.13.4",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/hnmvqbh6zd1v0wss6q9ps8j1jp2pfkf0-uv-0.12.1"
+        "out": "/nix/store/0d1d7w874fhw3cw3zmlcc9lp3611a8n0-obsidian-1.13.4"
       },
       "system": "aarch64-darwin",
-      "group": "python",
+      "group": "obsidian",
       "priority": 5
     },
     {
-      "attr_path": "uv",
+      "attr_path": "obsidian",
       "broken": false,
-      "derivation": "/nix/store/r0l7979k2zbz8wwvv1bgrci8frwfdhj0-uv-0.12.1.drv",
-      "description": "Extremely fast Python package installer and resolver, written in Rust",
-      "install_id": "uv",
-      "license": "[ Apache-2.0, MIT ]",
+      "derivation": "/nix/store/ccb552jlsqykrcn95pirqv1gl42xhphn-obsidian-1.13.4.drv",
+      "description": "Powerful knowledge base that works on top of a local folder of plain text Markdown files",
+      "install_id": "obsidian",
+      "license": "Obsidian End User Agreement",
       "locked_url": "https://github.com/flox/nixpkgs?rev=643809054d65fdd466a63e3155b8c498cb483c04",
-      "name": "uv-0.12.1",
-      "pname": "uv",
+      "name": "obsidian-1.13.4",
+      "pname": "obsidian",
       "rev": "643809054d65fdd466a63e3155b8c498cb483c04",
       "rev_count": 1046609,
       "rev_date": "2026-08-02T17:49:26Z",
-      "scrape_date": "2026-08-04T05:31:38.855625Z",
+      "scrape_date": "2026-08-04T05:28:50.082288Z",
       "stabilities": [
         "unstable"
       ],
-      "unfree": false,
-      "version": "0.12.1",
+      "unfree": true,
+      "version": "1.13.4",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/xn0b6fcg7zzifjjbpzi6bs57nbyjxqn1-uv-0.12.1"
+        "out": "/nix/store/b75kma1bzvxrpnhypwh6sgjpfynnhj12-obsidian-1.13.4"
       },
       "system": "aarch64-linux",
-      "group": "python",
+      "group": "obsidian",
       "priority": 5
     },
     {
-      "attr_path": "uv",
+      "attr_path": "obsidian",
       "broken": false,
-      "derivation": "/nix/store/c16gmc9p78raiymahbbzias9qyixrpli-uv-0.12.1.drv",
-      "description": "Extremely fast Python package installer and resolver, written in Rust",
-      "install_id": "uv",
-      "license": "[ Apache-2.0, MIT ]",
+      "derivation": "/nix/store/kcdqlhk9qw9f9g8v299ibab9f3yx7cmc-obsidian-1.13.4.drv",
+      "description": "Powerful knowledge base that works on top of a local folder of plain text Markdown files",
+      "install_id": "obsidian",
+      "license": "Obsidian End User Agreement",
       "locked_url": "https://github.com/flox/nixpkgs?rev=643809054d65fdd466a63e3155b8c498cb483c04",
-      "name": "uv-0.12.1",
-      "pname": "uv",
+      "name": "obsidian-1.13.4",
+      "pname": "obsidian",
       "rev": "643809054d65fdd466a63e3155b8c498cb483c04",
       "rev_count": 1046609,
       "rev_date": "2026-08-02T17:49:26Z",
-      "scrape_date": "2026-08-04T06:04:48.937172Z",
+      "scrape_date": "2026-08-04T06:01:57.219050Z",
       "stabilities": [
         "unstable"
       ],
-      "unfree": false,
-      "version": "0.12.1",
+      "unfree": true,
+      "version": "1.13.4",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/6fgvwx21832s8ygpzm4x3i29p4ac8gxn-uv-0.12.1"
+        "out": "/nix/store/jfay3xk030wn03ia14h1m5kzviv8vwzx-obsidian-1.13.4"
       },
       "system": "x86_64-linux",
-      "group": "python",
+      "group": "obsidian",
       "priority": 5
     },
     {
