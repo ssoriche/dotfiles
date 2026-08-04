@@ -14,6 +14,12 @@
 # match (and the display is right) it does nothing; otherwise it removes and
 # re-adds the tile. This keeps churn to zero on unchanged generations while
 # repointing automatically whenever flox rebuilds.
+#
+# It is a `run_after_` (not `run_once_`) script for exactly that reason:
+# `run_once_` keys on the script's own content hash, so the staleness check
+# would only ever fire when this file changed — never when flox rebuilt. Running
+# on every `chezmoi apply` is cheap because the comparison below exits early
+# when the tile is already correct.
 
 FLOX_ENV_DIR="$HOME/.flox"
 
@@ -29,9 +35,11 @@ if [ ! -f "$FLOX_ENV_DIR/env/manifest.toml" ]; then
 fi
 
 # Find the Applications directory inside the Flox environment.
-# Path varies by architecture: run/<arch>-<os>.<name>.<mode>/Applications.
-# This is a symlink flox repoints per generation, so the tile stays current.
-APPS_DIR=$(find -L "$FLOX_ENV_DIR/run" -type d -name "Applications" 2>/dev/null | head -1)
+# Layout: run/<arch>-<os>.<name>-run/Applications, alongside a parallel
+# `-dev` environment (plus `.run`/`.dev` compatibility symlinks to both).
+# GUI apps belong to the *run* environment, so match that explicitly rather
+# than taking whichever of the four candidates `find` happens to return first.
+APPS_DIR=$(find -L "$FLOX_ENV_DIR/run" -maxdepth 2 -type d -name "Applications" -path "*-run/Applications" 2>/dev/null | sort | head -1)
 
 if [ -z "$APPS_DIR" ] || [ ! -d "$APPS_DIR" ]; then
     echo "Flox Applications directory not found, skipping Dock setup"
