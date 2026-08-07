@@ -127,6 +127,10 @@ GUI apps each get their own group rather than a shared `gui` one: nothing among 
 
 **Renovate integration**: `renovate.json` resolves versions from the Flox catalog API (`api.flox.dev`) rather than repology, which tracks nixpkgs directly and runs ahead of the lagging `flox/nixpkgs` snapshots — it would propose versions Flox cannot resolve. One custom manager covers every dot-notation exact pin, so **pinning a package is the only step needed to put it under Renovate**. Darwin-only packages (`aerospace`, `maccy`, `container`) use a second datasource scoped to `aarch64-darwin`, since the default rule only offers versions built for every system in `[options].systems`.
 
+**A broken darwin build is usually the rev, not the version.** The Woodpecker runner is linux, so CI only ever proves the linux side of a lock. obsidian 1.13.4 merged green and then failed locally with `chmod: cannot access 'Obsidian.app'`. The version was fine — the nixpkgs revision the lock had pinned (`643809054d65`) was not, and `flox upgrade obsidian` to `b7c2ada94fe9` fixed it with no version change. Reach for `flox upgrade <group>` before pinning a version back.
+
+Neither `flox lock-manifest -l <lock>` nor `flox activate` will do this for you: both preserve the locked rev for an unchanged pin, which is what makes the relock incremental. So CI cannot self-heal a bad rev — it takes an explicit `flox upgrade <group>` followed by `chezmoi add ~/.flox/env/manifest.lock`. Note the resulting lock-only commit does not match the pipeline's `path` filter, so it lands without CI running at all.
+
 For detailed operational docs (adding/removing packages, troubleshooting, etc.), see the flox skill: `.claude/skills/flox/SKILL.md`.
 
 ## Common Development Commands

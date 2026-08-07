@@ -2258,6 +2258,35 @@
       "priority": 5
     },
     {
+      "attr_path": "maccy",
+      "broken": false,
+      "derivation": "/nix/store/p66b140ipbh70abv68aibgan5l3ryzb0-maccy-2.7.0.drv",
+      "description": "Simple clipboard manager for macOS",
+      "install_id": "maccy",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b7c2ada94fe99c15b0dbcf4d11fd7850b957a436",
+      "name": "maccy-2.7.0",
+      "pname": "maccy",
+      "rev": "b7c2ada94fe99c15b0dbcf4d11fd7850b957a436",
+      "rev_count": 1048607,
+      "rev_date": "2026-08-05T22:07:00Z",
+      "scrape_date": "2026-08-07T04:55:35.156377Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2.7.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/pj2d6kblryq3gdw0aj6h0frfngv5d3ni-maccy-2.7.0"
+      },
+      "system": "aarch64-darwin",
+      "group": "maccy",
+      "priority": 5
+    },
+    {
       "attr_path": "bun",
       "broken": false,
       "derivation": "/nix/store/2igxa3lq9zzhq3dhp77z813jh1wq3yb5-bun-1.3.13.drv",
@@ -2516,93 +2545,6 @@
       },
       "system": "x86_64-linux",
       "group": "nono",
-      "priority": 5
-    },
-    {
-      "attr_path": "obsidian",
-      "broken": false,
-      "derivation": "/nix/store/shvirpm1ydxby4npkbbw4ij33p9dgbjz-obsidian-1.13.4.drv",
-      "description": "Powerful knowledge base that works on top of a local folder of plain text Markdown files",
-      "install_id": "obsidian",
-      "license": "Obsidian End User Agreement",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=643809054d65fdd466a63e3155b8c498cb483c04",
-      "name": "obsidian-1.13.4",
-      "pname": "obsidian",
-      "rev": "643809054d65fdd466a63e3155b8c498cb483c04",
-      "rev_count": 1046609,
-      "rev_date": "2026-08-02T17:49:26Z",
-      "scrape_date": "2026-08-04T04:59:12.096293Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": true,
-      "version": "1.13.4",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/0d1d7w874fhw3cw3zmlcc9lp3611a8n0-obsidian-1.13.4"
-      },
-      "system": "aarch64-darwin",
-      "group": "obsidian",
-      "priority": 5
-    },
-    {
-      "attr_path": "obsidian",
-      "broken": false,
-      "derivation": "/nix/store/ccb552jlsqykrcn95pirqv1gl42xhphn-obsidian-1.13.4.drv",
-      "description": "Powerful knowledge base that works on top of a local folder of plain text Markdown files",
-      "install_id": "obsidian",
-      "license": "Obsidian End User Agreement",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=643809054d65fdd466a63e3155b8c498cb483c04",
-      "name": "obsidian-1.13.4",
-      "pname": "obsidian",
-      "rev": "643809054d65fdd466a63e3155b8c498cb483c04",
-      "rev_count": 1046609,
-      "rev_date": "2026-08-02T17:49:26Z",
-      "scrape_date": "2026-08-04T05:28:50.082288Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": true,
-      "version": "1.13.4",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/b75kma1bzvxrpnhypwh6sgjpfynnhj12-obsidian-1.13.4"
-      },
-      "system": "aarch64-linux",
-      "group": "obsidian",
-      "priority": 5
-    },
-    {
-      "attr_path": "obsidian",
-      "broken": false,
-      "derivation": "/nix/store/kcdqlhk9qw9f9g8v299ibab9f3yx7cmc-obsidian-1.13.4.drv",
-      "description": "Powerful knowledge base that works on top of a local folder of plain text Markdown files",
-      "install_id": "obsidian",
-      "license": "Obsidian End User Agreement",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=643809054d65fdd466a63e3155b8c498cb483c04",
-      "name": "obsidian-1.13.4",
-      "pname": "obsidian",
-      "rev": "643809054d65fdd466a63e3155b8c498cb483c04",
-      "rev_count": 1046609,
-      "rev_date": "2026-08-02T17:49:26Z",
-      "scrape_date": "2026-08-04T06:01:57.219050Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": true,
-      "version": "1.13.4",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/jfay3xk030wn03ia14h1m5kzviv8vwzx-obsidian-1.13.4"
-      },
-      "system": "x86_64-linux",
-      "group": "obsidian",
       "priority": 5
     },
     {
@@ -6872,32 +6814,90 @@
       "priority": 5
     },
     {
-      "attr_path": "maccy",
+      "attr_path": "obsidian",
       "broken": false,
-      "derivation": "/nix/store/p66b140ipbh70abv68aibgan5l3ryzb0-maccy-2.7.0.drv",
-      "description": "Simple clipboard manager for macOS",
-      "install_id": "maccy",
-      "license": "MIT",
+      "derivation": "/nix/store/k8i6z3q35vqbc8davwwjwak2pfr9rqfp-obsidian-1.13.4.drv",
+      "description": "Powerful knowledge base that works on top of a local folder of plain text Markdown files",
+      "install_id": "obsidian",
+      "license": "Obsidian End User Agreement",
       "locked_url": "https://github.com/flox/nixpkgs?rev=b7c2ada94fe99c15b0dbcf4d11fd7850b957a436",
-      "name": "maccy-2.7.0",
-      "pname": "maccy",
+      "name": "obsidian-1.13.4",
+      "pname": "obsidian",
       "rev": "b7c2ada94fe99c15b0dbcf4d11fd7850b957a436",
       "rev_count": 1048607,
       "rev_date": "2026-08-05T22:07:00Z",
-      "scrape_date": "2026-08-07T04:55:35.156377Z",
+      "scrape_date": "2026-08-07T04:55:38.254541Z",
       "stabilities": [
         "unstable"
       ],
-      "unfree": false,
-      "version": "2.7.0",
+      "unfree": true,
+      "version": "1.13.4",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/pj2d6kblryq3gdw0aj6h0frfngv5d3ni-maccy-2.7.0"
+        "out": "/nix/store/0jk7xgpvg81ihgd5a30jcz6ga3kgzfla-obsidian-1.13.4"
       },
       "system": "aarch64-darwin",
-      "group": "maccy",
+      "group": "obsidian",
+      "priority": 5
+    },
+    {
+      "attr_path": "obsidian",
+      "broken": false,
+      "derivation": "/nix/store/ccb552jlsqykrcn95pirqv1gl42xhphn-obsidian-1.13.4.drv",
+      "description": "Powerful knowledge base that works on top of a local folder of plain text Markdown files",
+      "install_id": "obsidian",
+      "license": "Obsidian End User Agreement",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b7c2ada94fe99c15b0dbcf4d11fd7850b957a436",
+      "name": "obsidian-1.13.4",
+      "pname": "obsidian",
+      "rev": "b7c2ada94fe99c15b0dbcf4d11fd7850b957a436",
+      "rev_count": 1048607,
+      "rev_date": "2026-08-05T22:07:00Z",
+      "scrape_date": "2026-08-07T05:25:17.879062Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "1.13.4",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/b75kma1bzvxrpnhypwh6sgjpfynnhj12-obsidian-1.13.4"
+      },
+      "system": "aarch64-linux",
+      "group": "obsidian",
+      "priority": 5
+    },
+    {
+      "attr_path": "obsidian",
+      "broken": false,
+      "derivation": "/nix/store/kcdqlhk9qw9f9g8v299ibab9f3yx7cmc-obsidian-1.13.4.drv",
+      "description": "Powerful knowledge base that works on top of a local folder of plain text Markdown files",
+      "install_id": "obsidian",
+      "license": "Obsidian End User Agreement",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b7c2ada94fe99c15b0dbcf4d11fd7850b957a436",
+      "name": "obsidian-1.13.4",
+      "pname": "obsidian",
+      "rev": "b7c2ada94fe99c15b0dbcf4d11fd7850b957a436",
+      "rev_count": 1048607,
+      "rev_date": "2026-08-05T22:07:00Z",
+      "scrape_date": "2026-08-07T05:59:40.197253Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "1.13.4",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/jfay3xk030wn03ia14h1m5kzviv8vwzx-obsidian-1.13.4"
+      },
+      "system": "x86_64-linux",
+      "group": "obsidian",
       "priority": 5
     },
     {
