@@ -30,17 +30,19 @@ LOCK=dot_flox/env/private_manifest.lock
 # Verified equivalent to the activate path in content: both resolve every
 # package to the same version and rev, and both exit non-zero with the same
 # per-system error when a pin is missing from the catalog. They do NOT agree on
-# the order of the `packages` array, so the two locks are not byte-comparable --
-# hence the tuple comparison in check mode below rather than a `git diff`, and
-# hence commit mode must keep using relock_and_build, so the lock committed to
-# main stays in the order a local `flox activate` would write it.
+# the order of the `packages` array, so the two locks are not byte-comparable.
+# That is why commit mode must keep using relock_and_build: the lock committed to
+# main has to stay in the order a local `flox activate` would write it, or every
+# apply would reorder it back and leave chezmoi showing permanent drift.
 #
 # `lock-manifest` is absent from `flox --help` in 1.13.1 but present and
 # documented under `--help` on the subcommand itself. If a future flox drops it,
 # fall back to relock_and_build here.
 lock_only() {
-  local tmp
-  tmp=$(mktemp)
+  # A fixed sibling path rather than mktemp: the flox CI image is a thin base and
+  # every external command here is a chance to fail the way jq did, so this
+  # function is deliberately limited to flox plus shell builtins and mv.
+  local tmp="${LOCK}.new"
   # Seeded with the current lock so only changed pins are re-resolved.
   flox lock-manifest -l "$LOCK" "$MANIFEST" > "$tmp"
   # `flox activate` terminates the lock with a newline; stdout does not.
@@ -73,29 +75,16 @@ relock_and_build() {
   cp .flox/env/manifest.lock "$LOCK"
 }
 
-# One line per locked package, ordering-independent, so a reordered-but-identical
-# lock compares equal. A raw `git diff` cannot be used here: lock_only and
-# relock_and_build order the `packages` array differently, so every PR would
-# report ~90 lines of pure churn.
-locked_packages() {
-  jq -r '[.packages[] | "\(.install_id)/\(.system)  \(.version)  \(.rev[0:12])"] | sort | .[]' "$1"
-}
-
 if [[ "$mode" == "check" ]]; then
-  before=$(mktemp)
-  after=$(mktemp)
-  locked_packages "$LOCK" > "$before"
+  # No diff of the regenerated lock is reported. lock_only and relock_and_build
+  # order the `packages` array differently, so a plain `git diff` is ~90 lines of
+  # churn on every PR regardless of what changed, and comparing them
+  # order-independently needs a JSON parser. The flox CI image ships neither jq
+  # nor any guarantee of sed/sort/diff, so the informational report is not worth
+  # a dependency the image may not have -- the gate is lock_only's exit code,
+  # and Renovate's own manifest diff already shows which pin moved.
   lock_only
-  locked_packages "$LOCK" > "$after"
-
-  if diff -q "$before" "$after" > /dev/null; then
-    echo "Every pin resolves; no package changes."
-  else
-    echo "Every pin resolves. Package changes that will land on main after merge:"
-    # `diff` exits 1 whenever the files differ, which under `set -e` would abort
-    # the script on exactly the path we expect every Renovate PR to take.
-    diff "$before" "$after" | grep -E '^[<>]' | sed 's/^</  removed:/; s/^>/  added:  /' || true
-  fi
+  echo "Every pin resolves. The lock will be regenerated on main after merge."
   exit 0
 fi
 
