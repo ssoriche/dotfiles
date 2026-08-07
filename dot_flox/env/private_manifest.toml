@@ -216,7 +216,7 @@ halloy.version = "2026.8"
 maccy.pkg-path = "maccy"
 maccy.pkg-group = "maccy"
 maccy.systems = ["aarch64-darwin"]
-maccy.version = "2.6.1"
+maccy.version = "2.7.0"
 
 # Flake-based packages (pinned to specific commits/repos)
 coderabbit-cli.pkg-path = "flox/coderabbit-cli"
