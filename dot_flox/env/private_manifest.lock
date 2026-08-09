@@ -65,7 +65,7 @@
       "claude-code": {
         "pkg-path": "claude-code",
         "pkg-group": "claude",
-        "version": "2.1.222"
+        "version": "2.1.224"
       },
       "coderabbit-cli": {
         "pkg-path": "flox/coderabbit-cli",
@@ -474,93 +474,6 @@
       },
       "system": "x86_64-linux",
       "group": "atuin.sh",
-      "priority": 5
-    },
-    {
-      "attr_path": "claude-code",
-      "broken": false,
-      "derivation": "/nix/store/f8gyyy6g1nv1a8j1iz8xc4pygr4s8qmv-claude-code-2.1.222.drv",
-      "description": "Agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster",
-      "install_id": "claude-code",
-      "license": "Unfree",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=b7c2ada94fe99c15b0dbcf4d11fd7850b957a436",
-      "name": "claude-code-2.1.222",
-      "pname": "claude-code",
-      "rev": "b7c2ada94fe99c15b0dbcf4d11fd7850b957a436",
-      "rev_count": 1048607,
-      "rev_date": "2026-08-05T22:07:00Z",
-      "scrape_date": "2026-08-07T04:55:13.313822Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": true,
-      "version": "2.1.222",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/ysiv91fdxf9npb1h3lv9myqpb3df12cl-claude-code-2.1.222"
-      },
-      "system": "aarch64-darwin",
-      "group": "claude",
-      "priority": 5
-    },
-    {
-      "attr_path": "claude-code",
-      "broken": false,
-      "derivation": "/nix/store/r0abf3ssr6i1fj1s7l3j7l8r4kvaman9-claude-code-2.1.222.drv",
-      "description": "Agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster",
-      "install_id": "claude-code",
-      "license": "Unfree",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=b7c2ada94fe99c15b0dbcf4d11fd7850b957a436",
-      "name": "claude-code-2.1.222",
-      "pname": "claude-code",
-      "rev": "b7c2ada94fe99c15b0dbcf4d11fd7850b957a436",
-      "rev_count": 1048607,
-      "rev_date": "2026-08-05T22:07:00Z",
-      "scrape_date": "2026-08-07T05:24:40.035979Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": true,
-      "version": "2.1.222",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/zlhh7xhg03pvf9381mqya1ajawsmfvwk-claude-code-2.1.222"
-      },
-      "system": "aarch64-linux",
-      "group": "claude",
-      "priority": 5
-    },
-    {
-      "attr_path": "claude-code",
-      "broken": false,
-      "derivation": "/nix/store/py4mkcs8qvyaajrl0agsp1in74hg9lz6-claude-code-2.1.222.drv",
-      "description": "Agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster",
-      "install_id": "claude-code",
-      "license": "Unfree",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=b7c2ada94fe99c15b0dbcf4d11fd7850b957a436",
-      "name": "claude-code-2.1.222",
-      "pname": "claude-code",
-      "rev": "b7c2ada94fe99c15b0dbcf4d11fd7850b957a436",
-      "rev_count": 1048607,
-      "rev_date": "2026-08-05T22:07:00Z",
-      "scrape_date": "2026-08-07T05:59:00.256581Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": true,
-      "version": "2.1.222",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/mgj83nd63grschcwgva1pr9flk5b5rrb-claude-code-2.1.222"
-      },
-      "system": "x86_64-linux",
-      "group": "claude",
       "priority": 5
     },
     {
@@ -2545,6 +2458,93 @@
       },
       "system": "x86_64-linux",
       "group": "nono",
+      "priority": 5
+    },
+    {
+      "attr_path": "obsidian",
+      "broken": false,
+      "derivation": "/nix/store/k8i6z3q35vqbc8davwwjwak2pfr9rqfp-obsidian-1.13.4.drv",
+      "description": "Powerful knowledge base that works on top of a local folder of plain text Markdown files",
+      "install_id": "obsidian",
+      "license": "Obsidian End User Agreement",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b7c2ada94fe99c15b0dbcf4d11fd7850b957a436",
+      "name": "obsidian-1.13.4",
+      "pname": "obsidian",
+      "rev": "b7c2ada94fe99c15b0dbcf4d11fd7850b957a436",
+      "rev_count": 1048607,
+      "rev_date": "2026-08-05T22:07:00Z",
+      "scrape_date": "2026-08-07T04:55:38.254541Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "1.13.4",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/0jk7xgpvg81ihgd5a30jcz6ga3kgzfla-obsidian-1.13.4"
+      },
+      "system": "aarch64-darwin",
+      "group": "obsidian",
+      "priority": 5
+    },
+    {
+      "attr_path": "obsidian",
+      "broken": false,
+      "derivation": "/nix/store/ccb552jlsqykrcn95pirqv1gl42xhphn-obsidian-1.13.4.drv",
+      "description": "Powerful knowledge base that works on top of a local folder of plain text Markdown files",
+      "install_id": "obsidian",
+      "license": "Obsidian End User Agreement",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b7c2ada94fe99c15b0dbcf4d11fd7850b957a436",
+      "name": "obsidian-1.13.4",
+      "pname": "obsidian",
+      "rev": "b7c2ada94fe99c15b0dbcf4d11fd7850b957a436",
+      "rev_count": 1048607,
+      "rev_date": "2026-08-05T22:07:00Z",
+      "scrape_date": "2026-08-07T05:25:17.879062Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "1.13.4",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/b75kma1bzvxrpnhypwh6sgjpfynnhj12-obsidian-1.13.4"
+      },
+      "system": "aarch64-linux",
+      "group": "obsidian",
+      "priority": 5
+    },
+    {
+      "attr_path": "obsidian",
+      "broken": false,
+      "derivation": "/nix/store/kcdqlhk9qw9f9g8v299ibab9f3yx7cmc-obsidian-1.13.4.drv",
+      "description": "Powerful knowledge base that works on top of a local folder of plain text Markdown files",
+      "install_id": "obsidian",
+      "license": "Obsidian End User Agreement",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b7c2ada94fe99c15b0dbcf4d11fd7850b957a436",
+      "name": "obsidian-1.13.4",
+      "pname": "obsidian",
+      "rev": "b7c2ada94fe99c15b0dbcf4d11fd7850b957a436",
+      "rev_count": 1048607,
+      "rev_date": "2026-08-05T22:07:00Z",
+      "scrape_date": "2026-08-07T05:59:40.197253Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "1.13.4",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/jfay3xk030wn03ia14h1m5kzviv8vwzx-obsidian-1.13.4"
+      },
+      "system": "x86_64-linux",
+      "group": "obsidian",
       "priority": 5
     },
     {
@@ -6814,90 +6814,90 @@
       "priority": 5
     },
     {
-      "attr_path": "obsidian",
+      "attr_path": "claude-code",
       "broken": false,
-      "derivation": "/nix/store/k8i6z3q35vqbc8davwwjwak2pfr9rqfp-obsidian-1.13.4.drv",
-      "description": "Powerful knowledge base that works on top of a local folder of plain text Markdown files",
-      "install_id": "obsidian",
-      "license": "Obsidian End User Agreement",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=b7c2ada94fe99c15b0dbcf4d11fd7850b957a436",
-      "name": "obsidian-1.13.4",
-      "pname": "obsidian",
-      "rev": "b7c2ada94fe99c15b0dbcf4d11fd7850b957a436",
-      "rev_count": 1048607,
-      "rev_date": "2026-08-05T22:07:00Z",
-      "scrape_date": "2026-08-07T04:55:38.254541Z",
+      "derivation": "/nix/store/3jpvavpjc9yrcxb3ixdnd8x58l165p66-claude-code-2.1.224.drv",
+      "description": "Agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster",
+      "install_id": "claude-code",
+      "license": "Unfree",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=f13ff45afd1bb73e640eaa08a7066dbed07e3238",
+      "name": "claude-code-2.1.224",
+      "pname": "claude-code",
+      "rev": "f13ff45afd1bb73e640eaa08a7066dbed07e3238",
+      "rev_count": 1049422,
+      "rev_date": "2026-08-07T12:45:23Z",
+      "scrape_date": "2026-08-09T04:54:50.682895Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": true,
-      "version": "1.13.4",
+      "version": "2.1.224",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/0jk7xgpvg81ihgd5a30jcz6ga3kgzfla-obsidian-1.13.4"
+        "out": "/nix/store/a9admi49grrlf0bykh03aw7bjqcqjh7m-claude-code-2.1.224"
       },
       "system": "aarch64-darwin",
-      "group": "obsidian",
+      "group": "claude",
       "priority": 5
     },
     {
-      "attr_path": "obsidian",
+      "attr_path": "claude-code",
       "broken": false,
-      "derivation": "/nix/store/ccb552jlsqykrcn95pirqv1gl42xhphn-obsidian-1.13.4.drv",
-      "description": "Powerful knowledge base that works on top of a local folder of plain text Markdown files",
-      "install_id": "obsidian",
-      "license": "Obsidian End User Agreement",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=b7c2ada94fe99c15b0dbcf4d11fd7850b957a436",
-      "name": "obsidian-1.13.4",
-      "pname": "obsidian",
-      "rev": "b7c2ada94fe99c15b0dbcf4d11fd7850b957a436",
-      "rev_count": 1048607,
-      "rev_date": "2026-08-05T22:07:00Z",
-      "scrape_date": "2026-08-07T05:25:17.879062Z",
+      "derivation": "/nix/store/v35b4swhsk77bi0sgqiy6g34whyszzwy-claude-code-2.1.224.drv",
+      "description": "Agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster",
+      "install_id": "claude-code",
+      "license": "Unfree",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=f13ff45afd1bb73e640eaa08a7066dbed07e3238",
+      "name": "claude-code-2.1.224",
+      "pname": "claude-code",
+      "rev": "f13ff45afd1bb73e640eaa08a7066dbed07e3238",
+      "rev_count": 1049422,
+      "rev_date": "2026-08-07T12:45:23Z",
+      "scrape_date": "2026-08-09T05:24:09.239835Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": true,
-      "version": "1.13.4",
+      "version": "2.1.224",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/b75kma1bzvxrpnhypwh6sgjpfynnhj12-obsidian-1.13.4"
+        "out": "/nix/store/5pl8v4p7lsg8c7lqw6bd9n75sfvyhphx-claude-code-2.1.224"
       },
       "system": "aarch64-linux",
-      "group": "obsidian",
+      "group": "claude",
       "priority": 5
     },
     {
-      "attr_path": "obsidian",
+      "attr_path": "claude-code",
       "broken": false,
-      "derivation": "/nix/store/kcdqlhk9qw9f9g8v299ibab9f3yx7cmc-obsidian-1.13.4.drv",
-      "description": "Powerful knowledge base that works on top of a local folder of plain text Markdown files",
-      "install_id": "obsidian",
-      "license": "Obsidian End User Agreement",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=b7c2ada94fe99c15b0dbcf4d11fd7850b957a436",
-      "name": "obsidian-1.13.4",
-      "pname": "obsidian",
-      "rev": "b7c2ada94fe99c15b0dbcf4d11fd7850b957a436",
-      "rev_count": 1048607,
-      "rev_date": "2026-08-05T22:07:00Z",
-      "scrape_date": "2026-08-07T05:59:40.197253Z",
+      "derivation": "/nix/store/q64vhw37gf8xq2pgw5gnm8x2krjdazlv-claude-code-2.1.224.drv",
+      "description": "Agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster",
+      "install_id": "claude-code",
+      "license": "Unfree",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=f13ff45afd1bb73e640eaa08a7066dbed07e3238",
+      "name": "claude-code-2.1.224",
+      "pname": "claude-code",
+      "rev": "f13ff45afd1bb73e640eaa08a7066dbed07e3238",
+      "rev_count": 1049422,
+      "rev_date": "2026-08-07T12:45:23Z",
+      "scrape_date": "2026-08-09T05:58:24.072130Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": true,
-      "version": "1.13.4",
+      "version": "2.1.224",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/jfay3xk030wn03ia14h1m5kzviv8vwzx-obsidian-1.13.4"
+        "out": "/nix/store/f1wgwagk74knk6vd2gc5isplrwmdp92s-claude-code-2.1.224"
       },
       "system": "x86_64-linux",
-      "group": "obsidian",
+      "group": "claude",
       "priority": 5
     },
     {
