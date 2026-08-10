@@ -14,7 +14,7 @@ steps:
   # dotfiles#8 happened: managerFilePatterns was valid to the docs and schema
   # while the deployed bot was still on v39.
   - name: validate
-    image: ghcr.io/renovatebot/renovate:44.7.2
+    image: ghcr.io/renovatebot/renovate:44.17.3
     commands:
       # No file argument => validates renovate.json as repo config.
       # --strict fails on warnings, errors, or if a config migration is needed,
