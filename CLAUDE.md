@@ -238,6 +238,14 @@ GUI applications installed via flox (like AeroSpace, Wezterm) live in the Nix st
 
 Right-click the Dock folder to customize display (fan/grid/list, sort order).
 
+Zap (the launcher, also flox-installed) has the same blind spot: it only scans `/Applications`, `/System/Applications`, and `~/Applications`. `private_dot_config/zap/config.json` adds the flox Applications dir to its `searchPaths` so flox GUI apps are launchable:
+
+```json
+{ "searchPaths": ["~/.flox/run/aarch64-darwin.default-run/Applications"] }
+```
+
+Use the **stable `~/.flox/run/...-run/Applications` symlink**, not a resolved `/nix/store` path — flox repoints that symlink on every generation, so the config survives upgrades (unlike the Dock tile, which canonicalizes and needs the self-healing script above). Zap picks up symlinked `.app` bundles fine and re-reads `searchPaths` on each activation; only `hotkeys` changes need an app restart.
+
 ## Development Environment
 
 ### Shell Environment
