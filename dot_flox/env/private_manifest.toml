@@ -106,9 +106,15 @@ lima.version = ">=1.2.0"
 # Backup
 restic.pkg-path = "restic"
 
-# macOS SDK frameworks (needed by some builds)
-CoreServices.pkg-path = "darwin.apple_sdk.frameworks.CoreServices"
-CoreServices.systems = ["aarch64-darwin"]
+# No explicit macOS SDK entry. nixpkgs collapsed the per-framework
+# darwin.apple_sdk.frameworks.* derivations into a single apple-sdk and left
+# behind stubs (a lone README saying "Individual frameworks have been
+# deprecated"), which then stopped being carried forward into newer catalog
+# snapshots. Because group resolution is atomic, the unresolvable
+# darwin.apple_sdk.frameworks.CoreServices entry that used to live here pinned
+# the whole toplevel group to the 2025-08-06 revision for a year. Modern stdenv
+# supplies the SDK on darwin automatically; if an explicit one is ever needed,
+# install apple-sdk in its own pkg-group so it can never freeze toplevel again.
 
 # --- Grouped packages (inline tables) ---
 
