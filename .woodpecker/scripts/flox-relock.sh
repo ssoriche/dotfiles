@@ -7,12 +7,20 @@ set -euo pipefail
 # commit -- relock and land the regenerated lock. Run on push to main. Uses
 #           relock_and_build, so main also gets the buildability check that the
 #           PR deliberately skips.
-mode="${1:?usage: flox-relock.sh <check|commit>}"
+# drift  -- relock and record whether the committed lock is stale, without
+#           committing. Run on cron. Writes a verdict to $STATE for the reporting
+#           step and always exits 0, so that step runs on every outcome.
+mode="${1:?usage: flox-relock.sh <check|commit|drift>}"
 
 git config --global --add safe.directory "$(pwd)"
 
 MANIFEST=dot_flox/env/private_manifest.toml
 LOCK=dot_flox/env/private_manifest.lock
+
+# Handoff from the drift step (flox image) to the reporting step (alpine). The
+# workspace is the only thing the two share, and this keeps the flox step free of
+# curl and jq, which it has no guarantee of shipping.
+STATE=.flox-lock-drift-state
 
 # Both paths below resolve every system the manifest declares -- aarch64-darwin,
 # aarch64-linux, and x86_64-linux (macOS-only packages are isolated with
@@ -88,8 +96,45 @@ if [[ "$mode" == "check" ]]; then
   exit 0
 fi
 
+# The cron watchdog. It exists because the relock on main can stop happening
+# without anything going red: a pipeline that references a secret its event is
+# not allowed to use fails to COMPILE, so no step runs and Woodpecker posts no
+# commit status at all. Pipelines 65/71/74/76 sat in that state from Aug 9 and
+# nothing in Forgejo showed it. This check is deliberately independent of the
+# relock pipeline -- it re-derives the answer from the repo state, so it catches
+# a compile error, a rejected push, catalog lag, or the pipeline simply never
+# having fired, without needing to know which one happened.
+if [[ "$mode" == "drift" ]]; then
+  # Must use relock_and_build, not lock_only: the committed lock is written by
+  # the activate path, and the two orders the `packages` array differently, so
+  # only relock_and_build output is byte-comparable against what is in git.
+  set +e
+  relock_and_build
+  rc=$?
+  set -e
+
+  # A non-zero relock is itself a reportable condition (a pin the catalog cannot
+  # resolve, most often), so it gets a verdict rather than aborting the pipeline.
+  # The log lands in this step; the issue body links to it.
+  if [[ $rc -ne 0 ]]; then
+    printf 'error\n' > "$STATE"
+    echo "Relock failed (exit ${rc}). Reporting as an error."
+    exit 0
+  fi
+
+  if git diff --quiet -- "$LOCK"; then
+    printf 'sync\n' > "$STATE"
+    echo "Lock is in sync with the manifest."
+  else
+    printf 'drift\n' > "$STATE"
+    echo "Lock has drifted from the manifest:"
+    git diff --stat -- "$LOCK"
+  fi
+  exit 0
+fi
+
 if [[ "$mode" != "commit" ]]; then
-  echo "unknown mode: $mode (expected 'check' or 'commit')" >&2
+  echo "unknown mode: $mode (expected 'check', 'commit', or 'drift')" >&2
   exit 2
 fi
 

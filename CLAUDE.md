@@ -135,6 +135,12 @@ GUI apps each get their own group rather than a shared `gui` one: nothing among 
 
 Neither `flox lock-manifest -l <lock>` nor `flox activate` will do this for you: both preserve the locked rev for an unchanged pin, which is what makes the relock incremental. So CI cannot self-heal a bad rev — it takes an explicit `flox upgrade <group>` followed by `chezmoi add ~/.flox/env/manifest.lock`. Note the resulting lock-only commit does not match the pipeline's `path` filter, so it lands without CI running at all.
 
+**A relock that stops happening does not go red.** Woodpecker rejects a pipeline that names a secret its event is not allowed to use at *compile* time — no workflow is created, no step runs, and no commit status is posted to Forgejo at all. Merging a manifest PR then simply produces no follow-up lock commit, with nothing anywhere showing a failure. That is how pipelines 65/71/74/76 sat broken from 2026-08-09: the ArgoCD PostSync job at `devops-blocks/kubernetes/cicd/woodpecker/manifests/base/custom/job-sync-forgejo-secret.yaml` PATCHes the global `forgejo_token` secret on every sync, and its hardcoded events list had narrowed back to `pull_request` only. The events list there must cover every event any repo references the secret from (`pull_request`, `push`, `cron`).
+
+The symptom is diagnosable only from the Woodpecker API — `curl -H "Authorization: Bearer $WOODPECKER_TOKEN" https://ci.s8i.app/api/repos/3/pipelines/<n>` shows `status: error`, `workflows: null`, and the reason in `errors[]`. The CLI's `pipeline show` does not surface it.
+
+`.woodpecker/flox-lock-drift.yaml` is the watchdog for this. On a nightly cron it relocks main and files (or closes) a Forgejo issue titled `flox: manifest.lock is stale on main`. It re-derives drift from the repo rather than watching the relock pipeline, so it is indifferent to *which* failure mode occurred — a `when: status: failure` step inside `flox-relock.yaml` would catch none of them, because a compile error means there is no step to hang it off.
+
 For detailed operational docs (adding/removing packages, troubleshooting, etc.), see the flox skill: `.claude/skills/flox/SKILL.md`.
 
 ## Common Development Commands
