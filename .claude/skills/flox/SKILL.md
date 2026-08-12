@@ -159,6 +159,17 @@ chezmoi add ~/.flox/env/manifest.lock
 mypackage = { pkg-path = "mypackage", version = "1.2.3", pkg-group = "pinned" }
 ```
 
+### Constrain a version (`>=` floor)
+
+```toml
+mypackage.pkg-path = "mypackage"
+mypackage.version = ">=1.2.3"
+```
+
+Floors are a **forward ratchet**, not a minimum requirement — they stop a fresh resolve from landing on a year-old version. They're the right tool for a package sharing a group with others, because an open-ended floor imposes no upper bound and any number of them can be satisfied by one snapshot. Exact pins can't make that promise, which is why the one-pin-per-group rule exists.
+
+Renovate manages both forms (see `renovate.json`): one custom manager bumps exact pins, another rewrites `>=X` to `>=Y` in place. Adding either form is all it takes to put a package under Renovate — but don't convert a floor to an exact pin just to get updates, since the floor is already managed and the pin adds a constraint its group may not tolerate.
+
 ### Search for available packages
 
 ```bash
@@ -219,11 +230,48 @@ mypackage = { pkg-path = "mypackage", pkg-group = "mypackage" }  # isolate into 
 
 Then: `chezmoi apply ~/.flox/env/manifest.toml && flox upgrade mypackage`
 
+### A whole group silently stops upgrading
+
+Group resolution is **atomic**: every package in a group resolves from one nixpkgs revision, so a single member that cannot resolve in newer snapshots pins the entire group. There is no error — `flox upgrade` just reports "No upgrades available", and the group omits itself from the machine-wide dry-run. It looks like everything is current.
+
+The usual cause is a **dead `pkg-path`** — a package renamed or dropped upstream. It still resolves in old snapshots, so nothing ever fails; it just caps how far the group can move. This froze `toplevel` for a year on `darwin.apple_sdk.frameworks.CoreServices` after nixpkgs collapsed the per-framework derivations into `apple-sdk`.
+
+**Symptom to watch for**: every `>=` floor in the group resolving to *exactly* its floor. That means the group is stuck at whatever snapshot was current when those floors were written.
+
+**Diagnose** by comparing revision dates per group — an outlier that is months behind the rest is the tell:
+
+```bash
+python3 -c "
+import json,collections
+d=json.load(open('dot_flox/env/private_manifest.lock'))
+g=collections.defaultdict(set)
+for p in d['packages']:
+    if p.get('system')=='aarch64-darwin':
+        g[p.get('group','toplevel')].add(str(p.get('rev_date'))[:10])
+for k,v in sorted(g.items()): print(k, sorted(v))
+"
+```
+
+Then bisect with `flox lock-manifest`, which does a **fresh** resolve when given no `-l` base lockfile. Write a scratch manifest containing the group's packages, drop members one at a time, and watch the resolved `rev_date`:
+
+```bash
+flox lock-manifest scratch.toml | python3 -c "
+import json,sys
+print({str(p.get('rev_date'))[:10] for p in json.load(sys.stdin)['packages'] if p.get('system')=='aarch64-darwin'})
+"
+```
+
+When removing one package jumps the revision forward by months, that package is the blocker. Confirm it is the *pkg-path* and not a version constraint by also trying a run with all `>=` floors stripped — if the revision doesn't budge, the constraints were never the cause.
+
+**Fix**: remove the dead entry, or if it is genuinely needed, isolate it into its own `pkg-group` so it can only freeze itself. Check whether the package is now a stub before keeping it — `ls $(dirname)` on its store path is often just a README saying the thing was deprecated.
+
 ### Resolution fails for a group
 
 A group may fail to resolve if packages within it have conflicting version requirements.
 
 **Fix**: Split the conflicting package into its own group, or relax version constraints.
+
+Note the asymmetry between the two failure modes above: **exact pins** in a shared group cause loud `constraints too tight` failures, while a **dead pkg-path** causes a silent freeze. Both argue for isolating anything unusual into its own group.
 
 ### Package not found
 
