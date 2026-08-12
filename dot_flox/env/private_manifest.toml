@@ -23,27 +23,36 @@ ripgrep.version = "15.2.0"
 fd.pkg-path = "fd"
 fd.pkg-group = "fd"
 fd.version = "10.4.2"
+# The ">=" floors throughout this file are a forward ratchet, not a statement of
+# minimum requirements — they stop a fresh resolve from picking up a year-old
+# version. They earn their keep: locking the unversioned toplevel packages on
+# their own lands on a 2025-05-04 snapshot, while the floored set pulls forward.
+# Renovate bumps the floor in place (>=X -> >=Y) via its own custom manager, so
+# these stay current without hand-editing. They must stay ">=" and not become
+# exact pins: every floored package lives in toplevel, and the one-pin-per-group
+# rule above exists because independently-bumped exact pins in one group
+# eventually stop resolving together. Open-ended floors never have that problem.
 fzf.pkg-path = "fzf"
-fzf.version = ">=0.65.1"
+fzf.version = ">=0.74.2"
 eza.pkg-path = "eza"
-eza.version = ">=0.23.0"
+eza.version = ">=0.23.5"
 tree.pkg-path = "tree"
 zoxide.pkg-path = "zoxide"
-zoxide.version = ">=0.9.8"
+zoxide.version = ">=0.10.0"
 yazi.pkg-path = "yazi"
-yazi.version = ">=25.5.31"
+yazi.version = ">=26.5.6"
 
 # Text / JSON processing
 bat.pkg-path = "bat"
 jq.pkg-path = "jq"
-jq.version = ">=1.8.1"
+jq.version = ">=1.8.2"
 jq.outputs = "all"
 jless.pkg-path = "jless"
 jnv.pkg-path = "jnv"
-jnv.version = ">=0.6.1"
+jnv.version = ">=0.7.1"
 fastgron.pkg-path = "fastgron"
 fx.pkg-path = "fx"
-fx.version = ">=38.0.0"
+fx.version = ">=39.2.0"
 sd.pkg-path = "sd"
 glow.pkg-path = "glow"
 
@@ -68,30 +77,30 @@ kubie.version = "0.26.1"
 
 # Networking / Security
 nmap.pkg-path = "nmap"
-nmap.version = ">=7.97"
+nmap.version = ">=7.99"
 age.pkg-path = "age"
 passage.pkg-path = "passage"
 step-cli.pkg-path = "step-cli"
 wget.pkg-path = "wget"
 _1password-cli.pkg-path = "_1password-cli"
-_1password-cli.version = ">=2.31.1"
+_1password-cli.version = ">=2.34.1"
 
 # System monitoring / Utilities
 btop.pkg-path = "btop"
-btop.version = ">=1.4.4"
+btop.version = ">=1.4.7"
 pv.pkg-path = "pv"
-pv.version = ">=1.9.34"
+pv.version = ">=1.11.0"
 ncdu.pkg-path = "ncdu"
-ncdu.version = ">=2.8.2"
+ncdu.version = ">=2.9.2"
 spacer.pkg-path = "spacer"
-spacer.version = ">=0.4.5"
+spacer.version = ">=0.5.0"
 moreutils.pkg-path = "moreutils"
 tldr.pkg-path = "tldr"
 tldr.outputs = "all"
 chezmoi.pkg-path = "chezmoi"
-chezmoi.version = ">=2.63.1"
+chezmoi.version = ">=2.70.5"
 q.pkg-path = "q"
-q.version = ">=0.19.5"
+q.version = ">=0.19.12"
 dyff.pkg-path = "dyff"
 
 # Recording
@@ -101,7 +110,7 @@ asciinema-agg.pkg-path = "asciinema-agg"
 
 # Virtualization
 lima.pkg-path = "lima"
-lima.version = ">=1.2.0"
+lima.version = ">=2.2.0"
 
 # Backup
 restic.pkg-path = "restic"
