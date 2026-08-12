@@ -169,7 +169,7 @@ granted = { pkg-path = "granted", version = "0.36.3", pkg-group = "pinned" }
 # catalog. Renovate-managed (see renovate.json).
 claude-code.pkg-path = "claude-code"
 claude-code.pkg-group = "claude"
-claude-code.version = "2.1.224"
+claude-code.version = "2.1.226"
 
 # pi-coding-agent — fast-moving AI tooling. Renovate-managed (see renovate.json).
 pi-coding-agent.pkg-path = "pi-coding-agent"
