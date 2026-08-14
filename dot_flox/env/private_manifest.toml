@@ -83,7 +83,7 @@ passage.pkg-path = "passage"
 step-cli.pkg-path = "step-cli"
 wget.pkg-path = "wget"
 _1password-cli.pkg-path = "_1password-cli"
-_1password-cli.version = ">=2.34.1"
+_1password-cli.version = ">=2.38.1"
 
 # System monitoring / Utilities
 btop.pkg-path = "btop"
