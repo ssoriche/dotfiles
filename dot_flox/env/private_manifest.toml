@@ -177,9 +177,6 @@ dotenv-linter = { pkg-path = "dotenv-linter", pkg-group = "linters" }
 # cloud — large package, independent update cadence
 awscli2 = { pkg-path = "awscli2", pkg-group = "cloud" , outputs = "all" }
 
-# pinned — version-locked packages
-granted = { pkg-path = "granted", version = "0.36.3", pkg-group = "pinned" }
-
 # claude — fast-moving, unfree; nixpkgs currently tracks upstream ahead of the flox
 # catalog. Renovate-managed (see renovate.json).
 claude-code.pkg-path = "claude-code"
