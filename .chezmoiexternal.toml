@@ -28,7 +28,7 @@ refreshPeriod = "168h"
 exact = true
 ["bin/assume.fish"]
 type = "file"
-url = "https://raw.githubusercontent.com/common-fate/granted/refs/heads/main/scripts/assume.fish"
+url = "https://raw.githubusercontent.com/fwdcloudsec/granted/refs/heads/main/scripts/assume.fish"
 refreshPeriod = "168h"
 [".config/k9s/skins"]
 type = "archive"

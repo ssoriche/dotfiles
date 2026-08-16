@@ -24,7 +24,7 @@
   "customManagers": [
     {
       "customType": "regex",
-      "description": "Bump exact version pins resolved across every system in [options].systems. Requiring the pinned value to start with a digit skips the >= ranges (which float on their own) and the inline-table pins go/granted (deliberately held). This also matches the darwin-only packages, which the manager below claims as well; the duplicate is suppressed by the packageRule that disables this datasource for them. Renovate compiles custom-manager regexes with RE2, so a negative lookahead is not available to exclude them here.",
+      "description": "Bump exact version pins resolved across every system in [options].systems. Requiring the pinned value to start with a digit skips the >= floors, which the floor manager below claims instead, and the inline-table pins go/granted (deliberately held). This also matches the darwin-only packages, which the manager below claims as well; the duplicate is suppressed by the packageRule that disables this datasource for them. Renovate compiles custom-manager regexes with RE2, so a negative lookahead is not available to exclude them here.",
       "managerFilePatterns": ["/^dot_flox/env/private_manifest\\.toml$/"],
       "matchStrings": [
         "(?:^|\\n)(?<depName>[a-z0-9-]+)\\.version = \"(?<currentValue>\\d[^\"]*)\""
@@ -39,6 +39,15 @@
         "(?:^|\\n)(?<depName>aerospace|maccy|container)\\.version = \"(?<currentValue>\\d[^\"]*)\""
       ],
       "datasourceTemplate": "custom.flox-catalog-darwin"
+    },
+    {
+      "customType": "regex",
+      "description": "Bump the >= floors in place. These are a forward ratchet rather than real minimum requirements, and left to drift by hand they silently encode whenever they were last touched -- the toplevel floors sat on 2025-08 versions for a year. Only the numeric part is captured, so the >= survives the rewrite and the constraint stays a floor instead of becoming an exact pin. That distinction is load-bearing: every floored package shares the toplevel group, and 17 independently-bumped exact pins in one group is exactly the 'constraints too tight' failure the manifest header warns about, whereas any number of open-ended floors can be satisfied by a single snapshot indefinitely. The char class allows a leading underscore for _1password-cli.",
+      "managerFilePatterns": ["/^dot_flox/env/private_manifest\\.toml$/"],
+      "matchStrings": [
+        "(?:^|\\n)(?<depName>[a-z0-9_-]+)\\.version = \">=(?<currentValue>\\d[^\"]*)\""
+      ],
+      "datasourceTemplate": "custom.flox-catalog"
     },
     {
       "customType": "regex",
@@ -85,6 +94,11 @@
     {
       "description": "halloy versions are YYYY.M with an optional patch (2026.7, 2026.7.2), plus one legacy 23.1-alpha1. Not strict semver, but loose orders them correctly.",
       "matchDepNames": ["halloy"],
+      "versioning": "loose"
+    },
+    {
+      "description": "nmap ships two-component versions (7.99), which strict semver rejects outright -- same shape as halloy, same fix. Needed now that the >= floors are Renovate-managed. Do not widen this to the floored packages as a group: zoxide's catalog still carries a legacy 2023-11-20 entry that loose ranks above 0.10.0 and would offer as a downgrade, the same trap documented for wezterm above. Strict semver skips it, so every other floor is left on the default.",
+      "matchDepNames": ["nmap"],
       "versioning": "loose"
     },
     {

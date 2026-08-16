@@ -1,0 +1,44 @@
+# Nightly watchdog over the relock-on-main in flox-relock.yaml.
+#
+# It exists because that relock can stop happening with nothing going red.
+# Woodpecker rejects a pipeline that names a secret its event is not allowed to
+# use at COMPILE time: no workflow is created, no step runs, and -- the part that
+# makes it invisible -- no commit status is posted to Forgejo at all. Pipelines
+# 65/71/74/76 sat in exactly that state from Aug 9 while main's lock went stale.
+#
+# So this check does not watch the relock pipeline; it re-derives the answer from
+# the repo. That makes it indifferent to which failure mode occurred -- compile
+# error, rejected push, catalog lag, or a `when:` filter that quietly stopped
+# matching. A `when: status: failure` step inside flox-relock.yaml would catch
+# none of these, because there is no step to hang it off.
+when:
+  - event: cron
+
+clone:
+  - name: git
+    image: woodpeckerci/plugin-git
+    settings:
+      partial: false
+      depth: 0
+
+steps:
+  # No secret here, so a token misconfiguration cannot take out the step that
+  # does the actual detection.
+  - name: drift
+    image: ghcr.io/flox/flox:latest
+    commands:
+      - bash .woodpecker/scripts/flox-relock.sh drift
+
+  # Always runs: the drift step exits 0 on every verdict it can reach, and
+  # `status: [success, failure]` covers the case where it dies before writing one
+  # -- which the reporting script treats as a failure rather than as silence.
+  - name: report
+    image: alpine:3.24
+    when:
+      - status: [success, failure]
+    environment:
+      FORGEJO_TOKEN:
+        from_secret: forgejo_token
+    commands:
+      - apk add --no-cache bash curl jq ca-certificates
+      - bash .woodpecker/scripts/report-lock-drift.sh
