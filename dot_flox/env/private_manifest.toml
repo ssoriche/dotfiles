@@ -91,7 +91,7 @@ btop.version = ">=1.4.7"
 pv.pkg-path = "pv"
 pv.version = ">=1.11.0"
 ncdu.pkg-path = "ncdu"
-ncdu.version = ">=2.9.2"
+ncdu.version = ">=2.11.0"
 spacer.pkg-path = "spacer"
 spacer.version = ">=0.5.0"
 moreutils.pkg-path = "moreutils"
@@ -195,7 +195,7 @@ nono = { pkg-path = "nono", pkg-group = "nono" }
 # flox catalog. Renovate-managed (see renovate.json).
 herdr.pkg-path = "herdr"
 herdr.pkg-group = "herdr"
-herdr.version = "0.7.5"
+herdr.version = "0.8.0"
 
 # container — Apple's Linux container runtime; isolate so it resolves to latest
 container = { pkg-path = "container", pkg-group = "container", systems = ["aarch64-darwin"] }
