@@ -307,7 +307,7 @@
       "wezterm": {
         "pkg-path": "wezterm",
         "pkg-group": "wezterm",
-        "version": "2026-08-05"
+        "version": "2026-08-12"
       },
       "wget": {
         "pkg-path": "wget"
@@ -463,6 +463,93 @@
       },
       "system": "x86_64-linux",
       "group": "atuin.sh",
+      "priority": 5
+    },
+    {
+      "attr_path": "claude-code",
+      "broken": false,
+      "derivation": "/nix/store/bxnslgy7fxaxka44mc01yk9y14hj93dg-claude-code-2.1.232.drv",
+      "description": "Agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster",
+      "install_id": "claude-code",
+      "license": "Unfree",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=e5bdc4a41d4c072fe1e3787eaa0320a384741d44",
+      "name": "claude-code-2.1.232",
+      "pname": "claude-code",
+      "rev": "e5bdc4a41d4c072fe1e3787eaa0320a384741d44",
+      "rev_count": 1055335,
+      "rev_date": "2026-08-16T06:49:45Z",
+      "scrape_date": "2026-08-17T04:55:26.333745Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "2.1.232",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/5m8yv46jak8qin8va1r2rnqsqfmsdvks-claude-code-2.1.232"
+      },
+      "system": "aarch64-darwin",
+      "group": "claude",
+      "priority": 5
+    },
+    {
+      "attr_path": "claude-code",
+      "broken": false,
+      "derivation": "/nix/store/wm6ppjjv35bdnf6kljn8yfvlwkkn8rw2-claude-code-2.1.232.drv",
+      "description": "Agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster",
+      "install_id": "claude-code",
+      "license": "Unfree",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=e5bdc4a41d4c072fe1e3787eaa0320a384741d44",
+      "name": "claude-code-2.1.232",
+      "pname": "claude-code",
+      "rev": "e5bdc4a41d4c072fe1e3787eaa0320a384741d44",
+      "rev_count": 1055335,
+      "rev_date": "2026-08-16T06:49:45Z",
+      "scrape_date": "2026-08-17T05:24:50.764188Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "2.1.232",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/4wk4i657a3q9gcx2h733lsqcziy1qq82-claude-code-2.1.232"
+      },
+      "system": "aarch64-linux",
+      "group": "claude",
+      "priority": 5
+    },
+    {
+      "attr_path": "claude-code",
+      "broken": false,
+      "derivation": "/nix/store/ad5lk6vdbqx3iawj5iypr6rsccajj1z4-claude-code-2.1.232.drv",
+      "description": "Agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster",
+      "install_id": "claude-code",
+      "license": "Unfree",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=e5bdc4a41d4c072fe1e3787eaa0320a384741d44",
+      "name": "claude-code-2.1.232",
+      "pname": "claude-code",
+      "rev": "e5bdc4a41d4c072fe1e3787eaa0320a384741d44",
+      "rev_count": 1055335,
+      "rev_date": "2026-08-16T06:49:45Z",
+      "scrape_date": "2026-08-17T05:57:50.877200Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "2.1.232",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/43fmrchzsg9g110qqk9n7a5z0icsf0qh-claude-code-2.1.232"
+      },
+      "system": "x86_64-linux",
+      "group": "claude",
       "priority": 5
     },
     {
@@ -6624,27 +6711,27 @@
     {
       "attr_path": "wezterm",
       "broken": false,
-      "derivation": "/nix/store/dw3r88j6wg6r997biz7q0vzqvfhln0qm-wezterm-0-unstable-2026-08-05.drv",
+      "derivation": "/nix/store/6mfy1kj3frgd756qj4zhq6pv9fbfmd8h-wezterm-0-unstable-2026-08-12.drv",
       "description": "GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust",
       "install_id": "wezterm",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=2fcb964de67fcf60b43471c55d5d99e61a9ccb5a",
-      "name": "wezterm-0-unstable-2026-08-05",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=e5bdc4a41d4c072fe1e3787eaa0320a384741d44",
+      "name": "wezterm-0-unstable-2026-08-12",
       "pname": "wezterm",
-      "rev": "2fcb964de67fcf60b43471c55d5d99e61a9ccb5a",
-      "rev_count": 1051473,
-      "rev_date": "2026-08-10T17:52:38Z",
-      "scrape_date": "2026-08-12T05:03:23.990037Z",
+      "rev": "e5bdc4a41d4c072fe1e3787eaa0320a384741d44",
+      "rev_count": 1055335,
+      "rev_date": "2026-08-16T06:49:45Z",
+      "scrape_date": "2026-08-17T04:58:19.232339Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "2026-08-05",
+      "version": "2026-08-12",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/f8la1v13nybnjbraj41xawkh2k8gkic4-wezterm-0-unstable-2026-08-05"
+        "out": "/nix/store/v5xv1c3l7bsb228qz6jhbjjajn1039zr-wezterm-0-unstable-2026-08-12"
       },
       "system": "aarch64-darwin",
       "group": "wezterm",
@@ -6653,27 +6740,27 @@
     {
       "attr_path": "wezterm",
       "broken": false,
-      "derivation": "/nix/store/93vss5y6d806z56nx9g7giihdjl460q1-wezterm-0-unstable-2026-08-05.drv",
+      "derivation": "/nix/store/n9xhivxj8lmm8yjxz460i01w3fwgmipk-wezterm-0-unstable-2026-08-12.drv",
       "description": "GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust",
       "install_id": "wezterm",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=2fcb964de67fcf60b43471c55d5d99e61a9ccb5a",
-      "name": "wezterm-0-unstable-2026-08-05",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=e5bdc4a41d4c072fe1e3787eaa0320a384741d44",
+      "name": "wezterm-0-unstable-2026-08-12",
       "pname": "wezterm",
-      "rev": "2fcb964de67fcf60b43471c55d5d99e61a9ccb5a",
-      "rev_count": 1051473,
-      "rev_date": "2026-08-10T17:52:38Z",
-      "scrape_date": "2026-08-12T05:38:19.972588Z",
+      "rev": "e5bdc4a41d4c072fe1e3787eaa0320a384741d44",
+      "rev_count": 1055335,
+      "rev_date": "2026-08-16T06:49:45Z",
+      "scrape_date": "2026-08-17T05:28:34.653525Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "2026-08-05",
+      "version": "2026-08-12",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/h7cxwgbixaz36bglm8s4nvw7xd8mpy6h-wezterm-0-unstable-2026-08-05"
+        "out": "/nix/store/6zh1ychzp3rkram3r4fh61mfjzq03flz-wezterm-0-unstable-2026-08-12"
       },
       "system": "aarch64-linux",
       "group": "wezterm",
@@ -6682,117 +6769,30 @@
     {
       "attr_path": "wezterm",
       "broken": false,
-      "derivation": "/nix/store/w1hvs2ij9ra7l725687n5nzsdhp0kni0-wezterm-0-unstable-2026-08-05.drv",
+      "derivation": "/nix/store/zdkgvx28q8g0pjxb5j1jd5i73kr6qxl8-wezterm-0-unstable-2026-08-12.drv",
       "description": "GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust",
       "install_id": "wezterm",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=2fcb964de67fcf60b43471c55d5d99e61a9ccb5a",
-      "name": "wezterm-0-unstable-2026-08-05",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=e5bdc4a41d4c072fe1e3787eaa0320a384741d44",
+      "name": "wezterm-0-unstable-2026-08-12",
       "pname": "wezterm",
-      "rev": "2fcb964de67fcf60b43471c55d5d99e61a9ccb5a",
-      "rev_count": 1051473,
-      "rev_date": "2026-08-10T17:52:38Z",
-      "scrape_date": "2026-08-12T06:18:50.002656Z",
+      "rev": "e5bdc4a41d4c072fe1e3787eaa0320a384741d44",
+      "rev_count": 1055335,
+      "rev_date": "2026-08-16T06:49:45Z",
+      "scrape_date": "2026-08-17T06:01:44.573523Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "2026-08-05",
+      "version": "2026-08-12",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/c53m64f7dwqpvw535agxy1l3awf1c0i9-wezterm-0-unstable-2026-08-05"
+        "out": "/nix/store/fjd3yyncgw5wj0vv8wkvlibp5z4wqqzg-wezterm-0-unstable-2026-08-12"
       },
       "system": "x86_64-linux",
       "group": "wezterm",
-      "priority": 5
-    },
-    {
-      "attr_path": "claude-code",
-      "broken": false,
-      "derivation": "/nix/store/bxnslgy7fxaxka44mc01yk9y14hj93dg-claude-code-2.1.232.drv",
-      "description": "Agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster",
-      "install_id": "claude-code",
-      "license": "Unfree",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=e5bdc4a41d4c072fe1e3787eaa0320a384741d44",
-      "name": "claude-code-2.1.232",
-      "pname": "claude-code",
-      "rev": "e5bdc4a41d4c072fe1e3787eaa0320a384741d44",
-      "rev_count": 1055335,
-      "rev_date": "2026-08-16T06:49:45Z",
-      "scrape_date": "2026-08-17T04:55:26.333745Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": true,
-      "version": "2.1.232",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/5m8yv46jak8qin8va1r2rnqsqfmsdvks-claude-code-2.1.232"
-      },
-      "system": "aarch64-darwin",
-      "group": "claude",
-      "priority": 5
-    },
-    {
-      "attr_path": "claude-code",
-      "broken": false,
-      "derivation": "/nix/store/wm6ppjjv35bdnf6kljn8yfvlwkkn8rw2-claude-code-2.1.232.drv",
-      "description": "Agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster",
-      "install_id": "claude-code",
-      "license": "Unfree",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=e5bdc4a41d4c072fe1e3787eaa0320a384741d44",
-      "name": "claude-code-2.1.232",
-      "pname": "claude-code",
-      "rev": "e5bdc4a41d4c072fe1e3787eaa0320a384741d44",
-      "rev_count": 1055335,
-      "rev_date": "2026-08-16T06:49:45Z",
-      "scrape_date": "2026-08-17T05:24:50.764188Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": true,
-      "version": "2.1.232",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/4wk4i657a3q9gcx2h733lsqcziy1qq82-claude-code-2.1.232"
-      },
-      "system": "aarch64-linux",
-      "group": "claude",
-      "priority": 5
-    },
-    {
-      "attr_path": "claude-code",
-      "broken": false,
-      "derivation": "/nix/store/ad5lk6vdbqx3iawj5iypr6rsccajj1z4-claude-code-2.1.232.drv",
-      "description": "Agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster",
-      "install_id": "claude-code",
-      "license": "Unfree",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=e5bdc4a41d4c072fe1e3787eaa0320a384741d44",
-      "name": "claude-code-2.1.232",
-      "pname": "claude-code",
-      "rev": "e5bdc4a41d4c072fe1e3787eaa0320a384741d44",
-      "rev_count": 1055335,
-      "rev_date": "2026-08-16T06:49:45Z",
-      "scrape_date": "2026-08-17T05:57:50.877200Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": true,
-      "version": "2.1.232",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/43fmrchzsg9g110qqk9n7a5z0icsf0qh-claude-code-2.1.232"
-      },
-      "system": "x86_64-linux",
-      "group": "claude",
       "priority": 5
     },
     {
