@@ -40,7 +40,7 @@ tree.pkg-path = "tree"
 zoxide.pkg-path = "zoxide"
 zoxide.version = ">=0.10.0"
 yazi.pkg-path = "yazi"
-yazi.version = ">=26.5.6"
+yazi.version = ">=26.8.15"
 
 # Text / JSON processing
 bat.pkg-path = "bat"
