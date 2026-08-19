@@ -40,7 +40,7 @@ tree.pkg-path = "tree"
 zoxide.pkg-path = "zoxide"
 zoxide.version = ">=0.10.0"
 yazi.pkg-path = "yazi"
-yazi.version = ">=26.5.6"
+yazi.version = ">=26.8.15"
 
 # Text / JSON processing
 bat.pkg-path = "bat"
@@ -91,7 +91,7 @@ btop.version = ">=1.4.7"
 pv.pkg-path = "pv"
 pv.version = ">=1.11.0"
 ncdu.pkg-path = "ncdu"
-ncdu.version = ">=2.9.2"
+ncdu.version = ">=2.11.0"
 spacer.pkg-path = "spacer"
 spacer.version = ">=0.5.0"
 moreutils.pkg-path = "moreutils"
@@ -181,12 +181,12 @@ awscli2 = { pkg-path = "awscli2", pkg-group = "cloud" , outputs = "all" }
 # catalog. Renovate-managed (see renovate.json).
 claude-code.pkg-path = "claude-code"
 claude-code.pkg-group = "claude"
-claude-code.version = "2.1.226"
+claude-code.version = "2.1.232"
 
 # pi-coding-agent — fast-moving AI tooling. Renovate-managed (see renovate.json).
 pi-coding-agent.pkg-path = "pi-coding-agent"
 pi-coding-agent.pkg-group = "pi-coding-agent"
-pi-coding-agent.version = "0.84.0"
+pi-coding-agent.version = "0.84.1"
 
 # nono — AI agent sandbox
 nono = { pkg-path = "nono", pkg-group = "nono" }
@@ -195,7 +195,7 @@ nono = { pkg-path = "nono", pkg-group = "nono" }
 # flox catalog. Renovate-managed (see renovate.json).
 herdr.pkg-path = "herdr"
 herdr.pkg-group = "herdr"
-herdr.version = "0.7.5"
+herdr.version = "0.8.0"
 
 # container — Apple's Linux container runtime; isolate so it resolves to latest
 container = { pkg-path = "container", pkg-group = "container", systems = ["aarch64-darwin"] }
@@ -218,7 +218,7 @@ aerospace.systems = ["aarch64-darwin"]
 aerospace.version = "0.21.3-Beta"
 wezterm.pkg-path = "wezterm"
 wezterm.pkg-group = "wezterm"
-wezterm.version = "2026-08-05"
+wezterm.version = "2026-08-12"
 obsidian.pkg-path = "obsidian"
 obsidian.pkg-group = "obsidian"
 obsidian.version = "1.13.4"
