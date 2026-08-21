@@ -73,7 +73,7 @@ kns = { pkg-path = "kns", pkg-group = "kubernetes" }
 k9s = { pkg-path = "k9s", pkg-group = "kubernetes" }
 kubie.pkg-path = "kubie"
 kubie.pkg-group = "kubernetes"
-kubie.version = "0.26.1"
+kubie.version = "0.28.0"
 
 # Networking / Security
 nmap.pkg-path = "nmap"
@@ -98,7 +98,7 @@ moreutils.pkg-path = "moreutils"
 tldr.pkg-path = "tldr"
 tldr.outputs = "all"
 chezmoi.pkg-path = "chezmoi"
-chezmoi.version = ">=2.70.5"
+chezmoi.version = ">=2.72.0"
 q.pkg-path = "q"
 q.version = ">=0.19.12"
 dyff.pkg-path = "dyff"
