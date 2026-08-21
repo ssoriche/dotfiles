@@ -33,14 +33,14 @@ fd.version = "10.4.2"
 # rule above exists because independently-bumped exact pins in one group
 # eventually stop resolving together. Open-ended floors never have that problem.
 fzf.pkg-path = "fzf"
-fzf.version = ">=0.74.2"
+fzf.version = ">=0.74.3"
 eza.pkg-path = "eza"
 eza.version = ">=0.23.5"
 tree.pkg-path = "tree"
 zoxide.pkg-path = "zoxide"
 zoxide.version = ">=0.10.0"
 yazi.pkg-path = "yazi"
-yazi.version = ">=26.5.6"
+yazi.version = ">=26.8.15"
 
 # Text / JSON processing
 bat.pkg-path = "bat"
@@ -61,7 +61,7 @@ glow.pkg-path = "glow"
 # exact pin from constraining anything else.
 atuin.pkg-path = "atuin"
 atuin.pkg-group = "atuin.sh"
-atuin.version = "18.18.1"
+atuin.version = "18.19.0"
 direnv.pkg-path = "direnv"
 direnv.version = ">=2.37.1"
 
@@ -73,7 +73,7 @@ kns = { pkg-path = "kns", pkg-group = "kubernetes" }
 k9s = { pkg-path = "k9s", pkg-group = "kubernetes" }
 kubie.pkg-path = "kubie"
 kubie.pkg-group = "kubernetes"
-kubie.version = "0.26.1"
+kubie.version = "0.28.0"
 
 # Networking / Security
 nmap.pkg-path = "nmap"
@@ -91,14 +91,14 @@ btop.version = ">=1.4.7"
 pv.pkg-path = "pv"
 pv.version = ">=1.11.0"
 ncdu.pkg-path = "ncdu"
-ncdu.version = ">=2.9.2"
+ncdu.version = ">=2.11.0"
 spacer.pkg-path = "spacer"
 spacer.version = ">=0.5.0"
 moreutils.pkg-path = "moreutils"
 tldr.pkg-path = "tldr"
 tldr.outputs = "all"
 chezmoi.pkg-path = "chezmoi"
-chezmoi.version = ">=2.70.5"
+chezmoi.version = ">=2.72.0"
 q.pkg-path = "q"
 q.version = ">=0.19.12"
 dyff.pkg-path = "dyff"
@@ -168,7 +168,7 @@ lua = { pkg-path = "lua51Packages.lua", pkg-group = "lua.org" , outputs = "all" 
 # python — standalone, frequent updates. Renovate-managed (see renovate.json).
 uv.pkg-path = "uv"
 uv.pkg-group = "python"
-uv.version = "0.12.1"
+uv.version = "0.12.3"
 
 # linters — standalone analysis tools
 typos = { pkg-path = "typos", pkg-group = "linters" }
@@ -181,12 +181,12 @@ awscli2 = { pkg-path = "awscli2", pkg-group = "cloud" , outputs = "all" }
 # catalog. Renovate-managed (see renovate.json).
 claude-code.pkg-path = "claude-code"
 claude-code.pkg-group = "claude"
-claude-code.version = "2.1.226"
+claude-code.version = "2.1.234"
 
 # pi-coding-agent — fast-moving AI tooling. Renovate-managed (see renovate.json).
 pi-coding-agent.pkg-path = "pi-coding-agent"
 pi-coding-agent.pkg-group = "pi-coding-agent"
-pi-coding-agent.version = "0.84.0"
+pi-coding-agent.version = "0.84.2"
 
 # nono — AI agent sandbox
 nono = { pkg-path = "nono", pkg-group = "nono" }
@@ -195,7 +195,7 @@ nono = { pkg-path = "nono", pkg-group = "nono" }
 # flox catalog. Renovate-managed (see renovate.json).
 herdr.pkg-path = "herdr"
 herdr.pkg-group = "herdr"
-herdr.version = "0.7.5"
+herdr.version = "0.8.0"
 
 # container — Apple's Linux container runtime; isolate so it resolves to latest
 container = { pkg-path = "container", pkg-group = "container", systems = ["aarch64-darwin"] }
@@ -218,7 +218,7 @@ aerospace.systems = ["aarch64-darwin"]
 aerospace.version = "0.21.3-Beta"
 wezterm.pkg-path = "wezterm"
 wezterm.pkg-group = "wezterm"
-wezterm.version = "2026-08-05"
+wezterm.version = "2026-08-12"
 obsidian.pkg-path = "obsidian"
 obsidian.pkg-group = "obsidian"
 obsidian.version = "1.13.4"
