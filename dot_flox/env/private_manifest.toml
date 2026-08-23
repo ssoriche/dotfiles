@@ -77,7 +77,7 @@ kubie.version = "0.28.0"
 
 # Networking / Security
 nmap.pkg-path = "nmap"
-nmap.version = ">=7.99"
+nmap.version = ">=7.991"
 age.pkg-path = "age"
 passage.pkg-path = "passage"
 step-cli.pkg-path = "step-cli"
