@@ -154,7 +154,7 @@ tree-sitter = { pkg-path = "tree-sitter", pkg-group = "editors" }
 # 1.26.5 the lock already resolved so this stays behaviour-neutral.
 go.pkg-path = "go"
 go.pkg-group = "golang"
-go.version = "1.26.5"
+go.version = "1.26.7"
 golangci-lint = { pkg-path = "golangci-lint", pkg-group = "golang" }
 
 # node — JS runtimes
