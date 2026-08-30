@@ -22,7 +22,7 @@ ripgrep.pkg-group = "ripgrep"
 ripgrep.version = "15.2.0"
 fd.pkg-path = "fd"
 fd.pkg-group = "fd"
-fd.version = "10.4.2"
+fd.version = "10.5.0"
 # The ">=" floors throughout this file are a forward ratchet, not a statement of
 # minimum requirements — they stop a fresh resolve from picking up a year-old
 # version. They earn their keep: locking the unversioned toplevel packages on
