@@ -59,7 +59,7 @@
       "claude-code": {
         "pkg-path": "claude-code",
         "pkg-group": "claude",
-        "version": "2.1.234"
+        "version": "2.1.238"
       },
       "coderabbit-cli": {
         "pkg-path": "flox/coderabbit-cli",
@@ -307,7 +307,7 @@
       "wezterm": {
         "pkg-path": "wezterm",
         "pkg-group": "wezterm",
-        "version": "2026-08-12"
+        "version": "2026-08-23"
       },
       "wget": {
         "pkg-path": "wget"
@@ -317,7 +317,7 @@
         "version": ">=26.8.15"
       },
       "zap": {
-        "flake": "github:natejsimonsen/zap/v0.1.0",
+        "flake": "github:natejsimonsen/zap/v0.3.0",
         "systems": [
           "aarch64-darwin"
         ]
@@ -468,27 +468,27 @@
     {
       "attr_path": "claude-code",
       "broken": false,
-      "derivation": "/nix/store/18241kp5z6yyl2wypr28hh7dcmsl59x8-claude-code-2.1.234.drv",
+      "derivation": "/nix/store/1pk8z3lpf4b902cfki2hj75pq7y4gsl2-claude-code-2.1.238.drv",
       "description": "Agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster",
       "install_id": "claude-code",
       "license": "Unfree",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=ffb3c9b700e759be2ef13237c9d8f953b32a1e46",
-      "name": "claude-code-2.1.234",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=56c02bc00adcf003215cc4bd996d6efaf4cff188",
+      "name": "claude-code-2.1.238",
       "pname": "claude-code",
-      "rev": "ffb3c9b700e759be2ef13237c9d8f953b32a1e46",
-      "rev_count": 1058091,
-      "rev_date": "2026-08-19T10:27:33Z",
-      "scrape_date": "2026-08-21T04:55:36.535993Z",
+      "rev": "56c02bc00adcf003215cc4bd996d6efaf4cff188",
+      "rev_count": 1060451,
+      "rev_date": "2026-08-23T15:22:48Z",
+      "scrape_date": "2026-08-25T04:56:36.841005Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": true,
-      "version": "2.1.234",
+      "version": "2.1.238",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/1kkz1kmfradmyl94sznb4h573sp45jql-claude-code-2.1.234"
+        "out": "/nix/store/kjnmmrf7v36j58p28wfcxikqx95x360s-claude-code-2.1.238"
       },
       "system": "aarch64-darwin",
       "group": "claude",
@@ -497,27 +497,27 @@
     {
       "attr_path": "claude-code",
       "broken": false,
-      "derivation": "/nix/store/3y6x99bi9j12m3qi1w8r7znmhnad24ax-claude-code-2.1.234.drv",
+      "derivation": "/nix/store/hmxbbx2fmz8dfz5zyhza7fdgpfg43sxg-claude-code-2.1.238.drv",
       "description": "Agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster",
       "install_id": "claude-code",
       "license": "Unfree",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=ffb3c9b700e759be2ef13237c9d8f953b32a1e46",
-      "name": "claude-code-2.1.234",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=56c02bc00adcf003215cc4bd996d6efaf4cff188",
+      "name": "claude-code-2.1.238",
       "pname": "claude-code",
-      "rev": "ffb3c9b700e759be2ef13237c9d8f953b32a1e46",
-      "rev_count": 1058091,
-      "rev_date": "2026-08-19T10:27:33Z",
-      "scrape_date": "2026-08-21T05:24:57.140233Z",
+      "rev": "56c02bc00adcf003215cc4bd996d6efaf4cff188",
+      "rev_count": 1060451,
+      "rev_date": "2026-08-23T15:22:48Z",
+      "scrape_date": "2026-08-25T05:27:21.992477Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": true,
-      "version": "2.1.234",
+      "version": "2.1.238",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/mcclfv0k5hdz0qb0gywz2j7lvnn3lpsq-claude-code-2.1.234"
+        "out": "/nix/store/s88n98j5wn3mgav74nx46wlrvjzq1b9l-claude-code-2.1.238"
       },
       "system": "aarch64-linux",
       "group": "claude",
@@ -526,27 +526,27 @@
     {
       "attr_path": "claude-code",
       "broken": false,
-      "derivation": "/nix/store/7c8ypzh9chpbyqkdk9kjbqh6yxz7010r-claude-code-2.1.234.drv",
+      "derivation": "/nix/store/myal77xjy2yldx80q552x1720zm28qfq-claude-code-2.1.238.drv",
       "description": "Agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster",
       "install_id": "claude-code",
       "license": "Unfree",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=ffb3c9b700e759be2ef13237c9d8f953b32a1e46",
-      "name": "claude-code-2.1.234",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=56c02bc00adcf003215cc4bd996d6efaf4cff188",
+      "name": "claude-code-2.1.238",
       "pname": "claude-code",
-      "rev": "ffb3c9b700e759be2ef13237c9d8f953b32a1e46",
-      "rev_count": 1058091,
-      "rev_date": "2026-08-19T10:27:33Z",
-      "scrape_date": "2026-08-21T05:57:58.542960Z",
+      "rev": "56c02bc00adcf003215cc4bd996d6efaf4cff188",
+      "rev_count": 1060451,
+      "rev_date": "2026-08-23T15:22:48Z",
+      "scrape_date": "2026-08-25T06:00:36.213524Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": true,
-      "version": "2.1.234",
+      "version": "2.1.238",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/8r5yahf8kwxhvh2fmd1znnd98nwhgqir-claude-code-2.1.234"
+        "out": "/nix/store/kn3qc9ri2izd493mh78pmjlazk4610vq-claude-code-2.1.238"
       },
       "system": "x86_64-linux",
       "group": "claude",
@@ -2888,890 +2888,6 @@
       },
       "system": "x86_64-linux",
       "group": "ripgrep",
-      "priority": 5
-    },
-    {
-      "attr_path": "delta",
-      "broken": false,
-      "derivation": "/nix/store/zlws9rb873czidx9yzc6d6rgb9l07h7y-delta-0.19.2.drv",
-      "description": "Syntax-highlighting pager for git",
-      "install_id": "delta",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=f13ff45afd1bb73e640eaa08a7066dbed07e3238",
-      "name": "delta-0.19.2",
-      "pname": "delta",
-      "rev": "f13ff45afd1bb73e640eaa08a7066dbed07e3238",
-      "rev_count": 1049422,
-      "rev_date": "2026-08-07T12:45:23Z",
-      "scrape_date": "2026-08-09T04:54:50.907653Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.19.2",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/2h5rlpzb1nvin7ljfpld5p12w6x7jzqb-delta-0.19.2"
-      },
-      "system": "aarch64-darwin",
-      "group": "vcs",
-      "priority": 5
-    },
-    {
-      "attr_path": "delta",
-      "broken": false,
-      "derivation": "/nix/store/2p5nalpj27n88388833snvh6kknzb923-delta-0.19.2.drv",
-      "description": "Syntax-highlighting pager for git",
-      "install_id": "delta",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=f13ff45afd1bb73e640eaa08a7066dbed07e3238",
-      "name": "delta-0.19.2",
-      "pname": "delta",
-      "rev": "f13ff45afd1bb73e640eaa08a7066dbed07e3238",
-      "rev_count": 1049422,
-      "rev_date": "2026-08-07T12:45:23Z",
-      "scrape_date": "2026-08-09T05:24:09.568097Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.19.2",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/3nvhvfwpyiqm9b80s02q0dgnbqxqrxb1-delta-0.19.2"
-      },
-      "system": "aarch64-linux",
-      "group": "vcs",
-      "priority": 5
-    },
-    {
-      "attr_path": "delta",
-      "broken": false,
-      "derivation": "/nix/store/x9zh5vzdrq0wb9h62ksah7fi69xvnwjl-delta-0.19.2.drv",
-      "description": "Syntax-highlighting pager for git",
-      "install_id": "delta",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=f13ff45afd1bb73e640eaa08a7066dbed07e3238",
-      "name": "delta-0.19.2",
-      "pname": "delta",
-      "rev": "f13ff45afd1bb73e640eaa08a7066dbed07e3238",
-      "rev_count": 1049422,
-      "rev_date": "2026-08-07T12:45:23Z",
-      "scrape_date": "2026-08-09T05:58:24.437943Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.19.2",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/sbpx8vip8pxz3hfqmg4m8d4hwpyw36lv-delta-0.19.2"
-      },
-      "system": "x86_64-linux",
-      "group": "vcs",
-      "priority": 5
-    },
-    {
-      "attr_path": "difftastic",
-      "broken": false,
-      "derivation": "/nix/store/fpg54gclb9cip6ish90lzaz2dsb4dqz5-difftastic-0.69.0.drv",
-      "description": "Syntax-aware diff",
-      "install_id": "difftastic",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=f13ff45afd1bb73e640eaa08a7066dbed07e3238",
-      "name": "difftastic-0.69.0",
-      "pname": "difftastic",
-      "rev": "f13ff45afd1bb73e640eaa08a7066dbed07e3238",
-      "rev_count": 1049422,
-      "rev_date": "2026-08-07T12:45:23Z",
-      "scrape_date": "2026-08-09T04:54:50.934544Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.69.0",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/57c9g2k2snkscmi64k5jbrw714zksf3j-difftastic-0.69.0"
-      },
-      "system": "aarch64-darwin",
-      "group": "vcs",
-      "priority": 5
-    },
-    {
-      "attr_path": "difftastic",
-      "broken": false,
-      "derivation": "/nix/store/qnck97a34i5shas7qhd3dgj4fk3rjny7-difftastic-0.69.0.drv",
-      "description": "Syntax-aware diff",
-      "install_id": "difftastic",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=f13ff45afd1bb73e640eaa08a7066dbed07e3238",
-      "name": "difftastic-0.69.0",
-      "pname": "difftastic",
-      "rev": "f13ff45afd1bb73e640eaa08a7066dbed07e3238",
-      "rev_count": 1049422,
-      "rev_date": "2026-08-07T12:45:23Z",
-      "scrape_date": "2026-08-09T05:24:09.611448Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.69.0",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/iahn30z5swk4mdi7pi15cpk8pfzcl7hm-difftastic-0.69.0"
-      },
-      "system": "aarch64-linux",
-      "group": "vcs",
-      "priority": 5
-    },
-    {
-      "attr_path": "difftastic",
-      "broken": false,
-      "derivation": "/nix/store/p4kxji6rjzpgn1shgc0z36giffggc3s1-difftastic-0.69.0.drv",
-      "description": "Syntax-aware diff",
-      "install_id": "difftastic",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=f13ff45afd1bb73e640eaa08a7066dbed07e3238",
-      "name": "difftastic-0.69.0",
-      "pname": "difftastic",
-      "rev": "f13ff45afd1bb73e640eaa08a7066dbed07e3238",
-      "rev_count": 1049422,
-      "rev_date": "2026-08-07T12:45:23Z",
-      "scrape_date": "2026-08-09T05:58:24.483774Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.69.0",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/11fsjyni80fxfnm1hqyaijx7y253hlp9-difftastic-0.69.0"
-      },
-      "system": "x86_64-linux",
-      "group": "vcs",
-      "priority": 5
-    },
-    {
-      "attr_path": "gh",
-      "broken": false,
-      "derivation": "/nix/store/dlq52339yzagn7qkj8mlhnybqphr02zb-gh-2.97.0.drv",
-      "description": "GitHub CLI tool",
-      "install_id": "gh",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=f13ff45afd1bb73e640eaa08a7066dbed07e3238",
-      "name": "gh-2.97.0",
-      "pname": "gh",
-      "rev": "f13ff45afd1bb73e640eaa08a7066dbed07e3238",
-      "rev_count": 1049422,
-      "rev_date": "2026-08-07T12:45:23Z",
-      "scrape_date": "2026-08-09T04:54:51.546356Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "2.97.0",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/9q6i0m1x1wx24vknbs3iglvnr5aw1hxb-gh-2.97.0"
-      },
-      "system": "aarch64-darwin",
-      "group": "vcs",
-      "priority": 5
-    },
-    {
-      "attr_path": "gh",
-      "broken": false,
-      "derivation": "/nix/store/w27gxy0jvzfkazkswir4masb7fa0mhbr-gh-2.97.0.drv",
-      "description": "GitHub CLI tool",
-      "install_id": "gh",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=f13ff45afd1bb73e640eaa08a7066dbed07e3238",
-      "name": "gh-2.97.0",
-      "pname": "gh",
-      "rev": "f13ff45afd1bb73e640eaa08a7066dbed07e3238",
-      "rev_count": 1049422,
-      "rev_date": "2026-08-07T12:45:23Z",
-      "scrape_date": "2026-08-09T05:24:10.510935Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "2.97.0",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/8zf6nxnc574nlipbhq4z46ij22hqd9ac-gh-2.97.0"
-      },
-      "system": "aarch64-linux",
-      "group": "vcs",
-      "priority": 5
-    },
-    {
-      "attr_path": "gh",
-      "broken": false,
-      "derivation": "/nix/store/y0knr1x28nbrw09l9z3wylcifv1dpb5z-gh-2.97.0.drv",
-      "description": "GitHub CLI tool",
-      "install_id": "gh",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=f13ff45afd1bb73e640eaa08a7066dbed07e3238",
-      "name": "gh-2.97.0",
-      "pname": "gh",
-      "rev": "f13ff45afd1bb73e640eaa08a7066dbed07e3238",
-      "rev_count": 1049422,
-      "rev_date": "2026-08-07T12:45:23Z",
-      "scrape_date": "2026-08-09T05:58:25.488476Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "2.97.0",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/7ayrbzjnm88xn12lfv99c1sqprlc2bwr-gh-2.97.0"
-      },
-      "system": "x86_64-linux",
-      "group": "vcs",
-      "priority": 5
-    },
-    {
-      "attr_path": "gh-dash",
-      "broken": false,
-      "derivation": "/nix/store/qa8szz8xj7n169psdywdk62vinaynw70-gh-dash-4.25.2.drv",
-      "description": "Github Cli extension to display a dashboard with pull requests and issues",
-      "install_id": "gh-dash",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=f13ff45afd1bb73e640eaa08a7066dbed07e3238",
-      "name": "gh-dash-4.25.2",
-      "pname": "gh-dash",
-      "rev": "f13ff45afd1bb73e640eaa08a7066dbed07e3238",
-      "rev_count": 1049422,
-      "rev_date": "2026-08-07T12:45:23Z",
-      "scrape_date": "2026-08-09T04:54:51.548166Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "4.25.2",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/q865c3k31vrja74z8ampbslbr0ry61rh-gh-dash-4.25.2"
-      },
-      "system": "aarch64-darwin",
-      "group": "vcs",
-      "priority": 5
-    },
-    {
-      "attr_path": "gh-dash",
-      "broken": false,
-      "derivation": "/nix/store/j615ys4cs34zsimy1fy8751qgkigb9jl-gh-dash-4.25.2.drv",
-      "description": "Github Cli extension to display a dashboard with pull requests and issues",
-      "install_id": "gh-dash",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=f13ff45afd1bb73e640eaa08a7066dbed07e3238",
-      "name": "gh-dash-4.25.2",
-      "pname": "gh-dash",
-      "rev": "f13ff45afd1bb73e640eaa08a7066dbed07e3238",
-      "rev_count": 1049422,
-      "rev_date": "2026-08-07T12:45:23Z",
-      "scrape_date": "2026-08-09T05:24:10.513089Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "4.25.2",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/sdblxd1zrmll480psnj6bjnd0zhnvhnd-gh-dash-4.25.2"
-      },
-      "system": "aarch64-linux",
-      "group": "vcs",
-      "priority": 5
-    },
-    {
-      "attr_path": "gh-dash",
-      "broken": false,
-      "derivation": "/nix/store/cm2rrfk7ns3xn7jd24vmx91sn3vdzrfd-gh-dash-4.25.2.drv",
-      "description": "Github Cli extension to display a dashboard with pull requests and issues",
-      "install_id": "gh-dash",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=f13ff45afd1bb73e640eaa08a7066dbed07e3238",
-      "name": "gh-dash-4.25.2",
-      "pname": "gh-dash",
-      "rev": "f13ff45afd1bb73e640eaa08a7066dbed07e3238",
-      "rev_count": 1049422,
-      "rev_date": "2026-08-07T12:45:23Z",
-      "scrape_date": "2026-08-09T05:58:25.490729Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "4.25.2",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/m9xpdh9l6j1chg79imz6agbi81f50a45-gh-dash-4.25.2"
-      },
-      "system": "x86_64-linux",
-      "group": "vcs",
-      "priority": 5
-    },
-    {
-      "attr_path": "git",
-      "broken": false,
-      "derivation": "/nix/store/g4gx1850vb7hnkhcv1f4wwxrgm4d7gyr-git-2.55.0.drv",
-      "description": "Distributed version control system",
-      "install_id": "git",
-      "license": "GPL-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=f13ff45afd1bb73e640eaa08a7066dbed07e3238",
-      "name": "git-2.55.0",
-      "pname": "git",
-      "rev": "f13ff45afd1bb73e640eaa08a7066dbed07e3238",
-      "rev_count": 1049422,
-      "rev_date": "2026-08-07T12:45:23Z",
-      "scrape_date": "2026-08-09T04:54:51.583791Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "2.55.0",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "doc": "/nix/store/y34pxb3x3h1gyvcfvanqlfjzm0c86cb4-git-2.55.0-doc",
-        "out": "/nix/store/rim5n939lwjc8mah63ld1q31i6n7bvf0-git-2.55.0"
-      },
-      "system": "aarch64-darwin",
-      "group": "vcs",
-      "priority": 5
-    },
-    {
-      "attr_path": "git",
-      "broken": false,
-      "derivation": "/nix/store/63labh2hwyy1hj2xq0kyzbsa71zb15vs-git-2.55.0.drv",
-      "description": "Distributed version control system",
-      "install_id": "git",
-      "license": "GPL-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=f13ff45afd1bb73e640eaa08a7066dbed07e3238",
-      "name": "git-2.55.0",
-      "pname": "git",
-      "rev": "f13ff45afd1bb73e640eaa08a7066dbed07e3238",
-      "rev_count": 1049422,
-      "rev_date": "2026-08-07T12:45:23Z",
-      "scrape_date": "2026-08-09T05:24:10.566160Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "2.55.0",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "debug": "/nix/store/nsck4ncjjmdy8c5h83yw297c7xxv64xx-git-2.55.0-debug",
-        "doc": "/nix/store/bz8bdi34lg4w10kxs9bm93658ary5rrz-git-2.55.0-doc",
-        "out": "/nix/store/v2iradivx07xjqwk2q71i57pwxw6wh4g-git-2.55.0"
-      },
-      "system": "aarch64-linux",
-      "group": "vcs",
-      "priority": 5
-    },
-    {
-      "attr_path": "git",
-      "broken": false,
-      "derivation": "/nix/store/mv7gd14njvaqibdkci3kppxmznnx0vw3-git-2.55.0.drv",
-      "description": "Distributed version control system",
-      "install_id": "git",
-      "license": "GPL-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=f13ff45afd1bb73e640eaa08a7066dbed07e3238",
-      "name": "git-2.55.0",
-      "pname": "git",
-      "rev": "f13ff45afd1bb73e640eaa08a7066dbed07e3238",
-      "rev_count": 1049422,
-      "rev_date": "2026-08-07T12:45:23Z",
-      "scrape_date": "2026-08-09T05:58:25.550388Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "2.55.0",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "debug": "/nix/store/rwiamhfaqkns90xsalafayg01afk3pza-git-2.55.0-debug",
-        "doc": "/nix/store/bddpyi6cgkp3v8f58i900hymgfvkyag5-git-2.55.0-doc",
-        "out": "/nix/store/6f0qqak4qbcrbw4f750phr88c9yhpf5s-git-2.55.0"
-      },
-      "system": "x86_64-linux",
-      "group": "vcs",
-      "priority": 5
-    },
-    {
-      "attr_path": "git-absorb",
-      "broken": false,
-      "derivation": "/nix/store/yv0sl5hl63vyn5vlzaxf0bkihax7nmra-git-absorb-0.9.0.drv",
-      "description": "git commit --fixup, but automatic",
-      "install_id": "git-absorb",
-      "license": "BSD-3-Clause",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=f13ff45afd1bb73e640eaa08a7066dbed07e3238",
-      "name": "git-absorb-0.9.0",
-      "pname": "git-absorb",
-      "rev": "f13ff45afd1bb73e640eaa08a7066dbed07e3238",
-      "rev_count": 1049422,
-      "rev_date": "2026-08-07T12:45:23Z",
-      "scrape_date": "2026-08-09T04:54:51.584099Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.9.0",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/1y21cgjbjm3iz09iqk9jfchhndssw0vf-git-absorb-0.9.0"
-      },
-      "system": "aarch64-darwin",
-      "group": "vcs",
-      "priority": 5
-    },
-    {
-      "attr_path": "git-absorb",
-      "broken": false,
-      "derivation": "/nix/store/c1wfakdgs54m4n47flxp16npgf09v5c9-git-absorb-0.9.0.drv",
-      "description": "git commit --fixup, but automatic",
-      "install_id": "git-absorb",
-      "license": "BSD-3-Clause",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=f13ff45afd1bb73e640eaa08a7066dbed07e3238",
-      "name": "git-absorb-0.9.0",
-      "pname": "git-absorb",
-      "rev": "f13ff45afd1bb73e640eaa08a7066dbed07e3238",
-      "rev_count": 1049422,
-      "rev_date": "2026-08-07T12:45:23Z",
-      "scrape_date": "2026-08-09T05:24:10.566510Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.9.0",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/bp05n4gnr89sadjqyj2r46kv2a0gv4r4-git-absorb-0.9.0"
-      },
-      "system": "aarch64-linux",
-      "group": "vcs",
-      "priority": 5
-    },
-    {
-      "attr_path": "git-absorb",
-      "broken": false,
-      "derivation": "/nix/store/8pkhi46h4xr8vfhivswlby6bs9mn6znv-git-absorb-0.9.0.drv",
-      "description": "git commit --fixup, but automatic",
-      "install_id": "git-absorb",
-      "license": "BSD-3-Clause",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=f13ff45afd1bb73e640eaa08a7066dbed07e3238",
-      "name": "git-absorb-0.9.0",
-      "pname": "git-absorb",
-      "rev": "f13ff45afd1bb73e640eaa08a7066dbed07e3238",
-      "rev_count": 1049422,
-      "rev_date": "2026-08-07T12:45:23Z",
-      "scrape_date": "2026-08-09T05:58:25.550763Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.9.0",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/x66vak0fz5qi2ng7s16biw34gsrpqqmk-git-absorb-0.9.0"
-      },
-      "system": "x86_64-linux",
-      "group": "vcs",
-      "priority": 5
-    },
-    {
-      "attr_path": "git-credential-manager",
-      "broken": false,
-      "derivation": "/nix/store/dl4f25ind126y5h4vh00c8rqi3nkd3n0-git-credential-manager-2.7.3.drv",
-      "description": "Secure, cross-platform Git credential storage with authentication to GitHub, Azure Repos, and other popular Git hosting services",
-      "install_id": "git-credential-manager",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=f13ff45afd1bb73e640eaa08a7066dbed07e3238",
-      "name": "git-credential-manager-2.7.3",
-      "pname": "git-credential-manager",
-      "rev": "f13ff45afd1bb73e640eaa08a7066dbed07e3238",
-      "rev_count": 1049422,
-      "rev_date": "2026-08-07T12:45:23Z",
-      "scrape_date": "2026-08-09T04:54:51.594681Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "2.7.3",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/68gbp2sx3zsc9hncyyk8msc95aaj3f84-git-credential-manager-2.7.3"
-      },
-      "system": "aarch64-darwin",
-      "group": "vcs",
-      "priority": 5
-    },
-    {
-      "attr_path": "git-credential-manager",
-      "broken": false,
-      "derivation": "/nix/store/1fjxvpz97xwnp33g0n0vyqaan4723k7v-git-credential-manager-2.7.3.drv",
-      "description": "Secure, cross-platform Git credential storage with authentication to GitHub, Azure Repos, and other popular Git hosting services",
-      "install_id": "git-credential-manager",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=f13ff45afd1bb73e640eaa08a7066dbed07e3238",
-      "name": "git-credential-manager-2.7.3",
-      "pname": "git-credential-manager",
-      "rev": "f13ff45afd1bb73e640eaa08a7066dbed07e3238",
-      "rev_count": 1049422,
-      "rev_date": "2026-08-07T12:45:23Z",
-      "scrape_date": "2026-08-09T05:24:10.579456Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "2.7.3",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/rqmry1wy70x2jxwy6w7h9zfii3rwidbn-git-credential-manager-2.7.3"
-      },
-      "system": "aarch64-linux",
-      "group": "vcs",
-      "priority": 5
-    },
-    {
-      "attr_path": "git-credential-manager",
-      "broken": false,
-      "derivation": "/nix/store/b02jdhs3jnhm2xkpc6w22aydws4qzjdc-git-credential-manager-2.7.3.drv",
-      "description": "Secure, cross-platform Git credential storage with authentication to GitHub, Azure Repos, and other popular Git hosting services",
-      "install_id": "git-credential-manager",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=f13ff45afd1bb73e640eaa08a7066dbed07e3238",
-      "name": "git-credential-manager-2.7.3",
-      "pname": "git-credential-manager",
-      "rev": "f13ff45afd1bb73e640eaa08a7066dbed07e3238",
-      "rev_count": 1049422,
-      "rev_date": "2026-08-07T12:45:23Z",
-      "scrape_date": "2026-08-09T05:58:25.564510Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "2.7.3",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/5i4wxvw6lybbsxzpsl4hi6kxgn0ddyni-git-credential-manager-2.7.3"
-      },
-      "system": "x86_64-linux",
-      "group": "vcs",
-      "priority": 5
-    },
-    {
-      "attr_path": "gitu",
-      "broken": false,
-      "derivation": "/nix/store/ap9pskmr2fp34l4qi1hbqz1hjwl6c314-gitu-0.43.0.drv",
-      "description": "TUI Git client inspired by Magit",
-      "install_id": "gitu",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=f13ff45afd1bb73e640eaa08a7066dbed07e3238",
-      "name": "gitu-0.43.0",
-      "pname": "gitu",
-      "rev": "f13ff45afd1bb73e640eaa08a7066dbed07e3238",
-      "rev_count": 1049422,
-      "rev_date": "2026-08-07T12:45:23Z",
-      "scrape_date": "2026-08-09T04:54:51.648408Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.43.0",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/5vrgf7mb7xrg75fvqsifz3rz7j12m31q-gitu-0.43.0"
-      },
-      "system": "aarch64-darwin",
-      "group": "vcs",
-      "priority": 5
-    },
-    {
-      "attr_path": "gitu",
-      "broken": false,
-      "derivation": "/nix/store/q2pjcfsq2qfrd2kbi5fkrqhpyxbigkg3-gitu-0.43.0.drv",
-      "description": "TUI Git client inspired by Magit",
-      "install_id": "gitu",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=f13ff45afd1bb73e640eaa08a7066dbed07e3238",
-      "name": "gitu-0.43.0",
-      "pname": "gitu",
-      "rev": "f13ff45afd1bb73e640eaa08a7066dbed07e3238",
-      "rev_count": 1049422,
-      "rev_date": "2026-08-07T12:45:23Z",
-      "scrape_date": "2026-08-09T05:24:10.647150Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.43.0",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/bg5pnb0rm25ajny6l38433bp7jas54sp-gitu-0.43.0"
-      },
-      "system": "aarch64-linux",
-      "group": "vcs",
-      "priority": 5
-    },
-    {
-      "attr_path": "gitu",
-      "broken": false,
-      "derivation": "/nix/store/f56by59dgxwhckki0lap00yrb8xg8vmb-gitu-0.43.0.drv",
-      "description": "TUI Git client inspired by Magit",
-      "install_id": "gitu",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=f13ff45afd1bb73e640eaa08a7066dbed07e3238",
-      "name": "gitu-0.43.0",
-      "pname": "gitu",
-      "rev": "f13ff45afd1bb73e640eaa08a7066dbed07e3238",
-      "rev_count": 1049422,
-      "rev_date": "2026-08-07T12:45:23Z",
-      "scrape_date": "2026-08-09T05:58:25.637429Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.43.0",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/mbx63hswcbyyi2yi91pwj1rj6dwv3pkd-gitu-0.43.0"
-      },
-      "system": "x86_64-linux",
-      "group": "vcs",
-      "priority": 5
-    },
-    {
-      "attr_path": "tig",
-      "broken": false,
-      "derivation": "/nix/store/dhv91vsyfcjsrnh9ncndvrd9rp71pkv2-tig-2.6.1.drv",
-      "description": "Text-mode interface for git",
-      "install_id": "tig",
-      "license": "GPL-2.0-or-later",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=f13ff45afd1bb73e640eaa08a7066dbed07e3238",
-      "name": "tig-2.6.1",
-      "pname": "tig",
-      "rev": "f13ff45afd1bb73e640eaa08a7066dbed07e3238",
-      "rev_count": 1049422,
-      "rev_date": "2026-08-07T12:45:23Z",
-      "scrape_date": "2026-08-09T04:57:04.060738Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "2.6.1",
-      "outputs_to_install": [
-        "man",
-        "out"
-      ],
-      "outputs": {
-        "doc": "/nix/store/ych6d61cbxld539hkfm196v4nyy1n9gy-tig-2.6.1-doc",
-        "man": "/nix/store/lp0fxgy5fimkq2l2j9yqzmxv5iibmzvl-tig-2.6.1-man",
-        "out": "/nix/store/h67yygz6dg2x2jwck3j1h8krqv74s3dl-tig-2.6.1"
-      },
-      "system": "aarch64-darwin",
-      "group": "vcs",
-      "priority": 5
-    },
-    {
-      "attr_path": "tig",
-      "broken": false,
-      "derivation": "/nix/store/993ndxkmpnvz18ld9dgj9r0wdhvhnr4a-tig-2.6.1.drv",
-      "description": "Text-mode interface for git",
-      "install_id": "tig",
-      "license": "GPL-2.0-or-later",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=f13ff45afd1bb73e640eaa08a7066dbed07e3238",
-      "name": "tig-2.6.1",
-      "pname": "tig",
-      "rev": "f13ff45afd1bb73e640eaa08a7066dbed07e3238",
-      "rev_count": 1049422,
-      "rev_date": "2026-08-07T12:45:23Z",
-      "scrape_date": "2026-08-09T05:27:07.859965Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "2.6.1",
-      "outputs_to_install": [
-        "man",
-        "out"
-      ],
-      "outputs": {
-        "doc": "/nix/store/q656h9ba8gvc1470rbg5055rq54bm3fm-tig-2.6.1-doc",
-        "man": "/nix/store/ck2jqj6j88w0c4p8isfxqwc1qgsmha76-tig-2.6.1-man",
-        "out": "/nix/store/7a61afzc23xzjzj742v3k9rnn9x00q7d-tig-2.6.1"
-      },
-      "system": "aarch64-linux",
-      "group": "vcs",
-      "priority": 5
-    },
-    {
-      "attr_path": "tig",
-      "broken": false,
-      "derivation": "/nix/store/j0bgs8z189501cj9ryg1nssf18934zw0-tig-2.6.1.drv",
-      "description": "Text-mode interface for git",
-      "install_id": "tig",
-      "license": "GPL-2.0-or-later",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=f13ff45afd1bb73e640eaa08a7066dbed07e3238",
-      "name": "tig-2.6.1",
-      "pname": "tig",
-      "rev": "f13ff45afd1bb73e640eaa08a7066dbed07e3238",
-      "rev_count": 1049422,
-      "rev_date": "2026-08-07T12:45:23Z",
-      "scrape_date": "2026-08-09T06:01:30.425265Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "2.6.1",
-      "outputs_to_install": [
-        "man",
-        "out"
-      ],
-      "outputs": {
-        "doc": "/nix/store/zsxjslcyf4gmsqhfrxx0cfic5sp9mq97-tig-2.6.1-doc",
-        "man": "/nix/store/i5lnsaxzf0s8bkdc7r99x973pqw3vlnb-tig-2.6.1-man",
-        "out": "/nix/store/27f652hlw0nx27sl1affp2mkilr1mvdd-tig-2.6.1"
-      },
-      "system": "x86_64-linux",
-      "group": "vcs",
-      "priority": 5
-    },
-    {
-      "attr_path": "wezterm",
-      "broken": false,
-      "derivation": "/nix/store/6mfy1kj3frgd756qj4zhq6pv9fbfmd8h-wezterm-0-unstable-2026-08-12.drv",
-      "description": "GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust",
-      "install_id": "wezterm",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=e5bdc4a41d4c072fe1e3787eaa0320a384741d44",
-      "name": "wezterm-0-unstable-2026-08-12",
-      "pname": "wezterm",
-      "rev": "e5bdc4a41d4c072fe1e3787eaa0320a384741d44",
-      "rev_count": 1055335,
-      "rev_date": "2026-08-16T06:49:45Z",
-      "scrape_date": "2026-08-17T04:58:19.232339Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "2026-08-12",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/v5xv1c3l7bsb228qz6jhbjjajn1039zr-wezterm-0-unstable-2026-08-12"
-      },
-      "system": "aarch64-darwin",
-      "group": "wezterm",
-      "priority": 5
-    },
-    {
-      "attr_path": "wezterm",
-      "broken": false,
-      "derivation": "/nix/store/n9xhivxj8lmm8yjxz460i01w3fwgmipk-wezterm-0-unstable-2026-08-12.drv",
-      "description": "GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust",
-      "install_id": "wezterm",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=e5bdc4a41d4c072fe1e3787eaa0320a384741d44",
-      "name": "wezterm-0-unstable-2026-08-12",
-      "pname": "wezterm",
-      "rev": "e5bdc4a41d4c072fe1e3787eaa0320a384741d44",
-      "rev_count": 1055335,
-      "rev_date": "2026-08-16T06:49:45Z",
-      "scrape_date": "2026-08-17T05:28:34.653525Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "2026-08-12",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/6zh1ychzp3rkram3r4fh61mfjzq03flz-wezterm-0-unstable-2026-08-12"
-      },
-      "system": "aarch64-linux",
-      "group": "wezterm",
-      "priority": 5
-    },
-    {
-      "attr_path": "wezterm",
-      "broken": false,
-      "derivation": "/nix/store/zdkgvx28q8g0pjxb5j1jd5i73kr6qxl8-wezterm-0-unstable-2026-08-12.drv",
-      "description": "GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust",
-      "install_id": "wezterm",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=e5bdc4a41d4c072fe1e3787eaa0320a384741d44",
-      "name": "wezterm-0-unstable-2026-08-12",
-      "pname": "wezterm",
-      "rev": "e5bdc4a41d4c072fe1e3787eaa0320a384741d44",
-      "rev_count": 1055335,
-      "rev_date": "2026-08-16T06:49:45Z",
-      "scrape_date": "2026-08-17T06:01:44.573523Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "2026-08-12",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/fjd3yyncgw5wj0vv8wkvlibp5z4wqqzg-wezterm-0-unstable-2026-08-12"
-      },
-      "system": "x86_64-linux",
-      "group": "wezterm",
       "priority": 5
     },
     {
@@ -6793,6 +5909,893 @@
       "priority": 5
     },
     {
+      "attr_path": "delta",
+      "broken": false,
+      "derivation": "/nix/store/zlws9rb873czidx9yzc6d6rgb9l07h7y-delta-0.19.2.drv",
+      "description": "Syntax-highlighting pager for git",
+      "install_id": "delta",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=f13ff45afd1bb73e640eaa08a7066dbed07e3238",
+      "name": "delta-0.19.2",
+      "pname": "delta",
+      "rev": "f13ff45afd1bb73e640eaa08a7066dbed07e3238",
+      "rev_count": 1049422,
+      "rev_date": "2026-08-07T12:45:23Z",
+      "scrape_date": "2026-08-09T04:54:50.907653Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.19.2",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/2h5rlpzb1nvin7ljfpld5p12w6x7jzqb-delta-0.19.2"
+      },
+      "system": "aarch64-darwin",
+      "group": "vcs",
+      "priority": 5
+    },
+    {
+      "attr_path": "delta",
+      "broken": false,
+      "derivation": "/nix/store/2p5nalpj27n88388833snvh6kknzb923-delta-0.19.2.drv",
+      "description": "Syntax-highlighting pager for git",
+      "install_id": "delta",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=f13ff45afd1bb73e640eaa08a7066dbed07e3238",
+      "name": "delta-0.19.2",
+      "pname": "delta",
+      "rev": "f13ff45afd1bb73e640eaa08a7066dbed07e3238",
+      "rev_count": 1049422,
+      "rev_date": "2026-08-07T12:45:23Z",
+      "scrape_date": "2026-08-09T05:24:09.568097Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.19.2",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/3nvhvfwpyiqm9b80s02q0dgnbqxqrxb1-delta-0.19.2"
+      },
+      "system": "aarch64-linux",
+      "group": "vcs",
+      "priority": 5
+    },
+    {
+      "attr_path": "delta",
+      "broken": false,
+      "derivation": "/nix/store/x9zh5vzdrq0wb9h62ksah7fi69xvnwjl-delta-0.19.2.drv",
+      "description": "Syntax-highlighting pager for git",
+      "install_id": "delta",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=f13ff45afd1bb73e640eaa08a7066dbed07e3238",
+      "name": "delta-0.19.2",
+      "pname": "delta",
+      "rev": "f13ff45afd1bb73e640eaa08a7066dbed07e3238",
+      "rev_count": 1049422,
+      "rev_date": "2026-08-07T12:45:23Z",
+      "scrape_date": "2026-08-09T05:58:24.437943Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.19.2",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/sbpx8vip8pxz3hfqmg4m8d4hwpyw36lv-delta-0.19.2"
+      },
+      "system": "x86_64-linux",
+      "group": "vcs",
+      "priority": 5
+    },
+    {
+      "attr_path": "difftastic",
+      "broken": false,
+      "derivation": "/nix/store/fpg54gclb9cip6ish90lzaz2dsb4dqz5-difftastic-0.69.0.drv",
+      "description": "Syntax-aware diff",
+      "install_id": "difftastic",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=f13ff45afd1bb73e640eaa08a7066dbed07e3238",
+      "name": "difftastic-0.69.0",
+      "pname": "difftastic",
+      "rev": "f13ff45afd1bb73e640eaa08a7066dbed07e3238",
+      "rev_count": 1049422,
+      "rev_date": "2026-08-07T12:45:23Z",
+      "scrape_date": "2026-08-09T04:54:50.934544Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.69.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/57c9g2k2snkscmi64k5jbrw714zksf3j-difftastic-0.69.0"
+      },
+      "system": "aarch64-darwin",
+      "group": "vcs",
+      "priority": 5
+    },
+    {
+      "attr_path": "difftastic",
+      "broken": false,
+      "derivation": "/nix/store/qnck97a34i5shas7qhd3dgj4fk3rjny7-difftastic-0.69.0.drv",
+      "description": "Syntax-aware diff",
+      "install_id": "difftastic",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=f13ff45afd1bb73e640eaa08a7066dbed07e3238",
+      "name": "difftastic-0.69.0",
+      "pname": "difftastic",
+      "rev": "f13ff45afd1bb73e640eaa08a7066dbed07e3238",
+      "rev_count": 1049422,
+      "rev_date": "2026-08-07T12:45:23Z",
+      "scrape_date": "2026-08-09T05:24:09.611448Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.69.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/iahn30z5swk4mdi7pi15cpk8pfzcl7hm-difftastic-0.69.0"
+      },
+      "system": "aarch64-linux",
+      "group": "vcs",
+      "priority": 5
+    },
+    {
+      "attr_path": "difftastic",
+      "broken": false,
+      "derivation": "/nix/store/p4kxji6rjzpgn1shgc0z36giffggc3s1-difftastic-0.69.0.drv",
+      "description": "Syntax-aware diff",
+      "install_id": "difftastic",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=f13ff45afd1bb73e640eaa08a7066dbed07e3238",
+      "name": "difftastic-0.69.0",
+      "pname": "difftastic",
+      "rev": "f13ff45afd1bb73e640eaa08a7066dbed07e3238",
+      "rev_count": 1049422,
+      "rev_date": "2026-08-07T12:45:23Z",
+      "scrape_date": "2026-08-09T05:58:24.483774Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.69.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/11fsjyni80fxfnm1hqyaijx7y253hlp9-difftastic-0.69.0"
+      },
+      "system": "x86_64-linux",
+      "group": "vcs",
+      "priority": 5
+    },
+    {
+      "attr_path": "gh",
+      "broken": false,
+      "derivation": "/nix/store/dlq52339yzagn7qkj8mlhnybqphr02zb-gh-2.97.0.drv",
+      "description": "GitHub CLI tool",
+      "install_id": "gh",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=f13ff45afd1bb73e640eaa08a7066dbed07e3238",
+      "name": "gh-2.97.0",
+      "pname": "gh",
+      "rev": "f13ff45afd1bb73e640eaa08a7066dbed07e3238",
+      "rev_count": 1049422,
+      "rev_date": "2026-08-07T12:45:23Z",
+      "scrape_date": "2026-08-09T04:54:51.546356Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2.97.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/9q6i0m1x1wx24vknbs3iglvnr5aw1hxb-gh-2.97.0"
+      },
+      "system": "aarch64-darwin",
+      "group": "vcs",
+      "priority": 5
+    },
+    {
+      "attr_path": "gh",
+      "broken": false,
+      "derivation": "/nix/store/w27gxy0jvzfkazkswir4masb7fa0mhbr-gh-2.97.0.drv",
+      "description": "GitHub CLI tool",
+      "install_id": "gh",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=f13ff45afd1bb73e640eaa08a7066dbed07e3238",
+      "name": "gh-2.97.0",
+      "pname": "gh",
+      "rev": "f13ff45afd1bb73e640eaa08a7066dbed07e3238",
+      "rev_count": 1049422,
+      "rev_date": "2026-08-07T12:45:23Z",
+      "scrape_date": "2026-08-09T05:24:10.510935Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2.97.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/8zf6nxnc574nlipbhq4z46ij22hqd9ac-gh-2.97.0"
+      },
+      "system": "aarch64-linux",
+      "group": "vcs",
+      "priority": 5
+    },
+    {
+      "attr_path": "gh",
+      "broken": false,
+      "derivation": "/nix/store/y0knr1x28nbrw09l9z3wylcifv1dpb5z-gh-2.97.0.drv",
+      "description": "GitHub CLI tool",
+      "install_id": "gh",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=f13ff45afd1bb73e640eaa08a7066dbed07e3238",
+      "name": "gh-2.97.0",
+      "pname": "gh",
+      "rev": "f13ff45afd1bb73e640eaa08a7066dbed07e3238",
+      "rev_count": 1049422,
+      "rev_date": "2026-08-07T12:45:23Z",
+      "scrape_date": "2026-08-09T05:58:25.488476Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2.97.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/7ayrbzjnm88xn12lfv99c1sqprlc2bwr-gh-2.97.0"
+      },
+      "system": "x86_64-linux",
+      "group": "vcs",
+      "priority": 5
+    },
+    {
+      "attr_path": "gh-dash",
+      "broken": false,
+      "derivation": "/nix/store/qa8szz8xj7n169psdywdk62vinaynw70-gh-dash-4.25.2.drv",
+      "description": "Github Cli extension to display a dashboard with pull requests and issues",
+      "install_id": "gh-dash",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=f13ff45afd1bb73e640eaa08a7066dbed07e3238",
+      "name": "gh-dash-4.25.2",
+      "pname": "gh-dash",
+      "rev": "f13ff45afd1bb73e640eaa08a7066dbed07e3238",
+      "rev_count": 1049422,
+      "rev_date": "2026-08-07T12:45:23Z",
+      "scrape_date": "2026-08-09T04:54:51.548166Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "4.25.2",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/q865c3k31vrja74z8ampbslbr0ry61rh-gh-dash-4.25.2"
+      },
+      "system": "aarch64-darwin",
+      "group": "vcs",
+      "priority": 5
+    },
+    {
+      "attr_path": "gh-dash",
+      "broken": false,
+      "derivation": "/nix/store/j615ys4cs34zsimy1fy8751qgkigb9jl-gh-dash-4.25.2.drv",
+      "description": "Github Cli extension to display a dashboard with pull requests and issues",
+      "install_id": "gh-dash",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=f13ff45afd1bb73e640eaa08a7066dbed07e3238",
+      "name": "gh-dash-4.25.2",
+      "pname": "gh-dash",
+      "rev": "f13ff45afd1bb73e640eaa08a7066dbed07e3238",
+      "rev_count": 1049422,
+      "rev_date": "2026-08-07T12:45:23Z",
+      "scrape_date": "2026-08-09T05:24:10.513089Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "4.25.2",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/sdblxd1zrmll480psnj6bjnd0zhnvhnd-gh-dash-4.25.2"
+      },
+      "system": "aarch64-linux",
+      "group": "vcs",
+      "priority": 5
+    },
+    {
+      "attr_path": "gh-dash",
+      "broken": false,
+      "derivation": "/nix/store/cm2rrfk7ns3xn7jd24vmx91sn3vdzrfd-gh-dash-4.25.2.drv",
+      "description": "Github Cli extension to display a dashboard with pull requests and issues",
+      "install_id": "gh-dash",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=f13ff45afd1bb73e640eaa08a7066dbed07e3238",
+      "name": "gh-dash-4.25.2",
+      "pname": "gh-dash",
+      "rev": "f13ff45afd1bb73e640eaa08a7066dbed07e3238",
+      "rev_count": 1049422,
+      "rev_date": "2026-08-07T12:45:23Z",
+      "scrape_date": "2026-08-09T05:58:25.490729Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "4.25.2",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/m9xpdh9l6j1chg79imz6agbi81f50a45-gh-dash-4.25.2"
+      },
+      "system": "x86_64-linux",
+      "group": "vcs",
+      "priority": 5
+    },
+    {
+      "attr_path": "git",
+      "broken": false,
+      "derivation": "/nix/store/g4gx1850vb7hnkhcv1f4wwxrgm4d7gyr-git-2.55.0.drv",
+      "description": "Distributed version control system",
+      "install_id": "git",
+      "license": "GPL-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=f13ff45afd1bb73e640eaa08a7066dbed07e3238",
+      "name": "git-2.55.0",
+      "pname": "git",
+      "rev": "f13ff45afd1bb73e640eaa08a7066dbed07e3238",
+      "rev_count": 1049422,
+      "rev_date": "2026-08-07T12:45:23Z",
+      "scrape_date": "2026-08-09T04:54:51.583791Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2.55.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "doc": "/nix/store/y34pxb3x3h1gyvcfvanqlfjzm0c86cb4-git-2.55.0-doc",
+        "out": "/nix/store/rim5n939lwjc8mah63ld1q31i6n7bvf0-git-2.55.0"
+      },
+      "system": "aarch64-darwin",
+      "group": "vcs",
+      "priority": 5
+    },
+    {
+      "attr_path": "git",
+      "broken": false,
+      "derivation": "/nix/store/63labh2hwyy1hj2xq0kyzbsa71zb15vs-git-2.55.0.drv",
+      "description": "Distributed version control system",
+      "install_id": "git",
+      "license": "GPL-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=f13ff45afd1bb73e640eaa08a7066dbed07e3238",
+      "name": "git-2.55.0",
+      "pname": "git",
+      "rev": "f13ff45afd1bb73e640eaa08a7066dbed07e3238",
+      "rev_count": 1049422,
+      "rev_date": "2026-08-07T12:45:23Z",
+      "scrape_date": "2026-08-09T05:24:10.566160Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2.55.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "debug": "/nix/store/nsck4ncjjmdy8c5h83yw297c7xxv64xx-git-2.55.0-debug",
+        "doc": "/nix/store/bz8bdi34lg4w10kxs9bm93658ary5rrz-git-2.55.0-doc",
+        "out": "/nix/store/v2iradivx07xjqwk2q71i57pwxw6wh4g-git-2.55.0"
+      },
+      "system": "aarch64-linux",
+      "group": "vcs",
+      "priority": 5
+    },
+    {
+      "attr_path": "git",
+      "broken": false,
+      "derivation": "/nix/store/mv7gd14njvaqibdkci3kppxmznnx0vw3-git-2.55.0.drv",
+      "description": "Distributed version control system",
+      "install_id": "git",
+      "license": "GPL-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=f13ff45afd1bb73e640eaa08a7066dbed07e3238",
+      "name": "git-2.55.0",
+      "pname": "git",
+      "rev": "f13ff45afd1bb73e640eaa08a7066dbed07e3238",
+      "rev_count": 1049422,
+      "rev_date": "2026-08-07T12:45:23Z",
+      "scrape_date": "2026-08-09T05:58:25.550388Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2.55.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "debug": "/nix/store/rwiamhfaqkns90xsalafayg01afk3pza-git-2.55.0-debug",
+        "doc": "/nix/store/bddpyi6cgkp3v8f58i900hymgfvkyag5-git-2.55.0-doc",
+        "out": "/nix/store/6f0qqak4qbcrbw4f750phr88c9yhpf5s-git-2.55.0"
+      },
+      "system": "x86_64-linux",
+      "group": "vcs",
+      "priority": 5
+    },
+    {
+      "attr_path": "git-absorb",
+      "broken": false,
+      "derivation": "/nix/store/yv0sl5hl63vyn5vlzaxf0bkihax7nmra-git-absorb-0.9.0.drv",
+      "description": "git commit --fixup, but automatic",
+      "install_id": "git-absorb",
+      "license": "BSD-3-Clause",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=f13ff45afd1bb73e640eaa08a7066dbed07e3238",
+      "name": "git-absorb-0.9.0",
+      "pname": "git-absorb",
+      "rev": "f13ff45afd1bb73e640eaa08a7066dbed07e3238",
+      "rev_count": 1049422,
+      "rev_date": "2026-08-07T12:45:23Z",
+      "scrape_date": "2026-08-09T04:54:51.584099Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.9.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/1y21cgjbjm3iz09iqk9jfchhndssw0vf-git-absorb-0.9.0"
+      },
+      "system": "aarch64-darwin",
+      "group": "vcs",
+      "priority": 5
+    },
+    {
+      "attr_path": "git-absorb",
+      "broken": false,
+      "derivation": "/nix/store/c1wfakdgs54m4n47flxp16npgf09v5c9-git-absorb-0.9.0.drv",
+      "description": "git commit --fixup, but automatic",
+      "install_id": "git-absorb",
+      "license": "BSD-3-Clause",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=f13ff45afd1bb73e640eaa08a7066dbed07e3238",
+      "name": "git-absorb-0.9.0",
+      "pname": "git-absorb",
+      "rev": "f13ff45afd1bb73e640eaa08a7066dbed07e3238",
+      "rev_count": 1049422,
+      "rev_date": "2026-08-07T12:45:23Z",
+      "scrape_date": "2026-08-09T05:24:10.566510Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.9.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/bp05n4gnr89sadjqyj2r46kv2a0gv4r4-git-absorb-0.9.0"
+      },
+      "system": "aarch64-linux",
+      "group": "vcs",
+      "priority": 5
+    },
+    {
+      "attr_path": "git-absorb",
+      "broken": false,
+      "derivation": "/nix/store/8pkhi46h4xr8vfhivswlby6bs9mn6znv-git-absorb-0.9.0.drv",
+      "description": "git commit --fixup, but automatic",
+      "install_id": "git-absorb",
+      "license": "BSD-3-Clause",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=f13ff45afd1bb73e640eaa08a7066dbed07e3238",
+      "name": "git-absorb-0.9.0",
+      "pname": "git-absorb",
+      "rev": "f13ff45afd1bb73e640eaa08a7066dbed07e3238",
+      "rev_count": 1049422,
+      "rev_date": "2026-08-07T12:45:23Z",
+      "scrape_date": "2026-08-09T05:58:25.550763Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.9.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/x66vak0fz5qi2ng7s16biw34gsrpqqmk-git-absorb-0.9.0"
+      },
+      "system": "x86_64-linux",
+      "group": "vcs",
+      "priority": 5
+    },
+    {
+      "attr_path": "git-credential-manager",
+      "broken": false,
+      "derivation": "/nix/store/dl4f25ind126y5h4vh00c8rqi3nkd3n0-git-credential-manager-2.7.3.drv",
+      "description": "Secure, cross-platform Git credential storage with authentication to GitHub, Azure Repos, and other popular Git hosting services",
+      "install_id": "git-credential-manager",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=f13ff45afd1bb73e640eaa08a7066dbed07e3238",
+      "name": "git-credential-manager-2.7.3",
+      "pname": "git-credential-manager",
+      "rev": "f13ff45afd1bb73e640eaa08a7066dbed07e3238",
+      "rev_count": 1049422,
+      "rev_date": "2026-08-07T12:45:23Z",
+      "scrape_date": "2026-08-09T04:54:51.594681Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2.7.3",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/68gbp2sx3zsc9hncyyk8msc95aaj3f84-git-credential-manager-2.7.3"
+      },
+      "system": "aarch64-darwin",
+      "group": "vcs",
+      "priority": 5
+    },
+    {
+      "attr_path": "git-credential-manager",
+      "broken": false,
+      "derivation": "/nix/store/1fjxvpz97xwnp33g0n0vyqaan4723k7v-git-credential-manager-2.7.3.drv",
+      "description": "Secure, cross-platform Git credential storage with authentication to GitHub, Azure Repos, and other popular Git hosting services",
+      "install_id": "git-credential-manager",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=f13ff45afd1bb73e640eaa08a7066dbed07e3238",
+      "name": "git-credential-manager-2.7.3",
+      "pname": "git-credential-manager",
+      "rev": "f13ff45afd1bb73e640eaa08a7066dbed07e3238",
+      "rev_count": 1049422,
+      "rev_date": "2026-08-07T12:45:23Z",
+      "scrape_date": "2026-08-09T05:24:10.579456Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2.7.3",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/rqmry1wy70x2jxwy6w7h9zfii3rwidbn-git-credential-manager-2.7.3"
+      },
+      "system": "aarch64-linux",
+      "group": "vcs",
+      "priority": 5
+    },
+    {
+      "attr_path": "git-credential-manager",
+      "broken": false,
+      "derivation": "/nix/store/b02jdhs3jnhm2xkpc6w22aydws4qzjdc-git-credential-manager-2.7.3.drv",
+      "description": "Secure, cross-platform Git credential storage with authentication to GitHub, Azure Repos, and other popular Git hosting services",
+      "install_id": "git-credential-manager",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=f13ff45afd1bb73e640eaa08a7066dbed07e3238",
+      "name": "git-credential-manager-2.7.3",
+      "pname": "git-credential-manager",
+      "rev": "f13ff45afd1bb73e640eaa08a7066dbed07e3238",
+      "rev_count": 1049422,
+      "rev_date": "2026-08-07T12:45:23Z",
+      "scrape_date": "2026-08-09T05:58:25.564510Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2.7.3",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/5i4wxvw6lybbsxzpsl4hi6kxgn0ddyni-git-credential-manager-2.7.3"
+      },
+      "system": "x86_64-linux",
+      "group": "vcs",
+      "priority": 5
+    },
+    {
+      "attr_path": "gitu",
+      "broken": false,
+      "derivation": "/nix/store/ap9pskmr2fp34l4qi1hbqz1hjwl6c314-gitu-0.43.0.drv",
+      "description": "TUI Git client inspired by Magit",
+      "install_id": "gitu",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=f13ff45afd1bb73e640eaa08a7066dbed07e3238",
+      "name": "gitu-0.43.0",
+      "pname": "gitu",
+      "rev": "f13ff45afd1bb73e640eaa08a7066dbed07e3238",
+      "rev_count": 1049422,
+      "rev_date": "2026-08-07T12:45:23Z",
+      "scrape_date": "2026-08-09T04:54:51.648408Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.43.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/5vrgf7mb7xrg75fvqsifz3rz7j12m31q-gitu-0.43.0"
+      },
+      "system": "aarch64-darwin",
+      "group": "vcs",
+      "priority": 5
+    },
+    {
+      "attr_path": "gitu",
+      "broken": false,
+      "derivation": "/nix/store/q2pjcfsq2qfrd2kbi5fkrqhpyxbigkg3-gitu-0.43.0.drv",
+      "description": "TUI Git client inspired by Magit",
+      "install_id": "gitu",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=f13ff45afd1bb73e640eaa08a7066dbed07e3238",
+      "name": "gitu-0.43.0",
+      "pname": "gitu",
+      "rev": "f13ff45afd1bb73e640eaa08a7066dbed07e3238",
+      "rev_count": 1049422,
+      "rev_date": "2026-08-07T12:45:23Z",
+      "scrape_date": "2026-08-09T05:24:10.647150Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.43.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/bg5pnb0rm25ajny6l38433bp7jas54sp-gitu-0.43.0"
+      },
+      "system": "aarch64-linux",
+      "group": "vcs",
+      "priority": 5
+    },
+    {
+      "attr_path": "gitu",
+      "broken": false,
+      "derivation": "/nix/store/f56by59dgxwhckki0lap00yrb8xg8vmb-gitu-0.43.0.drv",
+      "description": "TUI Git client inspired by Magit",
+      "install_id": "gitu",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=f13ff45afd1bb73e640eaa08a7066dbed07e3238",
+      "name": "gitu-0.43.0",
+      "pname": "gitu",
+      "rev": "f13ff45afd1bb73e640eaa08a7066dbed07e3238",
+      "rev_count": 1049422,
+      "rev_date": "2026-08-07T12:45:23Z",
+      "scrape_date": "2026-08-09T05:58:25.637429Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.43.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/mbx63hswcbyyi2yi91pwj1rj6dwv3pkd-gitu-0.43.0"
+      },
+      "system": "x86_64-linux",
+      "group": "vcs",
+      "priority": 5
+    },
+    {
+      "attr_path": "tig",
+      "broken": false,
+      "derivation": "/nix/store/dhv91vsyfcjsrnh9ncndvrd9rp71pkv2-tig-2.6.1.drv",
+      "description": "Text-mode interface for git",
+      "install_id": "tig",
+      "license": "GPL-2.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=f13ff45afd1bb73e640eaa08a7066dbed07e3238",
+      "name": "tig-2.6.1",
+      "pname": "tig",
+      "rev": "f13ff45afd1bb73e640eaa08a7066dbed07e3238",
+      "rev_count": 1049422,
+      "rev_date": "2026-08-07T12:45:23Z",
+      "scrape_date": "2026-08-09T04:57:04.060738Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2.6.1",
+      "outputs_to_install": [
+        "man",
+        "out"
+      ],
+      "outputs": {
+        "doc": "/nix/store/ych6d61cbxld539hkfm196v4nyy1n9gy-tig-2.6.1-doc",
+        "man": "/nix/store/lp0fxgy5fimkq2l2j9yqzmxv5iibmzvl-tig-2.6.1-man",
+        "out": "/nix/store/h67yygz6dg2x2jwck3j1h8krqv74s3dl-tig-2.6.1"
+      },
+      "system": "aarch64-darwin",
+      "group": "vcs",
+      "priority": 5
+    },
+    {
+      "attr_path": "tig",
+      "broken": false,
+      "derivation": "/nix/store/993ndxkmpnvz18ld9dgj9r0wdhvhnr4a-tig-2.6.1.drv",
+      "description": "Text-mode interface for git",
+      "install_id": "tig",
+      "license": "GPL-2.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=f13ff45afd1bb73e640eaa08a7066dbed07e3238",
+      "name": "tig-2.6.1",
+      "pname": "tig",
+      "rev": "f13ff45afd1bb73e640eaa08a7066dbed07e3238",
+      "rev_count": 1049422,
+      "rev_date": "2026-08-07T12:45:23Z",
+      "scrape_date": "2026-08-09T05:27:07.859965Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2.6.1",
+      "outputs_to_install": [
+        "man",
+        "out"
+      ],
+      "outputs": {
+        "doc": "/nix/store/q656h9ba8gvc1470rbg5055rq54bm3fm-tig-2.6.1-doc",
+        "man": "/nix/store/ck2jqj6j88w0c4p8isfxqwc1qgsmha76-tig-2.6.1-man",
+        "out": "/nix/store/7a61afzc23xzjzj742v3k9rnn9x00q7d-tig-2.6.1"
+      },
+      "system": "aarch64-linux",
+      "group": "vcs",
+      "priority": 5
+    },
+    {
+      "attr_path": "tig",
+      "broken": false,
+      "derivation": "/nix/store/j0bgs8z189501cj9ryg1nssf18934zw0-tig-2.6.1.drv",
+      "description": "Text-mode interface for git",
+      "install_id": "tig",
+      "license": "GPL-2.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=f13ff45afd1bb73e640eaa08a7066dbed07e3238",
+      "name": "tig-2.6.1",
+      "pname": "tig",
+      "rev": "f13ff45afd1bb73e640eaa08a7066dbed07e3238",
+      "rev_count": 1049422,
+      "rev_date": "2026-08-07T12:45:23Z",
+      "scrape_date": "2026-08-09T06:01:30.425265Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2.6.1",
+      "outputs_to_install": [
+        "man",
+        "out"
+      ],
+      "outputs": {
+        "doc": "/nix/store/zsxjslcyf4gmsqhfrxx0cfic5sp9mq97-tig-2.6.1-doc",
+        "man": "/nix/store/i5lnsaxzf0s8bkdc7r99x973pqw3vlnb-tig-2.6.1-man",
+        "out": "/nix/store/27f652hlw0nx27sl1affp2mkilr1mvdd-tig-2.6.1"
+      },
+      "system": "x86_64-linux",
+      "group": "vcs",
+      "priority": 5
+    },
+    {
+      "attr_path": "wezterm",
+      "broken": false,
+      "derivation": "/nix/store/bm75bkvcd97nvhjclrxm4941ik3vdl44-wezterm-0-unstable-2026-08-23.drv",
+      "description": "GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust",
+      "install_id": "wezterm",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9fbb54b33e91ee4ca368e35a78e0613c720600b3",
+      "name": "wezterm-0-unstable-2026-08-23",
+      "pname": "wezterm",
+      "rev": "9fbb54b33e91ee4ca368e35a78e0613c720600b3",
+      "rev_count": 1062397,
+      "rev_date": "2026-08-26T09:33:39Z",
+      "scrape_date": "2026-08-28T05:05:23.995049Z",
+      "stabilities": [
+        "unstable",
+        "staging"
+      ],
+      "unfree": false,
+      "version": "2026-08-23",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/gfmbqaha85d0m4ivvhxvr1ah02aiqcdy-wezterm-0-unstable-2026-08-23"
+      },
+      "system": "aarch64-darwin",
+      "group": "wezterm",
+      "priority": 5
+    },
+    {
+      "attr_path": "wezterm",
+      "broken": false,
+      "derivation": "/nix/store/bhr4f61019nlgsngy0agkbakwnd2gb4d-wezterm-0-unstable-2026-08-23.drv",
+      "description": "GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust",
+      "install_id": "wezterm",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9fbb54b33e91ee4ca368e35a78e0613c720600b3",
+      "name": "wezterm-0-unstable-2026-08-23",
+      "pname": "wezterm",
+      "rev": "9fbb54b33e91ee4ca368e35a78e0613c720600b3",
+      "rev_count": 1062397,
+      "rev_date": "2026-08-26T09:33:39Z",
+      "scrape_date": "2026-08-28T05:42:05.478113Z",
+      "stabilities": [
+        "unstable",
+        "staging"
+      ],
+      "unfree": false,
+      "version": "2026-08-23",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/50hgqy0jab640shcpfzzs8dzk3gymxq7-wezterm-0-unstable-2026-08-23"
+      },
+      "system": "aarch64-linux",
+      "group": "wezterm",
+      "priority": 5
+    },
+    {
+      "attr_path": "wezterm",
+      "broken": false,
+      "derivation": "/nix/store/nvij93dlsqmnik7ijayz7n10hhk9z9rk-wezterm-0-unstable-2026-08-23.drv",
+      "description": "GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust",
+      "install_id": "wezterm",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9fbb54b33e91ee4ca368e35a78e0613c720600b3",
+      "name": "wezterm-0-unstable-2026-08-23",
+      "pname": "wezterm",
+      "rev": "9fbb54b33e91ee4ca368e35a78e0613c720600b3",
+      "rev_count": 1062397,
+      "rev_date": "2026-08-26T09:33:39Z",
+      "scrape_date": "2026-08-28T06:21:56.248124Z",
+      "stabilities": [
+        "unstable",
+        "staging"
+      ],
+      "unfree": false,
+      "version": "2026-08-23",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/59mswv9vxibl2k95i66vw5gh7r727wi8-wezterm-0-unstable-2026-08-23"
+      },
+      "system": "x86_64-linux",
+      "group": "wezterm",
+      "priority": 5
+    },
+    {
       "install_id": "agent-safehouse",
       "locked-url": "github:NixOS/nixpkgs/b0ec52b771f1207053090f4ea9cf73a6040f0489?narHash=sha256-aHMZ4hV9ZAjbc35VGcrqAtAigteaHCfXHeMiiVB/vAs%3D",
       "flake-description": "A collection of packages for the Nix package manager",
@@ -6823,12 +6826,12 @@
     },
     {
       "install_id": "zap",
-      "locked-url": "github:natejsimonsen/zap/588f68fda871e3594328961c2fbf0513efc33db6?narHash=sha256-BMHX69GtGcNABI3tcvaal9SxYrRIUAcf56s1dwVwZO0%3D",
+      "locked-url": "github:natejsimonsen/zap/3d0a884a6c0ed13466bc969e6e486f218258caca?narHash=sha256-hGAG7yERas1r6OJtGm0LEf2ZZH7ZsH9H7niEHgoFKho%3D",
       "flake-description": "Zap — a minimal macOS application launcher bound to Cmd+Space",
       "locked-flake-attr-path": "packages.aarch64-darwin.default",
-      "derivation": "/nix/store/dv668l28lmidaf3x6bj4n6fwmw0sz1q2-zap-0.1.0.drv",
+      "derivation": "/nix/store/0ynjrdx0rdf9k620qr09psmn0lb1nsxj-zap-0.1.0.drv",
       "outputs": {
-        "out": "/nix/store/9gz8n218z2kcd7ghalxynh5n3dvxmcwr-zap-0.1.0"
+        "out": "/nix/store/yijlp9n9asllqkzc1vz09gmk60rp8mfz-zap-0.1.0"
       },
       "output-names": [
         "out"

@@ -22,7 +22,7 @@ ripgrep.pkg-group = "ripgrep"
 ripgrep.version = "15.2.0"
 fd.pkg-path = "fd"
 fd.pkg-group = "fd"
-fd.version = "10.4.2"
+fd.version = "10.5.0"
 # The ">=" floors throughout this file are a forward ratchet, not a statement of
 # minimum requirements — they stop a fresh resolve from picking up a year-old
 # version. They earn their keep: locking the unversioned toplevel packages on
@@ -144,7 +144,7 @@ gh-dash = { pkg-path = "gh-dash", pkg-group = "vcs" }
 # satisfies neovim's pin.
 neovim.pkg-path = "neovim"
 neovim.pkg-group = "editors"
-neovim.version = "0.12.4"
+neovim.version = "0.12.5"
 lua-language-server = { pkg-path = "lua-language-server", pkg-group = "editors" }
 tree-sitter = { pkg-path = "tree-sitter", pkg-group = "editors" }
 
@@ -218,7 +218,7 @@ aerospace.systems = ["aarch64-darwin"]
 aerospace.version = "0.21.3-Beta"
 wezterm.pkg-path = "wezterm"
 wezterm.pkg-group = "wezterm"
-wezterm.version = "2026-08-12"
+wezterm.version = "2026-08-23"
 obsidian.pkg-path = "obsidian"
 obsidian.pkg-group = "obsidian"
 obsidian.version = "1.13.4"
@@ -237,7 +237,7 @@ agent-safehouse.flake = "github:NixOS/nixpkgs/b0ec52b771f1207053090f4ea9cf73a604
 agent-safehouse.systems = ["aarch64-darwin"]
 # zap now cuts tagged releases, so follow the release tag instead of the default
 # branch. Renovate-managed (see renovate.json) via the github-releases datasource.
-zap.flake = "github:natejsimonsen/zap/v0.1.0"
+zap.flake = "github:natejsimonsen/zap/v0.3.0"
 zap.systems = ["aarch64-darwin"]
 
 
