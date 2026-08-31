@@ -237,7 +237,7 @@ agent-safehouse.flake = "github:NixOS/nixpkgs/b0ec52b771f1207053090f4ea9cf73a604
 agent-safehouse.systems = ["aarch64-darwin"]
 # zap now cuts tagged releases, so follow the release tag instead of the default
 # branch. Renovate-managed (see renovate.json) via the github-releases datasource.
-zap.flake = "github:natejsimonsen/zap/v0.1.0"
+zap.flake = "github:natejsimonsen/zap/v0.3.0"
 zap.systems = ["aarch64-darwin"]
 
 
