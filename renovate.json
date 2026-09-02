@@ -42,6 +42,17 @@
     },
     {
       "customType": "regex",
+      "description": "claude-code's pkg-path is flox/claude-code -- the flox catalog tracks upstream ahead of nixpkgs -- but the TOML key stays claude-code, so the all-systems manager above would query the nixpkgs name and propose versions the flox-catalog pkg-path may not resolve. This manager queries flox/claude-code instead; a packageRule below disables the all-systems duplicate.",
+      "managerFilePatterns": ["/^dot_flox/env/private_manifest\\.toml$/"],
+      "matchStrings": [
+        "(?:^|\\n)claude-code\\.version = \"(?<currentValue>\\d[^\"]*)\""
+      ],
+      "depNameTemplate": "claude-code",
+      "packageNameTemplate": "flox/claude-code",
+      "datasourceTemplate": "custom.flox-catalog"
+    },
+    {
+      "customType": "regex",
       "description": "Bump the >= floors in place. These are a forward ratchet rather than real minimum requirements, and left to drift by hand they silently encode whenever they were last touched -- the toplevel floors sat on 2025-08 versions for a year. Only the numeric part is captured, so the >= survives the rewrite and the constraint stays a floor instead of becoming an exact pin. That distinction is load-bearing: every floored package shares the toplevel group, and 17 independently-bumped exact pins in one group is exactly the 'constraints too tight' failure the manifest header warns about, whereas any number of open-ended floors can be satisfied by a single snapshot indefinitely. The char class allows a leading underscore for _1password-cli.",
       "managerFilePatterns": ["/^dot_flox/env/private_manifest\\.toml$/"],
       "matchStrings": [
@@ -84,6 +95,12 @@
       "description": "Darwin-only packages are matched by both custom managers, since RE2 gives the all-systems manager no way to exclude them. Disabling the all-systems datasource for them leaves the flox-catalog-darwin result as the only update source.",
       "matchDatasources": ["custom.flox-catalog"],
       "matchDepNames": ["aerospace", "maccy", "container"],
+      "enabled": false
+    },
+    {
+      "description": "claude-code is matched by both the all-systems manager (packageName claude-code, the nixpkgs entry) and its dedicated manager (packageName flox/claude-code, matching the manifest's pkg-path). Both use the flox-catalog datasource, so unlike the darwin packages the duplicate is distinguished by packageName: disabling the nixpkgs-named dep leaves the flox-catalog result as the only update source.",
+      "matchDepNames": ["claude-code"],
+      "matchPackageNames": ["claude-code"],
       "enabled": false
     },
     {

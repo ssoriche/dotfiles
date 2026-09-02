@@ -57,9 +57,9 @@
         "version": ">=2.72.0"
       },
       "claude-code": {
-        "pkg-path": "claude-code",
+        "pkg-path": "flox/claude-code",
         "pkg-group": "claude",
-        "version": "2.1.245"
+        "version": "2.1.258"
       },
       "coderabbit-cli": {
         "pkg-path": "flox/coderabbit-cli",
@@ -463,93 +463,6 @@
       },
       "system": "x86_64-linux",
       "group": "atuin.sh",
-      "priority": 5
-    },
-    {
-      "attr_path": "claude-code",
-      "broken": false,
-      "derivation": "/nix/store/n1lgqcdgazzb39wknhn4l88v3skjww77-claude-code-2.1.245.drv",
-      "description": "Agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster",
-      "install_id": "claude-code",
-      "license": "Unfree",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=d2f67949798825fe853f7c5d0492b8bf016d3f88",
-      "name": "claude-code-2.1.245",
-      "pname": "claude-code",
-      "rev": "d2f67949798825fe853f7c5d0492b8bf016d3f88",
-      "rev_count": 1064150,
-      "rev_date": "2026-08-29T21:32:09Z",
-      "scrape_date": "2026-08-31T04:56:51.725521Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": true,
-      "version": "2.1.245",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/bx59a90qzpvyapbyz4hwks81xsfw025s-claude-code-2.1.245"
-      },
-      "system": "aarch64-darwin",
-      "group": "claude",
-      "priority": 5
-    },
-    {
-      "attr_path": "claude-code",
-      "broken": false,
-      "derivation": "/nix/store/jk2cbws779imgjzjmhci5fnmq3bqa7zr-claude-code-2.1.245.drv",
-      "description": "Agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster",
-      "install_id": "claude-code",
-      "license": "Unfree",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=d2f67949798825fe853f7c5d0492b8bf016d3f88",
-      "name": "claude-code-2.1.245",
-      "pname": "claude-code",
-      "rev": "d2f67949798825fe853f7c5d0492b8bf016d3f88",
-      "rev_count": 1064150,
-      "rev_date": "2026-08-29T21:32:09Z",
-      "scrape_date": "2026-08-31T05:29:10.387352Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": true,
-      "version": "2.1.245",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/z9ispy7d612d2kpp7nrhj3v7pddzp3np-claude-code-2.1.245"
-      },
-      "system": "aarch64-linux",
-      "group": "claude",
-      "priority": 5
-    },
-    {
-      "attr_path": "claude-code",
-      "broken": false,
-      "derivation": "/nix/store/cwgj6qx0pr1ag13i1l2n4ml1qakxc3qq-claude-code-2.1.245.drv",
-      "description": "Agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster",
-      "install_id": "claude-code",
-      "license": "Unfree",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=d2f67949798825fe853f7c5d0492b8bf016d3f88",
-      "name": "claude-code-2.1.245",
-      "pname": "claude-code",
-      "rev": "d2f67949798825fe853f7c5d0492b8bf016d3f88",
-      "rev_count": 1064150,
-      "rev_date": "2026-08-29T21:32:09Z",
-      "scrape_date": "2026-08-31T06:07:46.078637Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": true,
-      "version": "2.1.245",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/k4z7dn65na1gngrpcs8l79vr2pv504dx-claude-code-2.1.245"
-      },
-      "system": "x86_64-linux",
-      "group": "claude",
       "priority": 5
     },
     {
@@ -2624,6 +2537,93 @@
       },
       "system": "x86_64-linux",
       "group": "obsidian",
+      "priority": 5
+    },
+    {
+      "attr_path": "pi-coding-agent",
+      "broken": false,
+      "derivation": "/nix/store/g6jdzxxnym81pa3zpxbl8sdwwd7rsc6v-pi-coding-agent-0.84.4.drv",
+      "description": "Coding agent CLI with read, bash, edit, write tools and session management",
+      "install_id": "pi-coding-agent",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=34ab99075ac4f7e40cf037eef32cb1c360bb85e9",
+      "name": "pi-coding-agent-0.84.4",
+      "pname": "pi-coding-agent",
+      "rev": "34ab99075ac4f7e40cf037eef32cb1c360bb85e9",
+      "rev_count": 1064949,
+      "rev_date": "2026-08-31T12:23:27Z",
+      "scrape_date": "2026-09-01T04:58:18.385816Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.84.4",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/cb4mkkcg8dn8s30pv7a9fkfqq1zjq4a3-pi-coding-agent-0.84.4"
+      },
+      "system": "aarch64-darwin",
+      "group": "pi-coding-agent",
+      "priority": 5
+    },
+    {
+      "attr_path": "pi-coding-agent",
+      "broken": false,
+      "derivation": "/nix/store/qvnk9zpfgmjvci6yprda0l0ipwkrnr1s-pi-coding-agent-0.84.4.drv",
+      "description": "Coding agent CLI with read, bash, edit, write tools and session management",
+      "install_id": "pi-coding-agent",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=34ab99075ac4f7e40cf037eef32cb1c360bb85e9",
+      "name": "pi-coding-agent-0.84.4",
+      "pname": "pi-coding-agent",
+      "rev": "34ab99075ac4f7e40cf037eef32cb1c360bb85e9",
+      "rev_count": 1064949,
+      "rev_date": "2026-08-31T12:23:27Z",
+      "scrape_date": "2026-09-01T05:30:12.438845Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.84.4",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/6pkyinjjn6m56jdmpz9p8n75l25gdfwd-pi-coding-agent-0.84.4"
+      },
+      "system": "aarch64-linux",
+      "group": "pi-coding-agent",
+      "priority": 5
+    },
+    {
+      "attr_path": "pi-coding-agent",
+      "broken": false,
+      "derivation": "/nix/store/3pia6q7n5sdjc2f6040gjkd3pslxmzk5-pi-coding-agent-0.84.4.drv",
+      "description": "Coding agent CLI with read, bash, edit, write tools and session management",
+      "install_id": "pi-coding-agent",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=34ab99075ac4f7e40cf037eef32cb1c360bb85e9",
+      "name": "pi-coding-agent-0.84.4",
+      "pname": "pi-coding-agent",
+      "rev": "34ab99075ac4f7e40cf037eef32cb1c360bb85e9",
+      "rev_count": 1064949,
+      "rev_date": "2026-08-31T12:23:27Z",
+      "scrape_date": "2026-09-01T06:07:01.634788Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.84.4",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/lvys4szjr1mqpqnrbkqhl7qkcl23mswc-pi-coding-agent-0.84.4"
+      },
+      "system": "x86_64-linux",
+      "group": "pi-coding-agent",
       "priority": 5
     },
     {
@@ -6607,90 +6607,90 @@
       "priority": 5
     },
     {
-      "attr_path": "pi-coding-agent",
+      "attr_path": "claude-code",
       "broken": false,
-      "derivation": "/nix/store/g6jdzxxnym81pa3zpxbl8sdwwd7rsc6v-pi-coding-agent-0.84.4.drv",
-      "description": "Coding agent CLI with read, bash, edit, write tools and session management",
-      "install_id": "pi-coding-agent",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=34ab99075ac4f7e40cf037eef32cb1c360bb85e9",
-      "name": "pi-coding-agent-0.84.4",
-      "pname": "pi-coding-agent",
-      "rev": "34ab99075ac4f7e40cf037eef32cb1c360bb85e9",
-      "rev_count": 1064949,
-      "rev_date": "2026-08-31T12:23:27Z",
-      "scrape_date": "2026-09-01T04:58:18.385816Z",
+      "derivation": "/nix/store/66i7rmr2yg57as6dl04a1samsqka7m75-claude-code-2.1.258.drv",
+      "description": "Agentic coding tool from Anthropic",
+      "install_id": "claude-code",
+      "license": "Unfree",
+      "locked_url": "https://github.com/flox/floxenvs?rev=531e580ea2eeb0f4a7b6562b7c7bb7708bd3adc8",
+      "name": "claude-code-2.1.258",
+      "pname": "claude-code",
+      "rev": "531e580ea2eeb0f4a7b6562b7c7bb7708bd3adc8",
+      "rev_count": 22626,
+      "rev_date": "2026-09-02T01:00:43Z",
+      "scrape_date": "2026-09-02T14:03:23.536544Z",
       "stabilities": [
         "unstable"
       ],
-      "unfree": false,
-      "version": "0.84.4",
+      "unfree": true,
+      "version": "2.1.258",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/cb4mkkcg8dn8s30pv7a9fkfqq1zjq4a3-pi-coding-agent-0.84.4"
+        "out": "/nix/store/abmd16hn7wv9ws0kjvgn5zambpdj7g5h-claude-code-2.1.258"
       },
       "system": "aarch64-darwin",
-      "group": "pi-coding-agent",
+      "group": "claude",
       "priority": 5
     },
     {
-      "attr_path": "pi-coding-agent",
+      "attr_path": "claude-code",
       "broken": false,
-      "derivation": "/nix/store/qvnk9zpfgmjvci6yprda0l0ipwkrnr1s-pi-coding-agent-0.84.4.drv",
-      "description": "Coding agent CLI with read, bash, edit, write tools and session management",
-      "install_id": "pi-coding-agent",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=34ab99075ac4f7e40cf037eef32cb1c360bb85e9",
-      "name": "pi-coding-agent-0.84.4",
-      "pname": "pi-coding-agent",
-      "rev": "34ab99075ac4f7e40cf037eef32cb1c360bb85e9",
-      "rev_count": 1064949,
-      "rev_date": "2026-08-31T12:23:27Z",
-      "scrape_date": "2026-09-01T05:30:12.438845Z",
+      "derivation": "/nix/store/bc7fl17w028n4dsgahbdj2jqqihvs5ii-claude-code-2.1.258.drv",
+      "description": "Agentic coding tool from Anthropic",
+      "install_id": "claude-code",
+      "license": "Unfree",
+      "locked_url": "https://github.com/flox/floxenvs?rev=531e580ea2eeb0f4a7b6562b7c7bb7708bd3adc8",
+      "name": "claude-code-2.1.258",
+      "pname": "claude-code",
+      "rev": "531e580ea2eeb0f4a7b6562b7c7bb7708bd3adc8",
+      "rev_count": 22626,
+      "rev_date": "2026-09-02T01:00:43Z",
+      "scrape_date": "2026-09-02T14:03:23.536547Z",
       "stabilities": [
         "unstable"
       ],
-      "unfree": false,
-      "version": "0.84.4",
+      "unfree": true,
+      "version": "2.1.258",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/6pkyinjjn6m56jdmpz9p8n75l25gdfwd-pi-coding-agent-0.84.4"
+        "out": "/nix/store/hbr9h5wsrawnq3nx487h0v1fkld55d1q-claude-code-2.1.258"
       },
       "system": "aarch64-linux",
-      "group": "pi-coding-agent",
+      "group": "claude",
       "priority": 5
     },
     {
-      "attr_path": "pi-coding-agent",
+      "attr_path": "claude-code",
       "broken": false,
-      "derivation": "/nix/store/3pia6q7n5sdjc2f6040gjkd3pslxmzk5-pi-coding-agent-0.84.4.drv",
-      "description": "Coding agent CLI with read, bash, edit, write tools and session management",
-      "install_id": "pi-coding-agent",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=34ab99075ac4f7e40cf037eef32cb1c360bb85e9",
-      "name": "pi-coding-agent-0.84.4",
-      "pname": "pi-coding-agent",
-      "rev": "34ab99075ac4f7e40cf037eef32cb1c360bb85e9",
-      "rev_count": 1064949,
-      "rev_date": "2026-08-31T12:23:27Z",
-      "scrape_date": "2026-09-01T06:07:01.634788Z",
+      "derivation": "/nix/store/vxv3lm5j0623k68wfc6vv6czplikaqmq-claude-code-2.1.258.drv",
+      "description": "Agentic coding tool from Anthropic",
+      "install_id": "claude-code",
+      "license": "Unfree",
+      "locked_url": "https://github.com/flox/floxenvs?rev=531e580ea2eeb0f4a7b6562b7c7bb7708bd3adc8",
+      "name": "claude-code-2.1.258",
+      "pname": "claude-code",
+      "rev": "531e580ea2eeb0f4a7b6562b7c7bb7708bd3adc8",
+      "rev_count": 22626,
+      "rev_date": "2026-09-02T01:00:43Z",
+      "scrape_date": "2026-09-02T14:03:23.536548Z",
       "stabilities": [
         "unstable"
       ],
-      "unfree": false,
-      "version": "0.84.4",
+      "unfree": true,
+      "version": "2.1.258",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/lvys4szjr1mqpqnrbkqhl7qkcl23mswc-pi-coding-agent-0.84.4"
+        "out": "/nix/store/v3idrkgbqb9738a4m5f03frgkfbh8594-claude-code-2.1.258"
       },
       "system": "x86_64-linux",
-      "group": "pi-coding-agent",
+      "group": "claude",
       "priority": 5
     },
     {
