@@ -42,13 +42,12 @@
     },
     {
       "customType": "regex",
-      "description": "claude-code's pkg-path is flox/claude-code -- the flox catalog tracks upstream ahead of nixpkgs -- but the TOML key stays claude-code, so the all-systems manager above would query the nixpkgs name and propose versions the flox-catalog pkg-path may not resolve. This manager queries flox/claude-code instead; a packageRule below disables the all-systems duplicate.",
+      "description": "Dual-catalog packages (claude-code, herdr) exist in both the nixpkgs catalog (bare pkg-path) and the flox catalog (flox/ prefix), and which side tracks upstream faster flips over time; the flox-catalog-lag watchdog (.woodpecker/flox-catalog-lag.yaml) flips pkg-path to the faster side. This manager follows the manifest: packageName is captured from the pkg-path line, so a flip needs no renovate.json edit. The all-systems manager above still matches these version lines under the bare key, which queries the nixpkgs name regardless of pkg-path; the -pin depName suffix here is what lets the packageRule below disable those duplicates without also disabling these -- on the nixpkgs side the two deps share a packageName, so depName is the only discriminator. RE2 has no backreferences to tie the key across lines, so each package's block must stay contiguous and in pkg-path/pkg-group/version order or the manager silently stops matching it.",
       "managerFilePatterns": ["/^dot_flox/env/private_manifest\\.toml$/"],
       "matchStrings": [
-        "(?:^|\\n)claude-code\\.version = \"(?<currentValue>\\d[^\"]*)\""
+        "(?:^|\\n)(?<key>claude-code|herdr)\\.pkg-path = \"(?<packageName>[^\"]+)\"\\n(?:claude-code|herdr)\\.pkg-group = \"[^\"]*\"\\n(?:claude-code|herdr)\\.version = \"(?<currentValue>\\d[^\"]*)\""
       ],
-      "depNameTemplate": "claude-code",
-      "packageNameTemplate": "flox/claude-code",
+      "depNameTemplate": "{{{key}}}-pin",
       "datasourceTemplate": "custom.flox-catalog"
     },
     {
@@ -98,9 +97,8 @@
       "enabled": false
     },
     {
-      "description": "claude-code is matched by both the all-systems manager (packageName claude-code, the nixpkgs entry) and its dedicated manager (packageName flox/claude-code, matching the manifest's pkg-path). Both use the flox-catalog datasource, so unlike the darwin packages the duplicate is distinguished by packageName: disabling the nixpkgs-named dep leaves the flox-catalog result as the only update source.",
-      "matchDepNames": ["claude-code"],
-      "matchPackageNames": ["claude-code"],
+      "description": "The dual-catalog packages are matched twice: by the all-systems manager (depName = bare key, packageName = bare key, i.e. always the nixpkgs entry) and by their dedicated manager (depName = key-pin, packageName from pkg-path). Disable the bare-key duplicates. Matching on depName rather than packageName is what keeps this correct on both sides of a catalog flip: with the package on the nixpkgs side both deps carry the same packageName, and a packageName match would disable them both.",
+      "matchDepNames": ["claude-code", "herdr"],
       "enabled": false
     },
     {
