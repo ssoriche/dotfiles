@@ -1,0 +1,39 @@
+# Nightly check that the dual-catalog packages (claude-code, herdr -- the list
+# lives in scripts/flox-catalog-lag.sh) are sourced from whichever of the
+# nixpkgs/flox catalogs currently tracks upstream faster. The lagging side is
+# never broken, only stale, but stale is a real cost: nixpkgs' claude-code
+# 2.1.245 shipped without model access that flox's 2.1.258 had. Renovate cannot
+# do this itself -- a dependency is bound to one packageName, and a regex
+# manager can only rewrite the captured version, never conditionally rewrite
+# pkg-path -- so a separate watchdog compares the catalogs and PRs the flip.
+#
+# When the other catalog is strictly ahead (newest version resolvable on all
+# three systems), the script pushes a one-commit branch flipping pkg-path + pin
+# and opens a PR; flox-relock.yaml's pull_request check then proves the flipped
+# pins resolve before anyone merges. When the lag clears before the PR merges,
+# the PR is closed as overtaken.
+#
+# This rides the same nightly cron as flox-lock-drift: every `event: cron`
+# pipeline fires on it, so there is nothing to provision in Woodpecker. The
+# compile-time trap documented in flox-lock-drift.yaml applies here too -- if
+# the forgejo_token secret ever stops allowing the cron event, this pipeline
+# stops compiling with no visible failure anywhere.
+when:
+  - event: cron
+
+clone:
+  - name: git
+    image: woodpeckerci/plugin-git
+    settings:
+      partial: false
+      depth: 0
+
+steps:
+  - name: catalog-lag
+    image: alpine:3.24
+    environment:
+      FORGEJO_TOKEN:
+        from_secret: forgejo_token
+    commands:
+      - apk add --no-cache bash curl jq git ca-certificates
+      - bash .woodpecker/scripts/flox-catalog-lag.sh apply

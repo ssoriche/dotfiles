@@ -177,9 +177,12 @@ dotenv-linter = { pkg-path = "dotenv-linter", pkg-group = "linters" }
 # cloud — large package, independent update cadence
 awscli2 = { pkg-path = "awscli2", pkg-group = "cloud" , outputs = "all" }
 
-# claude — fast-moving, unfree; the flox catalog currently tracks upstream ahead
-# of nixpkgs. Renovate-managed via a dedicated manager that queries flox/claude-code
-# (see renovate.json).
+# claude — fast-moving, unfree; dual-catalog: exists as both nixpkgs claude-code
+# and flox/claude-code, and which side tracks upstream faster flips over time.
+# The flox-catalog-lag watchdog PRs a pkg-path flip when the other side pulls
+# ahead; Renovate follows whatever pkg-path says (see renovate.json). Keep this
+# block contiguous and in pkg-path/pkg-group/version order — the dedicated
+# Renovate manager matches it as a unit.
 claude-code.pkg-path = "flox/claude-code"
 claude-code.pkg-group = "claude"
 claude-code.version = "2.1.258"
@@ -192,8 +195,8 @@ pi-coding-agent.version = "0.84.4"
 # nono — AI agent sandbox
 nono = { pkg-path = "nono", pkg-group = "nono" }
 
-# herdr — fast-moving AI tooling; nixpkgs currently tracks upstream ahead of the
-# flox catalog. Renovate-managed (see renovate.json).
+# herdr — fast-moving AI tooling; dual-catalog like claude-code above, watched
+# by flox-catalog-lag, Renovate follows pkg-path. Same block-order constraint.
 herdr.pkg-path = "herdr"
 herdr.pkg-group = "herdr"
 herdr.version = "0.8.2"
