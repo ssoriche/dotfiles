@@ -42,6 +42,16 @@
     },
     {
       "customType": "regex",
+      "description": "Dual-catalog packages (claude-code, herdr) exist in both the nixpkgs catalog (bare pkg-path) and the flox catalog (flox/ prefix), and which side tracks upstream faster flips over time; the flox-catalog-lag watchdog (.woodpecker/flox-catalog-lag.yaml) flips pkg-path to the faster side. This manager follows the manifest: packageName is captured from the pkg-path line, so a flip needs no renovate.json edit. The all-systems manager above still matches these version lines under the bare key, which queries the nixpkgs name regardless of pkg-path; the -pin depName suffix here is what lets the packageRule below disable those duplicates without also disabling these -- on the nixpkgs side the two deps share a packageName, so depName is the only discriminator. RE2 has no backreferences to tie the key across lines, so each package's block must stay contiguous and in pkg-path/pkg-group/version order or the manager silently stops matching it.",
+      "managerFilePatterns": ["/^dot_flox/env/private_manifest\\.toml$/"],
+      "matchStrings": [
+        "(?:^|\\n)(?<key>claude-code|herdr)\\.pkg-path = \"(?<packageName>[^\"]+)\"\\n(?:claude-code|herdr)\\.pkg-group = \"[^\"]*\"\\n(?:claude-code|herdr)\\.version = \"(?<currentValue>\\d[^\"]*)\""
+      ],
+      "depNameTemplate": "{{{key}}}-pin",
+      "datasourceTemplate": "custom.flox-catalog"
+    },
+    {
+      "customType": "regex",
       "description": "Bump the >= floors in place. These are a forward ratchet rather than real minimum requirements, and left to drift by hand they silently encode whenever they were last touched -- the toplevel floors sat on 2025-08 versions for a year. Only the numeric part is captured, so the >= survives the rewrite and the constraint stays a floor instead of becoming an exact pin. That distinction is load-bearing: every floored package shares the toplevel group, and 17 independently-bumped exact pins in one group is exactly the 'constraints too tight' failure the manifest header warns about, whereas any number of open-ended floors can be satisfied by a single snapshot indefinitely. The char class allows a leading underscore for _1password-cli.",
       "managerFilePatterns": ["/^dot_flox/env/private_manifest\\.toml$/"],
       "matchStrings": [
@@ -84,6 +94,11 @@
       "description": "Darwin-only packages are matched by both custom managers, since RE2 gives the all-systems manager no way to exclude them. Disabling the all-systems datasource for them leaves the flox-catalog-darwin result as the only update source.",
       "matchDatasources": ["custom.flox-catalog"],
       "matchDepNames": ["aerospace", "maccy", "container"],
+      "enabled": false
+    },
+    {
+      "description": "The dual-catalog packages are matched twice: by the all-systems manager (depName = bare key, packageName = bare key, i.e. always the nixpkgs entry) and by their dedicated manager (depName = key-pin, packageName from pkg-path). Disable the bare-key duplicates. Matching on depName rather than packageName is what keeps this correct on both sides of a catalog flip: with the package on the nixpkgs side both deps carry the same packageName, and a packageName match would disable them both.",
+      "matchDepNames": ["claude-code", "herdr"],
       "enabled": false
     },
     {
