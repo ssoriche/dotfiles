@@ -56,7 +56,9 @@ if command -v zoxide >/dev/null
     zoxide init fish | source
 end
 
-eval (direnv hook fish)
+if command -v direnv >/dev/null
+    eval (direnv hook fish)
+end
 
 if command -v anyenv >/dev/null
     fish_add_path $HOME/.anyenv/bin
