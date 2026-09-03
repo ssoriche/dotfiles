@@ -42,7 +42,7 @@ Packages are organized into **pkg-groups** so they can resolve against independe
 | `linters` | typos, dotenv-linter | Standalone linters |
 | `cloud` | awscli2 | Large package, independent update cadence |
 | `pinned` | granted | Version-pinned packages |
-| `claude` | claude-code (`flox/claude-code`) | Fast-moving, unfree; sourced from the flox catalog (see Catalogs below) |
+| `claude` | claude-code | Fast-moving, unfree; dual-catalog — pkg-path picks the faster side (see Catalogs below) |
 | `opencode` | opencode | Fast-moving AI tooling; needs independent upgrades |
 | `gui` | aerospace, wezterm, obsidian, halloy | GUI apps — keep separate from CLI tools |
 
@@ -88,7 +88,36 @@ flox activate -- claude --version   # fresh activation re-locks; confirm the new
 chezmoi add ~/.flox/env/manifest.lock
 ```
 
-`claude-code` is sourced from the flox catalog for exactly this reason — it stays current faster than nixpkgs.
+### Dual-catalog packages and the flip watchdog
+
+`claude-code` and `herdr` exist in both catalogs, and which side tracks upstream
+faster flips over time (claude-code has gone nixpkgs→flox→nixpkgs→flox). Don't
+flip these by hand as routine maintenance: the nightly `flox-catalog-lag`
+watchdog (`.woodpecker/flox-catalog-lag.yaml`) compares both catalogs and opens
+a PR flipping `pkg-path` + pin when the other side is strictly ahead — judged on
+the newest version resolvable on **all three** `[options].systems`, so a flip
+can't land a pin one system cannot lock; ties don't flip. It closes the PR again
+if the lag clears before merge. Renovate follows whatever `pkg-path` says (its
+dedicated manager captures the query name from the pkg-path line), so a flip
+never needs a renovate.json edit.
+
+Constraints when editing these manifest entries:
+
+- Keep each block **contiguous and in pkg-path/pkg-group/version order** — the
+  dedicated Renovate manager matches the block as a unit (RE2, no backreferences)
+  and silently stops matching on reorder.
+- Adding a dual-catalog package means updating **three lists**: `PACKAGES` in
+  `.woodpecker/scripts/flox-catalog-lag.sh`, the key alternation in
+  renovate.json's dedicated manager, and the disabling packageRule's
+  `matchDepNames`.
+
+Check for lag locally anytime (read-only, needs only curl and jq):
+
+```bash
+bash .woodpecker/scripts/flox-catalog-lag.sh detect
+```
+
+Full rationale and rejected alternatives: `docs/adr/0001-dual-catalog-flip-watchdog.md`.
 
 ## TOML style convention
 

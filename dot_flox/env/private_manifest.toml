@@ -22,7 +22,7 @@ ripgrep.pkg-group = "ripgrep"
 ripgrep.version = "15.2.0"
 fd.pkg-path = "fd"
 fd.pkg-group = "fd"
-fd.version = "10.4.2"
+fd.version = "10.5.0"
 # The ">=" floors throughout this file are a forward ratchet, not a statement of
 # minimum requirements — they stop a fresh resolve from picking up a year-old
 # version. They earn their keep: locking the unversioned toplevel packages on
@@ -77,13 +77,13 @@ kubie.version = "0.28.0"
 
 # Networking / Security
 nmap.pkg-path = "nmap"
-nmap.version = ">=7.99"
+nmap.version = ">=7.991"
 age.pkg-path = "age"
 passage.pkg-path = "passage"
 step-cli.pkg-path = "step-cli"
 wget.pkg-path = "wget"
 _1password-cli.pkg-path = "_1password-cli"
-_1password-cli.version = ">=2.38.1"
+_1password-cli.version = ">=2.39.0"
 
 # System monitoring / Utilities
 btop.pkg-path = "btop"
@@ -144,7 +144,7 @@ gh-dash = { pkg-path = "gh-dash", pkg-group = "vcs" }
 # satisfies neovim's pin.
 neovim.pkg-path = "neovim"
 neovim.pkg-group = "editors"
-neovim.version = "0.12.4"
+neovim.version = "0.12.5"
 lua-language-server = { pkg-path = "lua-language-server", pkg-group = "editors" }
 tree-sitter = { pkg-path = "tree-sitter", pkg-group = "editors" }
 
@@ -154,7 +154,7 @@ tree-sitter = { pkg-path = "tree-sitter", pkg-group = "editors" }
 # 1.26.5 the lock already resolved so this stays behaviour-neutral.
 go.pkg-path = "go"
 go.pkg-group = "golang"
-go.version = "1.26.5"
+go.version = "1.26.7"
 golangci-lint = { pkg-path = "golangci-lint", pkg-group = "golang" }
 
 # node — JS runtimes
@@ -177,25 +177,29 @@ dotenv-linter = { pkg-path = "dotenv-linter", pkg-group = "linters" }
 # cloud — large package, independent update cadence
 awscli2 = { pkg-path = "awscli2", pkg-group = "cloud" , outputs = "all" }
 
-# claude — fast-moving, unfree; nixpkgs currently tracks upstream ahead of the flox
-# catalog. Renovate-managed (see renovate.json).
-claude-code.pkg-path = "claude-code"
+# claude — fast-moving, unfree; dual-catalog: exists as both nixpkgs claude-code
+# and flox/claude-code, and which side tracks upstream faster flips over time.
+# The flox-catalog-lag watchdog PRs a pkg-path flip when the other side pulls
+# ahead; Renovate follows whatever pkg-path says (see renovate.json). Keep this
+# block contiguous and in pkg-path/pkg-group/version order — the dedicated
+# Renovate manager matches it as a unit.
+claude-code.pkg-path = "flox/claude-code"
 claude-code.pkg-group = "claude"
-claude-code.version = "2.1.234"
+claude-code.version = "2.1.259"
 
 # pi-coding-agent — fast-moving AI tooling. Renovate-managed (see renovate.json).
 pi-coding-agent.pkg-path = "pi-coding-agent"
 pi-coding-agent.pkg-group = "pi-coding-agent"
-pi-coding-agent.version = "0.84.2"
+pi-coding-agent.version = "0.84.4"
 
 # nono — AI agent sandbox
 nono = { pkg-path = "nono", pkg-group = "nono" }
 
-# herdr — fast-moving AI tooling; nixpkgs currently tracks upstream ahead of the
-# flox catalog. Renovate-managed (see renovate.json).
+# herdr — fast-moving AI tooling; dual-catalog like claude-code above, watched
+# by flox-catalog-lag, Renovate follows pkg-path. Same block-order constraint.
 herdr.pkg-path = "herdr"
 herdr.pkg-group = "herdr"
-herdr.version = "0.8.0"
+herdr.version = "0.8.2"
 
 # container — Apple's Linux container runtime; isolate so it resolves to latest
 container = { pkg-path = "container", pkg-group = "container", systems = ["aarch64-darwin"] }
@@ -218,7 +222,7 @@ aerospace.systems = ["aarch64-darwin"]
 aerospace.version = "0.21.3-Beta"
 wezterm.pkg-path = "wezterm"
 wezterm.pkg-group = "wezterm"
-wezterm.version = "2026-08-12"
+wezterm.version = "2026-08-23"
 obsidian.pkg-path = "obsidian"
 obsidian.pkg-group = "obsidian"
 obsidian.version = "1.13.4"
@@ -237,7 +241,7 @@ agent-safehouse.flake = "github:NixOS/nixpkgs/b0ec52b771f1207053090f4ea9cf73a604
 agent-safehouse.systems = ["aarch64-darwin"]
 # zap now cuts tagged releases, so follow the release tag instead of the default
 # branch. Renovate-managed (see renovate.json) via the github-releases datasource.
-zap.flake = "github:natejsimonsen/zap/v0.1.0"
+zap.flake = "github:natejsimonsen/zap/v0.3.0"
 zap.systems = ["aarch64-darwin"]
 
 
