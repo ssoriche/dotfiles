@@ -4,6 +4,11 @@
 # Feel free to omit keys that you don't use in your config.
 # If the key is absent in your config the default value is taken from this config
 
+# Config version for compatibility and deprecations
+# See: https://nikitabobko.github.io/AeroSpace/guide#config-version
+# Fallback value (if you omit the key): config-version = 1
+config-version = 2
+
 # You can use it to add commands that run after login to macOS user session.
 # 'start-at-login' needs to be 'true' for 'after-login-command' to work
 # Available commands: https://nikitabobko.github.io/AeroSpace/commands
@@ -37,6 +42,12 @@ default-root-container-orientation = 'auto'
 # Possible values: (qwerty|dvorak)
 # See https://nikitabobko.github.io/AeroSpace/guide#key-mapping
 key-mapping.preset = 'qwerty'
+
+# Workspaces that stay alive even when they hold no windows.
+# 'config-version = 1' inferred this list from the workspace bindings below;
+# 'config-version = 2' requires it to be spelled out (fallback is an empty array).
+# This mirrors what the alt-1..alt-9 bindings used to imply.
+persistent-workspaces = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
 
 # Gaps between windows (inner-*) and between monitor edges (outer-*).
 # Possible values:
