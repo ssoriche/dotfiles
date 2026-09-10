@@ -197,9 +197,9 @@ nono = { pkg-path = "nono", pkg-group = "nono" }
 
 # herdr — fast-moving AI tooling; dual-catalog like claude-code above, watched
 # by flox-catalog-lag, Renovate follows pkg-path. Same block-order constraint.
-herdr.pkg-path = "herdr"
+herdr.pkg-path = "flox/herdr"
 herdr.pkg-group = "herdr"
-herdr.version = "0.8.2"
+herdr.version = "0.9.0"
 
 # container — Apple's Linux container runtime; isolate so it resolves to latest
 container = { pkg-path = "container", pkg-group = "container", systems = ["aarch64-darwin"] }
