@@ -34,7 +34,7 @@
       "atuin": {
         "pkg-path": "atuin",
         "pkg-group": "atuin.sh",
-        "version": "18.19.0"
+        "version": "18.21.0"
       },
       "awscli2": {
         "pkg-path": "awscli2",
@@ -59,7 +59,7 @@
       "claude-code": {
         "pkg-path": "flox/claude-code",
         "pkg-group": "claude",
-        "version": "2.1.269"
+        "version": "2.1.270"
       },
       "coderabbit-cli": {
         "pkg-path": "flox/coderabbit-cli",
@@ -376,180 +376,6 @@
       },
       "system": "aarch64-darwin",
       "group": "aerospace",
-      "priority": 5
-    },
-    {
-      "attr_path": "atuin",
-      "broken": false,
-      "derivation": "/nix/store/s0d72asyvyn86ylvlcpmf08n726gxvss-atuin-18.19.0.drv",
-      "description": "Replacement for a shell history which records additional commands context with optional encrypted synchronization between machines",
-      "install_id": "atuin",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=ffb3c9b700e759be2ef13237c9d8f953b32a1e46",
-      "name": "atuin-18.19.0",
-      "pname": "atuin",
-      "rev": "ffb3c9b700e759be2ef13237c9d8f953b32a1e46",
-      "rev_count": 1058091,
-      "rev_date": "2026-08-19T10:27:33Z",
-      "scrape_date": "2026-08-21T04:55:36.220968Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "18.19.0",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/60dwmxyvgcw30isvi2splvi3z6cgii7z-atuin-18.19.0"
-      },
-      "system": "aarch64-darwin",
-      "group": "atuin.sh",
-      "priority": 5
-    },
-    {
-      "attr_path": "atuin",
-      "broken": false,
-      "derivation": "/nix/store/lnbrg2d1cmxpydf5ccwjin196mgqjsh6-atuin-18.19.0.drv",
-      "description": "Replacement for a shell history which records additional commands context with optional encrypted synchronization between machines",
-      "install_id": "atuin",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=ffb3c9b700e759be2ef13237c9d8f953b32a1e46",
-      "name": "atuin-18.19.0",
-      "pname": "atuin",
-      "rev": "ffb3c9b700e759be2ef13237c9d8f953b32a1e46",
-      "rev_count": 1058091,
-      "rev_date": "2026-08-19T10:27:33Z",
-      "scrape_date": "2026-08-21T05:24:56.701739Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "18.19.0",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/r2nvjm5h0lgniabxsjybzjp4m8g3b6ph-atuin-18.19.0"
-      },
-      "system": "aarch64-linux",
-      "group": "atuin.sh",
-      "priority": 5
-    },
-    {
-      "attr_path": "atuin",
-      "broken": false,
-      "derivation": "/nix/store/94l6f76l363dak922rb38c850kv8hjf2-atuin-18.19.0.drv",
-      "description": "Replacement for a shell history which records additional commands context with optional encrypted synchronization between machines",
-      "install_id": "atuin",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=ffb3c9b700e759be2ef13237c9d8f953b32a1e46",
-      "name": "atuin-18.19.0",
-      "pname": "atuin",
-      "rev": "ffb3c9b700e759be2ef13237c9d8f953b32a1e46",
-      "rev_count": 1058091,
-      "rev_date": "2026-08-19T10:27:33Z",
-      "scrape_date": "2026-08-21T05:57:58.049301Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "18.19.0",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/qd8fndbhwm90ji173c9brrrba1fgr9hv-atuin-18.19.0"
-      },
-      "system": "x86_64-linux",
-      "group": "atuin.sh",
-      "priority": 5
-    },
-    {
-      "attr_path": "claude-code",
-      "broken": false,
-      "derivation": "/nix/store/86r63rsva80jqhz80hzb3cf9sv07idav-claude-code-2.1.269.drv",
-      "description": "Agentic coding tool from Anthropic",
-      "install_id": "claude-code",
-      "license": "Unfree",
-      "locked_url": "https://github.com/flox/floxenvs?rev=7dbf72893641110fe518c9b533404599325a22c2",
-      "name": "claude-code-2.1.269",
-      "pname": "claude-code",
-      "rev": "7dbf72893641110fe518c9b533404599325a22c2",
-      "rev_count": 23760,
-      "rev_date": "2026-09-12T01:00:13Z",
-      "scrape_date": "2026-09-12T12:28:16.081700807Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": true,
-      "version": "2.1.269",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/1dwanidiwdv8q8kb7wv1j3kdr8q06ymn-claude-code-2.1.269"
-      },
-      "system": "aarch64-darwin",
-      "group": "claude",
-      "priority": 5
-    },
-    {
-      "attr_path": "claude-code",
-      "broken": false,
-      "derivation": "/nix/store/5y96yyd3d9mwjnvy0y5prjflp9illka9-claude-code-2.1.269.drv",
-      "description": "Agentic coding tool from Anthropic",
-      "install_id": "claude-code",
-      "license": "Unfree",
-      "locked_url": "https://github.com/flox/floxenvs?rev=7dbf72893641110fe518c9b533404599325a22c2",
-      "name": "claude-code-2.1.269",
-      "pname": "claude-code",
-      "rev": "7dbf72893641110fe518c9b533404599325a22c2",
-      "rev_count": 23760,
-      "rev_date": "2026-09-12T01:00:13Z",
-      "scrape_date": "2026-09-12T12:28:16.081710295Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": true,
-      "version": "2.1.269",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/yz7d5yy01hj8z06wyl6z30rk26vd0r9m-claude-code-2.1.269"
-      },
-      "system": "aarch64-linux",
-      "group": "claude",
-      "priority": 5
-    },
-    {
-      "attr_path": "claude-code",
-      "broken": false,
-      "derivation": "/nix/store/8phbkz98m8ll202scfgfmpyjr46iwb2i-claude-code-2.1.269.drv",
-      "description": "Agentic coding tool from Anthropic",
-      "install_id": "claude-code",
-      "license": "Unfree",
-      "locked_url": "https://github.com/flox/floxenvs?rev=7dbf72893641110fe518c9b533404599325a22c2",
-      "name": "claude-code-2.1.269",
-      "pname": "claude-code",
-      "rev": "7dbf72893641110fe518c9b533404599325a22c2",
-      "rev_count": 23760,
-      "rev_date": "2026-09-12T01:00:13Z",
-      "scrape_date": "2026-09-12T12:28:16.081711476Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": true,
-      "version": "2.1.269",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/gmd2as8lkjardwwkkb8jjmnsy4jb0g5k-claude-code-2.1.269"
-      },
-      "system": "x86_64-linux",
-      "group": "claude",
       "priority": 5
     },
     {
@@ -2711,6 +2537,96 @@
       },
       "system": "x86_64-linux",
       "group": "pi-coding-agent",
+      "priority": 5
+    },
+    {
+      "attr_path": "uv",
+      "broken": false,
+      "derivation": "/nix/store/bgcbqf6z92601c4p0l8bpmqmv0prdi2m-uv-0.12.11.drv",
+      "description": "Extremely fast Python package installer and resolver, written in Rust",
+      "install_id": "uv",
+      "license": "[ Apache-2.0, MIT ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=8ce4ef6cb6f871616146b9fe26d2a5ae594e94fe",
+      "name": "uv-0.12.11",
+      "pname": "uv",
+      "rev": "8ce4ef6cb6f871616146b9fe26d2a5ae594e94fe",
+      "rev_count": 1070770,
+      "rev_date": "2026-09-10T02:20:05Z",
+      "scrape_date": "2026-09-11T05:00:56.840328Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.12.11",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/ipm6pka47bgnai4fx96npnhqvv8yg2nx-uv-0.12.11"
+      },
+      "system": "aarch64-darwin",
+      "group": "python",
+      "priority": 5
+    },
+    {
+      "attr_path": "uv",
+      "broken": false,
+      "derivation": "/nix/store/9l2ck3bh23fqjxymj0nc7j6a0al0az0l-uv-0.12.11.drv",
+      "description": "Extremely fast Python package installer and resolver, written in Rust",
+      "install_id": "uv",
+      "license": "[ Apache-2.0, MIT ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=8ce4ef6cb6f871616146b9fe26d2a5ae594e94fe",
+      "name": "uv-0.12.11",
+      "pname": "uv",
+      "rev": "8ce4ef6cb6f871616146b9fe26d2a5ae594e94fe",
+      "rev_count": 1070770,
+      "rev_date": "2026-09-10T02:20:05Z",
+      "scrape_date": "2026-09-11T05:34:01.743987Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.12.11",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/wbx6hc4nrpdhj4ijasf5y516i940d5nr-uv-0.12.11"
+      },
+      "system": "aarch64-linux",
+      "group": "python",
+      "priority": 5
+    },
+    {
+      "attr_path": "uv",
+      "broken": false,
+      "derivation": "/nix/store/ys2h4b2v88gkblmqp04k2kj6ib54vwkg-uv-0.12.11.drv",
+      "description": "Extremely fast Python package installer and resolver, written in Rust",
+      "install_id": "uv",
+      "license": "[ Apache-2.0, MIT ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=8ce4ef6cb6f871616146b9fe26d2a5ae594e94fe",
+      "name": "uv-0.12.11",
+      "pname": "uv",
+      "rev": "8ce4ef6cb6f871616146b9fe26d2a5ae594e94fe",
+      "rev_count": 1070770,
+      "rev_date": "2026-09-10T02:20:05Z",
+      "scrape_date": "2026-09-11T06:10:29.248886Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.12.11",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/cbj4qx4v111j2pw218s1sffl0lsijpb9-uv-0.12.11"
+      },
+      "system": "x86_64-linux",
+      "group": "python",
       "priority": 5
     },
     {
@@ -6605,93 +6521,177 @@
       "priority": 5
     },
     {
-      "attr_path": "uv",
+      "attr_path": "atuin",
       "broken": false,
-      "derivation": "/nix/store/bgcbqf6z92601c4p0l8bpmqmv0prdi2m-uv-0.12.11.drv",
-      "description": "Extremely fast Python package installer and resolver, written in Rust",
-      "install_id": "uv",
-      "license": "[ Apache-2.0, MIT ]",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=8ce4ef6cb6f871616146b9fe26d2a5ae594e94fe",
-      "name": "uv-0.12.11",
-      "pname": "uv",
-      "rev": "8ce4ef6cb6f871616146b9fe26d2a5ae594e94fe",
-      "rev_count": 1070770,
-      "rev_date": "2026-09-10T02:20:05Z",
-      "scrape_date": "2026-09-11T05:00:56.840328Z",
+      "derivation": "/nix/store/8r520n2654hyg1dbs027liwhxbs8vhkn-atuin-18.21.0.drv",
+      "description": "Replacement for a shell history which records additional commands context with optional encrypted synchronization between machines",
+      "install_id": "atuin",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eaad089433ca2bb662274377d33df3d0e51ef28b",
+      "name": "atuin-18.21.0",
+      "pname": "atuin",
+      "rev": "eaad089433ca2bb662274377d33df3d0e51ef28b",
+      "rev_count": 1072397,
+      "rev_date": "2026-09-11T18:00:29Z",
+      "scrape_date": "2026-09-13T05:02:12.881950Z",
       "stabilities": [
-        "staging",
         "unstable"
       ],
       "unfree": false,
-      "version": "0.12.11",
+      "version": "18.21.0",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/ipm6pka47bgnai4fx96npnhqvv8yg2nx-uv-0.12.11"
+        "out": "/nix/store/0lq0dpsflz98phv84nvkvcygag55jb8d-atuin-18.21.0"
       },
       "system": "aarch64-darwin",
-      "group": "python",
+      "group": "atuin.sh",
       "priority": 5
     },
     {
-      "attr_path": "uv",
+      "attr_path": "atuin",
       "broken": false,
-      "derivation": "/nix/store/9l2ck3bh23fqjxymj0nc7j6a0al0az0l-uv-0.12.11.drv",
-      "description": "Extremely fast Python package installer and resolver, written in Rust",
-      "install_id": "uv",
-      "license": "[ Apache-2.0, MIT ]",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=8ce4ef6cb6f871616146b9fe26d2a5ae594e94fe",
-      "name": "uv-0.12.11",
-      "pname": "uv",
-      "rev": "8ce4ef6cb6f871616146b9fe26d2a5ae594e94fe",
-      "rev_count": 1070770,
-      "rev_date": "2026-09-10T02:20:05Z",
-      "scrape_date": "2026-09-11T05:34:01.743987Z",
+      "derivation": "/nix/store/a4qqjdd834w9ihld7biga6mddbldh4z9-atuin-18.21.0.drv",
+      "description": "Replacement for a shell history which records additional commands context with optional encrypted synchronization between machines",
+      "install_id": "atuin",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eaad089433ca2bb662274377d33df3d0e51ef28b",
+      "name": "atuin-18.21.0",
+      "pname": "atuin",
+      "rev": "eaad089433ca2bb662274377d33df3d0e51ef28b",
+      "rev_count": 1072397,
+      "rev_date": "2026-09-11T18:00:29Z",
+      "scrape_date": "2026-09-13T05:37:22.807549Z",
       "stabilities": [
-        "staging",
         "unstable"
       ],
       "unfree": false,
-      "version": "0.12.11",
+      "version": "18.21.0",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/wbx6hc4nrpdhj4ijasf5y516i940d5nr-uv-0.12.11"
+        "out": "/nix/store/gryasjd3iz134m3dhavd6raq82y1g9n0-atuin-18.21.0"
       },
       "system": "aarch64-linux",
-      "group": "python",
+      "group": "atuin.sh",
       "priority": 5
     },
     {
-      "attr_path": "uv",
+      "attr_path": "atuin",
       "broken": false,
-      "derivation": "/nix/store/ys2h4b2v88gkblmqp04k2kj6ib54vwkg-uv-0.12.11.drv",
-      "description": "Extremely fast Python package installer and resolver, written in Rust",
-      "install_id": "uv",
-      "license": "[ Apache-2.0, MIT ]",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=8ce4ef6cb6f871616146b9fe26d2a5ae594e94fe",
-      "name": "uv-0.12.11",
-      "pname": "uv",
-      "rev": "8ce4ef6cb6f871616146b9fe26d2a5ae594e94fe",
-      "rev_count": 1070770,
-      "rev_date": "2026-09-10T02:20:05Z",
-      "scrape_date": "2026-09-11T06:10:29.248886Z",
+      "derivation": "/nix/store/rqz9kxb4y201lif2cnpq1hwrlf7m38hs-atuin-18.21.0.drv",
+      "description": "Replacement for a shell history which records additional commands context with optional encrypted synchronization between machines",
+      "install_id": "atuin",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eaad089433ca2bb662274377d33df3d0e51ef28b",
+      "name": "atuin-18.21.0",
+      "pname": "atuin",
+      "rev": "eaad089433ca2bb662274377d33df3d0e51ef28b",
+      "rev_count": 1072397,
+      "rev_date": "2026-09-11T18:00:29Z",
+      "scrape_date": "2026-09-13T06:16:42.196263Z",
       "stabilities": [
-        "staging",
         "unstable"
       ],
       "unfree": false,
-      "version": "0.12.11",
+      "version": "18.21.0",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/cbj4qx4v111j2pw218s1sffl0lsijpb9-uv-0.12.11"
+        "out": "/nix/store/qp45iix5wdp5l0hf1z242yhpjgqqixcs-atuin-18.21.0"
       },
       "system": "x86_64-linux",
-      "group": "python",
+      "group": "atuin.sh",
+      "priority": 5
+    },
+    {
+      "attr_path": "claude-code",
+      "broken": false,
+      "derivation": "/nix/store/mhcpypi2imhsfyw4c9iw662rkad3ygiq-claude-code-2.1.270.drv",
+      "description": "Agentic coding tool from Anthropic",
+      "install_id": "claude-code",
+      "license": "Unfree",
+      "locked_url": "https://github.com/flox/floxenvs?rev=9af86e748bcaf6486df086e3ec8e1c4ba9a5dab1",
+      "name": "claude-code-2.1.270",
+      "pname": "claude-code",
+      "rev": "9af86e748bcaf6486df086e3ec8e1c4ba9a5dab1",
+      "rev_count": 23806,
+      "rev_date": "2026-09-13T01:00:36Z",
+      "scrape_date": "2026-09-13T12:17:08.658444845Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "2.1.270",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/04kh1dk1zw26cg5n4ddjiizfkbg9x8pk-claude-code-2.1.270"
+      },
+      "system": "aarch64-darwin",
+      "group": "claude",
+      "priority": 5
+    },
+    {
+      "attr_path": "claude-code",
+      "broken": false,
+      "derivation": "/nix/store/pvqiyy5gbs6g2v44sbkdsacjzpnkzlly-claude-code-2.1.270.drv",
+      "description": "Agentic coding tool from Anthropic",
+      "install_id": "claude-code",
+      "license": "Unfree",
+      "locked_url": "https://github.com/flox/floxenvs?rev=9af86e748bcaf6486df086e3ec8e1c4ba9a5dab1",
+      "name": "claude-code-2.1.270",
+      "pname": "claude-code",
+      "rev": "9af86e748bcaf6486df086e3ec8e1c4ba9a5dab1",
+      "rev_count": 23806,
+      "rev_date": "2026-09-13T01:00:36Z",
+      "scrape_date": "2026-09-13T12:17:08.658445749Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "2.1.270",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/hpz2ddsik89y08103ky9njhc5ppnwhm3-claude-code-2.1.270"
+      },
+      "system": "aarch64-linux",
+      "group": "claude",
+      "priority": 5
+    },
+    {
+      "attr_path": "claude-code",
+      "broken": false,
+      "derivation": "/nix/store/jfy5wpwz0akik0mkd67rd3921cbnkw6c-claude-code-2.1.270.drv",
+      "description": "Agentic coding tool from Anthropic",
+      "install_id": "claude-code",
+      "license": "Unfree",
+      "locked_url": "https://github.com/flox/floxenvs?rev=9af86e748bcaf6486df086e3ec8e1c4ba9a5dab1",
+      "name": "claude-code-2.1.270",
+      "pname": "claude-code",
+      "rev": "9af86e748bcaf6486df086e3ec8e1c4ba9a5dab1",
+      "rev_count": 23806,
+      "rev_date": "2026-09-13T01:00:36Z",
+      "scrape_date": "2026-09-13T12:17:08.658454536Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "2.1.270",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/xssisgsmlz9bw245if17qsyi55fzhxxd-claude-code-2.1.270"
+      },
+      "system": "x86_64-linux",
+      "group": "claude",
       "priority": 5
     },
     {
