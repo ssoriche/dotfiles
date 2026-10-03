@@ -61,7 +61,7 @@ glow.pkg-path = "glow"
 # exact pin from constraining anything else.
 atuin.pkg-path = "atuin"
 atuin.pkg-group = "atuin.sh"
-atuin.version = "18.19.0"
+atuin.version = "18.21.0"
 direnv.pkg-path = "direnv"
 direnv.version = ">=2.37.1"
 
@@ -168,7 +168,7 @@ lua = { pkg-path = "lua51Packages.lua", pkg-group = "lua.org" , outputs = "all" 
 # python — standalone, frequent updates. Renovate-managed (see renovate.json).
 uv.pkg-path = "uv"
 uv.pkg-group = "python"
-uv.version = "0.12.5"
+uv.version = "0.12.11"
 
 # linters — standalone analysis tools
 typos = { pkg-path = "typos", pkg-group = "linters" }
@@ -185,21 +185,21 @@ awscli2 = { pkg-path = "awscli2", pkg-group = "cloud" , outputs = "all" }
 # Renovate manager matches it as a unit.
 claude-code.pkg-path = "flox/claude-code"
 claude-code.pkg-group = "claude"
-claude-code.version = "2.1.263"
+claude-code.version = "2.1.270"
 
 # pi-coding-agent — fast-moving AI tooling. Renovate-managed (see renovate.json).
 pi-coding-agent.pkg-path = "pi-coding-agent"
 pi-coding-agent.pkg-group = "pi-coding-agent"
-pi-coding-agent.version = "0.84.4"
+pi-coding-agent.version = "0.85.1"
 
 # nono — AI agent sandbox
 nono = { pkg-path = "nono", pkg-group = "nono" }
 
 # herdr — fast-moving AI tooling; dual-catalog like claude-code above, watched
 # by flox-catalog-lag, Renovate follows pkg-path. Same block-order constraint.
-herdr.pkg-path = "herdr"
+herdr.pkg-path = "flox/herdr"
 herdr.pkg-group = "herdr"
-herdr.version = "0.8.2"
+herdr.version = "0.9.0"
 
 # container — Apple's Linux container runtime; isolate so it resolves to latest
 container = { pkg-path = "container", pkg-group = "container", systems = ["aarch64-darwin"] }
