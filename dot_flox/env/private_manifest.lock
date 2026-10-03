@@ -59,7 +59,7 @@
       "claude-code": {
         "pkg-path": "flox/claude-code",
         "pkg-group": "claude",
-        "version": "2.1.270"
+        "version": "2.1.288"
       },
       "coderabbit-cli": {
         "pkg-path": "flox/coderabbit-cli",
@@ -243,7 +243,7 @@
       "obsidian": {
         "pkg-path": "obsidian",
         "pkg-group": "obsidian",
-        "version": "1.13.4"
+        "version": "1.13.7"
       },
       "passage": {
         "pkg-path": "passage"
@@ -307,7 +307,7 @@
       "wezterm": {
         "pkg-path": "wezterm",
         "pkg-group": "wezterm",
-        "version": "2026-08-31"
+        "version": "2026-09-17"
       },
       "wget": {
         "pkg-path": "wget"
@@ -376,6 +376,93 @@
       },
       "system": "aarch64-darwin",
       "group": "aerospace",
+      "priority": 5
+    },
+    {
+      "attr_path": "atuin",
+      "broken": false,
+      "derivation": "/nix/store/8r520n2654hyg1dbs027liwhxbs8vhkn-atuin-18.21.0.drv",
+      "description": "Replacement for a shell history which records additional commands context with optional encrypted synchronization between machines",
+      "install_id": "atuin",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eaad089433ca2bb662274377d33df3d0e51ef28b",
+      "name": "atuin-18.21.0",
+      "pname": "atuin",
+      "rev": "eaad089433ca2bb662274377d33df3d0e51ef28b",
+      "rev_count": 1072397,
+      "rev_date": "2026-09-11T18:00:29Z",
+      "scrape_date": "2026-09-13T05:02:12.881950Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "18.21.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/0lq0dpsflz98phv84nvkvcygag55jb8d-atuin-18.21.0"
+      },
+      "system": "aarch64-darwin",
+      "group": "atuin.sh",
+      "priority": 5
+    },
+    {
+      "attr_path": "atuin",
+      "broken": false,
+      "derivation": "/nix/store/a4qqjdd834w9ihld7biga6mddbldh4z9-atuin-18.21.0.drv",
+      "description": "Replacement for a shell history which records additional commands context with optional encrypted synchronization between machines",
+      "install_id": "atuin",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eaad089433ca2bb662274377d33df3d0e51ef28b",
+      "name": "atuin-18.21.0",
+      "pname": "atuin",
+      "rev": "eaad089433ca2bb662274377d33df3d0e51ef28b",
+      "rev_count": 1072397,
+      "rev_date": "2026-09-11T18:00:29Z",
+      "scrape_date": "2026-09-13T05:37:22.807549Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "18.21.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/gryasjd3iz134m3dhavd6raq82y1g9n0-atuin-18.21.0"
+      },
+      "system": "aarch64-linux",
+      "group": "atuin.sh",
+      "priority": 5
+    },
+    {
+      "attr_path": "atuin",
+      "broken": false,
+      "derivation": "/nix/store/rqz9kxb4y201lif2cnpq1hwrlf7m38hs-atuin-18.21.0.drv",
+      "description": "Replacement for a shell history which records additional commands context with optional encrypted synchronization between machines",
+      "install_id": "atuin",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eaad089433ca2bb662274377d33df3d0e51ef28b",
+      "name": "atuin-18.21.0",
+      "pname": "atuin",
+      "rev": "eaad089433ca2bb662274377d33df3d0e51ef28b",
+      "rev_count": 1072397,
+      "rev_date": "2026-09-11T18:00:29Z",
+      "scrape_date": "2026-09-13T06:16:42.196263Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "18.21.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/qp45iix5wdp5l0hf1z242yhpjgqqixcs-atuin-18.21.0"
+      },
+      "system": "x86_64-linux",
+      "group": "atuin.sh",
       "priority": 5
     },
     {
@@ -2363,93 +2450,6 @@
       },
       "system": "x86_64-linux",
       "group": "nono",
-      "priority": 5
-    },
-    {
-      "attr_path": "obsidian",
-      "broken": false,
-      "derivation": "/nix/store/m2g7rrl3mdlpbbm2idhb2m7ayjw1yrg6-obsidian-1.13.4.drv",
-      "description": "Powerful knowledge base that works on top of a local folder of plain text Markdown files",
-      "install_id": "obsidian",
-      "license": "Obsidian End User Agreement",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=2fcb964de67fcf60b43471c55d5d99e61a9ccb5a",
-      "name": "obsidian-1.13.4",
-      "pname": "obsidian",
-      "rev": "2fcb964de67fcf60b43471c55d5d99e61a9ccb5a",
-      "rev_count": 1051473,
-      "rev_date": "2026-08-10T17:52:38Z",
-      "scrape_date": "2026-08-12T05:00:52.831609Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": true,
-      "version": "1.13.4",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/0jk7xgpvg81ihgd5a30jcz6ga3kgzfla-obsidian-1.13.4"
-      },
-      "system": "aarch64-darwin",
-      "group": "obsidian",
-      "priority": 5
-    },
-    {
-      "attr_path": "obsidian",
-      "broken": false,
-      "derivation": "/nix/store/8i6wg7ww5hgvy8cn2y75rsdva56pfanb-obsidian-1.13.4.drv",
-      "description": "Powerful knowledge base that works on top of a local folder of plain text Markdown files",
-      "install_id": "obsidian",
-      "license": "Obsidian End User Agreement",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=2fcb964de67fcf60b43471c55d5d99e61a9ccb5a",
-      "name": "obsidian-1.13.4",
-      "pname": "obsidian",
-      "rev": "2fcb964de67fcf60b43471c55d5d99e61a9ccb5a",
-      "rev_count": 1051473,
-      "rev_date": "2026-08-10T17:52:38Z",
-      "scrape_date": "2026-08-12T05:35:14.163263Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": true,
-      "version": "1.13.4",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/b75kma1bzvxrpnhypwh6sgjpfynnhj12-obsidian-1.13.4"
-      },
-      "system": "aarch64-linux",
-      "group": "obsidian",
-      "priority": 5
-    },
-    {
-      "attr_path": "obsidian",
-      "broken": false,
-      "derivation": "/nix/store/bjy98nl9lahyqzmx2wgh0c3jxkfxpmhg-obsidian-1.13.4.drv",
-      "description": "Powerful knowledge base that works on top of a local folder of plain text Markdown files",
-      "install_id": "obsidian",
-      "license": "Obsidian End User Agreement",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=2fcb964de67fcf60b43471c55d5d99e61a9ccb5a",
-      "name": "obsidian-1.13.4",
-      "pname": "obsidian",
-      "rev": "2fcb964de67fcf60b43471c55d5d99e61a9ccb5a",
-      "rev_count": 1051473,
-      "rev_date": "2026-08-10T17:52:38Z",
-      "scrape_date": "2026-08-12T06:15:38.532664Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": true,
-      "version": "1.13.4",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/jfay3xk030wn03ia14h1m5kzviv8vwzx-obsidian-1.13.4"
-      },
-      "system": "x86_64-linux",
-      "group": "obsidian",
       "priority": 5
     },
     {
@@ -6434,203 +6434,29 @@
       "priority": 5
     },
     {
-      "attr_path": "wezterm",
-      "broken": false,
-      "derivation": "/nix/store/7fc1x6zwlyxvg2040rdn3mmbliz700m1-wezterm-0-unstable-2026-08-31.drv",
-      "description": "GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust",
-      "install_id": "wezterm",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=c043004d1c6985732bcc1cbc5a9c9aecbbb4e0f0",
-      "name": "wezterm-0-unstable-2026-08-31",
-      "pname": "wezterm",
-      "rev": "c043004d1c6985732bcc1cbc5a9c9aecbbb4e0f0",
-      "rev_count": 1068089,
-      "rev_date": "2026-09-05T13:27:54Z",
-      "scrape_date": "2026-09-06T05:00:29.999901Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "2026-08-31",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/ixggi5g9yfvly5a818jf1m3hxgfiqqd6-wezterm-0-unstable-2026-08-31"
-      },
-      "system": "aarch64-darwin",
-      "group": "wezterm",
-      "priority": 5
-    },
-    {
-      "attr_path": "wezterm",
-      "broken": false,
-      "derivation": "/nix/store/5gvxq7zajgs199rdxxdav50404c6wg3r-wezterm-0-unstable-2026-08-31.drv",
-      "description": "GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust",
-      "install_id": "wezterm",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=c043004d1c6985732bcc1cbc5a9c9aecbbb4e0f0",
-      "name": "wezterm-0-unstable-2026-08-31",
-      "pname": "wezterm",
-      "rev": "c043004d1c6985732bcc1cbc5a9c9aecbbb4e0f0",
-      "rev_count": 1068089,
-      "rev_date": "2026-09-05T13:27:54Z",
-      "scrape_date": "2026-09-06T05:32:31.016283Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "2026-08-31",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/2cvni05c8cjjnxxdn5v2ridrd1w4qzkz-wezterm-0-unstable-2026-08-31"
-      },
-      "system": "aarch64-linux",
-      "group": "wezterm",
-      "priority": 5
-    },
-    {
-      "attr_path": "wezterm",
-      "broken": false,
-      "derivation": "/nix/store/vzg8aikjr05l5bfpx1cg3g5g2jlha43c-wezterm-0-unstable-2026-08-31.drv",
-      "description": "GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust",
-      "install_id": "wezterm",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=c043004d1c6985732bcc1cbc5a9c9aecbbb4e0f0",
-      "name": "wezterm-0-unstable-2026-08-31",
-      "pname": "wezterm",
-      "rev": "c043004d1c6985732bcc1cbc5a9c9aecbbb4e0f0",
-      "rev_count": 1068089,
-      "rev_date": "2026-09-05T13:27:54Z",
-      "scrape_date": "2026-09-06T06:09:12.837180Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "2026-08-31",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/504q5w06486qj1v4qvksyac2250m7jkx-wezterm-0-unstable-2026-08-31"
-      },
-      "system": "x86_64-linux",
-      "group": "wezterm",
-      "priority": 5
-    },
-    {
-      "attr_path": "atuin",
-      "broken": false,
-      "derivation": "/nix/store/8r520n2654hyg1dbs027liwhxbs8vhkn-atuin-18.21.0.drv",
-      "description": "Replacement for a shell history which records additional commands context with optional encrypted synchronization between machines",
-      "install_id": "atuin",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=eaad089433ca2bb662274377d33df3d0e51ef28b",
-      "name": "atuin-18.21.0",
-      "pname": "atuin",
-      "rev": "eaad089433ca2bb662274377d33df3d0e51ef28b",
-      "rev_count": 1072397,
-      "rev_date": "2026-09-11T18:00:29Z",
-      "scrape_date": "2026-09-13T05:02:12.881950Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "18.21.0",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/0lq0dpsflz98phv84nvkvcygag55jb8d-atuin-18.21.0"
-      },
-      "system": "aarch64-darwin",
-      "group": "atuin.sh",
-      "priority": 5
-    },
-    {
-      "attr_path": "atuin",
-      "broken": false,
-      "derivation": "/nix/store/a4qqjdd834w9ihld7biga6mddbldh4z9-atuin-18.21.0.drv",
-      "description": "Replacement for a shell history which records additional commands context with optional encrypted synchronization between machines",
-      "install_id": "atuin",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=eaad089433ca2bb662274377d33df3d0e51ef28b",
-      "name": "atuin-18.21.0",
-      "pname": "atuin",
-      "rev": "eaad089433ca2bb662274377d33df3d0e51ef28b",
-      "rev_count": 1072397,
-      "rev_date": "2026-09-11T18:00:29Z",
-      "scrape_date": "2026-09-13T05:37:22.807549Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "18.21.0",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/gryasjd3iz134m3dhavd6raq82y1g9n0-atuin-18.21.0"
-      },
-      "system": "aarch64-linux",
-      "group": "atuin.sh",
-      "priority": 5
-    },
-    {
-      "attr_path": "atuin",
-      "broken": false,
-      "derivation": "/nix/store/rqz9kxb4y201lif2cnpq1hwrlf7m38hs-atuin-18.21.0.drv",
-      "description": "Replacement for a shell history which records additional commands context with optional encrypted synchronization between machines",
-      "install_id": "atuin",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=eaad089433ca2bb662274377d33df3d0e51ef28b",
-      "name": "atuin-18.21.0",
-      "pname": "atuin",
-      "rev": "eaad089433ca2bb662274377d33df3d0e51ef28b",
-      "rev_count": 1072397,
-      "rev_date": "2026-09-11T18:00:29Z",
-      "scrape_date": "2026-09-13T06:16:42.196263Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "18.21.0",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/qp45iix5wdp5l0hf1z242yhpjgqqixcs-atuin-18.21.0"
-      },
-      "system": "x86_64-linux",
-      "group": "atuin.sh",
-      "priority": 5
-    },
-    {
       "attr_path": "claude-code",
       "broken": false,
-      "derivation": "/nix/store/mhcpypi2imhsfyw4c9iw662rkad3ygiq-claude-code-2.1.270.drv",
+      "derivation": "/nix/store/fbl6faaq76d05lklplv10isj11kdqqr1-claude-code-2.1.288.drv",
       "description": "Agentic coding tool from Anthropic",
       "install_id": "claude-code",
       "license": "Unfree",
-      "locked_url": "https://github.com/flox/floxenvs?rev=9af86e748bcaf6486df086e3ec8e1c4ba9a5dab1",
-      "name": "claude-code-2.1.270",
+      "locked_url": "https://github.com/flox/floxenvs?rev=4e050d82fd41fea7696ce9faa31f655e04a925ad",
+      "name": "claude-code-2.1.288",
       "pname": "claude-code",
-      "rev": "9af86e748bcaf6486df086e3ec8e1c4ba9a5dab1",
-      "rev_count": 23806,
-      "rev_date": "2026-09-13T01:00:36Z",
-      "scrape_date": "2026-09-13T12:17:08.658444845Z",
+      "rev": "4e050d82fd41fea7696ce9faa31f655e04a925ad",
+      "rev_count": 26829,
+      "rev_date": "2026-10-03T01:01:46Z",
+      "scrape_date": "2026-10-03T15:16:13.168047216Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": true,
-      "version": "2.1.270",
+      "version": "2.1.288",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/04kh1dk1zw26cg5n4ddjiizfkbg9x8pk-claude-code-2.1.270"
+        "out": "/nix/store/9b1nd3s155ax8mq219r10rrvgf5kwm31-claude-code-2.1.288"
       },
       "system": "aarch64-darwin",
       "group": "claude",
@@ -6639,27 +6465,27 @@
     {
       "attr_path": "claude-code",
       "broken": false,
-      "derivation": "/nix/store/pvqiyy5gbs6g2v44sbkdsacjzpnkzlly-claude-code-2.1.270.drv",
+      "derivation": "/nix/store/b3h99gfxkn1w3j3kp35yrwpgcbjzc9p9-claude-code-2.1.288.drv",
       "description": "Agentic coding tool from Anthropic",
       "install_id": "claude-code",
       "license": "Unfree",
-      "locked_url": "https://github.com/flox/floxenvs?rev=9af86e748bcaf6486df086e3ec8e1c4ba9a5dab1",
-      "name": "claude-code-2.1.270",
+      "locked_url": "https://github.com/flox/floxenvs?rev=4e050d82fd41fea7696ce9faa31f655e04a925ad",
+      "name": "claude-code-2.1.288",
       "pname": "claude-code",
-      "rev": "9af86e748bcaf6486df086e3ec8e1c4ba9a5dab1",
-      "rev_count": 23806,
-      "rev_date": "2026-09-13T01:00:36Z",
-      "scrape_date": "2026-09-13T12:17:08.658445749Z",
+      "rev": "4e050d82fd41fea7696ce9faa31f655e04a925ad",
+      "rev_count": 26829,
+      "rev_date": "2026-10-03T01:01:46Z",
+      "scrape_date": "2026-10-03T15:16:13.168063992Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": true,
-      "version": "2.1.270",
+      "version": "2.1.288",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/hpz2ddsik89y08103ky9njhc5ppnwhm3-claude-code-2.1.270"
+        "out": "/nix/store/5lpshk54ak35cyahvns8h2nl2vsw13h8-claude-code-2.1.288"
       },
       "system": "aarch64-linux",
       "group": "claude",
@@ -6668,30 +6494,210 @@
     {
       "attr_path": "claude-code",
       "broken": false,
-      "derivation": "/nix/store/jfy5wpwz0akik0mkd67rd3921cbnkw6c-claude-code-2.1.270.drv",
+      "derivation": "/nix/store/7g30hrr4n8zmrmva5pf4ll2bd0l9am9f-claude-code-2.1.288.drv",
       "description": "Agentic coding tool from Anthropic",
       "install_id": "claude-code",
       "license": "Unfree",
-      "locked_url": "https://github.com/flox/floxenvs?rev=9af86e748bcaf6486df086e3ec8e1c4ba9a5dab1",
-      "name": "claude-code-2.1.270",
+      "locked_url": "https://github.com/flox/floxenvs?rev=4e050d82fd41fea7696ce9faa31f655e04a925ad",
+      "name": "claude-code-2.1.288",
       "pname": "claude-code",
-      "rev": "9af86e748bcaf6486df086e3ec8e1c4ba9a5dab1",
-      "rev_count": 23806,
-      "rev_date": "2026-09-13T01:00:36Z",
-      "scrape_date": "2026-09-13T12:17:08.658454536Z",
+      "rev": "4e050d82fd41fea7696ce9faa31f655e04a925ad",
+      "rev_count": 26829,
+      "rev_date": "2026-10-03T01:01:46Z",
+      "scrape_date": "2026-10-03T15:16:13.168066428Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": true,
-      "version": "2.1.270",
+      "version": "2.1.288",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/xssisgsmlz9bw245if17qsyi55fzhxxd-claude-code-2.1.270"
+        "out": "/nix/store/a72rlc3fnzfdmvv0mc3ybvrkk0nc4s8v-claude-code-2.1.288"
       },
       "system": "x86_64-linux",
       "group": "claude",
+      "priority": 5
+    },
+    {
+      "attr_path": "obsidian",
+      "broken": false,
+      "derivation": "/nix/store/9ayjrl1v1ib609ka83iwqhlhri0ydaa5-obsidian-1.13.7.drv",
+      "description": "Powerful knowledge base that works on top of a local folder of plain text Markdown files",
+      "install_id": "obsidian",
+      "license": "Obsidian End User Agreement",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c59305bab2065cfecc4944690d9eedbb56f3a9fa",
+      "name": "obsidian-1.13.7",
+      "pname": "obsidian",
+      "rev": "c59305bab2065cfecc4944690d9eedbb56f3a9fa",
+      "rev_count": 1083223,
+      "rev_date": "2026-10-01T02:47:39Z",
+      "scrape_date": "2026-10-02T05:00:14.635557Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "1.13.7",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/9i50yqyi4d6schza5bcxyd7qb0vqdwhy-obsidian-1.13.7"
+      },
+      "system": "aarch64-darwin",
+      "group": "obsidian",
+      "priority": 5
+    },
+    {
+      "attr_path": "obsidian",
+      "broken": false,
+      "derivation": "/nix/store/fbp3bz19m31vxrcygsg9a61qlha16dbv-obsidian-1.13.7.drv",
+      "description": "Powerful knowledge base that works on top of a local folder of plain text Markdown files",
+      "install_id": "obsidian",
+      "license": "Obsidian End User Agreement",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c59305bab2065cfecc4944690d9eedbb56f3a9fa",
+      "name": "obsidian-1.13.7",
+      "pname": "obsidian",
+      "rev": "c59305bab2065cfecc4944690d9eedbb56f3a9fa",
+      "rev_count": 1083223,
+      "rev_date": "2026-10-01T02:47:39Z",
+      "scrape_date": "2026-10-02T05:33:48.328173Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "1.13.7",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/mna1dj0r776kk8s4qki4nq7dxqkrgmlh-obsidian-1.13.7"
+      },
+      "system": "aarch64-linux",
+      "group": "obsidian",
+      "priority": 5
+    },
+    {
+      "attr_path": "obsidian",
+      "broken": false,
+      "derivation": "/nix/store/jd5akcfgvi1iv3n1pymcrv6qybhc4bwb-obsidian-1.13.7.drv",
+      "description": "Powerful knowledge base that works on top of a local folder of plain text Markdown files",
+      "install_id": "obsidian",
+      "license": "Obsidian End User Agreement",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c59305bab2065cfecc4944690d9eedbb56f3a9fa",
+      "name": "obsidian-1.13.7",
+      "pname": "obsidian",
+      "rev": "c59305bab2065cfecc4944690d9eedbb56f3a9fa",
+      "rev_count": 1083223,
+      "rev_date": "2026-10-01T02:47:39Z",
+      "scrape_date": "2026-10-02T06:10:25.258687Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "1.13.7",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/v32p3ymx5vc587l7p6qbkar9c4nv2v45-obsidian-1.13.7"
+      },
+      "system": "x86_64-linux",
+      "group": "obsidian",
+      "priority": 5
+    },
+    {
+      "attr_path": "wezterm",
+      "broken": false,
+      "derivation": "/nix/store/6j4rsjykbpbyiz1yf5hnh7avw0kzxxgy-wezterm-0-unstable-2026-09-17.drv",
+      "description": "GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust",
+      "install_id": "wezterm",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c59305bab2065cfecc4944690d9eedbb56f3a9fa",
+      "name": "wezterm-0-unstable-2026-09-17",
+      "pname": "wezterm",
+      "rev": "c59305bab2065cfecc4944690d9eedbb56f3a9fa",
+      "rev_count": 1083223,
+      "rev_date": "2026-10-01T02:47:39Z",
+      "scrape_date": "2026-10-02T05:03:30.926451Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2026-09-17",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/mlk325mic9hj1y93x0mnbnrjc68y7wv2-wezterm-0-unstable-2026-09-17"
+      },
+      "system": "aarch64-darwin",
+      "group": "wezterm",
+      "priority": 5
+    },
+    {
+      "attr_path": "wezterm",
+      "broken": false,
+      "derivation": "/nix/store/714k2zb7a7q0mkcgjjng6q17lajbc4zh-wezterm-0-unstable-2026-09-17.drv",
+      "description": "GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust",
+      "install_id": "wezterm",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c59305bab2065cfecc4944690d9eedbb56f3a9fa",
+      "name": "wezterm-0-unstable-2026-09-17",
+      "pname": "wezterm",
+      "rev": "c59305bab2065cfecc4944690d9eedbb56f3a9fa",
+      "rev_count": 1083223,
+      "rev_date": "2026-10-01T02:47:39Z",
+      "scrape_date": "2026-10-02T05:37:05.233494Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2026-09-17",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/icxpnwhjvlbqqc4bsfs1znnlby66w2nl-wezterm-0-unstable-2026-09-17"
+      },
+      "system": "aarch64-linux",
+      "group": "wezterm",
+      "priority": 5
+    },
+    {
+      "attr_path": "wezterm",
+      "broken": false,
+      "derivation": "/nix/store/5q7sd6s5sw2lfa8qf4g6k44n6c38r52s-wezterm-0-unstable-2026-09-17.drv",
+      "description": "GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust",
+      "install_id": "wezterm",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c59305bab2065cfecc4944690d9eedbb56f3a9fa",
+      "name": "wezterm-0-unstable-2026-09-17",
+      "pname": "wezterm",
+      "rev": "c59305bab2065cfecc4944690d9eedbb56f3a9fa",
+      "rev_count": 1083223,
+      "rev_date": "2026-10-01T02:47:39Z",
+      "scrape_date": "2026-10-02T06:13:47.161617Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2026-09-17",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/mmvpz8sgpp4gg1lwsjv68knvkzqmsdwk-wezterm-0-unstable-2026-09-17"
+      },
+      "system": "x86_64-linux",
+      "group": "wezterm",
       "priority": 5
     },
     {
