@@ -185,7 +185,7 @@ awscli2 = { pkg-path = "awscli2", pkg-group = "cloud" , outputs = "all" }
 # Renovate manager matches it as a unit.
 claude-code.pkg-path = "flox/claude-code"
 claude-code.pkg-group = "claude"
-claude-code.version = "2.1.288"
+claude-code.version = "2.1.289"
 
 # pi-coding-agent — fast-moving AI tooling. Renovate-managed (see renovate.json).
 pi-coding-agent.pkg-path = "pi-coding-agent"
