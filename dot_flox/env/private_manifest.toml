@@ -52,7 +52,7 @@ jnv.pkg-path = "jnv"
 jnv.version = ">=0.7.1"
 fastgron.pkg-path = "fastgron"
 fx.pkg-path = "fx"
-fx.version = ">=39.2.0"
+fx.version = ">=40.0.0"
 sd.pkg-path = "sd"
 glow.pkg-path = "glow"
 
