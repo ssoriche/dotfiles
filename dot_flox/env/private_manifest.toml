@@ -33,7 +33,7 @@ fd.version = "10.5.0"
 # rule above exists because independently-bumped exact pins in one group
 # eventually stop resolving together. Open-ended floors never have that problem.
 fzf.pkg-path = "fzf"
-fzf.version = ">=0.74.3"
+fzf.version = ">=0.74.4"
 eza.pkg-path = "eza"
 eza.version = ">=0.23.5"
 tree.pkg-path = "tree"
@@ -199,7 +199,7 @@ nono = { pkg-path = "nono", pkg-group = "nono" }
 # by flox-catalog-lag, Renovate follows pkg-path. Same block-order constraint.
 herdr.pkg-path = "flox/herdr"
 herdr.pkg-group = "herdr"
-herdr.version = "0.9.0"
+herdr.version = "0.9.3"
 
 # container — Apple's Linux container runtime; isolate so it resolves to latest
 container = { pkg-path = "container", pkg-group = "container", systems = ["aarch64-darwin"] }
@@ -228,7 +228,7 @@ obsidian.pkg-group = "obsidian"
 obsidian.version = "1.13.7"
 halloy.pkg-path = "halloy"
 halloy.pkg-group = "halloy"
-halloy.version = "2026.8"
+halloy.version = "2026.9"
 maccy.pkg-path = "maccy"
 maccy.pkg-group = "maccy"
 maccy.systems = ["aarch64-darwin"]
