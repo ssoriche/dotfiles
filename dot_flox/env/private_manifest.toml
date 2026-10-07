@@ -89,7 +89,7 @@ _1password-cli.version = ">=2.39.0"
 btop.pkg-path = "btop"
 btop.version = ">=1.4.7"
 pv.pkg-path = "pv"
-pv.version = ">=1.11.0"
+pv.version = ">=1.12.0"
 ncdu.pkg-path = "ncdu"
 ncdu.version = ">=2.11.1"
 spacer.pkg-path = "spacer"
@@ -98,7 +98,7 @@ moreutils.pkg-path = "moreutils"
 tldr.pkg-path = "tldr"
 tldr.outputs = "all"
 chezmoi.pkg-path = "chezmoi"
-chezmoi.version = ">=2.72.1"
+chezmoi.version = ">=2.72.2"
 q.pkg-path = "q"
 q.version = ">=0.19.12"
 dyff.pkg-path = "dyff"
@@ -154,7 +154,7 @@ tree-sitter = { pkg-path = "tree-sitter", pkg-group = "editors" }
 # 1.26.5 the lock already resolved so this stays behaviour-neutral.
 go.pkg-path = "go"
 go.pkg-group = "golang"
-go.version = "1.26.7"
+go.version = "1.26.8"
 golangci-lint = { pkg-path = "golangci-lint", pkg-group = "golang" }
 
 # node — JS runtimes
@@ -185,12 +185,12 @@ awscli2 = { pkg-path = "awscli2", pkg-group = "cloud" , outputs = "all" }
 # Renovate manager matches it as a unit.
 claude-code.pkg-path = "flox/claude-code"
 claude-code.pkg-group = "claude"
-claude-code.version = "2.1.270"
+claude-code.version = "2.1.289"
 
 # pi-coding-agent — fast-moving AI tooling. Renovate-managed (see renovate.json).
 pi-coding-agent.pkg-path = "pi-coding-agent"
 pi-coding-agent.pkg-group = "pi-coding-agent"
-pi-coding-agent.version = "0.85.1"
+pi-coding-agent.version = "1.0.0"
 
 # nono — AI agent sandbox
 nono = { pkg-path = "nono", pkg-group = "nono" }
@@ -222,17 +222,17 @@ aerospace.systems = ["aarch64-darwin"]
 aerospace.version = "0.21.3-Beta"
 wezterm.pkg-path = "wezterm"
 wezterm.pkg-group = "wezterm"
-wezterm.version = "2026-08-31"
+wezterm.version = "2026-09-17"
 obsidian.pkg-path = "obsidian"
 obsidian.pkg-group = "obsidian"
-obsidian.version = "1.13.4"
+obsidian.version = "1.13.7"
 halloy.pkg-path = "halloy"
 halloy.pkg-group = "halloy"
-halloy.version = "2026.8"
+halloy.version = "2026.9"
 maccy.pkg-path = "maccy"
 maccy.pkg-group = "maccy"
 maccy.systems = ["aarch64-darwin"]
-maccy.version = "2.7.0"
+maccy.version = "2.7.1"
 
 # Flake-based packages (pinned to specific commits/repos)
 coderabbit-cli.pkg-path = "flox/coderabbit-cli"
