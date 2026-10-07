@@ -145,6 +145,8 @@ The symptom is diagnosable only from the Woodpecker API — `curl -H "Authorizat
 
 For detailed operational docs (adding/removing packages, troubleshooting, etc.), see the flox skill: `.claude/skills/flox/SKILL.md`.
 
+**Renovate PRs merge on approval.** Renovate arms Forgejo's scheduled merge when it opens each non-major PR, and approving it is the only manual step: Forgejo then rebase-merges onto current `main` (a PR being behind `main` is fine; `block_merge_on_outdated_branch` is off), after which `flox-relock.yaml` regenerates the lock on `main`. Do not rebase by hand. Only PRs created after the setting landed are armed, and majors are deliberately not: merge those with `tea pulls merge --style rebase-merge <N>`. The branch protection (one approval + the `ci/woodpecker/pr/validate` status from `.woodpecker/validate.yaml`, with `woodpecker-ci` whitelisted for the relock's direct push to `main`) and the merge style are managed in Terraform in the homelab repo at `kubernetes/cicd/forgejo/tf/`, not the Forgejo UI; never rename `validate.yaml`, since the status context comes from its filename. Full workflow and gotchas: homelab `CLAUDE.md` -> "Merging Pull Requests".
+
 ## Common Development Commands
 
 ### Chezmoi Operations
