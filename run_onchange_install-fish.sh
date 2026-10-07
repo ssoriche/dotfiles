@@ -15,8 +15,8 @@
 
 set -euo pipefail
 
-NIXPKGS_REV="d849bb215dcdf71bce3e686839ccdb4219e84b2f"
-EXPECTED_VERSION="4.7.1"
+NIXPKGS_REV="aa48d347080940b8a2b8d2f48228674e280a3514"
+EXPECTED_VERSION="4.9.3"
 FLAKE_REF="github:NixOS/nixpkgs/${NIXPKGS_REV}#fish"
 
 if ! command -v nix >/dev/null 2>&1; then
