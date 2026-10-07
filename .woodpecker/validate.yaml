@@ -1,0 +1,19 @@
+# The required status check for main. Two absences are the point of this file:
+#
+#   no `path:` filter - flox-relock.yaml only runs when the manifest changes, so
+#     it cannot be a required check: a PR that does not touch the manifest would
+#     never get a status and could never merge.
+#   no `evaluate:` author guard - same reasoning as the homelab validate.yaml.
+#
+# Do not rename this file. Woodpecker derives the status context from the
+# filename, and branch protection pins the exact string "ci/woodpecker/pr/validate".
+when:
+  - event: pull_request
+  - event: push
+    branch: main
+
+steps:
+  - name: manifest-parses
+    image: python:3.13-alpine
+    commands:
+      - python -c 'import tomllib,sys; tomllib.load(open("dot_flox/env/private_manifest.toml","rb"))'
