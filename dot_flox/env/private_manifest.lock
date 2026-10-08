@@ -59,7 +59,7 @@
       "claude-code": {
         "pkg-path": "flox/claude-code",
         "pkg-group": "claude",
-        "version": "2.1.292"
+        "version": "2.1.293"
       },
       "coderabbit-cli": {
         "pkg-path": "flox/coderabbit-cli",
@@ -463,99 +463,6 @@
       },
       "system": "x86_64-linux",
       "group": "atuin.sh",
-      "priority": 5
-    },
-    {
-      "attr_path": "claude-code",
-      "broken": false,
-      "derivation": "/nix/store/v3x4wzlcfyp8aka9ap8z0y711x3d04g8-claude-code-2.1.292.drv",
-      "description": "Agentic coding tool from Anthropic",
-      "install_id": "claude-code",
-      "license": "Unfree",
-      "locked_url": "https://github.com/flox/floxenvs?rev=fdb9dd6039047af4ac3c28648e02d42242acd8f4",
-      "name": "claude-code-2.1.292",
-      "pname": "claude-code",
-      "rev": "fdb9dd6039047af4ac3c28648e02d42242acd8f4",
-      "rev_count": 27345,
-      "rev_date": "2026-10-07T01:00:39Z",
-      "scrape_date": "2026-10-07T12:04:57.829818112Z",
-      "stabilities": [
-        "unstable",
-        "stable",
-        "staging"
-      ],
-      "unfree": true,
-      "version": "2.1.292",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/xqiy155ylx0glsl1g25bg2gagp6pck0q-claude-code-2.1.292"
-      },
-      "system": "aarch64-darwin",
-      "group": "claude",
-      "priority": 5
-    },
-    {
-      "attr_path": "claude-code",
-      "broken": false,
-      "derivation": "/nix/store/smvpvq6216sng5m3hiaivd6cg4dgdc7d-claude-code-2.1.292.drv",
-      "description": "Agentic coding tool from Anthropic",
-      "install_id": "claude-code",
-      "license": "Unfree",
-      "locked_url": "https://github.com/flox/floxenvs?rev=fdb9dd6039047af4ac3c28648e02d42242acd8f4",
-      "name": "claude-code-2.1.292",
-      "pname": "claude-code",
-      "rev": "fdb9dd6039047af4ac3c28648e02d42242acd8f4",
-      "rev_count": 27345,
-      "rev_date": "2026-10-07T01:00:39Z",
-      "scrape_date": "2026-10-07T12:04:57.829821968Z",
-      "stabilities": [
-        "unstable",
-        "stable",
-        "staging"
-      ],
-      "unfree": true,
-      "version": "2.1.292",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/l89wg1zg5wjf8spxb0a0vygad4yhb223-claude-code-2.1.292"
-      },
-      "system": "aarch64-linux",
-      "group": "claude",
-      "priority": 5
-    },
-    {
-      "attr_path": "claude-code",
-      "broken": false,
-      "derivation": "/nix/store/q94s6zhyrsjxvmflsdybmdi5knsh35vb-claude-code-2.1.292.drv",
-      "description": "Agentic coding tool from Anthropic",
-      "install_id": "claude-code",
-      "license": "Unfree",
-      "locked_url": "https://github.com/flox/floxenvs?rev=fdb9dd6039047af4ac3c28648e02d42242acd8f4",
-      "name": "claude-code-2.1.292",
-      "pname": "claude-code",
-      "rev": "fdb9dd6039047af4ac3c28648e02d42242acd8f4",
-      "rev_count": 27345,
-      "rev_date": "2026-10-07T01:00:39Z",
-      "scrape_date": "2026-10-07T12:04:57.829822773Z",
-      "stabilities": [
-        "unstable",
-        "stable",
-        "staging"
-      ],
-      "unfree": true,
-      "version": "2.1.292",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/9vcy2ak8j0anp4fadz834pqhbin4cgk1-claude-code-2.1.292"
-      },
-      "system": "x86_64-linux",
-      "group": "claude",
       "priority": 5
     },
     {
@@ -1296,6 +1203,93 @@
       },
       "system": "x86_64-linux",
       "group": "golang",
+      "priority": 5
+    },
+    {
+      "attr_path": "halloy",
+      "broken": false,
+      "derivation": "/nix/store/nzsyks38710mvjbnnx48ibmav3cxc0cw-halloy-2026.8.drv",
+      "description": "IRC application",
+      "install_id": "halloy",
+      "license": "GPL-3.0-only",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=494ce7fd23ff6a5dff39e1fb11e9b6f2ac74bf25",
+      "name": "halloy-2026.8",
+      "pname": "halloy",
+      "rev": "494ce7fd23ff6a5dff39e1fb11e9b6f2ac74bf25",
+      "rev_count": 1085777,
+      "rev_date": "2026-10-05T05:43:54Z",
+      "scrape_date": "2026-10-06T05:00:39.168073Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2026.8",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/0j540f5cgkcy277dybb393hzqbkmdp5d-halloy-2026.8"
+      },
+      "system": "aarch64-darwin",
+      "group": "halloy",
+      "priority": 5
+    },
+    {
+      "attr_path": "halloy",
+      "broken": false,
+      "derivation": "/nix/store/jgx9b3w7h4xsfvg8khdzybqh2v8wjisr-halloy-2026.8.drv",
+      "description": "IRC application",
+      "install_id": "halloy",
+      "license": "GPL-3.0-only",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=494ce7fd23ff6a5dff39e1fb11e9b6f2ac74bf25",
+      "name": "halloy-2026.8",
+      "pname": "halloy",
+      "rev": "494ce7fd23ff6a5dff39e1fb11e9b6f2ac74bf25",
+      "rev_count": 1085777,
+      "rev_date": "2026-10-05T05:43:54Z",
+      "scrape_date": "2026-10-06T05:33:56.669604Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2026.8",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/rvdigkpivm01ys1bi1pfchbwiw4l6z1w-halloy-2026.8"
+      },
+      "system": "aarch64-linux",
+      "group": "halloy",
+      "priority": 5
+    },
+    {
+      "attr_path": "halloy",
+      "broken": false,
+      "derivation": "/nix/store/0ksdq9z1rsin0p7qkq7c63pm2xnajpyl-halloy-2026.8.drv",
+      "description": "IRC application",
+      "install_id": "halloy",
+      "license": "GPL-3.0-only",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=494ce7fd23ff6a5dff39e1fb11e9b6f2ac74bf25",
+      "name": "halloy-2026.8",
+      "pname": "halloy",
+      "rev": "494ce7fd23ff6a5dff39e1fb11e9b6f2ac74bf25",
+      "rev_count": 1085777,
+      "rev_date": "2026-10-05T05:43:54Z",
+      "scrape_date": "2026-10-06T06:11:17.519488Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2026.8",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/ggakckld6c2mkcxs0h4f8xh9wrc5pgk8-halloy-2026.8"
+      },
+      "system": "x86_64-linux",
+      "group": "halloy",
       "priority": 5
     },
     {
@@ -6625,90 +6619,96 @@
       "priority": 5
     },
     {
-      "attr_path": "halloy",
+      "attr_path": "claude-code",
       "broken": false,
-      "derivation": "/nix/store/nzsyks38710mvjbnnx48ibmav3cxc0cw-halloy-2026.8.drv",
-      "description": "IRC application",
-      "install_id": "halloy",
-      "license": "GPL-3.0-only",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=494ce7fd23ff6a5dff39e1fb11e9b6f2ac74bf25",
-      "name": "halloy-2026.8",
-      "pname": "halloy",
-      "rev": "494ce7fd23ff6a5dff39e1fb11e9b6f2ac74bf25",
-      "rev_count": 1085777,
-      "rev_date": "2026-10-05T05:43:54Z",
-      "scrape_date": "2026-10-06T05:00:39.168073Z",
+      "derivation": "/nix/store/clmrnqmdsv3xyi459hvj3fnm5pqjj936-claude-code-2.1.293.drv",
+      "description": "Agentic coding tool from Anthropic",
+      "install_id": "claude-code",
+      "license": "Unfree",
+      "locked_url": "https://github.com/flox/floxenvs?rev=490a80239638987c07e8106e8cbf4e83d9b046fc",
+      "name": "claude-code-2.1.293",
+      "pname": "claude-code",
+      "rev": "490a80239638987c07e8106e8cbf4e83d9b046fc",
+      "rev_count": 27401,
+      "rev_date": "2026-10-07T18:52:22Z",
+      "scrape_date": "2026-10-08T00:57:54.246705120Z",
       "stabilities": [
-        "unstable"
+        "unstable",
+        "stable",
+        "staging"
       ],
-      "unfree": false,
-      "version": "2026.8",
+      "unfree": true,
+      "version": "2.1.293",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/0j540f5cgkcy277dybb393hzqbkmdp5d-halloy-2026.8"
+        "out": "/nix/store/jqbl194p6df86m3b7z2kip1scxrdgb7q-claude-code-2.1.293"
       },
       "system": "aarch64-darwin",
-      "group": "halloy",
+      "group": "claude",
       "priority": 5
     },
     {
-      "attr_path": "halloy",
+      "attr_path": "claude-code",
       "broken": false,
-      "derivation": "/nix/store/jgx9b3w7h4xsfvg8khdzybqh2v8wjisr-halloy-2026.8.drv",
-      "description": "IRC application",
-      "install_id": "halloy",
-      "license": "GPL-3.0-only",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=494ce7fd23ff6a5dff39e1fb11e9b6f2ac74bf25",
-      "name": "halloy-2026.8",
-      "pname": "halloy",
-      "rev": "494ce7fd23ff6a5dff39e1fb11e9b6f2ac74bf25",
-      "rev_count": 1085777,
-      "rev_date": "2026-10-05T05:43:54Z",
-      "scrape_date": "2026-10-06T05:33:56.669604Z",
+      "derivation": "/nix/store/a5lczsb6z6x148galyqzk7wh198g08yx-claude-code-2.1.293.drv",
+      "description": "Agentic coding tool from Anthropic",
+      "install_id": "claude-code",
+      "license": "Unfree",
+      "locked_url": "https://github.com/flox/floxenvs?rev=490a80239638987c07e8106e8cbf4e83d9b046fc",
+      "name": "claude-code-2.1.293",
+      "pname": "claude-code",
+      "rev": "490a80239638987c07e8106e8cbf4e83d9b046fc",
+      "rev_count": 27401,
+      "rev_date": "2026-10-07T18:52:22Z",
+      "scrape_date": "2026-10-08T00:57:54.246713058Z",
       "stabilities": [
-        "unstable"
+        "unstable",
+        "stable",
+        "staging"
       ],
-      "unfree": false,
-      "version": "2026.8",
+      "unfree": true,
+      "version": "2.1.293",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/rvdigkpivm01ys1bi1pfchbwiw4l6z1w-halloy-2026.8"
+        "out": "/nix/store/svd35q4py70jzr6ydp5nzs6d5ylx03hc-claude-code-2.1.293"
       },
       "system": "aarch64-linux",
-      "group": "halloy",
+      "group": "claude",
       "priority": 5
     },
     {
-      "attr_path": "halloy",
+      "attr_path": "claude-code",
       "broken": false,
-      "derivation": "/nix/store/0ksdq9z1rsin0p7qkq7c63pm2xnajpyl-halloy-2026.8.drv",
-      "description": "IRC application",
-      "install_id": "halloy",
-      "license": "GPL-3.0-only",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=494ce7fd23ff6a5dff39e1fb11e9b6f2ac74bf25",
-      "name": "halloy-2026.8",
-      "pname": "halloy",
-      "rev": "494ce7fd23ff6a5dff39e1fb11e9b6f2ac74bf25",
-      "rev_count": 1085777,
-      "rev_date": "2026-10-05T05:43:54Z",
-      "scrape_date": "2026-10-06T06:11:17.519488Z",
+      "derivation": "/nix/store/cf6vr41lcpdscjl6ny8addaawp5v3x2w-claude-code-2.1.293.drv",
+      "description": "Agentic coding tool from Anthropic",
+      "install_id": "claude-code",
+      "license": "Unfree",
+      "locked_url": "https://github.com/flox/floxenvs?rev=490a80239638987c07e8106e8cbf4e83d9b046fc",
+      "name": "claude-code-2.1.293",
+      "pname": "claude-code",
+      "rev": "490a80239638987c07e8106e8cbf4e83d9b046fc",
+      "rev_count": 27401,
+      "rev_date": "2026-10-07T18:52:22Z",
+      "scrape_date": "2026-10-08T00:57:54.246715971Z",
       "stabilities": [
-        "unstable"
+        "unstable",
+        "stable",
+        "staging"
       ],
-      "unfree": false,
-      "version": "2026.8",
+      "unfree": true,
+      "version": "2.1.293",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/ggakckld6c2mkcxs0h4f8xh9wrc5pgk8-halloy-2026.8"
+        "out": "/nix/store/nffzw54g1jagvckk8j6kg38mv5f2vqzp-claude-code-2.1.293"
       },
       "system": "x86_64-linux",
-      "group": "halloy",
+      "group": "claude",
       "priority": 5
     },
     {
