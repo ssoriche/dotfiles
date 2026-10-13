@@ -33,7 +33,7 @@ fd.version = "10.5.0"
 # rule above exists because independently-bumped exact pins in one group
 # eventually stop resolving together. Open-ended floors never have that problem.
 fzf.pkg-path = "fzf"
-fzf.version = ">=0.74.4"
+fzf.version = ">=0.74.5"
 eza.pkg-path = "eza"
 eza.version = ">=0.23.5"
 tree.pkg-path = "tree"
