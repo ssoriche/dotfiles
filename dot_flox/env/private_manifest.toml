@@ -144,7 +144,7 @@ gh-dash = { pkg-path = "gh-dash", pkg-group = "vcs" }
 # satisfies neovim's pin.
 neovim.pkg-path = "neovim"
 neovim.pkg-group = "editors"
-neovim.version = "0.12.5"
+neovim.version = "0.12.6"
 lua-language-server = { pkg-path = "lua-language-server", pkg-group = "editors" }
 tree-sitter = { pkg-path = "tree-sitter", pkg-group = "editors" }
 
