@@ -304,6 +304,12 @@
         "pkg-group": "python",
         "version": "0.13.0"
       },
+      "vorssaint": {
+        "flake": "github:boborbt/nixpkgs/5f3c800a7375dc6f47ec308de2cd32b4c36a9348#vorssaint",
+        "systems": [
+          "aarch64-darwin"
+        ]
+      },
       "wezterm": {
         "pkg-path": "wezterm",
         "pkg-group": "wezterm",
@@ -463,6 +469,99 @@
       },
       "system": "x86_64-linux",
       "group": "atuin.sh",
+      "priority": 5
+    },
+    {
+      "attr_path": "claude-code",
+      "broken": false,
+      "derivation": "/nix/store/shlsz2jg9zwdrp6gilbqgj6pvv037liq-claude-code-2.1.303.drv",
+      "description": "Agentic coding tool from Anthropic",
+      "install_id": "claude-code",
+      "license": "Unfree",
+      "locked_url": "https://github.com/flox/floxenvs?rev=0d22191d11862731c079ead5271bad477bb87a7f",
+      "name": "claude-code-2.1.303",
+      "pname": "claude-code",
+      "rev": "0d22191d11862731c079ead5271bad477bb87a7f",
+      "rev_count": 29313,
+      "rev_date": "2026-10-19T01:03:09Z",
+      "scrape_date": "2026-10-19T12:06:52.540698662Z",
+      "stabilities": [
+        "unstable",
+        "stable",
+        "staging"
+      ],
+      "unfree": true,
+      "version": "2.1.303",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/wyc7hni8i1zm1k7rrx2pq263yp1lm8x1-claude-code-2.1.303"
+      },
+      "system": "aarch64-darwin",
+      "group": "claude",
+      "priority": 5
+    },
+    {
+      "attr_path": "claude-code",
+      "broken": false,
+      "derivation": "/nix/store/mz98f5jivp21knk6h07345l1c5zplqvs-claude-code-2.1.303.drv",
+      "description": "Agentic coding tool from Anthropic",
+      "install_id": "claude-code",
+      "license": "Unfree",
+      "locked_url": "https://github.com/flox/floxenvs?rev=0d22191d11862731c079ead5271bad477bb87a7f",
+      "name": "claude-code-2.1.303",
+      "pname": "claude-code",
+      "rev": "0d22191d11862731c079ead5271bad477bb87a7f",
+      "rev_count": 29313,
+      "rev_date": "2026-10-19T01:03:09Z",
+      "scrape_date": "2026-10-19T12:06:52.540702288Z",
+      "stabilities": [
+        "unstable",
+        "stable",
+        "staging"
+      ],
+      "unfree": true,
+      "version": "2.1.303",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/6819yq8938w81a8iqv9966gcbms0p41h-claude-code-2.1.303"
+      },
+      "system": "aarch64-linux",
+      "group": "claude",
+      "priority": 5
+    },
+    {
+      "attr_path": "claude-code",
+      "broken": false,
+      "derivation": "/nix/store/qkf1bqzak92lllvf6ig5h7nfj9sxw1xj-claude-code-2.1.303.drv",
+      "description": "Agentic coding tool from Anthropic",
+      "install_id": "claude-code",
+      "license": "Unfree",
+      "locked_url": "https://github.com/flox/floxenvs?rev=0d22191d11862731c079ead5271bad477bb87a7f",
+      "name": "claude-code-2.1.303",
+      "pname": "claude-code",
+      "rev": "0d22191d11862731c079ead5271bad477bb87a7f",
+      "rev_count": 29313,
+      "rev_date": "2026-10-19T01:03:09Z",
+      "scrape_date": "2026-10-19T12:06:52.540703268Z",
+      "stabilities": [
+        "unstable",
+        "stable",
+        "staging"
+      ],
+      "unfree": true,
+      "version": "2.1.303",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/19ck8mj9yrh9is33dc0cmhm7yz74i9c4-claude-code-2.1.303"
+      },
+      "system": "x86_64-linux",
+      "group": "claude",
       "priority": 5
     },
     {
@@ -6644,99 +6743,6 @@
       "priority": 5
     },
     {
-      "attr_path": "claude-code",
-      "broken": false,
-      "derivation": "/nix/store/shlsz2jg9zwdrp6gilbqgj6pvv037liq-claude-code-2.1.303.drv",
-      "description": "Agentic coding tool from Anthropic",
-      "install_id": "claude-code",
-      "license": "Unfree",
-      "locked_url": "https://github.com/flox/floxenvs?rev=0d22191d11862731c079ead5271bad477bb87a7f",
-      "name": "claude-code-2.1.303",
-      "pname": "claude-code",
-      "rev": "0d22191d11862731c079ead5271bad477bb87a7f",
-      "rev_count": 29313,
-      "rev_date": "2026-10-19T01:03:09Z",
-      "scrape_date": "2026-10-19T12:06:52.540698662Z",
-      "stabilities": [
-        "unstable",
-        "stable",
-        "staging"
-      ],
-      "unfree": true,
-      "version": "2.1.303",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/wyc7hni8i1zm1k7rrx2pq263yp1lm8x1-claude-code-2.1.303"
-      },
-      "system": "aarch64-darwin",
-      "group": "claude",
-      "priority": 5
-    },
-    {
-      "attr_path": "claude-code",
-      "broken": false,
-      "derivation": "/nix/store/mz98f5jivp21knk6h07345l1c5zplqvs-claude-code-2.1.303.drv",
-      "description": "Agentic coding tool from Anthropic",
-      "install_id": "claude-code",
-      "license": "Unfree",
-      "locked_url": "https://github.com/flox/floxenvs?rev=0d22191d11862731c079ead5271bad477bb87a7f",
-      "name": "claude-code-2.1.303",
-      "pname": "claude-code",
-      "rev": "0d22191d11862731c079ead5271bad477bb87a7f",
-      "rev_count": 29313,
-      "rev_date": "2026-10-19T01:03:09Z",
-      "scrape_date": "2026-10-19T12:06:52.540702288Z",
-      "stabilities": [
-        "unstable",
-        "stable",
-        "staging"
-      ],
-      "unfree": true,
-      "version": "2.1.303",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/6819yq8938w81a8iqv9966gcbms0p41h-claude-code-2.1.303"
-      },
-      "system": "aarch64-linux",
-      "group": "claude",
-      "priority": 5
-    },
-    {
-      "attr_path": "claude-code",
-      "broken": false,
-      "derivation": "/nix/store/qkf1bqzak92lllvf6ig5h7nfj9sxw1xj-claude-code-2.1.303.drv",
-      "description": "Agentic coding tool from Anthropic",
-      "install_id": "claude-code",
-      "license": "Unfree",
-      "locked_url": "https://github.com/flox/floxenvs?rev=0d22191d11862731c079ead5271bad477bb87a7f",
-      "name": "claude-code-2.1.303",
-      "pname": "claude-code",
-      "rev": "0d22191d11862731c079ead5271bad477bb87a7f",
-      "rev_count": 29313,
-      "rev_date": "2026-10-19T01:03:09Z",
-      "scrape_date": "2026-10-19T12:06:52.540703268Z",
-      "stabilities": [
-        "unstable",
-        "stable",
-        "staging"
-      ],
-      "unfree": true,
-      "version": "2.1.303",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/19ck8mj9yrh9is33dc0cmhm7yz74i9c4-claude-code-2.1.303"
-      },
-      "system": "x86_64-linux",
-      "group": "claude",
-      "priority": 5
-    },
-    {
       "install_id": "agent-safehouse",
       "locked-url": "github:NixOS/nixpkgs/b0ec52b771f1207053090f4ea9cf73a6040f0489?narHash=sha256-aHMZ4hV9ZAjbc35VGcrqAtAigteaHCfXHeMiiVB/vAs%3D",
       "flake-description": "A collection of packages for the Nix package manager",
@@ -6789,6 +6795,35 @@
       "description": "Minimal macOS application launcher bound to Cmd+Space",
       "licenses": [
         "MIT"
+      ],
+      "broken": false,
+      "unfree": false,
+      "priority": 5
+    },
+    {
+      "install_id": "vorssaint",
+      "locked-url": "github:boborbt/nixpkgs/5f3c800a7375dc6f47ec308de2cd32b4c36a9348?narHash=sha256-qmZW9fX0ft/yK1Cjb6GYhv6OsGlAeIsdWz/0xZPA7bU%3D",
+      "flake-description": "A collection of packages for the Nix package manager",
+      "locked-flake-attr-path": "legacyPackages.aarch64-darwin.vorssaint",
+      "derivation": "/nix/store/51bn80xfb0qxd4b15w952xhqylzpaj7g-vorssaint-3.4.1.drv",
+      "outputs": {
+        "out": "/nix/store/wh6dp7s5453n7888qdalyi0kcw79bbd3-vorssaint-3.4.1"
+      },
+      "output-names": [
+        "out"
+      ],
+      "outputs-to-install": [
+        "out"
+      ],
+      "requested-outputs-to-install": [],
+      "package-system": "aarch64-darwin",
+      "system": "aarch64-darwin",
+      "name": "vorssaint-3.4.1",
+      "pname": "vorssaint",
+      "version": "3.4.1",
+      "description": "Modular macOS menu bar toolkit",
+      "licenses": [
+        "GPL-3.0-or-later"
       ],
       "broken": false,
       "unfree": false,
