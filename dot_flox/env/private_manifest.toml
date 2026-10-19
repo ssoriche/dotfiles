@@ -243,6 +243,13 @@ agent-safehouse.systems = ["aarch64-darwin"]
 # branch. Renovate-managed (see renovate.json) via the github-releases datasource.
 zap.flake = "github:natejsimonsen/zap/v0.3.0"
 zap.systems = ["aarch64-darwin"]
+# vorssaint is not in nixpkgs or the flox catalog yet; NixOS/nixpkgs#574546
+# ("vorssaint: init at 3.4.1") packages the signed release DMG. Pin the PR head
+# from the author's fork, as agent-safehouse pins a nixpkgs commit. Once the PR
+# merges and the flox catalog catches up, flip to pkg-path = "vorssaint" in its
+# own darwin-only group with an exact pin, like maccy, so Renovate takes over.
+vorssaint.flake = "github:boborbt/nixpkgs/5f3c800a7375dc6f47ec308de2cd32b4c36a9348#vorssaint"
+vorssaint.systems = ["aarch64-darwin"]
 
 
 [hook]
